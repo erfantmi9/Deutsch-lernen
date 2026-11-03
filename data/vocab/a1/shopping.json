@@ -1,0 +1,702 @@
+[
+  {
+    "id": "preis",
+    "word": "Preis",
+    "article": "der",
+    "plural": "Preise",
+    "translations": {
+      "en": "price",
+      "fa": "قیمت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Preis).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Preis).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Preis).",
+      "simple": {
+        "en": "Just learn it: der Preis.",
+        "fa": "فقط حفظش کنید: der Preis.",
+        "de": "Einfach lernen: der Preis."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Preis ist niedrig.",
+      "en": "The price is low.",
+      "fa": "قیمت پایین است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "laden",
+    "word": "Laden",
+    "article": "der",
+    "plural": "Läden",
+    "translations": {
+      "en": "shop",
+      "fa": "مغازه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Laden).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Laden).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Laden).",
+      "simple": {
+        "en": "Just learn it: der Laden.",
+        "fa": "فقط حفظش کنید: der Laden.",
+        "de": "Einfach lernen: der Laden."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Laden ist klein.",
+      "en": "The shop is small.",
+      "fa": "مغازه کوچک است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "supermarkt",
+    "word": "Supermarkt",
+    "article": "der",
+    "plural": "Supermärkte",
+    "translations": {
+      "en": "supermarket",
+      "fa": "سوپرمارکت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Supermarkt).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Supermarkt).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Supermarkt).",
+      "simple": {
+        "en": "Just learn it: der Supermarkt.",
+        "fa": "فقط حفظش کنید: der Supermarkt.",
+        "de": "Einfach lernen: der Supermarkt."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Supermarkt ist groß.",
+      "en": "The supermarket is big.",
+      "fa": "سوپرمارکت بزرگ است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "markt",
+    "word": "Markt",
+    "article": "der",
+    "plural": "Märkte",
+    "translations": {
+      "en": "market",
+      "fa": "بازار"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Markt).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Markt).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Markt).",
+      "simple": {
+        "en": "Just learn it: der Markt.",
+        "fa": "فقط حفظش کنید: der Markt.",
+        "de": "Einfach lernen: der Markt."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Markt ist am Samstag.",
+      "en": "The market is on Saturday.",
+      "fa": "بازار شنبه است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "tasche",
+    "word": "Tasche",
+    "article": "die",
+    "plural": "Taschen",
+    "translations": {
+      "en": "bag",
+      "fa": "کیف"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Tasche).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Tasche).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Tasche).",
+      "simple": {
+        "en": "Just learn it: die Tasche.",
+        "fa": "فقط حفظش کنید: die Tasche.",
+        "de": "Einfach lernen: die Tasche."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Tasche ist schwer.",
+      "en": "The bag is heavy.",
+      "fa": "کیف سنگین است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "kasse",
+    "word": "Kasse",
+    "article": "die",
+    "plural": "Kassen",
+    "translations": {
+      "en": "checkout",
+      "fa": "صندوق"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Kasse).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Kasse).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Kasse).",
+      "simple": {
+        "en": "Just learn it: die Kasse.",
+        "fa": "فقط حفظش کنید: die Kasse.",
+        "de": "Einfach lernen: die Kasse."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Kasse ist dort.",
+      "en": "The checkout is over there.",
+      "fa": "صندوق آنجاست."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "geschaeft",
+    "word": "Geschäft",
+    "article": "das",
+    "plural": "Geschäfte",
+    "translations": {
+      "en": "store",
+      "fa": "فروشگاه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Geschäft).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Geschäft).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Geschäft).",
+      "simple": {
+        "en": "Just learn it: das Geschäft.",
+        "fa": "فقط حفظش کنید: das Geschäft.",
+        "de": "Einfach lernen: das Geschäft."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Geschäft ist offen.",
+      "en": "The store is open.",
+      "fa": "فروشگاه باز است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "rechnung",
+    "word": "Rechnung",
+    "article": "die",
+    "plural": "Rechnungen",
+    "translations": {
+      "en": "bill",
+      "fa": "صورت‌حساب"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ung are always feminine (die): die Zeitung, die Wohnung, die Übung.",
+      "fa": "اسم‌هایی که به -ung ختم می‌شوند همیشه مؤنث (die) هستند: die Zeitung, die Wohnung, die Übung.",
+      "de": "Nomen auf -ung sind immer feminin (die): die Zeitung, die Wohnung, die Übung.",
+      "simple": {
+        "en": "Words ending in -ung are always die.",
+        "fa": "کلمات ختم‌شده به -ung همیشه die هستند.",
+        "de": "Wörter auf -ung sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Rechnung ist hier.",
+      "en": "The bill is here.",
+      "fa": "صورت‌حساب اینجاست."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "tuete",
+    "word": "Tüte",
+    "article": "die",
+    "plural": "Tüten",
+    "translations": {
+      "en": "plastic bag",
+      "fa": "کیسه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Tüte).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Tüte).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Tüte).",
+      "simple": {
+        "en": "Just learn it: die Tüte.",
+        "fa": "فقط حفظش کنید: die Tüte.",
+        "de": "Einfach lernen: die Tüte."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Tüte ist kaputt.",
+      "en": "The bag is broken.",
+      "fa": "کیسه پاره است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "einkaufswagen",
+    "word": "Einkaufswagen",
+    "article": "der",
+    "plural": "Einkaufswagen",
+    "translations": {
+      "en": "shopping cart",
+      "fa": "چرخ خرید"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Einkaufswagen).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Einkaufswagen).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Einkaufswagen).",
+      "simple": {
+        "en": "Just learn it: der Einkaufswagen.",
+        "fa": "فقط حفظش کنید: der Einkaufswagen.",
+        "de": "Einfach lernen: der Einkaufswagen."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Einkaufswagen ist voll.",
+      "en": "The shopping cart is full.",
+      "fa": "چرخ خرید پر است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "angebot",
+    "word": "Angebot",
+    "article": "das",
+    "plural": "Angebote",
+    "translations": {
+      "en": "special offer",
+      "fa": "پیشنهاد ویژه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Angebot).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Angebot).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Angebot).",
+      "simple": {
+        "en": "Just learn it: das Angebot.",
+        "fa": "فقط حفظش کنید: das Angebot.",
+        "de": "Einfach lernen: das Angebot."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Angebot ist gut.",
+      "en": "The offer is good.",
+      "fa": "پیشنهاد ویژه خوب است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "kunde",
+    "word": "Kunde",
+    "article": "der",
+    "plural": "Kunden",
+    "translations": {
+      "en": "customer (male)",
+      "fa": "مشتری (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Kunde wartet.",
+      "en": "The customer is waiting.",
+      "fa": "مشتری منتظر است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "kundin",
+    "word": "Kundin",
+    "article": "die",
+    "plural": "Kundinnen",
+    "translations": {
+      "en": "customer (female)",
+      "fa": "مشتری (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Kundin zahlt.",
+      "en": "The customer is paying.",
+      "fa": "مشتری پول می‌دهد."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "verkaeufer",
+    "word": "Verkäufer",
+    "article": "der",
+    "plural": "Verkäufer",
+    "translations": {
+      "en": "salesman",
+      "fa": "فروشنده (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Verkäufer ist freundlich.",
+      "en": "The salesman is friendly.",
+      "fa": "فروشنده مهربان است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "verkaeuferin",
+    "word": "Verkäuferin",
+    "article": "die",
+    "plural": "Verkäuferinnen",
+    "translations": {
+      "en": "saleswoman",
+      "fa": "فروشنده (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Verkäuferin hilft mir.",
+      "en": "The saleswoman helps me.",
+      "fa": "فروشنده به من کمک می‌کند."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "geschenk",
+    "word": "Geschenk",
+    "article": "das",
+    "plural": "Geschenke",
+    "translations": {
+      "en": "gift",
+      "fa": "هدیه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Geschenk).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Geschenk).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Geschenk).",
+      "simple": {
+        "en": "Just learn it: das Geschenk.",
+        "fa": "فقط حفظش کنید: das Geschenk.",
+        "de": "Einfach lernen: das Geschenk."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Geschenk ist für dich.",
+      "en": "The gift is for you.",
+      "fa": "هدیه برای توست."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "flasche",
+    "word": "Flasche",
+    "article": "die",
+    "plural": "Flaschen",
+    "translations": {
+      "en": "bottle",
+      "fa": "بطری"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Flasche).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Flasche).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Flasche).",
+      "simple": {
+        "en": "Just learn it: die Flasche.",
+        "fa": "فقط حفظش کنید: die Flasche.",
+        "de": "Einfach lernen: die Flasche."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Flasche ist leer.",
+      "en": "The bottle is empty.",
+      "fa": "بطری خالی است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "stueck",
+    "word": "Stück",
+    "article": "das",
+    "plural": "Stücke",
+    "translations": {
+      "en": "piece",
+      "fa": "تکه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Stück).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Stück).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Stück).",
+      "simple": {
+        "en": "Just learn it: das Stück.",
+        "fa": "فقط حفظش کنید: das Stück.",
+        "de": "Einfach lernen: das Stück."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Stück kostet einen Euro.",
+      "en": "The piece costs one euro.",
+      "fa": "این تکه یک یورو قیمت دارد."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "kilo",
+    "word": "Kilo",
+    "article": "das",
+    "plural": "Kilos",
+    "translations": {
+      "en": "kilo",
+      "fa": "کیلو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Kilo).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Kilo).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Kilo).",
+      "simple": {
+        "en": "Just learn it: das Kilo.",
+        "fa": "فقط حفظش کنید: das Kilo.",
+        "de": "Einfach lernen: das Kilo."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Kilo kostet zwei Euro.",
+      "en": "The kilo costs two euros.",
+      "fa": "کیلویی دو یورو قیمت دارد."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "korb",
+    "word": "Korb",
+    "article": "der",
+    "plural": "Körbe",
+    "translations": {
+      "en": "basket",
+      "fa": "سبد"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Korb).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Korb).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Korb).",
+      "simple": {
+        "en": "Just learn it: der Korb.",
+        "fa": "فقط حفظش کنید: der Korb.",
+        "de": "Einfach lernen: der Korb."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Korb ist voll.",
+      "en": "The basket is full.",
+      "fa": "سبد پر است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "baeckerei",
+    "word": "Bäckerei",
+    "article": "die",
+    "plural": "Bäckereien",
+    "translations": {
+      "en": "bakery",
+      "fa": "نانوایی"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ei are feminine (die): die Bäckerei, die Polizei, die Bücherei.",
+      "fa": "اسم‌هایی که به -ei ختم می‌شوند مؤنث (die) هستند: die Bäckerei, die Polizei, die Bücherei.",
+      "de": "Nomen auf -ei sind feminin (die): die Bäckerei, die Polizei, die Bücherei.",
+      "simple": {
+        "en": "Words ending in -ei are die.",
+        "fa": "کلمات ختم‌شده به -ei همیشه die هستند.",
+        "de": "Wörter auf -ei sind die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Bäckerei ist neben der Bank.",
+      "en": "The bakery is next to the bank.",
+      "fa": "نانوایی کنار بانک است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "apotheke",
+    "word": "Apotheke",
+    "article": "die",
+    "plural": "Apotheken",
+    "translations": {
+      "en": "pharmacy",
+      "fa": "داروخانه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Apotheke).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Apotheke).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Apotheke).",
+      "simple": {
+        "en": "Just learn it: die Apotheke.",
+        "fa": "فقط حفظش کنید: die Apotheke.",
+        "de": "Einfach lernen: die Apotheke."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Apotheke ist geschlossen.",
+      "en": "The pharmacy is closed.",
+      "fa": "داروخانه بسته است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "kreditkarte",
+    "word": "Kreditkarte",
+    "article": "die",
+    "plural": "Kreditkarten",
+    "translations": {
+      "en": "credit card",
+      "fa": "کارت اعتباری"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Kreditkarte).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Kreditkarte).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Kreditkarte).",
+      "simple": {
+        "en": "Just learn it: die Kreditkarte.",
+        "fa": "فقط حفظش کنید: die Kreditkarte.",
+        "de": "Einfach lernen: die Kreditkarte."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Kreditkarte ist neu.",
+      "en": "The credit card is new.",
+      "fa": "کارت اعتباری جدید است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "gutschein",
+    "word": "Gutschein",
+    "article": "der",
+    "plural": "Gutscheine",
+    "translations": {
+      "en": "voucher",
+      "fa": "کوپن"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Gutschein).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Gutschein).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Gutschein).",
+      "simple": {
+        "en": "Just learn it: der Gutschein.",
+        "fa": "فقط حفظش کنید: der Gutschein.",
+        "de": "Einfach lernen: der Gutschein."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Gutschein ist für das Café.",
+      "en": "The voucher is for the café.",
+      "fa": "کوپن برای کافه است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "einkauf",
+    "word": "Einkauf",
+    "article": "der",
+    "plural": "Einkäufe",
+    "translations": {
+      "en": "purchase",
+      "fa": "خرید"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Einkauf).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Einkauf).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Einkauf).",
+      "simple": {
+        "en": "Just learn it: der Einkauf.",
+        "fa": "فقط حفظش کنید: der Einkauf.",
+        "de": "Einfach lernen: der Einkauf."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Einkauf ist schwer.",
+      "en": "The shopping is heavy.",
+      "fa": "خرید سنگین است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  }
+]

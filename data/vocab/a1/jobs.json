@@ -1,0 +1,702 @@
+[
+  {
+    "id": "beruf",
+    "word": "Beruf",
+    "article": "der",
+    "plural": "Berufe",
+    "translations": {
+      "en": "job, profession",
+      "fa": "شغل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Beruf).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Beruf).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Beruf).",
+      "simple": {
+        "en": "Just learn it: der Beruf.",
+        "fa": "فقط حفظش کنید: der Beruf.",
+        "de": "Einfach lernen: der Beruf."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Mein Beruf ist Lehrer.",
+      "en": "My job is teacher.",
+      "fa": "شغل من معلم است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "arzt",
+    "word": "Arzt",
+    "article": "der",
+    "plural": "Ärzte",
+    "translations": {
+      "en": "doctor (male)",
+      "fa": "پزشک (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Arzt ist nett.",
+      "en": "The doctor is nice.",
+      "fa": "پزشک مهربان است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "aerztin",
+    "word": "Ärztin",
+    "article": "die",
+    "plural": "Ärztinnen",
+    "translations": {
+      "en": "doctor (female)",
+      "fa": "پزشک (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Ärztin ist heute da.",
+      "en": "The doctor is here today.",
+      "fa": "پزشک امروز اینجاست."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "koch",
+    "word": "Koch",
+    "article": "der",
+    "plural": "Köche",
+    "translations": {
+      "en": "cook (male)",
+      "fa": "آشپز (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Koch arbeitet im Restaurant.",
+      "en": "The cook works in the restaurant.",
+      "fa": "آشپز در رستوران کار می‌کند."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "koechin",
+    "word": "Köchin",
+    "article": "die",
+    "plural": "Köchinnen",
+    "translations": {
+      "en": "cook (female)",
+      "fa": "آشپز (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Köchin kocht gut.",
+      "en": "The cook cooks well.",
+      "fa": "آشپز خوب آشپزی می‌کند."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "polizist",
+    "word": "Polizist",
+    "article": "der",
+    "plural": "Polizisten",
+    "translations": {
+      "en": "police officer (male)",
+      "fa": "پلیس (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Polizist hilft uns.",
+      "en": "The police officer helps us.",
+      "fa": "پلیس به ما کمک می‌کند."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "polizistin",
+    "word": "Polizistin",
+    "article": "die",
+    "plural": "Polizistinnen",
+    "translations": {
+      "en": "police officer (female)",
+      "fa": "پلیس (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Polizistin steht an der Ampel.",
+      "en": "The police officer is standing at the traffic light.",
+      "fa": "پلیس کنار چراغ راهنمایی ایستاده است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "fahrer",
+    "word": "Fahrer",
+    "article": "der",
+    "plural": "Fahrer",
+    "translations": {
+      "en": "driver (male)",
+      "fa": "راننده (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Fahrer ist müde.",
+      "en": "The driver is tired.",
+      "fa": "راننده خسته است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "student",
+    "word": "Student",
+    "article": "der",
+    "plural": "Studenten",
+    "translations": {
+      "en": "student (male, university)",
+      "fa": "دانشجو (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Student lernt viel.",
+      "en": "The student studies a lot.",
+      "fa": "دانشجو زیاد درس می‌خواند."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "studentin",
+    "word": "Studentin",
+    "article": "die",
+    "plural": "Studentinnen",
+    "translations": {
+      "en": "student (female, university)",
+      "fa": "دانشجو (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Studentin wohnt in Berlin.",
+      "en": "The student lives in Berlin.",
+      "fa": "دانشجو در برلین زندگی می‌کند."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "buero",
+    "word": "Büro",
+    "article": "das",
+    "plural": "Büros",
+    "translations": {
+      "en": "office",
+      "fa": "دفتر کار"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Büro).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Büro).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Büro).",
+      "simple": {
+        "en": "Just learn it: das Büro.",
+        "fa": "فقط حفظش کنید: das Büro.",
+        "de": "Einfach lernen: das Büro."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Büro ist im Zentrum.",
+      "en": "The office is in the centre.",
+      "fa": "دفتر در مرکز شهر است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "firma",
+    "word": "Firma",
+    "article": "die",
+    "plural": "Firmen",
+    "translations": {
+      "en": "company",
+      "fa": "شرکت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Firma).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Firma).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Firma).",
+      "simple": {
+        "en": "Just learn it: die Firma.",
+        "fa": "فقط حفظش کنید: die Firma.",
+        "de": "Einfach lernen: die Firma."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Firma ist groß.",
+      "en": "The company is big.",
+      "fa": "شرکت بزرگ است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "chef",
+    "word": "Chef",
+    "article": "der",
+    "plural": "Chefs",
+    "translations": {
+      "en": "boss (male)",
+      "fa": "رئیس (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Chef ist heute nicht da.",
+      "en": "The boss is not here today.",
+      "fa": "رئیس امروز اینجا نیست."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "chefin",
+    "word": "Chefin",
+    "article": "die",
+    "plural": "Chefinnen",
+    "translations": {
+      "en": "boss (female)",
+      "fa": "رئیس (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Chefin hat ein Büro.",
+      "en": "The boss has an office.",
+      "fa": "رئیس یک دفتر دارد."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "kollege",
+    "word": "Kollege",
+    "article": "der",
+    "plural": "Kollegen",
+    "translations": {
+      "en": "colleague (male)",
+      "fa": "همکار (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Kollege kommt aus Italien.",
+      "en": "The colleague comes from Italy.",
+      "fa": "همکار اهل ایتالیا است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "kollegin",
+    "word": "Kollegin",
+    "article": "die",
+    "plural": "Kolleginnen",
+    "translations": {
+      "en": "colleague (female)",
+      "fa": "همکار (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Kollegin ist nett.",
+      "en": "The colleague is nice.",
+      "fa": "همکار مهربان است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "ingenieur",
+    "word": "Ingenieur",
+    "article": "der",
+    "plural": "Ingenieure",
+    "translations": {
+      "en": "engineer (male)",
+      "fa": "مهندس (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Ingenieur arbeitet bei einer Firma.",
+      "en": "The engineer works at a company.",
+      "fa": "مهندس در یک شرکت کار می‌کند."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "ingenieurin",
+    "word": "Ingenieurin",
+    "article": "die",
+    "plural": "Ingenieurinnen",
+    "translations": {
+      "en": "engineer (female)",
+      "fa": "مهندس (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Ingenieurin ist jung.",
+      "en": "The engineer is young.",
+      "fa": "مهندس جوان است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "baecker",
+    "word": "Bäcker",
+    "article": "der",
+    "plural": "Bäcker",
+    "translations": {
+      "en": "baker",
+      "fa": "نانوا"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Bäcker ist früh wach.",
+      "en": "The baker is up early.",
+      "fa": "نانوا زود بیدار است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "krankenschwester",
+    "word": "Krankenschwester",
+    "article": "die",
+    "plural": "Krankenschwestern",
+    "translations": {
+      "en": "nurse (female)",
+      "fa": "پرستار (زن)"
+    },
+    "grammarRule": {
+      "en": "Words for female people are feminine (die): die Krankenschwester, die Mutter, die Frau.",
+      "fa": "کلمات مربوط به زنان مؤنث (die) هستند: die Krankenschwester, die Mutter, die Frau.",
+      "de": "Wörter für weibliche Personen sind feminin (die): die Krankenschwester, die Mutter, die Frau.",
+      "simple": {
+        "en": "A woman: die.",
+        "fa": "برای زن‌ها: die.",
+        "de": "Eine Frau: die."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Die Krankenschwester arbeitet nachts.",
+      "en": "The nurse works at night.",
+      "fa": "پرستار شب‌ها کار می‌کند."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "pilot",
+    "word": "Pilot",
+    "article": "der",
+    "plural": "Piloten",
+    "translations": {
+      "en": "pilot (male)",
+      "fa": "خلبان (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Pilot fliegt nach Rom.",
+      "en": "The pilot is flying to Rome.",
+      "fa": "خلبان به رم پرواز می‌کند."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "friseur",
+    "word": "Friseur",
+    "article": "der",
+    "plural": "Friseure",
+    "translations": {
+      "en": "hairdresser (male)",
+      "fa": "آرایشگر (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Friseur ist neben dem Café.",
+      "en": "The hairdresser is next to the café.",
+      "fa": "آرایشگر کنار کافه است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "mechaniker",
+    "word": "Mechaniker",
+    "article": "der",
+    "plural": "Mechaniker",
+    "translations": {
+      "en": "mechanic (male)",
+      "fa": "مکانیک (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Mechaniker repariert das Auto.",
+      "en": "The mechanic is repairing the car.",
+      "fa": "مکانیک ماشین را تعمیر می‌کند."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "kellner",
+    "word": "Kellner",
+    "article": "der",
+    "plural": "Kellner",
+    "translations": {
+      "en": "waiter",
+      "fa": "گارسون"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Kellner bringt das Essen.",
+      "en": "The waiter brings the food.",
+      "fa": "گارسون غذا را می‌آورد."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "kellnerin",
+    "word": "Kellnerin",
+    "article": "die",
+    "plural": "Kellnerinnen",
+    "translations": {
+      "en": "waitress",
+      "fa": "گارسون (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Kellnerin ist freundlich.",
+      "en": "The waitress is friendly.",
+      "fa": "گارسون مهربان است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  }
+]

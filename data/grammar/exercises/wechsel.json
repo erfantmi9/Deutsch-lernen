@@ -1,0 +1,139 @@
+[
+  {
+    "id": "wech-01",
+    "lessonId": "wechsel",
+    "type": "choice",
+    "prompt": { "en": "Wo? Choose the correct form.", "fa": "Wo؟ شکل درست را انتخاب کن.", "de": "Wo? Wähle die richtige Form." },
+    "sentenceDe": "Ich bin ___ Küche.",
+    "options": ["in der", "in die", "in den"],
+    "answer": "in der",
+    "explanation": {
+      "en": "sein answers wo? (no movement), so the dative: die Küche → in der Küche.",
+      "fa": "sein به wo؟ پاسخ می‌دهد (بدون حرکت)، پس داتیو: die Küche ← in der Küche.",
+      "de": "sein antwortet auf wo? (keine Bewegung), also Dativ: die Küche → in der Küche."
+    }
+  },
+  {
+    "id": "wech-02",
+    "lessonId": "wechsel",
+    "type": "choice",
+    "prompt": { "en": "Wohin? Choose the correct form.", "fa": "Wohin؟ شکل درست را انتخاب کن.", "de": "Wohin? Wähle die richtige Form." },
+    "sentenceDe": "Ich gehe ___ Küche.",
+    "options": ["in der", "in die", "in den"],
+    "answer": "in die",
+    "explanation": {
+      "en": "gehen answers wohin? (movement), so the accusative: die Küche → in die Küche.",
+      "fa": "gehen به wohin؟ پاسخ می‌دهد (حرکت)، پس مفعولی: die Küche ← in die Küche.",
+      "de": "gehen antwortet auf wohin? (Bewegung), also Akkusativ: die Küche → in die Küche."
+    }
+  },
+  {
+    "id": "wech-03",
+    "lessonId": "wechsel",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct form.", "fa": "شکل درست را انتخاب کن.", "de": "Wähle die richtige Form." },
+    "sentenceDe": "Er wohnt ___ Stadt.",
+    "options": ["in der", "in die", "in den"],
+    "answer": "in der",
+    "explanation": {
+      "en": "wohnen is about a place without movement (wo?): dative, in der Stadt.",
+      "fa": "wohnen درباره‌ی یک مکان بدون حرکت است (wo؟): داتیو، in der Stadt.",
+      "de": "wohnen bezeichnet einen Ort ohne Bewegung (wo?): Dativ, in der Stadt."
+    }
+  },
+  {
+    "id": "wech-04",
+    "lessonId": "wechsel",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct form.", "fa": "شکل درست را انتخاب کن.", "de": "Wähle die richtige Form." },
+    "sentenceDe": "Wir fahren ___ Stadt.",
+    "options": ["in der", "in die", "in den"],
+    "answer": "in die",
+    "explanation": {
+      "en": "fahren shows movement to a place (wohin?): accusative, in die Stadt.",
+      "fa": "fahren حرکت به یک مکان را نشان می‌دهد (wohin؟): مفعولی، in die Stadt.",
+      "de": "fahren zeigt eine Bewegung zu einem Ort (wohin?): Akkusativ, in die Stadt."
+    }
+  },
+  {
+    "id": "wech-05",
+    "lessonId": "wechsel",
+    "type": "choice",
+    "prompt": { "en": "Wo? Choose the correct form.", "fa": "Wo؟ شکل درست را انتخاب کن.", "de": "Wo? Wähle die richtige Form." },
+    "sentenceDe": "Das Kind ist ___ Park.",
+    "options": ["im", "in den", "ins"],
+    "answer": "im",
+    "explanation": {
+      "en": "wo? takes the dative. der Park: in dem = im.",
+      "fa": "wo؟ داتیو می‌گیرد. der Park: in dem = im.",
+      "de": "wo? verlangt den Dativ. der Park: in dem = im."
+    }
+  },
+  {
+    "id": "wech-06",
+    "lessonId": "wechsel",
+    "type": "choice",
+    "prompt": { "en": "Wohin? Choose the correct form.", "fa": "Wohin؟ شکل درست را انتخاب کن.", "de": "Wohin? Wähle die richtige Form." },
+    "sentenceDe": "Das Kind geht ___ Park.",
+    "options": ["im", "in den", "ins"],
+    "answer": "in den",
+    "explanation": {
+      "en": "wohin? takes the accusative. der Park becomes den Park: in den Park.",
+      "fa": "wohin؟ مفعولی می‌گیرد. der Park به den Park تبدیل می‌شود: in den Park.",
+      "de": "wohin? verlangt den Akkusativ. der Park wird zu den Park: in den Park."
+    }
+  },
+  {
+    "id": "wech-07",
+    "lessonId": "wechsel",
+    "type": "fill",
+    "prompt": { "en": "Type the contraction (an + article).", "fa": "شکل ادغام‌شده را بنویس (an + آرتیکل).", "de": "Schreibe die Verschmelzung (an + Artikel)." },
+    "sentenceDe": "Wir sind ___ Meer.",
+    "answer": "am",
+    "explanation": {
+      "en": "wo? takes the dative. das Meer: an dem = am.",
+      "fa": "wo؟ داتیو می‌گیرد. das Meer: an dem = am.",
+      "de": "wo? verlangt den Dativ. das Meer: an dem = am."
+    }
+  },
+  {
+    "id": "wech-08",
+    "lessonId": "wechsel",
+    "type": "fill",
+    "prompt": { "en": "Type the contraction (an + article).", "fa": "شکل ادغام‌شده را بنویس (an + آرتیکل).", "de": "Schreibe die Verschmelzung (an + Artikel)." },
+    "sentenceDe": "Wir fahren ___ Meer.",
+    "answer": "ans",
+    "explanation": {
+      "en": "wohin? takes the accusative. das Meer: an das = ans.",
+      "fa": "wohin؟ مفعولی می‌گیرد. das Meer: an das = ans.",
+      "de": "wohin? verlangt den Akkusativ. das Meer: an das = ans."
+    }
+  },
+  {
+    "id": "wech-09",
+    "lessonId": "wechsel",
+    "type": "choice",
+    "prompt": { "en": "Wo? Choose the correct form.", "fa": "Wo؟ شکل درست را انتخاب کن.", "de": "Wo? Wähle die richtige Form." },
+    "sentenceDe": "Sie ist ___ Markt.",
+    "options": ["auf dem", "auf den", "auf die"],
+    "answer": "auf dem",
+    "explanation": {
+      "en": "sein answers wo?, so the dative. der Markt: auf dem Markt.",
+      "fa": "sein به wo؟ پاسخ می‌دهد، پس داتیو. der Markt: auf dem Markt.",
+      "de": "sein antwortet auf wo?, also Dativ. der Markt: auf dem Markt."
+    }
+  },
+  {
+    "id": "wech-10",
+    "lessonId": "wechsel",
+    "type": "transform",
+    "prompt": { "en": "Change from wo? to wohin?", "fa": "از wo؟ به wohin؟ تغییر بده.", "de": "Wechsle von wo? zu wohin?" },
+    "sentenceDe": "Ich bin im Kino. → Ich gehe ___ Kino.",
+    "answer": "ins",
+    "explanation": {
+      "en": "gehen shows movement (accusative). das Kino: in das = ins.",
+      "fa": "gehen حرکت را نشان می‌دهد (مفعولی). das Kino: in das = ins.",
+      "de": "gehen zeigt eine Bewegung (Akkusativ). das Kino: in das = ins."
+    }
+  }
+]

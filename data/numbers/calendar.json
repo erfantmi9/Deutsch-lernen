@@ -1,0 +1,31 @@
+{
+  "months": [
+    { "id": "januar", "de": "Januar", "en": "January", "fa": "ژانویه" },
+    { "id": "februar", "de": "Februar", "en": "February", "fa": "فوریه" },
+    { "id": "maerz", "de": "März", "en": "March", "fa": "مارس" },
+    { "id": "april", "de": "April", "en": "April", "fa": "آوریل" },
+    { "id": "mai", "de": "Mai", "en": "May", "fa": "مه" },
+    { "id": "juni", "de": "Juni", "en": "June", "fa": "ژوئن" },
+    { "id": "juli", "de": "Juli", "en": "July", "fa": "ژوئیه" },
+    { "id": "august", "de": "August", "en": "August", "fa": "اوت" },
+    { "id": "september", "de": "September", "en": "September", "fa": "سپتامبر" },
+    { "id": "oktober", "de": "Oktober", "en": "October", "fa": "اکتبر" },
+    { "id": "november", "de": "November", "en": "November", "fa": "نوامبر" },
+    { "id": "dezember", "de": "Dezember", "en": "December", "fa": "دسامبر" }
+  ],
+  "weekdays": [
+    { "id": "montag", "de": "Montag", "en": "Monday", "fa": "دوشنبه" },
+    { "id": "dienstag", "de": "Dienstag", "en": "Tuesday", "fa": "سه‌شنبه" },
+    { "id": "mittwoch", "de": "Mittwoch", "en": "Wednesday", "fa": "چهارشنبه" },
+    { "id": "donnerstag", "de": "Donnerstag", "en": "Thursday", "fa": "پنجشنبه" },
+    { "id": "freitag", "de": "Freitag", "en": "Friday", "fa": "جمعه" },
+    { "id": "samstag", "de": "Samstag", "en": "Saturday", "fa": "شنبه" },
+    { "id": "sonntag", "de": "Sonntag", "en": "Sunday", "fa": "یکشنبه" }
+  ],
+  "seasons": [
+    { "id": "fruehling", "de": "Frühling", "en": "spring", "fa": "بهار" },
+    { "id": "sommer", "de": "Sommer", "en": "summer", "fa": "تابستان" },
+    { "id": "herbst", "de": "Herbst", "en": "autumn", "fa": "پاییز" },
+    { "id": "winter", "de": "Winter", "en": "winter", "fa": "زمستان" }
+  ]
+}

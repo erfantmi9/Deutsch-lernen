@@ -1,0 +1,702 @@
+[
+  {
+    "id": "hobby",
+    "word": "Hobby",
+    "article": "das",
+    "plural": "Hobbys",
+    "translations": {
+      "en": "hobby",
+      "fa": "سرگرمی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Hobby).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Hobby).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Hobby).",
+      "simple": {
+        "en": "Just learn it: das Hobby.",
+        "fa": "فقط حفظش کنید: das Hobby.",
+        "de": "Einfach lernen: das Hobby."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Mein Hobby ist Musik.",
+      "en": "My hobby is music.",
+      "fa": "سرگرمی من موسیقی است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "sport",
+    "word": "Sport",
+    "article": "der",
+    "plural": "–",
+    "translations": {
+      "en": "sport",
+      "fa": "ورزش"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Sport).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Sport).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Sport).",
+      "simple": {
+        "en": "Just learn it: der Sport.",
+        "fa": "فقط حفظش کنید: der Sport.",
+        "de": "Einfach lernen: der Sport."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Sport ist gesund.",
+      "en": "Sport is healthy.",
+      "fa": "ورزش سالم است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "musik",
+    "word": "Musik",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "music",
+      "fa": "موسیقی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Musik).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Musik).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Musik).",
+      "simple": {
+        "en": "Just learn it: die Musik.",
+        "fa": "فقط حفظش کنید: die Musik.",
+        "de": "Einfach lernen: die Musik."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Musik ist laut.",
+      "en": "The music is loud.",
+      "fa": "موسیقی بلند است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "spiel",
+    "word": "Spiel",
+    "article": "das",
+    "plural": "Spiele",
+    "translations": {
+      "en": "game",
+      "fa": "بازی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Spiel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Spiel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Spiel).",
+      "simple": {
+        "en": "Just learn it: das Spiel.",
+        "fa": "فقط حفظش کنید: das Spiel.",
+        "de": "Einfach lernen: das Spiel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Spiel ist lustig.",
+      "en": "The game is fun.",
+      "fa": "بازی بامزه است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "fussball",
+    "word": "Fußball",
+    "article": "der",
+    "plural": "Fußbälle",
+    "translations": {
+      "en": "football, soccer",
+      "fa": "فوتبال"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Fußball).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Fußball).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Fußball).",
+      "simple": {
+        "en": "Just learn it: der Fußball.",
+        "fa": "فقط حفظش کنید: der Fußball.",
+        "de": "Einfach lernen: der Fußball."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Fußball ist rund.",
+      "en": "The football is round.",
+      "fa": "توپ فوتبال گرد است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "fahrrad",
+    "word": "Fahrrad",
+    "article": "das",
+    "plural": "Fahrräder",
+    "translations": {
+      "en": "bicycle",
+      "fa": "دوچرخه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Fahrrad).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Fahrrad).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Fahrrad).",
+      "simple": {
+        "en": "Just learn it: das Fahrrad.",
+        "fa": "فقط حفظش کنید: das Fahrrad.",
+        "de": "Einfach lernen: das Fahrrad."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Fahrrad ist neu.",
+      "en": "The bicycle is new.",
+      "fa": "دوچرخه جدید است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "gitarre",
+    "word": "Gitarre",
+    "article": "die",
+    "plural": "Gitarren",
+    "translations": {
+      "en": "guitar",
+      "fa": "گیتار"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Gitarre).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Gitarre).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Gitarre).",
+      "simple": {
+        "en": "Just learn it: die Gitarre.",
+        "fa": "فقط حفظش کنید: die Gitarre.",
+        "de": "Einfach lernen: die Gitarre."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Gitarre ist alt.",
+      "en": "The guitar is old.",
+      "fa": "گیتار قدیمی است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "klavier",
+    "word": "Klavier",
+    "article": "das",
+    "plural": "Klaviere",
+    "translations": {
+      "en": "piano",
+      "fa": "پیانو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Klavier).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Klavier).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Klavier).",
+      "simple": {
+        "en": "Just learn it: das Klavier.",
+        "fa": "فقط حفظش کنید: das Klavier.",
+        "de": "Einfach lernen: das Klavier."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Klavier ist schwarz.",
+      "en": "The piano is black.",
+      "fa": "پیانو سیاه است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "lied",
+    "word": "Lied",
+    "article": "das",
+    "plural": "Lieder",
+    "translations": {
+      "en": "song",
+      "fa": "آهنگ"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Lied).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Lied).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Lied).",
+      "simple": {
+        "en": "Just learn it: das Lied.",
+        "fa": "فقط حفظش کنید: das Lied.",
+        "de": "Einfach lernen: das Lied."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Lied ist schön.",
+      "en": "The song is beautiful.",
+      "fa": "آهنگ زیباست."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "film",
+    "word": "Film",
+    "article": "der",
+    "plural": "Filme",
+    "translations": {
+      "en": "film",
+      "fa": "فیلم"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Film).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Film).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Film).",
+      "simple": {
+        "en": "Just learn it: der Film.",
+        "fa": "فقط حفظش کنید: der Film.",
+        "de": "Einfach lernen: der Film."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Film ist lang.",
+      "en": "The film is long.",
+      "fa": "فیلم طولانی است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "foto",
+    "word": "Foto",
+    "article": "das",
+    "plural": "Fotos",
+    "translations": {
+      "en": "photo",
+      "fa": "عکس"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Foto).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Foto).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Foto).",
+      "simple": {
+        "en": "Just learn it: das Foto.",
+        "fa": "فقط حفظش کنید: das Foto.",
+        "de": "Einfach lernen: das Foto."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Foto ist schön.",
+      "en": "The photo is beautiful.",
+      "fa": "عکس زیباست."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "tanz",
+    "word": "Tanz",
+    "article": "der",
+    "plural": "Tänze",
+    "translations": {
+      "en": "dance",
+      "fa": "رقص"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Tanz).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Tanz).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Tanz).",
+      "simple": {
+        "en": "Just learn it: der Tanz.",
+        "fa": "فقط حفظش کنید: der Tanz.",
+        "de": "Einfach lernen: der Tanz."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Tanz ist schnell.",
+      "en": "The dance is fast.",
+      "fa": "رقص سریع است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "konzert",
+    "word": "Konzert",
+    "article": "das",
+    "plural": "Konzerte",
+    "translations": {
+      "en": "concert",
+      "fa": "کنسرت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Konzert).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Konzert).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Konzert).",
+      "simple": {
+        "en": "Just learn it: das Konzert.",
+        "fa": "فقط حفظش کنید: das Konzert.",
+        "de": "Einfach lernen: das Konzert."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Konzert ist am Freitag.",
+      "en": "The concert is on Friday.",
+      "fa": "کنسرت جمعه است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "ball",
+    "word": "Ball",
+    "article": "der",
+    "plural": "Bälle",
+    "translations": {
+      "en": "ball",
+      "fa": "توپ"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Ball).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Ball).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Ball).",
+      "simple": {
+        "en": "Just learn it: der Ball.",
+        "fa": "فقط حفظش کنید: der Ball.",
+        "de": "Einfach lernen: der Ball."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Ball ist rot.",
+      "en": "The ball is red.",
+      "fa": "توپ قرمز است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "verein",
+    "word": "Verein",
+    "article": "der",
+    "plural": "Vereine",
+    "translations": {
+      "en": "club, association",
+      "fa": "باشگاه، انجمن"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Verein).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Verein).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Verein).",
+      "simple": {
+        "en": "Just learn it: der Verein.",
+        "fa": "فقط حفظش کنید: der Verein.",
+        "de": "Einfach lernen: der Verein."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Verein ist klein.",
+      "en": "The club is small.",
+      "fa": "باشگاه کوچک است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "mannschaft",
+    "word": "Mannschaft",
+    "article": "die",
+    "plural": "Mannschaften",
+    "translations": {
+      "en": "team",
+      "fa": "تیم"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Mannschaft).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Mannschaft).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Mannschaft).",
+      "simple": {
+        "en": "Just learn it: die Mannschaft.",
+        "fa": "فقط حفظش کنید: die Mannschaft.",
+        "de": "Einfach lernen: die Mannschaft."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Mannschaft spielt gut.",
+      "en": "The team plays well.",
+      "fa": "تیم خوب بازی می‌کند."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "spaziergang",
+    "word": "Spaziergang",
+    "article": "der",
+    "plural": "Spaziergänge",
+    "translations": {
+      "en": "walk",
+      "fa": "پیاده‌روی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Spaziergang).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Spaziergang).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Spaziergang).",
+      "simple": {
+        "en": "Just learn it: der Spaziergang.",
+        "fa": "فقط حفظش کنید: der Spaziergang.",
+        "de": "Einfach lernen: der Spaziergang."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Spaziergang ist schön.",
+      "en": "The walk is nice.",
+      "fa": "پیاده‌روی دلپذیر است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "computer",
+    "word": "Computer",
+    "article": "der",
+    "plural": "Computer",
+    "translations": {
+      "en": "computer",
+      "fa": "کامپیوتر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Computer).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Computer).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Computer).",
+      "simple": {
+        "en": "Just learn it: der Computer.",
+        "fa": "فقط حفظش کنید: der Computer.",
+        "de": "Einfach lernen: der Computer."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Computer ist neu.",
+      "en": "The computer is new.",
+      "fa": "کامپیوتر جدید است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "handy",
+    "word": "Handy",
+    "article": "das",
+    "plural": "Handys",
+    "translations": {
+      "en": "mobile phone",
+      "fa": "گوشی موبایل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Handy).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Handy).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Handy).",
+      "simple": {
+        "en": "Just learn it: das Handy.",
+        "fa": "فقط حفظش کنید: das Handy.",
+        "de": "Einfach lernen: das Handy."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Handy ist kaputt.",
+      "en": "The mobile phone is broken.",
+      "fa": "گوشی خراب است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "kamera",
+    "word": "Kamera",
+    "article": "die",
+    "plural": "Kameras",
+    "translations": {
+      "en": "camera",
+      "fa": "دوربین"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Kamera).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Kamera).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Kamera).",
+      "simple": {
+        "en": "Just learn it: die Kamera.",
+        "fa": "فقط حفظش کنید: die Kamera.",
+        "de": "Einfach lernen: die Kamera."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Kamera ist klein.",
+      "en": "The camera is small.",
+      "fa": "دوربین کوچک است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "fernseher",
+    "word": "Fernseher",
+    "article": "der",
+    "plural": "Fernseher",
+    "translations": {
+      "en": "television",
+      "fa": "تلویزیون"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Fernseher).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Fernseher).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Fernseher).",
+      "simple": {
+        "en": "Just learn it: der Fernseher.",
+        "fa": "فقط حفظش کنید: der Fernseher.",
+        "de": "Einfach lernen: der Fernseher."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Fernseher ist groß.",
+      "en": "The television is big.",
+      "fa": "تلویزیون بزرگ است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "radio",
+    "word": "Radio",
+    "article": "das",
+    "plural": "Radios",
+    "translations": {
+      "en": "radio",
+      "fa": "رادیو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Radio).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Radio).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Radio).",
+      "simple": {
+        "en": "Just learn it: das Radio.",
+        "fa": "فقط حفظش کنید: das Radio.",
+        "de": "Einfach lernen: das Radio."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Radio ist laut.",
+      "en": "The radio is loud.",
+      "fa": "رادیو بلند است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "party",
+    "word": "Party",
+    "article": "die",
+    "plural": "Partys",
+    "translations": {
+      "en": "party",
+      "fa": "مهمانی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Party).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Party).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Party).",
+      "simple": {
+        "en": "Just learn it: die Party.",
+        "fa": "فقط حفظش کنید: die Party.",
+        "de": "Einfach lernen: die Party."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Party ist am Samstag.",
+      "en": "The party is on Saturday.",
+      "fa": "مهمانی شنبه است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "ausflug",
+    "word": "Ausflug",
+    "article": "der",
+    "plural": "Ausflüge",
+    "translations": {
+      "en": "trip, outing",
+      "fa": "گردش"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Ausflug).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Ausflug).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Ausflug).",
+      "simple": {
+        "en": "Just learn it: der Ausflug.",
+        "fa": "فقط حفظش کنید: der Ausflug.",
+        "de": "Einfach lernen: der Ausflug."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Ausflug ist am Sonntag.",
+      "en": "The trip is on Sunday.",
+      "fa": "گردش یکشنبه است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "zelt",
+    "word": "Zelt",
+    "article": "das",
+    "plural": "Zelte",
+    "translations": {
+      "en": "tent",
+      "fa": "چادر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Zelt).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Zelt).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Zelt).",
+      "simple": {
+        "en": "Just learn it: das Zelt.",
+        "fa": "فقط حفظش کنید: das Zelt.",
+        "de": "Einfach lernen: das Zelt."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Zelt ist klein.",
+      "en": "The tent is small.",
+      "fa": "چادر کوچک است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  }
+]

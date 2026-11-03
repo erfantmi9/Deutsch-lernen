@@ -1,0 +1,361 @@
+[
+  {
+    "id": "imperative",
+    "order": 9,
+    "topic": "imperative",
+    "title": {
+      "en": "Imperative: giving instructions",
+      "fa": "امر: دستور دادن",
+      "de": "Imperativ: Aufforderungen"
+    },
+    "summary": {
+      "en": "Komm! Kommt! Kommen Sie! Three forms for three ways of saying “you”.",
+      "fa": "Komm! Kommt! Kommen Sie! سه شکل برای سه روش گفتن «تو/شما».",
+      "de": "Komm! Kommt! Kommen Sie! Drei Formen für drei Arten, „you“ zu sagen."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "du, ihr and Sie",
+          "fa": "du، ihr و Sie",
+          "de": "du, ihr und Sie"
+        },
+        "body": {
+          "en": "- **du**: the verb stem without an ending: `Komm!`, `Mach!`, `Lern!`\n- **ihr**: the same as the present tense, without `ihr`: `Kommt!`, `Macht!`\n- **Sie**: the infinitive, then `Sie`: `Kommen Sie!`, `Machen Sie!`\n\nWhen the stem ends in -t or -d, the du-form adds an -e: `Warte!`, `Arbeite!`. A separable prefix goes to the end: `Steh auf!`, `Steht auf!`, `Stehen Sie auf!`",
+          "fa": "- **du**: ریشه‌ی فعل بدون پایانه: `Komm!`، `Mach!`، `Lern!`\n- **ihr**: مثل زمان حال، اما بدون `ihr`: `Kommt!`، `Macht!`\n- **Sie**: مصدر و بعد `Sie`: `Kommen Sie!`، `Machen Sie!`\n\nوقتی ریشه به t یا d ختم می‌شود، شکل du یک e- می‌گیرد: `Warte!`، `Arbeite!`. پیشوند جداشدنی به آخر جمله می‌رود: `Steh auf!`، `Steht auf!`، `Stehen Sie auf!`",
+          "de": "- **du**: der Verbstamm ohne Endung: `Komm!`, `Mach!`, `Lern!`\n- **ihr**: wie im Präsens, aber ohne `ihr`: `Kommt!`, `Macht!`\n- **Sie**: der Infinitiv, dann `Sie`: `Kommen Sie!`, `Machen Sie!`\n\nEndet der Stamm auf -t oder -d, bekommt die du-Form ein -e: `Warte!`, `Arbeite!`. Ein trennbares Präfix steht am Ende: `Steh auf!`, `Steht auf!`, `Stehen Sie auf!`"
+        },
+        "table": {
+          "headers": ["gloss:verb", "du", "ihr", "Sie"],
+          "rows": [
+            ["kommen", "Komm!", "Kommt!", "Kommen Sie!"],
+            ["machen", "Mach!", "Macht!", "Machen Sie!"],
+            ["lernen", "Lern!", "Lernt!", "Lernen Sie!"],
+            ["warten", "Warte!", "Wartet!", "Warten Sie!"],
+            ["aufstehen", "Steh auf!", "Steht auf!", "Stehen Sie auf!"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "Verbs that change",
+          "fa": "فعل‌هایی که تغییر می‌کنند",
+          "de": "Verben, die sich verändern"
+        },
+        "body": {
+          "en": "Verbs with a stem change e → i or e → ie also change in the du-form: `Sprich!`, `Iss!`, `Lies!`, `Nimm!`. Verbs with a → ä do not change: `Fahr!`, `Schlaf!`.\n\n`sein` is irregular in all three forms: `Sei!`, `Seid!`, `Seien Sie!`",
+          "fa": "فعل‌هایی که تغییر ریشه‌ی e ← i یا e ← ie دارند، در شکل du هم تغییر می‌کنند: `Sprich!`، `Iss!`، `Lies!`، `Nimm!`. فعل‌هایی که a ← ä دارند تغییر نمی‌کنند: `Fahr!`، `Schlaf!`.\n\n`sein` در هر سه شکل بی‌قاعده است: `Sei!`، `Seid!`، `Seien Sie!`",
+          "de": "Verben mit Stammwechsel e → i oder e → ie verändern sich auch in der du-Form: `Sprich!`, `Iss!`, `Lies!`, `Nimm!`. Verben mit a → ä verändern sich nicht: `Fahr!`, `Schlaf!`.\n\n`sein` ist in allen drei Formen unregelmäßig: `Sei!`, `Seid!`, `Seien Sie!`"
+        },
+        "table": {
+          "headers": ["gloss:verb", "du", "ihr", "Sie"],
+          "rows": [
+            ["sprechen", "**Sprich**!", "Sprecht!", "Sprechen Sie!"],
+            ["essen", "**Iss**!", "Esst!", "Essen Sie!"],
+            ["lesen", "**Lies**!", "Lest!", "Lesen Sie!"],
+            ["fahren", "Fahr!", "Fahrt!", "Fahren Sie!"],
+            ["sein", "**Sei**!", "**Seid**!", "**Seien** Sie!"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "Sounding polite",
+          "fa": "مؤدب صحبت کردن",
+          "de": "Höflich klingen"
+        },
+        "body": {
+          "en": "An imperative alone can sound strict. Add `bitte` to make it friendly: `Komm bitte!`, `Sprechen Sie bitte langsam.` Use the Sie-form with people you do not know well.",
+          "fa": "امر به‌تنهایی می‌تواند خشک به نظر برسد. با افزودن `bitte` آن را دوستانه کن: `Komm bitte!`، `Sprechen Sie bitte langsam.` با کسانی که خوب نمی‌شناسی از شکل Sie استفاده کن.",
+          "de": "Ein Imperativ allein kann streng klingen. Mit `bitte` klingt er freundlich: `Komm bitte!`, `Sprechen Sie bitte langsam.` Benutze die Sie-Form bei Personen, die du nicht gut kennst."
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Komm bitte!",
+        "en": "Please come.",
+        "fa": "لطفاً بیا.",
+        "highlight": ["Komm"]
+      },
+      {
+        "de": "Macht die Hausaufgaben!",
+        "en": "Do your homework! (several people)",
+        "fa": "تکلیف‌هایتان را انجام دهید! (چند نفر)",
+        "highlight": ["Macht"]
+      },
+      {
+        "de": "Sprechen Sie bitte langsam.",
+        "en": "Please speak slowly. (formal)",
+        "fa": "لطفاً آهسته صحبت کنید. (رسمی)",
+        "highlight": ["Sprechen Sie"]
+      },
+      {
+        "de": "Sei leise!",
+        "en": "Be quiet!",
+        "fa": "ساکت باش!",
+        "highlight": ["Sei"]
+      },
+      {
+        "de": "Lies den Text.",
+        "en": "Read the text.",
+        "fa": "متن را بخوان.",
+        "highlight": ["Lies"]
+      },
+      {
+        "de": "Steh auf!",
+        "en": "Get up!",
+        "fa": "بلند شو!",
+        "highlight": ["Steh", "auf"]
+      },
+      {
+        "de": "Warte hier!",
+        "en": "Wait here.",
+        "fa": "اینجا صبر کن.",
+        "highlight": ["Warte"]
+      }
+    ],
+    "exerciseIds": [
+      "imp-01",
+      "imp-02",
+      "imp-03",
+      "imp-04",
+      "imp-05",
+      "imp-06",
+      "imp-07",
+      "imp-08",
+      "imp-09",
+      "imp-10"
+    ]
+  },
+  {
+    "id": "modal",
+    "order": 10,
+    "topic": "modal",
+    "title": {
+      "en": "Modal verbs",
+      "fa": "افعال کمکی (مودال)",
+      "de": "Modalverben"
+    },
+    "summary": {
+      "en": "können, müssen, wollen, dürfen, möchten: say what you can, must, want and may do.",
+      "fa": "können، müssen، wollen، dürfen، möchten: بگو چه کاری می‌توانی، باید، می‌خواهی و اجازه داری انجام بدهی.",
+      "de": "können, müssen, wollen, dürfen, möchten: Sage, was du kannst, musst, willst und darfst."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "The forms",
+          "fa": "شکل‌ها",
+          "de": "Die Formen"
+        },
+        "body": {
+          "en": "Modal verbs change their vowel in the singular, and ich and er/sie/es have no ending: `ich kann`, `er kann` (never “kannt”). The plural forms look like the infinitive.",
+          "fa": "فعل‌های مودال در مفرد حرف صدادارشان را عوض می‌کنند و ich و er/sie/es پایانه ندارند: `ich kann`، `er kann` (هرگز «kannt» نه). شکل‌های جمع مثل مصدر هستند.",
+          "de": "Modalverben ändern im Singular ihren Vokal, und bei ich und er/sie/es steht keine Endung: `ich kann`, `er kann` (nie „kannt“). Die Pluralformen sehen aus wie der Infinitiv."
+        },
+        "table": {
+          "headers": ["gloss:pronoun", "können", "müssen", "wollen", "dürfen", "möchten"],
+          "rows": [
+            ["ich", "kann", "muss", "will", "darf", "möchte"],
+            ["du", "kannst", "musst", "willst", "darfst", "möchtest"],
+            ["er / sie / es", "kann", "muss", "will", "darf", "möchte"],
+            ["wir", "können", "müssen", "wollen", "dürfen", "möchten"],
+            ["ihr", "könnt", "müsst", "wollt", "dürft", "möchtet"],
+            ["sie / Sie", "können", "müssen", "wollen", "dürfen", "möchten"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "What they mean",
+          "fa": "معنای آن‌ها",
+          "de": "Was sie bedeuten"
+        },
+        "body": {
+          "en": "- `können`: can, to be able to: `Ich kann schwimmen.`\n- `müssen`: must, to have to: `Du musst arbeiten.`\n- `wollen`: to want (strongly): `Wir wollen nach Berlin fahren.`\n- `möchten`: would like (polite): `Ich möchte einen Kaffee.`\n- `dürfen`: may, to be allowed to: `Darf ich hier sitzen?`\n\nCareful with negation: `Du musst nicht kommen.` means you do not have to come. `Du darfst nicht kommen.` means you are not allowed to come.",
+          "fa": "- `können`: توانستن: `Ich kann schwimmen.`\n- `müssen`: باید، مجبور بودن: `Du musst arbeiten.`\n- `wollen`: خواستن (با قاطعیت): `Wir wollen nach Berlin fahren.`\n- `möchten`: دوست داشتن، «می‌خواهم» مؤدبانه: `Ich möchte einen Kaffee.`\n- `dürfen`: اجازه داشتن: `Darf ich hier sitzen?`\n\nدر نفی دقت کن: `Du musst nicht kommen.` یعنی لازم نیست بیایی. `Du darfst nicht kommen.` یعنی اجازه نداری بیایی.",
+          "de": "- `können`: fähig sein, etwas zu tun: `Ich kann schwimmen.`\n- `müssen`: eine Pflicht haben: `Du musst arbeiten.`\n- `wollen`: etwas stark wünschen: `Wir wollen nach Berlin fahren.`\n- `möchten`: höflicher Wunsch: `Ich möchte einen Kaffee.`\n- `dürfen`: erlaubt sein: `Darf ich hier sitzen?`\n\nVorsicht bei der Verneinung: `Du musst nicht kommen.` heißt, es ist nicht nötig. `Du darfst nicht kommen.` heißt, es ist verboten."
+        }
+      },
+      {
+        "heading": {
+          "en": "The sentence frame",
+          "fa": "قاب جمله",
+          "de": "Der Satzrahmen"
+        },
+        "body": {
+          "en": "The modal verb is in position 2. The second verb stays in the infinitive and goes to the end: `Ich kann gut schwimmen.`, `Wir müssen heute arbeiten.`\n\nIn a yes/no question the modal verb comes first: `Kannst du heute kommen?` Without a second verb the modal verb can stand alone with an object: `Ich möchte einen Kaffee.`",
+          "fa": "فعل مودال در جایگاه دوم است. فعل دوم مصدر می‌ماند و به آخر جمله می‌رود: `Ich kann gut schwimmen.`، `Wir müssen heute arbeiten.`\n\nدر پرسش بله/خیر فعل مودال اول می‌آید: `Kannst du heute kommen?` اگر فعل دومی نباشد، فعل مودال می‌تواند همراه یک مفعول تنها بیاید: `Ich möchte einen Kaffee.`",
+          "de": "Das Modalverb steht auf Position 2. Das zweite Verb bleibt im Infinitiv und steht am Ende: `Ich kann gut schwimmen.`, `Wir müssen heute arbeiten.`\n\nIn einer Ja/Nein-Frage steht das Modalverb am Anfang: `Kannst du heute kommen?` Ohne zweites Verb kann das Modalverb mit einem Objekt allein stehen: `Ich möchte einen Kaffee.`"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich kann gut schwimmen.",
+        "en": "I can swim well.",
+        "fa": "من خوب شنا می‌کنم.",
+        "highlight": ["kann"]
+      },
+      {
+        "de": "Du musst heute arbeiten.",
+        "en": "You have to work today.",
+        "fa": "تو امروز باید کار کنی.",
+        "highlight": ["musst"]
+      },
+      {
+        "de": "Wir wollen nach Berlin fahren.",
+        "en": "We want to go to Berlin.",
+        "fa": "ما می‌خواهیم به برلین برویم.",
+        "highlight": ["wollen"]
+      },
+      {
+        "de": "Darf ich hier sitzen?",
+        "en": "May I sit here?",
+        "fa": "اجازه هست اینجا بنشینم؟",
+        "highlight": ["Darf"]
+      },
+      {
+        "de": "Ich möchte einen Kaffee, bitte.",
+        "en": "I would like a coffee, please.",
+        "fa": "من یک قهوه می‌خواهم، لطفاً.",
+        "highlight": ["möchte"]
+      },
+      {
+        "de": "Kannst du heute kommen?",
+        "en": "Can you come today?",
+        "fa": "می‌توانی امروز بیایی؟",
+        "highlight": ["Kannst"]
+      },
+      {
+        "de": "Ihr müsst nicht warten.",
+        "en": "You do not have to wait.",
+        "fa": "لازم نیست شما صبر کنید.",
+        "highlight": ["müsst"]
+      }
+    ],
+    "exerciseIds": [
+      "modal-01",
+      "modal-02",
+      "modal-03",
+      "modal-04",
+      "modal-05",
+      "modal-06",
+      "modal-07",
+      "modal-08",
+      "modal-09",
+      "modal-10"
+    ]
+  },
+  {
+    "id": "word-order",
+    "order": 11,
+    "topic": "word-order",
+    "title": {
+      "en": "Word order recap",
+      "fa": "مرور ترتیب کلمات",
+      "de": "Wortstellung im Überblick"
+    },
+    "summary": {
+      "en": "The verb is in position 2, questions turn things around, and some verbs move to the end.",
+      "fa": "فعل در جایگاه دوم است، پرسش‌ها ترتیب را عوض می‌کنند و بعضی فعل‌ها به آخر جمله می‌روند.",
+      "de": "Das Verb steht auf Position 2, Fragen drehen die Reihenfolge um, und manche Verben wandern ans Ende."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "The verb is in position 2",
+          "fa": "فعل در جایگاه دوم است",
+          "de": "Das Verb steht auf Position 2"
+        },
+        "body": {
+          "en": "In a statement the conjugated verb is always the second element. The first element can be the subject or something else, such as the time. If something else comes first, the subject moves behind the verb.",
+          "fa": "در جمله‌ی خبری فعل صرف‌شده همیشه عنصر دوم است. عنصر اول می‌تواند فاعل یا چیز دیگری مثل زمان باشد. اگر چیز دیگری اول بیاید، فاعل پشت فعل می‌رود.",
+          "de": "In einem Aussagesatz ist das konjugierte Verb immer das zweite Element. Das erste Element kann das Subjekt sein oder etwas anderes, zum Beispiel die Zeit. Steht etwas anderes vorn, rutscht das Subjekt hinter das Verb."
+        },
+        "table": {
+          "headers": ["1", "2", "3", "4"],
+          "rows": [
+            ["Ich", "**lerne**", "heute", "Deutsch."],
+            ["Heute", "**lerne**", "ich", "Deutsch."],
+            ["Morgen", "**fahre**", "ich", "nach Berlin."]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "Questions",
+          "fa": "پرسش‌ها",
+          "de": "Fragen"
+        },
+        "body": {
+          "en": "- Question word first, then the verb, then the subject: `Wo wohnst du?`\n- Yes/no question: the verb comes first: `Wohnst du in Berlin?`",
+          "fa": "- اول کلمه‌ی پرسشی، بعد فعل، بعد فاعل: `Wo wohnst du?`\n- پرسش بله/خیر: فعل اول می‌آید: `Wohnst du in Berlin?`",
+          "de": "- Zuerst das Fragewort, dann das Verb, dann das Subjekt: `Wo wohnst du?`\n- Ja/Nein-Frage: Das Verb steht an erster Stelle: `Wohnst du in Berlin?`"
+        }
+      },
+      {
+        "heading": {
+          "en": "Verbs at the end",
+          "fa": "فعل‌ها در آخر جمله",
+          "de": "Verben am Ende"
+        },
+        "body": {
+          "en": "- Modal verb: the second verb goes to the end: `Ich muss heute arbeiten.`\n- Separable verb: the prefix goes to the end: `Ich stehe um sieben Uhr auf.`\n- After `weil` the conjugated verb goes to the end: `Ich lerne Deutsch, weil ich in Berlin wohne.`\n- Several details: time, manner, place: `Ich fahre morgen mit dem Zug nach Berlin.`\n\nTrain these patterns with the sentence-building exercises.",
+          "fa": "- فعل مودال: فعل دوم به آخر جمله می‌رود: `Ich muss heute arbeiten.`\n- فعل جداشدنی: پیشوند به آخر جمله می‌رود: `Ich stehe um sieben Uhr auf.`\n- بعد از `weil` فعل صرف‌شده به آخر جمله می‌رود: `Ich lerne Deutsch, weil ich in Berlin wohne.`\n- چند جزء: زمان، شیوه، مکان: `Ich fahre morgen mit dem Zug nach Berlin.`\n\nاین الگوها را با تمرین‌های جمله‌سازی تمرین کن.",
+          "de": "- Modalverb: Das zweite Verb steht am Ende: `Ich muss heute arbeiten.`\n- Trennbares Verb: Das Präfix steht am Ende: `Ich stehe um sieben Uhr auf.`\n- Nach `weil` steht das konjugierte Verb am Ende: `Ich lerne Deutsch, weil ich in Berlin wohne.`\n- Mehrere Angaben: Zeit, Art und Weise, Ort: `Ich fahre morgen mit dem Zug nach Berlin.`\n\nTrainiere diese Muster mit den Satzbau-Übungen."
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Heute lerne ich Deutsch.",
+        "en": "Today I am learning German.",
+        "fa": "امروز من آلمانی یاد می‌گیرم.",
+        "highlight": ["lerne"]
+      },
+      {
+        "de": "Wo wohnst du?",
+        "en": "Where do you live?",
+        "fa": "کجا زندگی می‌کنی؟",
+        "highlight": ["wohnst"]
+      },
+      {
+        "de": "Ich muss heute arbeiten.",
+        "en": "I have to work today.",
+        "fa": "من امروز باید کار کنم.",
+        "highlight": ["muss", "arbeiten"]
+      },
+      {
+        "de": "Ich stehe um sieben Uhr auf.",
+        "en": "I get up at seven o'clock.",
+        "fa": "من ساعت هفت بیدار می‌شوم.",
+        "highlight": ["stehe", "auf"]
+      },
+      {
+        "de": "Ich lerne Deutsch, weil ich in Berlin wohne.",
+        "en": "I am learning German because I live in Berlin.",
+        "fa": "من آلمانی یاد می‌گیرم چون در برلین زندگی می‌کنم.",
+        "highlight": ["wohne"]
+      },
+      {
+        "de": "Ich fahre morgen mit dem Zug nach Berlin.",
+        "en": "Tomorrow I am going to Berlin by train.",
+        "fa": "فردا با قطار به برلین می‌روم.",
+        "highlight": ["morgen", "mit dem Zug", "nach Berlin"]
+      }
+    ],
+    "exerciseIds": [
+      "word-01",
+      "word-02",
+      "word-03",
+      "word-04",
+      "word-05",
+      "word-06",
+      "word-07",
+      "word-08",
+      "word-09"
+    ]
+  }
+]

@@ -60,8 +60,8 @@ describe("pickQuestion", () => {
     let hits = 0;
     const n = 4000;
     for (let i = 0; i < n; i++) if (pickQuestion(verbs, "present", ["sein"], null).verb.id === "sein") hits++;
-    // weight 4 of 4 + 11 others = 4/15 ≈ 26.7% vs 1/12 ≈ 8.3% unweighted
-    expect(hits / n).toBeGreaterThan(0.18);
+    // weight 4 of 4 + 39 others = 4/43 ≈ 9.3% vs 1/40 = 2.5% unweighted
+    expect(hits / n).toBeGreaterThan(0.06);
   });
   it("respects the mode", () => {
     expect(pickQuestion(verbs, "perfekt", [], null).kind).toBe("perfekt");
@@ -95,8 +95,8 @@ describe("verb helpers", () => {
     expect(perfektForms(getVerb("machen")!).ich).toBe("habe gemacht");
   });
   it("getters and filters", () => {
-    expect(getVerbsByType("modal").map((v) => v.id)).toEqual(["koennen", "muessen"]);
-    expect(filterVerbs({ type: "separable", level: "A1" })).toHaveLength(1);
+    expect(getVerbsByType("modal").map((v) => v.id)).toEqual(["koennen", "muessen", "wollen", "duerfen", "moegen"]);
+    expect(filterVerbs({ type: "separable", level: "A1" }).map((v) => v.id)).toEqual(["aufstehen", "anrufen", "einkaufen", "ankommen"]);
     expect(getVerb("nope")).toBeUndefined();
   });
 });

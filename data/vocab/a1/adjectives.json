@@ -1,0 +1,399 @@
+[
+  {
+    "id": "rot",
+    "word": "rot",
+    "translations": {
+      "en": "red",
+      "fa": "قرمز"
+    },
+    "example": {
+      "de": "Die Tomate ist rot.",
+      "en": "The tomato is red.",
+      "fa": "گوجه‌فرنگی قرمز است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "blau",
+    "word": "blau",
+    "translations": {
+      "en": "blue",
+      "fa": "آبی"
+    },
+    "example": {
+      "de": "Der Himmel ist blau.",
+      "en": "The sky is blue.",
+      "fa": "آسمان آبی است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "gruen",
+    "word": "grün",
+    "translations": {
+      "en": "green",
+      "fa": "سبز"
+    },
+    "example": {
+      "de": "Das Gras ist grün.",
+      "en": "The grass is green.",
+      "fa": "چمن سبز است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "gelb",
+    "word": "gelb",
+    "translations": {
+      "en": "yellow",
+      "fa": "زرد"
+    },
+    "example": {
+      "de": "Die Zitrone ist gelb.",
+      "en": "The lemon is yellow.",
+      "fa": "لیمو زرد است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "schwarz",
+    "word": "schwarz",
+    "opposite": "weiß",
+    "translations": {
+      "en": "black",
+      "fa": "سیاه"
+    },
+    "example": {
+      "de": "Der Kaffee ist schwarz.",
+      "en": "The coffee is black.",
+      "fa": "قهوه سیاه است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "weiss",
+    "word": "weiß",
+    "opposite": "schwarz",
+    "translations": {
+      "en": "white",
+      "fa": "سفید"
+    },
+    "example": {
+      "de": "Der Schnee ist weiß.",
+      "en": "The snow is white.",
+      "fa": "برف سفید است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "braun",
+    "word": "braun",
+    "translations": {
+      "en": "brown",
+      "fa": "قهوه‌ای"
+    },
+    "example": {
+      "de": "Der Tisch ist braun.",
+      "en": "The table is brown.",
+      "fa": "میز قهوه‌ای است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "grau",
+    "word": "grau",
+    "translations": {
+      "en": "grey",
+      "fa": "خاکستری"
+    },
+    "example": {
+      "de": "Die Wolke ist grau.",
+      "en": "The cloud is grey.",
+      "fa": "ابر خاکستری است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "bunt",
+    "word": "bunt",
+    "translations": {
+      "en": "colourful",
+      "fa": "رنگارنگ"
+    },
+    "example": {
+      "de": "Das Bild ist bunt.",
+      "en": "The picture is colourful.",
+      "fa": "تصویر رنگارنگ است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "gut",
+    "word": "gut",
+    "comparative": "besser",
+    "superlative": "am besten",
+    "opposite": "schlecht",
+    "translations": {
+      "en": "good",
+      "fa": "خوب"
+    },
+    "example": {
+      "de": "Das Essen ist gut.",
+      "en": "The food is good.",
+      "fa": "غذا خوب است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "gross",
+    "word": "groß",
+    "comparative": "größer",
+    "superlative": "am größten",
+    "opposite": "klein",
+    "translations": {
+      "en": "big, tall",
+      "fa": "بزرگ، قدبلند"
+    },
+    "example": {
+      "de": "Das Haus ist groß.",
+      "en": "The house is big.",
+      "fa": "خانه بزرگ است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "klein",
+    "word": "klein",
+    "comparative": "kleiner",
+    "superlative": "am kleinsten",
+    "opposite": "groß",
+    "translations": {
+      "en": "small",
+      "fa": "کوچک"
+    },
+    "example": {
+      "de": "Die Wohnung ist klein.",
+      "en": "The flat is small.",
+      "fa": "آپارتمان کوچک است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "neu",
+    "word": "neu",
+    "comparative": "neuer",
+    "superlative": "am neuesten",
+    "opposite": "alt",
+    "translations": {
+      "en": "new",
+      "fa": "جدید"
+    },
+    "example": {
+      "de": "Mein Handy ist neu.",
+      "en": "My mobile phone is new.",
+      "fa": "گوشی من جدید است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "alt",
+    "word": "alt",
+    "comparative": "älter",
+    "superlative": "am ältesten",
+    "opposite": "neu",
+    "translations": {
+      "en": "old",
+      "fa": "قدیمی، پیر"
+    },
+    "example": {
+      "de": "Das Auto ist alt.",
+      "en": "The car is old.",
+      "fa": "ماشین قدیمی است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "jung",
+    "word": "jung",
+    "comparative": "jünger",
+    "superlative": "am jüngsten",
+    "opposite": "alt",
+    "translations": {
+      "en": "young",
+      "fa": "جوان"
+    },
+    "example": {
+      "de": "Meine Schwester ist jung.",
+      "en": "My sister is young.",
+      "fa": "خواهر من جوان است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "schnell",
+    "word": "schnell",
+    "comparative": "schneller",
+    "superlative": "am schnellsten",
+    "opposite": "langsam",
+    "translations": {
+      "en": "fast",
+      "fa": "سریع"
+    },
+    "example": {
+      "de": "Der Zug ist schnell.",
+      "en": "The train is fast.",
+      "fa": "قطار سریع است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "teuer",
+    "word": "teuer",
+    "comparative": "teurer",
+    "superlative": "am teuersten",
+    "opposite": "billig",
+    "translations": {
+      "en": "expensive",
+      "fa": "گران"
+    },
+    "example": {
+      "de": "Der Mantel ist teuer.",
+      "en": "The coat is expensive.",
+      "fa": "پالتو گران است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "billig",
+    "word": "billig",
+    "comparative": "billiger",
+    "superlative": "am billigsten",
+    "opposite": "teuer",
+    "translations": {
+      "en": "cheap",
+      "fa": "ارزان"
+    },
+    "example": {
+      "de": "Das Brot ist billig.",
+      "en": "The bread is cheap.",
+      "fa": "نان ارزان است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "kalt",
+    "word": "kalt",
+    "comparative": "kälter",
+    "superlative": "am kältesten",
+    "opposite": "warm",
+    "translations": {
+      "en": "cold",
+      "fa": "سرد"
+    },
+    "example": {
+      "de": "Das Wasser ist kalt.",
+      "en": "The water is cold.",
+      "fa": "آب سرد است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "warm",
+    "word": "warm",
+    "comparative": "wärmer",
+    "superlative": "am wärmsten",
+    "opposite": "kalt",
+    "translations": {
+      "en": "warm",
+      "fa": "گرم"
+    },
+    "example": {
+      "de": "Die Suppe ist warm.",
+      "en": "The soup is warm.",
+      "fa": "سوپ گرم است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "heiss",
+    "word": "heiß",
+    "comparative": "heißer",
+    "superlative": "am heißesten",
+    "opposite": "kalt",
+    "translations": {
+      "en": "hot",
+      "fa": "داغ، خیلی گرم"
+    },
+    "example": {
+      "de": "Der Tee ist heiß.",
+      "en": "The tea is hot.",
+      "fa": "چای داغ است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "schoen",
+    "word": "schön",
+    "comparative": "schöner",
+    "superlative": "am schönsten",
+    "opposite": "hässlich",
+    "translations": {
+      "en": "beautiful, nice",
+      "fa": "زیبا، دلپذیر"
+    },
+    "example": {
+      "de": "Das Wetter ist schön.",
+      "en": "The weather is nice.",
+      "fa": "هوا خوب است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "lang",
+    "word": "lang",
+    "comparative": "länger",
+    "superlative": "am längsten",
+    "opposite": "kurz",
+    "translations": {
+      "en": "long",
+      "fa": "بلند، طولانی"
+    },
+    "example": {
+      "de": "Der Fluss ist lang.",
+      "en": "The river is long.",
+      "fa": "رودخانه طولانی است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "muede",
+    "word": "müde",
+    "translations": {
+      "en": "tired",
+      "fa": "خسته"
+    },
+    "example": {
+      "de": "Ich bin müde.",
+      "en": "I am tired.",
+      "fa": "من خسته‌ام."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "freundlich",
+    "word": "freundlich",
+    "comparative": "freundlicher",
+    "superlative": "am freundlichsten",
+    "opposite": "unfreundlich",
+    "translations": {
+      "en": "friendly",
+      "fa": "مهربان، دوستانه"
+    },
+    "example": {
+      "de": "Die Verkäuferin ist freundlich.",
+      "en": "The saleswoman is friendly.",
+      "fa": "فروشنده مهربان است."
+    },
+    "level": "A1"
+  }
+]

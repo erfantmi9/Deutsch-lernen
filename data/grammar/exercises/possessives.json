@@ -1,0 +1,138 @@
+[
+  {
+    "id": "poss-01",
+    "lessonId": "possessives",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct possessive article.", "fa": "آرتیکل ملکی درست را انتخاب کن.", "de": "Wähle den richtigen Possessivartikel." },
+    "sentenceDe": "Das ist ___ Mutter. (ich)",
+    "options": ["mein", "meine", "meinen"],
+    "answer": "meine",
+    "explanation": {
+      "en": "die Mutter is feminine, so mein gets the ending -e: meine Mutter.",
+      "fa": "die Mutter مؤنث است، پس mein پایانه‌ی e- می‌گیرد: meine Mutter.",
+      "de": "die Mutter ist feminin, also bekommt mein die Endung -e: meine Mutter."
+    }
+  },
+  {
+    "id": "poss-02",
+    "lessonId": "possessives",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct possessive article.", "fa": "آرتیکل ملکی درست را انتخاب کن.", "de": "Wähle den richtigen Possessivartikel." },
+    "sentenceDe": "Das ist ___ Vater. (du)",
+    "options": ["dein", "deine", "deinen"],
+    "answer": "dein",
+    "explanation": {
+      "en": "After sein the noun is nominative. Masculine nominative has no ending: dein Vater.",
+      "fa": "بعد از sein اسم فاعلی است. مذکر در حالت فاعلی پایانه ندارد: dein Vater.",
+      "de": "Nach sein steht das Nomen im Nominativ. Maskulin im Nominativ hat keine Endung: dein Vater."
+    }
+  },
+  {
+    "id": "poss-03",
+    "lessonId": "possessives",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct possessive article.", "fa": "آرتیکل ملکی درست را انتخاب کن.", "de": "Wähle den richtigen Possessivartikel." },
+    "sentenceDe": "Ich besuche ___ Vater. (ich)",
+    "options": ["mein", "meine", "meinen"],
+    "answer": "meinen",
+    "explanation": {
+      "en": "der Vater is the masculine object (accusative), so mein gets -en: meinen Vater.",
+      "fa": "der Vater مفعول مذکر (Akkusativ) است، پس mein پایانه‌ی en- می‌گیرد: meinen Vater.",
+      "de": "der Vater ist das maskuline Objekt (Akkusativ), also bekommt mein -en: meinen Vater."
+    }
+  },
+  {
+    "id": "poss-04",
+    "lessonId": "possessives",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct possessive article.", "fa": "آرتیکل ملکی درست را انتخاب کن.", "de": "Wähle den richtigen Possessivartikel." },
+    "sentenceDe": "Wo ist ___ Tasche? (du)",
+    "options": ["dein", "deine", "deinen"],
+    "answer": "deine",
+    "explanation": {
+      "en": "die Tasche is feminine: deine Tasche.",
+      "fa": "die Tasche مؤنث است: deine Tasche.",
+      "de": "die Tasche ist feminin: deine Tasche."
+    }
+  },
+  {
+    "id": "poss-05",
+    "lessonId": "possessives",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct possessive article.", "fa": "آرتیکل ملکی درست را انتخاب کن.", "de": "Wähle den richtigen Possessivartikel." },
+    "sentenceDe": "Er liebt ___ Frau. (er)",
+    "options": ["sein", "seine", "seinen"],
+    "answer": "seine",
+    "explanation": {
+      "en": "The owner is er, so the base is sein. die Frau is feminine: seine Frau.",
+      "fa": "صاحب er است، پس پایه sein است. die Frau مؤنث است: seine Frau.",
+      "de": "Der Besitzer ist er, also ist die Basis sein. die Frau ist feminin: seine Frau."
+    }
+  },
+  {
+    "id": "poss-06",
+    "lessonId": "possessives",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct possessive article.", "fa": "آرتیکل ملکی درست را انتخاب کن.", "de": "Wähle den richtigen Possessivartikel." },
+    "sentenceDe": "Sie liebt ___ Hund. (sie)",
+    "options": ["ihr", "ihre", "ihren"],
+    "answer": "ihren",
+    "explanation": {
+      "en": "The owner is sie, so the base is ihr. der Hund is the masculine object: ihren Hund.",
+      "fa": "صاحب sie است، پس پایه ihr است. der Hund مفعول مذکر است: ihren Hund.",
+      "de": "Der Besitzer ist sie, also ist die Basis ihr. der Hund ist das maskuline Objekt: ihren Hund."
+    }
+  },
+  {
+    "id": "poss-07",
+    "lessonId": "possessives",
+    "type": "fill",
+    "prompt": { "en": "Type the possessive article.", "fa": "آرتیکل ملکی را بنویس.", "de": "Schreibe den Possessivartikel." },
+    "sentenceDe": "Wir lieben ___ Haus. (wir)",
+    "answer": "unser",
+    "explanation": {
+      "en": "das Haus is neuter and has no ending, even in the accusative: unser Haus.",
+      "fa": "das Haus خنثی است و حتی در حالت مفعولی پایانه ندارد: unser Haus.",
+      "de": "das Haus ist neutral und hat auch im Akkusativ keine Endung: unser Haus."
+    }
+  },
+  {
+    "id": "poss-08",
+    "lessonId": "possessives",
+    "type": "fill",
+    "prompt": { "en": "Type the possessive article.", "fa": "آرتیکل ملکی را بنویس.", "de": "Schreibe den Possessivartikel." },
+    "sentenceDe": "Habt ihr ___ Schlüssel? (ihr)",
+    "answer": "euren",
+    "explanation": {
+      "en": "der Schlüssel is the masculine object. euer loses its second e: euren Schlüssel.",
+      "fa": "der Schlüssel مفعول مذکر است. در euer حرف e دوم حذف می‌شود: euren Schlüssel.",
+      "de": "der Schlüssel ist das maskuline Objekt. euer verliert das zweite e: euren Schlüssel."
+    }
+  },
+  {
+    "id": "poss-09",
+    "lessonId": "possessives",
+    "type": "transform",
+    "prompt": { "en": "Say that the children belong to us.", "fa": "بگو که این بچه‌ها مال ما هستند.", "de": "Sage, dass die Kinder zu uns gehören." },
+    "sentenceDe": "Wir haben zwei Kinder. → Das sind ___ Kinder.",
+    "answer": "unsere",
+    "explanation": {
+      "en": "Kinder is plural, so unser gets -e: unsere Kinder.",
+      "fa": "Kinder جمع است، پس unser پایانه‌ی e- می‌گیرد: unsere Kinder.",
+      "de": "Kinder ist Plural, also bekommt unser -e: unsere Kinder."
+    }
+  },
+  {
+    "id": "poss-10",
+    "lessonId": "possessives",
+    "type": "fill",
+    "prompt": { "en": "Type the formal possessive article.", "fa": "آرتیکل ملکی رسمی را بنویس.", "de": "Schreibe den formellen Possessivartikel." },
+    "sentenceDe": "Wie ist ___ Name? (Sie)",
+    "answer": "Ihr",
+    "explanation": {
+      "en": "The formal “your” is Ihr, written with a capital I. der Name is masculine nominative: Ihr Name.",
+      "fa": "«مال شما» در خطاب رسمی Ihr است و با I بزرگ نوشته می‌شود. der Name مذکر در حالت فاعلی است: Ihr Name.",
+      "de": "Das formelle „your“ ist Ihr, mit großem I geschrieben. der Name ist maskulin im Nominativ: Ihr Name."
+    }
+  }
+]

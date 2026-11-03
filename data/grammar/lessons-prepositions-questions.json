@@ -1,0 +1,361 @@
+[
+  {
+    "id": "dative",
+    "order": 6,
+    "topic": "prepositions",
+    "title": {
+      "en": "Dativ with mit, nach, zu, bei, von",
+      "fa": "حالت داتیو با mit، nach، zu، bei، von",
+      "de": "Dativ mit mit, nach, zu, bei, von"
+    },
+    "summary": {
+      "en": "Five small words that are always followed by the dative: dem, der, dem, den.",
+      "fa": "پنج کلمه‌ی کوچک که همیشه بعدشان حالت داتیو می‌آید: dem، der، dem، den.",
+      "de": "Fünf kleine Wörter, nach denen immer der Dativ steht: dem, der, dem, den."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "Five prepositions, always dative",
+          "fa": "پنج حرف اضافه، همیشه داتیو",
+          "de": "Fünf Präpositionen, immer Dativ"
+        },
+        "body": {
+          "en": "These five prepositions are always followed by the dative:\n\n- `mit`: with, by (means of transport): `mit dem Bus`\n- `nach`: to (cities, countries, `nach Hause`) and after: `nach Berlin`, `nach dem Essen`\n- `zu`: to (people and places): `zum Arzt`, `zur Schule`\n- `bei`: at, with (someone's place or work): `bei meiner Tante`, `beim Arzt`\n- `von`: from, of: `von meinem Bruder`",
+          "fa": "بعد از این پنج حرف اضافه همیشه حالت داتیو می‌آید:\n\n- `mit`: با، به‌وسیله‌ی (وسیله‌ی نقلیه): `mit dem Bus`\n- `nach`: به (شهرها، کشورها، `nach Hause`) و بعد از: `nach Berlin`، `nach dem Essen`\n- `zu`: به سوی (آدم‌ها و مکان‌ها): `zum Arzt`، `zur Schule`\n- `bei`: نزد، پیش (خانه یا محل کار کسی): `bei meiner Tante`، `beim Arzt`\n- `von`: از، متعلق به: `von meinem Bruder`",
+          "de": "Nach diesen fünf Präpositionen steht immer der Dativ:\n\n- `mit`: mit, per (Verkehrsmittel): `mit dem Bus`\n- `nach`: zu (Städte, Länder, `nach Hause`) und danach: `nach Berlin`, `nach dem Essen`\n- `zu`: zu (Personen und Orte): `zum Arzt`, `zur Schule`\n- `bei`: bei (Wohnort oder Arbeitsplatz einer Person): `bei meiner Tante`, `beim Arzt`\n- `von`: von, aus: `von meinem Bruder`"
+        }
+      },
+      {
+        "heading": {
+          "en": "The dative articles",
+          "fa": "آرتیکل‌ها در حالت داتیو",
+          "de": "Die Artikel im Dativ"
+        },
+        "body": {
+          "en": "The dative answers the question **wem?** (to whom?). Masculine and neuter share `dem` / `einem`, feminine has `der` / `einer`, and the plural has `den`. In the dative plural the noun usually gets an extra -n: `mit den Kindern`.",
+          "fa": "حالت داتیو به پرسش **wem؟** (به چه کسی؟) پاسخ می‌دهد. مذکر و خنثی هر دو `dem` / `einem` می‌گیرند، مؤنث `der` / `einer` دارد و جمع `den`. در جمع داتیو اسم معمولاً n- اضافه می‌گیرد: `mit den Kindern`.",
+          "de": "Der Dativ antwortet auf die Frage **wem?**. Maskulin und neutral haben beide `dem` / `einem`, feminin hat `der` / `einer`, der Plural hat `den`. Im Dativ Plural bekommt das Nomen meistens ein zusätzliches -n: `mit den Kindern`."
+        },
+        "table": {
+          "headers": ["gloss:case", "gloss:masculine", "gloss:feminine", "gloss:neuter", "gloss:plural"],
+          "rows": [
+            ["gloss:nominative", "der / ein", "die / eine", "das / ein", "die / —"],
+            ["gloss:accusative", "den / einen", "die / eine", "das / ein", "die / —"],
+            ["gloss:dative", "**dem** / **einem**", "**der** / **einer**", "**dem** / **einem**", "**den** / —"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "Contractions and fixed phrases",
+          "fa": "ادغام‌ها و عبارت‌های ثابت",
+          "de": "Verschmelzungen und feste Wendungen"
+        },
+        "body": {
+          "en": "Some prepositions merge with the article: `zu` + `dem` = `zum`, `zu` + `der` = `zur`, `bei` + `dem` = `beim`, `von` + `dem` = `vom`.\n\nLearn these phrases as blocks. `bei` and `zu Hause` answer **wo?**, while `zu` and `nach Hause` answer **wohin?**:\n\n- `Ich bin zu Hause.` / `Ich komme nach Hause.`\n- `Ich bin beim Arzt.` / `Ich gehe zum Arzt.`\n- `Ich gehe zur Schule.`",
+          "fa": "بعضی حروف اضافه با آرتیکل ادغام می‌شوند: `zu` + `dem` = `zum`، `zu` + `der` = `zur`، `bei` + `dem` = `beim`، `von` + `dem` = `vom`.\n\nاین عبارت‌ها را یکجا یاد بگیر. `bei` و `zu Hause` به **wo؟** (کجا؟) پاسخ می‌دهند، اما `zu` و `nach Hause` به **wohin؟** (به کجا؟):\n\n- `Ich bin zu Hause.` / `Ich komme nach Hause.`\n- `Ich bin beim Arzt.` / `Ich gehe zum Arzt.`\n- `Ich gehe zur Schule.`",
+          "de": "Manche Präpositionen verschmelzen mit dem Artikel: `zu` + `dem` = `zum`, `zu` + `der` = `zur`, `bei` + `dem` = `beim`, `von` + `dem` = `vom`.\n\nLerne diese Wendungen als Block. `bei` und `zu Hause` antworten auf **wo?**, `zu` und `nach Hause` auf **wohin?**:\n\n- `Ich bin zu Hause.` / `Ich komme nach Hause.`\n- `Ich bin beim Arzt.` / `Ich gehe zum Arzt.`\n- `Ich gehe zur Schule.`"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich fahre mit dem Bus.",
+        "en": "I go by bus.",
+        "fa": "من با اتوبوس می‌روم.",
+        "highlight": ["mit dem"]
+      },
+      {
+        "de": "Ich wohne bei meiner Tante.",
+        "en": "I live with my aunt.",
+        "fa": "من نزد عمه یا خاله‌ام زندگی می‌کنم.",
+        "highlight": ["bei meiner"]
+      },
+      {
+        "de": "Wir gehen zur Schule.",
+        "en": "We are going to school.",
+        "fa": "ما به مدرسه می‌رویم.",
+        "highlight": ["zur"]
+      },
+      {
+        "de": "Er geht zum Arzt.",
+        "en": "He is going to the doctor.",
+        "fa": "او پیش دکتر می‌رود.",
+        "highlight": ["zum"]
+      },
+      {
+        "de": "Ich komme nach Hause.",
+        "en": "I am coming home.",
+        "fa": "من به خانه می‌آیم.",
+        "highlight": ["nach Hause"]
+      },
+      {
+        "de": "Nach dem Essen trinke ich Tee.",
+        "en": "After the meal I drink tea.",
+        "fa": "بعد از غذا چای می‌نوشم.",
+        "highlight": ["Nach dem"]
+      },
+      {
+        "de": "Das Buch ist von meinem Bruder.",
+        "en": "The book is from my brother.",
+        "fa": "این کتاب از برادرم است.",
+        "highlight": ["von meinem"]
+      }
+    ],
+    "exerciseIds": [
+      "dat-01",
+      "dat-02",
+      "dat-03",
+      "dat-04",
+      "dat-05",
+      "dat-06",
+      "dat-07",
+      "dat-08",
+      "dat-09",
+      "dat-10"
+    ]
+  },
+  {
+    "id": "wechsel",
+    "order": 7,
+    "topic": "prepositions",
+    "title": {
+      "en": "in, an, auf: wo? or wohin?",
+      "fa": "in، an، auf: کجا؟ یا به کجا؟",
+      "de": "in, an, auf: wo? oder wohin?"
+    },
+    "summary": {
+      "en": "Staying in a place uses the dative, going to a place uses the accusative.",
+      "fa": "ماندن در یک مکان از داتیو استفاده می‌کند و رفتن به یک مکان از مفعولی.",
+      "de": "Wer an einem Ort bleibt, nimmt den Dativ; wer zu einem Ort geht, nimmt den Akkusativ."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "Two questions, two cases",
+          "fa": "دو پرسش، دو حالت",
+          "de": "Zwei Fragen, zwei Fälle"
+        },
+        "body": {
+          "en": "Some prepositions can be followed by the dative or the accusative. At A1 you only need `in`, `an` and `auf`. Ask yourself:\n\n- **Wo?** (where? no movement) → dative: `Ich bin in der Stadt.`\n- **Wohin?** (where to? movement) → accusative: `Ich fahre in die Stadt.`",
+          "fa": "بعد از بعضی حروف اضافه می‌تواند داتیو یا مفعولی بیاید. در سطح A1 فقط `in`، `an` و `auf` را لازم داری. از خودت بپرس:\n\n- **Wo؟** (کجا؟ بدون حرکت) ← داتیو: `Ich bin in der Stadt.`\n- **Wohin؟** (به کجا؟ همراه حرکت) ← مفعولی: `Ich fahre in die Stadt.`",
+          "de": "Nach manchen Präpositionen kann der Dativ oder der Akkusativ stehen. Auf A1 brauchst du nur `in`, `an` und `auf`. Frage dich:\n\n- **Wo?** (kein Wechsel des Ortes) → Dativ: `Ich bin in der Stadt.`\n- **Wohin?** (Bewegung zu einem Ort) → Akkusativ: `Ich fahre in die Stadt.`"
+        },
+        "table": {
+          "headers": ["gloss:preposition", "wo?", "wohin?"],
+          "rows": [
+            ["gloss:case", "gloss:dative", "gloss:accusative"],
+            ["in", "in **der** Stadt", "in **die** Stadt"],
+            ["an", "an **dem** Meer", "an **das** Meer"],
+            ["auf", "auf **dem** Markt", "auf **den** Markt"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "What the three words mean",
+          "fa": "معنای این سه کلمه",
+          "de": "Was die drei Wörter bedeuten"
+        },
+        "body": {
+          "en": "- `in`: inside a room, building, city or country: `in der Küche`, `in die Schule`\n- `an`: at the edge or next to something, for example the sea, a door, a lake: `am Meer`\n- `auf`: on top of a surface or at an event or place such as a market: `auf dem Markt`\n\nThey often merge with the article: `in dem` = `im`, `an dem` = `am`, `in das` = `ins`, `an das` = `ans`.",
+          "fa": "- `in`: داخل یک اتاق، ساختمان، شهر یا کشور: `in der Küche`، `in die Schule`\n- `an`: کنار یا لبه‌ی چیزی، مثلاً دریا، در یا دریاچه: `am Meer`\n- `auf`: روی سطح چیزی یا در یک رویداد یا مکان مثل بازار: `auf dem Markt`\n\nاین‌ها اغلب با آرتیکل ادغام می‌شوند: `in dem` = `im`، `an dem` = `am`، `in das` = `ins`، `an das` = `ans`.",
+          "de": "- `in`: innerhalb eines Raums, Gebäudes, einer Stadt oder eines Landes: `in der Küche`, `in die Schule`\n- `an`: am Rand oder neben etwas, zum Beispiel Meer, Tür, See: `am Meer`\n- `auf`: oben auf einer Fläche oder bei einem Ort wie dem Markt: `auf dem Markt`\n\nSie verschmelzen oft mit dem Artikel: `in dem` = `im`, `an dem` = `am`, `in das` = `ins`, `an das` = `ans`."
+        }
+      },
+      {
+        "heading": {
+          "en": "Let the verb help you",
+          "fa": "بگذار فعل به تو کمک کند",
+          "de": "Das Verb hilft dir"
+        },
+        "body": {
+          "en": "Verbs of staying answer **wo?** and take the dative: `sein`, `wohnen`, `bleiben`.\n\nVerbs of moving answer **wohin?** and take the accusative: `gehen`, `fahren`.\n\n- `Ich bin im Kino.` / `Ich gehe ins Kino.`\n- `Ich bleibe im Haus.` / `Ich gehe ins Haus.`",
+          "fa": "فعل‌های ماندن به **wo؟** پاسخ می‌دهند و داتیو می‌گیرند: `sein`، `wohnen`، `bleiben`.\n\nفعل‌های حرکت به **wohin؟** پاسخ می‌دهند و مفعولی می‌گیرند: `gehen`، `fahren`.\n\n- `Ich bin im Kino.` / `Ich gehe ins Kino.`\n- `Ich bleibe im Haus.` / `Ich gehe ins Haus.`",
+          "de": "Verben des Bleibens antworten auf **wo?** und verlangen den Dativ: `sein`, `wohnen`, `bleiben`.\n\nVerben der Bewegung antworten auf **wohin?** und verlangen den Akkusativ: `gehen`, `fahren`.\n\n- `Ich bin im Kino.` / `Ich gehe ins Kino.`\n- `Ich bleibe im Haus.` / `Ich gehe ins Haus.`"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bin in der Küche.",
+        "en": "I am in the kitchen.",
+        "fa": "من در آشپزخانه هستم.",
+        "highlight": ["in der"]
+      },
+      {
+        "de": "Ich gehe in die Küche.",
+        "en": "I am going into the kitchen.",
+        "fa": "من به آشپزخانه می‌روم.",
+        "highlight": ["in die"]
+      },
+      {
+        "de": "Er ist im Park.",
+        "en": "He is in the park.",
+        "fa": "او در پارک است.",
+        "highlight": ["im"]
+      },
+      {
+        "de": "Er geht in den Park.",
+        "en": "He is going into the park.",
+        "fa": "او به پارک می‌رود.",
+        "highlight": ["in den"]
+      },
+      {
+        "de": "Wir sind am Meer.",
+        "en": "We are at the sea.",
+        "fa": "ما کنار دریا هستیم.",
+        "highlight": ["am"]
+      },
+      {
+        "de": "Wir fahren ans Meer.",
+        "en": "We are going to the sea.",
+        "fa": "ما به کنار دریا می‌رویم.",
+        "highlight": ["ans"]
+      },
+      {
+        "de": "Sie geht auf den Markt.",
+        "en": "She is going to the market.",
+        "fa": "او به بازار می‌رود.",
+        "highlight": ["auf den"]
+      }
+    ],
+    "exerciseIds": [
+      "wech-01",
+      "wech-02",
+      "wech-03",
+      "wech-04",
+      "wech-05",
+      "wech-06",
+      "wech-07",
+      "wech-08",
+      "wech-09",
+      "wech-10"
+    ]
+  },
+  {
+    "id": "questions",
+    "order": 8,
+    "topic": "questions",
+    "title": {
+      "en": "Question words",
+      "fa": "کلمه‌های پرسشی",
+      "de": "Fragewörter"
+    },
+    "summary": {
+      "en": "wer, was, wo, woher, wohin, wann, wie, warum, wie viel: ask for exactly what you want to know.",
+      "fa": "wer، was، wo، woher، wohin، wann، wie، warum، wie viel: دقیقاً همان چیزی را بپرس که می‌خواهی بدانی.",
+      "de": "wer, was, wo, woher, wohin, wann, wie, warum, wie viel: Frage genau nach dem, was du wissen willst."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "The question words",
+          "fa": "کلمه‌های پرسشی",
+          "de": "Die Fragewörter"
+        },
+        "body": {
+          "en": "- `wer`: who (a person)\n- `was`: what (a thing or an action)\n- `wo`: where (a place, no movement)\n- `woher`: where from\n- `wohin`: where to\n- `wann`: when (time)\n- `wie`: how\n- `warum`: why\n- `wie viel`: how much (`wie viele` = how many)",
+          "fa": "- `wer`: چه کسی (یک آدم)\n- `was`: چه چیزی (یک چیز یا یک کار)\n- `wo`: کجا (یک مکان، بدون حرکت)\n- `woher`: از کجا\n- `wohin`: به کجا\n- `wann`: کی (زمان)\n- `wie`: چطور\n- `warum`: چرا\n- `wie viel`: چقدر (`wie viele` = چند تا)",
+          "de": "- `wer`: fragt nach einer Person\n- `was`: fragt nach einer Sache oder einer Handlung\n- `wo`: fragt nach dem Ort (keine Bewegung)\n- `woher`: fragt nach dem Ausgangsort\n- `wohin`: fragt nach dem Ziel\n- `wann`: fragt nach der Zeit\n- `wie`: fragt nach der Art und Weise\n- `warum`: fragt nach dem Grund\n- `wie viel`: fragt nach der Menge (`wie viele` bei Dingen, die man zählt)"
+        },
+        "table": {
+          "headers": ["gloss:question-word", "gloss:example"],
+          "rows": [
+            ["wer?", "**Wer** ist das?"],
+            ["was?", "**Was** machst du?"],
+            ["wo?", "**Wo** wohnst du?"],
+            ["woher?", "**Woher** kommst du?"],
+            ["wohin?", "**Wohin** gehst du?"],
+            ["wann?", "**Wann** kommt der Zug?"],
+            ["wie?", "**Wie** heißt du?"],
+            ["warum?", "**Warum** lernst du Deutsch?"],
+            ["wie viel?", "**Wie viel** kostet das?"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "Three that are easy to mix up",
+          "fa": "سه کلمه که راحت با هم اشتباه می‌شوند",
+          "de": "Drei, die man leicht verwechselt"
+        },
+        "body": {
+          "en": "`wo`, `woher` and `wohin` all ask about places:\n\n- `Wo wohnst du?` – `In Berlin.` (where are you?)\n- `Woher kommst du?` – `Aus Spanien.` (where do you start from?)\n- `Wohin gehst du?` – `Ins Kino.` (where are you heading?)\n\n`wie viel` is for amounts you do not count, like money: `Wie viel kostet das?` For things you can count, use `wie viele`: `Wie viele Kinder hast du?`",
+          "fa": "`wo`، `woher` و `wohin` همه درباره‌ی مکان می‌پرسند:\n\n- `Wo wohnst du?` – `In Berlin.` (کجا هستی؟)\n- `Woher kommst du?` – `Aus Spanien.` (از کجا شروع می‌کنی؟)\n- `Wohin gehst du?` – `Ins Kino.` (به کجا می‌روی؟)\n\n`wie viel` برای مقدارهایی است که نمی‌شمری، مثل پول: `Wie viel kostet das?` برای چیزهایی که می‌شود شمرد از `wie viele` استفاده کن: `Wie viele Kinder hast du?`",
+          "de": "`wo`, `woher` und `wohin` fragen alle nach Orten:\n\n- `Wo wohnst du?` – `In Berlin.` (Wo bist du?)\n- `Woher kommst du?` – `Aus Spanien.` (Wo beginnt dein Weg?)\n- `Wohin gehst du?` – `Ins Kino.` (Wo willst du hin?)\n\n`wie viel` benutzt man für Mengen, die man nicht zählt, zum Beispiel Geld: `Wie viel kostet das?` Bei zählbaren Dingen sagt man `wie viele`: `Wie viele Kinder hast du?`"
+        }
+      },
+      {
+        "heading": {
+          "en": "Word order in questions",
+          "fa": "ترتیب کلمات در پرسش",
+          "de": "Wortstellung in Fragen"
+        },
+        "body": {
+          "en": "In a question with a question word, the order is: question word, verb, subject: `Wo wohnst du?`\n\nIn a yes/no question the verb comes first: `Wohnst du in Berlin?` – `Ja, ich wohne in Berlin.` or `Nein, ich wohne in Wien.`",
+          "fa": "در پرسشی که کلمه‌ی پرسشی دارد ترتیب این است: کلمه‌ی پرسشی، فعل، فاعل: `Wo wohnst du?`\n\nدر پرسش بله/خیر فعل اول می‌آید: `Wohnst du in Berlin?` – `Ja, ich wohne in Berlin.` یا `Nein, ich wohne in Wien.`",
+          "de": "In einer Frage mit Fragewort ist die Reihenfolge: Fragewort, Verb, Subjekt: `Wo wohnst du?`\n\nIn einer Ja/Nein-Frage steht das Verb an erster Stelle: `Wohnst du in Berlin?` – `Ja, ich wohne in Berlin.` oder `Nein, ich wohne in Wien.`"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Wer ist das?",
+        "en": "Who is that?",
+        "fa": "این کیست؟",
+        "highlight": ["Wer"]
+      },
+      {
+        "de": "Was machst du?",
+        "en": "What are you doing?",
+        "fa": "چه کار می‌کنی؟",
+        "highlight": ["Was"]
+      },
+      {
+        "de": "Woher kommst du?",
+        "en": "Where do you come from?",
+        "fa": "اهل کجا هستی؟",
+        "highlight": ["Woher"]
+      },
+      {
+        "de": "Wohin gehst du?",
+        "en": "Where are you going?",
+        "fa": "به کجا می‌روی؟",
+        "highlight": ["Wohin"]
+      },
+      {
+        "de": "Wann kommt der Zug?",
+        "en": "When does the train arrive?",
+        "fa": "قطار کی می‌رسد؟",
+        "highlight": ["Wann"]
+      },
+      {
+        "de": "Warum lernst du Deutsch?",
+        "en": "Why are you learning German?",
+        "fa": "چرا آلمانی یاد می‌گیری؟",
+        "highlight": ["Warum"]
+      },
+      {
+        "de": "Wie viel kostet das?",
+        "en": "How much does that cost?",
+        "fa": "این چقدر قیمت دارد؟",
+        "highlight": ["Wie viel"]
+      }
+    ],
+    "exerciseIds": [
+      "quest-01",
+      "quest-02",
+      "quest-03",
+      "quest-04",
+      "quest-05",
+      "quest-06",
+      "quest-07",
+      "quest-08",
+      "quest-09",
+      "quest-10",
+      "quest-11"
+    ]
+  }
+]

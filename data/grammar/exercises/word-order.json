@@ -1,0 +1,125 @@
+[
+  {
+    "id": "word-01",
+    "lessonId": "word-order",
+    "type": "choice",
+    "prompt": { "en": "Which word belongs in position 2?", "fa": "کدام کلمه در جایگاه دوم می‌آید؟", "de": "Welches Wort gehört auf Position 2?" },
+    "sentenceDe": "Am Montag ___ ich zur Schule.",
+    "options": ["gehe", "Schule", "Montag"],
+    "answer": "gehe",
+    "explanation": {
+      "en": "The conjugated verb is always in position 2: Am Montag gehe ich zur Schule.",
+      "fa": "فعل صرف‌شده همیشه در جایگاه دوم است: Am Montag gehe ich zur Schule.",
+      "de": "Das konjugierte Verb steht immer auf Position 2: Am Montag gehe ich zur Schule."
+    }
+  },
+  {
+    "id": "word-02",
+    "lessonId": "word-order",
+    "type": "transform",
+    "prompt": { "en": "Start the sentence with the time.", "fa": "جمله را با زمان شروع کن.", "de": "Beginne den Satz mit der Zeit." },
+    "sentenceDe": "Ich lerne heute Deutsch. → Heute ___ ich Deutsch.",
+    "answer": "lerne",
+    "explanation": {
+      "en": "The verb stays in position 2, so the subject ich moves behind it.",
+      "fa": "فعل در جایگاه دوم می‌ماند، پس فاعل ich پشت آن می‌رود.",
+      "de": "Das Verb bleibt auf Position 2, also rutscht das Subjekt ich dahinter."
+    }
+  },
+  {
+    "id": "word-03",
+    "lessonId": "word-order",
+    "type": "transform",
+    "prompt": { "en": "Start the sentence with the time.", "fa": "جمله را با زمان شروع کن.", "de": "Beginne den Satz mit der Zeit." },
+    "sentenceDe": "Ich fahre morgen nach Berlin. → Morgen ___ ich nach Berlin.",
+    "answer": "fahre",
+    "explanation": {
+      "en": "Morgen fahre ich nach Berlin: the verb is still the second element.",
+      "fa": "Morgen fahre ich nach Berlin: فعل همچنان عنصر دوم است.",
+      "de": "Morgen fahre ich nach Berlin: Das Verb ist immer noch das zweite Element."
+    }
+  },
+  {
+    "id": "word-04",
+    "lessonId": "word-order",
+    "type": "choice",
+    "prompt": { "en": "Choose the word for the question.", "fa": "کلمه‌ی مناسب پرسش را انتخاب کن.", "de": "Wähle das passende Wort für die Frage." },
+    "sentenceDe": "Wo ___ du?",
+    "options": ["wohnst", "wohnen", "Berlin"],
+    "answer": "wohnst",
+    "explanation": {
+      "en": "Question word, then the verb, then the subject. With du the verb ends in -st.",
+      "fa": "کلمه‌ی پرسشی، بعد فعل، بعد فاعل. با du فعل به st- ختم می‌شود.",
+      "de": "Fragewort, dann das Verb, dann das Subjekt. Bei du endet das Verb auf -st."
+    }
+  },
+  {
+    "id": "word-05",
+    "lessonId": "word-order",
+    "type": "choice",
+    "prompt": { "en": "Where does the second verb go?", "fa": "فعل دوم کجا می‌رود؟", "de": "Wohin kommt das zweite Verb?" },
+    "sentenceDe": "Ich muss heute ___.",
+    "options": ["arbeiten", "arbeite", "arbeitet"],
+    "answer": "arbeiten",
+    "explanation": {
+      "en": "After a modal verb the second verb is an infinitive at the end of the sentence.",
+      "fa": "بعد از فعل مودال، فعل دوم به‌صورت مصدر در آخر جمله می‌آید.",
+      "de": "Nach einem Modalverb steht das zweite Verb als Infinitiv am Satzende."
+    }
+  },
+  {
+    "id": "word-06",
+    "lessonId": "word-order",
+    "type": "fill",
+    "prompt": { "en": "Type the separable prefix.", "fa": "پیشوند جداشدنی را بنویس.", "de": "Schreibe das trennbare Präfix." },
+    "sentenceDe": "Ich stehe um sieben Uhr ___.",
+    "answer": "auf",
+    "explanation": {
+      "en": "aufstehen is separable: stehe in position 2, the prefix auf at the end.",
+      "fa": "aufstehen جداشدنی است: stehe در جایگاه دوم و پیشوند auf در آخر جمله.",
+      "de": "aufstehen ist trennbar: stehe auf Position 2, das Präfix auf am Ende."
+    }
+  },
+  {
+    "id": "word-07",
+    "lessonId": "word-order",
+    "type": "choice",
+    "prompt": { "en": "Choose the verb for the weil-clause.", "fa": "فعل جمله‌ی weil را انتخاب کن.", "de": "Wähle das Verb für den weil-Satz." },
+    "sentenceDe": "Ich lerne Deutsch, weil ich in Berlin ___.",
+    "options": ["wohne", "wohnst", "wohnt"],
+    "answer": "wohne",
+    "explanation": {
+      "en": "After weil the conjugated verb goes to the end of its clause. With ich: wohne.",
+      "fa": "بعد از weil فعل صرف‌شده به آخر جمله‌ی خودش می‌رود. با ich: wohne.",
+      "de": "Nach weil steht das konjugierte Verb am Ende des Nebensatzes. Bei ich: wohne."
+    }
+  },
+  {
+    "id": "word-08",
+    "lessonId": "word-order",
+    "type": "choice",
+    "prompt": { "en": "Choose the verb at the end of the question.", "fa": "فعل آخر پرسش را انتخاب کن.", "de": "Wähle das Verb am Ende der Frage." },
+    "sentenceDe": "Kannst du heute ___?",
+    "options": ["kommen", "kommst", "komme"],
+    "answer": "kommen",
+    "explanation": {
+      "en": "Modal verb first, the second verb as an infinitive at the end.",
+      "fa": "فعل مودال اول و فعل دوم به‌صورت مصدر در آخر.",
+      "de": "Das Modalverb steht vorn, das zweite Verb als Infinitiv am Ende."
+    }
+  },
+  {
+    "id": "word-09",
+    "lessonId": "word-order",
+    "type": "choice",
+    "prompt": { "en": "Time – Manner – Place: what comes next?", "fa": "زمان – شیوه – مکان: بعدی چیست؟", "de": "Zeit – Art und Weise – Ort: Was kommt als Nächstes?" },
+    "sentenceDe": "Ich fahre morgen ___ nach Berlin.",
+    "options": ["mit dem Zug", "nach", "morgen"],
+    "answer": "mit dem Zug",
+    "explanation": {
+      "en": "The usual order is time (morgen), manner (mit dem Zug), place (nach Berlin).",
+      "fa": "ترتیب معمول: زمان (morgen)، شیوه (mit dem Zug)، مکان (nach Berlin).",
+      "de": "Die übliche Reihenfolge ist Zeit (morgen), Art und Weise (mit dem Zug), Ort (nach Berlin)."
+    }
+  }
+]

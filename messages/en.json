@@ -1,7 +1,7 @@
 {
   "Meta": {
-    "title": "Deutsch Lernen – German Articles Arcade",
-    "description": "Learn German noun articles (der, die, das) with instant feedback and an AI tutor."
+    "title": "Deutsch Lernen – Learn German A1",
+    "description": "Learn German A1 for free: articles, verbs, grammar, dialogues, reading, listening and spaced repetition."
   },
   "Nav": {
     "home": "Home",
@@ -12,11 +12,26 @@
     "arcade": "Articles arcade",
     "language": "Language",
     "verbs": "Verbs",
-    "sentences": "Sentences"
+    "sentences": "Sentences",
+    "grammar": "Grammar",
+    "vocabulary": "Vocabulary",
+    "learn": "Learn",
+    "practice": "Practice",
+    "read": "Dialogues & Reading",
+    "readShort": "Texts",
+    "numbers": "Numbers",
+    "review": "Review",
+    "dialogues": "Dialogues",
+    "reading": "Reading",
+    "exam": "Exam",
+    "progress": "Progress",
+    "listen": "Listening",
+    "search": "Search",
+    "skipToContent": "Skip to main content"
   },
   "Home": {
     "title": "Master der, die, das",
-    "subtitle": "Practice German noun articles with instant feedback, grammar rules and an AI tutor.",
+    "subtitle": "Learn German step by step: articles, verbs, grammar, dialogues, reading, a practice exam and spaced-repetition review.",
     "cta": "Start the arcade",
     "progress": "Progress: {percent}%",
     "modules": {
@@ -31,6 +46,22 @@
       "sentences": {
         "title": "Sentences",
         "desc": "Drag the words into the right order."
+      },
+      "grammar": {
+        "title": "Grammar",
+        "desc": "Eleven lessons from pronouns and cases to modal verbs and word order."
+      },
+      "numbers": {
+        "title": "Numbers & time",
+        "desc": "Numbers, dates, clock times and prices to learn and drill."
+      },
+      "dialogues": {
+        "title": "Dialogues",
+        "desc": "Twelve everyday conversations with role-play and quizzes."
+      },
+      "reading": {
+        "title": "Reading",
+        "desc": "Ten short texts with exam-style tasks."
       }
     }
   },
@@ -129,6 +160,274 @@
     "auxHint": "Wrong auxiliary: this verb uses {aux}.",
     "reset": "Reset progress"
   },
+  "Dialogues": {
+    "title": "Dialogues",
+    "subtitle": "Short everyday conversations. Read them, play a role, then test yourself.",
+    "loading": "Loading…",
+    "listLabel": "Dialogues",
+    "lines": "{n} lines",
+    "statusNew": "New",
+    "statusDone": "Completed",
+    "bestScore": "Best: {score} of {total}",
+    "progress": "Progress: {percent}%",
+    "topics": {
+      "introduce": "Introductions",
+      "order-food": "Ordering food",
+      "shopping": "Shopping",
+      "directions": "Directions",
+      "appointment": "Appointments",
+      "form": "Forms",
+      "phone": "On the phone",
+      "family": "Family",
+      "daily-routine": "Daily routine",
+      "weather": "Weather"
+    },
+    "back": "All dialogues",
+    "setting": "Situation",
+    "modeLabel": "Dialogue mode",
+    "modes": {
+      "read": "Read",
+      "roleplay": "Role-play",
+      "quiz": "Quiz"
+    },
+    "displayLabel": "Show",
+    "display": {
+      "german": "German only",
+      "translation": "With translation"
+    },
+    "tapHint": "Tap an underlined word to see what it means.",
+    "inflected": "“{form}” is a form of “{base}”.",
+    "closeWord": "Close",
+    "words": "Words from this dialogue",
+    "related": "Related grammar lessons",
+    "prev": "Previous dialogue",
+    "next": "Next dialogue",
+    "reset": "Reset dialogue progress",
+    "roleplay": {
+      "title": "Role-play",
+      "intro": "Choose a role. You answer for that person: pick the right reply each time it is your turn.",
+      "chooseRole": "Choose your role",
+      "playAs": "Play as {name}",
+      "yourTurn": "Your turn: choose the right reply.",
+      "pickReply": "Pick the reply",
+      "correct": "Correct!",
+      "wrong": "Not quite. The right reply is:",
+      "next": "Continue",
+      "done": "Role-play finished",
+      "summary": "{correct} of {total} replies were right.",
+      "again": "Play again",
+      "otherRole": "Play the other role"
+    },
+    "quiz": {
+      "title": "Comprehension quiz",
+      "intro": "Answer the four questions about the dialogue. Three right answers complete it.",
+      "question": "Question {n} of {total}",
+      "check": "Check answers",
+      "answerAll": "Answer all questions to check.",
+      "score": "You got {correct} of {total} right.",
+      "passed": "Well done! This dialogue is completed.",
+      "notPassed": "Read the dialogue once more and try again.",
+      "retry": "Try again",
+      "correctMark": "Correct",
+      "wrongMark": "Wrong",
+      "correctAnswer": "Correct answer:"
+    }
+  },
+  "Reading": {
+    "title": "Reading",
+    "subtitle": "Short real-life texts with exam-style tasks: true/false, multiple choice and matching.",
+    "loading": "Loading…",
+    "listLabel": "Reading texts",
+    "tasks": "{n} tasks",
+    "statusNew": "New",
+    "statusDone": "Completed",
+    "bestScore": "Best: {score} of {total}",
+    "progress": "Progress: {percent}%",
+    "kinds": {
+      "postcard": "Postcard",
+      "email": "Email",
+      "notice": "Notice",
+      "menu": "Menu",
+      "timetable": "Timetable",
+      "ad": "Advertisement",
+      "message": "Message"
+    },
+    "back": "All texts",
+    "text": "Text",
+    "showTranslation": "Show translation",
+    "hideTranslation": "Hide translation",
+    "translation": "Translation",
+    "tasksTitle": "Tasks",
+    "taskNumber": "Task {n}",
+    "instruction": {
+      "trueFalse": "Read the text. Is the statement true (richtig) or false (falsch)?",
+      "choice": "Read the text and choose the correct answer."
+    },
+    "true": "Richtig (true)",
+    "false": "Falsch (false)",
+    "choose": "Choose…",
+    "answerFor": "Answer for: {item}",
+    "check": "Check answers",
+    "answerAll": "Answer all tasks to check.",
+    "score": "You got {correct} of {total} tasks right.",
+    "passed": "Well done! This text is completed.",
+    "notPassed": "Read the text once more and try again.",
+    "retry": "Try again",
+    "correct": "Correct",
+    "wrong": "Wrong",
+    "correctAnswer": "Correct answer:",
+    "evidence": "Highlighted in the text above",
+    "prev": "Previous text",
+    "next": "Next text",
+    "reset": "Reset reading progress"
+  },
+  "Numbers": {
+    "title": "Numbers & time",
+    "subtitle": "Numbers, dates, clock times and prices: learn them, then drill them.",
+    "loading": "Loading…",
+    "tabsLabel": "Sections",
+    "tabs": {
+      "numbers": "Numbers",
+      "ordinals": "Ordinals",
+      "calendar": "Calendar",
+      "clock": "Clock",
+      "practice": "Practice"
+    },
+    "cardinals": {
+      "basicTitle": "0 to 20",
+      "bigTitle": "Tens and big numbers",
+      "ruleTitle": "How German builds numbers",
+      "rule": "From 21 on, German says the ones first and the tens second, joined by und: 21 is ein·und·zwanzig (“one-and-twenty”). Watch the spelling: 16 sechzehn and 17 siebzehn lose letters, and so do 60 sechzig and 70 siebzig. 30 is dreißig with ß. Write each number as one word.",
+      "hundredNote": "100 can be hundert or einhundert, 1000 can be tausend or eintausend. After the hundreds you simply continue: 101 is hunderteins, 321 is dreihunderteinundzwanzig.",
+      "converterTitle": "Number converter",
+      "converterLabel": "Type a number from 0 to 9999",
+      "converterInvalid": "Please type a whole number from 0 to 9999."
+    },
+    "ordinals": {
+      "title": "Ordinal numbers 1–31",
+      "rule": "Up to 19 add -te: vierte, fünfte, zehnte. Four are irregular: erste, dritte, siebte, achte. From 20 add -ste: zwanzigste, einunddreißigste. In dates the ordinal needs an adjective ending: -e after der (der dritte), -en after am (am dritten).",
+      "written": "In writing, put a dot after the number: 3. November.",
+      "listLabel": "Ordinal numbers"
+    },
+    "calendar": {
+      "monthsTitle": "Months",
+      "weekdaysTitle": "Weekdays",
+      "seasonsTitle": "Seasons",
+      "articleNote": "All months, weekdays and seasons are masculine: der Januar, der Montag, der Sommer.",
+      "explorerTitle": "Say the date",
+      "pickMonth": "Month",
+      "written": "Written",
+      "spoken": "Spoken",
+      "on": "On this date (am)",
+      "sentence": "In a sentence",
+      "calendarLabel": "Days of {month}",
+      "dayLabel": "{day}. {month}",
+      "todayNote": "The calendar starts on today's date."
+    },
+    "clock": {
+      "title": "The clock",
+      "hint": "Drag on the clock face or use the sliders.",
+      "hour": "Hour (0–23)",
+      "minute": "Minute (0–59)",
+      "official": "Official (24 hours)",
+      "everyday": "Everyday (12 hours)",
+      "digital": "Digital",
+      "noEveryday": "Everyday German only uses 5-minute steps. Move the minute to a multiple of 5.",
+      "tip": "halb means “half before”: halb drei is 2:30, not 3:30. halb and Viertel vor always look at the next hour.",
+      "label": "Clock showing {time}"
+    },
+    "practice": {
+      "kindLabel": "Exercise type",
+      "kinds": {
+        "cardinal": "Number → word",
+        "reverse": "Word → number",
+        "price": "Prices",
+        "date": "Dates",
+        "clock-read": "Read the clock",
+        "clock-set": "Set the clock"
+      },
+      "prompts": {
+        "cardinal": "Write this number in words.",
+        "reverse": "Which number is this? Type the digits.",
+        "price": "Write this price in words.",
+        "date": "Say this date. Start with “der …”.",
+        "clock-read": "What time does the clock show? (everyday German)",
+        "clock-set": "Set the clock to this time."
+      },
+      "styles": {
+        "official": "Official time",
+        "colloquial": "Everyday time"
+      },
+      "typeWords": "Your answer in words",
+      "typeDigits": "Your answer in digits",
+      "chooseTime": "Choose the time",
+      "check": "Check",
+      "next": "Next",
+      "correct": "Correct!",
+      "wrong": "Not quite. Correct:",
+      "umlautHint": "Check the umlaut / ß: your answer is almost right.",
+      "yourClock": "You set {time}.",
+      "solved": "Correct in total",
+      "streak": "Streak",
+      "best": "Best streak",
+      "reset": "Reset progress"
+    }
+  },
+  "Grammar": {
+    "title": "Grammar",
+    "subtitle": "Short lessons with tables and examples, then practice.",
+    "loading": "Loading…",
+    "lessonsList": "Grammar lessons",
+    "lessonNumber": "Lesson {n}",
+    "exercisesSolved": "{solved} of {total} exercises solved",
+    "statusNew": "Not started",
+    "statusProgress": "In progress",
+    "statusDone": "Completed",
+    "progress": "Progress: {percent}%",
+    "topics": {
+      "pronouns": "Pronouns",
+      "cases": "Cases",
+      "articles": "Articles",
+      "possessives": "Possessives",
+      "negation": "Negation",
+      "plural": "Plural",
+      "prepositions": "Prepositions",
+      "questions": "Question words",
+      "imperative": "Imperative",
+      "modal": "Modal verbs",
+      "word-order": "Word order"
+    },
+    "toSentences": "Practice word order in the sentence builder",
+    "backToGrammar": "All grammar lessons",
+    "examples": "Examples",
+    "practiceTitle": "Practice",
+    "practiceIntro": "Mistakes come back first the next time you practice.",
+    "prevLesson": "Previous lesson",
+    "nextLesson": "Next lesson",
+    "question": "Question",
+    "streak": "Streak",
+    "best": "Best streak",
+    "types": {
+      "choice": "Choose",
+      "fill": "Fill the gap",
+      "transform": "Rewrite"
+    },
+    "chooseAnswer": "Choose the answer",
+    "typeAnswer": "Type the missing word",
+    "specialChars": "Special characters",
+    "insertChar": "Insert {char}",
+    "check": "Check",
+    "next": "Next",
+    "finish": "Finish",
+    "correct": "Correct!",
+    "wrong": "Not quite. Correct sentence:",
+    "umlautHint": "Check the umlaut / ß: your answer is almost right.",
+    "summaryTitle": "Round finished",
+    "summaryScore": "You answered {correct} of {total} correctly.",
+    "lessonCompleted": "Lesson completed! You solved every exercise.",
+    "practiceAgain": "Practice again",
+    "reset": "Reset grammar progress"
+  },
   "Sentences": {
     "loading": "Loading…",
     "title": "Sentence building",
@@ -219,5 +518,412 @@
     "showExplanation": "Show explanation",
     "hideExplanation": "Hide explanation",
     "resetProgress": "Reset progress"
+  },
+  "Vocabulary": {
+    "title": "Vocabulary",
+    "subtitle": "Nouns, adjectives, adverbs, prepositions and phrases for A1.",
+    "kindLabel": "Word type",
+    "kinds": {
+      "noun": "Nouns",
+      "verb": "Verbs",
+      "adjective": "Adjectives",
+      "adverb": "Adverbs",
+      "preposition": "Prepositions",
+      "phrase": "Phrases"
+    },
+    "searchLabel": "Search words",
+    "searchPlaceholder": "Search in German or in your language",
+    "groupLabel": "Topic",
+    "groupAll": "All",
+    "groups": {
+      "noun": {
+        "food": "Food & drink",
+        "family": "Family",
+        "home": "Home",
+        "travel": "Travel",
+        "time": "Time",
+        "school": "School",
+        "body": "Body",
+        "shopping": "Shopping",
+        "jobs": "Jobs",
+        "weather": "Weather & nature",
+        "colors": "Colours & art",
+        "clothes": "Clothes",
+        "city": "City",
+        "hobbies": "Hobbies & free time",
+        "numbers-time": "Numbers & time"
+      },
+      "adverb": {
+        "time": "Time",
+        "place": "Place",
+        "manner": "Manner",
+        "degree": "Degree",
+        "frequency": "Frequency"
+      },
+      "preposition": {
+        "akk": "Accusative",
+        "dat": "Dative",
+        "wechsel": "Two-way (Akk./Dat.)"
+      },
+      "phrase": {
+        "greeting": "Greetings",
+        "polite": "Being polite",
+        "classroom": "In class",
+        "shopping": "Shopping",
+        "travel": "Getting around",
+        "restaurant": "Restaurant",
+        "help": "Asking for help",
+        "phone": "On the phone"
+      }
+    },
+    "count": "{count, plural, one {# word} other {# words}}",
+    "empty": "No words match your search.",
+    "addAll": "Add all {count} to review",
+    "addedAll": "{count, plural, one {# new card added to your review deck.} other {# new cards added to your review deck.}}",
+    "allInDeck": "All of these words are already in your review deck.",
+    "plural": "Plural",
+    "forms": "Key forms",
+    "example": "Example",
+    "reply": "Typical reply",
+    "caseLabel": "Takes",
+    "reviewLink": "Go to review",
+    "noPlural": "no plural",
+    "comparison": "Comparison"
+  },
+  "Review": {
+    "title": "Review",
+    "subtitle": "Spaced repetition: each word comes back just before you would forget it.",
+    "add": "Add to review",
+    "addAria": "Add {word} to review",
+    "inDeck": "In review",
+    "inDeckKept": "In review, already practised",
+    "today": "Today",
+    "dueLabel": "Due",
+    "newLabel": "New",
+    "doneLabel": "Reviewed today",
+    "start": "Start review",
+    "emptyDeckTitle": "Your review deck is empty",
+    "emptyDeckText": "Add words from the vocabulary or verbs pages, or from a dialogue. They will show up here.",
+    "goVocabulary": "Browse vocabulary",
+    "allDoneTitle": "All done for today",
+    "allDoneText": "Nothing is due right now. Come back tomorrow, or raise the number of new cards per day.",
+    "keyboardHint": "Keyboard: Space shows the answer, 1 to 4 choose Again, Hard, Good or Easy.",
+    "againHint": "Cards you miss come back once at the end of this session.",
+    "progress": "Card {current} of {total}",
+    "cardAria": "Flashcard",
+    "front": "German",
+    "answer": "Answer",
+    "showAnswer": "Show answer",
+    "example": "Example",
+    "grades": {
+      "again": "Again",
+      "hard": "Hard",
+      "good": "Good",
+      "easy": "Easy"
+    },
+    "nextIn": "{days, plural, one {# day} other {# days}}",
+    "gradeAria": "{grade}, next review in {interval}",
+    "summaryTitle": "Session complete",
+    "summaryText": "{count, plural, one {You reviewed # card.} other {You reviewed # cards.}}",
+    "remembered": "{percent}% remembered",
+    "backToOverview": "Back to overview",
+    "deckTitle": "Your deck",
+    "stats": {
+      "total": "Total",
+      "fresh": "New",
+      "learning": "Learning",
+      "mature": "Mature"
+    },
+    "settingsTitle": "Settings",
+    "newPerDay": "New cards per day",
+    "newPerDayHint": "How many unseen cards are added to each day's session. 0 pauses new words.",
+    "backlog": "{count, plural, one {# new card is waiting for a later day.} other {# new cards are waiting for later days.}}",
+    "dataTitle": "Backup",
+    "dataText": "Your deck lives in this browser. Export it to keep a copy or to move to another device.",
+    "export": "Export deck (JSON)",
+    "importLabel": "Import deck file",
+    "importMode": "When importing",
+    "importMerge": "Merge with my deck",
+    "importReplace": "Replace my deck",
+    "importOk": "{count, plural, one {Import finished: # card in your deck.} other {Import finished: # cards in your deck.}}",
+    "importJson": "That file is not valid JSON.",
+    "importShape": "That file is not a review export from this app, or it contains invalid cards.",
+    "reset": "Reset review deck",
+    "resetConfirm": "Delete all review cards and history? This cannot be undone.",
+    "resetCancel": "Keep my deck",
+    "resetDone": "Your review deck was reset."
+  },
+  "Progress": {
+    "title": "Progress",
+    "subtitle": "Your streak, your courses and the words that need more practice.",
+    "streakTitle": "Streak",
+    "currentStreak": "{count, plural, one {# day in a row} other {# days in a row}}",
+    "longest": "Longest streak: {count}",
+    "activeDays": "Days practised: {count}",
+    "calendarTitle": "Last 12 weeks",
+    "calendarAria": "Learning activity over the last 12 weeks",
+    "cellLabel": "{date}: {count, plural, =0 {no activity} one {# activity} other {# activities}}",
+    "legendLess": "Less",
+    "legendMore": "More",
+    "ringsTitle": "Course completion",
+    "rings": {
+      "articles": "Articles",
+      "verbs": "Verbs",
+      "sentences": "Sentences",
+      "grammar": "Grammar",
+      "numbers": "Numbers & time",
+      "dialogues": "Dialogues",
+      "reading": "Reading",
+      "review": "Review deck"
+    },
+    "ringsHint": "Review deck: mature cards out of all cards in your deck.",
+    "weakTitle": "Needs practice",
+    "weakEmpty": "No weak spots yet. Words you get wrong will show up here.",
+    "weakArticles": "Articles you missed",
+    "weakVerbs": "Verbs you missed",
+    "weakCards": "Review cards you forget often",
+    "lapses": "{count, plural, one {# lapse} other {# lapses}}",
+    "practiceArticles": "Practise articles",
+    "practiceVerbs": "Practise verbs",
+    "practiceReview": "Open review",
+    "badgesTitle": "Badges",
+    "badgesCount": "{earned} of {total} earned",
+    "badgeEarned": "Earned",
+    "badgeLocked": "Locked: {current} of {target}"
+  },
+  "Badges": {
+    "firstCorrect": {
+      "title": "First step",
+      "desc": "Answer one article correctly."
+    },
+    "streak5": {
+      "title": "On fire",
+      "desc": "Get 5 correct answers in a row."
+    },
+    "streak10": {
+      "title": "Double flame",
+      "desc": "Get 10 correct answers in a row."
+    },
+    "verbs10": {
+      "title": "Verb runner",
+      "desc": "Answer 10 verb questions correctly."
+    },
+    "sentences10": {
+      "title": "Sentence builder",
+      "desc": "Solve 10 sentences."
+    },
+    "daily": {
+      "title": "Regular visitor",
+      "desc": "Practise on 3 different days."
+    },
+    "grammar3": {
+      "title": "Grammar starter",
+      "desc": "Finish 3 grammar lessons."
+    },
+    "dialogue5": {
+      "title": "Chatterbox",
+      "desc": "Pass 5 dialogue quizzes."
+    },
+    "reading5": {
+      "title": "Bookworm",
+      "desc": "Pass 5 reading texts."
+    },
+    "review50": {
+      "title": "Memory builder",
+      "desc": "Answer 50 review cards."
+    },
+    "streak7": {
+      "title": "Week streak",
+      "desc": "Practise 7 days in a row."
+    },
+    "mature25": {
+      "title": "Rock solid",
+      "desc": "Get 25 cards to a 3-week interval."
+    }
+  },
+  "HomeStudy": {
+    "title": "Study tools",
+    "vocabulary": "Vocabulary",
+    "vocabularyDesc": "All A1 words by topic",
+    "review": "Review",
+    "reviewDue": "{count, plural, =0 {Nothing due} one {# card due} other {# cards due}}",
+    "reviewEmpty": "Start your deck",
+    "progress": "Progress",
+    "progressStreak": "{count, plural, =0 {Start a streak} one {# day streak} other {# day streak}}"
+  },
+  "Speech": {
+    "listen": "Listen: {text}",
+    "listenSlow": "Listen slowly: {text}"
+  },
+  "Listen": {
+    "title": "Listening practice",
+    "subtitle": "Hear a German word or number and pick or type what you heard.",
+    "unsupported": "Your browser cannot read German aloud. Try Chrome, Edge or Safari to use the listening drills.",
+    "noGermanVoice": "No German voice was found on this device. The words may sound wrong. Install a German voice in your system settings.",
+    "kindLabel": "Drill type",
+    "kinds": {
+      "word": "Words",
+      "number": "Numbers"
+    },
+    "pick": "Choose a drill to start. You will hear the first item right away.",
+    "done": "Round finished",
+    "score": "{correct} of {total} correct",
+    "again": "Play another round",
+    "question": "Question {current} of {total}",
+    "askWord": "Listen, then choose the meaning.",
+    "askNumber": "Listen, then type the number with digits.",
+    "typeNumber": "Type the number",
+    "check": "Check",
+    "correct": "Correct",
+    "wrong": "Not quite",
+    "next": "Next",
+    "result": "See result"
+  },
+  "Exam": {
+    "title": "Practice exam A1",
+    "subtitle": "Reading, listening, writing and speaking, with a timer for each part.",
+    "disclaimer": "This is a practice simulation, not the official exam. The tasks are original and the scores are only a guide.",
+    "partsTitle": "The four parts",
+    "modules": {
+      "lesen": "Reading",
+      "hoeren": "Listening",
+      "schreiben": "Writing",
+      "sprechen": "Speaking"
+    },
+    "about": {
+      "lesen": "Three short texts with true/false, choice and matching tasks. {minutes} minutes.",
+      "hoeren": "Six short recordings read aloud by your device, two plays each. {minutes} minutes.",
+      "schreiben": "Fill in a form and write a short message. {minutes} minutes.",
+      "sprechen": "Three speaking tasks that you check yourself. {minutes} minutes."
+    },
+    "practicePart": "Practise this part",
+    "startFull": "Start the full exam",
+    "fullHint": "The full exam has 4 parts of 25 points. You pass with {pass} of {max} points.",
+    "historyTitle": "Your attempts",
+    "historyEmpty": "No full attempt yet.",
+    "best": "Best result: {total} of {max}",
+    "timeLeft": "Time left",
+    "warnFive": "Five minutes left.",
+    "warnMinute": "One minute left.",
+    "handIn": "Hand in this part",
+    "listeningItem": "Recording {n}",
+    "play": "Play ({left} left)",
+    "noSpeech": "Your browser cannot read German aloud, so the texts are shown instead.",
+    "writing": {
+      "formTitle": "Task 1: Form",
+      "messageTitle": "Task 2: Message",
+      "words": "{count, plural, one {# word} other {# words}}"
+    },
+    "speaking": {
+      "honest": "Say your answers out loud. Nobody records you: tick what you really did. The score is only as honest as you are.",
+      "cues": "Cue words",
+      "checklist": "Check yourself",
+      "model": "Show example answers"
+    },
+    "partDone": "{part} finished",
+    "nextPart": "Next: {part} ({minutes} minutes).",
+    "continue": "Continue",
+    "resultTitle": "Your result",
+    "total": "{total} of {max} points",
+    "passed": "Passed: {pass} points or more.",
+    "notPassed": "Not passed yet: you need {pass} points.",
+    "partOnly": "You practised single parts, so there is no total.",
+    "points": "{points} of {max}",
+    "kind": {
+      "lesen": "{got} of {total} tasks correct",
+      "hoeren": "{got} of {total} recordings correct",
+      "schreiben": "{got} of {total} checkable points. Grammar is not checked.",
+      "sprechen": "{got} of {total} items ticked"
+    },
+    "backToStart": "Back to start",
+    "passedShort": "passed",
+    "notPassedShort": "not passed"
+  },
+  "Path": {
+    "title": "Your learning path",
+    "goalRing": "Daily goal: {percent}%",
+    "goalTitle": "Daily goal",
+    "goalDone": "Goal reached today. Well done!",
+    "goalProgress": "{done} of {goal} answers today",
+    "goalChoose": "Answers per day",
+    "continueTitle": "Continue where you left off",
+    "continueText": "Last time you were in: {section}.",
+    "continueButton": "Continue",
+    "continueEmpty": "Start with the articles arcade.",
+    "startButton": "Start",
+    "pathTitle": "Recommended order",
+    "pathCount": "{done} of {total} steps done",
+    "stateDone": "Done",
+    "stateNext": "Next",
+    "steps": {
+      "articles": {
+        "title": "Articles",
+        "desc": "Get 5 right in a row in the arcade."
+      },
+      "pronouns": {
+        "title": "Pronouns",
+        "desc": "Finish the pronouns lesson."
+      },
+      "verbs": {
+        "title": "Verbs",
+        "desc": "Answer 10 verb questions correctly."
+      },
+      "cases": {
+        "title": "Nominative and accusative",
+        "desc": "Finish the cases lesson."
+      },
+      "vocabulary": {
+        "title": "Vocabulary",
+        "desc": "Add 10 words to your review deck."
+      },
+      "numbers": {
+        "title": "Numbers and time",
+        "desc": "Practise until the ring is half full."
+      },
+      "modal": {
+        "title": "Modal verbs",
+        "desc": "Finish the modal verbs lesson."
+      },
+      "dialogues": {
+        "title": "Dialogues",
+        "desc": "Pass 3 dialogue quizzes."
+      },
+      "reading": {
+        "title": "Reading",
+        "desc": "Pass 3 reading texts."
+      },
+      "sentences": {
+        "title": "Sentences",
+        "desc": "Solve 10 sentences."
+      },
+      "review": {
+        "title": "Review",
+        "desc": "Answer 50 review cards."
+      },
+      "exam": {
+        "title": "Practice exam",
+        "desc": "Finish a full practice exam."
+      }
+    }
+  },
+  "Search": {
+    "title": "Search",
+    "subtitle": "Find words, verbs, grammar lessons, dialogues and texts.",
+    "label": "Search the course",
+    "placeholder": "Search in German or in your language",
+    "hint": "Type at least {min} letters.",
+    "none": "Nothing found. Try another spelling.",
+    "count": "{count, plural, one {# result} other {# results}}",
+    "kinds": {
+      "noun": "Noun",
+      "verb": "Verb",
+      "adjective": "Adjective",
+      "adverb": "Adverb",
+      "preposition": "Preposition",
+      "phrase": "Phrase",
+      "grammar": "Grammar",
+      "dialogue": "Dialogue",
+      "reading": "Reading"
+    }
   }
 }

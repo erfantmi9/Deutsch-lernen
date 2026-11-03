@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
+import { recordActivity } from "./activityStore";
 import { applyResult } from "@/lib/verbDrill";
 import type { DrillMode } from "@/lib/verbDrill";
 
@@ -28,6 +29,7 @@ export const useVerbStore = create<VerbState>()(
       recordResult: (verbId, correct) => {
         const { score, streak, bestStreak, wrongVerbIds } = get();
         set(applyResult({ score, streak, bestStreak, wrongVerbIds }, verbId, correct));
+        recordActivity();
       },
 
       reset: () => set({ score: 0, streak: 0, bestStreak: 0, wrongVerbIds: [] }),

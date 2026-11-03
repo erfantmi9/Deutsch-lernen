@@ -1,10 +1,12 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { filterVerbs, getAvailableTypes, verbs } from "@/lib/verbs";
 import type { VerbType } from "@/types/verb";
 import VerbTable from "./VerbTable";
+import AddToReviewButton from "./AddToReviewButton";
+import SpeakButton from "./SpeakButton";
 import VerbDrill from "./VerbDrill";
 import PageHeader from "./PageHeader";
 import VerbsHeader from "./illustrations/headers/VerbsHeader";
@@ -18,6 +20,12 @@ export default function VerbsExplorer() {
   const [typeFilter, setTypeFilter] = useState<TypeFilter>("all");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [practicing, setPracticing] = useState(false);
+
+  // Search results link here with ?verb=<id>.
+  useEffect(() => {
+    const id = new URLSearchParams(window.location.search).get("verb");
+    if (id && verbs.some((v) => v.id === id)) setSelectedId(id);
+  }, []);
 
   const types = useMemo(() => getAvailableTypes(), []);
   const visible = useMemo(
@@ -89,7 +97,15 @@ export default function VerbsExplorer() {
         })}
       </ul>
 
-      {selected && <VerbTable key={selected.id} verb={selected} />}
+      {selected && (
+        <div className="space-y-3">
+          <div className="flex flex-wrap items-center gap-2">
+            <AddToReviewButton cardId={`verb:${selected.id}`} word={selected.infinitive} />
+            <SpeakButton text={selected.infinitive} />
+          </div>
+          <VerbTable key={selected.id} verb={selected} />
+        </div>
+      )}
     </div>
   );
 }

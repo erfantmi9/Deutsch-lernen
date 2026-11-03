@@ -1,0 +1,702 @@
+[
+  {
+    "id": "strasse",
+    "word": "Straße",
+    "article": "die",
+    "plural": "Straßen",
+    "translations": {
+      "en": "street",
+      "fa": "خیابان"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Straße).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Straße).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Straße).",
+      "simple": {
+        "en": "Just learn it: die Straße.",
+        "fa": "فقط حفظش کنید: die Straße.",
+        "de": "Einfach lernen: die Straße."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Straße ist lang.",
+      "en": "The street is long.",
+      "fa": "خیابان طولانی است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "platz",
+    "word": "Platz",
+    "article": "der",
+    "plural": "Plätze",
+    "translations": {
+      "en": "square",
+      "fa": "میدان"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Platz).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Platz).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Platz).",
+      "simple": {
+        "en": "Just learn it: der Platz.",
+        "fa": "فقط حفظش کنید: der Platz.",
+        "de": "Einfach lernen: der Platz."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Platz ist groß.",
+      "en": "The square is big.",
+      "fa": "میدان بزرگ است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "bruecke",
+    "word": "Brücke",
+    "article": "die",
+    "plural": "Brücken",
+    "translations": {
+      "en": "bridge",
+      "fa": "پل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Brücke).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Brücke).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Brücke).",
+      "simple": {
+        "en": "Just learn it: die Brücke.",
+        "fa": "فقط حفظش کنید: die Brücke.",
+        "de": "Einfach lernen: die Brücke."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Brücke ist alt.",
+      "en": "The bridge is old.",
+      "fa": "پل قدیمی است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "rathaus",
+    "word": "Rathaus",
+    "article": "das",
+    "plural": "Rathäuser",
+    "translations": {
+      "en": "town hall",
+      "fa": "شهرداری"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Rathaus).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Rathaus).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Rathaus).",
+      "simple": {
+        "en": "Just learn it: das Rathaus.",
+        "fa": "فقط حفظش کنید: das Rathaus.",
+        "de": "Einfach lernen: das Rathaus."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Rathaus ist im Zentrum.",
+      "en": "The town hall is in the centre.",
+      "fa": "شهرداری در مرکز شهر است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "kirche",
+    "word": "Kirche",
+    "article": "die",
+    "plural": "Kirchen",
+    "translations": {
+      "en": "church",
+      "fa": "کلیسا"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Kirche).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Kirche).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Kirche).",
+      "simple": {
+        "en": "Just learn it: die Kirche.",
+        "fa": "فقط حفظش کنید: die Kirche.",
+        "de": "Einfach lernen: die Kirche."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Kirche ist alt.",
+      "en": "The church is old.",
+      "fa": "کلیسا قدیمی است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "museum",
+    "word": "Museum",
+    "article": "das",
+    "plural": "Museen",
+    "translations": {
+      "en": "museum",
+      "fa": "موزه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Museum).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Museum).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Museum).",
+      "simple": {
+        "en": "Just learn it: das Museum.",
+        "fa": "فقط حفظش کنید: das Museum.",
+        "de": "Einfach lernen: das Museum."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Museum ist am Montag geschlossen.",
+      "en": "The museum is closed on Monday.",
+      "fa": "موزه دوشنبه‌ها بسته است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "kino",
+    "word": "Kino",
+    "article": "das",
+    "plural": "Kinos",
+    "translations": {
+      "en": "cinema",
+      "fa": "سینما"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Kino).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Kino).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Kino).",
+      "simple": {
+        "en": "Just learn it: das Kino.",
+        "fa": "فقط حفظش کنید: das Kino.",
+        "de": "Einfach lernen: das Kino."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Kino ist neu.",
+      "en": "The cinema is new.",
+      "fa": "سینما جدید است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "theater",
+    "word": "Theater",
+    "article": "das",
+    "plural": "Theater",
+    "translations": {
+      "en": "theatre",
+      "fa": "تئاتر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Theater).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Theater).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Theater).",
+      "simple": {
+        "en": "Just learn it: das Theater.",
+        "fa": "فقط حفظش کنید: das Theater.",
+        "de": "Einfach lernen: das Theater."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Theater ist teuer.",
+      "en": "The theatre is expensive.",
+      "fa": "تئاتر گران است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "bibliothek",
+    "word": "Bibliothek",
+    "article": "die",
+    "plural": "Bibliotheken",
+    "translations": {
+      "en": "library",
+      "fa": "کتابخانه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Bibliothek).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Bibliothek).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Bibliothek).",
+      "simple": {
+        "en": "Just learn it: die Bibliothek.",
+        "fa": "فقط حفظش کنید: die Bibliothek.",
+        "de": "Einfach lernen: die Bibliothek."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Bibliothek ist ruhig.",
+      "en": "The library is quiet.",
+      "fa": "کتابخانه ساکت است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "krankenhaus",
+    "word": "Krankenhaus",
+    "article": "das",
+    "plural": "Krankenhäuser",
+    "translations": {
+      "en": "hospital",
+      "fa": "بیمارستان"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Krankenhaus).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Krankenhaus).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Krankenhaus).",
+      "simple": {
+        "en": "Just learn it: das Krankenhaus.",
+        "fa": "فقط حفظش کنید: das Krankenhaus.",
+        "de": "Einfach lernen: das Krankenhaus."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Krankenhaus ist groß.",
+      "en": "The hospital is big.",
+      "fa": "بیمارستان بزرگ است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "bank",
+    "word": "Bank",
+    "article": "die",
+    "plural": "Banken",
+    "translations": {
+      "en": "bank",
+      "fa": "بانک"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Bank).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Bank).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Bank).",
+      "simple": {
+        "en": "Just learn it: die Bank.",
+        "fa": "فقط حفظش کنید: die Bank.",
+        "de": "Einfach lernen: die Bank."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Bank ist neben der Post.",
+      "en": "The bank is next to the post office.",
+      "fa": "بانک کنار اداره پست است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "park",
+    "word": "Park",
+    "article": "der",
+    "plural": "Parks",
+    "translations": {
+      "en": "park",
+      "fa": "پارک"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Park).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Park).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Park).",
+      "simple": {
+        "en": "Just learn it: der Park.",
+        "fa": "فقط حفظش کنید: der Park.",
+        "de": "Einfach lernen: der Park."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Park ist schön.",
+      "en": "The park is beautiful.",
+      "fa": "پارک زیباست."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "ampel",
+    "word": "Ampel",
+    "article": "die",
+    "plural": "Ampeln",
+    "translations": {
+      "en": "traffic light",
+      "fa": "چراغ راهنمایی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Ampel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Ampel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Ampel).",
+      "simple": {
+        "en": "Just learn it: die Ampel.",
+        "fa": "فقط حفظش کنید: die Ampel.",
+        "de": "Einfach lernen: die Ampel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Ampel ist rot.",
+      "en": "The traffic light is red.",
+      "fa": "چراغ راهنمایی قرمز است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "haltestelle",
+    "word": "Haltestelle",
+    "article": "die",
+    "plural": "Haltestellen",
+    "translations": {
+      "en": "stop (bus, tram)",
+      "fa": "ایستگاه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Haltestelle).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Haltestelle).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Haltestelle).",
+      "simple": {
+        "en": "Just learn it: die Haltestelle.",
+        "fa": "فقط حفظش کنید: die Haltestelle.",
+        "de": "Einfach lernen: die Haltestelle."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Haltestelle ist hier.",
+      "en": "The stop is here.",
+      "fa": "ایستگاه اینجاست."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "ubahn",
+    "word": "U-Bahn",
+    "article": "die",
+    "plural": "U-Bahnen",
+    "translations": {
+      "en": "underground, subway",
+      "fa": "مترو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die U-Bahn).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die U-Bahn).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die U-Bahn).",
+      "simple": {
+        "en": "Just learn it: die U-Bahn.",
+        "fa": "فقط حفظش کنید: die U-Bahn.",
+        "de": "Einfach lernen: die U-Bahn."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die U-Bahn kommt gleich.",
+      "en": "The underground is coming soon.",
+      "fa": "مترو الان می‌رسد."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "kreuzung",
+    "word": "Kreuzung",
+    "article": "die",
+    "plural": "Kreuzungen",
+    "translations": {
+      "en": "crossing, junction",
+      "fa": "چهارراه"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ung are always feminine (die): die Zeitung, die Wohnung, die Übung.",
+      "fa": "اسم‌هایی که به -ung ختم می‌شوند همیشه مؤنث (die) هستند: die Zeitung, die Wohnung, die Übung.",
+      "de": "Nomen auf -ung sind immer feminin (die): die Zeitung, die Wohnung, die Übung.",
+      "simple": {
+        "en": "Words ending in -ung are always die.",
+        "fa": "کلمات ختم‌شده به -ung همیشه die هستند.",
+        "de": "Wörter auf -ung sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Kreuzung ist dort.",
+      "en": "The junction is over there.",
+      "fa": "چهارراه آنجاست."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "ecke",
+    "word": "Ecke",
+    "article": "die",
+    "plural": "Ecken",
+    "translations": {
+      "en": "corner",
+      "fa": "گوشه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Ecke).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Ecke).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Ecke).",
+      "simple": {
+        "en": "Just learn it: die Ecke.",
+        "fa": "فقط حفظش کنید: die Ecke.",
+        "de": "Einfach lernen: die Ecke."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Ecke ist dort.",
+      "en": "The corner is over there.",
+      "fa": "گوشه آنجاست."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "restaurant",
+    "word": "Restaurant",
+    "article": "das",
+    "plural": "Restaurants",
+    "translations": {
+      "en": "restaurant",
+      "fa": "رستوران"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Restaurant).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Restaurant).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Restaurant).",
+      "simple": {
+        "en": "Just learn it: das Restaurant.",
+        "fa": "فقط حفظش کنید: das Restaurant.",
+        "de": "Einfach lernen: das Restaurant."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Restaurant ist gut.",
+      "en": "The restaurant is good.",
+      "fa": "رستوران خوب است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "hotel",
+    "word": "Hotel",
+    "article": "das",
+    "plural": "Hotels",
+    "translations": {
+      "en": "hotel",
+      "fa": "هتل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Hotel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Hotel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Hotel).",
+      "simple": {
+        "en": "Just learn it: das Hotel.",
+        "fa": "فقط حفظش کنید: das Hotel.",
+        "de": "Einfach lernen: das Hotel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Hotel ist teuer.",
+      "en": "The hotel is expensive.",
+      "fa": "هتل گران است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "spielplatz",
+    "word": "Spielplatz",
+    "article": "der",
+    "plural": "Spielplätze",
+    "translations": {
+      "en": "playground",
+      "fa": "زمین بازی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Spielplatz).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Spielplatz).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Spielplatz).",
+      "simple": {
+        "en": "Just learn it: der Spielplatz.",
+        "fa": "فقط حفظش کنید: der Spielplatz.",
+        "de": "Einfach lernen: der Spielplatz."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Spielplatz ist voll.",
+      "en": "The playground is full.",
+      "fa": "زمین بازی شلوغ است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "cafe",
+    "word": "Café",
+    "article": "das",
+    "plural": "Cafés",
+    "translations": {
+      "en": "café",
+      "fa": "کافه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Café).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Café).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Café).",
+      "simple": {
+        "en": "Just learn it: das Café.",
+        "fa": "فقط حفظش کنید: das Café.",
+        "de": "Einfach lernen: das Café."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Café ist gemütlich.",
+      "en": "The café is cosy.",
+      "fa": "کافه دنج است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "zentrum",
+    "word": "Zentrum",
+    "article": "das",
+    "plural": "Zentren",
+    "translations": {
+      "en": "centre",
+      "fa": "مرکز"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Zentrum).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Zentrum).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Zentrum).",
+      "simple": {
+        "en": "Just learn it: das Zentrum.",
+        "fa": "فقط حفظش کنید: das Zentrum.",
+        "de": "Einfach lernen: das Zentrum."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Zentrum ist nah.",
+      "en": "The centre is close.",
+      "fa": "مرکز نزدیک است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "stadtplan",
+    "word": "Stadtplan",
+    "article": "der",
+    "plural": "Stadtpläne",
+    "translations": {
+      "en": "city map",
+      "fa": "نقشه شهر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Stadtplan).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Stadtplan).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Stadtplan).",
+      "simple": {
+        "en": "Just learn it: der Stadtplan.",
+        "fa": "فقط حفظش کنید: der Stadtplan.",
+        "de": "Einfach lernen: der Stadtplan."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Stadtplan ist neu.",
+      "en": "The city map is new.",
+      "fa": "نقشه شهر جدید است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "adresse",
+    "word": "Adresse",
+    "article": "die",
+    "plural": "Adressen",
+    "translations": {
+      "en": "address",
+      "fa": "آدرس"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Adresse).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Adresse).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Adresse).",
+      "simple": {
+        "en": "Just learn it: die Adresse.",
+        "fa": "فقط حفظش کنید: die Adresse.",
+        "de": "Einfach lernen: die Adresse."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Adresse ist falsch.",
+      "en": "The address is wrong.",
+      "fa": "آدرس اشتباه است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "schwimmbad",
+    "word": "Schwimmbad",
+    "article": "das",
+    "plural": "Schwimmbäder",
+    "translations": {
+      "en": "swimming pool",
+      "fa": "استخر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Schwimmbad).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Schwimmbad).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Schwimmbad).",
+      "simple": {
+        "en": "Just learn it: das Schwimmbad.",
+        "fa": "فقط حفظش کنید: das Schwimmbad.",
+        "de": "Einfach lernen: das Schwimmbad."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Schwimmbad ist offen.",
+      "en": "The swimming pool is open.",
+      "fa": "استخر باز است."
+    },
+    "category": "city",
+    "level": "A1"
+  }
+]

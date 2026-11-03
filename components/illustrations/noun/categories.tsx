@@ -1,4 +1,4 @@
-import { COLORS as C } from "../palette";
+import { COLORS as C, INK } from "../palette";
 import { Person } from "./parts";
 import type { IconFC } from "./parts";
 
@@ -58,6 +58,68 @@ const Body: IconFC = () => (
   <path d="M24 41C8 30 8 14 18 12c4-1 6 2 6 4 0-2 2-5 6-4 10 2 10 18-6 29z" fill={C.red} />
 );
 
+const Shopping: IconFC = () => (
+  <g>
+    <path d="M10 18h28l-3 24H13z" fill={C.yellow} />
+    <path d="M17 18v-4a7 7 0 0 1 14 0v4" />
+  </g>
+);
+
+const Jobs: IconFC = () => (
+  <g>
+    <rect x={6} y={15} width={36} height={25} rx={4} fill={C.blue} />
+    <path d="M17 15v-4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M6 27h36" />
+    <rect x={21} y={24} width={6} height={7} rx={1.5} fill={C.yellow} />
+  </g>
+);
+
+const Weather: IconFC = () => (
+  <g>
+    <circle cx={18} cy={18} r={7} fill={C.yellow} />
+    <path d="M18 5v3M6 18h3M9 9l2 2M27 9l-2 2" />
+    <path d="M16 38a7 7 0 0 1 1-14 9 9 0 0 1 17 2 6 6 0 0 1 0 12z" fill={C.white} />
+  </g>
+);
+
+const Colors: IconFC = () => (
+  <g>
+    <path d="M24 6C12 6 5 14 5 24c0 9 7 16 15 16 4 0 4-3 2-5-2-3 0-6 4-6h6c5 0 9-2 9-7C41 12 34 6 24 6z" fill={C.yellowTint} />
+    <circle cx={15} cy={22} r={3} fill={C.red} />
+    <circle cx={23} cy={14} r={3} fill={C.blue} />
+    <circle cx={33} cy={17} r={3} fill={C.green} />
+  </g>
+);
+
+const Clothes: IconFC = () => (
+  <g>
+    <path d="M17 7 6 14l5 8 5-3v21h16V19l5 3 5-8-11-7c-1 4-4 6-7 6s-6-2-7-6z" fill={C.green} />
+  </g>
+);
+
+const City: IconFC = () => (
+  <g>
+    <rect x={6} y={18} width={14} height={24} fill={C.blue} />
+    <rect x={20} y={8} width={14} height={34} fill={C.blueTint} />
+    <rect x={34} y={22} width={9} height={20} fill={C.yellow} />
+    <path d="M4 42h40M11 24h3M11 31h3M26 15h3M26 22h3M26 29h3" />
+  </g>
+);
+
+const Hobbies: IconFC = () => (
+  <g>
+    <circle cx={24} cy={24} r={17} fill={C.white} />
+    <path d="m24 16 7 5-3 8h-8l-3-8z" fill={INK} />
+    <path d="M24 16V7M31 21l9-3M28 29l5 8M20 29l-5 8M17 21 8 18" />
+  </g>
+);
+
+const NumbersTime: IconFC = () => (
+  <g>
+    <circle cx={24} cy={25} r={17} fill={C.yellowTint} />
+    <path d="M24 14v11l7 4M19 5h10" />
+  </g>
+);
+
 export const CATEGORY_ICONS = {
   "cat-food": Food,
   "cat-family": Family,
@@ -66,4 +128,12 @@ export const CATEGORY_ICONS = {
   "cat-time": Time,
   "cat-school": School,
   "cat-body": Body,
+  "cat-shopping": Shopping,
+  "cat-jobs": Jobs,
+  "cat-weather": Weather,
+  "cat-colors": Colors,
+  "cat-clothes": Clothes,
+  "cat-city": City,
+  "cat-hobbies": Hobbies,
+  "cat-numbers-time": NumbersTime,
 } satisfies Record<string, IconFC>;

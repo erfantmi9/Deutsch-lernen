@@ -11,6 +11,14 @@ export const VocabCategorySchema = z.enum([
   "time",
   "school",
   "body",
+  "shopping",
+  "jobs",
+  "weather",
+  "colors",
+  "clothes",
+  "city",
+  "hobbies",
+  "numbers-time",
 ]);
 
 export const VocabEntrySchema = z.object({

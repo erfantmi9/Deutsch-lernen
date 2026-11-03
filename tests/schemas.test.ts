@@ -78,15 +78,17 @@ describe("sentence schema", () => {
 });
 
 describe("shipped data", () => {
-  it("has 56 unique nouns across 7 categories, including the legacy ids", () => {
-    expect(vocab).toHaveLength(56);
+  it("has 256 unique nouns across 15 categories, including the legacy ids", () => {
+    expect(vocab).toHaveLength(256);
+    expect(new Set(vocab.map((w) => w.category)).size).toBe(15);
     const ids = new Set(vocab.map((w) => w.id));
     for (const id of ["mann", "frau", "maedchen", "junge", "kind", "zeitung", "universitaet", "montag", "essen", "lehrerin"]) {
       expect(ids.has(id)).toBe(true);
     }
   });
-  it("has the 12 required verbs and 15 sentences", () => {
-    expect(verbs.map((v) => v.id)).toEqual([
+  it("keeps the 12 original verbs first (40 in total) and 15 sentences", () => {
+    expect(verbs).toHaveLength(40);
+    expect(verbs.slice(0, 12).map((v) => v.id)).toEqual([
       "sein", "haben", "machen", "wohnen", "heissen", "gehen", "fahren", "essen", "sprechen", "koennen", "muessen", "aufstehen",
     ]);
     expect(sentences).toHaveLength(15);

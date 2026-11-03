@@ -1,0 +1,139 @@
+[
+  {
+    "id": "neg-01",
+    "lessonId": "negation",
+    "type": "choice",
+    "prompt": { "en": "Choose nicht or the correct form of kein.", "fa": "nicht یا شکل درست kein را انتخاب کن.", "de": "Wähle nicht oder die richtige Form von kein." },
+    "sentenceDe": "Ich habe ___ Zeit.",
+    "options": ["kein", "keine", "nicht"],
+    "answer": "keine",
+    "explanation": {
+      "en": "Zeit is a noun without an article, so use kein. die Zeit is feminine: keine Zeit.",
+      "fa": "Zeit اسمی بدون آرتیکل است، پس kein به کار می‌رود. die Zeit مؤنث است: keine Zeit.",
+      "de": "Zeit ist ein Nomen ohne Artikel, also kein. die Zeit ist feminin: keine Zeit."
+    }
+  },
+  {
+    "id": "neg-02",
+    "lessonId": "negation",
+    "type": "choice",
+    "prompt": { "en": "Choose nicht or the correct form of kein.", "fa": "nicht یا شکل درست kein را انتخاب کن.", "de": "Wähle nicht oder die richtige Form von kein." },
+    "sentenceDe": "Er hat ___ Bruder.",
+    "options": ["kein", "keinen", "nicht"],
+    "answer": "keinen",
+    "explanation": {
+      "en": "A noun with ein is negated with kein. der Bruder is the masculine object: keinen Bruder.",
+      "fa": "اسمی که ein دارد با kein منفی می‌شود. der Bruder مفعول مذکر است: keinen Bruder.",
+      "de": "Ein Nomen mit ein verneint man mit kein. der Bruder ist das maskuline Objekt: keinen Bruder."
+    }
+  },
+  {
+    "id": "neg-03",
+    "lessonId": "negation",
+    "type": "choice",
+    "prompt": { "en": "Choose nicht or the correct form of kein.", "fa": "nicht یا شکل درست kein را انتخاب کن.", "de": "Wähle nicht oder die richtige Form von kein." },
+    "sentenceDe": "Wir haben ___ Auto.",
+    "options": ["kein", "keine", "nicht"],
+    "answer": "kein",
+    "explanation": {
+      "en": "das Auto is neuter, so kein has no ending.",
+      "fa": "das Auto خنثی است، پس kein پایانه ندارد.",
+      "de": "das Auto ist neutral, also hat kein keine Endung."
+    }
+  },
+  {
+    "id": "neg-04",
+    "lessonId": "negation",
+    "type": "choice",
+    "prompt": { "en": "Choose nicht or the correct form of kein.", "fa": "nicht یا شکل درست kein را انتخاب کن.", "de": "Wähle nicht oder die richtige Form von kein." },
+    "sentenceDe": "Das ist ___ gut.",
+    "options": ["kein", "keine", "nicht"],
+    "answer": "nicht",
+    "explanation": {
+      "en": "“gut” is an adjective. Adjectives are negated with nicht, placed before them.",
+      "fa": "«gut» صفت است. صفت‌ها با nicht منفی می‌شوند و nicht قبل از آن‌ها می‌آید.",
+      "de": "„gut“ ist ein Adjektiv. Adjektive verneint man mit nicht, das davor steht."
+    }
+  },
+  {
+    "id": "neg-05",
+    "lessonId": "negation",
+    "type": "choice",
+    "prompt": { "en": "Choose nicht or the correct form of kein.", "fa": "nicht یا شکل درست kein را انتخاب کن.", "de": "Wähle nicht oder die richtige Form von kein." },
+    "sentenceDe": "Ich komme heute ___.",
+    "options": ["kein", "keine", "nicht"],
+    "answer": "nicht",
+    "explanation": {
+      "en": "To negate a verb or the whole sentence, use nicht, usually at the end.",
+      "fa": "برای منفی کردن فعل یا کل جمله از nicht استفاده کن، معمولاً در آخر جمله.",
+      "de": "Um ein Verb oder den ganzen Satz zu verneinen, benutze nicht, meistens am Ende."
+    }
+  },
+  {
+    "id": "neg-06",
+    "lessonId": "negation",
+    "type": "choice",
+    "prompt": { "en": "Choose nicht or the correct form of kein.", "fa": "nicht یا شکل درست kein را انتخاب کن.", "de": "Wähle nicht oder die richtige Form von kein." },
+    "sentenceDe": "Sie isst ___ Fleisch.",
+    "options": ["kein", "keinen", "nicht"],
+    "answer": "kein",
+    "explanation": {
+      "en": "Fleisch has no article, so use kein. das Fleisch is neuter: kein Fleisch.",
+      "fa": "Fleisch آرتیکل ندارد، پس kein به کار می‌رود. das Fleisch خنثی است: kein Fleisch.",
+      "de": "Fleisch hat keinen Artikel, also kein. das Fleisch ist neutral: kein Fleisch."
+    }
+  },
+  {
+    "id": "neg-07",
+    "lessonId": "negation",
+    "type": "choice",
+    "prompt": { "en": "Choose nicht or the correct form of kein.", "fa": "nicht یا شکل درست kein را انتخاب کن.", "de": "Wähle nicht oder die richtige Form von kein." },
+    "sentenceDe": "Ich kenne den Mann ___.",
+    "options": ["nicht", "kein", "keinen"],
+    "answer": "nicht",
+    "explanation": {
+      "en": "The noun has the definite article den, so you negate with nicht, not kein.",
+      "fa": "اسم آرتیکل معرفه‌ی den دارد، پس با nicht منفی می‌کنی، نه با kein.",
+      "de": "Das Nomen hat den bestimmten Artikel den, also verneinst du mit nicht, nicht mit kein."
+    }
+  },
+  {
+    "id": "neg-08",
+    "lessonId": "negation",
+    "type": "fill",
+    "prompt": { "en": "Answer “no” with the correct form of kein.", "fa": "با شکل درست kein پاسخ «نه» بده.", "de": "Antworte mit „nein“ und der richtigen Form von kein." },
+    "sentenceDe": "Hast du einen Stift? – Nein, ich habe ___ Stift.",
+    "answer": "keinen",
+    "explanation": {
+      "en": "der Stift is masculine and the object, so kein becomes keinen.",
+      "fa": "der Stift مذکر و مفعول است، پس kein به keinen تبدیل می‌شود.",
+      "de": "der Stift ist maskulin und das Objekt, also wird kein zu keinen."
+    }
+  },
+  {
+    "id": "neg-09",
+    "lessonId": "negation",
+    "type": "transform",
+    "prompt": { "en": "Make the sentence negative with kein.", "fa": "جمله را با kein منفی کن.", "de": "Verneine den Satz mit kein." },
+    "sentenceDe": "Ich habe eine Katze. → Ich habe ___ Katze.",
+    "answer": "keine",
+    "explanation": {
+      "en": "eine Katze becomes keine Katze (feminine).",
+      "fa": "eine Katze به keine Katze تبدیل می‌شود (مؤنث).",
+      "de": "eine Katze wird zu keine Katze (feminin)."
+    }
+  },
+  {
+    "id": "neg-10",
+    "lessonId": "negation",
+    "type": "transform",
+    "prompt": { "en": "Make the sentence negative.", "fa": "جمله را منفی کن.", "de": "Verneine den Satz." },
+    "sentenceDe": "Das Kind schläft. → Das Kind schläft ___.",
+    "answer": "nicht",
+    "explanation": {
+      "en": "There is no noun with ein to negate, only a verb, so use nicht at the end.",
+      "fa": "اسمی همراه ein برای منفی کردن نیست، فقط یک فعل هست، پس nicht را در آخر بگذار.",
+      "de": "Es gibt kein Nomen mit ein, nur ein Verb, also steht nicht am Ende."
+    }
+  }
+]

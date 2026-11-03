@@ -1,0 +1,192 @@
+[
+  {
+    "id": "postkarte-italien",
+    "kind": "postcard",
+    "title": { "en": "A postcard from Italy", "fa": "یک کارت‌پستال از ایتالیا", "de": "Eine Postkarte aus Italien" },
+    "text": "Liebe Oma,\nviele Grüße aus Italien! Wir sind seit drei Tagen am Meer. Das Wetter ist super: Jeden Tag scheint die Sonne. Das Hotel ist klein, aber sehr schön. Morgens essen wir Brötchen mit Käse, abends gehen wir in ein Restaurant. Am Samstag kommen wir wieder nach Hause. Bis bald!\nDeine Lisa",
+    "translation": {
+      "en": "Dear Grandma,\nbest wishes from Italy! We have been at the sea for three days. The weather is great: the sun shines every day. The hotel is small but very nice. In the morning we eat rolls with cheese, in the evening we go to a restaurant. On Saturday we come home again. See you soon!\nYour Lisa",
+      "fa": "مادربزرگ عزیز،\nسلام‌های فراوان از ایتالیا! سه روز است که کنار دریا هستیم. هوا عالی است: هر روز آفتاب می‌تابد. هتل کوچک است، اما خیلی قشنگ. صبح‌ها نان کوچک با پنیر می‌خوریم، شب‌ها به یک رستوران می‌رویم. شنبه دوباره به خانه برمی‌گردیم. به زودی می‌بینمت!\nلیزای تو"
+    },
+    "tasks": [
+      { "id": "r01-1", "type": "true-false", "statement": "Lisa ist in Italien.", "answer": true, "evidence": "Grüße aus Italien" },
+      { "id": "r01-2", "type": "true-false", "statement": "Das Hotel ist groß.", "answer": false, "evidence": "Das Hotel ist klein" },
+      {
+        "id": "r01-3",
+        "type": "choice",
+        "question": "Was essen sie morgens?",
+        "options": ["Brötchen mit Käse", "Eier mit Brot", "Müsli"],
+        "answer": "Brötchen mit Käse",
+        "evidence": "Morgens essen wir Brötchen mit Käse"
+      },
+      {
+        "id": "r01-4",
+        "type": "matching",
+        "prompt": {
+          "en": "Match each item with the right statement. One statement is extra.",
+          "fa": "هر مورد را به جمله‌ی درست وصل کن. یک جمله اضافه است.",
+          "de": "Ordne jedem Punkt die passende Aussage zu. Eine Aussage bleibt übrig."
+        },
+        "pairs": [
+          { "item": "Das Wetter", "answer": "Die Sonne scheint jeden Tag." },
+          { "item": "Das Hotel", "answer": "Es ist klein, aber schön." },
+          { "item": "Der Samstag", "answer": "Sie kommen nach Hause." }
+        ],
+        "options": ["Die Sonne scheint jeden Tag.", "Es ist klein, aber schön.", "Sie kommen nach Hause.", "Es regnet viel."]
+      }
+    ]
+  },
+  {
+    "id": "einladung",
+    "kind": "email",
+    "title": { "en": "An invitation", "fa": "یک دعوت", "de": "Eine Einladung" },
+    "text": "Hallo Jan,\nam Freitag habe ich Geburtstag und ich mache eine kleine Party. Sie beginnt um 19 Uhr in meiner Wohnung. Die Adresse ist Lindenstraße 8. Bitte bring etwas zu trinken mit. Kannst du kommen? Antworte bitte bis Mittwoch.\nViele Grüße\nMara",
+    "translation": {
+      "en": "Hi Jan,\nOn Friday it is my birthday and I am having a small party. It starts at 7 p.m. in my flat. The address is Lindenstraße 8. Please bring something to drink. Can you come? Please reply by Wednesday.\nBest wishes\nMara",
+      "fa": "سلام یان،\nجمعه تولد من است و یک مهمانی کوچک می‌گیرم. ساعت 19 در آپارتمان من شروع می‌شود. آدرس: لیندن‌اشتراسه 8. لطفاً یک نوشیدنی همراه بیاور. می‌توانی بیایی؟ لطفاً تا چهارشنبه جواب بده.\nبا بهترین آرزوها\nمارا"
+    },
+    "tasks": [
+      { "id": "r02-1", "type": "true-false", "statement": "Mara hat am Freitag Geburtstag.", "answer": true, "evidence": "am Freitag habe ich Geburtstag" },
+      { "id": "r02-2", "type": "true-false", "statement": "Die Party ist bei Jan.", "answer": false, "evidence": "in meiner Wohnung" },
+      {
+        "id": "r02-3",
+        "type": "choice",
+        "question": "Was soll Jan mitbringen?",
+        "options": ["Etwas zu trinken", "Etwas zu essen", "Ein Geschenk"],
+        "answer": "Etwas zu trinken",
+        "evidence": "Bitte bring etwas zu trinken mit"
+      },
+      {
+        "id": "r02-4",
+        "type": "matching",
+        "prompt": {
+          "en": "Match each question with the right answer. One answer is extra.",
+          "fa": "هر پرسش را به پاسخ درست وصل کن. یک پاسخ اضافه است.",
+          "de": "Ordne jeder Frage die passende Antwort zu. Eine Antwort bleibt übrig."
+        },
+        "pairs": [
+          { "item": "Wann beginnt die Party?", "answer": "Um 19 Uhr" },
+          { "item": "Wo ist die Party?", "answer": "In Maras Wohnung" },
+          { "item": "Bis wann soll Jan antworten?", "answer": "Bis Mittwoch" }
+        ],
+        "options": ["Um 19 Uhr", "In Maras Wohnung", "Bis Mittwoch", "Am Freitag"]
+      }
+    ]
+  },
+  {
+    "id": "aushang",
+    "kind": "notice",
+    "title": { "en": "A notice in the building", "fa": "یک اطلاعیه در ساختمان", "de": "Ein Aushang im Haus" },
+    "text": "Liebe Nachbarn,\nam Dienstag kommt der Handwerker. Das Wasser ist von 9 bis 12 Uhr aus. Bitte füllen Sie am Montag Wasser in eine Flasche. Am Mittwoch putzen wir das Treppenhaus. Bei Fragen rufen Sie bitte Frau Keller an: Telefon 0176 555 12. Danke!\nDie Hausverwaltung",
+    "translation": {
+      "en": "Dear neighbours,\nThe workman is coming on Tuesday. The water will be off from 9 to 12 o'clock. Please fill a bottle with water on Monday. On Wednesday we will clean the stairwell. If you have questions, please call Ms Keller: telephone 0176 555 12. Thank you!\nThe property management",
+      "fa": "همسایه‌های عزیز،\nسه‌شنبه تعمیرکار می‌آید. آب از ساعت 9 تا 12 قطع است. لطفاً دوشنبه یک بطری آب پر کنید. چهارشنبه راه‌پله را تمیز می‌کنیم. برای پرسش‌ها لطفاً با خانم کلر تماس بگیرید: تلفن 0176 555 12. ممنون!\nمدیریت ساختمان"
+    },
+    "tasks": [
+      { "id": "r03-1", "type": "true-false", "statement": "Am Dienstag gibt es drei Stunden kein Wasser.", "answer": true, "evidence": "Das Wasser ist von 9 bis 12 Uhr aus" },
+      { "id": "r03-2", "type": "true-false", "statement": "Der Handwerker kommt am Montag.", "answer": false, "evidence": "am Dienstag kommt der Handwerker" },
+      {
+        "id": "r03-3",
+        "type": "choice",
+        "question": "Wen soll man bei Fragen anrufen?",
+        "options": ["Frau Keller", "Den Handwerker", "Die Polizei"],
+        "answer": "Frau Keller",
+        "evidence": "rufen Sie bitte Frau Keller an"
+      },
+      {
+        "id": "r03-4",
+        "type": "matching",
+        "prompt": {
+          "en": "Match each day with the right statement. One statement is extra.",
+          "fa": "هر روز را به جمله‌ی درست وصل کن. یک جمله اضافه است.",
+          "de": "Ordne jedem Tag die passende Aussage zu. Eine Aussage bleibt übrig."
+        },
+        "pairs": [
+          { "item": "Dienstag", "answer": "Der Handwerker kommt." },
+          { "item": "Montag", "answer": "Man füllt Wasser in eine Flasche." },
+          { "item": "Mittwoch", "answer": "Die Hausverwaltung putzt das Treppenhaus." }
+        ],
+        "options": [
+          "Der Handwerker kommt.",
+          "Man füllt Wasser in eine Flasche.",
+          "Die Hausverwaltung putzt das Treppenhaus.",
+          "Man ruft Frau Keller an."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "speisekarte",
+    "kind": "menu",
+    "title": { "en": "The café menu", "fa": "منوی کافه", "de": "Die Speisekarte" },
+    "text": "Café Sonne: Speisekarte\nBrötchen mit Butter und Marmelade 3,20 Euro\nKäsebrot 2,80 Euro\nTomatensuppe 4,50 Euro\nApfelkuchen 2,90 Euro\nKaffee 2,50 Euro, Tee 2,20 Euro, Wasser 1,80 Euro\nVon Montag bis Freitag ab 12 Uhr: Tagesgericht mit Suppe nur 7,90 Euro\nAm Sonntag ist das Café geschlossen.",
+    "translation": {
+      "en": "Café Sonne: menu\nRoll with butter and jam 3.20 euros\nCheese sandwich 2.80 euros\nTomato soup 4.50 euros\nApple cake 2.90 euros\nCoffee 2.50 euros, tea 2.20 euros, water 1.80 euros\nMonday to Friday from 12 o'clock: dish of the day with soup only 7.90 euros\nOn Sunday the café is closed.",
+      "fa": "کافه‌ی سونه: منو\nنان کوچک با کره و مربا 3,20 یورو\nنان پنیر 2,80 یورو\nسوپ گوجه‌فرنگی 4,50 یورو\nکیک سیب 2,90 یورو\nقهوه 2,50 یورو، چای 2,20 یورو، آب 1,80 یورو\nدوشنبه تا جمعه از ساعت 12: غذای روز با سوپ فقط 7,90 یورو\nیکشنبه کافه تعطیل است."
+    },
+    "tasks": [
+      { "id": "r04-1", "type": "true-false", "statement": "Ein Käsebrot kostet 2,80 Euro.", "answer": true, "evidence": "Käsebrot 2,80 Euro" },
+      { "id": "r04-2", "type": "true-false", "statement": "Am Sonntag ist das Café geöffnet.", "answer": false, "evidence": "Am Sonntag ist das Café geschlossen" },
+      {
+        "id": "r04-3",
+        "type": "choice",
+        "question": "Was kostet ein Tee?",
+        "options": ["2,20 Euro", "2,50 Euro", "1,80 Euro"],
+        "answer": "2,20 Euro",
+        "evidence": "Tee 2,20 Euro"
+      },
+      {
+        "id": "r04-4",
+        "type": "matching",
+        "prompt": {
+          "en": "Match each item with the right price. One price is extra.",
+          "fa": "هر مورد را به قیمت درست وصل کن. یک قیمت اضافه است.",
+          "de": "Ordne jedem Produkt den passenden Preis zu. Ein Preis bleibt übrig."
+        },
+        "pairs": [
+          { "item": "Apfelkuchen", "answer": "2,90 Euro" },
+          { "item": "Tomatensuppe", "answer": "4,50 Euro" },
+          { "item": "Wasser", "answer": "1,80 Euro" }
+        ],
+        "options": ["1,80 Euro", "2,90 Euro", "4,50 Euro", "7,90 Euro"]
+      }
+    ]
+  },
+  {
+    "id": "fahrplan",
+    "kind": "timetable",
+    "title": { "en": "A train timetable", "fa": "جدول زمانی قطار", "de": "Ein Fahrplan" },
+    "text": "Zug nach Berlin: Abfahrt Hamburg 8:15 Uhr, Ankunft Berlin 10:05 Uhr, Gleis 4.\nZug nach Köln: Abfahrt Hamburg 9:40 Uhr, Ankunft Köln 13:30 Uhr, Gleis 7.\nZug nach München: Abfahrt Hamburg 11:05 Uhr, Ankunft München 17:55 Uhr, Gleis 2.\nAm Wochenende fahren alle Züge eine Stunde später.",
+    "translation": {
+      "en": "Train to Berlin: departure Hamburg 8:15, arrival Berlin 10:05, platform 4.\nTrain to Cologne: departure Hamburg 9:40, arrival Cologne 13:30, platform 7.\nTrain to Munich: departure Hamburg 11:05, arrival Munich 17:55, platform 2.\nAt the weekend all trains leave one hour later.",
+      "fa": "قطار برلین: حرکت از هامبورگ 8:15، رسیدن به برلین 10:05، سکوی 4.\nقطار کلن: حرکت از هامبورگ 9:40، رسیدن به کلن 13:30، سکوی 7.\nقطار مونیخ: حرکت از هامبورگ 11:05، رسیدن به مونیخ 17:55، سکوی 2.\nآخر هفته همه‌ی قطارها یک ساعت دیرتر حرکت می‌کنند."
+    },
+    "tasks": [
+      { "id": "r05-1", "type": "true-false", "statement": "Der Zug nach Berlin fährt um 8:15 Uhr ab.", "answer": true, "evidence": "Abfahrt Hamburg 8:15 Uhr" },
+      { "id": "r05-2", "type": "true-false", "statement": "Der Zug nach Köln fährt von Gleis 4 ab.", "answer": false, "evidence": "Ankunft Köln 13:30 Uhr, Gleis 7" },
+      {
+        "id": "r05-3",
+        "type": "choice",
+        "question": "Wann kommt der Zug in München an?",
+        "options": ["Um 17:55 Uhr", "Um 11:05 Uhr", "Um 13:30 Uhr"],
+        "answer": "Um 17:55 Uhr",
+        "evidence": "Ankunft München 17:55 Uhr"
+      },
+      {
+        "id": "r05-4",
+        "type": "matching",
+        "prompt": {
+          "en": "Match each destination with the right platform. One platform is extra.",
+          "fa": "هر مقصد را به سکوی درست وصل کن. یک سکو اضافه است.",
+          "de": "Ordne jedem Ziel das passende Gleis zu. Ein Gleis bleibt übrig."
+        },
+        "pairs": [
+          { "item": "Berlin", "answer": "Gleis 4" },
+          { "item": "Köln", "answer": "Gleis 7" },
+          { "item": "München", "answer": "Gleis 2" }
+        ],
+        "options": ["Gleis 4", "Gleis 7", "Gleis 2", "Gleis 9"]
+      }
+    ]
+  }
+]

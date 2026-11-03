@@ -1,0 +1,154 @@
+[
+  {
+    "id": "quest-01",
+    "lessonId": "questions",
+    "type": "choice",
+    "prompt": { "en": "Choose the question word.", "fa": "کلمه‌ی پرسشی را انتخاب کن.", "de": "Wähle das Fragewort." },
+    "sentenceDe": "___ wohnst du? – In Berlin.",
+    "options": ["Wo", "Woher", "Wohin", "Wer"],
+    "answer": "Wo",
+    "explanation": {
+      "en": "“In Berlin” tells you where someone lives (no movement): wo.",
+      "fa": "«In Berlin» نشان می‌دهد کسی کجا زندگی می‌کند (بدون حرکت): wo.",
+      "de": "„In Berlin“ sagt, wo jemand wohnt (keine Bewegung): wo."
+    }
+  },
+  {
+    "id": "quest-02",
+    "lessonId": "questions",
+    "type": "choice",
+    "prompt": { "en": "Choose the question word.", "fa": "کلمه‌ی پرسشی را انتخاب کن.", "de": "Wähle das Fragewort." },
+    "sentenceDe": "___ kommst du? – Aus Spanien.",
+    "options": ["Woher", "Wohin", "Wo", "Wann"],
+    "answer": "Woher",
+    "explanation": {
+      "en": "“Aus Spanien” tells you where someone comes from: woher.",
+      "fa": "«Aus Spanien» نشان می‌دهد کسی از کجا آمده: woher.",
+      "de": "„Aus Spanien“ sagt, woher jemand kommt: woher."
+    }
+  },
+  {
+    "id": "quest-03",
+    "lessonId": "questions",
+    "type": "choice",
+    "prompt": { "en": "Choose the question word.", "fa": "کلمه‌ی پرسشی را انتخاب کن.", "de": "Wähle das Fragewort." },
+    "sentenceDe": "___ gehst du? – Ins Kino.",
+    "options": ["Woher", "Wohin", "Wo", "Wie"],
+    "answer": "Wohin",
+    "explanation": {
+      "en": "“Ins Kino” is the destination: wohin.",
+      "fa": "«Ins Kino» مقصد است: wohin.",
+      "de": "„Ins Kino“ ist das Ziel: wohin."
+    }
+  },
+  {
+    "id": "quest-04",
+    "lessonId": "questions",
+    "type": "choice",
+    "prompt": { "en": "Choose the question word.", "fa": "کلمه‌ی پرسشی را انتخاب کن.", "de": "Wähle das Fragewort." },
+    "sentenceDe": "___ ist das? – Das ist Herr Braun.",
+    "options": ["Wer", "Was", "Wo", "Wie"],
+    "answer": "Wer",
+    "explanation": {
+      "en": "Herr Braun is a person: wer.",
+      "fa": "Herr Braun یک آدم است: wer.",
+      "de": "Herr Braun ist eine Person: wer."
+    }
+  },
+  {
+    "id": "quest-05",
+    "lessonId": "questions",
+    "type": "choice",
+    "prompt": { "en": "Choose the question word.", "fa": "کلمه‌ی پرسشی را انتخاب کن.", "de": "Wähle das Fragewort." },
+    "sentenceDe": "___ ist das? – Das ist ein Apfel.",
+    "options": ["Wer", "Was", "Wo", "Wann"],
+    "answer": "Was",
+    "explanation": {
+      "en": "An apple is a thing: was.",
+      "fa": "سیب یک چیز است: was.",
+      "de": "Ein Apfel ist eine Sache: was."
+    }
+  },
+  {
+    "id": "quest-06",
+    "lessonId": "questions",
+    "type": "choice",
+    "prompt": { "en": "Choose the question word.", "fa": "کلمه‌ی پرسشی را انتخاب کن.", "de": "Wähle das Fragewort." },
+    "sentenceDe": "___ kommst du? – Um acht Uhr.",
+    "options": ["Wann", "Wo", "Wie", "Warum"],
+    "answer": "Wann",
+    "explanation": {
+      "en": "“Um acht Uhr” is a time: wann.",
+      "fa": "«Um acht Uhr» یک زمان است: wann.",
+      "de": "„Um acht Uhr“ ist eine Zeitangabe: wann."
+    }
+  },
+  {
+    "id": "quest-07",
+    "lessonId": "questions",
+    "type": "choice",
+    "prompt": { "en": "Choose the question word.", "fa": "کلمه‌ی پرسشی را انتخاب کن.", "de": "Wähle das Fragewort." },
+    "sentenceDe": "___ lernst du Deutsch? – Weil ich in Berlin wohne.",
+    "options": ["Wann", "Warum", "Wie", "Wer"],
+    "answer": "Warum",
+    "explanation": {
+      "en": "The answer gives a reason (weil …): warum.",
+      "fa": "پاسخ یک دلیل می‌دهد (weil …): warum.",
+      "de": "Die Antwort nennt einen Grund (weil …): warum."
+    }
+  },
+  {
+    "id": "quest-08",
+    "lessonId": "questions",
+    "type": "choice",
+    "prompt": { "en": "Choose the question word.", "fa": "کلمه‌ی پرسشی را انتخاب کن.", "de": "Wähle das Fragewort." },
+    "sentenceDe": "___ kostet das? – Zwei Euro.",
+    "options": ["Wie viel", "Wie viele", "Wann", "Wer"],
+    "answer": "Wie viel",
+    "explanation": {
+      "en": "A price is an amount you do not count one by one: wie viel.",
+      "fa": "قیمت مقداری است که تک‌تک نمی‌شماری: wie viel.",
+      "de": "Ein Preis ist eine Menge, die man nicht einzeln zählt: wie viel."
+    }
+  },
+  {
+    "id": "quest-09",
+    "lessonId": "questions",
+    "type": "choice",
+    "prompt": { "en": "Choose the question word.", "fa": "کلمه‌ی پرسشی را انتخاب کن.", "de": "Wähle das Fragewort." },
+    "sentenceDe": "___ heißt du? – Ich heiße Lisa.",
+    "options": ["Wie", "Was", "Wo", "Wer"],
+    "answer": "Wie",
+    "explanation": {
+      "en": "In German you ask for a name with wie: Wie heißt du?",
+      "fa": "در آلمانی اسم را با wie می‌پرسند: Wie heißt du?",
+      "de": "Nach dem Namen fragt man mit wie: Wie heißt du?"
+    }
+  },
+  {
+    "id": "quest-10",
+    "lessonId": "questions",
+    "type": "fill",
+    "prompt": { "en": "Type the question words (you can count the answer).", "fa": "کلمه‌ی پرسشی را بنویس (پاسخ شمردنی است).", "de": "Schreibe das Fragewort (die Antwort ist zählbar)." },
+    "sentenceDe": "___ Kinder hast du? – Zwei.",
+    "answer": "Wie viele",
+    "explanation": {
+      "en": "Children can be counted, so wie viele.",
+      "fa": "بچه‌ها شمردنی هستند، پس wie viele.",
+      "de": "Kinder kann man zählen, also wie viele."
+    }
+  },
+  {
+    "id": "quest-11",
+    "lessonId": "questions",
+    "type": "transform",
+    "prompt": { "en": "Turn the statement into a question.", "fa": "جمله‌ی خبری را به پرسش تبدیل کن.", "de": "Mache aus der Aussage eine Frage." },
+    "sentenceDe": "Du heißt Lisa. → ___ heißt du?",
+    "answer": "Wie",
+    "explanation": {
+      "en": "Wie heißt du? asks for the name. The verb stays in position 2.",
+      "fa": "Wie heißt du؟ اسم را می‌پرسد. فعل در جایگاه دوم می‌ماند.",
+      "de": "Wie heißt du? fragt nach dem Namen. Das Verb bleibt auf Position 2."
+    }
+  }
+]

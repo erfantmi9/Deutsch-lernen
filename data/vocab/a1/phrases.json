@@ -1,0 +1,280 @@
+[
+  {
+    "id": "guten-morgen",
+    "text": "Guten Morgen!",
+    "situation": "greeting",
+    "reply": "Guten Morgen!",
+    "translations": {
+      "en": "Good morning!",
+      "fa": "صبح بخیر!"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "guten-tag",
+    "text": "Guten Tag!",
+    "situation": "greeting",
+    "reply": "Guten Tag!",
+    "translations": {
+      "en": "Hello! (during the day)",
+      "fa": "روز بخیر! (سلام)"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "guten-abend",
+    "text": "Guten Abend!",
+    "situation": "greeting",
+    "reply": "Guten Abend!",
+    "translations": {
+      "en": "Good evening!",
+      "fa": "عصر بخیر!"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "gute-nacht",
+    "text": "Gute Nacht!",
+    "situation": "greeting",
+    "reply": "Gute Nacht!",
+    "translations": {
+      "en": "Good night!",
+      "fa": "شب بخیر!"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "auf-wiedersehen",
+    "text": "Auf Wiedersehen!",
+    "situation": "greeting",
+    "reply": "Auf Wiedersehen!",
+    "translations": {
+      "en": "Goodbye!",
+      "fa": "خداحافظ!"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "tschuess",
+    "text": "Tschüss!",
+    "situation": "greeting",
+    "reply": "Tschüss!",
+    "translations": {
+      "en": "Bye! (informal)",
+      "fa": "خداحافظ! (دوستانه)"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "wie-geht-es-ihnen",
+    "text": "Wie geht es Ihnen?",
+    "situation": "greeting",
+    "reply": "Gut, danke. Und Ihnen?",
+    "translations": {
+      "en": "How are you? (formal)",
+      "fa": "حال شما چطور است؟"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "mir-geht-es-gut",
+    "text": "Mir geht es gut, danke.",
+    "situation": "greeting",
+    "translations": {
+      "en": "I am fine, thank you.",
+      "fa": "حال من خوب است، ممنون."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "freut-mich",
+    "text": "Freut mich!",
+    "situation": "greeting",
+    "reply": "Freut mich auch!",
+    "translations": {
+      "en": "Nice to meet you!",
+      "fa": "خوشحالم از آشنایی!"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "danke-schoen",
+    "text": "Danke schön!",
+    "situation": "polite",
+    "reply": "Bitte schön.",
+    "translations": {
+      "en": "Thank you very much!",
+      "fa": "خیلی ممنون!"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "bitte-schoen",
+    "text": "Bitte schön.",
+    "situation": "polite",
+    "translations": {
+      "en": "You are welcome. / Here you are.",
+      "fa": "خواهش می‌کنم. / بفرمایید."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "entschuldigung",
+    "text": "Entschuldigung!",
+    "situation": "polite",
+    "reply": "Kein Problem.",
+    "translations": {
+      "en": "Excuse me! / Sorry!",
+      "fa": "ببخشید!"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "es-tut-mir-leid",
+    "text": "Es tut mir leid.",
+    "situation": "polite",
+    "reply": "Kein Problem.",
+    "translations": {
+      "en": "I am sorry.",
+      "fa": "متأسفم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "ich-verstehe-das-nicht",
+    "text": "Ich verstehe das nicht.",
+    "situation": "classroom",
+    "translations": {
+      "en": "I do not understand that.",
+      "fa": "من این را نمی‌فهمم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "noch-einmal-bitte",
+    "text": "Noch einmal, bitte.",
+    "situation": "classroom",
+    "translations": {
+      "en": "Once more, please.",
+      "fa": "یک بار دیگر، لطفاً."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "was-bedeutet-das",
+    "text": "Was bedeutet das?",
+    "situation": "classroom",
+    "translations": {
+      "en": "What does that mean?",
+      "fa": "این یعنی چه؟"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "was-kostet-das",
+    "text": "Was kostet das?",
+    "situation": "shopping",
+    "reply": "Das kostet zwei Euro.",
+    "translations": {
+      "en": "How much is that?",
+      "fa": "این چند است؟"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "ich-nehme-das",
+    "text": "Ich nehme das.",
+    "situation": "shopping",
+    "translations": {
+      "en": "I will take that.",
+      "fa": "این را می‌گیرم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "wo-ist-der-bahnhof",
+    "text": "Wo ist der Bahnhof?",
+    "situation": "travel",
+    "reply": "Geradeaus und dann links.",
+    "translations": {
+      "en": "Where is the station?",
+      "fa": "ایستگاه قطار کجاست؟"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "fahrkarte-nach-berlin",
+    "text": "Eine Fahrkarte nach Berlin, bitte.",
+    "situation": "travel",
+    "translations": {
+      "en": "One ticket to Berlin, please.",
+      "fa": "یک بلیت به برلین، لطفاً."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "die-rechnung-bitte",
+    "text": "Die Rechnung, bitte.",
+    "situation": "restaurant",
+    "reply": "Sofort.",
+    "translations": {
+      "en": "The bill, please.",
+      "fa": "صورت‌حساب، لطفاً."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "guten-appetit",
+    "text": "Guten Appetit!",
+    "situation": "restaurant",
+    "reply": "Danke, gleichfalls!",
+    "translations": {
+      "en": "Enjoy your meal!",
+      "fa": "نوش جان!"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "koennen-sie-mir-helfen",
+    "text": "Können Sie mir helfen?",
+    "situation": "help",
+    "reply": "Ja, gern.",
+    "translations": {
+      "en": "Can you help me?",
+      "fa": "می‌توانید به من کمک کنید؟"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "sprechen-sie-englisch",
+    "text": "Sprechen Sie Englisch?",
+    "situation": "help",
+    "reply": "Ein bisschen.",
+    "translations": {
+      "en": "Do you speak English?",
+      "fa": "انگلیسی صحبت می‌کنید؟"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "einen-moment-bitte",
+    "text": "Einen Moment, bitte.",
+    "situation": "phone",
+    "translations": {
+      "en": "One moment, please.",
+      "fa": "یک لحظه، لطفاً."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "wie-heissen-sie",
+    "text": "Wie heißen Sie?",
+    "situation": "greeting",
+    "reply": "Ich heiße Anna.",
+    "translations": {
+      "en": "What is your name? (formal)",
+      "fa": "اسم شما چیست؟"
+    },
+    "level": "A1"
+  }
+]

@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
+import { recordActivity } from "./activityStore";
 import { applySentenceResult } from "@/lib/sentenceBoard";
 import type { FocusFilter } from "@/lib/sentences";
 
@@ -28,6 +29,7 @@ export const useSentenceStore = create<SentenceState>()(
       recordResult: (id, correct, firstAttempt) => {
         const { solvedIds, wrongIds, streak, bestStreak } = get();
         set(applySentenceResult({ solvedIds, wrongIds, streak, bestStreak }, id, correct, firstAttempt));
+        recordActivity();
       },
 
       reset: () => set({ solvedIds: [], wrongIds: [], streak: 0, bestStreak: 0 }),

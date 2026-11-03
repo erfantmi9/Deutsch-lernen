@@ -1,0 +1,461 @@
+[
+  {
+    "id": "mit",
+    "word": "mit",
+    "cases": [
+      "dat"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "with",
+      "fa": "با"
+    },
+    "example": {
+      "de": "Ich fahre mit dem Bus.",
+      "en": "I go by bus.",
+      "fa": "من با اتوبوس می‌روم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "von",
+    "word": "von",
+    "cases": [
+      "dat"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "from, of",
+      "fa": "از"
+    },
+    "example": {
+      "de": "Das ist ein Brief von meiner Mutter.",
+      "en": "This is a letter from my mother.",
+      "fa": "این نامه‌ای از مادرم است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "zu",
+    "word": "zu",
+    "cases": [
+      "dat"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "to (a person or place)",
+      "fa": "به، نزد"
+    },
+    "example": {
+      "de": "Ich gehe zum Arzt.",
+      "en": "I am going to the doctor.",
+      "fa": "من نزد پزشک می‌روم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "bei",
+    "word": "bei",
+    "cases": [
+      "dat"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "at (someone's place), near",
+      "fa": "نزد، پیش"
+    },
+    "example": {
+      "de": "Ich wohne bei meinen Eltern.",
+      "en": "I live with my parents.",
+      "fa": "من نزد پدر و مادرم زندگی می‌کنم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "nach",
+    "word": "nach",
+    "cases": [
+      "dat"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "to (cities, countries), after",
+      "fa": "به (شهر، کشور)، بعد از"
+    },
+    "example": {
+      "de": "Wir fahren nach Berlin.",
+      "en": "We are going to Berlin.",
+      "fa": "ما به برلین می‌رویم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "aus",
+    "word": "aus",
+    "cases": [
+      "dat"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "out of, from",
+      "fa": "از (درون، مبدأ)"
+    },
+    "example": {
+      "de": "Er kommt aus Italien.",
+      "en": "He comes from Italy.",
+      "fa": "او اهل ایتالیا است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "seit",
+    "word": "seit",
+    "cases": [
+      "dat"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "since, for (time)",
+      "fa": "از (زمان)، مدتی است"
+    },
+    "example": {
+      "de": "Ich lerne seit einem Jahr Deutsch.",
+      "en": "I have been learning German for a year.",
+      "fa": "من یک سال است که آلمانی یاد می‌گیرم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "ausser",
+    "word": "außer",
+    "cases": [
+      "dat"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "except, apart from",
+      "fa": "به‌جز"
+    },
+    "example": {
+      "de": "Alle sind da außer Anna.",
+      "en": "Everyone is here except Anna.",
+      "fa": "همه به‌جز آنا اینجا هستند."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "gegenueber",
+    "word": "gegenüber",
+    "cases": [
+      "dat"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "opposite",
+      "fa": "روبه‌روی"
+    },
+    "example": {
+      "de": "Die Bank ist gegenüber dem Bahnhof.",
+      "en": "The bank is opposite the station.",
+      "fa": "بانک روبه‌روی ایستگاه است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "ab",
+    "word": "ab",
+    "cases": [
+      "dat"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "from (a time), starting",
+      "fa": "از (زمان)"
+    },
+    "example": {
+      "de": "Das Büro ist ab neun Uhr offen.",
+      "en": "The office is open from nine o'clock.",
+      "fa": "دفتر از ساعت نه باز است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "fuer",
+    "word": "für",
+    "cases": [
+      "akk"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "for",
+      "fa": "برای"
+    },
+    "example": {
+      "de": "Das Geschenk ist für dich.",
+      "en": "The gift is for you.",
+      "fa": "هدیه برای توست."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "ohne",
+    "word": "ohne",
+    "cases": [
+      "akk"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "without",
+      "fa": "بدون"
+    },
+    "example": {
+      "de": "Ich trinke Tee ohne Zucker.",
+      "en": "I drink tea without sugar.",
+      "fa": "من چای بدون شکر می‌نوشم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "durch",
+    "word": "durch",
+    "cases": [
+      "akk"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "through",
+      "fa": "از میان"
+    },
+    "example": {
+      "de": "Wir gehen durch den Park.",
+      "en": "We walk through the park.",
+      "fa": "ما از میان پارک می‌گذریم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "gegen",
+    "word": "gegen",
+    "cases": [
+      "akk"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "against",
+      "fa": "علیه، در برابر"
+    },
+    "example": {
+      "de": "Wir spielen gegen die andere Mannschaft.",
+      "en": "We play against the other team.",
+      "fa": "ما در برابر تیم دیگر بازی می‌کنیم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "um",
+    "word": "um",
+    "cases": [
+      "akk"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "around, at (a time)",
+      "fa": "دور، ساعت"
+    },
+    "example": {
+      "de": "Wir sitzen um den Tisch.",
+      "en": "We are sitting around the table.",
+      "fa": "ما دور میز نشسته‌ایم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "bis",
+    "word": "bis",
+    "cases": [
+      "akk"
+    ],
+    "wechsel": false,
+    "translations": {
+      "en": "until, up to",
+      "fa": "تا"
+    },
+    "example": {
+      "de": "Ich arbeite bis fünf Uhr.",
+      "en": "I work until five o'clock.",
+      "fa": "من تا ساعت پنج کار می‌کنم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "in",
+    "word": "in",
+    "cases": [
+      "akk",
+      "dat"
+    ],
+    "wechsel": true,
+    "translations": {
+      "en": "in, into",
+      "fa": "در، به داخل"
+    },
+    "example": {
+      "de": "Ich bin in der Schule.",
+      "en": "I am at school.",
+      "fa": "من در مدرسه هستم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "an",
+    "word": "an",
+    "cases": [
+      "akk",
+      "dat"
+    ],
+    "wechsel": true,
+    "translations": {
+      "en": "on (a vertical surface), at",
+      "fa": "به، روی (سطح عمودی)"
+    },
+    "example": {
+      "de": "Das Bild hängt an der Wand.",
+      "en": "The picture hangs on the wall.",
+      "fa": "تصویر به دیوار آویزان است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "auf",
+    "word": "auf",
+    "cases": [
+      "akk",
+      "dat"
+    ],
+    "wechsel": true,
+    "translations": {
+      "en": "on (top of)",
+      "fa": "روی"
+    },
+    "example": {
+      "de": "Das Buch liegt auf dem Tisch.",
+      "en": "The book lies on the table.",
+      "fa": "کتاب روی میز است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "ueber",
+    "word": "über",
+    "cases": [
+      "akk",
+      "dat"
+    ],
+    "wechsel": true,
+    "translations": {
+      "en": "above, over",
+      "fa": "بالای، روی"
+    },
+    "example": {
+      "de": "Die Lampe hängt über dem Tisch.",
+      "en": "The lamp hangs above the table.",
+      "fa": "چراغ بالای میز آویزان است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "unter",
+    "word": "unter",
+    "cases": [
+      "akk",
+      "dat"
+    ],
+    "wechsel": true,
+    "translations": {
+      "en": "under",
+      "fa": "زیر"
+    },
+    "example": {
+      "de": "Die Tasche liegt unter dem Stuhl.",
+      "en": "The bag is under the chair.",
+      "fa": "کیف زیر صندلی است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "vor",
+    "word": "vor",
+    "cases": [
+      "akk",
+      "dat"
+    ],
+    "wechsel": true,
+    "translations": {
+      "en": "in front of, before",
+      "fa": "جلوی، قبل از"
+    },
+    "example": {
+      "de": "Das Auto steht vor dem Haus.",
+      "en": "The car is standing in front of the house.",
+      "fa": "ماشین جلوی خانه ایستاده است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "hinter",
+    "word": "hinter",
+    "cases": [
+      "akk",
+      "dat"
+    ],
+    "wechsel": true,
+    "translations": {
+      "en": "behind",
+      "fa": "پشت"
+    },
+    "example": {
+      "de": "Der Garten ist hinter dem Haus.",
+      "en": "The garden is behind the house.",
+      "fa": "باغ پشت خانه است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "neben",
+    "word": "neben",
+    "cases": [
+      "akk",
+      "dat"
+    ],
+    "wechsel": true,
+    "translations": {
+      "en": "next to",
+      "fa": "کنار"
+    },
+    "example": {
+      "de": "Die Bank ist neben der Post.",
+      "en": "The bank is next to the post office.",
+      "fa": "بانک کنار اداره پست است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "zwischen",
+    "word": "zwischen",
+    "cases": [
+      "akk",
+      "dat"
+    ],
+    "wechsel": true,
+    "translations": {
+      "en": "between",
+      "fa": "بین"
+    },
+    "example": {
+      "de": "Der Park liegt zwischen der Schule und dem Bahnhof.",
+      "en": "The park is between the school and the station.",
+      "fa": "پارک بین مدرسه و ایستگاه است."
+    },
+    "level": "A1"
+  }
+]

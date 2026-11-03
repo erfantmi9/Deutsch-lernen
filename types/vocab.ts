@@ -9,7 +9,15 @@ export type VocabCategory =
   | "travel"
   | "time"
   | "school"
-  | "body";
+  | "body"
+  | "shopping"
+  | "jobs"
+  | "weather"
+  | "colors"
+  | "clothes"
+  | "city"
+  | "hobbies"
+  | "numbers-time";
 
 export const VOCAB_CATEGORIES: readonly VocabCategory[] = [
   "food",
@@ -19,6 +27,14 @@ export const VOCAB_CATEGORIES: readonly VocabCategory[] = [
   "time",
   "school",
   "body",
+  "shopping",
+  "jobs",
+  "weather",
+  "colors",
+  "clothes",
+  "city",
+  "hobbies",
+  "numbers-time",
 ];
 
 export interface VocabEntry {

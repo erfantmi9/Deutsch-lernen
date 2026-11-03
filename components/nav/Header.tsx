@@ -3,6 +3,7 @@ import Logo from "@/components/Logo";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import ThemeToggle from "@/components/theme/ThemeToggle";
 import MainNav from "./MainNav";
+import SearchLink from "./SearchLink";
 
 export default function Header() {
   return (
@@ -13,6 +14,7 @@ export default function Header() {
         </Link>
         <MainNav />
         <div className="flex items-center gap-2">
+          <SearchLink />
           <LanguageSwitcher />
           <ThemeToggle />
         </div>

@@ -1,0 +1,377 @@
+[
+  {
+    "id": "heute",
+    "word": "heute",
+    "kind": "time",
+    "translations": {
+      "en": "today",
+      "fa": "امروز"
+    },
+    "example": {
+      "de": "Heute ist Montag.",
+      "en": "Today is Monday.",
+      "fa": "امروز دوشنبه است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "gestern",
+    "word": "gestern",
+    "kind": "time",
+    "translations": {
+      "en": "yesterday",
+      "fa": "دیروز"
+    },
+    "example": {
+      "de": "Gestern war ich im Kino.",
+      "en": "Yesterday I was at the cinema.",
+      "fa": "دیروز در سینما بودم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "morgen",
+    "word": "morgen",
+    "kind": "time",
+    "translations": {
+      "en": "tomorrow",
+      "fa": "فردا"
+    },
+    "example": {
+      "de": "Morgen habe ich einen Termin.",
+      "en": "Tomorrow I have an appointment.",
+      "fa": "فردا وقت ملاقات دارم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "jetzt",
+    "word": "jetzt",
+    "kind": "time",
+    "translations": {
+      "en": "now",
+      "fa": "الان"
+    },
+    "example": {
+      "de": "Ich habe jetzt Zeit.",
+      "en": "I have time now.",
+      "fa": "من الان وقت دارم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "bald",
+    "word": "bald",
+    "kind": "time",
+    "translations": {
+      "en": "soon",
+      "fa": "به‌زودی"
+    },
+    "example": {
+      "de": "Der Zug kommt bald.",
+      "en": "The train is coming soon.",
+      "fa": "قطار به‌زودی می‌رسد."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "dann",
+    "word": "dann",
+    "kind": "time",
+    "translations": {
+      "en": "then",
+      "fa": "سپس"
+    },
+    "example": {
+      "de": "Dann gehe ich nach Hause.",
+      "en": "Then I go home.",
+      "fa": "سپس به خانه می‌روم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "spaeter",
+    "word": "später",
+    "kind": "time",
+    "translations": {
+      "en": "later",
+      "fa": "بعداً"
+    },
+    "example": {
+      "de": "Wir sprechen später.",
+      "en": "We will talk later.",
+      "fa": "بعداً صحبت می‌کنیم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "oft",
+    "word": "oft",
+    "kind": "frequency",
+    "translations": {
+      "en": "often",
+      "fa": "اغلب"
+    },
+    "example": {
+      "de": "Ich fahre oft Fahrrad.",
+      "en": "I often ride my bike.",
+      "fa": "من اغلب دوچرخه‌سواری می‌کنم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "immer",
+    "word": "immer",
+    "kind": "frequency",
+    "translations": {
+      "en": "always",
+      "fa": "همیشه"
+    },
+    "example": {
+      "de": "Er ist immer freundlich.",
+      "en": "He is always friendly.",
+      "fa": "او همیشه مهربان است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "nie",
+    "word": "nie",
+    "kind": "frequency",
+    "translations": {
+      "en": "never",
+      "fa": "هرگز"
+    },
+    "example": {
+      "de": "Ich trinke nie Kaffee.",
+      "en": "I never drink coffee.",
+      "fa": "من هرگز قهوه نمی‌نوشم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "manchmal",
+    "word": "manchmal",
+    "kind": "frequency",
+    "translations": {
+      "en": "sometimes",
+      "fa": "گاهی"
+    },
+    "example": {
+      "de": "Manchmal esse ich Fisch.",
+      "en": "Sometimes I eat fish.",
+      "fa": "گاهی ماهی می‌خورم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "hier",
+    "word": "hier",
+    "kind": "place",
+    "translations": {
+      "en": "here",
+      "fa": "اینجا"
+    },
+    "example": {
+      "de": "Ich wohne hier.",
+      "en": "I live here.",
+      "fa": "من اینجا زندگی می‌کنم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "dort",
+    "word": "dort",
+    "kind": "place",
+    "translations": {
+      "en": "there",
+      "fa": "آنجا"
+    },
+    "example": {
+      "de": "Die Bank ist dort.",
+      "en": "The bank is over there.",
+      "fa": "بانک آنجاست."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "links",
+    "word": "links",
+    "kind": "place",
+    "translations": {
+      "en": "left",
+      "fa": "چپ"
+    },
+    "example": {
+      "de": "Die Post ist links.",
+      "en": "The post office is on the left.",
+      "fa": "اداره پست سمت چپ است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "rechts",
+    "word": "rechts",
+    "kind": "place",
+    "translations": {
+      "en": "right",
+      "fa": "راست"
+    },
+    "example": {
+      "de": "Das Hotel ist rechts.",
+      "en": "The hotel is on the right.",
+      "fa": "هتل سمت راست است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "geradeaus",
+    "word": "geradeaus",
+    "kind": "place",
+    "translations": {
+      "en": "straight ahead",
+      "fa": "مستقیم"
+    },
+    "example": {
+      "de": "Gehen Sie geradeaus.",
+      "en": "Go straight ahead.",
+      "fa": "مستقیم بروید."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "oben",
+    "word": "oben",
+    "kind": "place",
+    "translations": {
+      "en": "up, upstairs",
+      "fa": "بالا"
+    },
+    "example": {
+      "de": "Das Zimmer ist oben.",
+      "en": "The room is upstairs.",
+      "fa": "اتاق بالاست."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "unten",
+    "word": "unten",
+    "kind": "place",
+    "translations": {
+      "en": "down, downstairs",
+      "fa": "پایین"
+    },
+    "example": {
+      "de": "Die Küche ist unten.",
+      "en": "The kitchen is downstairs.",
+      "fa": "آشپزخانه پایین است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "draussen",
+    "word": "draußen",
+    "kind": "place",
+    "translations": {
+      "en": "outside",
+      "fa": "بیرون"
+    },
+    "example": {
+      "de": "Draußen ist es kalt.",
+      "en": "It is cold outside.",
+      "fa": "بیرون سرد است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "gern",
+    "word": "gern",
+    "kind": "manner",
+    "translations": {
+      "en": "gladly, with pleasure",
+      "fa": "با میل، دوست دارم"
+    },
+    "example": {
+      "de": "Ich lese gern.",
+      "en": "I like reading.",
+      "fa": "من دوست دارم کتاب بخوانم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "sehr",
+    "word": "sehr",
+    "kind": "degree",
+    "translations": {
+      "en": "very",
+      "fa": "خیلی"
+    },
+    "example": {
+      "de": "Das Wetter ist sehr schön.",
+      "en": "The weather is very nice.",
+      "fa": "هوا خیلی خوب است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "auch",
+    "word": "auch",
+    "kind": "manner",
+    "translations": {
+      "en": "also, too",
+      "fa": "هم، همچنین"
+    },
+    "example": {
+      "de": "Ich komme auch.",
+      "en": "I am coming too.",
+      "fa": "من هم می‌آیم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "nur",
+    "word": "nur",
+    "kind": "degree",
+    "translations": {
+      "en": "only, just",
+      "fa": "فقط"
+    },
+    "example": {
+      "de": "Ich habe nur einen Bruder.",
+      "en": "I only have one brother.",
+      "fa": "من فقط یک برادر دارم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "zusammen",
+    "word": "zusammen",
+    "kind": "manner",
+    "translations": {
+      "en": "together",
+      "fa": "با هم"
+    },
+    "example": {
+      "de": "Wir essen zusammen.",
+      "en": "We eat together.",
+      "fa": "ما با هم غذا می‌خوریم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "vielleicht",
+    "word": "vielleicht",
+    "kind": "manner",
+    "translations": {
+      "en": "perhaps",
+      "fa": "شاید"
+    },
+    "example": {
+      "de": "Vielleicht komme ich morgen.",
+      "en": "Perhaps I will come tomorrow.",
+      "fa": "شاید فردا بیایم."
+    },
+    "level": "A1"
+  }
+]

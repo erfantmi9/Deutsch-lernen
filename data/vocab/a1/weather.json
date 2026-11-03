@@ -1,0 +1,702 @@
+[
+  {
+    "id": "wetter",
+    "word": "Wetter",
+    "article": "das",
+    "plural": "–",
+    "translations": {
+      "en": "weather",
+      "fa": "آب‌وهوا"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Wetter).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Wetter).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Wetter).",
+      "simple": {
+        "en": "Just learn it: das Wetter.",
+        "fa": "فقط حفظش کنید: das Wetter.",
+        "de": "Einfach lernen: das Wetter."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Wetter ist heute schön.",
+      "en": "The weather is nice today.",
+      "fa": "امروز هوا خوب است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "sonne",
+    "word": "Sonne",
+    "article": "die",
+    "plural": "Sonnen",
+    "translations": {
+      "en": "sun",
+      "fa": "خورشید"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Sonne).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Sonne).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Sonne).",
+      "simple": {
+        "en": "Just learn it: die Sonne.",
+        "fa": "فقط حفظش کنید: die Sonne.",
+        "de": "Einfach lernen: die Sonne."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Sonne scheint.",
+      "en": "The sun is shining.",
+      "fa": "خورشید می‌تابد."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "regen",
+    "word": "Regen",
+    "article": "der",
+    "plural": "–",
+    "translations": {
+      "en": "rain",
+      "fa": "باران"
+    },
+    "grammarRule": {
+      "en": "Most words for wind and precipitation are masculine (der): der Regen, der Schnee, der Wind, der Nebel.",
+      "fa": "بیشتر کلمات مربوط به باد و بارش مذکر (der) هستند: der Regen, der Schnee, der Wind, der Nebel.",
+      "de": "Die meisten Wörter für Wind und Niederschlag sind maskulin (der): der Regen, der Schnee, der Wind, der Nebel.",
+      "simple": {
+        "en": "Rain, snow and wind are der.",
+        "fa": "باران، برف و باد der هستند.",
+        "de": "Regen, Schnee und Wind sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Regen ist kalt.",
+      "en": "The rain is cold.",
+      "fa": "باران سرد است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "schnee",
+    "word": "Schnee",
+    "article": "der",
+    "plural": "–",
+    "translations": {
+      "en": "snow",
+      "fa": "برف"
+    },
+    "grammarRule": {
+      "en": "Most words for wind and precipitation are masculine (der): der Regen, der Schnee, der Wind, der Nebel.",
+      "fa": "بیشتر کلمات مربوط به باد و بارش مذکر (der) هستند: der Regen, der Schnee, der Wind, der Nebel.",
+      "de": "Die meisten Wörter für Wind und Niederschlag sind maskulin (der): der Regen, der Schnee, der Wind, der Nebel.",
+      "simple": {
+        "en": "Rain, snow and wind are der.",
+        "fa": "باران، برف و باد der هستند.",
+        "de": "Regen, Schnee und Wind sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Schnee ist weiß.",
+      "en": "The snow is white.",
+      "fa": "برف سفید است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "wind",
+    "word": "Wind",
+    "article": "der",
+    "plural": "Winde",
+    "translations": {
+      "en": "wind",
+      "fa": "باد"
+    },
+    "grammarRule": {
+      "en": "Most words for wind and precipitation are masculine (der): der Regen, der Schnee, der Wind, der Nebel.",
+      "fa": "بیشتر کلمات مربوط به باد و بارش مذکر (der) هستند: der Regen, der Schnee, der Wind, der Nebel.",
+      "de": "Die meisten Wörter für Wind und Niederschlag sind maskulin (der): der Regen, der Schnee, der Wind, der Nebel.",
+      "simple": {
+        "en": "Rain, snow and wind are der.",
+        "fa": "باران، برف و باد der هستند.",
+        "de": "Regen, Schnee und Wind sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Wind ist stark.",
+      "en": "The wind is strong.",
+      "fa": "باد شدید است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "wolke",
+    "word": "Wolke",
+    "article": "die",
+    "plural": "Wolken",
+    "translations": {
+      "en": "cloud",
+      "fa": "ابر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Wolke).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Wolke).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Wolke).",
+      "simple": {
+        "en": "Just learn it: die Wolke.",
+        "fa": "فقط حفظش کنید: die Wolke.",
+        "de": "Einfach lernen: die Wolke."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Wolke ist grau.",
+      "en": "The cloud is grey.",
+      "fa": "ابر خاکستری است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "gewitter",
+    "word": "Gewitter",
+    "article": "das",
+    "plural": "Gewitter",
+    "translations": {
+      "en": "thunderstorm",
+      "fa": "رعدوبرق"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Gewitter).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Gewitter).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Gewitter).",
+      "simple": {
+        "en": "Just learn it: das Gewitter.",
+        "fa": "فقط حفظش کنید: das Gewitter.",
+        "de": "Einfach lernen: das Gewitter."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Gewitter kommt am Abend.",
+      "en": "The thunderstorm comes in the evening.",
+      "fa": "رعدوبرق عصر می‌آید."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "nebel",
+    "word": "Nebel",
+    "article": "der",
+    "plural": "Nebel",
+    "translations": {
+      "en": "fog",
+      "fa": "مه"
+    },
+    "grammarRule": {
+      "en": "Most words for wind and precipitation are masculine (der): der Regen, der Schnee, der Wind, der Nebel.",
+      "fa": "بیشتر کلمات مربوط به باد و بارش مذکر (der) هستند: der Regen, der Schnee, der Wind, der Nebel.",
+      "de": "Die meisten Wörter für Wind und Niederschlag sind maskulin (der): der Regen, der Schnee, der Wind, der Nebel.",
+      "simple": {
+        "en": "Rain, snow and wind are der.",
+        "fa": "باران، برف و باد der هستند.",
+        "de": "Regen, Schnee und Wind sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Nebel ist dicht.",
+      "en": "The fog is thick.",
+      "fa": "مه غلیظ است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "himmel",
+    "word": "Himmel",
+    "article": "der",
+    "plural": "Himmel",
+    "translations": {
+      "en": "sky",
+      "fa": "آسمان"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Himmel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Himmel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Himmel).",
+      "simple": {
+        "en": "Just learn it: der Himmel.",
+        "fa": "فقط حفظش کنید: der Himmel.",
+        "de": "Einfach lernen: der Himmel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Himmel ist blau.",
+      "en": "The sky is blue.",
+      "fa": "آسمان آبی است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "temperatur",
+    "word": "Temperatur",
+    "article": "die",
+    "plural": "Temperaturen",
+    "translations": {
+      "en": "temperature",
+      "fa": "دما"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Temperatur).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Temperatur).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Temperatur).",
+      "simple": {
+        "en": "Just learn it: die Temperatur.",
+        "fa": "فقط حفظش کنید: die Temperatur.",
+        "de": "Einfach lernen: die Temperatur."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Temperatur ist niedrig.",
+      "en": "The temperature is low.",
+      "fa": "دما پایین است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "grad",
+    "word": "Grad",
+    "article": "das",
+    "plural": "Grad",
+    "translations": {
+      "en": "degree",
+      "fa": "درجه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Grad).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Grad).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Grad).",
+      "simple": {
+        "en": "Just learn it: das Grad.",
+        "fa": "فقط حفظش کنید: das Grad.",
+        "de": "Einfach lernen: das Grad."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Heute sind es zehn Grad.",
+      "en": "Today it is ten degrees.",
+      "fa": "امروز ده درجه است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "fruehling",
+    "word": "Frühling",
+    "article": "der",
+    "plural": "Frühlinge",
+    "translations": {
+      "en": "spring",
+      "fa": "بهار"
+    },
+    "grammarRule": {
+      "en": "Days, months, seasons and parts of the day are masculine (der): der Montag, der Frühling, der Morgen. Exception: die Nacht.",
+      "fa": "روزهای هفته، ماه‌ها، فصل‌ها و بخش‌های روز مذکر (der) هستند: der Montag, der Frühling, der Morgen. استثنا: die Nacht.",
+      "de": "Wochentage, Monate, Jahreszeiten und Tageszeiten sind maskulin (der): der Montag, der Frühling, der Morgen. Ausnahme: die Nacht.",
+      "simple": {
+        "en": "Days and times of day are der (but die Nacht).",
+        "fa": "روزها و بخش‌های روز der هستند (به‌جز die Nacht).",
+        "de": "Tage und Tageszeiten sind der (aber die Nacht)."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Frühling ist warm.",
+      "en": "Spring is warm.",
+      "fa": "بهار گرم است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "herbst",
+    "word": "Herbst",
+    "article": "der",
+    "plural": "Herbste",
+    "translations": {
+      "en": "autumn",
+      "fa": "پاییز"
+    },
+    "grammarRule": {
+      "en": "Days, months, seasons and parts of the day are masculine (der): der Montag, der Frühling, der Morgen. Exception: die Nacht.",
+      "fa": "روزهای هفته، ماه‌ها، فصل‌ها و بخش‌های روز مذکر (der) هستند: der Montag, der Frühling, der Morgen. استثنا: die Nacht.",
+      "de": "Wochentage, Monate, Jahreszeiten und Tageszeiten sind maskulin (der): der Montag, der Frühling, der Morgen. Ausnahme: die Nacht.",
+      "simple": {
+        "en": "Days and times of day are der (but die Nacht).",
+        "fa": "روزها و بخش‌های روز der هستند (به‌جز die Nacht).",
+        "de": "Tage und Tageszeiten sind der (aber die Nacht)."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Herbst ist bunt.",
+      "en": "Autumn is colourful.",
+      "fa": "پاییز رنگارنگ است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "jahreszeit",
+    "word": "Jahreszeit",
+    "article": "die",
+    "plural": "Jahreszeiten",
+    "translations": {
+      "en": "season",
+      "fa": "فصل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Jahreszeit).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Jahreszeit).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Jahreszeit).",
+      "simple": {
+        "en": "Just learn it: die Jahreszeit.",
+        "fa": "فقط حفظش کنید: die Jahreszeit.",
+        "de": "Einfach lernen: die Jahreszeit."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Sommer ist meine Jahreszeit.",
+      "en": "Summer is my season.",
+      "fa": "تابستان فصل من است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "regenschirm",
+    "word": "Regenschirm",
+    "article": "der",
+    "plural": "Regenschirme",
+    "translations": {
+      "en": "umbrella",
+      "fa": "چتر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Regenschirm).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Regenschirm).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Regenschirm).",
+      "simple": {
+        "en": "Just learn it: der Regenschirm.",
+        "fa": "فقط حفظش کنید: der Regenschirm.",
+        "de": "Einfach lernen: der Regenschirm."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Regenschirm ist rot.",
+      "en": "The umbrella is red.",
+      "fa": "چتر قرمز است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "sturm",
+    "word": "Sturm",
+    "article": "der",
+    "plural": "Stürme",
+    "translations": {
+      "en": "storm",
+      "fa": "طوفان"
+    },
+    "grammarRule": {
+      "en": "Most words for wind and precipitation are masculine (der): der Regen, der Schnee, der Wind, der Nebel.",
+      "fa": "بیشتر کلمات مربوط به باد و بارش مذکر (der) هستند: der Regen, der Schnee, der Wind, der Nebel.",
+      "de": "Die meisten Wörter für Wind und Niederschlag sind maskulin (der): der Regen, der Schnee, der Wind, der Nebel.",
+      "simple": {
+        "en": "Rain, snow and wind are der.",
+        "fa": "باران، برف و باد der هستند.",
+        "de": "Regen, Schnee und Wind sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Sturm ist laut.",
+      "en": "The storm is loud.",
+      "fa": "طوفان پرصداست."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "mond",
+    "word": "Mond",
+    "article": "der",
+    "plural": "Monde",
+    "translations": {
+      "en": "moon",
+      "fa": "ماه (آسمان)"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Mond).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Mond).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Mond).",
+      "simple": {
+        "en": "Just learn it: der Mond.",
+        "fa": "فقط حفظش کنید: der Mond.",
+        "de": "Einfach lernen: der Mond."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Mond ist hell.",
+      "en": "The moon is bright.",
+      "fa": "ماه روشن است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "stern",
+    "word": "Stern",
+    "article": "der",
+    "plural": "Sterne",
+    "translations": {
+      "en": "star",
+      "fa": "ستاره"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Stern).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Stern).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Stern).",
+      "simple": {
+        "en": "Just learn it: der Stern.",
+        "fa": "فقط حفظش کنید: der Stern.",
+        "de": "Einfach lernen: der Stern."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Stern ist klein.",
+      "en": "The star is small.",
+      "fa": "ستاره کوچک است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "meer",
+    "word": "Meer",
+    "article": "das",
+    "plural": "Meere",
+    "translations": {
+      "en": "sea",
+      "fa": "دریا"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Meer).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Meer).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Meer).",
+      "simple": {
+        "en": "Just learn it: das Meer.",
+        "fa": "فقط حفظش کنید: das Meer.",
+        "de": "Einfach lernen: das Meer."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Meer ist blau.",
+      "en": "The sea is blue.",
+      "fa": "دریا آبی است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "wald",
+    "word": "Wald",
+    "article": "der",
+    "plural": "Wälder",
+    "translations": {
+      "en": "forest",
+      "fa": "جنگل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Wald).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Wald).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Wald).",
+      "simple": {
+        "en": "Just learn it: der Wald.",
+        "fa": "فقط حفظش کنید: der Wald.",
+        "de": "Einfach lernen: der Wald."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Wald ist groß.",
+      "en": "The forest is big.",
+      "fa": "جنگل بزرگ است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "fluss",
+    "word": "Fluss",
+    "article": "der",
+    "plural": "Flüsse",
+    "translations": {
+      "en": "river",
+      "fa": "رودخانه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Fluss).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Fluss).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Fluss).",
+      "simple": {
+        "en": "Just learn it: der Fluss.",
+        "fa": "فقط حفظش کنید: der Fluss.",
+        "de": "Einfach lernen: der Fluss."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Fluss ist lang.",
+      "en": "The river is long.",
+      "fa": "رودخانه بلند است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "blume",
+    "word": "Blume",
+    "article": "die",
+    "plural": "Blumen",
+    "translations": {
+      "en": "flower",
+      "fa": "گل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Blume).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Blume).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Blume).",
+      "simple": {
+        "en": "Just learn it: die Blume.",
+        "fa": "فقط حفظش کنید: die Blume.",
+        "de": "Einfach lernen: die Blume."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Blume ist rot.",
+      "en": "The flower is red.",
+      "fa": "گل قرمز است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "baum",
+    "word": "Baum",
+    "article": "der",
+    "plural": "Bäume",
+    "translations": {
+      "en": "tree",
+      "fa": "درخت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Baum).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Baum).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Baum).",
+      "simple": {
+        "en": "Just learn it: der Baum.",
+        "fa": "فقط حفظش کنید: der Baum.",
+        "de": "Einfach lernen: der Baum."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Baum ist hoch.",
+      "en": "The tree is tall.",
+      "fa": "درخت بلند است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "strand",
+    "word": "Strand",
+    "article": "der",
+    "plural": "Strände",
+    "translations": {
+      "en": "beach",
+      "fa": "ساحل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Strand).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Strand).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Strand).",
+      "simple": {
+        "en": "Just learn it: der Strand.",
+        "fa": "فقط حفظش کنید: der Strand.",
+        "de": "Einfach lernen: der Strand."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Strand ist leer.",
+      "en": "The beach is empty.",
+      "fa": "ساحل خالی است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "berg",
+    "word": "Berg",
+    "article": "der",
+    "plural": "Berge",
+    "translations": {
+      "en": "mountain",
+      "fa": "کوه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Berg).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Berg).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Berg).",
+      "simple": {
+        "en": "Just learn it: der Berg.",
+        "fa": "فقط حفظش کنید: der Berg.",
+        "de": "Einfach lernen: der Berg."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Berg ist hoch.",
+      "en": "The mountain is high.",
+      "fa": "کوه بلند است."
+    },
+    "category": "weather",
+    "level": "A1"
+  }
+]

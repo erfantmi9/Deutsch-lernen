@@ -1,0 +1,156 @@
+{
+  "lesen": { "textIds": ["postkarte-italien", "aushang", "nachricht"] },
+  "hoeren": [
+    {
+      "id": "durchsage",
+      "script": "Achtung, eine Durchsage: Der Zug nach München fährt heute von Gleis fünf ab. Er hat zehn Minuten Verspätung.",
+      "translation": {
+        "en": "Attention, an announcement: Today the train to Munich leaves from platform five. It is ten minutes late.",
+        "fa": "توجه، یک اعلامیه: قطار مونیخ امروز از خط پنج حرکت می‌کند. ده دقیقه تأخیر دارد."
+      },
+      "question": "Von welchem Gleis fährt der Zug?",
+      "options": ["Gleis drei", "Gleis fünf", "Gleis zehn"],
+      "answer": "Gleis fünf"
+    },
+    {
+      "id": "anrufbeantworter",
+      "script": "Hallo Tom, hier ist Lena. Ich kann morgen nicht ins Kino kommen. Ich muss arbeiten. Wollen wir am Samstag gehen? Ruf mich bitte an.",
+      "translation": {
+        "en": "Hello Tom, this is Lena. I cannot come to the cinema tomorrow. I have to work. Shall we go on Saturday? Please call me.",
+        "fa": "سلام تام، لنا هستم. فردا نمی‌توانم به سینما بیایم. باید کار کنم. می‌خواهیم شنبه برویم؟ لطفاً به من زنگ بزن."
+      },
+      "question": "Warum kann Lena morgen nicht kommen?",
+      "options": ["Sie ist krank.", "Sie muss arbeiten.", "Sie hat Besuch."],
+      "answer": "Sie muss arbeiten."
+    },
+    {
+      "id": "einkauf",
+      "script": "Guten Tag. Das Brot kostet zwei Euro fünfzig und die Milch kostet einen Euro zwanzig. Zusammen macht das drei Euro siebzig.",
+      "translation": {
+        "en": "Good day. The bread costs two euros fifty and the milk costs one euro twenty. Together that is three euros seventy.",
+        "fa": "روز بخیر. نان دو یورو و پنجاه سنت و شیر یک یورو و بیست سنت است. روی هم سه یورو و هفتاد سنت می‌شود."
+      },
+      "question": "Wie viel kostet alles zusammen?",
+      "options": ["Zwei Euro fünfzig", "Drei Euro siebzig", "Einen Euro zwanzig"],
+      "answer": "Drei Euro siebzig"
+    },
+    {
+      "id": "wetter",
+      "script": "Das Wetter für morgen: Am Vormittag regnet es, am Nachmittag scheint die Sonne. Es sind zwölf Grad.",
+      "translation": {
+        "en": "The weather for tomorrow: In the morning it rains, in the afternoon the sun shines. It is twelve degrees.",
+        "fa": "وضع هوای فردا: پیش از ظهر باران می‌بارد، بعدازظهر خورشید می‌تابد. دما دوازده درجه است."
+      },
+      "question": "Wann scheint morgen die Sonne?",
+      "options": ["Am Vormittag", "Am Nachmittag", "Am Abend"],
+      "answer": "Am Nachmittag"
+    },
+    {
+      "id": "arzttermin",
+      "script": "Hier ist die Praxis von Doktor Braun. Ihr Termin ist am Dienstag um halb drei. Bitte bringen Sie Ihre Karte mit.",
+      "translation": {
+        "en": "This is Doctor Braun's practice. Your appointment is on Tuesday at half past two. Please bring your card.",
+        "fa": "اینجا مطب دکتر براون است. وقت شما سه‌شنبه ساعت دو و نیم است. لطفاً کارت خود را همراه بیاورید."
+      },
+      "question": "Um wie viel Uhr ist der Termin?",
+      "options": ["Um drei Uhr", "Um halb drei", "Um zwei Uhr"],
+      "answer": "Um halb drei"
+    },
+    {
+      "id": "weg",
+      "script": "Entschuldigung, wo ist die Bank? Gehen Sie hier geradeaus und dann links. Die Bank ist neben der Post.",
+      "translation": {
+        "en": "Excuse me, where is the bank? Go straight ahead here and then left. The bank is next to the post office.",
+        "fa": "ببخشید، بانک کجاست؟ از اینجا مستقیم بروید و بعد به چپ. بانک کنار اداره پست است."
+      },
+      "question": "Wo ist die Bank?",
+      "options": ["Neben der Post.", "Vor dem Bahnhof.", "Hinter dem Café."],
+      "answer": "Neben der Post."
+    }
+  ],
+  "schreiben": {
+    "form": {
+      "situation": {
+        "en": "You sign up for a German course. Fill in the form with these facts: your name is Mira Weber, you are 24, you live in Hamburg and you are a nurse.",
+        "fa": "برای یک دوره‌ی آلمانی ثبت‌نام می‌کنید. فرم را با این اطلاعات پر کنید: اسم شما میرا وبر است، ۲۴ ساله‌اید، در هامبورگ زندگی می‌کنید و پرستارید.",
+        "de": "Du meldest dich für einen Deutschkurs an. Fülle das Formular aus: Du heißt Mira Weber, bist 24 Jahre alt, wohnst in Hamburg und bist Krankenschwester."
+      },
+      "fields": [
+        { "id": "familienname", "label": { "en": "Last name", "fa": "نام خانوادگی", "de": "Familienname" }, "expected": ["weber"] },
+        { "id": "vorname", "label": { "en": "First name", "fa": "نام", "de": "Vorname" }, "expected": ["mira"] },
+        { "id": "alter", "label": { "en": "Age", "fa": "سن", "de": "Alter" }, "expected": ["24", "vierundzwanzig"] },
+        { "id": "wohnort", "label": { "en": "City", "fa": "شهر محل زندگی", "de": "Wohnort" }, "expected": ["hamburg"] },
+        { "id": "beruf", "label": { "en": "Job", "fa": "شغل", "de": "Beruf" }, "expected": ["krankenschwester", "krankenpflegerin"] }
+      ]
+    },
+    "message": {
+      "prompt": {
+        "en": "It is your birthday on Saturday. Write a message to your friend Jonas (20 to 40 words): invite him, say when and where the party is, and ask whether he is coming.",
+        "fa": "شنبه تولد شماست. به دوستتان یوناس پیام بنویسید (۲۰ تا ۴۰ کلمه): او را دعوت کنید، بگویید مهمانی کِی و کجاست و بپرسید می‌آید یا نه.",
+        "de": "Du hast am Samstag Geburtstag. Schreibe deinem Freund Jonas eine Nachricht (20 bis 40 Wörter): Lade ihn ein, sag, wann und wo die Feier ist, und frage, ob er kommt."
+      },
+      "minWords": 15,
+      "points": [
+        { "id": "greeting", "label": { "en": "A greeting", "fa": "یک سلام", "de": "Eine Anrede" }, "patterns": ["hallo", "hi ", "lieber", "guten tag"] },
+        { "id": "invite", "label": { "en": "The invitation", "fa": "دعوت", "de": "Die Einladung" }, "patterns": ["einladen", "lade dich", "feier", "party", "geburtstag"] },
+        { "id": "when", "label": { "en": "When (day or time)", "fa": "زمان (روز یا ساعت)", "de": "Wann (Tag oder Uhrzeit)" }, "patterns": ["samstag", "uhr", "nachmittag", "abend"] },
+        { "id": "where", "label": { "en": "Where", "fa": "مکان", "de": "Wo" }, "patterns": ["bei mir", "zu hause", "wohnung", "restaurant", "café", "cafe", "park", "haus"] },
+        { "id": "question", "label": { "en": "A question: are you coming?", "fa": "یک پرسش: می‌آیی؟", "de": "Eine Frage: Kommst du?" }, "patterns": ["?"] },
+        { "id": "closing", "label": { "en": "A closing", "fa": "یک پایان‌بندی", "de": "Ein Gruß am Ende" }, "patterns": ["gruß", "grüße", "tschüss", "bis bald", "bis samstag"] }
+      ]
+    }
+  },
+  "sprechen": [
+    {
+      "id": "vorstellen",
+      "title": { "en": "Part 1: Introduce yourself", "fa": "بخش ۱: خودتان را معرفی کنید", "de": "Teil 1: Sich vorstellen" },
+      "instruction": {
+        "en": "Say these things about yourself out loud (use your own facts or invent them).",
+        "fa": "این موارد را درباره‌ی خودتان بلند بگویید (اطلاعات خودتان یا ساختگی).",
+        "de": "Sprich laut über dich (mit deinen Angaben oder erfundenen)."
+      },
+      "cues": ["Name", "Alter", "Land", "Wohnort", "Beruf / Hobby"],
+      "checklist": [
+        { "id": "name", "label": { "en": "I said my name.", "fa": "اسمم را گفتم.", "de": "Ich habe meinen Namen gesagt." } },
+        { "id": "age", "label": { "en": "I said my age.", "fa": "سنم را گفتم.", "de": "Ich habe mein Alter gesagt." } },
+        { "id": "from", "label": { "en": "I said where I come from.", "fa": "گفتم اهل کجا هستم.", "de": "Ich habe gesagt, woher ich komme." } },
+        { "id": "live", "label": { "en": "I said where I live.", "fa": "گفتم کجا زندگی می‌کنم.", "de": "Ich habe gesagt, wo ich wohne." } },
+        { "id": "job", "label": { "en": "I said my job or a hobby.", "fa": "شغل یا یک سرگرمی‌ام را گفتم.", "de": "Ich habe meinen Beruf oder ein Hobby genannt." } }
+      ],
+      "model": ["Ich heiße Mira Weber.", "Ich bin vierundzwanzig Jahre alt.", "Ich komme aus Deutschland und wohne in Hamburg.", "Ich bin Krankenschwester. Mein Hobby ist Musik."]
+    },
+    {
+      "id": "fragen",
+      "title": { "en": "Part 2: Ask questions", "fa": "بخش ۲: پرسش بپرسید", "de": "Teil 2: Fragen stellen" },
+      "instruction": {
+        "en": "Make one question for each cue word, then answer it yourself.",
+        "fa": "برای هر کلمه‌ی راهنما یک پرسش بسازید و خودتان به آن پاسخ بدهید.",
+        "de": "Bilde zu jedem Stichwort eine Frage und beantworte sie selbst."
+      },
+      "cues": ["Wohnort?", "Hobby?", "Geschwister?", "Telefonnummer?"],
+      "checklist": [
+        { "id": "q1", "label": { "en": "I asked a question about the home town.", "fa": "درباره‌ی محل زندگی پرسیدم.", "de": "Ich habe nach dem Wohnort gefragt." } },
+        { "id": "q2", "label": { "en": "I asked a question about the hobby.", "fa": "درباره‌ی سرگرمی پرسیدم.", "de": "Ich habe nach dem Hobby gefragt." } },
+        { "id": "q3", "label": { "en": "I asked a question about siblings.", "fa": "درباره‌ی خواهر و برادر پرسیدم.", "de": "Ich habe nach Geschwistern gefragt." } },
+        { "id": "q4", "label": { "en": "I asked a question about the phone number.", "fa": "درباره‌ی شماره‌ی تلفن پرسیدم.", "de": "Ich habe nach der Telefonnummer gefragt." } }
+      ],
+      "model": ["Wo wohnst du?", "Was ist dein Hobby?", "Hast du Geschwister?", "Wie ist deine Telefonnummer?"]
+    },
+    {
+      "id": "bitten",
+      "title": { "en": "Part 3: Ask politely", "fa": "بخش ۳: مؤدبانه درخواست کنید", "de": "Teil 3: Bitten" },
+      "instruction": {
+        "en": "Ask politely for each thing. Use a question with \"bitte\".",
+        "fa": "برای هر مورد مؤدبانه درخواست کنید. از یک پرسش همراه با «bitte» استفاده کنید.",
+        "de": "Bitte höflich um jede Sache. Benutze eine Frage mit „bitte“."
+      },
+      "cues": ["Wasser", "Salz", "Fenster öffnen"],
+      "checklist": [
+        { "id": "r1", "label": { "en": "I asked for water politely.", "fa": "مؤدبانه آب خواستم.", "de": "Ich habe höflich um Wasser gebeten." } },
+        { "id": "r2", "label": { "en": "I asked for the salt politely.", "fa": "مؤدبانه نمک خواستم.", "de": "Ich habe höflich um das Salz gebeten." } },
+        { "id": "r3", "label": { "en": "I asked politely to open the window.", "fa": "مؤدبانه خواستم پنجره را باز کنند.", "de": "Ich habe höflich gebeten, das Fenster zu öffnen." } }
+      ],
+      "model": ["Kann ich bitte ein Wasser haben?", "Können Sie mir bitte das Salz geben?", "Kannst du bitte das Fenster aufmachen?"]
+    }
+  ]
+}

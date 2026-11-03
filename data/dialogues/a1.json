@@ -1,0 +1,267 @@
+[
+  {
+    "id": "kennenlernen",
+    "topic": "introduce",
+    "title": { "en": "Getting to know each other", "fa": "آشنا شدن", "de": "Sich kennenlernen" },
+    "setting": {
+      "en": "Two learners meet in a German course.",
+      "fa": "دو زبان‌آموز در یک کلاس آلمانی با هم آشنا می‌شوند.",
+      "de": "Zwei Lernende lernen sich im Deutschkurs kennen."
+    },
+    "lines": [
+      { "speaker": "Lena", "de": "Hallo! Ich heiße Lena. Wie heißt du?", "en": "Hello! My name is Lena. What is your name?", "fa": "سلام! اسم من لنا است. اسم تو چیست؟" },
+      { "speaker": "Omid", "de": "Hallo, Lena! Ich heiße Omid.", "en": "Hi, Lena! My name is Omid.", "fa": "سلام لنا! اسم من امید است." },
+      { "speaker": "Lena", "de": "Woher kommst du, Omid?", "en": "Where do you come from, Omid?", "fa": "اهل کجا هستی، امید؟" },
+      { "speaker": "Omid", "de": "Ich komme aus dem Iran. Und du?", "en": "I come from Iran. And you?", "fa": "من اهل ایران هستم. و تو؟" },
+      { "speaker": "Lena", "de": "Ich komme aus Österreich, aber ich wohne in Berlin.", "en": "I come from Austria, but I live in Berlin.", "fa": "من اهل اتریش هستم، اما در برلین زندگی می‌کنم." },
+      { "speaker": "Omid", "de": "Ich wohne auch in Berlin. Ich lerne Deutsch.", "en": "I also live in Berlin. I am learning German.", "fa": "من هم در برلین زندگی می‌کنم. من آلمانی یاد می‌گیرم." },
+      { "speaker": "Lena", "de": "Sehr gut! Dein Deutsch ist prima.", "en": "Very good! Your German is great.", "fa": "عالی! آلمانی تو خیلی خوب است." },
+      { "speaker": "Omid", "de": "Danke! Bis morgen, Lena!", "en": "Thanks! See you tomorrow, Lena!", "fa": "ممنون! تا فردا، لنا!" }
+    ],
+    "vocabIds": ["verb:heissen", "verb:wohnen"],
+    "grammarLessonIds": ["pronouns", "questions"],
+    "quiz": [
+      {
+        "question": { "en": "Where does Omid come from?", "fa": "امید اهل کجاست؟", "de": "Woher kommt Omid?" },
+        "options": ["Aus dem Iran", "Aus Österreich", "Aus Berlin"],
+        "answer": "Aus dem Iran"
+      },
+      {
+        "question": { "en": "Where does Lena live?", "fa": "لنا کجا زندگی می‌کند؟", "de": "Wo wohnt Lena?" },
+        "options": ["In Berlin", "In Wien", "In Bonn"],
+        "answer": "In Berlin"
+      },
+      {
+        "question": { "en": "What is Omid learning?", "fa": "امید چه چیزی یاد می‌گیرد؟", "de": "Was lernt Omid?" },
+        "options": ["Deutsch", "Englisch", "Französisch"],
+        "answer": "Deutsch"
+      },
+      {
+        "question": { "en": "When will they see each other again?", "fa": "کی دوباره همدیگر را می‌بینند؟", "de": "Wann sehen sie sich wieder?" },
+        "options": ["Morgen", "Heute", "Am Montag"],
+        "answer": "Morgen"
+      }
+    ]
+  },
+  {
+    "id": "neuer-kollege",
+    "topic": "introduce",
+    "title": { "en": "Meeting a colleague", "fa": "آشنایی با یک همکار", "de": "Ein neuer Kollege" },
+    "setting": {
+      "en": "Frau Weber meets a new colleague in the office.",
+      "fa": "خانم وبر در دفتر با یک همکار جدید آشنا می‌شود.",
+      "de": "Frau Weber lernt im Büro einen neuen Kollegen kennen."
+    },
+    "lines": [
+      { "speaker": "Frau Weber", "de": "Guten Morgen! Ich bin Anna Weber. Wie heißen Sie?", "en": "Good morning! I am Anna Weber. What is your name?", "fa": "صبح بخیر! من آنا وبر هستم. اسم شما چیست؟" },
+      { "speaker": "Herr Yilmaz", "de": "Guten Morgen, Frau Weber. Mein Name ist Can Yilmaz.", "en": "Good morning, Ms Weber. My name is Can Yilmaz.", "fa": "صبح بخیر، خانم وبر. اسم من جان یلماز است." },
+      { "speaker": "Frau Weber", "de": "Freut mich, Herr Yilmaz. Sind Sie neu hier?", "en": "Nice to meet you, Mr Yilmaz. Are you new here?", "fa": "از آشنایی با شما خوشوقتم، آقای یلماز. شما اینجا تازه‌وارد هستید؟" },
+      { "speaker": "Herr Yilmaz", "de": "Ja, ich bin seit Montag hier.", "en": "Yes, I have been here since Monday.", "fa": "بله، از دوشنبه اینجا هستم." },
+      { "speaker": "Frau Weber", "de": "Woher kommen Sie?", "en": "Where do you come from?", "fa": "اهل کجا هستید؟" },
+      { "speaker": "Herr Yilmaz", "de": "Ich komme aus der Türkei, aber ich wohne in Köln.", "en": "I come from Turkey, but I live in Cologne.", "fa": "من اهل ترکیه هستم، اما در کلن زندگی می‌کنم." },
+      { "speaker": "Frau Weber", "de": "Möchten Sie einen Kaffee?", "en": "Would you like a coffee?", "fa": "قهوه می‌خواهید؟" },
+      { "speaker": "Herr Yilmaz", "de": "Ja, gern. Danke schön!", "en": "Yes, gladly. Thank you very much!", "fa": "بله، با کمال میل. خیلی ممنون!" }
+    ],
+    "vocabIds": ["verb:sein", "verb:wohnen"],
+    "grammarLessonIds": ["pronouns", "questions"],
+    "quiz": [
+      {
+        "question": { "en": "What is the new colleague's last name?", "fa": "نام خانوادگی همکار جدید چیست؟", "de": "Wie heißt der neue Kollege mit Nachnamen?" },
+        "options": ["Yilmaz", "Weber", "Müller"],
+        "answer": "Yilmaz"
+      },
+      {
+        "question": { "en": "Since when has he been there?", "fa": "او از کی آنجا است؟", "de": "Seit wann ist er hier?" },
+        "options": ["Seit Montag", "Seit gestern", "Seit einem Jahr"],
+        "answer": "Seit Montag"
+      },
+      {
+        "question": { "en": "Where does he live?", "fa": "او کجا زندگی می‌کند؟", "de": "Wo wohnt er?" },
+        "options": ["In Köln", "In Berlin", "In Hamburg"],
+        "answer": "In Köln"
+      },
+      {
+        "question": { "en": "What does Frau Weber offer?", "fa": "خانم وبر چه پیشنهاد می‌دهد؟", "de": "Was bietet Frau Weber an?" },
+        "options": ["Einen Kaffee", "Einen Tee", "Ein Brötchen"],
+        "answer": "Einen Kaffee"
+      }
+    ]
+  },
+  {
+    "id": "im-cafe",
+    "topic": "order-food",
+    "title": { "en": "In the café", "fa": "در کافه", "de": "Im Café" },
+    "setting": {
+      "en": "Mia orders a drink and something to eat.",
+      "fa": "میا یک نوشیدنی و یک خوراکی سفارش می‌دهد.",
+      "de": "Mia bestellt ein Getränk und etwas zu essen."
+    },
+    "lines": [
+      { "speaker": "Kellner", "de": "Guten Tag! Was möchten Sie trinken?", "en": "Good day! What would you like to drink?", "fa": "روز بخیر! چه نوشیدنی‌ای میل دارید؟" },
+      { "speaker": "Mia", "de": "Ich möchte einen Tee, bitte.", "en": "I would like a tea, please.", "fa": "یک چای می‌خواهم، لطفاً." },
+      { "speaker": "Kellner", "de": "Gern. Möchten Sie auch etwas essen?", "en": "Gladly. Would you also like something to eat?", "fa": "حتماً. چیزی هم برای خوردن می‌خواهید؟" },
+      { "speaker": "Mia", "de": "Ja, ein Käsebrötchen, bitte. Was kostet das?", "en": "Yes, a cheese roll, please. How much is it?", "fa": "بله، یک نان پنیری، لطفاً. این چند است؟" },
+      { "speaker": "Kellner", "de": "Das Käsebrötchen kostet zwei Euro fünfzig.", "en": "The cheese roll costs two euros fifty.", "fa": "نان پنیری دو یورو و پنجاه سنت است." },
+      { "speaker": "Mia", "de": "Gut. Dann nehme ich das.", "en": "Good. Then I will take that.", "fa": "خوب. پس همین را می‌گیرم." },
+      { "speaker": "Kellner", "de": "Sonst noch etwas?", "en": "Anything else?", "fa": "چیز دیگری هم هست؟" },
+      { "speaker": "Mia", "de": "Nein, danke. Zahlen, bitte!", "en": "No, thank you. The bill, please!", "fa": "نه، ممنون. صورت‌حساب لطفاً!" },
+      { "speaker": "Kellner", "de": "Das macht vier Euro zwanzig.", "en": "That makes four euros twenty.", "fa": "می‌شود چهار یورو و بیست سنت." }
+    ],
+    "vocabIds": ["verb:essen", "noun:broetchen", "noun:getraenk"],
+    "grammarLessonIds": ["nom-akk", "modal"],
+    "quiz": [
+      {
+        "question": { "en": "What does Mia want to drink?", "fa": "میا می‌خواهد چه بنوشد؟", "de": "Was möchte Mia trinken?" },
+        "options": ["Einen Tee", "Einen Kaffee", "Ein Wasser"],
+        "answer": "Einen Tee"
+      },
+      {
+        "question": { "en": "What does she order to eat?", "fa": "او چه خوراکی سفارش می‌دهد؟", "de": "Was bestellt sie zu essen?" },
+        "options": ["Ein Käsebrötchen", "Einen Apfel", "Eine Suppe"],
+        "answer": "Ein Käsebrötchen"
+      },
+      {
+        "question": { "en": "How much is the cheese roll?", "fa": "نان پنیری چند است؟", "de": "Wie viel kostet das Käsebrötchen?" },
+        "options": ["Zwei Euro fünfzig", "Drei Euro", "Vier Euro zwanzig"],
+        "answer": "Zwei Euro fünfzig"
+      },
+      {
+        "question": { "en": "How much does Mia pay in total?", "fa": "میا در مجموع چقدر می‌پردازد؟", "de": "Wie viel zahlt Mia insgesamt?" },
+        "options": ["Vier Euro zwanzig", "Zwei Euro fünfzig", "Fünf Euro"],
+        "answer": "Vier Euro zwanzig"
+      }
+    ]
+  },
+  {
+    "id": "beim-baecker",
+    "topic": "shopping",
+    "title": { "en": "At the bakery", "fa": "در نانوایی", "de": "Beim Bäcker" },
+    "setting": {
+      "en": "Mr Braun buys bread and cake.",
+      "fa": "آقای براون نان و کیک می‌خرد.",
+      "de": "Herr Braun kauft Brot und Kuchen."
+    },
+    "lines": [
+      { "speaker": "Verkäuferin", "de": "Guten Morgen! Was darf es sein?", "en": "Good morning! What can I get you?", "fa": "صبح بخیر! چه می‌خواهید؟" },
+      { "speaker": "Herr Braun", "de": "Guten Morgen! Ich möchte vier Brötchen, bitte.", "en": "Good morning! I would like four rolls, please.", "fa": "صبح بخیر! چهار نان کوچک می‌خواهم، لطفاً." },
+      { "speaker": "Verkäuferin", "de": "Gern. Sonst noch etwas?", "en": "Gladly. Anything else?", "fa": "حتماً. چیز دیگری هم هست؟" },
+      { "speaker": "Herr Braun", "de": "Ja, ein Brot. Haben Sie auch Kuchen?", "en": "Yes, a loaf of bread. Do you also have cake?", "fa": "بله، یک نان. کیک هم دارید؟" },
+      { "speaker": "Verkäuferin", "de": "Ja, der Apfelkuchen ist heute sehr gut.", "en": "Yes, the apple cake is very good today.", "fa": "بله، کیک سیب امروز خیلی خوب است." },
+      { "speaker": "Herr Braun", "de": "Dann nehme ich zwei Stück Apfelkuchen.", "en": "Then I will take two pieces of apple cake.", "fa": "پس دو تکه کیک سیب می‌گیرم." },
+      { "speaker": "Verkäuferin", "de": "Das macht elf Euro achtzig.", "en": "That makes eleven euros eighty.", "fa": "می‌شود یازده یورو و هشتاد سنت." },
+      { "speaker": "Herr Braun", "de": "Hier sind zwölf Euro. Stimmt so!", "en": "Here are twelve euros. Keep the change!", "fa": "بفرمایید دوازده یورو. باقی‌اش مال شما!" },
+      { "speaker": "Verkäuferin", "de": "Vielen Dank! Einen schönen Tag noch!", "en": "Thank you very much! Have a nice day!", "fa": "خیلی ممنون! روز خوبی داشته باشید!" }
+    ],
+    "vocabIds": ["noun:broetchen", "noun:brot"],
+    "grammarLessonIds": ["nom-akk", "modal"],
+    "quiz": [
+      {
+        "question": { "en": "How many rolls does Mr Braun buy?", "fa": "آقای براون چند نان کوچک می‌خرد؟", "de": "Wie viele Brötchen kauft Herr Braun?" },
+        "options": ["Vier", "Zwei", "Sechs"],
+        "answer": "Vier"
+      },
+      {
+        "question": { "en": "Which cake is good today?", "fa": "امروز کدام کیک خوب است؟", "de": "Welcher Kuchen ist heute gut?" },
+        "options": ["Der Apfelkuchen", "Der Käsekuchen", "Der Schokoladenkuchen"],
+        "answer": "Der Apfelkuchen"
+      },
+      {
+        "question": { "en": "How much does everything cost together?", "fa": "جمع کل چقدر است؟", "de": "Wie viel kostet alles zusammen?" },
+        "options": ["Elf Euro achtzig", "Zwölf Euro", "Zehn Euro achtzig"],
+        "answer": "Elf Euro achtzig"
+      },
+      {
+        "question": { "en": "How much money does he hand over?", "fa": "او چقدر پول می‌دهد؟", "de": "Wie viel Geld gibt er?" },
+        "options": ["Zwölf Euro", "Elf Euro", "Fünfzehn Euro"],
+        "answer": "Zwölf Euro"
+      }
+    ]
+  },
+  {
+    "id": "jacke-kaufen",
+    "topic": "shopping",
+    "title": { "en": "Buying a jacket", "fa": "خرید یک ژاکت", "de": "Eine Jacke kaufen" },
+    "setting": {
+      "en": "Sara looks for a jacket in a clothes shop.",
+      "fa": "سارا در یک مغازه‌ی لباس دنبال یک ژاکت می‌گردد.",
+      "de": "Sara sucht in einem Kleidergeschäft eine Jacke."
+    },
+    "lines": [
+      { "speaker": "Sara", "de": "Entschuldigung, ich suche eine Jacke.", "en": "Excuse me, I am looking for a jacket.", "fa": "ببخشید، دنبال یک ژاکت می‌گردم." },
+      { "speaker": "Verkäufer", "de": "Gern. Welche Farbe möchten Sie?", "en": "Gladly. Which colour would you like?", "fa": "حتماً. چه رنگی می‌خواهید؟" },
+      { "speaker": "Sara", "de": "Blau, bitte. Größe achtunddreißig.", "en": "Blue, please. Size thirty-eight.", "fa": "آبی، لطفاً. سایز سی‌وهشت." },
+      { "speaker": "Verkäufer", "de": "Diese Jacke ist blau. Sie kostet neunundvierzig Euro.", "en": "This jacket is blue. It costs forty-nine euros.", "fa": "این ژاکت آبی است. چهل‌ونه یورو قیمت دارد." },
+      { "speaker": "Sara", "de": "Hmm, die ist ein bisschen teuer. Gibt es auch eine Jacke in Grün?", "en": "Hmm, that one is a bit expensive. Is there also a jacket in green?", "fa": "هوم، این کمی گران است. ژاکت سبز هم هست؟" },
+      { "speaker": "Verkäufer", "de": "Ja, die grüne Jacke kostet nur dreißig Euro.", "en": "Yes, the green jacket costs only thirty euros.", "fa": "بله، ژاکت سبز فقط سی یورو است." },
+      { "speaker": "Sara", "de": "Die ist schön! Kann ich sie anprobieren?", "en": "That one is nice! Can I try it on?", "fa": "این قشنگ است! می‌توانم امتحانش کنم؟" },
+      { "speaker": "Verkäufer", "de": "Natürlich! Die Kabine ist dort.", "en": "Of course! The fitting room is over there.", "fa": "البته! اتاقک پرو آن‌جاست." }
+    ],
+    "grammarLessonIds": ["nom-akk", "questions"],
+    "quiz": [
+      {
+        "question": { "en": "What is Sara looking for?", "fa": "سارا دنبال چه چیزی می‌گردد؟", "de": "Was sucht Sara?" },
+        "options": ["Eine Jacke", "Eine Hose", "Ein Hemd"],
+        "answer": "Eine Jacke"
+      },
+      {
+        "question": { "en": "Which size does she need?", "fa": "او چه سایزی لازم دارد؟", "de": "Welche Größe braucht sie?" },
+        "options": ["Achtunddreißig", "Vierzig", "Zweiundvierzig"],
+        "answer": "Achtunddreißig"
+      },
+      {
+        "question": { "en": "Why does she ask for another jacket?", "fa": "چرا ژاکت دیگری می‌خواهد؟", "de": "Warum fragt sie nach einer anderen Jacke?" },
+        "options": ["Die blaue Jacke ist teuer.", "Die blaue Jacke ist zu klein.", "Die blaue Jacke ist schmutzig."],
+        "answer": "Die blaue Jacke ist teuer."
+      },
+      {
+        "question": { "en": "How much is the green jacket?", "fa": "ژاکت سبز چقدر است؟", "de": "Wie viel kostet die grüne Jacke?" },
+        "options": ["Dreißig Euro", "Neunundvierzig Euro", "Neunzig Euro"],
+        "answer": "Dreißig Euro"
+      }
+    ]
+  },
+  {
+    "id": "nach-dem-weg-fragen",
+    "topic": "directions",
+    "title": { "en": "Asking the way", "fa": "پرسیدن آدرس", "de": "Nach dem Weg fragen" },
+    "setting": {
+      "en": "Jonas asks a passer-by how to get to the station.",
+      "fa": "یوناس از یک رهگذر راه ایستگاه را می‌پرسد.",
+      "de": "Jonas fragt eine Passantin nach dem Weg zum Bahnhof."
+    },
+    "lines": [
+      { "speaker": "Jonas", "de": "Entschuldigung, wo ist der Bahnhof?", "en": "Excuse me, where is the station?", "fa": "ببخشید، ایستگاه قطار کجاست؟" },
+      { "speaker": "Passantin", "de": "Der Bahnhof? Gehen Sie hier geradeaus.", "en": "The station? Go straight ahead here.", "fa": "ایستگاه؟ از اینجا مستقیم بروید." },
+      { "speaker": "Jonas", "de": "Geradeaus, und dann?", "en": "Straight ahead, and then?", "fa": "مستقیم، و بعد؟" },
+      { "speaker": "Passantin", "de": "Dann nehmen Sie die zweite Straße links.", "en": "Then take the second street on the left.", "fa": "بعد خیابان دوم را به سمت چپ بروید." },
+      { "speaker": "Jonas", "de": "Die zweite Straße links. Ist es weit?", "en": "The second street on the left. Is it far?", "fa": "خیابان دوم به چپ. دور است؟" },
+      { "speaker": "Passantin", "de": "Nein, nur zehn Minuten zu Fuß. Der Bahnhof ist neben der Post.", "en": "No, only ten minutes on foot. The station is next to the post office.", "fa": "نه، فقط ده دقیقه پیاده. ایستگاه کنار اداره‌ی پست است." },
+      { "speaker": "Jonas", "de": "Vielen Dank!", "en": "Thank you very much!", "fa": "خیلی ممنون!" },
+      { "speaker": "Passantin", "de": "Gern geschehen. Tschüss!", "en": "You are welcome. Bye!", "fa": "خواهش می‌کنم. خداحافظ!" }
+    ],
+    "vocabIds": ["noun:bahnhof", "verb:gehen"],
+    "grammarLessonIds": ["dative", "imperative"],
+    "quiz": [
+      {
+        "question": { "en": "What is Jonas looking for?", "fa": "یوناس دنبال چه چیزی است؟", "de": "Was sucht Jonas?" },
+        "options": ["Den Bahnhof", "Die Post", "Den Flughafen"],
+        "answer": "Den Bahnhof"
+      },
+      {
+        "question": { "en": "Which street must he take?", "fa": "او باید کدام خیابان را برود؟", "de": "Welche Straße muss er nehmen?" },
+        "options": ["Die zweite Straße links", "Die erste Straße rechts", "Die dritte Straße links"],
+        "answer": "Die zweite Straße links"
+      },
+      {
+        "question": { "en": "How long does it take on foot?", "fa": "پیاده چقدر طول می‌کشد؟", "de": "Wie lange dauert es zu Fuß?" },
+        "options": ["Zehn Minuten", "Zwanzig Minuten", "Fünf Minuten"],
+        "answer": "Zehn Minuten"
+      },
+      {
+        "question": { "en": "What is next to the station?", "fa": "کنار ایستگاه چه چیزی است؟", "de": "Was ist neben dem Bahnhof?" },
+        "options": ["Die Post", "Die Schule", "Das Kino"],
+        "answer": "Die Post"
+      }
+    ]
+  }
+]

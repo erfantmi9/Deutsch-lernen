@@ -1,0 +1,702 @@
+[
+  {
+    "id": "zahl",
+    "word": "Zahl",
+    "article": "die",
+    "plural": "Zahlen",
+    "translations": {
+      "en": "number, numeral",
+      "fa": "عدد"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Zahl).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Zahl).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Zahl).",
+      "simple": {
+        "en": "Just learn it: die Zahl.",
+        "fa": "فقط حفظش کنید: die Zahl.",
+        "de": "Einfach lernen: die Zahl."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Zahl ist groß.",
+      "en": "The number is big.",
+      "fa": "عدد بزرگ است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "nummer",
+    "word": "Nummer",
+    "article": "die",
+    "plural": "Nummern",
+    "translations": {
+      "en": "number (phone, house)",
+      "fa": "شماره"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Nummer).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Nummer).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Nummer).",
+      "simple": {
+        "en": "Just learn it: die Nummer.",
+        "fa": "فقط حفظش کنید: die Nummer.",
+        "de": "Einfach lernen: die Nummer."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Nummer ist falsch.",
+      "en": "The number is wrong.",
+      "fa": "شماره اشتباه است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "minute",
+    "word": "Minute",
+    "article": "die",
+    "plural": "Minuten",
+    "translations": {
+      "en": "minute",
+      "fa": "دقیقه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Minute).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Minute).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Minute).",
+      "simple": {
+        "en": "Just learn it: die Minute.",
+        "fa": "فقط حفظش کنید: die Minute.",
+        "de": "Einfach lernen: die Minute."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Minute ist kurz.",
+      "en": "The minute is short.",
+      "fa": "دقیقه کوتاه است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "sekunde",
+    "word": "Sekunde",
+    "article": "die",
+    "plural": "Sekunden",
+    "translations": {
+      "en": "second",
+      "fa": "ثانیه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Sekunde).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Sekunde).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Sekunde).",
+      "simple": {
+        "en": "Just learn it: die Sekunde.",
+        "fa": "فقط حفظش کنید: die Sekunde.",
+        "de": "Einfach lernen: die Sekunde."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Sekunde ist sehr kurz.",
+      "en": "The second is very short.",
+      "fa": "ثانیه بسیار کوتاه است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "tag",
+    "word": "Tag",
+    "article": "der",
+    "plural": "Tage",
+    "translations": {
+      "en": "day",
+      "fa": "روز"
+    },
+    "grammarRule": {
+      "en": "Days, months, seasons and parts of the day are masculine (der): der Montag, der Frühling, der Morgen. Exception: die Nacht.",
+      "fa": "روزهای هفته، ماه‌ها، فصل‌ها و بخش‌های روز مذکر (der) هستند: der Montag, der Frühling, der Morgen. استثنا: die Nacht.",
+      "de": "Wochentage, Monate, Jahreszeiten und Tageszeiten sind maskulin (der): der Montag, der Frühling, der Morgen. Ausnahme: die Nacht.",
+      "simple": {
+        "en": "Days and times of day are der (but die Nacht).",
+        "fa": "روزها و بخش‌های روز der هستند (به‌جز die Nacht).",
+        "de": "Tage und Tageszeiten sind der (aber die Nacht)."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Tag ist lang.",
+      "en": "The day is long.",
+      "fa": "روز طولانی است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "monat",
+    "word": "Monat",
+    "article": "der",
+    "plural": "Monate",
+    "translations": {
+      "en": "month",
+      "fa": "ماه (تقویم)"
+    },
+    "grammarRule": {
+      "en": "Days, months, seasons and parts of the day are masculine (der): der Montag, der Frühling, der Morgen. Exception: die Nacht.",
+      "fa": "روزهای هفته، ماه‌ها، فصل‌ها و بخش‌های روز مذکر (der) هستند: der Montag, der Frühling, der Morgen. استثنا: die Nacht.",
+      "de": "Wochentage, Monate, Jahreszeiten und Tageszeiten sind maskulin (der): der Montag, der Frühling, der Morgen. Ausnahme: die Nacht.",
+      "simple": {
+        "en": "Days and times of day are der (but die Nacht).",
+        "fa": "روزها و بخش‌های روز der هستند (به‌جز die Nacht).",
+        "de": "Tage und Tageszeiten sind der (aber die Nacht)."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Monat hat dreißig Tage.",
+      "en": "The month has thirty days.",
+      "fa": "این ماه سی روز دارد."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "morgen",
+    "word": "Morgen",
+    "article": "der",
+    "plural": "Morgen",
+    "translations": {
+      "en": "morning",
+      "fa": "صبح"
+    },
+    "grammarRule": {
+      "en": "Days, months, seasons and parts of the day are masculine (der): der Montag, der Frühling, der Morgen. Exception: die Nacht.",
+      "fa": "روزهای هفته، ماه‌ها، فصل‌ها و بخش‌های روز مذکر (der) هستند: der Montag, der Frühling, der Morgen. استثنا: die Nacht.",
+      "de": "Wochentage, Monate, Jahreszeiten und Tageszeiten sind maskulin (der): der Montag, der Frühling, der Morgen. Ausnahme: die Nacht.",
+      "simple": {
+        "en": "Days and times of day are der (but die Nacht).",
+        "fa": "روزها و بخش‌های روز der هستند (به‌جز die Nacht).",
+        "de": "Tage und Tageszeiten sind der (aber die Nacht)."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Morgen ist kalt.",
+      "en": "The morning is cold.",
+      "fa": "صبح سرد است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "vormittag",
+    "word": "Vormittag",
+    "article": "der",
+    "plural": "Vormittage",
+    "translations": {
+      "en": "late morning",
+      "fa": "پیش از ظهر"
+    },
+    "grammarRule": {
+      "en": "Days, months, seasons and parts of the day are masculine (der): der Montag, der Frühling, der Morgen. Exception: die Nacht.",
+      "fa": "روزهای هفته، ماه‌ها، فصل‌ها و بخش‌های روز مذکر (der) هستند: der Montag, der Frühling, der Morgen. استثنا: die Nacht.",
+      "de": "Wochentage, Monate, Jahreszeiten und Tageszeiten sind maskulin (der): der Montag, der Frühling, der Morgen. Ausnahme: die Nacht.",
+      "simple": {
+        "en": "Days and times of day are der (but die Nacht).",
+        "fa": "روزها و بخش‌های روز der هستند (به‌جز die Nacht).",
+        "de": "Tage und Tageszeiten sind der (aber die Nacht)."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Vormittag ist ruhig.",
+      "en": "The late morning is quiet.",
+      "fa": "پیش از ظهر آرام است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "mittag",
+    "word": "Mittag",
+    "article": "der",
+    "plural": "Mittage",
+    "translations": {
+      "en": "midday",
+      "fa": "ظهر"
+    },
+    "grammarRule": {
+      "en": "Days, months, seasons and parts of the day are masculine (der): der Montag, der Frühling, der Morgen. Exception: die Nacht.",
+      "fa": "روزهای هفته، ماه‌ها، فصل‌ها و بخش‌های روز مذکر (der) هستند: der Montag, der Frühling, der Morgen. استثنا: die Nacht.",
+      "de": "Wochentage, Monate, Jahreszeiten und Tageszeiten sind maskulin (der): der Montag, der Frühling, der Morgen. Ausnahme: die Nacht.",
+      "simple": {
+        "en": "Days and times of day are der (but die Nacht).",
+        "fa": "روزها و بخش‌های روز der هستند (به‌جز die Nacht).",
+        "de": "Tage und Tageszeiten sind der (aber die Nacht)."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Mittag ist heiß.",
+      "en": "Midday is hot.",
+      "fa": "ظهر گرم است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "nachmittag",
+    "word": "Nachmittag",
+    "article": "der",
+    "plural": "Nachmittage",
+    "translations": {
+      "en": "afternoon",
+      "fa": "بعدازظهر"
+    },
+    "grammarRule": {
+      "en": "Days, months, seasons and parts of the day are masculine (der): der Montag, der Frühling, der Morgen. Exception: die Nacht.",
+      "fa": "روزهای هفته، ماه‌ها، فصل‌ها و بخش‌های روز مذکر (der) هستند: der Montag, der Frühling, der Morgen. استثنا: die Nacht.",
+      "de": "Wochentage, Monate, Jahreszeiten und Tageszeiten sind maskulin (der): der Montag, der Frühling, der Morgen. Ausnahme: die Nacht.",
+      "simple": {
+        "en": "Days and times of day are der (but die Nacht).",
+        "fa": "روزها و بخش‌های روز der هستند (به‌جز die Nacht).",
+        "de": "Tage und Tageszeiten sind der (aber die Nacht)."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Nachmittag ist frei.",
+      "en": "The afternoon is free.",
+      "fa": "بعدازظهر آزاد است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "abend",
+    "word": "Abend",
+    "article": "der",
+    "plural": "Abende",
+    "translations": {
+      "en": "evening",
+      "fa": "عصر، شب"
+    },
+    "grammarRule": {
+      "en": "Days, months, seasons and parts of the day are masculine (der): der Montag, der Frühling, der Morgen. Exception: die Nacht.",
+      "fa": "روزهای هفته، ماه‌ها، فصل‌ها و بخش‌های روز مذکر (der) هستند: der Montag, der Frühling, der Morgen. استثنا: die Nacht.",
+      "de": "Wochentage, Monate, Jahreszeiten und Tageszeiten sind maskulin (der): der Montag, der Frühling, der Morgen. Ausnahme: die Nacht.",
+      "simple": {
+        "en": "Days and times of day are der (but die Nacht).",
+        "fa": "روزها و بخش‌های روز der هستند (به‌جز die Nacht).",
+        "de": "Tage und Tageszeiten sind der (aber die Nacht)."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Abend ist schön.",
+      "en": "The evening is nice.",
+      "fa": "عصر دلپذیر است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "nacht",
+    "word": "Nacht",
+    "article": "die",
+    "plural": "Nächte",
+    "translations": {
+      "en": "night",
+      "fa": "شب"
+    },
+    "grammarRule": {
+      "en": "Exception: most parts of the day are masculine (der Morgen, der Abend), but Nacht is feminine: die Nacht.",
+      "fa": "استثنا: بیشتر بخش‌های روز مذکرند (der Morgen, der Abend) اما Nacht مؤنث است: die Nacht.",
+      "de": "Ausnahme: Die meisten Tageszeiten sind maskulin (der Morgen, der Abend), aber Nacht ist feminin: die Nacht.",
+      "simple": {
+        "en": "Learn it: die Nacht (not der).",
+        "fa": "حفظ کنید: die Nacht (نه der).",
+        "de": "Merken: die Nacht (nicht der)."
+      }
+    },
+    "ruleCategory": "exception",
+    "example": {
+      "de": "Die Nacht ist dunkel.",
+      "en": "The night is dark.",
+      "fa": "شب تاریک است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "wochenende",
+    "word": "Wochenende",
+    "article": "das",
+    "plural": "Wochenenden",
+    "translations": {
+      "en": "weekend",
+      "fa": "آخر هفته"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Wochenende).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Wochenende).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Wochenende).",
+      "simple": {
+        "en": "Just learn it: das Wochenende.",
+        "fa": "فقط حفظش کنید: das Wochenende.",
+        "de": "Einfach lernen: das Wochenende."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Wochenende ist kurz.",
+      "en": "The weekend is short.",
+      "fa": "آخر هفته کوتاه است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "termin",
+    "word": "Termin",
+    "article": "der",
+    "plural": "Termine",
+    "translations": {
+      "en": "appointment",
+      "fa": "وقت ملاقات"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Termin).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Termin).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Termin).",
+      "simple": {
+        "en": "Just learn it: der Termin.",
+        "fa": "فقط حفظش کنید: der Termin.",
+        "de": "Einfach lernen: der Termin."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Termin ist am Montag.",
+      "en": "The appointment is on Monday.",
+      "fa": "وقت ملاقات دوشنبه است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "datum",
+    "word": "Datum",
+    "article": "das",
+    "plural": "Daten",
+    "translations": {
+      "en": "date",
+      "fa": "تاریخ"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Datum).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Datum).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Datum).",
+      "simple": {
+        "en": "Just learn it: das Datum.",
+        "fa": "فقط حفظش کنید: das Datum.",
+        "de": "Einfach lernen: das Datum."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Datum ist heute.",
+      "en": "The date is today.",
+      "fa": "تاریخ امروز است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "kalender",
+    "word": "Kalender",
+    "article": "der",
+    "plural": "Kalender",
+    "translations": {
+      "en": "calendar",
+      "fa": "تقویم"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Kalender).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Kalender).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Kalender).",
+      "simple": {
+        "en": "Just learn it: der Kalender.",
+        "fa": "فقط حفظش کنید: der Kalender.",
+        "de": "Einfach lernen: der Kalender."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Kalender hängt an der Wand.",
+      "en": "The calendar hangs on the wall.",
+      "fa": "تقویم به دیوار آویزان است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "geburtstag",
+    "word": "Geburtstag",
+    "article": "der",
+    "plural": "Geburtstage",
+    "translations": {
+      "en": "birthday",
+      "fa": "تولد"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Geburtstag).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Geburtstag).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Geburtstag).",
+      "simple": {
+        "en": "Just learn it: der Geburtstag.",
+        "fa": "فقط حفظش کنید: der Geburtstag.",
+        "de": "Einfach lernen: der Geburtstag."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Mein Geburtstag ist im Mai.",
+      "en": "My birthday is in May.",
+      "fa": "تولد من در ماه مه است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "mittwoch",
+    "word": "Mittwoch",
+    "article": "der",
+    "plural": "Mittwoche",
+    "translations": {
+      "en": "Wednesday",
+      "fa": "چهارشنبه"
+    },
+    "grammarRule": {
+      "en": "Days, months, seasons and parts of the day are masculine (der): der Montag, der Frühling, der Morgen. Exception: die Nacht.",
+      "fa": "روزهای هفته، ماه‌ها، فصل‌ها و بخش‌های روز مذکر (der) هستند: der Montag, der Frühling, der Morgen. استثنا: die Nacht.",
+      "de": "Wochentage, Monate, Jahreszeiten und Tageszeiten sind maskulin (der): der Montag, der Frühling, der Morgen. Ausnahme: die Nacht.",
+      "simple": {
+        "en": "Days and times of day are der (but die Nacht).",
+        "fa": "روزها و بخش‌های روز der هستند (به‌جز die Nacht).",
+        "de": "Tage und Tageszeiten sind der (aber die Nacht)."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Mittwoch ist ein Arbeitstag.",
+      "en": "Wednesday is a working day.",
+      "fa": "چهارشنبه یک روز کاری است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "donnerstag",
+    "word": "Donnerstag",
+    "article": "der",
+    "plural": "Donnerstage",
+    "translations": {
+      "en": "Thursday",
+      "fa": "پنجشنبه"
+    },
+    "grammarRule": {
+      "en": "Days, months, seasons and parts of the day are masculine (der): der Montag, der Frühling, der Morgen. Exception: die Nacht.",
+      "fa": "روزهای هفته، ماه‌ها، فصل‌ها و بخش‌های روز مذکر (der) هستند: der Montag, der Frühling, der Morgen. استثنا: die Nacht.",
+      "de": "Wochentage, Monate, Jahreszeiten und Tageszeiten sind maskulin (der): der Montag, der Frühling, der Morgen. Ausnahme: die Nacht.",
+      "simple": {
+        "en": "Days and times of day are der (but die Nacht).",
+        "fa": "روزها و بخش‌های روز der هستند (به‌جز die Nacht).",
+        "de": "Tage und Tageszeiten sind der (aber die Nacht)."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Donnerstag ist kurz.",
+      "en": "Thursday is short.",
+      "fa": "پنجشنبه کوتاه است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "freitag",
+    "word": "Freitag",
+    "article": "der",
+    "plural": "Freitage",
+    "translations": {
+      "en": "Friday",
+      "fa": "جمعه"
+    },
+    "grammarRule": {
+      "en": "Days, months, seasons and parts of the day are masculine (der): der Montag, der Frühling, der Morgen. Exception: die Nacht.",
+      "fa": "روزهای هفته، ماه‌ها، فصل‌ها و بخش‌های روز مذکر (der) هستند: der Montag, der Frühling, der Morgen. استثنا: die Nacht.",
+      "de": "Wochentage, Monate, Jahreszeiten und Tageszeiten sind maskulin (der): der Montag, der Frühling, der Morgen. Ausnahme: die Nacht.",
+      "simple": {
+        "en": "Days and times of day are der (but die Nacht).",
+        "fa": "روزها و بخش‌های روز der هستند (به‌جز die Nacht).",
+        "de": "Tage und Tageszeiten sind der (aber die Nacht)."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Freitag ist gut.",
+      "en": "Friday is good.",
+      "fa": "جمعه خوب است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "samstag",
+    "word": "Samstag",
+    "article": "der",
+    "plural": "Samstage",
+    "translations": {
+      "en": "Saturday",
+      "fa": "شنبه"
+    },
+    "grammarRule": {
+      "en": "Days, months, seasons and parts of the day are masculine (der): der Montag, der Frühling, der Morgen. Exception: die Nacht.",
+      "fa": "روزهای هفته، ماه‌ها، فصل‌ها و بخش‌های روز مذکر (der) هستند: der Montag, der Frühling, der Morgen. استثنا: die Nacht.",
+      "de": "Wochentage, Monate, Jahreszeiten und Tageszeiten sind maskulin (der): der Montag, der Frühling, der Morgen. Ausnahme: die Nacht.",
+      "simple": {
+        "en": "Days and times of day are der (but die Nacht).",
+        "fa": "روزها و بخش‌های روز der هستند (به‌جز die Nacht).",
+        "de": "Tage und Tageszeiten sind der (aber die Nacht)."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Samstag ist frei.",
+      "en": "Saturday is free.",
+      "fa": "شنبه آزاد است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "sonntag",
+    "word": "Sonntag",
+    "article": "der",
+    "plural": "Sonntage",
+    "translations": {
+      "en": "Sunday",
+      "fa": "یکشنبه"
+    },
+    "grammarRule": {
+      "en": "Days, months, seasons and parts of the day are masculine (der): der Montag, der Frühling, der Morgen. Exception: die Nacht.",
+      "fa": "روزهای هفته، ماه‌ها، فصل‌ها و بخش‌های روز مذکر (der) هستند: der Montag, der Frühling, der Morgen. استثنا: die Nacht.",
+      "de": "Wochentage, Monate, Jahreszeiten und Tageszeiten sind maskulin (der): der Montag, der Frühling, der Morgen. Ausnahme: die Nacht.",
+      "simple": {
+        "en": "Days and times of day are der (but die Nacht).",
+        "fa": "روزها و بخش‌های روز der هستند (به‌جز die Nacht).",
+        "de": "Tage und Tageszeiten sind der (aber die Nacht)."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Sonntag ist ruhig.",
+      "en": "Sunday is quiet.",
+      "fa": "یکشنبه آرام است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "haelfte",
+    "word": "Hälfte",
+    "article": "die",
+    "plural": "Hälften",
+    "translations": {
+      "en": "half",
+      "fa": "نیمه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Hälfte).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Hälfte).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Hälfte).",
+      "simple": {
+        "en": "Just learn it: die Hälfte.",
+        "fa": "فقط حفظش کنید: die Hälfte.",
+        "de": "Einfach lernen: die Hälfte."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Hälfte ist genug.",
+      "en": "Half is enough.",
+      "fa": "نیمه کافی است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "viertel",
+    "word": "Viertel",
+    "article": "das",
+    "plural": "Viertel",
+    "translations": {
+      "en": "quarter",
+      "fa": "یک‌چهارم"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Viertel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Viertel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Viertel).",
+      "simple": {
+        "en": "Just learn it: das Viertel.",
+        "fa": "فقط حفظش کنید: das Viertel.",
+        "de": "Einfach lernen: das Viertel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Viertel ist klein.",
+      "en": "The quarter is small.",
+      "fa": "یک‌چهارم کوچک است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  },
+  {
+    "id": "mittagessen",
+    "word": "Mittagessen",
+    "article": "das",
+    "plural": "Mittagessen",
+    "translations": {
+      "en": "lunch",
+      "fa": "ناهار"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Mittagessen).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Mittagessen).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Mittagessen).",
+      "simple": {
+        "en": "Just learn it: das Mittagessen.",
+        "fa": "فقط حفظش کنید: das Mittagessen.",
+        "de": "Einfach lernen: das Mittagessen."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Mittagessen ist um zwölf.",
+      "en": "Lunch is at twelve.",
+      "fa": "ناهار ساعت دوازده است."
+    },
+    "category": "numbers-time",
+    "level": "A1"
+  }
+]

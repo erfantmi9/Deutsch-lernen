@@ -31,6 +31,14 @@ export const CATEGORY_ICON_KEYS = [
   "cat-time",
   "cat-school",
   "cat-body",
+  "cat-shopping",
+  "cat-jobs",
+  "cat-weather",
+  "cat-colors",
+  "cat-clothes",
+  "cat-city",
+  "cat-hobbies",
+  "cat-numbers-time",
 ] as const;
 
 export type CategoryIconKey = (typeof CATEGORY_ICON_KEYS)[number];
@@ -45,6 +53,14 @@ export const CATEGORY_ICON: Readonly<Record<VocabCategory, CategoryIconKey>> = {
   time: "cat-time",
   school: "cat-school",
   body: "cat-body",
+  shopping: "cat-shopping",
+  jobs: "cat-jobs",
+  weather: "cat-weather",
+  colors: "cat-colors",
+  clothes: "cat-clothes",
+  city: "cat-city",
+  hobbies: "cat-hobbies",
+  "numbers-time": "cat-numbers-time",
 };
 
 /** Vocab ids whose drawing differs from their own id (synonyms, future entries). */

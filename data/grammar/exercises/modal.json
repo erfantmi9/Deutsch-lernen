@@ -1,0 +1,137 @@
+[
+  {
+    "id": "modal-01",
+    "lessonId": "modal",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct form of können.", "fa": "شکل درست können را انتخاب کن.", "de": "Wähle die richtige Form von können." },
+    "sentenceDe": "Ich ___ gut Deutsch sprechen.",
+    "options": ["kann", "kannst", "können"],
+    "answer": "kann",
+    "explanation": {
+      "en": "ich kann: the singular has a changed vowel and no ending for ich.",
+      "fa": "ich kann: در مفرد حرف صدادار تغییر می‌کند و برای ich پایانه‌ای نیست.",
+      "de": "ich kann: Im Singular ändert sich der Vokal, und bei ich gibt es keine Endung."
+    }
+  },
+  {
+    "id": "modal-02",
+    "lessonId": "modal",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct form of müssen.", "fa": "شکل درست müssen را انتخاب کن.", "de": "Wähle die richtige Form von müssen." },
+    "sentenceDe": "Du ___ heute arbeiten.",
+    "options": ["muss", "musst", "müssen"],
+    "answer": "musst",
+    "explanation": {
+      "en": "du always ends in -st: du musst.",
+      "fa": "du همیشه با st- تمام می‌شود: du musst.",
+      "de": "du endet immer auf -st: du musst."
+    }
+  },
+  {
+    "id": "modal-03",
+    "lessonId": "modal",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct form of wollen.", "fa": "شکل درست wollen را انتخاب کن.", "de": "Wähle die richtige Form von wollen." },
+    "sentenceDe": "Wir ___ nach Berlin fahren.",
+    "options": ["will", "willst", "wollen"],
+    "answer": "wollen",
+    "explanation": {
+      "en": "In the plural the modal verb looks like the infinitive: wir wollen.",
+      "fa": "در جمع فعل مودال مثل مصدر است: wir wollen.",
+      "de": "Im Plural sieht das Modalverb wie der Infinitiv aus: wir wollen."
+    }
+  },
+  {
+    "id": "modal-04",
+    "lessonId": "modal",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct form of dürfen.", "fa": "شکل درست dürfen را انتخاب کن.", "de": "Wähle die richtige Form von dürfen." },
+    "sentenceDe": "Er ___ hier nicht rauchen.",
+    "options": ["darf", "darfst", "dürfen"],
+    "answer": "darf",
+    "explanation": {
+      "en": "er darf: like ich, the 3rd person singular has no ending.",
+      "fa": "er darf: مثل ich، سوم‌شخص مفرد پایانه ندارد.",
+      "de": "er darf: Wie bei ich hat die 3. Person Singular keine Endung."
+    }
+  },
+  {
+    "id": "modal-05",
+    "lessonId": "modal",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct form of dürfen.", "fa": "شکل درست dürfen را انتخاب کن.", "de": "Wähle die richtige Form von dürfen." },
+    "sentenceDe": "___ ich hier sitzen?",
+    "options": ["Darf", "Darfst", "Dürfen"],
+    "answer": "Darf",
+    "explanation": {
+      "en": "In a yes/no question the verb comes first. With ich: Darf ich …?",
+      "fa": "در پرسش بله/خیر فعل اول می‌آید. با ich: Darf ich …؟",
+      "de": "In einer Ja/Nein-Frage steht das Verb vorn. Mit ich: Darf ich …?"
+    }
+  },
+  {
+    "id": "modal-06",
+    "lessonId": "modal",
+    "type": "fill",
+    "prompt": { "en": "Type the correct form.", "fa": "شکل درست را بنویس.", "de": "Schreibe die richtige Form." },
+    "sentenceDe": "Ich ___ einen Kaffee. (möchten)",
+    "answer": "möchte",
+    "explanation": {
+      "en": "ich möchte: the polite way to say what you would like.",
+      "fa": "ich möchte: روش مؤدبانه برای گفتن آنچه دوست داری.",
+      "de": "ich möchte: die höfliche Art zu sagen, was du gern hättest."
+    }
+  },
+  {
+    "id": "modal-07",
+    "lessonId": "modal",
+    "type": "fill",
+    "prompt": { "en": "Type the correct form.", "fa": "شکل درست را بنویس.", "de": "Schreibe die richtige Form." },
+    "sentenceDe": "Ihr ___ nicht warten. (müssen)",
+    "answer": "müsst",
+    "explanation": {
+      "en": "ihr müsst: the stem keeps its umlaut and the ending is -t.",
+      "fa": "ihr müsst: ریشه اومْلاوتش را نگه می‌دارد و پایانه t- است.",
+      "de": "ihr müsst: Der Stamm behält den Umlaut, die Endung ist -t."
+    }
+  },
+  {
+    "id": "modal-08",
+    "lessonId": "modal",
+    "type": "fill",
+    "prompt": { "en": "Type the correct form.", "fa": "شکل درست را بنویس.", "de": "Schreibe die richtige Form." },
+    "sentenceDe": "___ du heute kommen? (können)",
+    "answer": "Kannst",
+    "explanation": {
+      "en": "du kannst: the question starts with the verb.",
+      "fa": "du kannst: پرسش با فعل شروع می‌شود.",
+      "de": "du kannst: Die Frage beginnt mit dem Verb."
+    }
+  },
+  {
+    "id": "modal-09",
+    "lessonId": "modal",
+    "type": "fill",
+    "prompt": { "en": "Type the correct form (sie means “they” here).", "fa": "شکل درست را بنویس (sie در اینجا یعنی «آن‌ها»).", "de": "Schreibe die richtige Form (sie bedeutet hier „they“)." },
+    "sentenceDe": "Sie ___ Fußball spielen. (wollen, sie = they)",
+    "answer": "wollen",
+    "explanation": {
+      "en": "sie (they) takes the plural form, which looks like the infinitive: sie wollen.",
+      "fa": "sie (آن‌ها) شکل جمع را می‌گیرد که مثل مصدر است: sie wollen.",
+      "de": "sie (Plural) hat die Pluralform, die wie der Infinitiv aussieht: sie wollen."
+    }
+  },
+  {
+    "id": "modal-10",
+    "lessonId": "modal",
+    "type": "transform",
+    "prompt": { "en": "Add the modal verb wollen.", "fa": "فعل مودال wollen را اضافه کن.", "de": "Füge das Modalverb wollen hinzu." },
+    "sentenceDe": "Ich gehe ins Kino. → Ich ___ ins Kino gehen.",
+    "answer": "will",
+    "explanation": {
+      "en": "The modal verb takes position 2 (ich will) and gehen moves to the end as an infinitive.",
+      "fa": "فعل مودال در جایگاه دوم می‌آید (ich will) و gehen به‌صورت مصدر به آخر می‌رود.",
+      "de": "Das Modalverb steht auf Position 2 (ich will), und gehen steht als Infinitiv am Ende."
+    }
+  }
+]

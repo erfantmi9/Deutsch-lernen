@@ -9,8 +9,10 @@ describe("noun icons", () => {
     expect(new Set(NOUN_ICON_KEYS).size).toBe(NOUN_ICON_KEYS.length);
   });
 
-  it("maps every current vocab id to a dedicated icon", () => {
-    const missing = vocab.filter((w) => !ICON_BY_VOCAB_ID[w.id]).map((w) => w.id);
+  it("maps every core-category vocab id to a dedicated icon", () => {
+    // Words added by the extended categories fall back to their category icon.
+    const core = new Set(["food", "family", "home", "travel", "time", "school", "body"]);
+    const missing = vocab.filter((w) => core.has(w.category) && !ICON_BY_VOCAB_ID[w.id]).map((w) => w.id);
     expect(missing).toEqual([]);
   });
 

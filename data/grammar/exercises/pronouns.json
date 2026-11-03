@@ -1,0 +1,138 @@
+[
+  {
+    "id": "pron-01",
+    "lessonId": "pronouns",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct pronoun.", "fa": "ضمیر درست را انتخاب کن.", "de": "Wähle das richtige Pronomen." },
+    "sentenceDe": "___ heiße Tom.",
+    "options": ["Ich", "Du", "Wir"],
+    "answer": "Ich",
+    "explanation": {
+      "en": "The ending -e in “heiße” goes with ich.",
+      "fa": "پایانه‌ی e- در «heiße» با ich می‌آید.",
+      "de": "Die Endung -e bei „heiße“ passt zu ich."
+    }
+  },
+  {
+    "id": "pron-02",
+    "lessonId": "pronouns",
+    "type": "fill",
+    "prompt": { "en": "Type the missing pronoun.", "fa": "ضمیر جاافتاده را بنویس.", "de": "Schreibe das fehlende Pronomen." },
+    "sentenceDe": "___ kommst aus Spanien.",
+    "answer": "Du",
+    "explanation": {
+      "en": "The ending -st always goes with du: du kommst.",
+      "fa": "پایانه‌ی st- همیشه با du می‌آید: du kommst.",
+      "de": "Die Endung -st gehört immer zu du: du kommst."
+    }
+  },
+  {
+    "id": "pron-03",
+    "lessonId": "pronouns",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct pronoun.", "fa": "ضمیر درست را انتخاب کن.", "de": "Wähle das richtige Pronomen." },
+    "sentenceDe": "Das ist Lara. ___ wohnt in Wien.",
+    "options": ["Er", "Sie", "Es", "Wir"],
+    "answer": "Sie",
+    "explanation": {
+      "en": "Lara is a woman, so the pronoun is sie.",
+      "fa": "لارا یک زن است، پس ضمیر sie است.",
+      "de": "Lara ist eine Frau, also: sie."
+    }
+  },
+  {
+    "id": "pron-04",
+    "lessonId": "pronouns",
+    "type": "choice",
+    "prompt": { "en": "Choose the pronoun that replaces the noun.", "fa": "ضمیری را انتخاب کن که جای اسم می‌نشیند.", "de": "Wähle das Pronomen, das das Nomen ersetzt." },
+    "sentenceDe": "Das ist der Tisch. ___ ist groß.",
+    "options": ["Er", "Sie", "Es"],
+    "answer": "Er",
+    "explanation": {
+      "en": "der Tisch is masculine, so you say er.",
+      "fa": "der Tisch مذکر است، پس er می‌گوییم.",
+      "de": "der Tisch ist maskulin, also sagt man er."
+    }
+  },
+  {
+    "id": "pron-05",
+    "lessonId": "pronouns",
+    "type": "choice",
+    "prompt": { "en": "Choose the pronoun that replaces the noun.", "fa": "ضمیری را انتخاب کن که جای اسم می‌نشیند.", "de": "Wähle das Pronomen, das das Nomen ersetzt." },
+    "sentenceDe": "Das ist die Lampe. ___ ist neu.",
+    "options": ["Er", "Sie", "Es"],
+    "answer": "Sie",
+    "explanation": {
+      "en": "die Lampe is feminine, so you say sie.",
+      "fa": "die Lampe مؤنث است، پس sie می‌گوییم.",
+      "de": "die Lampe ist feminin, also sagt man sie."
+    }
+  },
+  {
+    "id": "pron-06",
+    "lessonId": "pronouns",
+    "type": "choice",
+    "prompt": { "en": "Choose the pronoun that replaces the noun.", "fa": "ضمیری را انتخاب کن که جای اسم می‌نشیند.", "de": "Wähle das Pronomen, das das Nomen ersetzt." },
+    "sentenceDe": "Das ist das Buch. ___ ist alt.",
+    "options": ["Er", "Sie", "Es"],
+    "answer": "Es",
+    "explanation": {
+      "en": "das Buch is neuter, so you say es.",
+      "fa": "das Buch خنثی است، پس es می‌گوییم.",
+      "de": "das Buch ist neutral, also sagt man es."
+    }
+  },
+  {
+    "id": "pron-07",
+    "lessonId": "pronouns",
+    "type": "transform",
+    "prompt": { "en": "Replace the subject with a pronoun.", "fa": "فاعل را با ضمیر جایگزین کن.", "de": "Ersetze das Subjekt durch ein Pronomen." },
+    "sentenceDe": "Anna und ich lernen Deutsch. → ___ lernen Deutsch.",
+    "answer": "Wir",
+    "explanation": {
+      "en": "Anna and I = we (wir). The verb lernen stays the same.",
+      "fa": "Anna und ich یعنی ما (wir). فعل lernen همان می‌ماند.",
+      "de": "Anna und ich = wir. Das Verb lernen bleibt gleich."
+    }
+  },
+  {
+    "id": "pron-08",
+    "lessonId": "pronouns",
+    "type": "transform",
+    "prompt": { "en": "Replace the subject with a pronoun.", "fa": "فاعل را با ضمیر جایگزین کن.", "de": "Ersetze das Subjekt durch ein Pronomen." },
+    "sentenceDe": "Tom und Lisa spielen Fußball. → ___ spielen Fußball.",
+    "answer": "Sie",
+    "explanation": {
+      "en": "Two or more people (3rd person) are sie (they).",
+      "fa": "دو نفر یا بیشتر (سوم‌شخص) می‌شود sie (آن‌ها).",
+      "de": "Mehrere Personen (3. Person) sind sie."
+    }
+  },
+  {
+    "id": "pron-09",
+    "lessonId": "pronouns",
+    "type": "choice",
+    "prompt": { "en": "You are speaking to a stranger. Choose the pronoun.", "fa": "با یک غریبه صحبت می‌کنی. ضمیر را انتخاب کن.", "de": "Du sprichst mit einer fremden Person. Wähle das Pronomen." },
+    "sentenceDe": "Guten Tag, Frau Schmidt. Wie heißen ___?",
+    "options": ["Du", "Sie", "Ihr"],
+    "answer": "Sie",
+    "explanation": {
+      "en": "With strangers you use the formal Sie, always with a capital S. The verb form is the same as for “they”.",
+      "fa": "با غریبه‌ها از Sie رسمی استفاده می‌کنی، همیشه با S بزرگ. شکل فعل همان شکل «آن‌ها» است.",
+      "de": "Bei fremden Personen benutzt du das formelle Sie, immer mit großem S. Die Verbform ist dieselbe wie bei „sie“ (Plural)."
+    }
+  },
+  {
+    "id": "pron-10",
+    "lessonId": "pronouns",
+    "type": "fill",
+    "prompt": { "en": "Type the missing pronoun (you speak to several friends).", "fa": "ضمیر جاافتاده را بنویس (با چند دوست صحبت می‌کنی).", "de": "Schreibe das fehlende Pronomen (du sprichst mit mehreren Freunden)." },
+    "sentenceDe": "Kinder, wo seid ___?",
+    "answer": "ihr",
+    "explanation": {
+      "en": "Several people you call du are addressed with ihr. “seid” is the ihr form of sein.",
+      "fa": "چند نفر که با هرکدام du صحبت می‌کنی با ihr خطاب می‌شوند. «seid» شکل ihr از فعل sein است.",
+      "de": "Mehrere Personen, die du duzt, sprichst du mit ihr an. „seid“ ist die ihr-Form von sein."
+    }
+  }
+]

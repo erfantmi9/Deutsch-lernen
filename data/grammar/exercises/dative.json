@@ -1,0 +1,137 @@
+[
+  {
+    "id": "dat-01",
+    "lessonId": "dative",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct article.", "fa": "آرتیکل درست را انتخاب کن.", "de": "Wähle den richtigen Artikel." },
+    "sentenceDe": "Ich fahre mit ___ Bus.",
+    "options": ["dem", "den", "der"],
+    "answer": "dem",
+    "explanation": {
+      "en": "mit is always followed by the dative. der Bus is masculine, so: mit dem Bus.",
+      "fa": "بعد از mit همیشه داتیو می‌آید. der Bus مذکر است، پس: mit dem Bus.",
+      "de": "Nach mit steht immer der Dativ. der Bus ist maskulin, also: mit dem Bus."
+    }
+  },
+  {
+    "id": "dat-02",
+    "lessonId": "dative",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct article.", "fa": "آرتیکل درست را انتخاب کن.", "de": "Wähle den richtigen Artikel." },
+    "sentenceDe": "Ich fahre mit ___ Bahn.",
+    "options": ["dem", "der", "die"],
+    "answer": "der",
+    "explanation": {
+      "en": "die Bahn is feminine. In the dative die becomes der: mit der Bahn.",
+      "fa": "die Bahn مؤنث است. در داتیو die به der تبدیل می‌شود: mit der Bahn.",
+      "de": "die Bahn ist feminin. Im Dativ wird die zu der: mit der Bahn."
+    }
+  },
+  {
+    "id": "dat-03",
+    "lessonId": "dative",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct word.", "fa": "کلمه‌ی درست را انتخاب کن.", "de": "Wähle das richtige Wort." },
+    "sentenceDe": "Ich gehe ___ Arzt.",
+    "options": ["zum", "zur", "beim"],
+    "answer": "zum",
+    "explanation": {
+      "en": "gehen shows movement towards a person: zu. zu + dem = zum (der Arzt is masculine).",
+      "fa": "gehen حرکت به سوی یک شخص را نشان می‌دهد: zu. zu + dem = zum (der Arzt مذکر است).",
+      "de": "gehen zeigt eine Bewegung zu einer Person: zu. zu + dem = zum (der Arzt ist maskulin)."
+    }
+  },
+  {
+    "id": "dat-04",
+    "lessonId": "dative",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct word.", "fa": "کلمه‌ی درست را انتخاب کن.", "de": "Wähle das richtige Wort." },
+    "sentenceDe": "Sie geht ___ Schule.",
+    "options": ["zum", "zur", "nach"],
+    "answer": "zur",
+    "explanation": {
+      "en": "die Schule is feminine. zu + der = zur.",
+      "fa": "die Schule مؤنث است. zu + der = zur.",
+      "de": "die Schule ist feminin. zu + der = zur."
+    }
+  },
+  {
+    "id": "dat-05",
+    "lessonId": "dative",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct word.", "fa": "کلمه‌ی درست را انتخاب کن.", "de": "Wähle das richtige Wort." },
+    "sentenceDe": "Er ist ___ Arzt.",
+    "options": ["beim", "zum", "nach"],
+    "answer": "beim",
+    "explanation": {
+      "en": "sein answers wo? (he is at the doctor's): bei. bei + dem = beim.",
+      "fa": "sein به wo؟ پاسخ می‌دهد (او پیش دکتر است): bei. bei + dem = beim.",
+      "de": "sein antwortet auf wo? (er ist beim Arzt): bei. bei + dem = beim."
+    }
+  },
+  {
+    "id": "dat-06",
+    "lessonId": "dative",
+    "type": "fill",
+    "prompt": { "en": "Type the preposition.", "fa": "حرف اضافه را بنویس.", "de": "Schreibe die Präposition." },
+    "sentenceDe": "Ich komme ___ Hause.",
+    "answer": "nach",
+    "explanation": {
+      "en": "Movement towards home is nach Hause.",
+      "fa": "حرکت به سوی خانه می‌شود nach Hause.",
+      "de": "Die Bewegung nach Hause heißt nach Hause."
+    }
+  },
+  {
+    "id": "dat-07",
+    "lessonId": "dative",
+    "type": "fill",
+    "prompt": { "en": "Type the preposition.", "fa": "حرف اضافه را بنویس.", "de": "Schreibe die Präposition." },
+    "sentenceDe": "Ich bin ___ Hause.",
+    "answer": "zu",
+    "explanation": {
+      "en": "Being at home is zu Hause (a fixed phrase without an article).",
+      "fa": "در خانه بودن می‌شود zu Hause (یک عبارت ثابت بدون آرتیکل).",
+      "de": "Zu Hause sein heißt zu Hause (feste Wendung ohne Artikel)."
+    }
+  },
+  {
+    "id": "dat-08",
+    "lessonId": "dative",
+    "type": "fill",
+    "prompt": { "en": "Type the possessive article in the dative.", "fa": "آرتیکل ملکی را در حالت داتیو بنویس.", "de": "Schreibe den Possessivartikel im Dativ." },
+    "sentenceDe": "Das Geschenk ist von ___ Bruder. (ich)",
+    "answer": "meinem",
+    "explanation": {
+      "en": "von takes the dative. der Bruder is masculine: mein + -em = meinem.",
+      "fa": "بعد از von داتیو می‌آید. der Bruder مذکر است: mein + em- = meinem.",
+      "de": "Nach von steht der Dativ. der Bruder ist maskulin: mein + -em = meinem."
+    }
+  },
+  {
+    "id": "dat-09",
+    "lessonId": "dative",
+    "type": "fill",
+    "prompt": { "en": "Type the possessive article in the dative.", "fa": "آرتیکل ملکی را در حالت داتیو بنویس.", "de": "Schreibe den Possessivartikel im Dativ." },
+    "sentenceDe": "Ich wohne bei ___ Eltern. (ich)",
+    "answer": "meinen",
+    "explanation": {
+      "en": "bei takes the dative. Eltern is plural: mein + -en = meinen.",
+      "fa": "بعد از bei داتیو می‌آید. Eltern جمع است: mein + en- = meinen.",
+      "de": "Nach bei steht der Dativ. Eltern ist Plural: mein + -en = meinen."
+    }
+  },
+  {
+    "id": "dat-10",
+    "lessonId": "dative",
+    "type": "transform",
+    "prompt": { "en": "Change the means of transport.", "fa": "وسیله‌ی نقلیه را عوض کن.", "de": "Ändere das Verkehrsmittel." },
+    "sentenceDe": "Ich fahre mit dem Bus. → Ich fahre mit ___ Straßenbahn.",
+    "answer": "der",
+    "explanation": {
+      "en": "die Straßenbahn is feminine. In the dative: mit der Straßenbahn.",
+      "fa": "die Straßenbahn مؤنث است. در داتیو: mit der Straßenbahn.",
+      "de": "die Straßenbahn ist feminin. Im Dativ: mit der Straßenbahn."
+    }
+  }
+]

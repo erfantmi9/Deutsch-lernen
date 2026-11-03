@@ -77,3 +77,68 @@ export function BadgeDaily(props: BadgeProps) {
     </BadgeBase>
   );
 }
+
+/** 3 grammar lessons finished: an open book. */
+export function BadgeGrammar3(props: BadgeProps) {
+  return (
+    <BadgeBase tone="blueTint" {...props}>
+      <path d="M32 21c-3-2-9-3-13-2v21c4-1 10 0 13 2 3-2 9-3 13-2V19c-4-1-10 0-13 2z" fill={COLORS.white} />
+      <path d="M32 21v21M23 26h5M23 31h5M36 26h5M36 31h5" />
+    </BadgeBase>
+  );
+}
+
+/** 5 dialogues passed: two speech bubbles. */
+export function BadgeDialogue5(props: BadgeProps) {
+  return (
+    <BadgeBase tone="greenTint" {...props}>
+      <path d="M17 17h20a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H27l-6 5v-5h-4a3 3 0 0 1-3-3v-9a3 3 0 0 1 3-3z" fill={COLORS.white} />
+      <path d="M30 31h14a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3h-2v4l-5-4h-7a3 3 0 0 1-3-3v-6a3 3 0 0 1 3-3z" fill={COLORS.yellow} />
+    </BadgeBase>
+  );
+}
+
+/** 5 reading texts passed: a stack of books. */
+export function BadgeReading5(props: BadgeProps) {
+  return (
+    <BadgeBase tone="yellowTint" {...props}>
+      <rect x={17} y={35} width={30} height={8} rx={2} fill={COLORS.blue} />
+      <rect x={20} y={26} width={26} height={9} rx={2} fill={COLORS.red} />
+      <rect x={18} y={17} width={27} height={9} rx={2} fill={COLORS.green} />
+      <path d="M24 39h8M26 30h8M23 21h8" stroke={COLORS.white} strokeWidth={2} />
+    </BadgeBase>
+  );
+}
+
+/** 50 review answers: a flashcard with a tick. */
+export function BadgeReview50(props: BadgeProps) {
+  return (
+    <BadgeBase tone="redTint" {...props}>
+      <rect x={20} y={16} width={22} height={28} rx={4} fill={COLORS.yellow} transform="rotate(-9 31 30)" />
+      <rect x={23} y={15} width={22} height={28} rx={4} fill={COLORS.white} />
+      <path d="M29 29l4 4 8-9" strokeWidth={4} stroke={COLORS.green} />
+    </BadgeBase>
+  );
+}
+
+/** 7 days in a row: a calendar with a seven. */
+export function BadgeStreak7(props: BadgeProps) {
+  return (
+    <BadgeBase tone="greenTint" {...props}>
+      <rect x={17} y={17} width={30} height={27} rx={5} fill={COLORS.white} />
+      <path d="M17 26v-4a5 5 0 0 1 5-5h20a5 5 0 0 1 5 5v4z" fill={COLORS.green} />
+      <path d="M25 14v6M39 14v6" />
+      <path d="M26 31h12l-6 11" strokeWidth={4} />
+    </BadgeBase>
+  );
+}
+
+/** 25 mature cards: a gem. */
+export function BadgeMature25(props: BadgeProps) {
+  return (
+    <BadgeBase tone="blueTint" {...props}>
+      <path d="M24 19h16l7 9-15 16-15-16z" fill={COLORS.blue} />
+      <path d="M17 28h30M24 19l8 9 8-9M32 28v16" stroke={COLORS.white} strokeWidth={2} />
+    </BadgeBase>
+  );
+}

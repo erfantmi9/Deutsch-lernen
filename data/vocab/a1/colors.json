@@ -1,0 +1,702 @@
+[
+  {
+    "id": "farbe",
+    "word": "Farbe",
+    "article": "die",
+    "plural": "Farben",
+    "translations": {
+      "en": "colour",
+      "fa": "رنگ"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Farbe).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Farbe).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Farbe).",
+      "simple": {
+        "en": "Just learn it: die Farbe.",
+        "fa": "فقط حفظش کنید: die Farbe.",
+        "de": "Einfach lernen: die Farbe."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Farbe ist schön.",
+      "en": "The colour is beautiful.",
+      "fa": "رنگ زیباست."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "buntstift",
+    "word": "Buntstift",
+    "article": "der",
+    "plural": "Buntstifte",
+    "translations": {
+      "en": "coloured pencil",
+      "fa": "مداد رنگی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Buntstift).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Buntstift).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Buntstift).",
+      "simple": {
+        "en": "Just learn it: der Buntstift.",
+        "fa": "فقط حفظش کنید: der Buntstift.",
+        "de": "Einfach lernen: der Buntstift."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Buntstift ist gelb.",
+      "en": "The coloured pencil is yellow.",
+      "fa": "مداد رنگی زرد است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "bild",
+    "word": "Bild",
+    "article": "das",
+    "plural": "Bilder",
+    "translations": {
+      "en": "picture",
+      "fa": "تصویر، نقاشی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Bild).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Bild).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Bild).",
+      "simple": {
+        "en": "Just learn it: das Bild.",
+        "fa": "فقط حفظش کنید: das Bild.",
+        "de": "Einfach lernen: das Bild."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Bild ist bunt.",
+      "en": "The picture is colourful.",
+      "fa": "تصویر رنگارنگ است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "flagge",
+    "word": "Flagge",
+    "article": "die",
+    "plural": "Flaggen",
+    "translations": {
+      "en": "flag",
+      "fa": "پرچم"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Flagge).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Flagge).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Flagge).",
+      "simple": {
+        "en": "Just learn it: die Flagge.",
+        "fa": "فقط حفظش کنید: die Flagge.",
+        "de": "Einfach lernen: die Flagge."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Flagge ist rot.",
+      "en": "The flag is red.",
+      "fa": "پرچم قرمز است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "regenbogen",
+    "word": "Regenbogen",
+    "article": "der",
+    "plural": "Regenbögen",
+    "translations": {
+      "en": "rainbow",
+      "fa": "رنگین‌کمان"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Regenbogen).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Regenbogen).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Regenbogen).",
+      "simple": {
+        "en": "Just learn it: der Regenbogen.",
+        "fa": "فقط حفظش کنید: der Regenbogen.",
+        "de": "Einfach lernen: der Regenbogen."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Regenbogen ist schön.",
+      "en": "The rainbow is beautiful.",
+      "fa": "رنگین‌کمان زیباست."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "zitrone",
+    "word": "Zitrone",
+    "article": "die",
+    "plural": "Zitronen",
+    "translations": {
+      "en": "lemon",
+      "fa": "لیمو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Zitrone).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Zitrone).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Zitrone).",
+      "simple": {
+        "en": "Just learn it: die Zitrone.",
+        "fa": "فقط حفظش کنید: die Zitrone.",
+        "de": "Einfach lernen: die Zitrone."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Zitrone ist gelb.",
+      "en": "The lemon is yellow.",
+      "fa": "لیمو زرد است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "orange",
+    "word": "Orange",
+    "article": "die",
+    "plural": "Orangen",
+    "translations": {
+      "en": "orange (fruit)",
+      "fa": "پرتقال"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Orange).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Orange).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Orange).",
+      "simple": {
+        "en": "Just learn it: die Orange.",
+        "fa": "فقط حفظش کنید: die Orange.",
+        "de": "Einfach lernen: die Orange."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Orange ist süß.",
+      "en": "The orange is sweet.",
+      "fa": "پرتقال شیرین است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "erdbeere",
+    "word": "Erdbeere",
+    "article": "die",
+    "plural": "Erdbeeren",
+    "translations": {
+      "en": "strawberry",
+      "fa": "توت‌فرنگی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Erdbeere).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Erdbeere).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Erdbeere).",
+      "simple": {
+        "en": "Just learn it: die Erdbeere.",
+        "fa": "فقط حفظش کنید: die Erdbeere.",
+        "de": "Einfach lernen: die Erdbeere."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Erdbeere ist rot.",
+      "en": "The strawberry is red.",
+      "fa": "توت‌فرنگی قرمز است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "kirsche",
+    "word": "Kirsche",
+    "article": "die",
+    "plural": "Kirschen",
+    "translations": {
+      "en": "cherry",
+      "fa": "گیلاس"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Kirsche).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Kirsche).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Kirsche).",
+      "simple": {
+        "en": "Just learn it: die Kirsche.",
+        "fa": "فقط حفظش کنید: die Kirsche.",
+        "de": "Einfach lernen: die Kirsche."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Kirsche ist klein.",
+      "en": "The cherry is small.",
+      "fa": "گیلاس کوچک است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "gras",
+    "word": "Gras",
+    "article": "das",
+    "plural": "Gräser",
+    "translations": {
+      "en": "grass",
+      "fa": "چمن"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Gras).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Gras).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Gras).",
+      "simple": {
+        "en": "Just learn it: das Gras.",
+        "fa": "فقط حفظش کنید: das Gras.",
+        "de": "Einfach lernen: das Gras."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Gras ist grün.",
+      "en": "The grass is green.",
+      "fa": "چمن سبز است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "rose",
+    "word": "Rose",
+    "article": "die",
+    "plural": "Rosen",
+    "translations": {
+      "en": "rose",
+      "fa": "گل رز"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Rose).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Rose).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Rose).",
+      "simple": {
+        "en": "Just learn it: die Rose.",
+        "fa": "فقط حفظش کنید: die Rose.",
+        "de": "Einfach lernen: die Rose."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Rose ist rot.",
+      "en": "The rose is red.",
+      "fa": "گل رز قرمز است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "blatt",
+    "word": "Blatt",
+    "article": "das",
+    "plural": "Blätter",
+    "translations": {
+      "en": "leaf, sheet",
+      "fa": "برگ"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Blatt).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Blatt).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Blatt).",
+      "simple": {
+        "en": "Just learn it: das Blatt.",
+        "fa": "فقط حفظش کنید: das Blatt.",
+        "de": "Einfach lernen: das Blatt."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Blatt ist grün.",
+      "en": "The leaf is green.",
+      "fa": "برگ سبز است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "stift",
+    "word": "Stift",
+    "article": "der",
+    "plural": "Stifte",
+    "translations": {
+      "en": "pen, pencil",
+      "fa": "قلم"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Stift).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Stift).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Stift).",
+      "simple": {
+        "en": "Just learn it: der Stift.",
+        "fa": "فقط حفظش کنید: der Stift.",
+        "de": "Einfach lernen: der Stift."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Stift ist blau.",
+      "en": "The pen is blue.",
+      "fa": "قلم آبی است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "papier",
+    "word": "Papier",
+    "article": "das",
+    "plural": "Papiere",
+    "translations": {
+      "en": "paper",
+      "fa": "کاغذ"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Papier).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Papier).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Papier).",
+      "simple": {
+        "en": "Just learn it: das Papier.",
+        "fa": "فقط حفظش کنید: das Papier.",
+        "de": "Einfach lernen: das Papier."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Papier ist weiß.",
+      "en": "The paper is white.",
+      "fa": "کاغذ سفید است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "tinte",
+    "word": "Tinte",
+    "article": "die",
+    "plural": "Tinten",
+    "translations": {
+      "en": "ink",
+      "fa": "جوهر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Tinte).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Tinte).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Tinte).",
+      "simple": {
+        "en": "Just learn it: die Tinte.",
+        "fa": "فقط حفظش کنید: die Tinte.",
+        "de": "Einfach lernen: die Tinte."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Tinte ist schwarz.",
+      "en": "The ink is black.",
+      "fa": "جوهر سیاه است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "maler",
+    "word": "Maler",
+    "article": "der",
+    "plural": "Maler",
+    "translations": {
+      "en": "painter (male)",
+      "fa": "نقاش (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Maler mag Blau.",
+      "en": "The painter likes blue.",
+      "fa": "نقاش آبی را دوست دارد."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "malerin",
+    "word": "Malerin",
+    "article": "die",
+    "plural": "Malerinnen",
+    "translations": {
+      "en": "painter (female)",
+      "fa": "نقاش (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Malerin malt ein Bild.",
+      "en": "The painter is painting a picture.",
+      "fa": "نقاش یک تصویر می‌کشد."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "gemaelde",
+    "word": "Gemälde",
+    "article": "das",
+    "plural": "Gemälde",
+    "translations": {
+      "en": "painting",
+      "fa": "تابلوی نقاشی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Gemälde).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Gemälde).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Gemälde).",
+      "simple": {
+        "en": "Just learn it: das Gemälde.",
+        "fa": "فقط حفظش کنید: das Gemälde.",
+        "de": "Einfach lernen: das Gemälde."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Gemälde hängt im Museum.",
+      "en": "The painting hangs in the museum.",
+      "fa": "تابلوی نقاشی در موزه آویزان است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "kreide",
+    "word": "Kreide",
+    "article": "die",
+    "plural": "Kreiden",
+    "translations": {
+      "en": "chalk",
+      "fa": "گچ"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Kreide).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Kreide).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Kreide).",
+      "simple": {
+        "en": "Just learn it: die Kreide.",
+        "fa": "فقط حفظش کنید: die Kreide.",
+        "de": "Einfach lernen: die Kreide."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Kreide ist weiß.",
+      "en": "The chalk is white.",
+      "fa": "گچ سفید است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "tafel",
+    "word": "Tafel",
+    "article": "die",
+    "plural": "Tafeln",
+    "translations": {
+      "en": "blackboard",
+      "fa": "تخته"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Tafel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Tafel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Tafel).",
+      "simple": {
+        "en": "Just learn it: die Tafel.",
+        "fa": "فقط حفظش کنید: die Tafel.",
+        "de": "Einfach lernen: die Tafel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Tafel ist schwarz.",
+      "en": "The blackboard is black.",
+      "fa": "تخته سیاه است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "schatten",
+    "word": "Schatten",
+    "article": "der",
+    "plural": "Schatten",
+    "translations": {
+      "en": "shadow, shade",
+      "fa": "سایه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Schatten).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Schatten).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Schatten).",
+      "simple": {
+        "en": "Just learn it: der Schatten.",
+        "fa": "فقط حفظش کنید: der Schatten.",
+        "de": "Einfach lernen: der Schatten."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Schatten ist dunkel.",
+      "en": "The shadow is dark.",
+      "fa": "سایه تاریک است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "licht",
+    "word": "Licht",
+    "article": "das",
+    "plural": "Lichter",
+    "translations": {
+      "en": "light",
+      "fa": "نور، چراغ"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Licht).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Licht).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Licht).",
+      "simple": {
+        "en": "Just learn it: das Licht.",
+        "fa": "فقط حفظش کنید: das Licht.",
+        "de": "Einfach lernen: das Licht."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Licht ist hell.",
+      "en": "The light is bright.",
+      "fa": "نور روشن است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "muster",
+    "word": "Muster",
+    "article": "das",
+    "plural": "Muster",
+    "translations": {
+      "en": "pattern",
+      "fa": "طرح، الگو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Muster).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Muster).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Muster).",
+      "simple": {
+        "en": "Just learn it: das Muster.",
+        "fa": "فقط حفظش کنید: das Muster.",
+        "de": "Einfach lernen: das Muster."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Muster ist bunt.",
+      "en": "The pattern is colourful.",
+      "fa": "طرح رنگارنگ است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "fleck",
+    "word": "Fleck",
+    "article": "der",
+    "plural": "Flecken",
+    "translations": {
+      "en": "stain",
+      "fa": "لکه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Fleck).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Fleck).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Fleck).",
+      "simple": {
+        "en": "Just learn it: der Fleck.",
+        "fa": "فقط حفظش کنید: der Fleck.",
+        "de": "Einfach lernen: der Fleck."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Fleck ist braun.",
+      "en": "The stain is brown.",
+      "fa": "لکه قهوه‌ای است."
+    },
+    "category": "colors",
+    "level": "A1"
+  },
+  {
+    "id": "pinsel",
+    "word": "Pinsel",
+    "article": "der",
+    "plural": "Pinsel",
+    "translations": {
+      "en": "brush",
+      "fa": "قلم‌مو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Pinsel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Pinsel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Pinsel).",
+      "simple": {
+        "en": "Just learn it: der Pinsel.",
+        "fa": "فقط حفظش کنید: der Pinsel.",
+        "de": "Einfach lernen: der Pinsel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Pinsel ist neu.",
+      "en": "The brush is new.",
+      "fa": "قلم‌مو جدید است."
+    },
+    "category": "colors",
+    "level": "A1"
+  }
+]

@@ -1,0 +1,187 @@
+[
+  {
+    "id": "wohnungsanzeige",
+    "kind": "ad",
+    "title": { "en": "A flat to rent", "fa": "یک آپارتمان برای اجاره", "de": "Eine Wohnung zu vermieten" },
+    "text": "Wohnung zu vermieten! Schöne 2-Zimmer-Wohnung in Bonn, 55 Quadratmeter, mit Küche und Balkon. Die Wohnung ist im zweiten Stock. Die Miete kostet 650 Euro im Monat. Der Bahnhof ist nur fünf Minuten zu Fuß entfernt. Haustiere sind nicht erlaubt. Rufen Sie an: 0228 123456. Besichtigung am Samstag um 11 Uhr.",
+    "translation": {
+      "en": "Flat to rent! Lovely two-room flat in Bonn, 55 square metres, with kitchen and balcony. The flat is on the second floor. The rent is 650 euros a month. The station is only five minutes away on foot. Pets are not allowed. Call: 0228 123456. Viewing on Saturday at 11 o'clock.",
+      "fa": "آپارتمان برای اجاره! آپارتمان دو‌اتاقه‌ی قشنگ در بن، 55 متر مربع، با آشپزخانه و بالکن. آپارتمان در طبقه‌ی دوم است. اجاره‌ی ماهانه 650 یورو است. ایستگاه قطار فقط پنج دقیقه پیاده فاصله دارد. نگه‌داشتن حیوان خانگی ممنوع است. تماس بگیرید: 0228 123456. بازدید شنبه ساعت 11."
+    },
+    "tasks": [
+      { "id": "r06-1", "type": "true-false", "statement": "Die Wohnung hat einen Balkon.", "answer": true, "evidence": "mit Küche und Balkon" },
+      { "id": "r06-2", "type": "true-false", "statement": "Man darf Haustiere mitbringen.", "answer": false, "evidence": "Haustiere sind nicht erlaubt" },
+      {
+        "id": "r06-3",
+        "type": "choice",
+        "question": "Wie viel kostet die Wohnung im Monat?",
+        "options": ["650 Euro", "550 Euro", "55 Euro"],
+        "answer": "650 Euro",
+        "evidence": "Die Miete kostet 650 Euro im Monat"
+      },
+      {
+        "id": "r06-4",
+        "type": "matching",
+        "prompt": {
+          "en": "Match each beginning with the right ending. One ending is extra.",
+          "fa": "هر ابتدا را به پایان درست وصل کن. یک پایان اضافه است.",
+          "de": "Ordne jedem Satzanfang das passende Ende zu. Ein Ende bleibt übrig."
+        },
+        "pairs": [
+          { "item": "Die Wohnung ist in", "answer": "Bonn." },
+          { "item": "Der Bahnhof ist", "answer": "fünf Minuten zu Fuß entfernt." },
+          { "item": "Die Besichtigung ist", "answer": "am Samstag um 11 Uhr." }
+        ],
+        "options": ["Bonn.", "fünf Minuten zu Fuß entfernt.", "am Samstag um 11 Uhr.", "im dritten Stock."]
+      }
+    ]
+  },
+  {
+    "id": "nachricht",
+    "kind": "message",
+    "title": { "en": "A message to a friend", "fa": "یک پیام به دوست", "de": "Eine Nachricht an einen Freund" },
+    "text": "Hi Sven, ich bin gleich im Supermarkt. Brauchst du etwas? Ich kaufe Milch, Brot und Äpfel. Soll ich auch Eier mitbringen? Heute Abend koche ich Nudeln. Kommst du um 18 Uhr? Dann essen wir zusammen. Ich freue mich! Bis später! LG Nora",
+    "translation": {
+      "en": "Hi Sven, I will be at the supermarket in a moment. Do you need anything? I am buying milk, bread and apples. Should I bring eggs too? Tonight I am cooking pasta. Will you come at 6 p.m.? Then we will eat together. I am looking forward to it! See you later! Love, Nora",
+      "fa": "سلام سون، چند دقیقه‌ی دیگر در سوپرمارکت هستم. چیزی لازم داری؟ شیر، نان و سیب می‌خرم. تخم‌مرغ هم بیاورم؟ امشب پاستا می‌پزم. ساعت 18 می‌آیی؟ بعد با هم می‌خوریم. خوشحالم! بعداً می‌بینمت! با عشق، نورا"
+    },
+    "tasks": [
+      { "id": "r07-1", "type": "true-false", "statement": "Nora kauft Milch, Brot und Äpfel.", "answer": true, "evidence": "Ich kaufe Milch, Brot und Äpfel" },
+      { "id": "r07-2", "type": "true-false", "statement": "Nora kocht heute Abend Suppe.", "answer": false, "evidence": "koche ich Nudeln" },
+      {
+        "id": "r07-3",
+        "type": "choice",
+        "question": "Wann soll Sven kommen?",
+        "options": ["Um 18 Uhr", "Um 8 Uhr", "Um 16 Uhr"],
+        "answer": "Um 18 Uhr",
+        "evidence": "Kommst du um 18 Uhr"
+      },
+      {
+        "id": "r07-4",
+        "type": "matching",
+        "prompt": {
+          "en": "Match each question with the right answer. One answer is extra.",
+          "fa": "هر پرسش را به پاسخ درست وصل کن. یک پاسخ اضافه است.",
+          "de": "Ordne jeder Frage die passende Antwort zu. Eine Antwort bleibt übrig."
+        },
+        "pairs": [
+          { "item": "Was kauft Nora?", "answer": "Milch, Brot und Äpfel" },
+          { "item": "Was kocht Nora?", "answer": "Nudeln" },
+          { "item": "Mit wem isst Nora?", "answer": "Mit Sven" }
+        ],
+        "options": ["Milch, Brot und Äpfel", "Nudeln", "Mit Sven", "Reis"]
+      }
+    ]
+  },
+  {
+    "id": "email-lehrerin",
+    "kind": "email",
+    "title": { "en": "An email to the teacher", "fa": "یک ایمیل به معلم", "de": "Eine E-Mail an die Lehrerin" },
+    "text": "Sehr geehrte Frau Becker,\nleider bin ich heute krank und kann nicht zum Deutschkurs kommen. Es tut mir leid. Ich habe Fieber und Kopfschmerzen. Morgen gehe ich zum Arzt. Bitte schicken Sie mir die Hausaufgaben per E-Mail. Vielen Dank und freundliche Grüße\nAli Rahimi",
+    "translation": {
+      "en": "Dear Ms Becker,\nunfortunately I am ill today and cannot come to the German course. I am sorry. I have a fever and a headache. Tomorrow I am going to the doctor. Please send me the homework by email. Thank you very much and kind regards\nAli Rahimi",
+      "fa": "خانم بکر عزیز،\nمتأسفانه امروز مریض هستم و نمی‌توانم به کلاس آلمانی بیایم. متأسفم. تب و سردرد دارم. فردا پیش دکتر می‌روم. لطفاً تکالیف را با ایمیل برایم بفرستید. خیلی ممنون و با احترام\nعلی رحیمی"
+    },
+    "tasks": [
+      { "id": "r08-1", "type": "true-false", "statement": "Ali ist heute krank.", "answer": true, "evidence": "bin ich heute krank" },
+      { "id": "r08-2", "type": "true-false", "statement": "Ali geht heute zum Arzt.", "answer": false, "evidence": "Morgen gehe ich zum Arzt" },
+      {
+        "id": "r08-3",
+        "type": "choice",
+        "question": "Was möchte Ali von Frau Becker?",
+        "options": ["Die Hausaufgaben per E-Mail", "Ein Rezept", "Einen neuen Termin"],
+        "answer": "Die Hausaufgaben per E-Mail",
+        "evidence": "schicken Sie mir die Hausaufgaben per E-Mail"
+      },
+      {
+        "id": "r08-4",
+        "type": "matching",
+        "prompt": {
+          "en": "Match each beginning with the right ending. One ending is extra.",
+          "fa": "هر ابتدا را به پایان درست وصل کن. یک پایان اضافه است.",
+          "de": "Ordne jedem Satzanfang das passende Ende zu. Ein Ende bleibt übrig."
+        },
+        "pairs": [
+          { "item": "Ali hat", "answer": "Fieber und Kopfschmerzen." },
+          { "item": "Ali geht morgen", "answer": "zum Arzt." },
+          { "item": "Ali kann heute nicht", "answer": "zum Deutschkurs kommen." }
+        ],
+        "options": ["Fieber und Kopfschmerzen.", "zum Arzt.", "zum Deutschkurs kommen.", "zur Arbeit."]
+      }
+    ]
+  },
+  {
+    "id": "oeffnungszeiten",
+    "kind": "notice",
+    "title": { "en": "Shop opening hours", "fa": "ساعت کار فروشگاه", "de": "Öffnungszeiten" },
+    "text": "Supermarkt Frisch: Unsere Öffnungszeiten\nMontag bis Freitag: 7 bis 20 Uhr\nSamstag: 8 bis 18 Uhr\nSonntag: geschlossen\nAm 3. Oktober und an Weihnachten bleibt der Markt zu. Wir haben eine Bäckerei und frisches Obst. Parken ist kostenlos. Wir freuen uns auf Sie!",
+    "translation": {
+      "en": "Supermarket Frisch: our opening hours\nMonday to Friday: 7 to 20 o'clock\nSaturday: 8 to 18 o'clock\nSunday: closed\nOn 3 October and at Christmas the shop stays closed. We have a bakery and fresh fruit. Parking is free. We look forward to seeing you!",
+      "fa": "سوپرمارکت فریش: ساعت کار ما\nدوشنبه تا جمعه: 7 تا 20\nشنبه: 8 تا 18\nیکشنبه: تعطیل\nدر سوم اکتبر و کریسمس فروشگاه بسته است. ما نانوایی و میوه‌ی تازه داریم. پارکینگ رایگان است. منتظر شما هستیم!"
+    },
+    "tasks": [
+      { "id": "r09-1", "type": "true-false", "statement": "Am Samstag ist der Supermarkt bis 18 Uhr geöffnet.", "answer": true, "evidence": "Samstag: 8 bis 18 Uhr" },
+      { "id": "r09-2", "type": "true-false", "statement": "Parken kostet Geld.", "answer": false, "evidence": "Parken ist kostenlos" },
+      {
+        "id": "r09-3",
+        "type": "choice",
+        "question": "Wann ist der Supermarkt am Sonntag geöffnet?",
+        "options": ["Gar nicht", "Von 8 bis 18 Uhr", "Von 7 bis 20 Uhr"],
+        "answer": "Gar nicht",
+        "evidence": "Sonntag: geschlossen"
+      },
+      {
+        "id": "r09-4",
+        "type": "matching",
+        "prompt": {
+          "en": "Match each day with the right opening hours. One answer is extra.",
+          "fa": "هر روز را به ساعت کار درست وصل کن. یک پاسخ اضافه است.",
+          "de": "Ordne jedem Tag die passenden Öffnungszeiten zu. Eine Antwort bleibt übrig."
+        },
+        "pairs": [
+          { "item": "Montag bis Freitag", "answer": "7 bis 20 Uhr" },
+          { "item": "Samstag", "answer": "8 bis 18 Uhr" },
+          { "item": "Am 3. Oktober", "answer": "geschlossen" }
+        ],
+        "options": ["7 bis 20 Uhr", "8 bis 18 Uhr", "geschlossen", "10 bis 14 Uhr"]
+      }
+    ]
+  },
+  {
+    "id": "fahrrad-verkauf",
+    "kind": "ad",
+    "title": { "en": "A bicycle for sale", "fa": "یک دوچرخه برای فروش", "de": "Ein Fahrrad zu verkaufen" },
+    "text": "Fahrrad zu verkaufen! Mein Fahrrad ist zwei Jahre alt und noch sehr gut. Es ist grün und hat einen Korb. Der Preis ist 120 Euro. Ich wohne in der Nähe vom Park. Sie können das Fahrrad am Wochenende ansehen. Bitte schreiben Sie eine E-Mail oder rufen Sie am Abend an.",
+    "translation": {
+      "en": "Bicycle for sale! My bicycle is two years old and still very good. It is green and has a basket. The price is 120 euros. I live near the park. You can look at the bicycle at the weekend. Please write an email or call in the evening.",
+      "fa": "دوچرخه برای فروش! دوچرخه‌ی من دو سال دارد و هنوز خیلی خوب است. سبز است و یک سبد دارد. قیمت 120 یورو است. من نزدیک پارک زندگی می‌کنم. می‌توانید آخر هفته دوچرخه را ببینید. لطفاً ایمیل بزنید یا شب تماس بگیرید."
+    },
+    "tasks": [
+      { "id": "r10-1", "type": "true-false", "statement": "Das Fahrrad ist neu.", "answer": false, "evidence": "ist zwei Jahre alt" },
+      { "id": "r10-2", "type": "true-false", "statement": "Das Fahrrad hat einen Korb.", "answer": true, "evidence": "hat einen Korb" },
+      {
+        "id": "r10-3",
+        "type": "choice",
+        "question": "Wie viel kostet das Fahrrad?",
+        "options": ["120 Euro", "210 Euro", "12 Euro"],
+        "answer": "120 Euro",
+        "evidence": "Der Preis ist 120 Euro"
+      },
+      {
+        "id": "r10-4",
+        "type": "matching",
+        "prompt": {
+          "en": "Match each question with the right answer. One answer is extra.",
+          "fa": "هر پرسش را به پاسخ درست وصل کن. یک پاسخ اضافه است.",
+          "de": "Ordne jeder Frage die passende Antwort zu. Eine Antwort bleibt übrig."
+        },
+        "pairs": [
+          { "item": "Welche Farbe hat das Fahrrad?", "answer": "Grün" },
+          { "item": "Wann kann man das Fahrrad ansehen?", "answer": "Am Wochenende" },
+          { "item": "Wann soll man anrufen?", "answer": "Am Abend" }
+        ],
+        "options": ["Grün", "Am Wochenende", "Am Abend", "Blau"]
+      }
+    ]
+  }
+]

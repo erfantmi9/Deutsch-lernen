@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
+import { recordActivity } from "./activityStore";
 import { vocab } from "@/lib/vocab";
 import type { Article, VocabEntry } from "@/types/vocab";
 
@@ -68,6 +69,7 @@ export const useQuizStore = create<QuizState>()(
               ? wrongWordIds
               : [...wrongWordIds, currentWord.id],
         });
+        recordActivity();
       },
 
       next: () => {

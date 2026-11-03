@@ -4,12 +4,36 @@
     "infinitive": "sein",
     "level": "A1",
     "category": "basic",
-    "translations": { "en": "to be", "fa": "بودن" },
+    "translations": {
+      "en": "to be",
+      "fa": "بودن"
+    },
     "type": "irregular",
-    "present": { "ich": "bin", "du": "bist", "er_sie_es": "ist", "wir": "sind", "ihr": "seid", "sie_Sie": "sind" },
-    "perfekt": { "auxiliary": "sein", "partizip2": "gewesen" },
-    "praeteritum": { "ich": "war", "du": "warst", "er_sie_es": "war", "wir": "waren", "ihr": "wart", "sie_Sie": "waren" },
-    "example": { "de": "Ich bin müde.", "en": "I am tired.", "fa": "من خسته‌ام." },
+    "present": {
+      "ich": "bin",
+      "du": "bist",
+      "er_sie_es": "ist",
+      "wir": "sind",
+      "ihr": "seid",
+      "sie_Sie": "sind"
+    },
+    "perfekt": {
+      "auxiliary": "sein",
+      "partizip2": "gewesen"
+    },
+    "praeteritum": {
+      "ich": "war",
+      "du": "warst",
+      "er_sie_es": "war",
+      "wir": "waren",
+      "ihr": "wart",
+      "sie_Sie": "waren"
+    },
+    "example": {
+      "de": "Ich bin müde.",
+      "en": "I am tired.",
+      "fa": "من خسته‌ام."
+    },
     "note": {
       "en": "Completely irregular: learn every form by heart.",
       "fa": "کاملاً بی‌قاعده است: همه‌ی صورت‌ها را حفظ کنید.",
@@ -21,12 +45,36 @@
     "infinitive": "haben",
     "level": "A1",
     "category": "basic",
-    "translations": { "en": "to have", "fa": "داشتن" },
+    "translations": {
+      "en": "to have",
+      "fa": "داشتن"
+    },
     "type": "irregular",
-    "present": { "ich": "habe", "du": "hast", "er_sie_es": "hat", "wir": "haben", "ihr": "habt", "sie_Sie": "haben" },
-    "perfekt": { "auxiliary": "haben", "partizip2": "gehabt" },
-    "praeteritum": { "ich": "hatte", "du": "hattest", "er_sie_es": "hatte", "wir": "hatten", "ihr": "hattet", "sie_Sie": "hatten" },
-    "example": { "de": "Ich habe Hunger.", "en": "I am hungry.", "fa": "من گرسنه‌ام." },
+    "present": {
+      "ich": "habe",
+      "du": "hast",
+      "er_sie_es": "hat",
+      "wir": "haben",
+      "ihr": "habt",
+      "sie_Sie": "haben"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gehabt"
+    },
+    "praeteritum": {
+      "ich": "hatte",
+      "du": "hattest",
+      "er_sie_es": "hatte",
+      "wir": "hatten",
+      "ihr": "hattet",
+      "sie_Sie": "hatten"
+    },
+    "example": {
+      "de": "Ich habe Hunger.",
+      "en": "I am hungry.",
+      "fa": "من گرسنه‌ام."
+    },
     "note": {
       "en": "In du hast and er/sie/es hat the -b- drops out.",
       "fa": "در du hast و er/sie/es hat حرف -b- حذف می‌شود.",
@@ -38,11 +86,28 @@
     "infinitive": "machen",
     "level": "A1",
     "category": "daily",
-    "translations": { "en": "to do / to make", "fa": "انجام دادن / ساختن" },
+    "translations": {
+      "en": "to do / to make",
+      "fa": "انجام دادن / ساختن"
+    },
     "type": "regular",
-    "present": { "ich": "mache", "du": "machst", "er_sie_es": "macht", "wir": "machen", "ihr": "macht", "sie_Sie": "machen" },
-    "perfekt": { "auxiliary": "haben", "partizip2": "gemacht" },
-    "example": { "de": "Wir machen die Hausaufgabe.", "en": "We are doing the homework.", "fa": "ما تکلیف را انجام می‌دهیم." },
+    "present": {
+      "ich": "mache",
+      "du": "machst",
+      "er_sie_es": "macht",
+      "wir": "machen",
+      "ihr": "macht",
+      "sie_Sie": "machen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gemacht"
+    },
+    "example": {
+      "de": "Wir machen die Hausaufgabe.",
+      "en": "We are doing the homework.",
+      "fa": "ما تکلیف را انجام می‌دهیم."
+    },
     "note": {
       "en": "Regular verb: stem + ending. Perfekt: ge- + stem + -t.",
       "fa": "فعل باقاعده: ریشه + پایان. ماضی نقلی: ge- + ریشه + -t.",
@@ -54,22 +119,56 @@
     "infinitive": "wohnen",
     "level": "A1",
     "category": "daily",
-    "translations": { "en": "to live (reside)", "fa": "زندگی کردن (ساکن بودن)" },
+    "translations": {
+      "en": "to live (reside)",
+      "fa": "زندگی کردن (ساکن بودن)"
+    },
     "type": "regular",
-    "present": { "ich": "wohne", "du": "wohnst", "er_sie_es": "wohnt", "wir": "wohnen", "ihr": "wohnt", "sie_Sie": "wohnen" },
-    "perfekt": { "auxiliary": "haben", "partizip2": "gewohnt" },
-    "example": { "de": "Sie wohnt in Hamburg.", "en": "She lives in Hamburg.", "fa": "او در هامبورگ زندگی می‌کند." }
+    "present": {
+      "ich": "wohne",
+      "du": "wohnst",
+      "er_sie_es": "wohnt",
+      "wir": "wohnen",
+      "ihr": "wohnt",
+      "sie_Sie": "wohnen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gewohnt"
+    },
+    "example": {
+      "de": "Sie wohnt in Hamburg.",
+      "en": "She lives in Hamburg.",
+      "fa": "او در هامبورگ زندگی می‌کند."
+    }
   },
   {
     "id": "heissen",
     "infinitive": "heißen",
     "level": "A1",
     "category": "basic",
-    "translations": { "en": "to be called", "fa": "نامیده شدن / اسم داشتن" },
+    "translations": {
+      "en": "to be called",
+      "fa": "نامیده شدن / اسم داشتن"
+    },
     "type": "irregular",
-    "present": { "ich": "heiße", "du": "heißt", "er_sie_es": "heißt", "wir": "heißen", "ihr": "heißt", "sie_Sie": "heißen" },
-    "perfekt": { "auxiliary": "haben", "partizip2": "geheißen" },
-    "example": { "de": "Ich heiße Anna.", "en": "My name is Anna.", "fa": "اسم من آنا است." },
+    "present": {
+      "ich": "heiße",
+      "du": "heißt",
+      "er_sie_es": "heißt",
+      "wir": "heißen",
+      "ihr": "heißt",
+      "sie_Sie": "heißen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "geheißen"
+    },
+    "example": {
+      "de": "Ich heiße Anna.",
+      "en": "My name is Anna.",
+      "fa": "اسم من آنا است."
+    },
     "note": {
       "en": "The stem ends in an s-sound, so du and er/sie/es look the same: du heißt, er heißt.",
       "fa": "ریشه به صدای «س» ختم می‌شود، پس du و er/sie/es یکسان‌اند: du heißt, er heißt.",
@@ -81,11 +180,28 @@
     "infinitive": "gehen",
     "level": "A1",
     "category": "movement",
-    "translations": { "en": "to go (on foot)", "fa": "رفتن (پیاده)" },
+    "translations": {
+      "en": "to go (on foot)",
+      "fa": "رفتن (پیاده)"
+    },
     "type": "irregular",
-    "present": { "ich": "gehe", "du": "gehst", "er_sie_es": "geht", "wir": "gehen", "ihr": "geht", "sie_Sie": "gehen" },
-    "perfekt": { "auxiliary": "sein", "partizip2": "gegangen" },
-    "example": { "de": "Er geht zur Schule.", "en": "He goes to school.", "fa": "او به مدرسه می‌رود." },
+    "present": {
+      "ich": "gehe",
+      "du": "gehst",
+      "er_sie_es": "geht",
+      "wir": "gehen",
+      "ihr": "geht",
+      "sie_Sie": "gehen"
+    },
+    "perfekt": {
+      "auxiliary": "sein",
+      "partizip2": "gegangen"
+    },
+    "example": {
+      "de": "Er geht zur Schule.",
+      "en": "He goes to school.",
+      "fa": "او به مدرسه می‌رود."
+    },
     "note": {
       "en": "Verbs of movement form the Perfekt with sein: ist gegangen.",
       "fa": "فعل‌های حرکتی ماضی نقلی را با sein می‌سازند: ist gegangen.",
@@ -97,12 +213,29 @@
     "infinitive": "fahren",
     "level": "A1",
     "category": "movement",
-    "translations": { "en": "to drive / to travel", "fa": "رفتن با وسیله / راندن" },
+    "translations": {
+      "en": "to drive / to travel",
+      "fa": "رفتن با وسیله / راندن"
+    },
     "type": "irregular",
     "stemChange": "a→ä",
-    "present": { "ich": "fahre", "du": "fährst", "er_sie_es": "fährt", "wir": "fahren", "ihr": "fahrt", "sie_Sie": "fahren" },
-    "perfekt": { "auxiliary": "sein", "partizip2": "gefahren" },
-    "example": { "de": "Ich fahre mit dem Bus.", "en": "I travel by bus.", "fa": "من با اتوبوس می‌روم." },
+    "present": {
+      "ich": "fahre",
+      "du": "fährst",
+      "er_sie_es": "fährt",
+      "wir": "fahren",
+      "ihr": "fahrt",
+      "sie_Sie": "fahren"
+    },
+    "perfekt": {
+      "auxiliary": "sein",
+      "partizip2": "gefahren"
+    },
+    "example": {
+      "de": "Ich fahre mit dem Bus.",
+      "en": "I travel by bus.",
+      "fa": "من با اتوبوس می‌روم."
+    },
     "note": {
       "en": "The du and er/sie/es forms take an umlaut (a→ä). Perfekt with sein: ist gefahren.",
       "fa": "صورت‌های du و er/sie/es اوملاوت (¨) می‌گیرند (a→ä). ماضی نقلی با sein: ist gefahren.",
@@ -114,12 +247,29 @@
     "infinitive": "essen",
     "level": "A1",
     "category": "daily",
-    "translations": { "en": "to eat", "fa": "خوردن" },
+    "translations": {
+      "en": "to eat",
+      "fa": "خوردن"
+    },
     "type": "irregular",
     "stemChange": "e→i",
-    "present": { "ich": "esse", "du": "isst", "er_sie_es": "isst", "wir": "essen", "ihr": "esst", "sie_Sie": "essen" },
-    "perfekt": { "auxiliary": "haben", "partizip2": "gegessen" },
-    "example": { "de": "Du isst einen Apfel.", "en": "You are eating an apple.", "fa": "تو یک سیب می‌خوری." },
+    "present": {
+      "ich": "esse",
+      "du": "isst",
+      "er_sie_es": "isst",
+      "wir": "essen",
+      "ihr": "esst",
+      "sie_Sie": "essen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gegessen"
+    },
+    "example": {
+      "de": "Du isst einen Apfel.",
+      "en": "You are eating an apple.",
+      "fa": "تو یک سیب می‌خوری."
+    },
     "note": {
       "en": "The du and er/sie/es forms change e→i. In du isst the two s-sounds merge: iss + st.",
       "fa": "در صورت‌های du و er/sie/es حرف e به i تبدیل می‌شود. در du isst دو صدای s ادغام می‌شوند: iss + st.",
@@ -131,12 +281,29 @@
     "infinitive": "sprechen",
     "level": "A1",
     "category": "communication",
-    "translations": { "en": "to speak", "fa": "صحبت کردن" },
+    "translations": {
+      "en": "to speak",
+      "fa": "صحبت کردن"
+    },
     "type": "irregular",
     "stemChange": "e→i",
-    "present": { "ich": "spreche", "du": "sprichst", "er_sie_es": "spricht", "wir": "sprechen", "ihr": "sprecht", "sie_Sie": "sprechen" },
-    "perfekt": { "auxiliary": "haben", "partizip2": "gesprochen" },
-    "example": { "de": "Sie spricht gut Deutsch.", "en": "She speaks German well.", "fa": "او آلمانی را خوب صحبت می‌کند." },
+    "present": {
+      "ich": "spreche",
+      "du": "sprichst",
+      "er_sie_es": "spricht",
+      "wir": "sprechen",
+      "ihr": "sprecht",
+      "sie_Sie": "sprechen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gesprochen"
+    },
+    "example": {
+      "de": "Sie spricht gut Deutsch.",
+      "en": "She speaks German well.",
+      "fa": "او آلمانی را خوب صحبت می‌کند."
+    },
     "note": {
       "en": "The du and er/sie/es forms change e→i: sprichst, spricht.",
       "fa": "در صورت‌های du و er/sie/es حرف e به i تبدیل می‌شود: sprichst, spricht.",
@@ -148,13 +315,37 @@
     "infinitive": "können",
     "level": "A1",
     "category": "modal",
-    "translations": { "en": "can / to be able to", "fa": "توانستن" },
+    "translations": {
+      "en": "can / to be able to",
+      "fa": "توانستن"
+    },
     "type": "modal",
     "stemChange": "ö→a (sg.)",
-    "present": { "ich": "kann", "du": "kannst", "er_sie_es": "kann", "wir": "können", "ihr": "könnt", "sie_Sie": "können" },
-    "perfekt": { "auxiliary": "haben", "partizip2": "gekonnt" },
-    "praeteritum": { "ich": "konnte", "du": "konntest", "er_sie_es": "konnte", "wir": "konnten", "ihr": "konntet", "sie_Sie": "konnten" },
-    "example": { "de": "Ich kann schwimmen.", "en": "I can swim.", "fa": "من می‌توانم شنا کنم." },
+    "present": {
+      "ich": "kann",
+      "du": "kannst",
+      "er_sie_es": "kann",
+      "wir": "können",
+      "ihr": "könnt",
+      "sie_Sie": "können"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gekonnt"
+    },
+    "praeteritum": {
+      "ich": "konnte",
+      "du": "konntest",
+      "er_sie_es": "konnte",
+      "wir": "konnten",
+      "ihr": "konntet",
+      "sie_Sie": "konnten"
+    },
+    "example": {
+      "de": "Ich kann schwimmen.",
+      "en": "I can swim.",
+      "fa": "من می‌توانم شنا کنم."
+    },
     "note": {
       "en": "Modal verb: ich and er/sie/es have the same form (kann), and the second verb goes to the end as an infinitive.",
       "fa": "فعل کمکی: ich و er/sie/es یکسان‌اند (kann) و فعل دوم به صورت مصدر به آخر جمله می‌رود.",
@@ -166,13 +357,37 @@
     "infinitive": "müssen",
     "level": "A1",
     "category": "modal",
-    "translations": { "en": "must / to have to", "fa": "مجبور بودن" },
+    "translations": {
+      "en": "must / to have to",
+      "fa": "مجبور بودن"
+    },
     "type": "modal",
     "stemChange": "ü→u (sg.)",
-    "present": { "ich": "muss", "du": "musst", "er_sie_es": "muss", "wir": "müssen", "ihr": "müsst", "sie_Sie": "müssen" },
-    "perfekt": { "auxiliary": "haben", "partizip2": "gemusst" },
-    "praeteritum": { "ich": "musste", "du": "musstest", "er_sie_es": "musste", "wir": "mussten", "ihr": "musstet", "sie_Sie": "mussten" },
-    "example": { "de": "Du musst heute arbeiten.", "en": "You have to work today.", "fa": "تو امروز باید کار کنی." },
+    "present": {
+      "ich": "muss",
+      "du": "musst",
+      "er_sie_es": "muss",
+      "wir": "müssen",
+      "ihr": "müsst",
+      "sie_Sie": "müssen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gemusst"
+    },
+    "praeteritum": {
+      "ich": "musste",
+      "du": "musstest",
+      "er_sie_es": "musste",
+      "wir": "mussten",
+      "ihr": "musstet",
+      "sie_Sie": "mussten"
+    },
+    "example": {
+      "de": "Du musst heute arbeiten.",
+      "en": "You have to work today.",
+      "fa": "تو امروز باید کار کنی."
+    },
     "note": {
       "en": "Modal verb: ich and er/sie/es have the same form (muss); the umlaut is lost in the singular.",
       "fa": "فعل کمکی: ich و er/sie/es یکسان‌اند (muss)؛ در مفرد اوملاوت (¨) حذف می‌شود.",
@@ -184,16 +399,1007 @@
     "infinitive": "aufstehen",
     "level": "A1",
     "category": "daily",
-    "translations": { "en": "to get up", "fa": "بلند شدن (از خواب)" },
+    "translations": {
+      "en": "to get up",
+      "fa": "بلند شدن (از خواب)"
+    },
     "type": "separable",
-    "separable": { "prefix": "auf", "stem": "stehen" },
-    "present": { "ich": "stehe", "du": "stehst", "er_sie_es": "steht", "wir": "stehen", "ihr": "steht", "sie_Sie": "stehen" },
-    "perfekt": { "auxiliary": "sein", "partizip2": "aufgestanden" },
-    "example": { "de": "Ich stehe um sieben Uhr auf.", "en": "I get up at seven o'clock.", "fa": "من ساعت هفت بلند می‌شوم." },
+    "separable": {
+      "prefix": "auf",
+      "stem": "stehen"
+    },
+    "present": {
+      "ich": "stehe",
+      "du": "stehst",
+      "er_sie_es": "steht",
+      "wir": "stehen",
+      "ihr": "steht",
+      "sie_Sie": "stehen"
+    },
+    "perfekt": {
+      "auxiliary": "sein",
+      "partizip2": "aufgestanden"
+    },
+    "example": {
+      "de": "Ich stehe um sieben Uhr auf.",
+      "en": "I get up at seven o'clock.",
+      "fa": "من ساعت هفت بلند می‌شوم."
+    },
     "note": {
       "en": "Separable verb: the prefix auf goes to the end of the sentence (stehe ... auf). Perfekt with sein: ist aufgestanden.",
       "fa": "فعل جداشدنی: پیشوند auf به آخر جمله می‌رود (stehe ... auf). ماضی نقلی با sein: ist aufgestanden.",
       "de": "Trennbares Verb: Das Präfix auf steht am Satzende (stehe ... auf). Perfekt mit sein: ist aufgestanden."
+    }
+  },
+  {
+    "id": "kommen",
+    "infinitive": "kommen",
+    "level": "A1",
+    "category": "movement",
+    "translations": {
+      "en": "to come",
+      "fa": "آمدن"
+    },
+    "type": "irregular",
+    "present": {
+      "ich": "komme",
+      "du": "kommst",
+      "er_sie_es": "kommt",
+      "wir": "kommen",
+      "ihr": "kommt",
+      "sie_Sie": "kommen"
+    },
+    "perfekt": {
+      "auxiliary": "sein",
+      "partizip2": "gekommen"
+    },
+    "example": {
+      "de": "Ich komme aus Italien.",
+      "en": "I come from Italy.",
+      "fa": "من اهل ایتالیا هستم."
+    },
+    "note": {
+      "en": "Regular endings in the present, but an irregular Partizip II. Perfekt with sein: ist gekommen.",
+      "fa": "در زمان حال پایان‌های باقاعده دارد اما اسم مفعول (Partizip II) بی‌قاعده است. ماضی نقلی با sein: ist gekommen.",
+      "de": "Im Präsens regelmäßige Endungen, aber ein unregelmäßiges Partizip II. Perfekt mit sein: ist gekommen."
+    }
+  },
+  {
+    "id": "lernen",
+    "infinitive": "lernen",
+    "level": "A1",
+    "category": "daily",
+    "translations": {
+      "en": "to learn, to study",
+      "fa": "یاد گرفتن، درس خواندن"
+    },
+    "type": "regular",
+    "present": {
+      "ich": "lerne",
+      "du": "lernst",
+      "er_sie_es": "lernt",
+      "wir": "lernen",
+      "ihr": "lernt",
+      "sie_Sie": "lernen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gelernt"
+    },
+    "example": {
+      "de": "Ich lerne Deutsch.",
+      "en": "I am learning German.",
+      "fa": "من آلمانی یاد می‌گیرم."
+    },
+    "note": {
+      "en": "Regular verb: stem + ending. Perfekt: ge- + stem + -t.",
+      "fa": "فعل باقاعده: ریشه + پایان. ماضی نقلی: ge- + ریشه + -t.",
+      "de": "Regelmäßiges Verb: Stamm + Endung. Perfekt: ge- + Stamm + -t."
+    }
+  },
+  {
+    "id": "arbeiten",
+    "infinitive": "arbeiten",
+    "level": "A1",
+    "category": "daily",
+    "translations": {
+      "en": "to work",
+      "fa": "کار کردن"
+    },
+    "type": "regular",
+    "present": {
+      "ich": "arbeite",
+      "du": "arbeitest",
+      "er_sie_es": "arbeitet",
+      "wir": "arbeiten",
+      "ihr": "arbeitet",
+      "sie_Sie": "arbeiten"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gearbeitet"
+    },
+    "example": {
+      "de": "Er arbeitet im Büro.",
+      "en": "He works in the office.",
+      "fa": "او در دفتر کار می‌کند."
+    },
+    "note": {
+      "en": "Stems ending in -t add an extra -e- before -st and -t: du arbeitest, er/sie/es arbeitet, ihr arbeitet. Perfekt: hat gearbeitet.",
+      "fa": "ریشه‌هایی که به -t ختم می‌شوند قبل از -st و -t یک -e- اضافه می‌گیرند: du arbeitest, er/sie/es arbeitet, ihr arbeitet. ماضی نقلی: hat gearbeitet.",
+      "de": "Stämme auf -t bekommen vor -st und -t ein zusätzliches -e-: du arbeitest, er/sie/es arbeitet, ihr arbeitet. Perfekt: hat gearbeitet."
+    }
+  },
+  {
+    "id": "spielen",
+    "infinitive": "spielen",
+    "level": "A1",
+    "category": "daily",
+    "translations": {
+      "en": "to play",
+      "fa": "بازی کردن"
+    },
+    "type": "regular",
+    "present": {
+      "ich": "spiele",
+      "du": "spielst",
+      "er_sie_es": "spielt",
+      "wir": "spielen",
+      "ihr": "spielt",
+      "sie_Sie": "spielen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gespielt"
+    },
+    "example": {
+      "de": "Die Kinder spielen im Park.",
+      "en": "The children play in the park.",
+      "fa": "بچه‌ها در پارک بازی می‌کنند."
+    },
+    "note": {
+      "en": "Regular verb: stem + ending. Perfekt: ge- + stem + -t.",
+      "fa": "فعل باقاعده: ریشه + پایان. ماضی نقلی: ge- + ریشه + -t.",
+      "de": "Regelmäßiges Verb: Stamm + Endung. Perfekt: ge- + Stamm + -t."
+    }
+  },
+  {
+    "id": "kaufen",
+    "infinitive": "kaufen",
+    "level": "A1",
+    "category": "daily",
+    "translations": {
+      "en": "to buy",
+      "fa": "خریدن"
+    },
+    "type": "regular",
+    "present": {
+      "ich": "kaufe",
+      "du": "kaufst",
+      "er_sie_es": "kauft",
+      "wir": "kaufen",
+      "ihr": "kauft",
+      "sie_Sie": "kaufen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gekauft"
+    },
+    "example": {
+      "de": "Ich kaufe ein Brot.",
+      "en": "I buy a loaf of bread.",
+      "fa": "من یک نان می‌خرم."
+    },
+    "note": {
+      "en": "Regular verb: stem + ending. Perfekt: ge- + stem + -t.",
+      "fa": "فعل باقاعده: ریشه + پایان. ماضی نقلی: ge- + ریشه + -t.",
+      "de": "Regelmäßiges Verb: Stamm + Endung. Perfekt: ge- + Stamm + -t."
+    }
+  },
+  {
+    "id": "trinken",
+    "infinitive": "trinken",
+    "level": "A1",
+    "category": "basic",
+    "translations": {
+      "en": "to drink",
+      "fa": "نوشیدن"
+    },
+    "type": "irregular",
+    "present": {
+      "ich": "trinke",
+      "du": "trinkst",
+      "er_sie_es": "trinkt",
+      "wir": "trinken",
+      "ihr": "trinkt",
+      "sie_Sie": "trinken"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "getrunken"
+    },
+    "example": {
+      "de": "Ich trinke Tee.",
+      "en": "I drink tea.",
+      "fa": "من چای می‌نوشم."
+    },
+    "note": {
+      "en": "Regular endings in the present, but an irregular Partizip II. Perfekt with haben: hat getrunken.",
+      "fa": "در زمان حال پایان‌های باقاعده دارد اما اسم مفعول (Partizip II) بی‌قاعده است. ماضی نقلی با haben: hat getrunken.",
+      "de": "Im Präsens regelmäßige Endungen, aber ein unregelmäßiges Partizip II. Perfekt mit haben: hat getrunken."
+    }
+  },
+  {
+    "id": "lesen",
+    "infinitive": "lesen",
+    "level": "A1",
+    "category": "daily",
+    "translations": {
+      "en": "to read",
+      "fa": "خواندن"
+    },
+    "type": "irregular",
+    "stemChange": "e→ie",
+    "present": {
+      "ich": "lese",
+      "du": "liest",
+      "er_sie_es": "liest",
+      "wir": "lesen",
+      "ihr": "lest",
+      "sie_Sie": "lesen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gelesen"
+    },
+    "example": {
+      "de": "Er liest ein Buch.",
+      "en": "He reads a book.",
+      "fa": "او یک کتاب می‌خواند."
+    },
+    "note": {
+      "en": "The du and er/sie/es forms change the vowel (e→ie). Perfekt with haben: hat gelesen.",
+      "fa": "صورت‌های du و er/sie/es حرف صدادار را تغییر می‌دهند (e→ie). ماضی نقلی با haben: hat gelesen.",
+      "de": "Die du- und er/sie/es-Form ändern den Vokal (e→ie). Perfekt mit haben: hat gelesen."
+    }
+  },
+  {
+    "id": "schreiben",
+    "infinitive": "schreiben",
+    "level": "A1",
+    "category": "communication",
+    "translations": {
+      "en": "to write",
+      "fa": "نوشتن"
+    },
+    "type": "irregular",
+    "present": {
+      "ich": "schreibe",
+      "du": "schreibst",
+      "er_sie_es": "schreibt",
+      "wir": "schreiben",
+      "ihr": "schreibt",
+      "sie_Sie": "schreiben"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "geschrieben"
+    },
+    "example": {
+      "de": "Ich schreibe eine E-Mail.",
+      "en": "I am writing an email.",
+      "fa": "من یک ایمیل می‌نویسم."
+    },
+    "note": {
+      "en": "Regular endings in the present, but an irregular Partizip II. Perfekt with haben: hat geschrieben.",
+      "fa": "در زمان حال پایان‌های باقاعده دارد اما اسم مفعول (Partizip II) بی‌قاعده است. ماضی نقلی با haben: hat geschrieben.",
+      "de": "Im Präsens regelmäßige Endungen, aber ein unregelmäßiges Partizip II. Perfekt mit haben: hat geschrieben."
+    }
+  },
+  {
+    "id": "sehen",
+    "infinitive": "sehen",
+    "level": "A1",
+    "category": "daily",
+    "translations": {
+      "en": "to see",
+      "fa": "دیدن"
+    },
+    "type": "irregular",
+    "stemChange": "e→ie",
+    "present": {
+      "ich": "sehe",
+      "du": "siehst",
+      "er_sie_es": "sieht",
+      "wir": "sehen",
+      "ihr": "seht",
+      "sie_Sie": "sehen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gesehen"
+    },
+    "example": {
+      "de": "Ich sehe den Bus.",
+      "en": "I see the bus.",
+      "fa": "من اتوبوس را می‌بینم."
+    },
+    "note": {
+      "en": "The du and er/sie/es forms change the vowel (e→ie). Perfekt with haben: hat gesehen.",
+      "fa": "صورت‌های du و er/sie/es حرف صدادار را تغییر می‌دهند (e→ie). ماضی نقلی با haben: hat gesehen.",
+      "de": "Die du- und er/sie/es-Form ändern den Vokal (e→ie). Perfekt mit haben: hat gesehen."
+    }
+  },
+  {
+    "id": "nehmen",
+    "infinitive": "nehmen",
+    "level": "A1",
+    "category": "daily",
+    "translations": {
+      "en": "to take",
+      "fa": "گرفتن، برداشتن"
+    },
+    "type": "irregular",
+    "stemChange": "e→i",
+    "present": {
+      "ich": "nehme",
+      "du": "nimmst",
+      "er_sie_es": "nimmt",
+      "wir": "nehmen",
+      "ihr": "nehmt",
+      "sie_Sie": "nehmen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "genommen"
+    },
+    "example": {
+      "de": "Ich nehme den Bus.",
+      "en": "I take the bus.",
+      "fa": "من با اتوبوس می‌روم."
+    },
+    "note": {
+      "en": "The du and er/sie/es forms change the vowel (e→i). Perfekt with haben: hat genommen.",
+      "fa": "صورت‌های du و er/sie/es حرف صدادار را تغییر می‌دهند (e→i). ماضی نقلی با haben: hat genommen.",
+      "de": "Die du- und er/sie/es-Form ändern den Vokal (e→i). Perfekt mit haben: hat genommen."
+    }
+  },
+  {
+    "id": "geben",
+    "infinitive": "geben",
+    "level": "A1",
+    "category": "daily",
+    "translations": {
+      "en": "to give",
+      "fa": "دادن"
+    },
+    "type": "irregular",
+    "stemChange": "e→i",
+    "present": {
+      "ich": "gebe",
+      "du": "gibst",
+      "er_sie_es": "gibt",
+      "wir": "geben",
+      "ihr": "gebt",
+      "sie_Sie": "geben"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gegeben"
+    },
+    "example": {
+      "de": "Er gibt mir das Buch.",
+      "en": "He gives me the book.",
+      "fa": "او کتاب را به من می‌دهد."
+    },
+    "note": {
+      "en": "The du and er/sie/es forms change the vowel (e→i). Perfekt with haben: hat gegeben.",
+      "fa": "صورت‌های du و er/sie/es حرف صدادار را تغییر می‌دهند (e→i). ماضی نقلی با haben: hat gegeben.",
+      "de": "Die du- und er/sie/es-Form ändern den Vokal (e→i). Perfekt mit haben: hat gegeben."
+    }
+  },
+  {
+    "id": "wissen",
+    "infinitive": "wissen",
+    "level": "A1",
+    "category": "basic",
+    "translations": {
+      "en": "to know (a fact)",
+      "fa": "دانستن"
+    },
+    "type": "irregular",
+    "stemChange": "i→ei (sg.)",
+    "present": {
+      "ich": "weiß",
+      "du": "weißt",
+      "er_sie_es": "weiß",
+      "wir": "wissen",
+      "ihr": "wisst",
+      "sie_Sie": "wissen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gewusst"
+    },
+    "example": {
+      "de": "Ich weiß das nicht.",
+      "en": "I do not know that.",
+      "fa": "من این را نمی‌دانم."
+    },
+    "note": {
+      "en": "Irregular in the singular: ich weiß, du weißt, er/sie/es weiß. Perfekt with haben: hat gewusst.",
+      "fa": "در مفرد بی‌قاعده است: ich weiß, du weißt, er/sie/es weiß. ماضی نقلی با haben: hat gewusst.",
+      "de": "Unregelmäßig im Singular: ich weiß, du weißt, er/sie/es weiß. Perfekt mit haben: hat gewusst."
+    }
+  },
+  {
+    "id": "wollen",
+    "infinitive": "wollen",
+    "level": "A1",
+    "category": "modal",
+    "translations": {
+      "en": "to want",
+      "fa": "خواستن"
+    },
+    "type": "modal",
+    "stemChange": "o→i (sg.)",
+    "present": {
+      "ich": "will",
+      "du": "willst",
+      "er_sie_es": "will",
+      "wir": "wollen",
+      "ihr": "wollt",
+      "sie_Sie": "wollen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gewollt"
+    },
+    "praeteritum": {
+      "ich": "wollte",
+      "du": "wolltest",
+      "er_sie_es": "wollte",
+      "wir": "wollten",
+      "ihr": "wolltet",
+      "sie_Sie": "wollten"
+    },
+    "example": {
+      "de": "Ich will nach Berlin fahren.",
+      "en": "I want to go to Berlin.",
+      "fa": "من می‌خواهم به برلین بروم."
+    },
+    "note": {
+      "en": "Modal verb: ich and er/sie/es have the same form, and the second verb goes to the end as an infinitive.",
+      "fa": "فعل کمکی: ich و er/sie/es یکسان‌اند و فعل دوم به صورت مصدر به آخر جمله می‌رود.",
+      "de": "Modalverb: ich und er/sie/es haben dieselbe Form, und das zweite Verb steht als Infinitiv am Ende."
+    }
+  },
+  {
+    "id": "duerfen",
+    "infinitive": "dürfen",
+    "level": "A1",
+    "category": "modal",
+    "translations": {
+      "en": "to be allowed to",
+      "fa": "اجازه داشتن"
+    },
+    "type": "modal",
+    "stemChange": "ü→a (sg.)",
+    "present": {
+      "ich": "darf",
+      "du": "darfst",
+      "er_sie_es": "darf",
+      "wir": "dürfen",
+      "ihr": "dürft",
+      "sie_Sie": "dürfen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gedurft"
+    },
+    "praeteritum": {
+      "ich": "durfte",
+      "du": "durftest",
+      "er_sie_es": "durfte",
+      "wir": "durften",
+      "ihr": "durftet",
+      "sie_Sie": "durften"
+    },
+    "example": {
+      "de": "Hier darf man nicht parken.",
+      "en": "You may not park here.",
+      "fa": "اینجا نباید پارک کرد."
+    },
+    "note": {
+      "en": "Modal verb: ich and er/sie/es have the same form, and the second verb goes to the end as an infinitive.",
+      "fa": "فعل کمکی: ich و er/sie/es یکسان‌اند و فعل دوم به صورت مصدر به آخر جمله می‌رود.",
+      "de": "Modalverb: ich und er/sie/es haben dieselbe Form, und das zweite Verb steht als Infinitiv am Ende."
+    }
+  },
+  {
+    "id": "moegen",
+    "infinitive": "mögen",
+    "level": "A1",
+    "category": "modal",
+    "translations": {
+      "en": "to like",
+      "fa": "دوست داشتن"
+    },
+    "type": "modal",
+    "stemChange": "ö→a (sg.)",
+    "present": {
+      "ich": "mag",
+      "du": "magst",
+      "er_sie_es": "mag",
+      "wir": "mögen",
+      "ihr": "mögt",
+      "sie_Sie": "mögen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gemocht"
+    },
+    "praeteritum": {
+      "ich": "mochte",
+      "du": "mochtest",
+      "er_sie_es": "mochte",
+      "wir": "mochten",
+      "ihr": "mochtet",
+      "sie_Sie": "mochten"
+    },
+    "example": {
+      "de": "Ich mag Kaffee.",
+      "en": "I like coffee.",
+      "fa": "من قهوه دوست دارم."
+    },
+    "note": {
+      "en": "Modal verb: ich and er/sie/es have the same form, and the second verb goes to the end as an infinitive.",
+      "fa": "فعل کمکی: ich و er/sie/es یکسان‌اند و فعل دوم به صورت مصدر به آخر جمله می‌رود.",
+      "de": "Modalverb: ich und er/sie/es haben dieselbe Form, und das zweite Verb steht als Infinitiv am Ende."
+    }
+  },
+  {
+    "id": "sagen",
+    "infinitive": "sagen",
+    "level": "A1",
+    "category": "communication",
+    "translations": {
+      "en": "to say",
+      "fa": "گفتن"
+    },
+    "type": "regular",
+    "present": {
+      "ich": "sage",
+      "du": "sagst",
+      "er_sie_es": "sagt",
+      "wir": "sagen",
+      "ihr": "sagt",
+      "sie_Sie": "sagen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gesagt"
+    },
+    "example": {
+      "de": "Was sagst du?",
+      "en": "What are you saying?",
+      "fa": "تو چه می‌گویی؟"
+    },
+    "note": {
+      "en": "Regular verb: stem + ending. Perfekt: ge- + stem + -t.",
+      "fa": "فعل باقاعده: ریشه + پایان. ماضی نقلی: ge- + ریشه + -t.",
+      "de": "Regelmäßiges Verb: Stamm + Endung. Perfekt: ge- + Stamm + -t."
+    }
+  },
+  {
+    "id": "fragen",
+    "infinitive": "fragen",
+    "level": "A1",
+    "category": "communication",
+    "translations": {
+      "en": "to ask",
+      "fa": "پرسیدن"
+    },
+    "type": "regular",
+    "present": {
+      "ich": "frage",
+      "du": "fragst",
+      "er_sie_es": "fragt",
+      "wir": "fragen",
+      "ihr": "fragt",
+      "sie_Sie": "fragen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gefragt"
+    },
+    "example": {
+      "de": "Ich frage den Lehrer.",
+      "en": "I ask the teacher.",
+      "fa": "من از معلم می‌پرسم."
+    },
+    "note": {
+      "en": "Regular verb: stem + ending. Perfekt: ge- + stem + -t.",
+      "fa": "فعل باقاعده: ریشه + پایان. ماضی نقلی: ge- + ریشه + -t.",
+      "de": "Regelmäßiges Verb: Stamm + Endung. Perfekt: ge- + Stamm + -t."
+    }
+  },
+  {
+    "id": "antworten",
+    "infinitive": "antworten",
+    "level": "A1",
+    "category": "communication",
+    "translations": {
+      "en": "to answer",
+      "fa": "پاسخ دادن"
+    },
+    "type": "regular",
+    "present": {
+      "ich": "antworte",
+      "du": "antwortest",
+      "er_sie_es": "antwortet",
+      "wir": "antworten",
+      "ihr": "antwortet",
+      "sie_Sie": "antworten"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "geantwortet"
+    },
+    "example": {
+      "de": "Sie antwortet schnell.",
+      "en": "She answers quickly.",
+      "fa": "او سریع پاسخ می‌دهد."
+    },
+    "note": {
+      "en": "Stems ending in -t add an extra -e- before -st and -t: du antwortest, er/sie/es antwortet, ihr antwortet. Perfekt: hat geantwortet.",
+      "fa": "ریشه‌هایی که به -t ختم می‌شوند قبل از -st و -t یک -e- اضافه می‌گیرند: du antwortest, er/sie/es antwortet, ihr antwortet. ماضی نقلی: hat geantwortet.",
+      "de": "Stämme auf -t bekommen vor -st und -t ein zusätzliches -e-: du antwortest, er/sie/es antwortet, ihr antwortet. Perfekt: hat geantwortet."
+    }
+  },
+  {
+    "id": "hoeren",
+    "infinitive": "hören",
+    "level": "A1",
+    "category": "daily",
+    "translations": {
+      "en": "to hear, to listen",
+      "fa": "شنیدن"
+    },
+    "type": "regular",
+    "present": {
+      "ich": "höre",
+      "du": "hörst",
+      "er_sie_es": "hört",
+      "wir": "hören",
+      "ihr": "hört",
+      "sie_Sie": "hören"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gehört"
+    },
+    "example": {
+      "de": "Ich höre Musik.",
+      "en": "I am listening to music.",
+      "fa": "من موسیقی گوش می‌دهم."
+    },
+    "note": {
+      "en": "Regular verb: stem + ending. Perfekt: ge- + stem + -t.",
+      "fa": "فعل باقاعده: ریشه + پایان. ماضی نقلی: ge- + ریشه + -t.",
+      "de": "Regelmäßiges Verb: Stamm + Endung. Perfekt: ge- + Stamm + -t."
+    }
+  },
+  {
+    "id": "brauchen",
+    "infinitive": "brauchen",
+    "level": "A1",
+    "category": "basic",
+    "translations": {
+      "en": "to need",
+      "fa": "نیاز داشتن"
+    },
+    "type": "regular",
+    "present": {
+      "ich": "brauche",
+      "du": "brauchst",
+      "er_sie_es": "braucht",
+      "wir": "brauchen",
+      "ihr": "braucht",
+      "sie_Sie": "brauchen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gebraucht"
+    },
+    "example": {
+      "de": "Ich brauche Hilfe.",
+      "en": "I need help.",
+      "fa": "من به کمک نیاز دارم."
+    },
+    "note": {
+      "en": "Regular verb: stem + ending. Perfekt: ge- + stem + -t.",
+      "fa": "فعل باقاعده: ریشه + پایان. ماضی نقلی: ge- + ریشه + -t.",
+      "de": "Regelmäßiges Verb: Stamm + Endung. Perfekt: ge- + Stamm + -t."
+    }
+  },
+  {
+    "id": "kosten",
+    "infinitive": "kosten",
+    "level": "A1",
+    "category": "daily",
+    "translations": {
+      "en": "to cost",
+      "fa": "قیمت داشتن"
+    },
+    "type": "regular",
+    "present": {
+      "ich": "koste",
+      "du": "kostest",
+      "er_sie_es": "kostet",
+      "wir": "kosten",
+      "ihr": "kostet",
+      "sie_Sie": "kosten"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gekostet"
+    },
+    "example": {
+      "de": "Das Brot kostet zwei Euro.",
+      "en": "The bread costs two euros.",
+      "fa": "نان دو یورو قیمت دارد."
+    },
+    "note": {
+      "en": "The stem ends in -st, so du takes -est: du kostest. Regular verb; Perfekt: hat gekostet.",
+      "fa": "ریشه به -st ختم می‌شود، برای همین du پایان -est می‌گیرد: du kostest. فعل باقاعده؛ ماضی نقلی: hat gekostet.",
+      "de": "Der Stamm endet auf -st, deshalb bekommt du die Endung -est: du kostest. Regelmäßiges Verb; Perfekt: hat gekostet."
+    }
+  },
+  {
+    "id": "schlafen",
+    "infinitive": "schlafen",
+    "level": "A1",
+    "category": "daily",
+    "translations": {
+      "en": "to sleep",
+      "fa": "خوابیدن"
+    },
+    "type": "irregular",
+    "stemChange": "a→ä",
+    "present": {
+      "ich": "schlafe",
+      "du": "schläfst",
+      "er_sie_es": "schläft",
+      "wir": "schlafen",
+      "ihr": "schlaft",
+      "sie_Sie": "schlafen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "geschlafen"
+    },
+    "example": {
+      "de": "Das Kind schläft.",
+      "en": "The child is sleeping.",
+      "fa": "بچه خواب است."
+    },
+    "note": {
+      "en": "The du and er/sie/es forms change the vowel (a→ä). Perfekt with haben: hat geschlafen.",
+      "fa": "صورت‌های du و er/sie/es حرف صدادار را تغییر می‌دهند (a→ä). ماضی نقلی با haben: hat geschlafen.",
+      "de": "Die du- und er/sie/es-Form ändern den Vokal (a→ä). Perfekt mit haben: hat geschlafen."
+    }
+  },
+  {
+    "id": "laufen",
+    "infinitive": "laufen",
+    "level": "A1",
+    "category": "movement",
+    "translations": {
+      "en": "to run, to walk",
+      "fa": "دویدن، پیاده رفتن"
+    },
+    "type": "irregular",
+    "stemChange": "au→äu",
+    "present": {
+      "ich": "laufe",
+      "du": "läufst",
+      "er_sie_es": "läuft",
+      "wir": "laufen",
+      "ihr": "lauft",
+      "sie_Sie": "laufen"
+    },
+    "perfekt": {
+      "auxiliary": "sein",
+      "partizip2": "gelaufen"
+    },
+    "example": {
+      "de": "Er läuft schnell.",
+      "en": "He runs fast.",
+      "fa": "او سریع می‌دود."
+    },
+    "note": {
+      "en": "The du and er/sie/es forms change the vowel (au→äu). Perfekt with sein: ist gelaufen.",
+      "fa": "صورت‌های du و er/sie/es حرف صدادار را تغییر می‌دهند (au→äu). ماضی نقلی با sein: ist gelaufen.",
+      "de": "Die du- und er/sie/es-Form ändern den Vokal (au→äu). Perfekt mit sein: ist gelaufen."
+    }
+  },
+  {
+    "id": "helfen",
+    "infinitive": "helfen",
+    "level": "A1",
+    "category": "basic",
+    "translations": {
+      "en": "to help",
+      "fa": "کمک کردن"
+    },
+    "type": "irregular",
+    "stemChange": "e→i",
+    "present": {
+      "ich": "helfe",
+      "du": "hilfst",
+      "er_sie_es": "hilft",
+      "wir": "helfen",
+      "ihr": "helft",
+      "sie_Sie": "helfen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "geholfen"
+    },
+    "example": {
+      "de": "Sie hilft mir.",
+      "en": "She helps me.",
+      "fa": "او به من کمک می‌کند."
+    },
+    "note": {
+      "en": "The du and er/sie/es forms change the vowel (e→i). helfen takes the dative: Sie hilft mir. Perfekt: hat geholfen.",
+      "fa": "صورت‌های du و er/sie/es حرف صدادار را تغییر می‌دهند (e→i). helfen با حالت داتیو می‌آید: Sie hilft mir. ماضی نقلی: hat geholfen.",
+      "de": "Die du- und er/sie/es-Form ändern den Vokal (e→i). helfen steht mit dem Dativ: Sie hilft mir. Perfekt: hat geholfen."
+    }
+  },
+  {
+    "id": "kochen",
+    "infinitive": "kochen",
+    "level": "A1",
+    "category": "daily",
+    "translations": {
+      "en": "to cook",
+      "fa": "آشپزی کردن"
+    },
+    "type": "regular",
+    "present": {
+      "ich": "koche",
+      "du": "kochst",
+      "er_sie_es": "kocht",
+      "wir": "kochen",
+      "ihr": "kocht",
+      "sie_Sie": "kochen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "gekocht"
+    },
+    "example": {
+      "de": "Ich koche Suppe.",
+      "en": "I am cooking soup.",
+      "fa": "من سوپ می‌پزم."
+    },
+    "note": {
+      "en": "Regular verb: stem + ending. Perfekt: ge- + stem + -t.",
+      "fa": "فعل باقاعده: ریشه + پایان. ماضی نقلی: ge- + ریشه + -t.",
+      "de": "Regelmäßiges Verb: Stamm + Endung. Perfekt: ge- + Stamm + -t."
+    }
+  },
+  {
+    "id": "anrufen",
+    "infinitive": "anrufen",
+    "level": "A1",
+    "category": "communication",
+    "translations": {
+      "en": "to call (by phone)",
+      "fa": "تلفن زدن"
+    },
+    "type": "separable",
+    "separable": {
+      "prefix": "an",
+      "stem": "rufen"
+    },
+    "present": {
+      "ich": "rufe",
+      "du": "rufst",
+      "er_sie_es": "ruft",
+      "wir": "rufen",
+      "ihr": "ruft",
+      "sie_Sie": "rufen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "angerufen"
+    },
+    "example": {
+      "de": "Ich rufe meine Mutter an.",
+      "en": "I call my mother.",
+      "fa": "من به مادرم زنگ می‌زنم."
+    },
+    "note": {
+      "en": "Separable verb: the prefix an goes to the end of the sentence (rufe ... an). Perfekt with haben: hat angerufen.",
+      "fa": "فعل جداشدنی: پیشوند an به آخر جمله می‌رود (rufe ... an). ماضی نقلی با haben: hat angerufen.",
+      "de": "Trennbares Verb: Das Präfix an steht am Satzende (rufe ... an). Perfekt mit haben: hat angerufen."
+    }
+  },
+  {
+    "id": "einkaufen",
+    "infinitive": "einkaufen",
+    "level": "A1",
+    "category": "daily",
+    "translations": {
+      "en": "to shop, to go shopping",
+      "fa": "خرید کردن"
+    },
+    "type": "separable",
+    "separable": {
+      "prefix": "ein",
+      "stem": "kaufen"
+    },
+    "present": {
+      "ich": "kaufe",
+      "du": "kaufst",
+      "er_sie_es": "kauft",
+      "wir": "kaufen",
+      "ihr": "kauft",
+      "sie_Sie": "kaufen"
+    },
+    "perfekt": {
+      "auxiliary": "haben",
+      "partizip2": "eingekauft"
+    },
+    "example": {
+      "de": "Wir kaufen im Supermarkt ein.",
+      "en": "We shop at the supermarket.",
+      "fa": "ما از سوپرمارکت خرید می‌کنیم."
+    },
+    "note": {
+      "en": "Separable verb: the prefix ein goes to the end of the sentence (kaufe ... ein). Perfekt with haben: hat eingekauft.",
+      "fa": "فعل جداشدنی: پیشوند ein به آخر جمله می‌رود (kaufe ... ein). ماضی نقلی با haben: hat eingekauft.",
+      "de": "Trennbares Verb: Das Präfix ein steht am Satzende (kaufe ... ein). Perfekt mit haben: hat eingekauft."
+    }
+  },
+  {
+    "id": "ankommen",
+    "infinitive": "ankommen",
+    "level": "A1",
+    "category": "movement",
+    "translations": {
+      "en": "to arrive",
+      "fa": "رسیدن"
+    },
+    "type": "separable",
+    "separable": {
+      "prefix": "an",
+      "stem": "kommen"
+    },
+    "present": {
+      "ich": "komme",
+      "du": "kommst",
+      "er_sie_es": "kommt",
+      "wir": "kommen",
+      "ihr": "kommt",
+      "sie_Sie": "kommen"
+    },
+    "perfekt": {
+      "auxiliary": "sein",
+      "partizip2": "angekommen"
+    },
+    "example": {
+      "de": "Der Zug kommt um acht Uhr an.",
+      "en": "The train arrives at eight o'clock.",
+      "fa": "قطار ساعت هشت می‌رسد."
+    },
+    "note": {
+      "en": "Separable verb: the prefix an goes to the end of the sentence (komme ... an). Perfekt with sein: ist angekommen.",
+      "fa": "فعل جداشدنی: پیشوند an به آخر جمله می‌رود (komme ... an). ماضی نقلی با sein: ist angekommen.",
+      "de": "Trennbares Verb: Das Präfix an steht am Satzende (komme ... an). Perfekt mit sein: ist angekommen."
     }
   }
 ]

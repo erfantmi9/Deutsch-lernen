@@ -1,0 +1,147 @@
+[
+  {
+    "id": "plur-01",
+    "lessonId": "plural",
+    "type": "fill",
+    "prompt": { "en": "Type the plural noun.", "fa": "اسم جمع را بنویس.", "de": "Schreibe das Nomen im Plural." },
+    "sentenceDe": "der Tisch → die ___",
+    "answer": "Tische",
+    "explanation": {
+      "en": "Many masculine nouns add -e: der Tisch → die Tische.",
+      "fa": "بسیاری از اسم‌های مذکر e- می‌گیرند: der Tisch ← die Tische.",
+      "de": "Viele maskuline Nomen bekommen -e: der Tisch → die Tische."
+    }
+  },
+  {
+    "id": "plur-02",
+    "lessonId": "plural",
+    "type": "fill",
+    "prompt": { "en": "Type the plural noun.", "fa": "اسم جمع را بنویس.", "de": "Schreibe das Nomen im Plural." },
+    "sentenceDe": "die Frau → die ___",
+    "answer": "Frauen",
+    "explanation": {
+      "en": "Most feminine nouns take -n or -en: die Frau → die Frauen.",
+      "fa": "بیشتر اسم‌های مؤنث n- یا en- می‌گیرند: die Frau ← die Frauen.",
+      "de": "Die meisten femininen Nomen bekommen -n oder -en: die Frau → die Frauen."
+    }
+  },
+  {
+    "id": "plur-03",
+    "lessonId": "plural",
+    "type": "fill",
+    "prompt": { "en": "Type the plural noun.", "fa": "اسم جمع را بنویس.", "de": "Schreibe das Nomen im Plural." },
+    "sentenceDe": "das Kind → die ___",
+    "answer": "Kinder",
+    "explanation": {
+      "en": "Some neuter nouns take -er: das Kind → die Kinder. You have to learn this one.",
+      "fa": "بعضی اسم‌های خنثی er- می‌گیرند: das Kind ← die Kinder. این را باید حفظ کنی.",
+      "de": "Manche neutralen Nomen bekommen -er: das Kind → die Kinder. Das musst du lernen."
+    }
+  },
+  {
+    "id": "plur-04",
+    "lessonId": "plural",
+    "type": "choice",
+    "prompt": { "en": "Choose the plural noun.", "fa": "اسم جمع را انتخاب کن.", "de": "Wähle das Nomen im Plural." },
+    "sentenceDe": "das Auto → die ___",
+    "options": ["Autos", "Autoe", "Autoen"],
+    "answer": "Autos",
+    "explanation": {
+      "en": "Newer words like Auto, Handy and Hotel usually take -s.",
+      "fa": "واژه‌های جدیدتر مثل Auto، Handy و Hotel معمولاً s- می‌گیرند.",
+      "de": "Neuere Wörter wie Auto, Handy und Hotel bekommen meistens -s."
+    }
+  },
+  {
+    "id": "plur-05",
+    "lessonId": "plural",
+    "type": "fill",
+    "prompt": { "en": "Type the plural noun. Watch the umlaut!", "fa": "اسم جمع را بنویس. حواست به اومْلاوت باشد!", "de": "Schreibe das Nomen im Plural. Achte auf den Umlaut!" },
+    "sentenceDe": "der Stuhl → die ___",
+    "answer": "Stühle",
+    "explanation": {
+      "en": "der Stuhl takes an umlaut and -e: die Stühle.",
+      "fa": "der Stuhl اومْلاوت و e- می‌گیرد: die Stühle.",
+      "de": "der Stuhl bekommt einen Umlaut und -e: die Stühle."
+    }
+  },
+  {
+    "id": "plur-06",
+    "lessonId": "plural",
+    "type": "fill",
+    "prompt": { "en": "Type the plural noun. Watch the umlaut!", "fa": "اسم جمع را بنویس. حواست به اومْلاوت باشد!", "de": "Schreibe das Nomen im Plural. Achte auf den Umlaut!" },
+    "sentenceDe": "das Buch → die ___",
+    "answer": "Bücher",
+    "explanation": {
+      "en": "das Buch takes an umlaut and -er: die Bücher.",
+      "fa": "das Buch اومْلاوت و er- می‌گیرد: die Bücher.",
+      "de": "das Buch bekommt einen Umlaut und -er: die Bücher."
+    }
+  },
+  {
+    "id": "plur-07",
+    "lessonId": "plural",
+    "type": "fill",
+    "prompt": { "en": "Type the plural noun.", "fa": "اسم جمع را بنویس.", "de": "Schreibe das Nomen im Plural." },
+    "sentenceDe": "die Lampe → die ___",
+    "answer": "Lampen",
+    "explanation": {
+      "en": "Nouns ending in -e usually add -n: die Lampe → die Lampen.",
+      "fa": "اسم‌هایی که به e ختم می‌شوند معمولاً n- می‌گیرند: die Lampe ← die Lampen.",
+      "de": "Nomen auf -e bekommen meistens -n: die Lampe → die Lampen."
+    }
+  },
+  {
+    "id": "plur-08",
+    "lessonId": "plural",
+    "type": "fill",
+    "prompt": { "en": "Type the plural noun.", "fa": "اسم جمع را بنویس.", "de": "Schreibe das Nomen im Plural." },
+    "sentenceDe": "der Lehrer → die ___",
+    "answer": "Lehrer",
+    "explanation": {
+      "en": "Nouns ending in -er often do not change: die Lehrer.",
+      "fa": "اسم‌هایی که به er ختم می‌شوند اغلب تغییری نمی‌کنند: die Lehrer.",
+      "de": "Nomen auf -er bleiben oft gleich: die Lehrer."
+    }
+  },
+  {
+    "id": "plur-09",
+    "lessonId": "plural",
+    "type": "transform",
+    "prompt": { "en": "Put the noun in the plural.", "fa": "اسم را به جمع ببر.", "de": "Setze das Nomen in den Plural." },
+    "sentenceDe": "Ich habe einen Bruder. → Ich habe zwei ___.",
+    "answer": "Brüder",
+    "explanation": {
+      "en": "der Bruder only gets an umlaut in the plural: die Brüder.",
+      "fa": "der Bruder در جمع فقط اومْلاوت می‌گیرد: die Brüder.",
+      "de": "der Bruder bekommt im Plural nur einen Umlaut: die Brüder."
+    }
+  },
+  {
+    "id": "plur-10",
+    "lessonId": "plural",
+    "type": "transform",
+    "prompt": { "en": "Put the noun in the plural.", "fa": "اسم را به جمع ببر.", "de": "Setze das Nomen in den Plural." },
+    "sentenceDe": "Das ist eine Zeitung. → Das sind drei ___.",
+    "answer": "Zeitungen",
+    "explanation": {
+      "en": "Nouns ending in -ung take -en: die Zeitung → die Zeitungen.",
+      "fa": "اسم‌هایی که به ung ختم می‌شوند en- می‌گیرند: die Zeitung ← die Zeitungen.",
+      "de": "Nomen auf -ung bekommen -en: die Zeitung → die Zeitungen."
+    }
+  },
+  {
+    "id": "plur-11",
+    "lessonId": "plural",
+    "type": "choice",
+    "prompt": { "en": "Choose the plural noun.", "fa": "اسم جمع را انتخاب کن.", "de": "Wähle das Nomen im Plural." },
+    "sentenceDe": "die Lehrerin → die ___",
+    "options": ["Lehrerinen", "Lehrerinnen", "Lehrerins"],
+    "answer": "Lehrerinnen",
+    "explanation": {
+      "en": "Feminine nouns ending in -in double the n and add -en: die Lehrerinnen.",
+      "fa": "اسم‌های مؤنثی که به in ختم می‌شوند n را دوبار می‌نویسند و en- می‌گیرند: die Lehrerinnen.",
+      "de": "Feminine Nomen auf -in verdoppeln das n und bekommen -en: die Lehrerinnen."
+    }
+  }
+]

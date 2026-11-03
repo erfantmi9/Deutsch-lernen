@@ -1,0 +1,138 @@
+[
+  {
+    "id": "case-01",
+    "lessonId": "nom-akk",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct article.", "fa": "آرتیکل درست را انتخاب کن.", "de": "Wähle den richtigen Artikel." },
+    "sentenceDe": "Ich habe ___ Hund.",
+    "options": ["ein", "einen", "eine"],
+    "answer": "einen",
+    "explanation": {
+      "en": "der Hund is masculine. As the object (accusative) ein becomes einen.",
+      "fa": "der Hund مذکر است. به‌عنوان مفعول (Akkusativ) ein به einen تبدیل می‌شود.",
+      "de": "der Hund ist maskulin. Als Objekt (Akkusativ) wird ein zu einen."
+    }
+  },
+  {
+    "id": "case-02",
+    "lessonId": "nom-akk",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct article.", "fa": "آرتیکل درست را انتخاب کن.", "de": "Wähle den richtigen Artikel." },
+    "sentenceDe": "Das ist ___ Hund.",
+    "options": ["ein", "einen", "eine"],
+    "answer": "ein",
+    "explanation": {
+      "en": "After sein the noun stays in the nominative: ein Hund.",
+      "fa": "بعد از sein اسم در حالت فاعلی می‌ماند: ein Hund.",
+      "de": "Nach sein bleibt das Nomen im Nominativ: ein Hund."
+    }
+  },
+  {
+    "id": "case-03",
+    "lessonId": "nom-akk",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct article.", "fa": "آرتیکل درست را انتخاب کن.", "de": "Wähle den richtigen Artikel." },
+    "sentenceDe": "Ich sehe ___ Frau.",
+    "options": ["der", "die", "den"],
+    "answer": "die",
+    "explanation": {
+      "en": "die Frau is feminine. Feminine nouns do not change in the accusative.",
+      "fa": "die Frau مؤنث است. اسم‌های مؤنث در حالت مفعولی تغییر نمی‌کنند.",
+      "de": "die Frau ist feminin. Feminine Nomen verändern sich im Akkusativ nicht."
+    }
+  },
+  {
+    "id": "case-04",
+    "lessonId": "nom-akk",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct article.", "fa": "آرتیکل درست را انتخاب کن.", "de": "Wähle den richtigen Artikel." },
+    "sentenceDe": "Ich esse ___ Apfel.",
+    "options": ["der", "den", "das"],
+    "answer": "den",
+    "explanation": {
+      "en": "der Apfel is masculine. As the object it becomes den Apfel.",
+      "fa": "der Apfel مذکر است. به‌عنوان مفعول به den Apfel تبدیل می‌شود.",
+      "de": "der Apfel ist maskulin. Als Objekt wird daraus den Apfel."
+    }
+  },
+  {
+    "id": "case-05",
+    "lessonId": "nom-akk",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct article.", "fa": "آرتیکل درست را انتخاب کن.", "de": "Wähle den richtigen Artikel." },
+    "sentenceDe": "___ Mann ist nett.",
+    "options": ["Der", "Den", "Die"],
+    "answer": "Der",
+    "explanation": {
+      "en": "Der Mann is the subject (Wer ist nett?), so it stays in the nominative.",
+      "fa": "Der Mann فاعل جمله است (چه کسی مهربان است؟)، پس در حالت فاعلی می‌ماند.",
+      "de": "Der Mann ist das Subjekt (Wer ist nett?), also bleibt es im Nominativ."
+    }
+  },
+  {
+    "id": "case-06",
+    "lessonId": "nom-akk",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct article.", "fa": "آرتیکل درست را انتخاب کن.", "de": "Wähle den richtigen Artikel." },
+    "sentenceDe": "Wir kaufen ___ Auto.",
+    "options": ["ein", "einen", "eine"],
+    "answer": "ein",
+    "explanation": {
+      "en": "das Auto is neuter. Neuter nouns do not change in the accusative: ein Auto.",
+      "fa": "das Auto خنثی است. اسم‌های خنثی در حالت مفعولی تغییر نمی‌کنند: ein Auto.",
+      "de": "das Auto ist neutral. Neutrale Nomen verändern sich im Akkusativ nicht: ein Auto."
+    }
+  },
+  {
+    "id": "case-07",
+    "lessonId": "nom-akk",
+    "type": "fill",
+    "prompt": { "en": "Type the indefinite article.", "fa": "آرتیکل نکره را بنویس.", "de": "Schreibe den unbestimmten Artikel." },
+    "sentenceDe": "Er trinkt ___ Tee.",
+    "answer": "einen",
+    "explanation": {
+      "en": "der Tee is masculine. As the object it needs einen.",
+      "fa": "der Tee مذکر است. به‌عنوان مفعول einen لازم دارد.",
+      "de": "der Tee ist maskulin. Als Objekt braucht er einen."
+    }
+  },
+  {
+    "id": "case-08",
+    "lessonId": "nom-akk",
+    "type": "fill",
+    "prompt": { "en": "Type the indefinite article.", "fa": "آرتیکل نکره را بنویس.", "de": "Schreibe den unbestimmten Artikel." },
+    "sentenceDe": "Sie kauft ___ Tasche.",
+    "answer": "eine",
+    "explanation": {
+      "en": "die Tasche is feminine, so the article stays eine.",
+      "fa": "die Tasche مؤنث است، پس آرتیکل همان eine می‌ماند.",
+      "de": "die Tasche ist feminin, also bleibt der Artikel eine."
+    }
+  },
+  {
+    "id": "case-09",
+    "lessonId": "nom-akk",
+    "type": "transform",
+    "prompt": { "en": "Use the noun as the object (accusative).", "fa": "اسم را به‌عنوان مفعول (Akkusativ) به کار ببر.", "de": "Benutze das Nomen als Objekt (Akkusativ)." },
+    "sentenceDe": "Der Bruder ist hier. → Ich sehe ___ Bruder.",
+    "answer": "den",
+    "explanation": {
+      "en": "der Bruder is masculine, so der becomes den in the accusative.",
+      "fa": "der Bruder مذکر است، پس der در حالت مفعولی به den تبدیل می‌شود.",
+      "de": "der Bruder ist maskulin, also wird der im Akkusativ zu den."
+    }
+  },
+  {
+    "id": "case-10",
+    "lessonId": "nom-akk",
+    "type": "transform",
+    "prompt": { "en": "Use the noun as the object (accusative).", "fa": "اسم را به‌عنوان مفعول (Akkusativ) به کار ببر.", "de": "Benutze das Nomen als Objekt (Akkusativ)." },
+    "sentenceDe": "Das ist ein Stuhl. → Ich brauche ___ Stuhl.",
+    "answer": "einen",
+    "explanation": {
+      "en": "der Stuhl is masculine, so ein becomes einen after brauchen.",
+      "fa": "der Stuhl مذکر است، پس ein بعد از brauchen به einen تبدیل می‌شود.",
+      "de": "der Stuhl ist maskulin, also wird ein nach brauchen zu einen."
+    }
+  }
+]

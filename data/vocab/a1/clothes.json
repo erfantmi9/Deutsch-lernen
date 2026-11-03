@@ -1,0 +1,702 @@
+[
+  {
+    "id": "jacke",
+    "word": "Jacke",
+    "article": "die",
+    "plural": "Jacken",
+    "translations": {
+      "en": "jacket",
+      "fa": "کت، ژاکت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Jacke).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Jacke).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Jacke).",
+      "simple": {
+        "en": "Just learn it: die Jacke.",
+        "fa": "فقط حفظش کنید: die Jacke.",
+        "de": "Einfach lernen: die Jacke."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Jacke ist warm.",
+      "en": "The jacket is warm.",
+      "fa": "کت گرم است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "mantel",
+    "word": "Mantel",
+    "article": "der",
+    "plural": "Mäntel",
+    "translations": {
+      "en": "coat",
+      "fa": "پالتو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Mantel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Mantel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Mantel).",
+      "simple": {
+        "en": "Just learn it: der Mantel.",
+        "fa": "فقط حفظش کنید: der Mantel.",
+        "de": "Einfach lernen: der Mantel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Mantel ist lang.",
+      "en": "The coat is long.",
+      "fa": "پالتو بلند است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "hose",
+    "word": "Hose",
+    "article": "die",
+    "plural": "Hosen",
+    "translations": {
+      "en": "trousers",
+      "fa": "شلوار"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Hose).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Hose).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Hose).",
+      "simple": {
+        "en": "Just learn it: die Hose.",
+        "fa": "فقط حفظش کنید: die Hose.",
+        "de": "Einfach lernen: die Hose."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Hose ist blau.",
+      "en": "The trousers are blue.",
+      "fa": "شلوار آبی است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "rock",
+    "word": "Rock",
+    "article": "der",
+    "plural": "Röcke",
+    "translations": {
+      "en": "skirt",
+      "fa": "دامن"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Rock).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Rock).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Rock).",
+      "simple": {
+        "en": "Just learn it: der Rock.",
+        "fa": "فقط حفظش کنید: der Rock.",
+        "de": "Einfach lernen: der Rock."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Rock ist kurz.",
+      "en": "The skirt is short.",
+      "fa": "دامن کوتاه است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "kleid",
+    "word": "Kleid",
+    "article": "das",
+    "plural": "Kleider",
+    "translations": {
+      "en": "dress",
+      "fa": "لباس زنانه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Kleid).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Kleid).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Kleid).",
+      "simple": {
+        "en": "Just learn it: das Kleid.",
+        "fa": "فقط حفظش کنید: das Kleid.",
+        "de": "Einfach lernen: das Kleid."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Kleid ist rot.",
+      "en": "The dress is red.",
+      "fa": "لباس قرمز است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "hemd",
+    "word": "Hemd",
+    "article": "das",
+    "plural": "Hemden",
+    "translations": {
+      "en": "shirt",
+      "fa": "پیراهن"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Hemd).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Hemd).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Hemd).",
+      "simple": {
+        "en": "Just learn it: das Hemd.",
+        "fa": "فقط حفظش کنید: das Hemd.",
+        "de": "Einfach lernen: das Hemd."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Hemd ist weiß.",
+      "en": "The shirt is white.",
+      "fa": "پیراهن سفید است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "tshirt",
+    "word": "T-Shirt",
+    "article": "das",
+    "plural": "T-Shirts",
+    "translations": {
+      "en": "T-shirt",
+      "fa": "تی‌شرت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das T-Shirt).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das T-Shirt).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das T-Shirt).",
+      "simple": {
+        "en": "Just learn it: das T-Shirt.",
+        "fa": "فقط حفظش کنید: das T-Shirt.",
+        "de": "Einfach lernen: das T-Shirt."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das T-Shirt ist neu.",
+      "en": "The T-shirt is new.",
+      "fa": "تی‌شرت جدید است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "pullover",
+    "word": "Pullover",
+    "article": "der",
+    "plural": "Pullover",
+    "translations": {
+      "en": "sweater",
+      "fa": "پلیور"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Pullover).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Pullover).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Pullover).",
+      "simple": {
+        "en": "Just learn it: der Pullover.",
+        "fa": "فقط حفظش کنید: der Pullover.",
+        "de": "Einfach lernen: der Pullover."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Pullover ist grün.",
+      "en": "The sweater is green.",
+      "fa": "پلیور سبز است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "schuh",
+    "word": "Schuh",
+    "article": "der",
+    "plural": "Schuhe",
+    "translations": {
+      "en": "shoe",
+      "fa": "کفش"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Schuh).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Schuh).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Schuh).",
+      "simple": {
+        "en": "Just learn it: der Schuh.",
+        "fa": "فقط حفظش کنید: der Schuh.",
+        "de": "Einfach lernen: der Schuh."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Schuh ist klein.",
+      "en": "The shoe is small.",
+      "fa": "کفش کوچک است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "stiefel",
+    "word": "Stiefel",
+    "article": "der",
+    "plural": "Stiefel",
+    "translations": {
+      "en": "boot",
+      "fa": "چکمه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Stiefel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Stiefel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Stiefel).",
+      "simple": {
+        "en": "Just learn it: der Stiefel.",
+        "fa": "فقط حفظش کنید: der Stiefel.",
+        "de": "Einfach lernen: der Stiefel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Stiefel ist schwarz.",
+      "en": "The boot is black.",
+      "fa": "چکمه سیاه است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "socke",
+    "word": "Socke",
+    "article": "die",
+    "plural": "Socken",
+    "translations": {
+      "en": "sock",
+      "fa": "جوراب"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Socke).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Socke).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Socke).",
+      "simple": {
+        "en": "Just learn it: die Socke.",
+        "fa": "فقط حفظش کنید: die Socke.",
+        "de": "Einfach lernen: die Socke."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Socke ist grau.",
+      "en": "The sock is grey.",
+      "fa": "جوراب خاکستری است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "muetze",
+    "word": "Mütze",
+    "article": "die",
+    "plural": "Mützen",
+    "translations": {
+      "en": "cap, beanie",
+      "fa": "کلاه (نرم)"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Mütze).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Mütze).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Mütze).",
+      "simple": {
+        "en": "Just learn it: die Mütze.",
+        "fa": "فقط حفظش کنید: die Mütze.",
+        "de": "Einfach lernen: die Mütze."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Mütze ist warm.",
+      "en": "The cap is warm.",
+      "fa": "کلاه گرم است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "hut",
+    "word": "Hut",
+    "article": "der",
+    "plural": "Hüte",
+    "translations": {
+      "en": "hat",
+      "fa": "کلاه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Hut).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Hut).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Hut).",
+      "simple": {
+        "en": "Just learn it: der Hut.",
+        "fa": "فقط حفظش کنید: der Hut.",
+        "de": "Einfach lernen: der Hut."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Hut ist braun.",
+      "en": "The hat is brown.",
+      "fa": "کلاه قهوه‌ای است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "schal",
+    "word": "Schal",
+    "article": "der",
+    "plural": "Schals",
+    "translations": {
+      "en": "scarf",
+      "fa": "شال‌گردن"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Schal).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Schal).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Schal).",
+      "simple": {
+        "en": "Just learn it: der Schal.",
+        "fa": "فقط حفظش کنید: der Schal.",
+        "de": "Einfach lernen: der Schal."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Schal ist lang.",
+      "en": "The scarf is long.",
+      "fa": "شال‌گردن بلند است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "handschuh",
+    "word": "Handschuh",
+    "article": "der",
+    "plural": "Handschuhe",
+    "translations": {
+      "en": "glove",
+      "fa": "دستکش"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Handschuh).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Handschuh).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Handschuh).",
+      "simple": {
+        "en": "Just learn it: der Handschuh.",
+        "fa": "فقط حفظش کنید: der Handschuh.",
+        "de": "Einfach lernen: der Handschuh."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Handschuh ist schwarz.",
+      "en": "The glove is black.",
+      "fa": "دستکش سیاه است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "guertel",
+    "word": "Gürtel",
+    "article": "der",
+    "plural": "Gürtel",
+    "translations": {
+      "en": "belt",
+      "fa": "کمربند"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Gürtel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Gürtel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Gürtel).",
+      "simple": {
+        "en": "Just learn it: der Gürtel.",
+        "fa": "فقط حفظش کنید: der Gürtel.",
+        "de": "Einfach lernen: der Gürtel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Gürtel ist neu.",
+      "en": "The belt is new.",
+      "fa": "کمربند جدید است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "brille",
+    "word": "Brille",
+    "article": "die",
+    "plural": "Brillen",
+    "translations": {
+      "en": "glasses",
+      "fa": "عینک"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Brille).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Brille).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Brille).",
+      "simple": {
+        "en": "Just learn it: die Brille.",
+        "fa": "فقط حفظش کنید: die Brille.",
+        "de": "Einfach lernen: die Brille."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Brille ist kaputt.",
+      "en": "The glasses are broken.",
+      "fa": "عینک شکسته است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "bluse",
+    "word": "Bluse",
+    "article": "die",
+    "plural": "Blusen",
+    "translations": {
+      "en": "blouse",
+      "fa": "بلوز"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Bluse).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Bluse).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Bluse).",
+      "simple": {
+        "en": "Just learn it: die Bluse.",
+        "fa": "فقط حفظش کنید: die Bluse.",
+        "de": "Einfach lernen: die Bluse."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Bluse ist weiß.",
+      "en": "The blouse is white.",
+      "fa": "بلوز سفید است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "anzug",
+    "word": "Anzug",
+    "article": "der",
+    "plural": "Anzüge",
+    "translations": {
+      "en": "suit",
+      "fa": "کت‌وشلوار"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Anzug).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Anzug).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Anzug).",
+      "simple": {
+        "en": "Just learn it: der Anzug.",
+        "fa": "فقط حفظش کنید: der Anzug.",
+        "de": "Einfach lernen: der Anzug."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Anzug ist dunkel.",
+      "en": "The suit is dark.",
+      "fa": "کت‌وشلوار تیره است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "krawatte",
+    "word": "Krawatte",
+    "article": "die",
+    "plural": "Krawatten",
+    "translations": {
+      "en": "tie",
+      "fa": "کراوات"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Krawatte).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Krawatte).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Krawatte).",
+      "simple": {
+        "en": "Just learn it: die Krawatte.",
+        "fa": "فقط حفظش کنید: die Krawatte.",
+        "de": "Einfach lernen: die Krawatte."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Krawatte ist rot.",
+      "en": "The tie is red.",
+      "fa": "کراوات قرمز است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "groesse",
+    "word": "Größe",
+    "article": "die",
+    "plural": "Größen",
+    "translations": {
+      "en": "size",
+      "fa": "سایز"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Größe).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Größe).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Größe).",
+      "simple": {
+        "en": "Just learn it: die Größe.",
+        "fa": "فقط حفظش کنید: die Größe.",
+        "de": "Einfach lernen: die Größe."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Größe passt.",
+      "en": "The size fits.",
+      "fa": "سایز مناسب است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "regenmantel",
+    "word": "Regenmantel",
+    "article": "der",
+    "plural": "Regenmäntel",
+    "translations": {
+      "en": "raincoat",
+      "fa": "بارانی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Regenmantel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Regenmantel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Regenmantel).",
+      "simple": {
+        "en": "Just learn it: der Regenmantel.",
+        "fa": "فقط حفظش کنید: der Regenmantel.",
+        "de": "Einfach lernen: der Regenmantel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Regenmantel ist gelb.",
+      "en": "The raincoat is yellow.",
+      "fa": "بارانی زرد است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "schlafanzug",
+    "word": "Schlafanzug",
+    "article": "der",
+    "plural": "Schlafanzüge",
+    "translations": {
+      "en": "pyjamas",
+      "fa": "لباس خواب"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Schlafanzug).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Schlafanzug).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Schlafanzug).",
+      "simple": {
+        "en": "Just learn it: der Schlafanzug.",
+        "fa": "فقط حفظش کنید: der Schlafanzug.",
+        "de": "Einfach lernen: der Schlafanzug."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Schlafanzug ist weich.",
+      "en": "The pyjamas are soft.",
+      "fa": "لباس خواب نرم است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "ring",
+    "word": "Ring",
+    "article": "der",
+    "plural": "Ringe",
+    "translations": {
+      "en": "ring",
+      "fa": "انگشتر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Ring).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Ring).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Ring).",
+      "simple": {
+        "en": "Just learn it: der Ring.",
+        "fa": "فقط حفظش کنید: der Ring.",
+        "de": "Einfach lernen: der Ring."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Ring ist aus Gold.",
+      "en": "The ring is made of gold.",
+      "fa": "انگشتر از طلاست."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "kette",
+    "word": "Kette",
+    "article": "die",
+    "plural": "Ketten",
+    "translations": {
+      "en": "necklace, chain",
+      "fa": "گردنبند، زنجیر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Kette).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Kette).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Kette).",
+      "simple": {
+        "en": "Just learn it: die Kette.",
+        "fa": "فقط حفظش کنید: die Kette.",
+        "de": "Einfach lernen: die Kette."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Kette ist neu.",
+      "en": "The necklace is new.",
+      "fa": "گردنبند جدید است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  }
+]

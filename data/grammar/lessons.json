@@ -1,0 +1,606 @@
+[
+  {
+    "id": "pronouns",
+    "order": 1,
+    "topic": "pronouns",
+    "title": {
+      "en": "Personal pronouns",
+      "fa": "ضمیرهای شخصی",
+      "de": "Personalpronomen"
+    },
+    "summary": {
+      "en": "Say who does something: ich, du, er, sie, es, wir, ihr and Sie.",
+      "fa": "بگو چه کسی کاری انجام می‌دهد: ich، du، er، sie، es، wir، ihr و Sie.",
+      "de": "Sage, wer etwas tut: ich, du, er, sie, es, wir, ihr und Sie."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "The forms",
+          "fa": "شکل‌ها",
+          "de": "Die Formen"
+        },
+        "body": {
+          "en": "Every person has its own pronoun. The pronoun is the subject of the sentence, so it is in the nominative.\n\nThe 3rd person singular has three forms, one for each gender: `er` (masculine), `sie` (feminine) and `es` (neuter).",
+          "fa": "هر شخص ضمیر خودش را دارد. ضمیر فاعل جمله است، پس در حالت فاعلی (Nominativ) قرار دارد.\n\nسوم‌شخص مفرد سه شکل دارد، برای هر جنسیت دستوری یکی: `er` (مذکر)، `sie` (مؤنث) و `es` (خنثی).",
+          "de": "Jede Person hat ein eigenes Pronomen. Das Pronomen ist das Subjekt des Satzes, also steht es im Nominativ.\n\nDie 3. Person Singular hat drei Formen, je eine für jedes Genus: `er` (maskulin), `sie` (feminin) und `es` (neutral)."
+        },
+        "table": {
+          "headers": ["gloss:person", "gloss:singular", "gloss:plural"],
+          "rows": [
+            ["1.", "ich", "wir"],
+            ["2.", "du", "ihr"],
+            ["3.", "er / sie / es", "sie"],
+            ["gloss:formal", "Sie", "Sie"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "er, sie, es: follow the article",
+          "fa": "er، sie، es: از آرتیکل پیروی کن",
+          "de": "er, sie, es: dem Artikel folgen"
+        },
+        "body": {
+          "en": "To replace a noun, use the pronoun that matches its article:\n\n- `der Tisch` → `er`\n- `die Lampe` → `sie`\n- `das Buch` → `es`\n- plural nouns (`die Tische`, `die Lampen`) → `sie`\n\nFor people, the pronoun follows the person: `der Mann` → `er`, `die Frau` → `sie`.",
+          "fa": "برای جایگزین کردن یک اسم، ضمیری را بگذار که با آرتیکل آن اسم جور باشد:\n\n- `der Tisch` ← `er`\n- `die Lampe` ← `sie`\n- `das Buch` ← `es`\n- اسم‌های جمع (`die Tische`، `die Lampen`) ← `sie`\n\nبرای آدم‌ها، ضمیر از جنسیت خود فرد پیروی می‌کند: `der Mann` ← `er`، `die Frau` ← `sie`.",
+          "de": "Um ein Nomen zu ersetzen, nimm das Pronomen, das zu seinem Artikel passt:\n\n- `der Tisch` → `er`\n- `die Lampe` → `sie`\n- `das Buch` → `es`\n- Nomen im Plural (`die Tische`, `die Lampen`) → `sie`\n\nBei Personen richtet sich das Pronomen nach der Person: `der Mann` → `er`, `die Frau` → `sie`."
+        }
+      },
+      {
+        "heading": {
+          "en": "du, ihr or Sie?",
+          "fa": "du یا ihr یا Sie؟",
+          "de": "du, ihr oder Sie?"
+        },
+        "body": {
+          "en": "There are three ways to say “you”:\n\n- `du`: one person you know well (friends, family, children)\n- `ihr`: several people you would each call `du`\n- `Sie`: one or more people you address formally (strangers, officials, at work). It is always written with a capital S.\n\nThe small `sie` means “she” or “they”. The verb shows which one: `sie lernt` (she learns), `sie lernen` (they learn).",
+          "fa": "برای گفتن «تو/شما» سه راه وجود دارد:\n\n- `du`: یک نفر که خوب می‌شناسی (دوستان، خانواده، بچه‌ها)\n- `ihr`: چند نفر که با هرکدام‌شان `du` صحبت می‌کنی\n- `Sie`: یک نفر یا چند نفر که رسمی با آن‌ها صحبت می‌کنی (غریبه‌ها، ادارات، محل کار). همیشه با S بزرگ نوشته می‌شود.\n\n`sie` با s کوچک یعنی «او (زن)» یا «آن‌ها». فعل مشخص می‌کند کدام است: `sie lernt` (او یاد می‌گیرد)، `sie lernen` (آن‌ها یاد می‌گیرند).",
+          "de": "Es gibt drei Möglichkeiten, „you“ zu sagen:\n\n- `du`: eine Person, die du gut kennst (Freunde, Familie, Kinder)\n- `ihr`: mehrere Personen, die du jeweils mit `du` ansprichst\n- `Sie`: eine oder mehrere Personen, die du formell ansprichst (Fremde, Behörden, bei der Arbeit). Es wird immer großgeschrieben.\n\nDas kleine `sie` bedeutet „she“ oder „they“. Das Verb zeigt den Unterschied: `sie lernt` (eine Frau), `sie lernen` (mehrere Personen)."
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich heiße Anna.",
+        "en": "My name is Anna.",
+        "fa": "اسم من آنا است.",
+        "highlight": ["Ich"]
+      },
+      {
+        "de": "Du kommst aus Italien.",
+        "en": "You come from Italy.",
+        "fa": "تو اهل ایتالیا هستی.",
+        "highlight": ["Du"]
+      },
+      {
+        "de": "Er wohnt in Berlin.",
+        "en": "He lives in Berlin.",
+        "fa": "او (مرد) در برلین زندگی می‌کند.",
+        "highlight": ["Er"]
+      },
+      {
+        "de": "Sie lernt Deutsch.",
+        "en": "She is learning German.",
+        "fa": "او (زن) آلمانی یاد می‌گیرد.",
+        "highlight": ["Sie"]
+      },
+      {
+        "de": "Wir sind Freunde.",
+        "en": "We are friends.",
+        "fa": "ما دوست هستیم.",
+        "highlight": ["Wir"]
+      },
+      {
+        "de": "Wie heißen Sie?",
+        "en": "What is your name? (formal)",
+        "fa": "اسم شما چیست؟ (رسمی)",
+        "highlight": ["Sie"]
+      },
+      {
+        "de": "Das ist der Tisch. Er ist neu.",
+        "en": "That is the table. It is new.",
+        "fa": "این میز است. نو است.",
+        "highlight": ["Er"]
+      }
+    ],
+    "exerciseIds": [
+      "pron-01",
+      "pron-02",
+      "pron-03",
+      "pron-04",
+      "pron-05",
+      "pron-06",
+      "pron-07",
+      "pron-08",
+      "pron-09",
+      "pron-10"
+    ]
+  },
+  {
+    "id": "nom-akk",
+    "order": 2,
+    "topic": "cases",
+    "title": {
+      "en": "Nominativ and Akkusativ",
+      "fa": "حالت فاعلی و حالت مفعولی",
+      "de": "Nominativ und Akkusativ"
+    },
+    "summary": {
+      "en": "Who does something, and what is affected? Only masculine nouns change: der → den, ein → einen.",
+      "fa": "چه کسی کاری انجام می‌دهد و چه چیزی تحت تأثیر قرار می‌گیرد؟ فقط اسم‌های مذکر تغییر می‌کنند: der ← den و ein ← einen.",
+      "de": "Wer tut etwas, und was ist betroffen? Nur maskuline Nomen verändern sich: der → den, ein → einen."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "Subject and object",
+          "fa": "فاعل و مفعول",
+          "de": "Subjekt und Objekt"
+        },
+        "body": {
+          "en": "Ask two questions about a sentence:\n\n- **Wer oder was?** gives the subject → nominative\n- **Wen oder was?** gives the direct object → accusative\n\nIn `Der Mann liest den Brief.` the answer to “Wer?” is `der Mann` (nominative). The answer to “Was?” is `den Brief` (accusative).",
+          "fa": "دو پرسش از جمله بپرس:\n\n- **Wer oder was?** (چه کسی یا چه چیزی؟) فاعل را می‌دهد ← حالت فاعلی (Nominativ)\n- **Wen oder was?** (چه کسی را یا چه چیزی را؟) مفعول را می‌دهد ← حالت مفعولی (Akkusativ)\n\nدر جمله‌ی `Der Mann liest den Brief.` پاسخ «Wer؟» می‌شود `der Mann` (فاعلی) و پاسخ «Was؟» می‌شود `den Brief` (مفعولی).",
+          "de": "Stelle zwei Fragen an den Satz:\n\n- **Wer oder was?** ergibt das Subjekt → Nominativ\n- **Wen oder was?** ergibt das Akkusativobjekt → Akkusativ\n\nIn `Der Mann liest den Brief.` lautet die Antwort auf „Wer?“ `der Mann` (Nominativ). Die Antwort auf „Was?“ ist `den Brief` (Akkusativ)."
+        }
+      },
+      {
+        "heading": {
+          "en": "The articles",
+          "fa": "آرتیکل‌ها",
+          "de": "Die Artikel"
+        },
+        "body": {
+          "en": "Only the masculine changes: `der` → `den` and `ein` → `einen`. Feminine, neuter and plural look the same in the accusative.\n\nThe dash (—) means that there is no indefinite article in the plural.",
+          "fa": "فقط مذکر تغییر می‌کند: `der` ← `den` و `ein` ← `einen`. مؤنث، خنثی و جمع در حالت مفعولی همان شکل قبلی را دارند.\n\nخط تیره (—) یعنی در جمع آرتیکل نکره وجود ندارد.",
+          "de": "Nur das Maskulinum verändert sich: `der` → `den` und `ein` → `einen`. Feminin, neutral und Plural sehen im Akkusativ gleich aus.\n\nDer Strich (—) bedeutet, dass es im Plural keinen unbestimmten Artikel gibt."
+        },
+        "table": {
+          "headers": ["gloss:case", "gloss:masculine", "gloss:feminine", "gloss:neuter", "gloss:plural"],
+          "rows": [
+            ["gloss:nominative", "der / ein", "die / eine", "das / ein", "die / —"],
+            ["gloss:accusative", "**den** / **einen**", "die / eine", "das / ein", "die / —"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "Which verbs take an object?",
+          "fa": "کدام فعل‌ها مفعول می‌گیرند؟",
+          "de": "Welche Verben haben ein Objekt?"
+        },
+        "body": {
+          "en": "Many verbs take an accusative object, for example `haben`, `kaufen`, `essen`, `sehen`, `trinken` and `brauchen`.\n\n`sein` is different. After `sein` the noun stays in the nominative: `Das ist der Hund.` but `Ich habe einen Hund.`",
+          "fa": "بسیاری از فعل‌ها مفعولی می‌گیرند، مثلاً `haben`، `kaufen`، `essen`، `sehen`، `trinken` و `brauchen`.\n\n`sein` فرق دارد. بعد از `sein` اسم در حالت فاعلی می‌ماند: `Das ist der Hund.` اما `Ich habe einen Hund.`",
+          "de": "Viele Verben haben ein Akkusativobjekt, zum Beispiel `haben`, `kaufen`, `essen`, `sehen`, `trinken` und `brauchen`.\n\n`sein` ist anders. Nach `sein` bleibt das Nomen im Nominativ: `Das ist der Hund.`, aber `Ich habe einen Hund.`"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist ein Tisch.",
+        "en": "That is a table.",
+        "fa": "این یک میز است.",
+        "highlight": ["ein Tisch"]
+      },
+      {
+        "de": "Ich kaufe einen Tisch.",
+        "en": "I am buying a table.",
+        "fa": "من یک میز می‌خرم.",
+        "highlight": ["einen Tisch"]
+      },
+      {
+        "de": "Der Mann liest den Brief.",
+        "en": "The man is reading the letter.",
+        "fa": "مرد نامه را می‌خواند.",
+        "highlight": ["Der Mann", "den Brief"]
+      },
+      {
+        "de": "Ich esse den Apfel.",
+        "en": "I am eating the apple.",
+        "fa": "من سیب را می‌خورم.",
+        "highlight": ["den Apfel"]
+      },
+      {
+        "de": "Wir haben eine Katze.",
+        "en": "We have a cat.",
+        "fa": "ما یک گربه داریم.",
+        "highlight": ["eine Katze"]
+      },
+      {
+        "de": "Sie sieht das Kind.",
+        "en": "She sees the child.",
+        "fa": "او کودک را می‌بیند.",
+        "highlight": ["das Kind"]
+      },
+      {
+        "de": "Er trinkt einen Kaffee.",
+        "en": "He is drinking a coffee.",
+        "fa": "او یک قهوه می‌نوشد.",
+        "highlight": ["einen Kaffee"]
+      }
+    ],
+    "exerciseIds": [
+      "case-01",
+      "case-02",
+      "case-03",
+      "case-04",
+      "case-05",
+      "case-06",
+      "case-07",
+      "case-08",
+      "case-09",
+      "case-10"
+    ]
+  },
+  {
+    "id": "possessives",
+    "order": 3,
+    "topic": "possessives",
+    "title": {
+      "en": "Possessive articles",
+      "fa": "آرتیکل‌های ملکی",
+      "de": "Possessivartikel"
+    },
+    "summary": {
+      "en": "Say whose something is: mein Bruder, deine Tasche, unser Haus.",
+      "fa": "بگو چیزی مال چه کسی است: mein Bruder، deine Tasche، unser Haus.",
+      "de": "Sage, wem etwas gehört: mein Bruder, deine Tasche, unser Haus."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "One for each person",
+          "fa": "یکی برای هر شخص",
+          "de": "Eins für jede Person"
+        },
+        "body": {
+          "en": "Each pronoun has its own possessive article: `mein Bruder` is my brother, `dein Bruder` is your brother.\n\n`sein` means “his” (and “its”), `ihr` means “her” or “their”, and `Ihr` with a capital letter means the formal “your”.",
+          "fa": "هر ضمیر آرتیکل ملکی مخصوص خودش را دارد: `mein Bruder` یعنی برادر من، `dein Bruder` یعنی برادر تو.\n\n`sein` یعنی «مال او (مرد)» و «مال آن»، `ihr` یعنی «مال او (زن)» یا «مال آن‌ها» و `Ihr` با حرف بزرگ یعنی «مال شما» در خطاب رسمی.",
+          "de": "Jedes Pronomen hat einen eigenen Possessivartikel: `mein Bruder` ist mein Bruder, `dein Bruder` ist dein Bruder.\n\n`sein` bedeutet „his“ (und „its“), `ihr` bedeutet „her“ oder „their“, und `Ihr` mit großem Anfangsbuchstaben ist das formelle „your“."
+        },
+        "table": {
+          "headers": ["gloss:pronoun", "gloss:possessive"],
+          "rows": [
+            ["ich", "mein"],
+            ["du", "dein"],
+            ["er", "sein"],
+            ["sie", "ihr"],
+            ["es", "sein"],
+            ["wir", "unser"],
+            ["ihr", "euer"],
+            ["sie / Sie", "ihr / Ihr"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "Endings like ein and kein",
+          "fa": "پایانه‌ها مثل ein و kein",
+          "de": "Endungen wie bei ein und kein"
+        },
+        "body": {
+          "en": "The possessive article takes the same endings as `ein`. The ending depends on the noun that follows, not on the owner: `mein Vater`, `meine Mutter`, `mein Kind`, `meine Eltern`.\n\nIn the accusative only the masculine changes: `Ich besuche meinen Vater.`",
+          "fa": "آرتیکل ملکی همان پایانه‌های `ein` را می‌گیرد. پایانه به اسمی که بعد از آن می‌آید بستگی دارد، نه به صاحب آن: `mein Vater`، `meine Mutter`، `mein Kind`، `meine Eltern`.\n\nدر حالت مفعولی فقط مذکر تغییر می‌کند: `Ich besuche meinen Vater.`",
+          "de": "Der Possessivartikel hat dieselben Endungen wie `ein`. Die Endung hängt vom folgenden Nomen ab, nicht vom Besitzer: `mein Vater`, `meine Mutter`, `mein Kind`, `meine Eltern`.\n\nIm Akkusativ verändert sich nur das Maskulinum: `Ich besuche meinen Vater.`"
+        },
+        "table": {
+          "headers": ["gloss:case", "gloss:masculine", "gloss:feminine", "gloss:neuter", "gloss:plural"],
+          "rows": [
+            ["gloss:nominative", "mein", "mein**e**", "mein", "mein**e**"],
+            ["gloss:accusative", "mein**en**", "mein**e**", "mein", "mein**e**"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "unser and euer",
+          "fa": "unser و euer",
+          "de": "unser und euer"
+        },
+        "body": {
+          "en": "`unser` and `euer` work the same way. With `euer` the second e disappears when an ending is added: `eure Tasche`, `euren Schlüssel`.\n\nExamples: `Wir lieben unser Haus.` and `Habt ihr euren Schlüssel?`",
+          "fa": "`unser` و `euer` به همین شکل کار می‌کنند. در `euer` وقتی پایانه اضافه می‌شود e دوم حذف می‌شود: `eure Tasche`، `euren Schlüssel`.\n\nمثال‌ها: `Wir lieben unser Haus.` و `Habt ihr euren Schlüssel?`",
+          "de": "`unser` und `euer` funktionieren genauso. Bei `euer` fällt das zweite e weg, wenn eine Endung dazukommt: `eure Tasche`, `euren Schlüssel`.\n\nBeispiele: `Wir lieben unser Haus.` und `Habt ihr euren Schlüssel?`"
+        },
+        "table": {
+          "headers": ["gloss:case", "gloss:masculine", "gloss:feminine", "gloss:neuter", "gloss:plural"],
+          "rows": [
+            ["gloss:nominative", "unser / euer", "unser**e** / eur**e**", "unser / euer", "unser**e** / eur**e**"],
+            ["gloss:accusative", "unser**en** / eur**en**", "unser**e** / eur**e**", "unser / euer", "unser**e** / eur**e**"]
+          ]
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist mein Bruder.",
+        "en": "That is my brother.",
+        "fa": "این برادر من است.",
+        "highlight": ["mein"]
+      },
+      {
+        "de": "Wo ist deine Tasche?",
+        "en": "Where is your bag?",
+        "fa": "کیف تو کجاست؟",
+        "highlight": ["deine"]
+      },
+      {
+        "de": "Ich besuche meinen Onkel.",
+        "en": "I am visiting my uncle.",
+        "fa": "من عمو یا دایی‌ام را ملاقات می‌کنم.",
+        "highlight": ["meinen"]
+      },
+      {
+        "de": "Er liebt seine Frau.",
+        "en": "He loves his wife.",
+        "fa": "او همسرش را دوست دارد.",
+        "highlight": ["seine"]
+      },
+      {
+        "de": "Sie mag ihren Hund.",
+        "en": "She likes her dog.",
+        "fa": "او سگش را دوست دارد.",
+        "highlight": ["ihren"]
+      },
+      {
+        "de": "Wir lieben unser Haus.",
+        "en": "We love our house.",
+        "fa": "ما خانه‌مان را دوست داریم.",
+        "highlight": ["unser"]
+      },
+      {
+        "de": "Wie ist Ihr Name?",
+        "en": "What is your name? (formal)",
+        "fa": "اسم شما چیست؟ (رسمی)",
+        "highlight": ["Ihr"]
+      }
+    ],
+    "exerciseIds": [
+      "poss-01",
+      "poss-02",
+      "poss-03",
+      "poss-04",
+      "poss-05",
+      "poss-06",
+      "poss-07",
+      "poss-08",
+      "poss-09",
+      "poss-10"
+    ]
+  },
+  {
+    "id": "negation",
+    "order": 4,
+    "topic": "negation",
+    "title": {
+      "en": "Negation: nicht and kein",
+      "fa": "نفی: nicht و kein",
+      "de": "Verneinung: nicht und kein"
+    },
+    "summary": {
+      "en": "Say “no” the right way: kein for nouns, nicht for everything else.",
+      "fa": "نفی را درست بگو: kein برای اسم‌ها و nicht برای بقیه‌ی چیزها.",
+      "de": "Verneine richtig: kein bei Nomen, nicht bei allem anderen."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "kein negates nouns",
+          "fa": "kein اسم را منفی می‌کند",
+          "de": "kein verneint Nomen"
+        },
+        "body": {
+          "en": "Use `kein` for a noun that has `ein` / `eine` or no article at all:\n\n- `Ich habe einen Hund.` → `Ich habe keinen Hund.`\n- `Ich habe Zeit.` → `Ich habe keine Zeit.`\n\n`kein` takes the same endings as `ein`.",
+          "fa": "`kein` را برای اسمی به کار ببر که `ein` / `eine` دارد یا اصلاً آرتیکل ندارد:\n\n- `Ich habe einen Hund.` ← `Ich habe keinen Hund.`\n- `Ich habe Zeit.` ← `Ich habe keine Zeit.`\n\n`kein` همان پایانه‌های `ein` را می‌گیرد.",
+          "de": "Benutze `kein` bei einem Nomen mit `ein` / `eine` oder ganz ohne Artikel:\n\n- `Ich habe einen Hund.` → `Ich habe keinen Hund.`\n- `Ich habe Zeit.` → `Ich habe keine Zeit.`\n\n`kein` hat dieselben Endungen wie `ein`."
+        },
+        "table": {
+          "headers": ["gloss:case", "gloss:masculine", "gloss:feminine", "gloss:neuter", "gloss:plural"],
+          "rows": [
+            ["gloss:nominative", "kein", "kein**e**", "kein", "kein**e**"],
+            ["gloss:accusative", "kein**en**", "kein**e**", "kein", "kein**e**"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "nicht negates everything else",
+          "fa": "nicht بقیه‌ی چیزها را منفی می‌کند",
+          "de": "nicht verneint alles andere"
+        },
+        "body": {
+          "en": "Use `nicht` for a verb, an adjective, or a noun with `der` / `die` / `das` or a possessive article:\n\n- verb: `Ich komme heute nicht.`\n- adjective: `Das Wasser ist nicht kalt.` (`nicht` comes before the adjective)\n- noun with `der` / `die` / `das`: `Ich mag den Film nicht.`\n\nWhen you negate the whole sentence, `nicht` usually stands at the end.",
+          "fa": "`nicht` را برای فعل، صفت یا اسمی به کار ببر که `der` / `die` / `das` یا آرتیکل ملکی دارد:\n\n- فعل: `Ich komme heute nicht.`\n- صفت: `Das Wasser ist nicht kalt.` (`nicht` قبل از صفت می‌آید)\n- اسم همراه `der` / `die` / `das`: `Ich mag den Film nicht.`\n\nوقتی کل جمله را منفی می‌کنی، `nicht` معمولاً در آخر جمله می‌آید.",
+          "de": "Benutze `nicht` bei einem Verb, einem Adjektiv oder einem Nomen mit `der` / `die` / `das` oder mit Possessivartikel:\n\n- Verb: `Ich komme heute nicht.`\n- Adjektiv: `Das Wasser ist nicht kalt.` (`nicht` steht vor dem Adjektiv)\n- Nomen mit `der` / `die` / `das`: `Ich mag den Film nicht.`\n\nWenn du den ganzen Satz verneinst, steht `nicht` meistens am Ende."
+        }
+      },
+      {
+        "heading": {
+          "en": "A quick test",
+          "fa": "یک آزمون سریع",
+          "de": "Ein kurzer Test"
+        },
+        "body": {
+          "en": "Look at the word you want to negate:\n\n- `ein` / `eine` or no article before a noun? → `kein`\n- `der` / `die` / `das`, `mein` / `dein` …, a verb or an adjective? → `nicht`\n\nA short answer: `Hast du einen Stift?` – `Nein, ich habe keinen Stift.`",
+          "fa": "به کلمه‌ای که می‌خواهی منفی کنی نگاه کن:\n\n- قبل از اسم `ein` / `eine` هست یا آرتیکلی نیست؟ ← `kein`\n- `der` / `die` / `das`، `mein` / `dein` …، فعل یا صفت؟ ← `nicht`\n\nیک پاسخ کوتاه: `Hast du einen Stift?` – `Nein, ich habe keinen Stift.`",
+          "de": "Sieh dir das Wort an, das du verneinen willst:\n\n- `ein` / `eine` oder kein Artikel vor einem Nomen? → `kein`\n- `der` / `die` / `das`, `mein` / `dein` …, ein Verb oder ein Adjektiv? → `nicht`\n\nEine kurze Antwort: `Hast du einen Stift?` – `Nein, ich habe keinen Stift.`"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe keinen Hunger.",
+        "en": "I am not hungry.",
+        "fa": "من گرسنه نیستم.",
+        "highlight": ["keinen"]
+      },
+      {
+        "de": "Wir haben kein Auto.",
+        "en": "We do not have a car.",
+        "fa": "ما ماشین نداریم.",
+        "highlight": ["kein"]
+      },
+      {
+        "de": "Sie hat keine Zeit.",
+        "en": "She has no time.",
+        "fa": "او وقت ندارد.",
+        "highlight": ["keine"]
+      },
+      {
+        "de": "Das ist kein Problem.",
+        "en": "That is not a problem.",
+        "fa": "این مشکلی نیست.",
+        "highlight": ["kein"]
+      },
+      {
+        "de": "Ich komme heute nicht.",
+        "en": "I am not coming today.",
+        "fa": "من امروز نمی‌آیم.",
+        "highlight": ["nicht"]
+      },
+      {
+        "de": "Das Wasser ist nicht kalt.",
+        "en": "The water is not cold.",
+        "fa": "آب سرد نیست.",
+        "highlight": ["nicht"]
+      },
+      {
+        "de": "Ich mag den Film nicht.",
+        "en": "I do not like the film.",
+        "fa": "من آن فیلم را دوست ندارم.",
+        "highlight": ["nicht"]
+      }
+    ],
+    "exerciseIds": [
+      "neg-01",
+      "neg-02",
+      "neg-03",
+      "neg-04",
+      "neg-05",
+      "neg-06",
+      "neg-07",
+      "neg-08",
+      "neg-09",
+      "neg-10"
+    ]
+  },
+  {
+    "id": "plural",
+    "order": 5,
+    "topic": "plural",
+    "title": {
+      "en": "Plural of nouns",
+      "fa": "جمع بستن اسم‌ها",
+      "de": "Der Plural der Nomen"
+    },
+    "summary": {
+      "en": "German has several plural patterns. Learn each noun together with its plural.",
+      "fa": "آلمانی چند الگوی جمع دارد. هر اسم را همراه با جمعش یاد بگیر.",
+      "de": "Das Deutsche hat mehrere Pluralmuster. Lerne jedes Nomen zusammen mit seinem Plural."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "The patterns",
+          "fa": "الگوها",
+          "de": "Die Muster"
+        },
+        "body": {
+          "en": "In the plural the article is always `die`. The ending of the noun shows which pattern it uses. The changed part is in bold. A ¨ means that the vowel gets an umlaut (a → ä, o → ö, u → ü, au → äu).",
+          "fa": "در جمع آرتیکل همیشه `die` است. پایانه‌ی اسم نشان می‌دهد کدام الگو را دارد. بخش تغییرکرده پررنگ است. علامت ¨ یعنی حرف صدادار اومْلاوت می‌گیرد (a ← ä، o ← ö، u ← ü، au ← äu).",
+          "de": "Im Plural ist der Artikel immer `die`. Die Endung des Nomens zeigt, welches Muster gilt. Der veränderte Teil ist fett. Ein ¨ bedeutet, dass der Vokal einen Umlaut bekommt (a → ä, o → ö, u → ü, au → äu)."
+        },
+        "table": {
+          "headers": ["gloss:pattern", "gloss:singular", "gloss:plural"],
+          "rows": [
+            ["-e", "der Tag", "die Tag**e**"],
+            ["¨-e", "der Stuhl", "die St**ü**hl**e**"],
+            ["-en", "die Frau", "die Frau**en**"],
+            ["-n", "die Lampe", "die Lampe**n**"],
+            ["-er", "das Kind", "die Kind**er**"],
+            ["¨-er", "das Buch", "die B**ü**ch**er**"],
+            ["-s", "das Auto", "die Auto**s**"],
+            ["gloss:no-change", "der Lehrer", "die Lehrer"],
+            ["gloss:umlaut-only", "der Apfel", "die **Ä**pfel"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "Helpful tendencies",
+          "fa": "گرایش‌های کمک‌کننده",
+          "de": "Hilfreiche Tendenzen"
+        },
+        "body": {
+          "en": "These tendencies help you guess, but each one has exceptions:\n\n- Most feminine nouns take `-n` or `-en`: `die Frau` → `die Frauen`, `die Lampe` → `die Lampen`.\n- Nouns ending in `-ung`, `-heit`, `-keit`, `-schaft` take `-en`: `die Zeitung` → `die Zeitungen`.\n- Feminine nouns ending in `-in` take `-nen`: `die Lehrerin` → `die Lehrerinnen`.\n- Nouns ending in `-er`, `-el` or `-en` often stay the same, sometimes with an umlaut: `das Zimmer` → `die Zimmer`, `der Bruder` → `die Brüder`.\n- Many newer words take `-s`: `das Auto` → `die Autos`, `das Handy` → `die Handys`.",
+          "fa": "این گرایش‌ها در حدس زدن کمک می‌کنند، اما هرکدام استثنا دارند:\n\n- بیشتر اسم‌های مؤنث `-n` یا `-en` می‌گیرند: `die Frau` ← `die Frauen`، `die Lampe` ← `die Lampen`.\n- اسم‌هایی که به `-ung`، `-heit`، `-keit` و `-schaft` ختم می‌شوند `-en` می‌گیرند: `die Zeitung` ← `die Zeitungen`.\n- اسم‌های مؤنثی که به `-in` ختم می‌شوند `-nen` می‌گیرند: `die Lehrerin` ← `die Lehrerinnen`.\n- اسم‌هایی که به `-er`، `-el` یا `-en` ختم می‌شوند اغلب تغییری نمی‌کنند و گاهی فقط اومْلاوت می‌گیرند: `das Zimmer` ← `die Zimmer`، `der Bruder` ← `die Brüder`.\n- بسیاری از واژه‌های جدیدتر `-s` می‌گیرند: `das Auto` ← `die Autos`، `das Handy` ← `die Handys`.",
+          "de": "Diese Tendenzen helfen beim Raten, aber jede hat Ausnahmen:\n\n- Die meisten femininen Nomen bekommen `-n` oder `-en`: `die Frau` → `die Frauen`, `die Lampe` → `die Lampen`.\n- Nomen auf `-ung`, `-heit`, `-keit`, `-schaft` bekommen `-en`: `die Zeitung` → `die Zeitungen`.\n- Feminine Nomen auf `-in` bekommen `-nen`: `die Lehrerin` → `die Lehrerinnen`.\n- Nomen auf `-er`, `-el` oder `-en` bleiben oft gleich, manchmal mit Umlaut: `das Zimmer` → `die Zimmer`, `der Bruder` → `die Brüder`.\n- Viele neuere Wörter bekommen `-s`: `das Auto` → `die Autos`, `das Handy` → `die Handys`."
+        }
+      },
+      {
+        "heading": {
+          "en": "Learn the plural with the word",
+          "fa": "جمع را همراه با کلمه یاد بگیر",
+          "de": "Lerne den Plural mit dem Wort"
+        },
+        "body": {
+          "en": "Honest note: no rule predicts every plural. Treat the plural as part of the vocabulary and always learn the whole entry: `der Tag, die Tage` instead of only `der Tag`.\n\nDictionaries and this app list the plural next to every noun. When you are unsure, look it up.",
+          "fa": "یک نکته‌ی صادقانه: هیچ قاعده‌ای همه‌ی جمع‌ها را پیش‌بینی نمی‌کند. جمع را بخشی از واژه بدان و همیشه کل مدخل را یاد بگیر: `der Tag, die Tage` و نه فقط `der Tag`.\n\nفرهنگ‌های لغت و همین برنامه جمع را کنار هر اسم نشان می‌دهند. وقتی مطمئن نیستی، آن را نگاه کن.",
+          "de": "Ehrlicher Hinweis: Keine Regel sagt jeden Plural voraus. Behandle den Plural als Teil des Vokabelwissens und lerne immer den ganzen Eintrag: `der Tag, die Tage` statt nur `der Tag`.\n\nWörterbücher und diese App zeigen den Plural bei jedem Nomen. Wenn du unsicher bist, schlage ihn nach."
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe zwei Brüder.",
+        "en": "I have two brothers.",
+        "fa": "من دو برادر دارم.",
+        "highlight": ["Brüder"]
+      },
+      {
+        "de": "Die Kinder spielen im Garten.",
+        "en": "The children are playing in the garden.",
+        "fa": "بچه‌ها در باغ بازی می‌کنند.",
+        "highlight": ["Kinder"]
+      },
+      {
+        "de": "Wir haben drei Katzen.",
+        "en": "We have three cats.",
+        "fa": "ما سه گربه داریم.",
+        "highlight": ["Katzen"]
+      },
+      {
+        "de": "In der Stadt gibt es viele Autos.",
+        "en": "There are many cars in the city.",
+        "fa": "در شهر ماشین‌های زیادی هست.",
+        "highlight": ["Autos"]
+      },
+      {
+        "de": "Meine Lehrer sind nett.",
+        "en": "My teachers are nice.",
+        "fa": "معلم‌های من مهربان هستند.",
+        "highlight": ["Lehrer"]
+      },
+      {
+        "de": "Die Bücher sind neu.",
+        "en": "The books are new.",
+        "fa": "کتاب‌ها نو هستند.",
+        "highlight": ["Bücher"]
+      }
+    ],
+    "exerciseIds": [
+      "plur-01",
+      "plur-02",
+      "plur-03",
+      "plur-04",
+      "plur-05",
+      "plur-06",
+      "plur-07",
+      "plur-08",
+      "plur-09",
+      "plur-10",
+      "plur-11"
+    ]
+  }
+]

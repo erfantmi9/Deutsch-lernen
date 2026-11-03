@@ -3,7 +3,12 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import HeroHome from "@/components/illustrations/HeroHome";
 import { Blob, Sparkle } from "@/components/illustrations/shapes";
+import HomePath from "@/components/HomePath";
+import HomeStudy from "@/components/HomeStudy";
 import ModuleCards from "@/components/ModuleCards";
+import { dialogues } from "@/lib/dialogues";
+import { grammarExercises } from "@/lib/grammar";
+import { readingTexts } from "@/lib/reading";
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -28,7 +33,11 @@ function Home() {
         <HeroHome />
       </section>
 
-      <ModuleCards />
+      <HomePath />
+
+      <ModuleCards grammarTotal={grammarExercises.length} dialogueTotal={dialogues.length} readingTotal={readingTexts.length} />
+
+      <HomeStudy />
     </div>
   );
 }

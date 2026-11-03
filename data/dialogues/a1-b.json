@@ -1,0 +1,268 @@
+[
+  {
+    "id": "termin-machen",
+    "topic": "appointment",
+    "title": { "en": "Making an appointment", "fa": "وقت گرفتن", "de": "Einen Termin machen" },
+    "setting": {
+      "en": "Mr Fischer calls a doctor's office.",
+      "fa": "آقای فیشر به مطب یک دکتر زنگ می‌زند.",
+      "de": "Herr Fischer ruft in einer Arztpraxis an."
+    },
+    "lines": [
+      { "speaker": "Empfang", "de": "Praxis Dr. Neumann, guten Tag.", "en": "Dr Neumann's practice, good day.", "fa": "مطب دکتر نویمان، روز بخیر." },
+      { "speaker": "Herr Fischer", "de": "Guten Tag. Mein Name ist Fischer. Ich möchte einen Termin, bitte.", "en": "Good day. My name is Fischer. I would like an appointment, please.", "fa": "روز بخیر. اسم من فیشر است. یک وقت می‌خواهم، لطفاً." },
+      { "speaker": "Empfang", "de": "Gern. Haben Sie am Dienstag Zeit?", "en": "Gladly. Do you have time on Tuesday?", "fa": "حتماً. روز سه‌شنبه وقت دارید؟" },
+      { "speaker": "Herr Fischer", "de": "Am Dienstag habe ich keine Zeit. Geht es am Mittwoch?", "en": "I have no time on Tuesday. Is Wednesday possible?", "fa": "سه‌شنبه وقت ندارم. چهارشنبه می‌شود؟" },
+      { "speaker": "Empfang", "de": "Ja, am Mittwoch um zehn Uhr dreißig ist ein Termin frei.", "en": "Yes, there is an appointment free on Wednesday at ten thirty.", "fa": "بله، چهارشنبه ساعت ده و سی دقیقه یک وقت خالی است." },
+      { "speaker": "Herr Fischer", "de": "Das passt gut. Danke.", "en": "That suits me well. Thank you.", "fa": "خوب است. ممنون." },
+      { "speaker": "Empfang", "de": "Bitte bringen Sie Ihre Gesundheitskarte mit.", "en": "Please bring your health insurance card.", "fa": "لطفاً کارت بیمه‌ی درمانی‌تان را همراه بیاورید." },
+      { "speaker": "Herr Fischer", "de": "Mache ich. Auf Wiedersehen!", "en": "Will do. Goodbye!", "fa": "حتماً. خداحافظ!" }
+    ],
+    "vocabIds": ["verb:haben"],
+    "grammarLessonIds": ["modal", "negation"],
+    "quiz": [
+      {
+        "question": { "en": "What does Mr Fischer want?", "fa": "آقای فیشر چه می‌خواهد؟", "de": "Was möchte Herr Fischer?" },
+        "options": ["Einen Termin", "Ein Rezept", "Eine Rechnung"],
+        "answer": "Einen Termin"
+      },
+      {
+        "question": { "en": "Why can he not come on Tuesday?", "fa": "چرا سه‌شنبه نمی‌تواند بیاید؟", "de": "Warum kann er am Dienstag nicht kommen?" },
+        "options": ["Er hat keine Zeit.", "Die Praxis ist zu.", "Er ist krank."],
+        "answer": "Er hat keine Zeit."
+      },
+      {
+        "question": { "en": "When is the appointment?", "fa": "وقت کی است؟", "de": "Wann ist der Termin?" },
+        "options": ["Mittwoch, 10:30 Uhr", "Dienstag, 10:30 Uhr", "Mittwoch, 10:00 Uhr"],
+        "answer": "Mittwoch, 10:30 Uhr"
+      },
+      {
+        "question": { "en": "What should he bring?", "fa": "او باید چه چیزی همراه بیاورد؟", "de": "Was soll er mitbringen?" },
+        "options": ["Seine Gesundheitskarte", "Seinen Pass", "Sein Buch"],
+        "answer": "Seine Gesundheitskarte"
+      }
+    ]
+  },
+  {
+    "id": "formular-ausfuellen",
+    "topic": "form",
+    "title": { "en": "Filling in a form", "fa": "پر کردن فرم", "de": "Ein Formular ausfüllen" },
+    "setting": {
+      "en": "Mr Rossi registers for a German course.",
+      "fa": "آقای روسی برای یک دوره‌ی آلمانی ثبت‌نام می‌کند.",
+      "de": "Herr Rossi meldet sich für einen Deutschkurs an."
+    },
+    "lines": [
+      { "speaker": "Mitarbeiterin", "de": "Guten Tag! Sie möchten einen Deutschkurs machen?", "en": "Good day! You would like to take a German course?", "fa": "روز بخیر! می‌خواهید یک دوره‌ی آلمانی بگذرانید؟" },
+      { "speaker": "Herr Rossi", "de": "Ja, genau. Was muss ich tun?", "en": "Yes, exactly. What do I have to do?", "fa": "بله، دقیقاً. چه کار باید بکنم؟" },
+      { "speaker": "Mitarbeiterin", "de": "Bitte füllen Sie dieses Formular aus. Wie ist Ihr Nachname?", "en": "Please fill in this form. What is your last name?", "fa": "لطفاً این فرم را پر کنید. نام خانوادگی شما چیست؟" },
+      { "speaker": "Herr Rossi", "de": "Mein Nachname ist Rossi. Ich schreibe: R, O, S, S, I.", "en": "My last name is Rossi. I spell it: R, O, S, S, I.", "fa": "نام خانوادگی من روسی است. املایش: R، O، S، S، I." },
+      { "speaker": "Mitarbeiterin", "de": "Und Ihr Vorname?", "en": "And your first name?", "fa": "و نام شما؟" },
+      { "speaker": "Herr Rossi", "de": "Marco. Ich bin am zwölften Mai geboren.", "en": "Marco. I was born on the twelfth of May.", "fa": "مارکو. من دوازدهم ماه مه به دنیا آمده‌ام." },
+      { "speaker": "Mitarbeiterin", "de": "Danke. Wo wohnen Sie?", "en": "Thanks. Where do you live?", "fa": "ممنون. کجا زندگی می‌کنید؟" },
+      { "speaker": "Herr Rossi", "de": "Ich wohne in der Goethestraße fünf in Bonn.", "en": "I live at Goethestraße five in Bonn.", "fa": "من در گوته‌اشتراسه‌ی شماره‌ی پنج در بن زندگی می‌کنم." },
+      { "speaker": "Mitarbeiterin", "de": "Vielen Dank. Das ist alles. Der Kurs beginnt am Montag.", "en": "Thank you very much. That is everything. The course starts on Monday.", "fa": "خیلی ممنون. همین بود. دوره از دوشنبه شروع می‌شود." },
+      { "speaker": "Herr Rossi", "de": "Super, bis Montag!", "en": "Great, see you on Monday!", "fa": "عالی، تا دوشنبه!" }
+    ],
+    "vocabIds": ["verb:wohnen", "noun:montag"],
+    "grammarLessonIds": ["possessives", "wechsel"],
+    "quiz": [
+      {
+        "question": { "en": "What does Mr Rossi want to do?", "fa": "آقای روسی می‌خواهد چه کار کند؟", "de": "Was möchte Herr Rossi machen?" },
+        "options": ["Einen Deutschkurs machen", "Eine Wohnung suchen", "In Bonn arbeiten"],
+        "answer": "Einen Deutschkurs machen"
+      },
+      {
+        "question": { "en": "What is his last name?", "fa": "نام خانوادگی او چیست؟", "de": "Wie ist sein Nachname?" },
+        "options": ["Rossi", "Marco", "Goethe"],
+        "answer": "Rossi"
+      },
+      {
+        "question": { "en": "When was he born (day and month)?", "fa": "او چه روزی به دنیا آمده (روز و ماه)؟", "de": "Wann ist er geboren (Tag und Monat)?" },
+        "options": ["Am zwölften Mai", "Am fünften Mai", "Am zwölften März"],
+        "answer": "Am zwölften Mai"
+      },
+      {
+        "question": { "en": "In which city does he live?", "fa": "او در کدام شهر زندگی می‌کند؟", "de": "In welcher Stadt wohnt er?" },
+        "options": ["In Bonn", "In Köln", "In Berlin"],
+        "answer": "In Bonn"
+      }
+    ]
+  },
+  {
+    "id": "am-telefon",
+    "topic": "phone",
+    "title": { "en": "A phone call", "fa": "یک تماس تلفنی", "de": "Ein Telefongespräch" },
+    "setting": {
+      "en": "Tim calls his friend Laura.",
+      "fa": "تیم به دوستش لورا زنگ می‌زند.",
+      "de": "Tim ruft seine Freundin Laura an."
+    },
+    "lines": [
+      { "speaker": "Laura", "de": "Hallo, hier ist Laura.", "en": "Hello, this is Laura.", "fa": "سلام، لورا اینجاست." },
+      { "speaker": "Tim", "de": "Hallo Laura, hier ist Tim. Hast du heute Abend Zeit?", "en": "Hi Laura, this is Tim. Do you have time this evening?", "fa": "سلام لورا، تیم هستم. امشب وقت داری؟" },
+      { "speaker": "Laura", "de": "Ja, ich habe Zeit. Was machen wir?", "en": "Yes, I have time. What shall we do?", "fa": "بله، وقت دارم. چه کار کنیم؟" },
+      { "speaker": "Tim", "de": "Wir können ins Kino gehen. Der Film beginnt um zwanzig Uhr.", "en": "We can go to the cinema. The film starts at eight p.m.", "fa": "می‌توانیم به سینما برویم. فیلم ساعت بیست شروع می‌شود." },
+      { "speaker": "Laura", "de": "Gute Idee! Wo treffen wir uns?", "en": "Good idea! Where shall we meet?", "fa": "فکر خوبی است! کجا همدیگر را ببینیم؟" },
+      { "speaker": "Tim", "de": "Vor dem Kino. Um halb acht.", "en": "In front of the cinema. At half past seven.", "fa": "جلوی سینما. ساعت هفت و نیم." },
+      { "speaker": "Laura", "de": "Okay, bis später!", "en": "Okay, see you later!", "fa": "باشه، بعداً می‌بینمت!" },
+      { "speaker": "Tim", "de": "Tschüss, bis später!", "en": "Bye, see you later!", "fa": "خداحافظ، بعداً می‌بینمت!" }
+    ],
+    "vocabIds": ["verb:haben", "verb:koennen"],
+    "grammarLessonIds": ["modal", "dative"],
+    "quiz": [
+      {
+        "question": { "en": "Who is calling?", "fa": "چه کسی زنگ می‌زند؟", "de": "Wer ruft an?" },
+        "options": ["Tim", "Laura", "Tims Bruder"],
+        "answer": "Tim"
+      },
+      {
+        "question": { "en": "What do they want to do?", "fa": "آن‌ها می‌خواهند چه کار کنند؟", "de": "Was wollen sie machen?" },
+        "options": ["Ins Kino gehen", "Essen gehen", "Zu Hause bleiben"],
+        "answer": "Ins Kino gehen"
+      },
+      {
+        "question": { "en": "When does the film start?", "fa": "فیلم کی شروع می‌شود؟", "de": "Wann beginnt der Film?" },
+        "options": ["Um zwanzig Uhr", "Um halb acht", "Um acht Uhr morgens"],
+        "answer": "Um zwanzig Uhr"
+      },
+      {
+        "question": { "en": "Where do they meet?", "fa": "کجا همدیگر را می‌بینند؟", "de": "Wo treffen sie sich?" },
+        "options": ["Vor dem Kino", "Im Café", "Am Bahnhof"],
+        "answer": "Vor dem Kino"
+      }
+    ]
+  },
+  {
+    "id": "meine-familie",
+    "topic": "family",
+    "title": { "en": "My family", "fa": "خانواده‌ی من", "de": "Meine Familie" },
+    "setting": {
+      "en": "Paul and Nina look at a family photo.",
+      "fa": "پاول و نینا به یک عکس خانوادگی نگاه می‌کنند.",
+      "de": "Paul und Nina schauen ein Familienfoto an."
+    },
+    "lines": [
+      { "speaker": "Paul", "de": "Nina, wer sind die Leute auf dem Foto?", "en": "Nina, who are the people in the photo?", "fa": "نینا، آدم‌های داخل عکس چه کسانی هستند؟" },
+      { "speaker": "Nina", "de": "Das ist meine Familie. Das sind meine Eltern.", "en": "That is my family. Those are my parents.", "fa": "این خانواده‌ی من است. این‌ها پدر و مادرم هستند." },
+      { "speaker": "Paul", "de": "Und wer ist der junge Mann?", "en": "And who is the young man?", "fa": "و آن مرد جوان کیست؟" },
+      { "speaker": "Nina", "de": "Das ist mein Bruder Jan. Er ist zwanzig Jahre alt.", "en": "That is my brother Jan. He is twenty years old.", "fa": "این برادرم یان است. او بیست سال دارد." },
+      { "speaker": "Paul", "de": "Hast du auch eine Schwester?", "en": "Do you also have a sister?", "fa": "خواهر هم داری؟" },
+      { "speaker": "Nina", "de": "Ja, meine Schwester heißt Mia. Sie ist erst sechs.", "en": "Yes, my sister is called Mia. She is only six.", "fa": "بله، خواهرم میا نام دارد. او فقط شش سال دارد." },
+      { "speaker": "Paul", "de": "Sie ist süß! Wohnt ihr alle in Hamburg?", "en": "She is cute! Do you all live in Hamburg?", "fa": "او بامزه است! همه‌تان در هامبورگ زندگی می‌کنید؟" },
+      { "speaker": "Nina", "de": "Meine Eltern und Mia wohnen in Hamburg. Mein Bruder und ich wohnen in Berlin.", "en": "My parents and Mia live in Hamburg. My brother and I live in Berlin.", "fa": "پدر و مادرم و میا در هامبورگ زندگی می‌کنند. برادرم و من در برلین زندگی می‌کنیم." }
+    ],
+    "vocabIds": ["noun:mann", "noun:bruder"],
+    "grammarLessonIds": ["possessives", "questions"],
+    "quiz": [
+      {
+        "question": { "en": "Who is in the photo?", "fa": "چه کسانی در عکس هستند؟", "de": "Wer ist auf dem Foto?" },
+        "options": ["Ninas Familie", "Pauls Familie", "Ninas Freunde"],
+        "answer": "Ninas Familie"
+      },
+      {
+        "question": { "en": "How old is Jan?", "fa": "یان چند سال دارد؟", "de": "Wie alt ist Jan?" },
+        "options": ["Zwanzig", "Sechs", "Sechzehn"],
+        "answer": "Zwanzig"
+      },
+      {
+        "question": { "en": "What is the sister's name?", "fa": "اسم خواهر چیست؟", "de": "Wie heißt die Schwester?" },
+        "options": ["Mia", "Jana", "Lena"],
+        "answer": "Mia"
+      },
+      {
+        "question": { "en": "Where do Nina and her brother live?", "fa": "نینا و برادرش کجا زندگی می‌کنند؟", "de": "Wo wohnen Nina und ihr Bruder?" },
+        "options": ["In Berlin", "In Hamburg", "In Bonn"],
+        "answer": "In Berlin"
+      }
+    ]
+  },
+  {
+    "id": "mein-tag",
+    "topic": "daily-routine",
+    "title": { "en": "A normal day", "fa": "یک روز معمولی", "de": "Ein ganz normaler Tag" },
+    "setting": {
+      "en": "Eva asks Karim about his day.",
+      "fa": "اوا از کریم درباره‌ی روزش می‌پرسد.",
+      "de": "Eva fragt Karim nach seinem Tag."
+    },
+    "lines": [
+      { "speaker": "Eva", "de": "Karim, was machst du jeden Tag?", "en": "Karim, what do you do every day?", "fa": "کریم، هر روز چه کار می‌کنی؟" },
+      { "speaker": "Karim", "de": "Ich stehe um sechs Uhr auf.", "en": "I get up at six o'clock.", "fa": "من ساعت شش بیدار می‌شوم." },
+      { "speaker": "Eva", "de": "So früh? Und dann?", "en": "That early? And then?", "fa": "این‌قدر زود؟ و بعد؟" },
+      { "speaker": "Karim", "de": "Dann frühstücke ich und fahre mit dem Bus zur Arbeit.", "en": "Then I have breakfast and go to work by bus.", "fa": "بعد صبحانه می‌خورم و با اتوبوس به سر کار می‌روم." },
+      { "speaker": "Eva", "de": "Wann beginnt deine Arbeit?", "en": "When does your work start?", "fa": "کارت کی شروع می‌شود؟" },
+      { "speaker": "Karim", "de": "Um acht Uhr. Ich arbeite bis siebzehn Uhr.", "en": "At eight o'clock. I work until five p.m.", "fa": "ساعت هشت. تا ساعت هفده کار می‌کنم." },
+      { "speaker": "Eva", "de": "Und am Abend?", "en": "And in the evening?", "fa": "و شب؟" },
+      { "speaker": "Karim", "de": "Am Abend koche ich und lerne Deutsch.", "en": "In the evening I cook and learn German.", "fa": "شب غذا می‌پزم و آلمانی یاد می‌گیرم." }
+    ],
+    "vocabIds": ["verb:aufstehen", "noun:bus", "noun:uhr"],
+    "grammarLessonIds": ["word-order", "dative"],
+    "quiz": [
+      {
+        "question": { "en": "When does Karim get up?", "fa": "کریم کی بیدار می‌شود؟", "de": "Wann steht Karim auf?" },
+        "options": ["Um sechs Uhr", "Um sieben Uhr", "Um acht Uhr"],
+        "answer": "Um sechs Uhr"
+      },
+      {
+        "question": { "en": "How does he get to work?", "fa": "او چطور به سر کار می‌رود؟", "de": "Wie kommt er zur Arbeit?" },
+        "options": ["Mit dem Bus", "Mit dem Auto", "Zu Fuß"],
+        "answer": "Mit dem Bus"
+      },
+      {
+        "question": { "en": "When does he finish work?", "fa": "او کی کارش را تمام می‌کند؟", "de": "Wann hat er Feierabend?" },
+        "options": ["Um siebzehn Uhr", "Um acht Uhr", "Um sechzehn Uhr"],
+        "answer": "Um siebzehn Uhr"
+      },
+      {
+        "question": { "en": "What does he do in the evening?", "fa": "او شب چه کار می‌کند؟", "de": "Was macht er am Abend?" },
+        "options": ["Er kocht und lernt Deutsch.", "Er geht ins Kino.", "Er schläft."],
+        "answer": "Er kocht und lernt Deutsch."
+      }
+    ]
+  },
+  {
+    "id": "das-wetter",
+    "topic": "weather",
+    "title": { "en": "The weather", "fa": "هوا", "de": "Das Wetter" },
+    "setting": {
+      "en": "Ben and Hanna talk about the weather and their plans.",
+      "fa": "بن و هانا درباره‌ی هوا و برنامه‌هایشان صحبت می‌کنند.",
+      "de": "Ben und Hanna sprechen über das Wetter und ihre Pläne."
+    },
+    "lines": [
+      { "speaker": "Ben", "de": "Hallo Hanna! Wie ist das Wetter heute?", "en": "Hi Hanna! What is the weather like today?", "fa": "سلام هانا! امروز هوا چطور است؟" },
+      { "speaker": "Hanna", "de": "Heute ist es kalt und es regnet.", "en": "Today it is cold and it is raining.", "fa": "امروز هوا سرد است و باران می‌بارد." },
+      { "speaker": "Ben", "de": "Schade. Und morgen?", "en": "Too bad. And tomorrow?", "fa": "حیف. و فردا؟" },
+      { "speaker": "Hanna", "de": "Morgen scheint die Sonne. Es sind fünfzehn Grad.", "en": "Tomorrow the sun is shining. It is fifteen degrees.", "fa": "فردا آفتابی است. پانزده درجه است." },
+      { "speaker": "Ben", "de": "Super! Dann gehen wir im Park spazieren.", "en": "Great! Then we will go for a walk in the park.", "fa": "عالی! پس در پارک قدم می‌زنیم." },
+      { "speaker": "Hanna", "de": "Gute Idee. Und am Sonntag?", "en": "Good idea. And on Sunday?", "fa": "فکر خوبی است. و یکشنبه؟" },
+      { "speaker": "Ben", "de": "Am Sonntag ist es windig.", "en": "On Sunday it is windy.", "fa": "یکشنبه باد می‌وزد." },
+      { "speaker": "Hanna", "de": "Dann bleiben wir zu Hause und kochen zusammen.", "en": "Then we will stay at home and cook together.", "fa": "پس در خانه می‌مانیم و با هم غذا می‌پزیم." }
+    ],
+    "vocabIds": ["verb:gehen"],
+    "grammarLessonIds": ["wechsel", "word-order"],
+    "quiz": [
+      {
+        "question": { "en": "What is the weather like today?", "fa": "امروز هوا چطور است؟", "de": "Wie ist das Wetter heute?" },
+        "options": ["Kalt, es regnet", "Warm, die Sonne scheint", "Windig"],
+        "answer": "Kalt, es regnet"
+      },
+      {
+        "question": { "en": "How warm is it tomorrow?", "fa": "فردا هوا چند درجه است؟", "de": "Wie warm ist es morgen?" },
+        "options": ["Fünfzehn Grad", "Fünf Grad", "Fünfundzwanzig Grad"],
+        "answer": "Fünfzehn Grad"
+      },
+      {
+        "question": { "en": "What do they plan for tomorrow?", "fa": "برای فردا چه برنامه‌ای دارند؟", "de": "Was planen sie für morgen?" },
+        "options": ["Im Park spazieren gehen", "Zu Hause bleiben", "Ins Kino gehen"],
+        "answer": "Im Park spazieren gehen"
+      },
+      {
+        "question": { "en": "What is the weather like on Sunday?", "fa": "یکشنبه هوا چطور است؟", "de": "Wie ist das Wetter am Sonntag?" },
+        "options": ["Es ist windig.", "Es schneit.", "Es ist heiß."],
+        "answer": "Es ist windig."
+      }
+    ]
+  }
+]

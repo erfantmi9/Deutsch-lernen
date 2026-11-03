@@ -1,0 +1,137 @@
+[
+  {
+    "id": "imp-01",
+    "lessonId": "imperative",
+    "type": "fill",
+    "prompt": { "en": "Type the imperative.", "fa": "فعل امر را بنویس.", "de": "Schreibe den Imperativ." },
+    "sentenceDe": "___ bitte! (kommen, du)",
+    "answer": "Komm",
+    "explanation": {
+      "en": "The du-imperative is the verb stem without an ending: Komm!",
+      "fa": "امر برای du ریشه‌ی فعل بدون پایانه است: Komm!",
+      "de": "Der Imperativ für du ist der Verbstamm ohne Endung: Komm!"
+    }
+  },
+  {
+    "id": "imp-02",
+    "lessonId": "imperative",
+    "type": "fill",
+    "prompt": { "en": "Type the imperative.", "fa": "فعل امر را بنویس.", "de": "Schreibe den Imperativ." },
+    "sentenceDe": "___ die Hausaufgaben! (machen, ihr)",
+    "answer": "Macht",
+    "explanation": {
+      "en": "The ihr-imperative looks like the present tense, without ihr: Macht!",
+      "fa": "امر برای ihr مثل زمان حال است، بدون ihr: Macht!",
+      "de": "Der Imperativ für ihr sieht aus wie das Präsens, aber ohne ihr: Macht!"
+    }
+  },
+  {
+    "id": "imp-03",
+    "lessonId": "imperative",
+    "type": "fill",
+    "prompt": { "en": "Type the imperative.", "fa": "فعل امر را بنویس.", "de": "Schreibe den Imperativ." },
+    "sentenceDe": "___ Sie bitte langsam! (sprechen)",
+    "answer": "Sprechen",
+    "explanation": {
+      "en": "The formal imperative is the infinitive followed by Sie: Sprechen Sie!",
+      "fa": "امر رسمی مصدر است و بعد از آن Sie می‌آید: Sprechen Sie!",
+      "de": "Der formelle Imperativ ist der Infinitiv, dann Sie: Sprechen Sie!"
+    }
+  },
+  {
+    "id": "imp-04",
+    "lessonId": "imperative",
+    "type": "fill",
+    "prompt": { "en": "Type the imperative.", "fa": "فعل امر را بنویس.", "de": "Schreibe den Imperativ." },
+    "sentenceDe": "___ leise! (sein, du)",
+    "answer": "Sei",
+    "explanation": {
+      "en": "sein is irregular: Sei! Seid! Seien Sie!",
+      "fa": "sein بی‌قاعده است: Sei! Seid! Seien Sie!",
+      "de": "sein ist unregelmäßig: Sei! Seid! Seien Sie!"
+    }
+  },
+  {
+    "id": "imp-05",
+    "lessonId": "imperative",
+    "type": "fill",
+    "prompt": { "en": "Type the imperative.", "fa": "فعل امر را بنویس.", "de": "Schreibe den Imperativ." },
+    "sentenceDe": "___ den Text! (lesen, du)",
+    "answer": "Lies",
+    "explanation": {
+      "en": "lesen changes e → ie in the du-form: Lies!",
+      "fa": "lesen در شکل du از e به ie تغییر می‌کند: Lies!",
+      "de": "lesen verändert e → ie in der du-Form: Lies!"
+    }
+  },
+  {
+    "id": "imp-06",
+    "lessonId": "imperative",
+    "type": "choice",
+    "prompt": { "en": "Choose the imperative.", "fa": "فعل امر را انتخاب کن.", "de": "Wähle den Imperativ." },
+    "sentenceDe": "___ bitte hier! (warten, du)",
+    "options": ["Wart", "Warte", "Wartest"],
+    "answer": "Warte",
+    "explanation": {
+      "en": "The stem of warten ends in -t, so the du-imperative adds -e: Warte!",
+      "fa": "ریشه‌ی warten به t ختم می‌شود، پس امر du یک e- می‌گیرد: Warte!",
+      "de": "Der Stamm von warten endet auf -t, also bekommt der du-Imperativ ein -e: Warte!"
+    }
+  },
+  {
+    "id": "imp-07",
+    "lessonId": "imperative",
+    "type": "choice",
+    "prompt": { "en": "Choose the imperative.", "fa": "فعل امر را انتخاب کن.", "de": "Wähle den Imperativ." },
+    "sentenceDe": "___ bitte etwas! (essen, du)",
+    "options": ["Ess", "Iss", "Isst"],
+    "answer": "Iss",
+    "explanation": {
+      "en": "essen changes e → i in the du-form: Iss!",
+      "fa": "essen در شکل du از e به i تغییر می‌کند: Iss!",
+      "de": "essen verändert e → i in der du-Form: Iss!"
+    }
+  },
+  {
+    "id": "imp-08",
+    "lessonId": "imperative",
+    "type": "choice",
+    "prompt": { "en": "Choose the imperative.", "fa": "فعل امر را انتخاب کن.", "de": "Wähle den Imperativ." },
+    "sentenceDe": "___ auf! (aufstehen, ihr)",
+    "options": ["Steht", "Stehen", "Steh"],
+    "answer": "Steht",
+    "explanation": {
+      "en": "ihr-imperative: Steht auf! The prefix auf goes to the end.",
+      "fa": "امر برای ihr: Steht auf! پیشوند auf به آخر جمله می‌رود.",
+      "de": "Imperativ für ihr: Steht auf! Das Präfix auf steht am Ende."
+    }
+  },
+  {
+    "id": "imp-09",
+    "lessonId": "imperative",
+    "type": "transform",
+    "prompt": { "en": "Turn the statement into an instruction for du.", "fa": "جمله‌ی خبری را به دستور برای du تبدیل کن.", "de": "Mache aus der Aussage eine Aufforderung an du." },
+    "sentenceDe": "Du lernst Deutsch. → ___ Deutsch!",
+    "answer": "Lern",
+    "acceptedAnswers": ["Lerne"],
+    "explanation": {
+      "en": "Remove -st from the du-form: Lern! (Lerne! is also correct, but Lern! is more common.)",
+      "fa": "پایانه‌ی st- را از شکل du بردار: Lern! (Lerne! هم درست است، اما Lern! رایج‌تر است.)",
+      "de": "Streiche -st von der du-Form: Lern! (Lerne! ist auch richtig, Lern! ist aber üblicher.)"
+    }
+  },
+  {
+    "id": "imp-10",
+    "lessonId": "imperative",
+    "type": "choice",
+    "prompt": { "en": "Choose the imperative.", "fa": "فعل امر را انتخاب کن.", "de": "Wähle den Imperativ." },
+    "sentenceDe": "___ Sie bitte Platz! (nehmen)",
+    "options": ["Nehmen", "Nehmt", "Nimm"],
+    "answer": "Nehmen",
+    "explanation": {
+      "en": "With Sie you use the infinitive: Nehmen Sie bitte Platz!",
+      "fa": "با Sie از مصدر استفاده می‌کنی: Nehmen Sie bitte Platz!",
+      "de": "Bei Sie benutzt du den Infinitiv: Nehmen Sie bitte Platz!"
+    }
+  }
+]
