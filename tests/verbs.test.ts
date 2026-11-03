@@ -1,0 +1,102 @@
+import { describe, expect, it } from "vitest";
+import {
+  applyResult,
+  checkAnswer,
+  checkPerfekt,
+  pickQuestion,
+  presentAnswers,
+  stripUmlauts,
+} from "../lib/verbDrill";
+import { filterVerbs, getChangedPersons, getVerb, getVerbsByType, perfektForms, verbs } from "../lib/verbs";
+
+const fahren = getVerb("fahren")!;
+const aufstehen = getVerb("aufstehen")!;
+
+describe("checkAnswer", () => {
+  it("is case-insensitive and trims", () => {
+    expect(checkAnswer("  FÄHRST ", "fährst")).toBe("correct");
+  });
+  it("checks umlauts strictly and flags umlaut-only mistakes", () => {
+    expect(checkAnswer("fahrst", "fährst")).toBe("umlaut");
+    expect(checkAnswer("faehrst", "fährst")).toBe("wrong");
+  });
+  it("checks ß strictly and flags it", () => {
+    expect(checkAnswer("heisst", "heißt")).toBe("umlaut");
+    expect(checkAnswer("heißt", "heißt")).toBe("correct");
+  });
+  it("returns wrong for a different word and for empty input", () => {
+    expect(checkAnswer("fährt", "fährst")).toBe("wrong");
+    expect(checkAnswer("", "fährst")).toBe("wrong");
+  });
+  it("accepts any of several answers", () => {
+    expect(checkAnswer("stehe", ["stehe auf", "stehe"])).toBe("correct");
+  });
+  it("stripUmlauts maps ä ö ü ß", () => {
+    expect(stripUmlauts("müßt äö")).toBe("musst ao");
+  });
+});
+
+describe("presentAnswers / checkPerfekt", () => {
+  it("separable verbs accept the form with or without prefix, and display the full split form", () => {
+    const r = presentAnswers(aufstehen, "ich");
+    expect(r.display).toBe("stehe auf");
+    expect(r.accepted).toEqual(["stehe auf", "stehe"]);
+  });
+  it("needs the right auxiliary and a correct participle", () => {
+    expect(checkPerfekt("sein", "gefahren", fahren).correct).toBe(true);
+    expect(checkPerfekt("haben", "gefahren", fahren)).toMatchObject({ auxCorrect: false, correct: false });
+    expect(checkPerfekt("sein", "gefahrn", fahren).correct).toBe(false);
+    expect(checkPerfekt(null, "gefahren", fahren).correct).toBe(false);
+  });
+});
+
+describe("pickQuestion", () => {
+  it("never repeats the same verb twice in a row", () => {
+    for (let i = 0; i < 200; i++) {
+      expect(pickQuestion(verbs, "mixed", [], "gehen").verb.id).not.toBe("gehen");
+    }
+  });
+  it("picks wrong verbs more often", () => {
+    let hits = 0;
+    const n = 4000;
+    for (let i = 0; i < n; i++) if (pickQuestion(verbs, "present", ["sein"], null).verb.id === "sein") hits++;
+    // weight 4 of 4 + 11 others = 4/15 ≈ 26.7% vs 1/12 ≈ 8.3% unweighted
+    expect(hits / n).toBeGreaterThan(0.18);
+  });
+  it("respects the mode", () => {
+    expect(pickQuestion(verbs, "perfekt", [], null).kind).toBe("perfekt");
+    expect(pickQuestion(verbs, "present", [], null).kind).toBe("present");
+  });
+  it("works with a single-verb pool", () => {
+    expect(pickQuestion([fahren], "present", [], "fahren").verb.id).toBe("fahren");
+  });
+});
+
+describe("applyResult", () => {
+  const base = { score: 0, streak: 0, bestStreak: 0, wrongVerbIds: [] as string[] };
+  it("tracks score, streak, best streak and wrong ids", () => {
+    const a = applyResult(base, "gehen", true);
+    expect(a).toMatchObject({ score: 1, streak: 1, bestStreak: 1 });
+    const b = applyResult(a, "sein", false);
+    expect(b).toMatchObject({ score: 1, streak: 0, bestStreak: 1, wrongVerbIds: ["sein"] });
+    expect(applyResult(b, "sein", true).wrongVerbIds).toEqual([]);
+  });
+});
+
+describe("verb helpers", () => {
+  it("getChangedPersons finds the stem-changing forms", () => {
+    expect(getChangedPersons(fahren)).toEqual(["du", "er_sie_es"]);
+    expect(getChangedPersons(getVerb("essen")!)).toEqual(["du", "er_sie_es"]);
+    expect(getChangedPersons(getVerb("koennen")!)).toEqual(["ich", "du", "er_sie_es"]);
+    expect(getChangedPersons(getVerb("machen")!)).toEqual([]);
+  });
+  it("perfektForms builds auxiliary + participle", () => {
+    expect(perfektForms(fahren).er_sie_es).toBe("ist gefahren");
+    expect(perfektForms(getVerb("machen")!).ich).toBe("habe gemacht");
+  });
+  it("getters and filters", () => {
+    expect(getVerbsByType("modal").map((v) => v.id)).toEqual(["koennen", "muessen"]);
+    expect(filterVerbs({ type: "separable", level: "A1" })).toHaveLength(1);
+    expect(getVerb("nope")).toBeUndefined();
+  });
+});

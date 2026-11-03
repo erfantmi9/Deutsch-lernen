@@ -1,0 +1,223 @@
+{
+  "Meta": {
+    "title": "Deutsch Lernen – German Articles Arcade",
+    "description": "Learn German noun articles (der, die, das) with instant feedback and an AI tutor."
+  },
+  "Nav": {
+    "home": "Home",
+    "mainNav": "Main navigation",
+    "theme": "Theme",
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode",
+    "arcade": "Articles arcade",
+    "language": "Language",
+    "verbs": "Verbs",
+    "sentences": "Sentences"
+  },
+  "Home": {
+    "title": "Master der, die, das",
+    "subtitle": "Practice German noun articles with instant feedback, grammar rules and an AI tutor.",
+    "cta": "Start the arcade",
+    "progress": "Progress: {percent}%",
+    "modules": {
+      "arcade": {
+        "title": "Articles arcade",
+        "desc": "Quick rounds of der, die, das with instant feedback."
+      },
+      "verbs": {
+        "title": "Verbs",
+        "desc": "Browse conjugation tables, then drill the forms."
+      },
+      "sentences": {
+        "title": "Sentences",
+        "desc": "Drag the words into the right order."
+      }
+    }
+  },
+  "Arcade": {
+    "title": "Article quiz",
+    "prompt": "Which article fits this noun?",
+    "plural": "Plural",
+    "score": "Score",
+    "streak": "Streak",
+    "best": "Best streak",
+    "correct": "Correct!",
+    "wrong": "Not quite. The correct answer is",
+    "next": "Next",
+    "reset": "Reset progress",
+    "loading": "Loading…",
+    "shortcuts": "Keyboard: 1 = der, 2 = die, 3 = das",
+    "why": "Why?",
+    "subtitle": "Pick the right article and build your streak."
+  },
+  "Articles": {
+    "der": "der",
+    "die": "die",
+    "das": "das"
+  },
+  "Category": {
+    "suffix": "Suffix rule",
+    "semantic": "Meaning rule",
+    "exception": "Exception",
+    "learn": "No fixed rule"
+  },
+  "Explain": {
+    "rule": "Rule",
+    "example": "Example",
+    "simpler": "Explain simpler",
+    "detailed": "Show full rule"
+  },
+  "Verbs": {
+    "title": "Verb conjugation",
+    "subtitle": "Browse the verbs, study their forms, then practice.",
+    "loading": "Loading…",
+    "filterByType": "Filter by verb type",
+    "filterAll": "All",
+    "types": {
+      "regular": "Regular",
+      "irregular": "Irregular",
+      "modal": "Modal",
+      "separable": "Separable",
+      "reflexive": "Reflexive"
+    },
+    "tenses": "Tenses",
+    "tabs": {
+      "praesens": "Present",
+      "perfekt": "Perfect",
+      "praeteritum": "Preterite"
+    },
+    "person": "Person",
+    "form": "Form",
+    "persons": {
+      "ich": "I",
+      "du": "you (informal)",
+      "er_sie_es": "he / she / it",
+      "wir": "we",
+      "ihr": "you (plural)",
+      "sie_Sie": "they / you (formal)"
+    },
+    "stemChange": "Stem change",
+    "stemChangedForm": "stem-changing form",
+    "separableInfo": "Separable verb: in a main clause the prefix “{prefix}” moves to the end of the sentence.",
+    "auxiliary": "Auxiliary",
+    "partizip2": "Participle II",
+    "note": "Grammar note",
+    "example": "Example",
+    "practice": "Practice",
+    "practiceTitle": "Verb practice",
+    "backToList": "Back to verbs",
+    "mode": "Practice mode",
+    "modes": {
+      "present": "Present",
+      "perfekt": "Perfect",
+      "mixed": "Mixed"
+    },
+    "score": "Score",
+    "streak": "Streak",
+    "best": "Best streak",
+    "typeForm": "Type the verb form",
+    "typePartizip": "Type the participle II",
+    "chooseAux": "Choose the auxiliary verb",
+    "separableDrillHint": "Separable verb: also type the prefix “{prefix}”.",
+    "specialChars": "Special characters",
+    "insertChar": "Insert {char}",
+    "check": "Check",
+    "next": "Next",
+    "correct": "Correct!",
+    "wrong": "Not quite. Correct:",
+    "umlautHint": "Check the umlaut / ß: your answer is almost right.",
+    "auxHint": "Wrong auxiliary: this verb uses {aux}.",
+    "reset": "Reset progress"
+  },
+  "Sentences": {
+    "loading": "Loading…",
+    "title": "Sentence building",
+    "subtitle": "Put the words in the right order. Tap, drag, or use the keyboard.",
+    "filterByFocus": "Filter by grammar focus",
+    "filterAll": "All",
+    "focus": {
+      "v2": "Verb in 2nd position",
+      "question": "Questions",
+      "modal-bracket": "Modal verbs",
+      "separable-bracket": "Separable verbs",
+      "subordinate-weil": "weil-clauses",
+      "negation-nicht-kein": "nicht / kein",
+      "time-manner-place": "Time – Manner – Place"
+    },
+    "solved": "Solved",
+    "streak": "Streak",
+    "best": "Best streak",
+    "lesson": "Mini lesson",
+    "lessons": {
+      "v2": {
+        "title": "The verb comes second (V2)",
+        "body": "In a German statement the conjugated verb is always the second element. The first element can be the subject or something else, such as the time. If something else comes first, the subject moves behind the verb."
+      },
+      "question": {
+        "title": "Asking questions",
+        "body": "In a W-question the question word is first, then the verb, then the subject. In a yes/no question the verb is in first position."
+      },
+      "modal-bracket": {
+        "title": "Modal verbs and the sentence frame",
+        "body": "The conjugated modal verb stands in position 2. The second verb stays in the infinitive and goes to the very end. Together they form a frame (Satzklammer) around the rest of the sentence."
+      },
+      "separable-bracket": {
+        "title": "Separable verbs and the sentence frame",
+        "body": "In a main clause the verb stem is in position 2 and the separated prefix goes to the very end. The two parts frame the sentence (Satzklammer)."
+      },
+      "subordinate-weil": {
+        "title": "weil sends the verb to the end",
+        "body": "After weil the clause is a subordinate clause: the conjugated verb moves to the end of that clause. A comma separates it from the main clause."
+      },
+      "negation-nicht-kein": {
+        "title": "Negation with nicht and kein",
+        "body": "Use kein to negate a noun that has ein or no article. Use nicht to negate a verb or the whole sentence; it usually stands at the end."
+      },
+      "time-manner-place": {
+        "title": "Time – Manner – Place",
+        "body": "When a sentence has several details, the usual order is Time (when), Manner (how), Place (where). The verb still stays in position 2."
+      }
+    },
+    "legend": "Sentence parts",
+    "roles": {
+      "verb": "Verb",
+      "subject": "Subject",
+      "time": "Time",
+      "manner": "Manner",
+      "place": "Place",
+      "negation": "Negation",
+      "object": "Object",
+      "question": "Question word",
+      "connector": "Connector",
+      "other": "Other"
+    },
+    "prompt": "Build this sentence in German:",
+    "promptDe": "Build this sentence in German (English translation):",
+    "howTo": "Tap a word to move it to your sentence, tap it again to put it back. Arrow keys reorder words in your sentence.",
+    "answerLine": "Your sentence",
+    "wordBank": "Word bank",
+    "answerPlaceholder": "Tap or drag words here",
+    "chipAnswer": "{word}, position {pos} of {total}. Press Enter to remove, left or right arrow to move.",
+    "chipBank": "{word}. Press Enter to add to your sentence.",
+    "wrongPosition": "wrong position",
+    "rightPosition": "right position",
+    "announceAdded": "{word} added at position {pos} of {total}.",
+    "announceRemoved": "{word} returned to the word bank.",
+    "announceMoved": "{word} moved to position {pos} of {total}.",
+    "announceReset": "Board reset.",
+    "showParts": "Show sentence parts",
+    "hideParts": "Hide sentence parts",
+    "check": "Check",
+    "reset": "Reset",
+    "next": "Next",
+    "skip": "Skip",
+    "correct": "Correct!",
+    "wrongOrder": "Not quite. Some words are in the wrong place.",
+    "incomplete": "Your sentence is not finished yet.",
+    "wrongWords": "Words in the wrong position:",
+    "hint": "Hint",
+    "showExplanation": "Show explanation",
+    "hideExplanation": "Hide explanation",
+    "resetProgress": "Reset progress"
+  }
+}

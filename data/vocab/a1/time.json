@@ -1,0 +1,235 @@
+[
+  {
+    "id": "montag",
+    "word": "Montag",
+    "article": "der",
+    "plural": "Montage",
+    "translations": {
+      "en": "Monday",
+      "fa": "دوشنبه"
+    },
+    "grammarRule": {
+      "en": "Days, months and seasons are masculine (der): der Montag, der Januar, der Sommer.",
+      "fa": "روزهای هفته، ماه‌ها و فصل‌ها مذکر (der) هستند: der Montag, der Januar, der Sommer.",
+      "de": "Wochentage, Monate und Jahreszeiten sind maskulin (der): der Montag, der Januar, der Sommer.",
+      "simple": {
+        "en": "Days of the week are always der.",
+        "fa": "روزهای هفته همیشه der هستند.",
+        "de": "Wochentage sind immer der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Am Montag arbeite ich.",
+      "en": "On Monday I work.",
+      "fa": "دوشنبه کار می‌کنم."
+    },
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "id": "dienstag",
+    "word": "Dienstag",
+    "article": "der",
+    "plural": "Dienstage",
+    "translations": {
+      "en": "Tuesday",
+      "fa": "سه‌شنبه"
+    },
+    "grammarRule": {
+      "en": "Days, months and seasons are masculine (der): der Dienstag, der Januar, der Sommer.",
+      "fa": "روزهای هفته، ماه‌ها و فصل‌ها مذکر (der) هستند: der Dienstag, der Januar, der Sommer.",
+      "de": "Wochentage, Monate und Jahreszeiten sind maskulin (der): der Dienstag, der Januar, der Sommer.",
+      "simple": {
+        "en": "Days of the week are always der.",
+        "fa": "روزهای هفته همیشه der هستند.",
+        "de": "Wochentage sind immer der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Am Dienstag lerne ich Deutsch.",
+      "en": "On Tuesday I study German.",
+      "fa": "سه‌شنبه آلمانی می‌خوانم."
+    },
+    "category": "time",
+    "level": "A1",
+    "tags": [
+      "weekday"
+    ]
+  },
+  {
+    "id": "sommer",
+    "word": "Sommer",
+    "article": "der",
+    "plural": "Sommer",
+    "translations": {
+      "en": "summer",
+      "fa": "تابستان"
+    },
+    "grammarRule": {
+      "en": "Seasons are masculine (der): der Frühling, der Sommer, der Herbst, der Winter.",
+      "fa": "فصل‌ها مذکر (der) هستند: der Frühling, der Sommer, der Herbst, der Winter.",
+      "de": "Jahreszeiten sind maskulin (der): der Frühling, der Sommer, der Herbst, der Winter.",
+      "simple": {
+        "en": "The four seasons are all der.",
+        "fa": "هر چهار فصل der هستند.",
+        "de": "Alle vier Jahreszeiten sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Im Sommer ist es warm.",
+      "en": "In summer it is warm.",
+      "fa": "در تابستان هوا گرم است."
+    },
+    "category": "time",
+    "level": "A1",
+    "tags": [
+      "season"
+    ]
+  },
+  {
+    "id": "winter",
+    "word": "Winter",
+    "article": "der",
+    "plural": "Winter",
+    "translations": {
+      "en": "winter",
+      "fa": "زمستان"
+    },
+    "grammarRule": {
+      "en": "Seasons are masculine (der): der Frühling, der Sommer, der Herbst, der Winter.",
+      "fa": "فصل‌ها مذکر (der) هستند: der Frühling, der Sommer, der Herbst, der Winter.",
+      "de": "Jahreszeiten sind maskulin (der): der Frühling, der Sommer, der Herbst, der Winter.",
+      "simple": {
+        "en": "The four seasons are all der.",
+        "fa": "هر چهار فصل der هستند.",
+        "de": "Alle vier Jahreszeiten sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Im Winter ist es kalt.",
+      "en": "In winter it is cold.",
+      "fa": "در زمستان هوا سرد است."
+    },
+    "category": "time",
+    "level": "A1",
+    "tags": [
+      "season"
+    ]
+  },
+  {
+    "id": "woche",
+    "word": "Woche",
+    "article": "die",
+    "plural": "Wochen",
+    "translations": {
+      "en": "week",
+      "fa": "هفته"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Nase.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Nase.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Nase.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Woche hat sieben Tage.",
+      "en": "The week has seven days.",
+      "fa": "هفته هفت روز دارد."
+    },
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "id": "stunde",
+    "word": "Stunde",
+    "article": "die",
+    "plural": "Stunden",
+    "translations": {
+      "en": "hour / lesson",
+      "fa": "ساعت (بازه زمانی) / درس"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Nase.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Nase.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Nase.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Stunde beginnt um neun Uhr.",
+      "en": "The lesson starts at nine o'clock.",
+      "fa": "کلاس ساعت نه شروع می‌شود."
+    },
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "id": "jahr",
+    "word": "Jahr",
+    "article": "das",
+    "plural": "Jahre",
+    "translations": {
+      "en": "year",
+      "fa": "سال"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Jahr).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Jahr).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Jahr).",
+      "simple": {
+        "en": "Just learn it: das Jahr.",
+        "fa": "فقط حفظش کنید: das Jahr.",
+        "de": "Einfach lernen: das Jahr."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Jahr hat zwölf Monate.",
+      "en": "The year has twelve months.",
+      "fa": "سال دوازده ماه دارد."
+    },
+    "category": "time",
+    "level": "A1"
+  },
+  {
+    "id": "uhr",
+    "word": "Uhr",
+    "article": "die",
+    "plural": "Uhren",
+    "translations": {
+      "en": "clock / watch",
+      "fa": "ساعت (وسیله)"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Uhr).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Uhr).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Uhr).",
+      "simple": {
+        "en": "Just learn it: die Uhr.",
+        "fa": "فقط حفظش کنید: die Uhr.",
+        "de": "Einfach lernen: die Uhr."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Uhr ist kaputt.",
+      "en": "The clock is broken.",
+      "fa": "ساعت خراب است."
+    },
+    "category": "time",
+    "level": "A1"
+  }
+]

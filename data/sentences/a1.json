@@ -1,0 +1,615 @@
+[
+  {
+    "id": "s-v2-01",
+    "level": "A1",
+    "grammarFocus": "v2",
+    "tokens": [
+      "Ich",
+      "lerne",
+      "heute",
+      "Deutsch."
+    ],
+    "roles": [
+      "subject",
+      "verb",
+      "time",
+      "object"
+    ],
+    "translations": {
+      "en": "I am learning German today.",
+      "fa": "من امروز آلمانی یاد می‌گیرم."
+    },
+    "hint": {
+      "en": "The conjugated verb must be in 2nd position.",
+      "fa": "فعل صرف‌شده باید در جایگاه دوم باشد.",
+      "de": "Das konjugierte Verb muss an 2. Stelle stehen."
+    },
+    "explanation": {
+      "en": "In a German statement the conjugated verb is always in second position. Whatever comes first (subject, time, place ...) fills position 1.",
+      "fa": "در جمله‌ی خبری آلمانی، فعل صرف‌شده همیشه در جایگاه دوم قرار می‌گیرد. هر چیزی که اول بیاید (فاعل، زمان، مکان ...) جایگاه اول را پر می‌کند.",
+      "de": "Im deutschen Aussagesatz steht das konjugierte Verb immer an zweiter Stelle. Was vorn steht (Subjekt, Zeit, Ort ...), besetzt Position 1."
+    },
+    "acceptedOrders": [
+      [
+        "Heute",
+        "lerne",
+        "ich",
+        "Deutsch."
+      ]
+    ]
+  },
+  {
+    "id": "s-v2-02",
+    "level": "A1",
+    "grammarFocus": "v2",
+    "tokens": [
+      "Wir",
+      "wohnen",
+      "in",
+      "Berlin."
+    ],
+    "roles": [
+      "subject",
+      "verb",
+      "place",
+      "place"
+    ],
+    "translations": {
+      "en": "We live in Berlin.",
+      "fa": "ما در برلین زندگی می‌کنیم."
+    },
+    "hint": {
+      "en": "The conjugated verb must be in 2nd position.",
+      "fa": "فعل صرف‌شده باید در جایگاه دوم باشد.",
+      "de": "Das konjugierte Verb muss an 2. Stelle stehen."
+    },
+    "explanation": {
+      "en": "In a German statement the conjugated verb is always in second position. Whatever comes first (subject, time, place ...) fills position 1.",
+      "fa": "در جمله‌ی خبری آلمانی، فعل صرف‌شده همیشه در جایگاه دوم قرار می‌گیرد. هر چیزی که اول بیاید (فاعل، زمان، مکان ...) جایگاه اول را پر می‌کند.",
+      "de": "Im deutschen Aussagesatz steht das konjugierte Verb immer an zweiter Stelle. Was vorn steht (Subjekt, Zeit, Ort ...), besetzt Position 1."
+    },
+    "acceptedOrders": [
+      [
+        "In",
+        "Berlin",
+        "wohnen",
+        "wir."
+      ]
+    ]
+  },
+  {
+    "id": "s-q-01",
+    "level": "A1",
+    "grammarFocus": "question",
+    "tokens": [
+      "Wo",
+      "wohnst",
+      "du?"
+    ],
+    "roles": [
+      "question",
+      "verb",
+      "subject"
+    ],
+    "distractors": [
+      "wohne"
+    ],
+    "translations": {
+      "en": "Where do you live?",
+      "fa": "تو کجا زندگی می‌کنی؟"
+    },
+    "hint": {
+      "en": "Start with the question word, then the verb.",
+      "fa": "با کلمه‌ی پرسشی شروع کنید، بعد فعل.",
+      "de": "Beginne mit dem Fragewort, dann das Verb."
+    },
+    "explanation": {
+      "en": "In a W-question the question word comes first, then the verb, then the subject. In a yes/no question the verb comes first.",
+      "fa": "در پرسش با کلمه‌ی پرسشی، ابتدا کلمه‌ی پرسشی، بعد فعل و سپس فاعل می‌آید. در پرسش بله/خیر، فعل در ابتدا می‌آید.",
+      "de": "In der W-Frage steht zuerst das Fragewort, dann das Verb, dann das Subjekt. In der Ja/Nein-Frage steht das Verb an erster Stelle."
+    }
+  },
+  {
+    "id": "s-q-02",
+    "level": "A1",
+    "grammarFocus": "question",
+    "tokens": [
+      "Hast",
+      "du",
+      "Hunger?"
+    ],
+    "roles": [
+      "verb",
+      "subject",
+      "object"
+    ],
+    "distractors": [
+      "bist"
+    ],
+    "translations": {
+      "en": "Are you hungry?",
+      "fa": "گرسنه‌ای؟"
+    },
+    "hint": {
+      "en": "In a yes/no question the verb comes first.",
+      "fa": "در پرسش بله/خیر فعل اول می‌آید.",
+      "de": "In der Ja/Nein-Frage steht das Verb an erster Stelle."
+    },
+    "explanation": {
+      "en": "In a W-question the question word comes first, then the verb, then the subject. In a yes/no question the verb comes first.",
+      "fa": "در پرسش با کلمه‌ی پرسشی، ابتدا کلمه‌ی پرسشی، بعد فعل و سپس فاعل می‌آید. در پرسش بله/خیر، فعل در ابتدا می‌آید.",
+      "de": "In der W-Frage steht zuerst das Fragewort, dann das Verb, dann das Subjekt. In der Ja/Nein-Frage steht das Verb an erster Stelle."
+    }
+  },
+  {
+    "id": "s-modal-01",
+    "level": "A1",
+    "grammarFocus": "modal-bracket",
+    "tokens": [
+      "Ich",
+      "kann",
+      "gut",
+      "schwimmen."
+    ],
+    "roles": [
+      "subject",
+      "verb",
+      "manner",
+      "verb"
+    ],
+    "distractors": [
+      "kannst"
+    ],
+    "translations": {
+      "en": "I can swim well.",
+      "fa": "من می‌توانم خوب شنا کنم."
+    },
+    "hint": {
+      "en": "Modal verb in position 2, infinitive at the end.",
+      "fa": "فعل کمکی در جایگاه دوم، مصدر در آخر.",
+      "de": "Modalverb an Position 2, Infinitiv am Ende."
+    },
+    "explanation": {
+      "en": "The conjugated modal verb is in position 2, and the infinitive goes to the very end. Together they form a frame (Satzklammer).",
+      "fa": "فعل کمکی صرف‌شده در جایگاه دوم است و مصدر در آخر جمله می‌آید. این دو با هم یک چارچوب (Satzklammer) می‌سازند.",
+      "de": "Das konjugierte Modalverb steht an Position 2, der Infinitiv ganz am Ende. Zusammen bilden sie die Satzklammer."
+    }
+  },
+  {
+    "id": "s-modal-02",
+    "level": "A1",
+    "grammarFocus": "modal-bracket",
+    "tokens": [
+      "Du",
+      "musst",
+      "heute",
+      "arbeiten."
+    ],
+    "roles": [
+      "subject",
+      "verb",
+      "time",
+      "verb"
+    ],
+    "translations": {
+      "en": "You have to work today.",
+      "fa": "تو امروز باید کار کنی."
+    },
+    "hint": {
+      "en": "Modal verb in position 2, infinitive at the end.",
+      "fa": "فعل کمکی در جایگاه دوم، مصدر در آخر.",
+      "de": "Modalverb an Position 2, Infinitiv am Ende."
+    },
+    "explanation": {
+      "en": "The conjugated modal verb is in position 2, and the infinitive goes to the very end. Together they form a frame (Satzklammer).",
+      "fa": "فعل کمکی صرف‌شده در جایگاه دوم است و مصدر در آخر جمله می‌آید. این دو با هم یک چارچوب (Satzklammer) می‌سازند.",
+      "de": "Das konjugierte Modalverb steht an Position 2, der Infinitiv ganz am Ende. Zusammen bilden sie die Satzklammer."
+    },
+    "acceptedOrders": [
+      [
+        "Heute",
+        "musst",
+        "du",
+        "arbeiten."
+      ]
+    ]
+  },
+  {
+    "id": "s-sep-01",
+    "level": "A1",
+    "grammarFocus": "separable-bracket",
+    "tokens": [
+      "Ich",
+      "stehe",
+      "um",
+      "sieben",
+      "Uhr",
+      "auf."
+    ],
+    "roles": [
+      "subject",
+      "verb",
+      "time",
+      "time",
+      "time",
+      "verb"
+    ],
+    "distractors": [
+      "aufstehe"
+    ],
+    "translations": {
+      "en": "I get up at seven o'clock.",
+      "fa": "من ساعت هفت بلند می‌شوم."
+    },
+    "hint": {
+      "en": "Verb stem in position 2, prefix at the end.",
+      "fa": "ریشه‌ی فعل در جایگاه دوم، پیشوند در آخر.",
+      "de": "Verbstamm an Position 2, Präfix am Ende."
+    },
+    "explanation": {
+      "en": "The conjugated verb stem is in position 2 and the separated prefix goes to the very end of the sentence (Satzklammer).",
+      "fa": "ریشه‌ی فعل صرف‌شده در جایگاه دوم است و پیشوند جداشده در آخر جمله می‌آید (Satzklammer).",
+      "de": "Der konjugierte Verbstamm steht an Position 2, das abgetrennte Präfix ganz am Satzende (Satzklammer)."
+    },
+    "acceptedOrders": [
+      [
+        "Um",
+        "sieben",
+        "Uhr",
+        "stehe",
+        "ich",
+        "auf."
+      ]
+    ]
+  },
+  {
+    "id": "s-sep-02",
+    "level": "A1",
+    "grammarFocus": "separable-bracket",
+    "tokens": [
+      "Der",
+      "Zug",
+      "kommt",
+      "um",
+      "acht",
+      "Uhr",
+      "an."
+    ],
+    "roles": [
+      "subject",
+      "subject",
+      "verb",
+      "time",
+      "time",
+      "time",
+      "verb"
+    ],
+    "distractors": [
+      "ankommt"
+    ],
+    "translations": {
+      "en": "The train arrives at eight o'clock.",
+      "fa": "قطار ساعت هشت می‌رسد."
+    },
+    "hint": {
+      "en": "Verb stem in position 2, prefix at the end.",
+      "fa": "ریشه‌ی فعل در جایگاه دوم، پیشوند در آخر.",
+      "de": "Verbstamm an Position 2, Präfix am Ende."
+    },
+    "explanation": {
+      "en": "The conjugated verb stem is in position 2 and the separated prefix goes to the very end of the sentence (Satzklammer).",
+      "fa": "ریشه‌ی فعل صرف‌شده در جایگاه دوم است و پیشوند جداشده در آخر جمله می‌آید (Satzklammer).",
+      "de": "Der konjugierte Verbstamm steht an Position 2, das abgetrennte Präfix ganz am Satzende (Satzklammer)."
+    },
+    "acceptedOrders": [
+      [
+        "Um",
+        "acht",
+        "Uhr",
+        "kommt",
+        "der",
+        "Zug",
+        "an."
+      ]
+    ]
+  },
+  {
+    "id": "s-weil-01",
+    "level": "A1",
+    "grammarFocus": "subordinate-weil",
+    "tokens": [
+      "Ich",
+      "lerne",
+      "Deutsch,",
+      "weil",
+      "ich",
+      "in",
+      "Berlin",
+      "wohne."
+    ],
+    "roles": [
+      "subject",
+      "verb",
+      "object",
+      "connector",
+      "subject",
+      "place",
+      "place",
+      "verb"
+    ],
+    "translations": {
+      "en": "I am learning German because I live in Berlin.",
+      "fa": "من آلمانی یاد می‌گیرم چون در برلین زندگی می‌کنم."
+    },
+    "hint": {
+      "en": "After weil the conjugated verb goes to the end.",
+      "fa": "بعد از weil فعل صرف‌شده به آخر می‌رود.",
+      "de": "Nach weil steht das konjugierte Verb am Ende."
+    },
+    "explanation": {
+      "en": "After weil the clause is a subordinate clause: the conjugated verb moves to the end. A comma separates it from the main clause.",
+      "fa": "بعد از weil جمله‌ی پیرو است: فعل صرف‌شده به آخر جمله می‌رود. یک ویرگول آن را از جمله‌ی اصلی جدا می‌کند.",
+      "de": "Nach weil folgt ein Nebensatz: Das konjugierte Verb steht am Ende. Ein Komma trennt ihn vom Hauptsatz."
+    }
+  },
+  {
+    "id": "s-weil-02",
+    "level": "A1",
+    "grammarFocus": "subordinate-weil",
+    "tokens": [
+      "Er",
+      "kommt",
+      "nicht,",
+      "weil",
+      "er",
+      "krank",
+      "ist."
+    ],
+    "roles": [
+      "subject",
+      "verb",
+      "negation",
+      "connector",
+      "subject",
+      "other",
+      "verb"
+    ],
+    "translations": {
+      "en": "He is not coming because he is sick.",
+      "fa": "او نمی‌آید چون بیمار است."
+    },
+    "hint": {
+      "en": "After weil the conjugated verb goes to the end.",
+      "fa": "بعد از weil فعل صرف‌شده به آخر می‌رود.",
+      "de": "Nach weil steht das konjugierte Verb am Ende."
+    },
+    "explanation": {
+      "en": "After weil the clause is a subordinate clause: the conjugated verb moves to the end. A comma separates it from the main clause.",
+      "fa": "بعد از weil جمله‌ی پیرو است: فعل صرف‌شده به آخر جمله می‌رود. یک ویرگول آن را از جمله‌ی اصلی جدا می‌کند.",
+      "de": "Nach weil folgt ein Nebensatz: Das konjugierte Verb steht am Ende. Ein Komma trennt ihn vom Hauptsatz."
+    }
+  },
+  {
+    "id": "s-neg-01",
+    "level": "A1",
+    "grammarFocus": "negation-nicht-kein",
+    "tokens": [
+      "Ich",
+      "habe",
+      "keinen",
+      "Hunger."
+    ],
+    "roles": [
+      "subject",
+      "verb",
+      "negation",
+      "object"
+    ],
+    "distractors": [
+      "nicht"
+    ],
+    "translations": {
+      "en": "I am not hungry.",
+      "fa": "من گرسنه نیستم."
+    },
+    "hint": {
+      "en": "Use kein with a noun, nicht with a verb.",
+      "fa": "kein را با اسم و nicht را با فعل به کار ببرید.",
+      "de": "kein steht bei Nomen, nicht bei Verben."
+    },
+    "explanation": {
+      "en": "kein negates a noun that would have ein or no article (keinen Hunger, accusative masculine). nicht negates verbs or whole sentences.",
+      "fa": "kein اسمی را منفی می‌کند که ein یا بدون آرتیکل می‌آید (keinen Hunger، حالت مفعولی مذکر). nicht فعل یا کل جمله را منفی می‌کند.",
+      "de": "kein verneint ein Nomen mit ein oder ohne Artikel (keinen Hunger, Akkusativ maskulin). nicht verneint Verben oder den ganzen Satz."
+    }
+  },
+  {
+    "id": "s-neg-02",
+    "level": "A1",
+    "grammarFocus": "negation-nicht-kein",
+    "tokens": [
+      "Ich",
+      "komme",
+      "heute",
+      "nicht."
+    ],
+    "roles": [
+      "subject",
+      "verb",
+      "time",
+      "negation"
+    ],
+    "distractors": [
+      "kein"
+    ],
+    "translations": {
+      "en": "I am not coming today.",
+      "fa": "من امروز نمی‌آیم."
+    },
+    "hint": {
+      "en": "nicht usually goes to the end of the sentence.",
+      "fa": "nicht معمولاً در آخر جمله می‌آید.",
+      "de": "nicht steht meist am Satzende."
+    },
+    "explanation": {
+      "en": "nicht negates the whole sentence and usually stands at the end. The verb stays in position 2.",
+      "fa": "nicht کل جمله را منفی می‌کند و معمولاً در آخر جمله می‌آید. فعل در جایگاه دوم می‌ماند.",
+      "de": "nicht verneint den ganzen Satz und steht meist am Ende. Das Verb bleibt an Position 2."
+    },
+    "acceptedOrders": [
+      [
+        "Heute",
+        "komme",
+        "ich",
+        "nicht."
+      ]
+    ]
+  },
+  {
+    "id": "s-tmp-01",
+    "level": "A1",
+    "grammarFocus": "time-manner-place",
+    "tokens": [
+      "Ich",
+      "fahre",
+      "morgen",
+      "mit",
+      "dem",
+      "Zug",
+      "nach",
+      "Berlin."
+    ],
+    "roles": [
+      "subject",
+      "verb",
+      "time",
+      "manner",
+      "manner",
+      "manner",
+      "place",
+      "place"
+    ],
+    "translations": {
+      "en": "I am going to Berlin by train tomorrow.",
+      "fa": "من فردا با قطار به برلین می‌روم."
+    },
+    "hint": {
+      "en": "Time, then manner, then place.",
+      "fa": "اول زمان، بعد شیوه، بعد مکان.",
+      "de": "Erst die Zeit, dann Art und Weise, dann der Ort."
+    },
+    "explanation": {
+      "en": "Order of the details: Time – Manner – Place (when, how, where). The verb stays in position 2.",
+      "fa": "ترتیب جزئیات: زمان – شیوه – مکان (کی، چگونه، کجا). فعل در جایگاه دوم می‌ماند.",
+      "de": "Reihenfolge der Angaben: Zeit – Art und Weise – Ort (wann, wie, wo). Das Verb bleibt an Position 2."
+    },
+    "acceptedOrders": [
+      [
+        "Morgen",
+        "fahre",
+        "ich",
+        "mit",
+        "dem",
+        "Zug",
+        "nach",
+        "Berlin."
+      ]
+    ]
+  },
+  {
+    "id": "s-tmp-02",
+    "level": "A1",
+    "grammarFocus": "time-manner-place",
+    "tokens": [
+      "Wir",
+      "gehen",
+      "heute",
+      "zu",
+      "Fuß",
+      "zur",
+      "Schule."
+    ],
+    "roles": [
+      "subject",
+      "verb",
+      "time",
+      "manner",
+      "manner",
+      "place",
+      "place"
+    ],
+    "distractors": [
+      "mit"
+    ],
+    "translations": {
+      "en": "Today we are walking to school.",
+      "fa": "ما امروز پیاده به مدرسه می‌رویم."
+    },
+    "hint": {
+      "en": "Time, then manner, then place.",
+      "fa": "اول زمان، بعد شیوه، بعد مکان.",
+      "de": "Erst die Zeit, dann Art und Weise, dann der Ort."
+    },
+    "explanation": {
+      "en": "Order of the details: Time – Manner – Place (when, how, where). The verb stays in position 2.",
+      "fa": "ترتیب جزئیات: زمان – شیوه – مکان (کی، چگونه، کجا). فعل در جایگاه دوم می‌ماند.",
+      "de": "Reihenfolge der Angaben: Zeit – Art und Weise – Ort (wann, wie, wo). Das Verb bleibt an Position 2."
+    },
+    "acceptedOrders": [
+      [
+        "Heute",
+        "gehen",
+        "wir",
+        "zu",
+        "Fuß",
+        "zur",
+        "Schule."
+      ]
+    ]
+  },
+  {
+    "id": "s-tmp-03",
+    "level": "A1",
+    "grammarFocus": "time-manner-place",
+    "tokens": [
+      "Sie",
+      "arbeitet",
+      "jeden",
+      "Tag",
+      "im",
+      "Büro."
+    ],
+    "roles": [
+      "subject",
+      "verb",
+      "time",
+      "time",
+      "place",
+      "place"
+    ],
+    "translations": {
+      "en": "She works in the office every day.",
+      "fa": "او هر روز در اداره کار می‌کند."
+    },
+    "hint": {
+      "en": "Time comes before place.",
+      "fa": "زمان قبل از مکان می‌آید.",
+      "de": "Die Zeit steht vor dem Ort."
+    },
+    "explanation": {
+      "en": "Order of the details: Time before Place (when, then where). The verb stays in position 2.",
+      "fa": "ترتیب جزئیات: زمان قبل از مکان (کی، سپس کجا). فعل در جایگاه دوم می‌ماند.",
+      "de": "Reihenfolge der Angaben: Zeit vor Ort (wann, dann wo). Das Verb bleibt an Position 2."
+    },
+    "acceptedOrders": [
+      [
+        "Jeden",
+        "Tag",
+        "arbeitet",
+        "sie",
+        "im",
+        "Büro."
+      ]
+    ]
+  }
+]

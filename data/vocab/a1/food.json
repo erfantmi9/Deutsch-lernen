@@ -1,0 +1,247 @@
+[
+  {
+    "id": "essen",
+    "word": "Essen",
+    "article": "das",
+    "plural": "Essen",
+    "translations": {
+      "en": "food / meal",
+      "fa": "غذا"
+    },
+    "grammarRule": {
+      "en": "Verbs used as nouns (nominalised infinitives) are neuter (das): essen → das Essen, lernen → das Lernen.",
+      "fa": "فعل‌هایی که به‌عنوان اسم به کار می‌روند (مصدر اسم‌شده) خنثی (das) هستند: essen → das Essen, lernen → das Lernen.",
+      "de": "Verben, die als Nomen gebraucht werden (nominalisierte Infinitive), sind sächlich (das): essen → das Essen, lernen → das Lernen.",
+      "simple": {
+        "en": "A verb used as a noun is das: essen becomes das Essen.",
+        "fa": "فعلی که اسم شود das است: essen می‌شود das Essen.",
+        "de": "Ein Verb als Nomen ist das: essen wird das Essen."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Das Essen schmeckt gut.",
+      "en": "The food tastes good.",
+      "fa": "غذا خوشمزه است."
+    },
+    "category": "food",
+    "level": "A1"
+  },
+  {
+    "id": "apfel",
+    "word": "Apfel",
+    "article": "der",
+    "plural": "Äpfel",
+    "translations": {
+      "en": "apple",
+      "fa": "سیب"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Apfel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Apfel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Apfel).",
+      "simple": {
+        "en": "Just learn it: der Apfel.",
+        "fa": "فقط حفظش کنید: der Apfel.",
+        "de": "Einfach lernen: der Apfel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Apfel ist rot.",
+      "en": "The apple is red.",
+      "fa": "سیب قرمز است."
+    },
+    "category": "food",
+    "level": "A1",
+    "tags": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "broetchen",
+    "word": "Brötchen",
+    "article": "das",
+    "plural": "Brötchen",
+    "translations": {
+      "en": "bread roll",
+      "fa": "نان کوچک"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in the diminutive suffix -chen are always neuter (das): das Brötchen, das Mädchen.",
+      "fa": "اسم‌هایی که با پسوند تصغیر -chen تمام می‌شوند همیشه خنثی (das) هستند: das Brötchen, das Mädchen.",
+      "de": "Nomen mit der Verkleinerungsendung -chen sind immer sächlich (das): das Brötchen, das Mädchen.",
+      "simple": {
+        "en": "Words ending in -chen are always das.",
+        "fa": "کلمات ختم‌شده به -chen همیشه das هستند.",
+        "de": "Wörter auf -chen sind immer das."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich esse ein Brötchen zum Frühstück.",
+      "en": "I eat a bread roll for breakfast.",
+      "fa": "من برای صبحانه یک نان کوچک می‌خورم."
+    },
+    "category": "food",
+    "level": "A1",
+    "tags": [
+      "bakery"
+    ]
+  },
+  {
+    "id": "banane",
+    "word": "Banane",
+    "article": "die",
+    "plural": "Bananen",
+    "translations": {
+      "en": "banana",
+      "fa": "موز"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Nase.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Nase.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Nase.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Banane ist gelb.",
+      "en": "The banana is yellow.",
+      "fa": "موز زرد است."
+    },
+    "category": "food",
+    "level": "A1",
+    "tags": [
+      "fruit"
+    ]
+  },
+  {
+    "id": "tomate",
+    "word": "Tomate",
+    "article": "die",
+    "plural": "Tomaten",
+    "translations": {
+      "en": "tomato",
+      "fa": "گوجه‌فرنگی"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Nase.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Nase.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Nase.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich kaufe drei Tomaten.",
+      "en": "I am buying three tomatoes.",
+      "fa": "من سه گوجه‌فرنگی می‌خرم."
+    },
+    "category": "food",
+    "level": "A1",
+    "tags": [
+      "vegetable"
+    ]
+  },
+  {
+    "id": "brot",
+    "word": "Brot",
+    "article": "das",
+    "plural": "Brote",
+    "translations": {
+      "en": "bread",
+      "fa": "نان"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Brot).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Brot).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Brot).",
+      "simple": {
+        "en": "Just learn it: das Brot.",
+        "fa": "فقط حفظش کنید: das Brot.",
+        "de": "Einfach lernen: das Brot."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Brot ist frisch.",
+      "en": "The bread is fresh.",
+      "fa": "نان تازه است."
+    },
+    "category": "food",
+    "level": "A1",
+    "tags": [
+      "bakery"
+    ]
+  },
+  {
+    "id": "kaese",
+    "word": "Käse",
+    "article": "der",
+    "plural": "Käse",
+    "translations": {
+      "en": "cheese",
+      "fa": "پنیر"
+    },
+    "grammarRule": {
+      "en": "Exception: most nouns ending in -e are feminine, but Käse is masculine (der Käse). Learn it as an exception.",
+      "fa": "استثنا: بیشتر اسم‌های ختم‌شده به -e مؤنث‌اند، اما Käse مذکر است (der Käse). آن را به‌عنوان استثنا حفظ کنید.",
+      "de": "Ausnahme: Die meisten Nomen auf -e sind feminin, aber Käse ist maskulin (der Käse). Lerne es als Ausnahme.",
+      "simple": {
+        "en": "Ends in -e but it is der: der Käse.",
+        "fa": "به -e ختم می‌شود اما der است: der Käse.",
+        "de": "Endet auf -e, ist aber der: der Käse."
+      }
+    },
+    "ruleCategory": "exception",
+    "example": {
+      "de": "Der Käse schmeckt gut.",
+      "en": "The cheese tastes good.",
+      "fa": "پنیر خوشمزه است."
+    },
+    "category": "food",
+    "level": "A1",
+    "tags": [
+      "exception"
+    ]
+  },
+  {
+    "id": "getraenk",
+    "word": "Getränk",
+    "article": "das",
+    "plural": "Getränke",
+    "translations": {
+      "en": "drink",
+      "fa": "نوشیدنی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Getränk).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Getränk).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Getränk).",
+      "simple": {
+        "en": "Just learn it: das Getränk.",
+        "fa": "فقط حفظش کنید: das Getränk.",
+        "de": "Einfach lernen: das Getränk."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Getränk ist kalt.",
+      "en": "The drink is cold.",
+      "fa": "نوشیدنی سرد است."
+    },
+    "category": "food",
+    "level": "A1",
+    "tags": [
+      "drink"
+    ]
+  }
+]

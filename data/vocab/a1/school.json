@@ -1,0 +1,232 @@
+[
+  {
+    "id": "zeitung",
+    "word": "Zeitung",
+    "article": "die",
+    "plural": "Zeitungen",
+    "translations": {
+      "en": "newspaper",
+      "fa": "روزنامه"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ung are always feminine (die): die Zeitung, die Wohnung, die Übung.",
+      "fa": "اسم‌هایی که به -ung ختم می‌شوند همیشه مؤنث (die) هستند: die Zeitung, die Wohnung, die Übung.",
+      "de": "Nomen auf -ung sind immer feminin (die): die Zeitung, die Wohnung, die Übung.",
+      "simple": {
+        "en": "Words ending in -ung are always die.",
+        "fa": "کلمات ختم‌شده به -ung همیشه die هستند.",
+        "de": "Wörter auf -ung sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich lese die Zeitung.",
+      "en": "I am reading the newspaper.",
+      "fa": "من روزنامه می‌خوانم."
+    },
+    "category": "school",
+    "level": "A1"
+  },
+  {
+    "id": "universitaet",
+    "word": "Universität",
+    "article": "die",
+    "plural": "Universitäten",
+    "translations": {
+      "en": "university",
+      "fa": "دانشگاه"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ität (like -keit, -heit, -ung, -schaft) are always feminine (die): die Universität, die Nationalität.",
+      "fa": "اسم‌هایی که به -ität (مانند -keit، -heit، -ung، -schaft) ختم می‌شوند همیشه مؤنث (die) هستند: die Universität, die Nationalität.",
+      "de": "Nomen auf -ität (wie -keit, -heit, -ung, -schaft) sind immer feminin (die): die Universität, die Nationalität.",
+      "simple": {
+        "en": "Words ending in -ität are always die.",
+        "fa": "کلمات ختم‌شده به -ität همیشه die هستند.",
+        "de": "Wörter auf -ität sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich studiere an der Universität.",
+      "en": "I study at the university.",
+      "fa": "من در دانشگاه درس می‌خوانم."
+    },
+    "category": "school",
+    "level": "A1"
+  },
+  {
+    "id": "lehrerin",
+    "word": "Lehrerin",
+    "article": "die",
+    "plural": "Lehrerinnen",
+    "translations": {
+      "en": "teacher (female)",
+      "fa": "معلم (خانم)"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -in (female form of a profession) are always feminine (die): die Lehrerin, die Ärztin, die Studentin.",
+      "fa": "اسم‌هایی که به -in ختم می‌شوند (شکل مؤنث شغل‌ها) همیشه مؤنث (die) هستند: die Lehrerin, die Ärztin, die Studentin.",
+      "de": "Nomen auf -in (weibliche Berufsbezeichnungen) sind immer feminin (die): die Lehrerin, die Ärztin, die Studentin.",
+      "simple": {
+        "en": "Words ending in -in (female job) are always die.",
+        "fa": "کلمات ختم‌شده به -in (شغل مؤنث) همیشه die هستند.",
+        "de": "Wörter auf -in (weiblicher Beruf) sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Lehrerin erklärt die Grammatik.",
+      "en": "The teacher explains the grammar.",
+      "fa": "معلم دستور زبان را توضیح می‌دهد."
+    },
+    "category": "school",
+    "level": "A1"
+  },
+  {
+    "id": "schule",
+    "word": "Schule",
+    "article": "die",
+    "plural": "Schulen",
+    "translations": {
+      "en": "school",
+      "fa": "مدرسه"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Nase.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Nase.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Nase.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Schule beginnt um acht Uhr.",
+      "en": "School starts at eight o'clock.",
+      "fa": "مدرسه ساعت هشت شروع می‌شود."
+    },
+    "category": "school",
+    "level": "A1"
+  },
+  {
+    "id": "lehrer",
+    "word": "Lehrer",
+    "article": "der",
+    "plural": "Lehrer",
+    "translations": {
+      "en": "teacher (male)",
+      "fa": "معلم (آقا)"
+    },
+    "grammarRule": {
+      "en": "Male persons with a job or role ending in -er are masculine (der): der Lehrer, der Schüler, der Fahrer.",
+      "fa": "افراد مذکر با شغل یا نقشی که به -er ختم می‌شود مذکر (der) هستند: der Lehrer, der Schüler, der Fahrer.",
+      "de": "Männliche Personen mit Beruf oder Rolle auf -er sind maskulin (der): der Lehrer, der Schüler, der Fahrer.",
+      "simple": {
+        "en": "A man who does something (-er) is der.",
+        "fa": "مردی که کاری می‌کند (-er) der است.",
+        "de": "Ein Mann mit einer Rolle (-er) ist der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Lehrer erklärt die Aufgabe.",
+      "en": "The teacher explains the task.",
+      "fa": "معلم تمرین را توضیح می‌دهد."
+    },
+    "category": "school",
+    "level": "A1",
+    "tags": [
+      "person"
+    ]
+  },
+  {
+    "id": "schueler",
+    "word": "Schüler",
+    "article": "der",
+    "plural": "Schüler",
+    "translations": {
+      "en": "pupil (male)",
+      "fa": "دانش‌آموز (پسر)"
+    },
+    "grammarRule": {
+      "en": "Male persons with a job or role ending in -er are masculine (der): der Lehrer, der Schüler, der Fahrer.",
+      "fa": "افراد مذکر با شغل یا نقشی که به -er ختم می‌شود مذکر (der) هستند: der Lehrer, der Schüler, der Fahrer.",
+      "de": "Männliche Personen mit Beruf oder Rolle auf -er sind maskulin (der): der Lehrer, der Schüler, der Fahrer.",
+      "simple": {
+        "en": "A man who does something (-er) is der.",
+        "fa": "مردی که کاری می‌کند (-er) der است.",
+        "de": "Ein Mann mit einer Rolle (-er) ist der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Schüler macht die Hausaufgabe.",
+      "en": "The pupil is doing the homework.",
+      "fa": "دانش‌آموز تکلیف را انجام می‌دهد."
+    },
+    "category": "school",
+    "level": "A1",
+    "tags": [
+      "person"
+    ]
+  },
+  {
+    "id": "buch",
+    "word": "Buch",
+    "article": "das",
+    "plural": "Bücher",
+    "translations": {
+      "en": "book",
+      "fa": "کتاب"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Buch).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Buch).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Buch).",
+      "simple": {
+        "en": "Just learn it: das Buch.",
+        "fa": "فقط حفظش کنید: das Buch.",
+        "de": "Einfach lernen: das Buch."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Buch ist interessant.",
+      "en": "The book is interesting.",
+      "fa": "کتاب جالب است."
+    },
+    "category": "school",
+    "level": "A1"
+  },
+  {
+    "id": "heft",
+    "word": "Heft",
+    "article": "das",
+    "plural": "Hefte",
+    "translations": {
+      "en": "notebook",
+      "fa": "دفتر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Heft).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Heft).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Heft).",
+      "simple": {
+        "en": "Just learn it: das Heft.",
+        "fa": "فقط حفظش کنید: das Heft.",
+        "de": "Einfach lernen: das Heft."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Heft liegt auf dem Tisch.",
+      "en": "The notebook is on the table.",
+      "fa": "دفتر روی میز است."
+    },
+    "category": "school",
+    "level": "A1"
+  }
+]

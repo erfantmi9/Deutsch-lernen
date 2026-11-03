@@ -1,0 +1,244 @@
+[
+  {
+    "id": "auto",
+    "word": "Auto",
+    "article": "das",
+    "plural": "Autos",
+    "translations": {
+      "en": "car",
+      "fa": "ماشین"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Auto).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Auto).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Auto).",
+      "simple": {
+        "en": "Just learn it: das Auto.",
+        "fa": "فقط حفظش کنید: das Auto.",
+        "de": "Einfach lernen: das Auto."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Auto ist schnell.",
+      "en": "The car is fast.",
+      "fa": "ماشین سریع است."
+    },
+    "category": "travel",
+    "level": "A1",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "id": "zug",
+    "word": "Zug",
+    "article": "der",
+    "plural": "Züge",
+    "translations": {
+      "en": "train",
+      "fa": "قطار"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Zug).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Zug).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Zug).",
+      "simple": {
+        "en": "Just learn it: der Zug.",
+        "fa": "فقط حفظش کنید: der Zug.",
+        "de": "Einfach lernen: der Zug."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Zug kommt um acht Uhr.",
+      "en": "The train arrives at eight o'clock.",
+      "fa": "قطار ساعت هشت می‌رسد."
+    },
+    "category": "travel",
+    "level": "A1",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "id": "bus",
+    "word": "Bus",
+    "article": "der",
+    "plural": "Busse",
+    "translations": {
+      "en": "bus",
+      "fa": "اتوبوس"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Bus).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Bus).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Bus).",
+      "simple": {
+        "en": "Just learn it: der Bus.",
+        "fa": "فقط حفظش کنید: der Bus.",
+        "de": "Einfach lernen: der Bus."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Bus fährt nach Köln.",
+      "en": "The bus goes to Cologne.",
+      "fa": "اتوبوس به کلن می‌رود."
+    },
+    "category": "travel",
+    "level": "A1",
+    "tags": [
+      "transport"
+    ]
+  },
+  {
+    "id": "bahnhof",
+    "word": "Bahnhof",
+    "article": "der",
+    "plural": "Bahnhöfe",
+    "translations": {
+      "en": "train station",
+      "fa": "ایستگاه قطار"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: der Hof gives der Bahnhof.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: der Hof می‌شود der Bahnhof.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: der Hof ergibt der Bahnhof.",
+      "simple": {
+        "en": "Look at the last part: der Hof, so der Bahnhof.",
+        "fa": "به بخش آخر نگاه کنید: der Hof، پس der Bahnhof.",
+        "de": "Schau auf den letzten Teil: der Hof, also der Bahnhof."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Bahnhof ist weit.",
+      "en": "The train station is far.",
+      "fa": "ایستگاه قطار دور است."
+    },
+    "category": "travel",
+    "level": "A1",
+    "tags": [
+      "compound"
+    ]
+  },
+  {
+    "id": "flughafen",
+    "word": "Flughafen",
+    "article": "der",
+    "plural": "Flughäfen",
+    "translations": {
+      "en": "airport",
+      "fa": "فرودگاه"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: der Hafen gives der Flughafen.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: der Hafen می‌شود der Flughafen.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: der Hafen ergibt der Flughafen.",
+      "simple": {
+        "en": "Look at the last part: der Hafen, so der Flughafen.",
+        "fa": "به بخش آخر نگاه کنید: der Hafen، پس der Flughafen.",
+        "de": "Schau auf den letzten Teil: der Hafen, also der Flughafen."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Flughafen ist groß.",
+      "en": "The airport is big.",
+      "fa": "فرودگاه بزرگ است."
+    },
+    "category": "travel",
+    "level": "A1",
+    "tags": [
+      "compound"
+    ]
+  },
+  {
+    "id": "reise",
+    "word": "Reise",
+    "article": "die",
+    "plural": "Reisen",
+    "translations": {
+      "en": "trip",
+      "fa": "سفر"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Nase.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Nase.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Nase.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Reise war schön.",
+      "en": "The trip was lovely.",
+      "fa": "سفر زیبا بود."
+    },
+    "category": "travel",
+    "level": "A1"
+  },
+  {
+    "id": "fahrkarte",
+    "word": "Fahrkarte",
+    "article": "die",
+    "plural": "Fahrkarten",
+    "translations": {
+      "en": "ticket",
+      "fa": "بلیت"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: die Karte gives die Fahrkarte.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: die Karte می‌شود die Fahrkarte.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: die Karte ergibt die Fahrkarte.",
+      "simple": {
+        "en": "Look at the last part: die Karte, so die Fahrkarte.",
+        "fa": "به بخش آخر نگاه کنید: die Karte، پس die Fahrkarte.",
+        "de": "Schau auf den letzten Teil: die Karte, also die Fahrkarte."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Ich brauche eine Fahrkarte.",
+      "en": "I need a ticket.",
+      "fa": "من به یک بلیت نیاز دارم."
+    },
+    "category": "travel",
+    "level": "A1",
+    "tags": [
+      "compound"
+    ]
+  },
+  {
+    "id": "stadt",
+    "word": "Stadt",
+    "article": "die",
+    "plural": "Städte",
+    "translations": {
+      "en": "city",
+      "fa": "شهر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Stadt).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Stadt).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Stadt).",
+      "simple": {
+        "en": "Just learn it: die Stadt.",
+        "fa": "فقط حفظش کنید: die Stadt.",
+        "de": "Einfach lernen: die Stadt."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Stadt ist schön.",
+      "en": "The city is beautiful.",
+      "fa": "شهر زیباست."
+    },
+    "category": "travel",
+    "level": "A1"
+  }
+]

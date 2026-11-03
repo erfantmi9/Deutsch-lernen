@@ -1,0 +1,223 @@
+{
+  "Meta": {
+    "title": "Deutsch Lernen – Artikel-Arcade",
+    "description": "Lerne die Artikel deutscher Nomen (der, die, das) mit sofortigem Feedback und KI-Tutor."
+  },
+  "Nav": {
+    "home": "Start",
+    "mainNav": "Hauptnavigation",
+    "theme": "Design",
+    "switchToDark": "Zum dunklen Modus wechseln",
+    "switchToLight": "Zum hellen Modus wechseln",
+    "arcade": "Artikel-Arcade",
+    "language": "Sprache",
+    "verbs": "Verben",
+    "sentences": "Sätze"
+  },
+  "Home": {
+    "title": "Meistere der, die, das",
+    "subtitle": "Übe deutsche Artikel mit sofortigem Feedback, Grammatikregeln und einem KI-Tutor.",
+    "cta": "Arcade starten",
+    "progress": "Fortschritt: {percent} %",
+    "modules": {
+      "arcade": {
+        "title": "Artikel-Arcade",
+        "desc": "Schnelle Runden mit der, die, das und sofortigem Feedback."
+      },
+      "verbs": {
+        "title": "Verben",
+        "desc": "Konjugationstabellen ansehen und die Formen üben."
+      },
+      "sentences": {
+        "title": "Sätze",
+        "desc": "Ziehe die Wörter in die richtige Reihenfolge."
+      }
+    }
+  },
+  "Arcade": {
+    "title": "Artikel-Quiz",
+    "prompt": "Welcher Artikel passt zu diesem Nomen?",
+    "plural": "Plural",
+    "score": "Punkte",
+    "streak": "Serie",
+    "best": "Beste Serie",
+    "correct": "Richtig!",
+    "wrong": "Leider falsch. Richtig ist",
+    "next": "Weiter",
+    "reset": "Fortschritt zurücksetzen",
+    "loading": "Lädt…",
+    "shortcuts": "Tastatur: 1 = der, 2 = die, 3 = das",
+    "why": "Warum?",
+    "subtitle": "Wähle den richtigen Artikel und baue deine Serie aus."
+  },
+  "Articles": {
+    "der": "der",
+    "die": "die",
+    "das": "das"
+  },
+  "Category": {
+    "suffix": "Endungsregel",
+    "semantic": "Bedeutungsregel",
+    "exception": "Ausnahme",
+    "learn": "Keine feste Regel"
+  },
+  "Explain": {
+    "rule": "Regel",
+    "example": "Beispiel",
+    "simpler": "Einfacher erklären",
+    "detailed": "Volle Regel zeigen"
+  },
+  "Verbs": {
+    "title": "Verbkonjugation",
+    "subtitle": "Stöbere in den Verben, lerne ihre Formen und übe dann.",
+    "loading": "Lädt…",
+    "filterByType": "Nach Verbtyp filtern",
+    "filterAll": "Alle",
+    "types": {
+      "regular": "Regelmäßig",
+      "irregular": "Unregelmäßig",
+      "modal": "Modal",
+      "separable": "Trennbar",
+      "reflexive": "Reflexiv"
+    },
+    "tenses": "Zeiten",
+    "tabs": {
+      "praesens": "Präsens",
+      "perfekt": "Perfekt",
+      "praeteritum": "Präteritum"
+    },
+    "person": "Person",
+    "form": "Form",
+    "persons": {
+      "ich": "ich",
+      "du": "du (informell)",
+      "er_sie_es": "er / sie / es",
+      "wir": "wir",
+      "ihr": "ihr (Plural)",
+      "sie_Sie": "sie (Plural) / Sie (formell)"
+    },
+    "stemChange": "Stammwechsel",
+    "stemChangedForm": "Form mit Stammwechsel",
+    "separableInfo": "Trennbares Verb: Im Hauptsatz steht das Präfix „{prefix}“ am Satzende.",
+    "auxiliary": "Hilfsverb",
+    "partizip2": "Partizip II",
+    "note": "Grammatikhinweis",
+    "example": "Beispiel",
+    "practice": "Üben",
+    "practiceTitle": "Verbübung",
+    "backToList": "Zurück zu den Verben",
+    "mode": "Übungsmodus",
+    "modes": {
+      "present": "Präsens",
+      "perfekt": "Perfekt",
+      "mixed": "Gemischt"
+    },
+    "score": "Punkte",
+    "streak": "Serie",
+    "best": "Beste Serie",
+    "typeForm": "Gib die Verbform ein",
+    "typePartizip": "Gib das Partizip II ein",
+    "chooseAux": "Wähle das Hilfsverb",
+    "separableDrillHint": "Trennbares Verb: Gib auch das Präfix „{prefix}“ ein.",
+    "specialChars": "Sonderzeichen",
+    "insertChar": "{char} einfügen",
+    "check": "Prüfen",
+    "next": "Weiter",
+    "correct": "Richtig!",
+    "wrong": "Leider falsch. Richtig:",
+    "umlautHint": "Prüfe Umlaut / ß: Deine Antwort ist fast richtig.",
+    "auxHint": "Falsches Hilfsverb: Dieses Verb bildet das Perfekt mit {aux}.",
+    "reset": "Fortschritt zurücksetzen"
+  },
+  "Sentences": {
+    "loading": "Lädt…",
+    "title": "Sätze bauen",
+    "subtitle": "Bringe die Wörter in die richtige Reihenfolge. Per Tippen, Ziehen oder Tastatur.",
+    "filterByFocus": "Nach Grammatikschwerpunkt filtern",
+    "filterAll": "Alle",
+    "focus": {
+      "v2": "Verb an Position 2",
+      "question": "Fragen",
+      "modal-bracket": "Modalverben",
+      "separable-bracket": "Trennbare Verben",
+      "subordinate-weil": "weil-Sätze",
+      "negation-nicht-kein": "nicht / kein",
+      "time-manner-place": "Zeit – Art und Weise – Ort"
+    },
+    "solved": "Gelöst",
+    "streak": "Serie",
+    "best": "Beste Serie",
+    "lesson": "Mini-Lektion",
+    "lessons": {
+      "v2": {
+        "title": "Das Verb steht an zweiter Stelle (V2)",
+        "body": "Im deutschen Aussagesatz ist das konjugierte Verb immer das zweite Element. Das erste Element kann das Subjekt oder etwas anderes sein, zum Beispiel die Zeit. Steht etwas anderes vorn, rückt das Subjekt hinter das Verb."
+      },
+      "question": {
+        "title": "Fragen stellen",
+        "body": "In der W-Frage steht zuerst das Fragewort, dann das Verb, dann das Subjekt. In der Ja/Nein-Frage steht das Verb an erster Stelle."
+      },
+      "modal-bracket": {
+        "title": "Modalverben und die Satzklammer",
+        "body": "Das konjugierte Modalverb steht an Position 2. Das zweite Verb bleibt im Infinitiv und steht ganz am Ende. Zusammen bilden sie die Satzklammer um den Rest des Satzes."
+      },
+      "separable-bracket": {
+        "title": "Trennbare Verben und die Satzklammer",
+        "body": "Im Hauptsatz steht der Verbstamm an Position 2 und das abgetrennte Präfix ganz am Ende. Beide Teile bilden die Satzklammer."
+      },
+      "subordinate-weil": {
+        "title": "weil schickt das Verb ans Ende",
+        "body": "Nach weil folgt ein Nebensatz: Das konjugierte Verb steht am Ende dieses Satzes. Ein Komma trennt ihn vom Hauptsatz."
+      },
+      "negation-nicht-kein": {
+        "title": "Verneinung mit nicht und kein",
+        "body": "Mit kein verneinst du ein Nomen, das ein oder keinen Artikel hat. Mit nicht verneinst du ein Verb oder den ganzen Satz; es steht meist am Ende."
+      },
+      "time-manner-place": {
+        "title": "Zeit – Art und Weise – Ort",
+        "body": "Hat ein Satz mehrere Angaben, ist die übliche Reihenfolge: Zeit (wann), Art und Weise (wie), Ort (wo). Das Verb bleibt an Position 2."
+      }
+    },
+    "legend": "Satzteile",
+    "roles": {
+      "verb": "Verb",
+      "subject": "Subjekt",
+      "time": "Zeit",
+      "manner": "Art und Weise",
+      "place": "Ort",
+      "negation": "Verneinung",
+      "object": "Objekt",
+      "question": "Fragewort",
+      "connector": "Konjunktion",
+      "other": "Sonstiges"
+    },
+    "prompt": "Baue diesen Satz auf Deutsch:",
+    "promptDe": "Baue diesen Satz auf Deutsch (englische Übersetzung):",
+    "howTo": "Tippe auf ein Wort, um es in deinen Satz zu legen, und tippe erneut, um es zurückzulegen. Mit den Pfeiltasten änderst du die Reihenfolge.",
+    "answerLine": "Dein Satz",
+    "wordBank": "Wortspeicher",
+    "answerPlaceholder": "Wörter hier antippen oder hierher ziehen",
+    "chipAnswer": "{word}, Position {pos} von {total}. Enter entfernt das Wort, Pfeil links oder rechts verschiebt es.",
+    "chipBank": "{word}. Enter fügt das Wort deinem Satz hinzu.",
+    "wrongPosition": "falsche Position",
+    "rightPosition": "richtige Position",
+    "announceAdded": "{word} an Position {pos} von {total} hinzugefügt.",
+    "announceRemoved": "{word} zurück im Wortspeicher.",
+    "announceMoved": "{word} an Position {pos} von {total} verschoben.",
+    "announceReset": "Zurückgesetzt.",
+    "showParts": "Satzteile anzeigen",
+    "hideParts": "Satzteile ausblenden",
+    "check": "Prüfen",
+    "reset": "Zurücksetzen",
+    "next": "Weiter",
+    "skip": "Überspringen",
+    "correct": "Richtig!",
+    "wrongOrder": "Leider falsch. Einige Wörter stehen an der falschen Stelle.",
+    "incomplete": "Dein Satz ist noch nicht fertig.",
+    "wrongWords": "Wörter an falscher Position:",
+    "hint": "Tipp",
+    "showExplanation": "Erklärung anzeigen",
+    "hideExplanation": "Erklärung ausblenden",
+    "resetProgress": "Fortschritt zurücksetzen"
+  }
+}

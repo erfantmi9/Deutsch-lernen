@@ -1,0 +1,241 @@
+[
+  {
+    "id": "mann",
+    "word": "Mann",
+    "article": "der",
+    "plural": "Männer",
+    "translations": {
+      "en": "man",
+      "fa": "مرد"
+    },
+    "grammarRule": {
+      "en": "Male persons are usually masculine (der): der Mann, der Vater, der Bruder.",
+      "fa": "اسم‌های مربوط به افراد مذکر معمولاً مذکر (der) هستند: der Mann, der Vater, der Bruder.",
+      "de": "Männliche Personen sind meist maskulin (der): der Mann, der Vater, der Bruder.",
+      "simple": {
+        "en": "Men and boys are usually der.",
+        "fa": "مردها و پسرها معمولاً der هستند.",
+        "de": "Männer und Jungen sind meist der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Mann liest ein Buch.",
+      "en": "The man is reading a book.",
+      "fa": "مرد کتابی می‌خواند."
+    },
+    "category": "family",
+    "level": "A1"
+  },
+  {
+    "id": "frau",
+    "word": "Frau",
+    "article": "die",
+    "plural": "Frauen",
+    "translations": {
+      "en": "woman",
+      "fa": "زن"
+    },
+    "grammarRule": {
+      "en": "Female persons are usually feminine (die): die Frau, die Mutter, die Schwester.",
+      "fa": "اسم‌های مربوط به افراد مؤنث معمولاً مؤنث (die) هستند: die Frau, die Mutter, die Schwester.",
+      "de": "Weibliche Personen sind meist feminin (die): die Frau, die Mutter, die Schwester.",
+      "simple": {
+        "en": "Women and girls are usually die.",
+        "fa": "زن‌ها معمولاً die هستند.",
+        "de": "Frauen sind meist die."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Die Frau trinkt Kaffee.",
+      "en": "The woman is drinking coffee.",
+      "fa": "زن قهوه می‌نوشد."
+    },
+    "category": "family",
+    "level": "A1"
+  },
+  {
+    "id": "maedchen",
+    "word": "Mädchen",
+    "article": "das",
+    "plural": "Mädchen",
+    "translations": {
+      "en": "girl",
+      "fa": "دختر"
+    },
+    "grammarRule": {
+      "en": "Exception to natural gender: every noun ending in the diminutive suffix -chen (or -lein) is neuter (das). The suffix decides the article, not the real-life gender, so a girl is 'das Mädchen'.",
+      "fa": "استثنا نسبت به جنسیت طبیعی: هر اسمی که با پسوند تصغیر -chen (یا -lein) تمام شود خنثی (das) است. پسوند آرتیکل را تعیین می‌کند، نه جنسیت واقعی؛ برای همین «دختر» می‌شود das Mädchen.",
+      "de": "Ausnahme vom natürlichen Geschlecht: Alle Nomen mit der Verkleinerungsendung -chen (oder -lein) sind sächlich (das). Die Endung bestimmt den Artikel, nicht das natürliche Geschlecht – deshalb heißt es 'das Mädchen'.",
+      "simple": {
+        "en": "Words ending in -chen are always das, even for a girl. The ending wins over real gender.",
+        "fa": "کلماتی که به -chen ختم می‌شوند همیشه das هستند، حتی برای دختر. پسوند از جنسیت واقعی مهم‌تر است.",
+        "de": "Wörter auf -chen sind immer das, auch bei einem Mädchen. Die Endung gewinnt."
+      }
+    },
+    "ruleCategory": "exception",
+    "example": {
+      "de": "Das Mädchen spielt im Garten.",
+      "en": "The girl is playing in the garden.",
+      "fa": "دختر در باغ بازی می‌کند."
+    },
+    "category": "family",
+    "level": "A1",
+    "tags": [
+      "exception"
+    ]
+  },
+  {
+    "id": "junge",
+    "word": "Junge",
+    "article": "der",
+    "plural": "Jungen",
+    "translations": {
+      "en": "boy",
+      "fa": "پسر"
+    },
+    "grammarRule": {
+      "en": "Exception: nouns ending in -e are usually feminine (die Lampe), but male persons such as der Junge and der Kollege stay masculine (der).",
+      "fa": "استثنا: اسم‌هایی که به -e ختم می‌شوند معمولاً مؤنث (die) هستند (die Lampe)، اما اسم‌های مذکر انسانی مانند der Junge و der Kollege مذکر (der) می‌مانند.",
+      "de": "Ausnahme: Nomen auf -e sind meist feminin (die Lampe), aber männliche Personen wie der Junge und der Kollege bleiben maskulin (der).",
+      "simple": {
+        "en": "Words ending in -e are usually die, but a boy is der. Learn it as an exception.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند، اما پسر der است. آن را استثنا حفظ کنید.",
+        "de": "Wörter auf -e sind meist die, aber Junge ist der. Merke es als Ausnahme."
+      }
+    },
+    "ruleCategory": "exception",
+    "example": {
+      "de": "Der Junge spielt Fußball.",
+      "en": "The boy is playing football.",
+      "fa": "پسر فوتبال بازی می‌کند."
+    },
+    "category": "family",
+    "level": "A1",
+    "tags": [
+      "exception"
+    ]
+  },
+  {
+    "id": "kind",
+    "word": "Kind",
+    "article": "das",
+    "plural": "Kinder",
+    "translations": {
+      "en": "child",
+      "fa": "کودک"
+    },
+    "grammarRule": {
+      "en": "Young beings (children and baby animals) are usually neuter (das): das Kind, das Baby, das Kalb.",
+      "fa": "موجودات جوان (کودکان و بچه حیوانات) معمولاً خنثی (das) هستند: das Kind, das Baby, das Kalb.",
+      "de": "Junge Lebewesen (Kinder, Tierjunge) sind meist sächlich (das): das Kind, das Baby, das Kalb.",
+      "simple": {
+        "en": "Young beings (child, baby) are usually das.",
+        "fa": "موجودات جوان (کودک، نوزاد) معمولاً das هستند.",
+        "de": "Junge Wesen (Kind, Baby) sind meist das."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Das Kind schläft.",
+      "en": "The child is sleeping.",
+      "fa": "کودک خوابیده است."
+    },
+    "category": "family",
+    "level": "A1"
+  },
+  {
+    "id": "vater",
+    "word": "Vater",
+    "article": "der",
+    "plural": "Väter",
+    "translations": {
+      "en": "father",
+      "fa": "پدر"
+    },
+    "grammarRule": {
+      "en": "Male family members are masculine (der): der Vater, der Bruder, der Sohn.",
+      "fa": "اعضای مذکر خانواده مذکر (der) هستند: der Vater, der Bruder, der Sohn.",
+      "de": "Männliche Familienmitglieder sind maskulin (der): der Vater, der Bruder, der Sohn.",
+      "simple": {
+        "en": "Male family members are der.",
+        "fa": "اعضای مذکر خانواده der هستند.",
+        "de": "Männliche Familienmitglieder sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Vater kocht heute.",
+      "en": "The father is cooking today.",
+      "fa": "پدر امروز آشپزی می‌کند."
+    },
+    "category": "family",
+    "level": "A1",
+    "tags": [
+      "person"
+    ]
+  },
+  {
+    "id": "mutter",
+    "word": "Mutter",
+    "article": "die",
+    "plural": "Mütter",
+    "translations": {
+      "en": "mother",
+      "fa": "مادر"
+    },
+    "grammarRule": {
+      "en": "Female family members are feminine (die): die Mutter, die Schwester, die Tochter.",
+      "fa": "اعضای مؤنث خانواده مؤنث (die) هستند: die Mutter, die Schwester, die Tochter.",
+      "de": "Weibliche Familienmitglieder sind feminin (die): die Mutter, die Schwester, die Tochter.",
+      "simple": {
+        "en": "Female family members are die.",
+        "fa": "اعضای مؤنث خانواده die هستند.",
+        "de": "Weibliche Familienmitglieder sind die."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Die Mutter arbeitet im Büro.",
+      "en": "The mother works in an office.",
+      "fa": "مادر در اداره کار می‌کند."
+    },
+    "category": "family",
+    "level": "A1",
+    "tags": [
+      "person"
+    ]
+  },
+  {
+    "id": "bruder",
+    "word": "Bruder",
+    "article": "der",
+    "plural": "Brüder",
+    "translations": {
+      "en": "brother",
+      "fa": "برادر"
+    },
+    "grammarRule": {
+      "en": "Male family members are masculine (der): der Vater, der Bruder, der Sohn.",
+      "fa": "اعضای مذکر خانواده مذکر (der) هستند: der Vater, der Bruder, der Sohn.",
+      "de": "Männliche Familienmitglieder sind maskulin (der): der Vater, der Bruder, der Sohn.",
+      "simple": {
+        "en": "Male family members are der.",
+        "fa": "اعضای مذکر خانواده der هستند.",
+        "de": "Männliche Familienmitglieder sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Mein Bruder wohnt in Berlin.",
+      "en": "My brother lives in Berlin.",
+      "fa": "برادر من در برلین زندگی می‌کند."
+    },
+    "category": "family",
+    "level": "A1",
+    "tags": [
+      "person"
+    ]
+  }
+]

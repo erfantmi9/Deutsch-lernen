@@ -1,0 +1,229 @@
+[
+  {
+    "id": "kopf",
+    "word": "Kopf",
+    "article": "der",
+    "plural": "Köpfe",
+    "translations": {
+      "en": "head",
+      "fa": "سر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Kopf).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Kopf).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Kopf).",
+      "simple": {
+        "en": "Just learn it: der Kopf.",
+        "fa": "فقط حفظش کنید: der Kopf.",
+        "de": "Einfach lernen: der Kopf."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Kopf tut weh.",
+      "en": "The head hurts.",
+      "fa": "سر درد می‌کند."
+    },
+    "category": "body",
+    "level": "A1"
+  },
+  {
+    "id": "hand",
+    "word": "Hand",
+    "article": "die",
+    "plural": "Hände",
+    "translations": {
+      "en": "hand",
+      "fa": "دست"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Hand).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Hand).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Hand).",
+      "simple": {
+        "en": "Just learn it: die Hand.",
+        "fa": "فقط حفظش کنید: die Hand.",
+        "de": "Einfach lernen: die Hand."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Hand ist kalt.",
+      "en": "The hand is cold.",
+      "fa": "دست سرد است."
+    },
+    "category": "body",
+    "level": "A1"
+  },
+  {
+    "id": "arm",
+    "word": "Arm",
+    "article": "der",
+    "plural": "Arme",
+    "translations": {
+      "en": "arm",
+      "fa": "بازو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Arm).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Arm).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Arm).",
+      "simple": {
+        "en": "Just learn it: der Arm.",
+        "fa": "فقط حفظش کنید: der Arm.",
+        "de": "Einfach lernen: der Arm."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Arm tut weh.",
+      "en": "The arm hurts.",
+      "fa": "بازو درد می‌کند."
+    },
+    "category": "body",
+    "level": "A1"
+  },
+  {
+    "id": "bein",
+    "word": "Bein",
+    "article": "das",
+    "plural": "Beine",
+    "translations": {
+      "en": "leg",
+      "fa": "پا (ساق)"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Bein).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Bein).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Bein).",
+      "simple": {
+        "en": "Just learn it: das Bein.",
+        "fa": "فقط حفظش کنید: das Bein.",
+        "de": "Einfach lernen: das Bein."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Bein tut weh.",
+      "en": "The leg hurts.",
+      "fa": "پا درد می‌کند."
+    },
+    "category": "body",
+    "level": "A1"
+  },
+  {
+    "id": "auge",
+    "word": "Auge",
+    "article": "das",
+    "plural": "Augen",
+    "translations": {
+      "en": "eye",
+      "fa": "چشم"
+    },
+    "grammarRule": {
+      "en": "Exception: most nouns ending in -e are feminine, but Auge is neuter (das Auge), like das Ende.",
+      "fa": "استثنا: بیشتر اسم‌های ختم‌شده به -e مؤنث‌اند، اما Auge خنثی است (das Auge)، مانند das Ende.",
+      "de": "Ausnahme: Die meisten Nomen auf -e sind feminin, aber Auge ist sächlich (das Auge), wie das Ende.",
+      "simple": {
+        "en": "Ends in -e but it is das: das Auge.",
+        "fa": "به -e ختم می‌شود اما das است: das Auge.",
+        "de": "Endet auf -e, ist aber das: das Auge."
+      }
+    },
+    "ruleCategory": "exception",
+    "example": {
+      "de": "Das Auge ist blau.",
+      "en": "The eye is blue.",
+      "fa": "چشم آبی است."
+    },
+    "category": "body",
+    "level": "A1",
+    "tags": [
+      "exception"
+    ]
+  },
+  {
+    "id": "nase",
+    "word": "Nase",
+    "article": "die",
+    "plural": "Nasen",
+    "translations": {
+      "en": "nose",
+      "fa": "بینی"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Nase.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Nase.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Nase.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Nase ist klein.",
+      "en": "The nose is small.",
+      "fa": "بینی کوچک است."
+    },
+    "category": "body",
+    "level": "A1"
+  },
+  {
+    "id": "fuss",
+    "word": "Fuß",
+    "article": "der",
+    "plural": "Füße",
+    "translations": {
+      "en": "foot",
+      "fa": "کف پا"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Fuß).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Fuß).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Fuß).",
+      "simple": {
+        "en": "Just learn it: der Fuß.",
+        "fa": "فقط حفظش کنید: der Fuß.",
+        "de": "Einfach lernen: der Fuß."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Fuß tut weh.",
+      "en": "The foot hurts.",
+      "fa": "پا (کف پا) درد می‌کند."
+    },
+    "category": "body",
+    "level": "A1"
+  },
+  {
+    "id": "ohr",
+    "word": "Ohr",
+    "article": "das",
+    "plural": "Ohren",
+    "translations": {
+      "en": "ear",
+      "fa": "گوش"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Ohr).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Ohr).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Ohr).",
+      "simple": {
+        "en": "Just learn it: das Ohr.",
+        "fa": "فقط حفظش کنید: das Ohr.",
+        "de": "Einfach lernen: das Ohr."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Ohr ist kalt.",
+      "en": "The ear is cold.",
+      "fa": "گوش سرد است."
+    },
+    "category": "body",
+    "level": "A1"
+  }
+]

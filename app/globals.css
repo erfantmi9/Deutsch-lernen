@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Design tokens. Values are space-separated RGB channels so Tailwind can apply
+ * opacity (e.g. bg-primary/10). Components must only use the semantic names
+ * mapped in tailwind.config.ts, never raw palette colours.
+ */
+:root {
+  color-scheme: light;
+
+  --background: 248 250 253; /* #f8fafd */
+  --surface: 255 255 255; /* #ffffff */
+  --surface-2: 238 243 251; /* #eef3fb */
+  --border: 221 229 240; /* #dde5f0 */
+  --text: 31 41 55; /* #1f2937 */
+  --text-muted: 100 116 139; /* #64748b */
+
+  --primary: 26 115 232; /* #1a73e8 */
+  --primary-soft: 232 240 254; /* #e8f0fe */
+  --on-primary: 255 255 255;
+
+  /* Decorative only: illustrations and shapes, never text or controls. */
+  --accent-yellow: 251 188 4; /* #fbbc04 */
+  --accent-green: 52 168 83; /* #34a853 */
+  --accent-red: 234 67 53; /* #ea4335 */
+
+  /* Fixed semantic article colours (same in both themes). */
+  --der: 37 99 235; /* blue-600 */
+  --die: 220 38 38; /* red-600 */
+  --das: 22 163 74; /* green-600 */
+  --der-edge: 30 64 175; /* pressed-edge, blue-800 */
+  --die-edge: 153 27 27; /* red-800 */
+  --das-edge: 21 101 52; /* green-800 */
+
+  --on-article: 255 255 255;
+
+  /* Feedback tones (text + soft background). */
+  --success: 22 101 52;
+  --success-soft: 231 246 236;
+  --danger: 185 28 28;
+  --danger-soft: 253 236 234;
+  --warning: 146 64 14;
+  --warning-soft: 255 244 204;
+
+  /* Sentence parts: soft fill + edge. Text on them always uses --text. Labels are shown too. */
+  --role-verb: 254 243 199;
+  --role-verb-edge: 245 158 11;
+  --role-subject: 224 242 254;
+  --role-subject-edge: 14 165 233;
+  --role-time: 209 250 229;
+  --role-time-edge: 16 185 129;
+  --role-place: 255 228 230;
+  --role-place-edge: 244 63 94;
+  --role-object: 204 251 241;
+  --role-object-edge: 20 184 166;
+  --role-manner: 255 237 213;
+  --role-manner-edge: 249 115 22;
+  --role-negation: 236 252 203;
+  --role-negation-edge: 132 204 22;
+  --role-question: 219 234 254;
+  --role-question-edge: 59 130 246;
+  --role-connector: 231 229 228;
+  --role-connector-edge: 120 113 108;
+  --role-other: 241 245 249;
+  --role-other-edge: 148 163 184;
+
+  --shadow: 31 41 55;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --background: 15 23 32; /* #0f1720 */
+  --surface: 23 33 44; /* #17212c */
+  --surface-2: 31 43 56; /* #1f2b38 */
+  --border: 43 58 74; /* #2b3a4a */
+  --text: 232 238 245; /* #e8eef5 */
+  --text-muted: 148 163 184; /* #94a3b8 */
+
+  --primary: 138 180 248; /* #8ab4f8, lighter blue for AA on dark */
+  --primary-soft: 28 48 82;
+  --on-primary: 15 23 32;
+
+  --success: 134 239 172;
+  --success-soft: 26 51 38;
+  --danger: 252 165 165;
+  --danger-soft: 59 31 31;
+  --warning: 252 211 77;
+  --warning-soft: 58 47 18;
+
+  --role-verb: 58 47 18;
+  --role-subject: 18 48 63;
+  --role-time: 18 58 44;
+  --role-place: 63 26 34;
+  --role-object: 18 58 55;
+  --role-manner: 61 36 18;
+  --role-negation: 38 51 18;
+  --role-question: 23 44 79;
+  --role-connector: 42 40 38;
+  --role-other: 31 43 56;
+
+  --shadow: 0 0 0;
+}
+
+@layer base {
+  * {
+    border-color: rgb(var(--border));
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: rgb(var(--background));
+    color: rgb(var(--text));
+    min-height: 100vh;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 800;
+    letter-spacing: -0.01em;
+  }
+
+  :focus-visible {
+    outline: 3px solid rgb(var(--primary) / 0.55);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-3xl border border-border bg-surface shadow-soft;
+  }
+  .card-hero {
+    @apply rounded-4xl border border-border bg-surface shadow-lift;
+  }
+  .panel {
+    @apply rounded-3xl border border-border bg-surface-2 p-4;
+  }
+  .stat {
+    @apply rounded-3xl border border-border bg-surface p-3 text-center shadow-soft;
+  }
+  .eyebrow {
+    @apply text-xs font-extrabold uppercase tracking-wide text-text-muted;
+  }
+
+  /* Pill buttons, 44px minimum touch target. */
+  .btn {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-full px-6 py-2.5 font-extrabold transition duration-150 hover:-translate-y-0.5 active:translate-y-0 disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:translate-y-0;
+  }
+  .btn-primary {
+    @apply bg-primary text-on-primary shadow-soft hover:shadow-lift disabled:shadow-none;
+  }
+  .btn-secondary {
+    @apply border border-border bg-surface text-text shadow-soft hover:bg-surface-2;
+  }
+  .btn-ghost {
+    @apply inline-flex min-h-11 items-center justify-center rounded-full px-4 text-sm font-bold text-text-muted transition hover:bg-surface-2 hover:text-text;
+  }
+  .pill {
+    @apply inline-flex min-h-11 items-center rounded-full border border-border bg-surface px-4 text-sm font-bold text-text-muted transition hover:bg-surface-2 hover:text-text;
+  }
+  .pill[aria-pressed="true"],
+  .pill[aria-checked="true"],
+  .pill[aria-selected="true"] {
+    @apply border-primary bg-primary text-on-primary shadow-soft hover:bg-primary hover:text-on-primary;
+  }
+
+  /* Feedback panels. */
+  .feedback-success {
+    @apply rounded-3xl border border-success/40 bg-success-soft p-4 text-success;
+  }
+  .feedback-error {
+    @apply rounded-3xl border border-danger/40 bg-danger-soft p-4 text-danger;
+  }
+  .feedback-hint {
+    @apply rounded-2xl bg-warning-soft px-3 py-2 text-sm text-warning;
+  }
+
+  /* Chunky "candy" article buttons: text label + pressed bottom border. */
+  .candy {
+    @apply relative min-h-16 rounded-3xl border-b-[6px] px-4 py-4 text-3xl font-extrabold text-on-article transition duration-100 hover:-translate-y-0.5 active:translate-y-1 active:border-b-2 disabled:cursor-default disabled:hover:translate-y-0;
+  }
+  .candy-der {
+    @apply border-der-edge bg-der;
+  }
+  .candy-die {
+    @apply border-die-edge bg-die;
+  }
+  .candy-das {
+    @apply border-das-edge bg-das;
+  }
+}
+
+/* Respect reduced motion: no animation, no drag/reorder transitions. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+  [data-chip] {
+    transition: none !important;
+  }
+}
