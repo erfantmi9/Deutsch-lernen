@@ -528,8 +528,8 @@
     "answerLine": "جمله‌ی شما",
     "wordBank": "بانک کلمات",
     "answerPlaceholder": "کلمه‌ها را اینجا لمس یا بکشید",
-    "chipAnswer": "{word}، جایگاه {pos} از {total}. برای حذف Enter و برای جابه‌جایی کلید چپ یا راست را بزنید.",
-    "chipBank": "{word}. برای افزودن به جمله Enter را بزنید.",
+    "chipAnswer": "{word}، جایگاه {pos} از {total} در جملهٔ شما. Enter آن را حذف می‌کند و کلید چپ یا راست آن را جابه‌جا می‌کند.",
+    "chipBank": "{word}، در بانک واژه‌ها. Enter آن را به جملهٔ شما اضافه می‌کند.",
     "wrongPosition": "جایگاه نادرست",
     "rightPosition": "جایگاه درست",
     "announceAdded": "{word} در جایگاه {pos} از {total} اضافه شد.",
@@ -549,7 +549,8 @@
     "hint": "راهنما",
     "showExplanation": "نمایش توضیح",
     "hideExplanation": "پنهان کردن توضیح",
-    "resetProgress": "پاک کردن پیشرفت"
+    "resetProgress": "پاک کردن پیشرفت",
+    "detailsShort": "جزئیات"
   },
   "Vocabulary": {
     "title": "واژگان",

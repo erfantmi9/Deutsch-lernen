@@ -528,8 +528,8 @@
     "answerLine": "Dein Satz",
     "wordBank": "Wortspeicher",
     "answerPlaceholder": "Wörter hier antippen oder hierher ziehen",
-    "chipAnswer": "{word}, Position {pos} von {total}. Enter entfernt das Wort, Pfeil links oder rechts verschiebt es.",
-    "chipBank": "{word}. Enter fügt das Wort deinem Satz hinzu.",
+    "chipAnswer": "{word}, Position {pos} von {total} in deinem Satz. Enter entfernt das Wort, Pfeil links oder rechts verschiebt es.",
+    "chipBank": "{word}, in der Wortauswahl. Enter fügt das Wort deinem Satz hinzu.",
     "wrongPosition": "falsche Position",
     "rightPosition": "richtige Position",
     "announceAdded": "{word} an Position {pos} von {total} hinzugefügt.",
@@ -549,7 +549,8 @@
     "hint": "Tipp",
     "showExplanation": "Erklärung anzeigen",
     "hideExplanation": "Erklärung ausblenden",
-    "resetProgress": "Fortschritt zurücksetzen"
+    "resetProgress": "Fortschritt zurücksetzen",
+    "detailsShort": "Details"
   },
   "Vocabulary": {
     "title": "Wortschatz",

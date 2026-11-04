@@ -528,8 +528,8 @@
     "answerLine": "Your sentence",
     "wordBank": "Word bank",
     "answerPlaceholder": "Tap or drag words here",
-    "chipAnswer": "{word}, position {pos} of {total}. Press Enter to remove, left or right arrow to move.",
-    "chipBank": "{word}. Press Enter to add to your sentence.",
+    "chipAnswer": "{word}, position {pos} of {total} in your sentence. Enter removes it, left or right arrow moves it.",
+    "chipBank": "{word}, in the word bank. Enter adds it to your sentence.",
     "wrongPosition": "wrong position",
     "rightPosition": "right position",
     "announceAdded": "{word} added at position {pos} of {total}.",
@@ -549,7 +549,8 @@
     "hint": "Hint",
     "showExplanation": "Show explanation",
     "hideExplanation": "Hide explanation",
-    "resetProgress": "Reset progress"
+    "resetProgress": "Reset progress",
+    "detailsShort": "Details"
   },
   "Vocabulary": {
     "title": "Vocabulary",

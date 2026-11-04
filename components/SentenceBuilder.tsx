@@ -505,8 +505,21 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
             <button type="button" onClick={skip} disabled={solved} aria-label={t("skip")} title={t("skip")} className={ICON}>
               <span aria-hidden="true">⏭</span>
             </button>
-            <button type="button" onClick={() => setDetailsOpen(true)} disabled={!result} aria-haspopup="dialog" aria-label={t("details")} title={t("details")} className={ICON}>
+            {/* Icon only on phones (the bar has no room); a visible short label from sm up. */}
+            <button
+              type="button"
+              data-details
+              onClick={() => setDetailsOpen(true)}
+              disabled={!result}
+              aria-haspopup="dialog"
+              aria-label={t("details")}
+              title={t("details")}
+              className="btn-ghost inline-flex h-11 min-w-11 shrink-0 items-center justify-center gap-1 !px-0 text-xl disabled:opacity-40 sm:!px-3"
+            >
               <span aria-hidden="true">ⓘ</span>
+              <span aria-hidden="true" className="hidden text-sm font-bold sm:inline">
+                {t("detailsShort")}
+              </span>
             </button>
           </>
         }

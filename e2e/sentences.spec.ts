@@ -296,3 +296,41 @@ for (const locale of ["en", "fa"] as const) {
     expect(seen.size).toBe(EXERCISES.length);
   });
 }
+
+for (const locale of ["en", "fa"] as const) {
+  test(`chip names state where the word is and update when moved; Details is labelled (${locale})`, async ({ page }) => {
+    await seed(page);
+    await page.goto(`/${locale}/sentences`);
+    const ex = await current(page, locale);
+    const liveBefore = await page.evaluate(() => document.querySelectorAll("body [aria-live], body [role=status], body [role=alert]").length);
+
+    const bankName = await chips(bankZone(page)).first().getAttribute("aria-label");
+    expect(bankName).toMatch(locale === "en" ? /in the word bank/ : /بانک واژه/);
+
+    const [w1, w2] = [ex.tokens[0], ex.tokens[1]];
+    await place(page, w1);
+    await place(page, w2);
+    const answer = chips(answerZone(page));
+    const pos = (n: number) => (locale === "en" ? new RegExp(`position ${n} of 2 in your sentence`) : new RegExp(`جایگاه ${n} از 2`));
+    await expect(answer.nth(0)).toHaveAttribute("aria-label", new RegExp(`^${w1}`));
+    await expect(answer.nth(0)).toHaveAttribute("aria-label", pos(1));
+    await expect(answer.nth(1)).toHaveAttribute("aria-label", pos(2));
+
+    // Move w1 one to the right with the keyboard: its name now says position 2, focus stays on it.
+    await answer.nth(0).focus();
+    await page.keyboard.press("ArrowRight");
+    const moved = answer.filter({ has: page.locator(`span.text-lg:text-is("${w1}")`) });
+    await expect(moved).toHaveAttribute("aria-label", pos(2));
+    await expect(answer.filter({ has: page.locator(`span.text-lg:text-is("${w2}")`) })).toHaveAttribute("aria-label", pos(1));
+
+    // No extra live region was added for any of this.
+    expect(await page.evaluate(() => document.querySelectorAll("body [aria-live], body [role=status], body [role=alert]").length)).toBe(liveBefore);
+
+    const details = bar(page).locator("button[data-details]");
+    await expect(details).toHaveAttribute("aria-label", /.+/);
+    await expect(details).toHaveAttribute("title", /.+/);
+    const visibleLabel = details.locator("span.text-sm");
+    if (page.viewportSize()!.width >= 640) await expect(visibleLabel).toBeVisible();
+    else await expect(visibleLabel).toBeHidden();
+  });
+}
