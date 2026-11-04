@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { buildRolePlayChoices } from "@/lib/rolePlay";
 import { useDialogueStore } from "@/stores/dialogueStore";
@@ -74,9 +74,9 @@ export default function RolePlay({
   const visible = !round ? [] : done ? lines : lines.slice(0, picked ? current + 1 : current);
 
   // Keep the newest line visible above the sticky choices panel (or the bar once the panel is gone).
-  useLayoutEffect(() => {
+  const keepNewestVisible = useCallback(() => {
     const last = chatRef.current?.lastElementChild as HTMLElement | null;
-    if (!round || !last) return;
+    if (!last) return;
     const r = last.getBoundingClientRect();
     const headerBottom = document.querySelector("header")?.getBoundingClientRect().bottom ?? 0;
     const chromeTops = [...document.querySelectorAll("[data-bottom-chrome]")]
@@ -87,8 +87,28 @@ export default function RolePlay({
     if (r.bottom > limit) dy = r.bottom - limit;
     // Never push the line's top under the header (very tall line on a tiny screen: show its start).
     if (r.top - dy < headerBottom + 8) dy = r.top - headerBottom - 8;
-    if (dy !== 0) window.scrollBy({ top: dy, behavior: "auto" });
-  }, [visible.length, round]);
+    if (dy > 0) window.scrollBy({ top: dy, behavior: "instant" });
+  }, []);
+
+  useLayoutEffect(() => {
+    if (round) keepNewestVisible();
+  }, [visible.length, round, keepNewestVisible]);
+
+  // The bar grows when its status wraps (a long "the right reply is ..."), which lifts the panel a frame later.
+  useEffect(() => {
+    const barEl = document.querySelector("[data-action-button]")?.parentElement;
+    if (!round || !barEl) return;
+    let frame = 0;
+    const ro = new ResizeObserver(() => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(keepNewestVisible);
+    });
+    ro.observe(barEl);
+    return () => {
+      ro.disconnect();
+      cancelAnimationFrame(frame);
+    };
+  }, [round, keepNewestVisible]);
 
   useEffect(() => {
     const what = focusAfter.current;
