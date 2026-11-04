@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { ReviewCard, ReviewKind } from "@/lib/reviewCards";
@@ -12,6 +12,7 @@ import CardFront from "./CardFront";
 import SpeakButton from "./SpeakButton";
 import PageHeader from "./PageHeader";
 import ConfirmDialog from "./ui/ConfirmDialog";
+import FilterBar from "./ui/FilterBar";
 
 type Locale = "en" | "fa" | "de";
 
@@ -80,6 +81,15 @@ export default function VocabularyExplorer({ cards }: { cards: readonly ReviewCa
   const [message, setMessage] = useState<string | null>(null);
   const addCards = useSrsStore((s) => s.addCards);
   const deckIds = useSrsStore((s) => s.cards);
+  const searchInput = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLParagraphElement>(null);
+
+  // The add-all result is not a live region (the "Showing N" count is this page's only one). Focus moves to it
+  // instead, after the confirm dialog has returned focus to its trigger, so screen readers read it.
+  const showMessage = (text: string) => {
+    setMessage(text);
+    window.setTimeout(() => messageRef.current?.focus(), 50);
+  };
 
   // Search results link here with ?kind=<kind>&q=<word>.
   useEffect(() => {
@@ -117,7 +127,7 @@ export default function VocabularyExplorer({ cards }: { cards: readonly ReviewCa
 
   const addAll = () => {
     if (missing.length === 0) {
-      setMessage(t("allInDeck"));
+      showMessage(t("allInDeck"));
       return;
     }
     setAskAddAll(true);
@@ -125,38 +135,49 @@ export default function VocabularyExplorer({ cards }: { cards: readonly ReviewCa
   const confirmAddAll = () => {
     setAskAddAll(false);
     const added = addCards(missing.map((c) => c.id));
-    setMessage(t("addedAll", { count: added }));
+    showMessage(t("addedAll", { count: added }));
   };
 
+  const clearFilters = () => {
+    setKind("noun");
+    setGroup("all");
+    setQuery("");
+    setMessage(null);
+    searchInput.current?.focus();
+  };
+
+  const pillRow = "-mx-4 flex gap-2 overflow-x-auto px-4 pb-0.5 [scrollbar-width:none] [&>button]:shrink-0 [&>button]:whitespace-nowrap";
+
   return (
-    <div className="space-y-6">
+    <div className="space-y-4">
       <PageHeader title={t("title")} subtitle={t("subtitle")} />
 
-      <div role="group" aria-label={t("kindLabel")} className="flex flex-wrap gap-2">
-        {KINDS.map((k) => (
-          <button key={k} type="button" aria-pressed={kind === k} onClick={() => chooseKind(k)} className="pill">
-            {t(`kinds.${k}`)}
-          </button>
-        ))}
-      </div>
-
-      {groups && (
-        <div role="group" aria-label={t("groupLabel")} className="flex flex-wrap gap-2">
-          <button type="button" aria-pressed={group === "all"} onClick={() => setGroup("all")} className="pill">
-            {t("groupAll")}
-          </button>
-          {groups.map((g) => (
-            <button key={g} type="button" aria-pressed={group === g} onClick={() => setGroup(g)} className="pill">
-              {t(`groups.${kind}.${g}`)}
+      <FilterBar count={visible.length}>
+        <div role="group" aria-label={t("kindLabel")} className={pillRow}>
+          {KINDS.map((k) => (
+            <button key={k} type="button" aria-pressed={kind === k} onClick={() => chooseKind(k)} className="pill">
+              {t(`kinds.${k}`)}
             </button>
           ))}
         </div>
-      )}
 
-      <div className="flex flex-wrap items-center gap-3">
-        <label className="min-w-[14rem] flex-1">
+        {groups && (
+          <div role="group" aria-label={t("groupLabel")} className={pillRow}>
+            <button type="button" aria-pressed={group === "all"} onClick={() => setGroup("all")} className="pill">
+              {t("groupAll")}
+            </button>
+            {groups.map((g) => (
+              <button key={g} type="button" aria-pressed={group === g} onClick={() => setGroup(g)} className="pill">
+                {t(`groups.${kind}.${g}`)}
+              </button>
+            ))}
+          </div>
+        )}
+
+        <label className="block">
           <span className="sr-only">{t("searchLabel")}</span>
           <input
+            ref={searchInput}
             type="search"
             value={query}
             onChange={(e) => {
@@ -168,10 +189,20 @@ export default function VocabularyExplorer({ cards }: { cards: readonly ReviewCa
             className="min-h-11 w-full rounded-full border-2 border-border bg-surface px-4 py-2 text-text outline-none focus-visible:border-primary focus-visible:ring-4 focus-visible:ring-primary/30"
           />
         </label>
-        <p className="text-sm font-bold text-text-muted">{t("count", { count: visible.length })}</p>
+      </FilterBar>
+
+      <div className="flex flex-wrap items-center gap-3">
         <button type="button" onClick={addAll} disabled={visible.length === 0} aria-haspopup="dialog" className="btn btn-secondary">
           {t("addAll", { count: visible.length })}
         </button>
+        {message && (
+          <p ref={messageRef} tabIndex={-1} data-testid="add-all-result" className="feedback-hint flex-1 outline-none">
+            {message}{" "}
+            <Link href="/review" className="font-extrabold underline">
+              {t("reviewLink")}
+            </Link>
+          </p>
+        )}
       </div>
 
       <ConfirmDialog
@@ -184,19 +215,13 @@ export default function VocabularyExplorer({ cards }: { cards: readonly ReviewCa
         onConfirm={confirmAddAll}
       />
 
-      <div role="status" aria-live="polite" className="min-h-0">
-        {message && (
-          <p className="feedback-hint">
-            {message}{" "}
-            <Link href="/review" className="font-extrabold underline">
-              {t("reviewLink")}
-            </Link>
-          </p>
-        )}
-      </div>
-
       {visible.length === 0 ? (
-        <p className="card p-5 text-text-muted">{t("empty")}</p>
+        <div className="card space-y-3 p-5">
+          <p className="text-text-muted">{t("empty")}</p>
+          <button type="button" onClick={clearFilters} className="btn btn-secondary">
+            {tUi("clearFilters")}
+          </button>
+        </div>
       ) : (
         <ul className="grid gap-3 sm:grid-cols-2">
           {visible.map((c) => (
