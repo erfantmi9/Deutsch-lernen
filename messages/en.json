@@ -405,7 +405,9 @@
       "solved": "Correct in total",
       "streak": "Streak",
       "best": "Best streak",
-      "reset": "Reset progress"
+      "reset": "Reset progress",
+      "missingAnswer": "Type your answer first.",
+      "missingChoice": "Choose a time first."
     }
   },
   "Grammar": {

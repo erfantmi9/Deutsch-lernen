@@ -405,7 +405,9 @@
       "solved": "Richtig insgesamt",
       "streak": "Serie",
       "best": "Beste Serie",
-      "reset": "Fortschritt zurücksetzen"
+      "reset": "Fortschritt zurücksetzen",
+      "missingAnswer": "Gib zuerst deine Antwort ein.",
+      "missingChoice": "Wähle zuerst eine Uhrzeit."
     }
   },
   "Grammar": {
