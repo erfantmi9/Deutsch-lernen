@@ -19,6 +19,9 @@ import StickyActionBar from "./ui/StickyActionBar";
 import { useKeyboardInset } from "./ui/useKeyboardInset";
 import { useScrollIntoViewOnChange } from "./ui/useScrollIntoViewOnChange";
 
+/** A second activation of the bar button this soon after Next is the tail of a double click / double Enter. */
+const DOUBLE_ACTIVATION_MS = 400;
+
 const START_CLOCK: ClockTime = { hour: 12, minute: 0 };
 
 interface Outcome extends QuestionResult {
@@ -50,6 +53,9 @@ export default function NumbersDrill() {
   const formRef = useRef<HTMLFormElement>(null);
   // Synchronous guard (state is async): a double Enter / double click checks or advances exactly once.
   const doneRef = useRef(false);
+  // When Next was last pressed. "Set the clock" has Check enabled at once, so the second click of a double click on
+  // Next would otherwise check the fresh question before the learner touched it.
+  const advancedAt = useRef(0);
   const keyboard = useKeyboardInset();
   const feedbackRef = useScrollIntoViewOnChange<HTMLDivElement>(outcome, { enabled: outcome !== null, focus: false, block: "nearest" });
   const [askReset, setAskReset] = useState(false);
@@ -111,11 +117,13 @@ export default function NumbersDrill() {
 
   const advance = () => {
     if (!doneRef.current) return;
+    advancedAt.current = performance.now();
     newQuestion(kind);
   };
 
   const check = () => {
     if (!question || doneRef.current) return;
+    if (performance.now() - advancedAt.current < DOUBLE_ACTIVATION_MS) return;
     if (question.kind === "clock-set") finish(question, clock, formatClock(clock));
     else if (typed && input.trim().length > 0) finish(question, input);
   };

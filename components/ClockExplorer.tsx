@@ -1,12 +1,98 @@
 "use client";
 
-import { useId, useState } from "react";
-import { useSettledValue } from "./ui/useSettledValue";
-import type { ReactNode } from "react";
+import { useId, useRef, useState } from "react";
+import type { PointerEvent, ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import { colloquialVariants, formatClock, officialTime } from "@/lib/numbers";
 import type { ClockTime } from "@/types/numbers";
 import AnalogClock from "./AnalogClock";
+import { useSettledValue } from "./ui/useSettledValue";
+
+/** Movement (px) before a touch counts as a horizontal drag of the slider rather than a tap / start of a scroll. */
+const DRAG_SLOP = 6;
+
+/**
+ * A native range input (keyboard, screen readers and labels work as usual) whose pointer input is handled by its
+ * wrapper. Chromium moves a range thumb to the touch point on touchstart, so a vertical swipe that happens to start
+ * on a slider changed the value AND fought the page scroll. Here the wrapper is `touch-action: pan-y`: a vertical
+ * swipe belongs to the browser (we get pointercancel), only a horizontal drag sets the value. Mouse/pen work at once.
+ */
+function Slider({
+  id,
+  max,
+  value,
+  onValue,
+  disabled,
+}: {
+  id: string;
+  max: number;
+  value: number;
+  onValue: (v: number) => void;
+  disabled: boolean;
+}) {
+  const input = useRef<HTMLInputElement>(null);
+  const drag = useRef<{ id: number; x: number; y: number; active: boolean } | null>(null);
+
+  const valueAt = (clientX: number) => {
+    const el = input.current!;
+    const r = el.getBoundingClientRect();
+    let f = Math.min(1, Math.max(0, (clientX - r.left) / r.width));
+    if (getComputedStyle(el).direction === "rtl") f = 1 - f;
+    return Math.round(f * max);
+  };
+
+  const onPointerDown = (e: PointerEvent<HTMLDivElement>) => {
+    if (disabled || (e.pointerType === "mouse" && e.button !== 0)) return;
+    input.current?.focus({ preventScroll: true });
+    const active = e.pointerType !== "touch";
+    drag.current = { id: e.pointerId, x: e.clientX, y: e.clientY, active };
+    if (active) {
+      e.currentTarget.setPointerCapture(e.pointerId);
+      onValue(valueAt(e.clientX));
+    }
+  };
+  const onPointerMove = (e: PointerEvent<HTMLDivElement>) => {
+    const d = drag.current;
+    if (!d || d.id !== e.pointerId) return;
+    if (!d.active) {
+      const dx = Math.abs(e.clientX - d.x);
+      if (dx < DRAG_SLOP || dx < Math.abs(e.clientY - d.y)) return;
+      d.active = true;
+      e.currentTarget.setPointerCapture(e.pointerId);
+    }
+    onValue(valueAt(e.clientX));
+  };
+  const end = (e: PointerEvent<HTMLDivElement>) => {
+    const d = drag.current;
+    if (!d || d.id !== e.pointerId) return;
+    // A touch tap (no drag, no scroll) sets the value where it landed, like the native slider.
+    if (!d.active && e.type === "pointerup") onValue(valueAt(e.clientX));
+    drag.current = null;
+  };
+
+  return (
+    <div
+      className={"touch-pan-y " + (disabled ? "" : "cursor-pointer")}
+      onPointerDown={onPointerDown}
+      onPointerMove={onPointerMove}
+      onPointerUp={end}
+      onPointerCancel={end}
+    >
+      <input
+        ref={input}
+        id={id}
+        type="range"
+        min={0}
+        max={max}
+        step={1}
+        value={value}
+        onChange={(e) => onValue(Number(e.target.value))}
+        disabled={disabled}
+        className="pointer-events-none h-11 w-full accent-primary disabled:opacity-60"
+      />
+    </div>
+  );
+}
 
 /** Hour and minute sliders: the accessible way to set a clock (the pointer on the face is a bonus). */
 export function ClockSliders({
@@ -23,41 +109,20 @@ export function ClockSliders({
   const hourId = useId();
   const minuteId = useId();
   return (
-    // pan-y: a vertical swipe that starts on a slider scrolls the page; only a horizontal drag moves the thumb.
-    <div className="w-full touch-pan-y space-y-3">
+    <div className="w-full space-y-3">
       <div>
         <label htmlFor={hourId} className="mb-1 flex items-center justify-between text-sm font-bold text-text-muted">
           <span>{t("clock.hour")}</span>
           <span className="tabular-nums text-text">{time.hour}</span>
         </label>
-        <input
-          id={hourId}
-          type="range"
-          min={0}
-          max={23}
-          step={1}
-          value={time.hour}
-          onChange={(e) => onChange({ ...time, hour: Number(e.target.value) })}
-          disabled={disabled}
-          className="h-11 w-full touch-pan-y accent-primary disabled:opacity-60"
-        />
+        <Slider id={hourId} max={23} value={time.hour} onValue={(hour) => onChange({ ...time, hour })} disabled={disabled} />
       </div>
       <div>
         <label htmlFor={minuteId} className="mb-1 flex items-center justify-between text-sm font-bold text-text-muted">
           <span>{t("clock.minute")}</span>
           <span className="tabular-nums text-text">{time.minute}</span>
         </label>
-        <input
-          id={minuteId}
-          type="range"
-          min={0}
-          max={59}
-          step={1}
-          value={time.minute}
-          onChange={(e) => onChange({ ...time, minute: Number(e.target.value) })}
-          disabled={disabled}
-          className="h-11 w-full touch-pan-y accent-primary disabled:opacity-60"
-        />
+        <Slider id={minuteId} max={59} value={time.minute} onValue={(minute) => onChange({ ...time, minute })} disabled={disabled} />
       </div>
     </div>
   );
