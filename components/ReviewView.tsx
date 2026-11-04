@@ -276,7 +276,7 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
           </div>
 
           {/* Reserved: revealing the answer never moves the card or the page. */}
-          <div data-review-answer className="min-h-40 space-y-3 border-t border-border pt-5">
+          <div data-review-answer className="min-h-48 space-y-3 border-t border-border pt-5">
             {session.flipped ? (
               <>
                 <p className="eyebrow">{t("answer")}</p>
