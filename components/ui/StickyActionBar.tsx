@@ -27,6 +27,7 @@ export default function StickyActionBar({
   statusLive = true,
   secondary,
   toolbar,
+  trailing,
   ref,
 }: {
   label: ReactNode;
@@ -44,6 +45,8 @@ export default function StickyActionBar({
   secondary?: ReactNode;
   /** Optional compact controls shown in the row while the on-screen keyboard is open. */
   toolbar?: ReactNode;
+  /** Optional controls after the button (e.g. the Easy grade, so Again, Hard, Good, Easy keep their order). Never swap them in and out. */
+  trailing?: ReactNode;
   ref?: Ref<HTMLButtonElement>;
 }) {
   const keyboard = useKeyboardInset();
@@ -107,6 +110,7 @@ export default function StickyActionBar({
         >
           {label}
         </button>
+        {!withToolbar && trailing}
       </div>
     </div>
   );

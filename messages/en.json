@@ -706,7 +706,13 @@
     "reset": "Reset review deck",
     "resetConfirm": "Delete all review cards and history? This cannot be undone.",
     "resetCancel": "Keep my deck",
-    "resetDone": "Your review deck was reset."
+    "resetDone": "Your review deck was reset.",
+    "thinkFirst": "Say the meaning to yourself, then show the answer.",
+    "answerStatus": "Answer: {answer}",
+    "nextMore": "{count, plural, one {# more card is ready.} other {# more cards are ready.}}",
+    "nextDone": "Nothing else is due today. Add new words to keep going.",
+    "practiseMore": "Practise more",
+    "addWords": "Add new words"
   },
   "Progress": {
     "title": "Progress",
@@ -977,7 +983,13 @@
         "title": "Practice exam",
         "desc": "Finish a full practice exam."
       }
-    }
+    },
+    "dueTitle": "Review",
+    "dueText": "{count, plural, =0 {No cards due right now.} one {# card due today.} other {# cards due today.}}",
+    "dueEmpty": "Your review deck is empty.",
+    "dueButton": "Review now",
+    "loading": "Loading your progress…",
+    "heroNext": "Next: {step}"
   },
   "Search": {
     "title": "Search",

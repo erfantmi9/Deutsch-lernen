@@ -15,6 +15,8 @@ import SpeakButton from "./SpeakButton";
 import PageHeader from "./PageHeader";
 import Mascot from "./illustrations/Mascot";
 import ConfirmDialog from "./ui/ConfirmDialog";
+import FeedbackRegion from "./ui/FeedbackRegion";
+import StickyActionBar from "./ui/StickyActionBar";
 
 type Locale = "en" | "fa" | "de";
 type ImportMode = "merge" | "replace";
@@ -99,6 +101,12 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
   };
 
   const repeated = useRef<Set<string>>(new Set());
+  const statusRef = useRef<HTMLDivElement>(null);
+  const primaryRef = useRef<HTMLButtonElement>(null);
+  const summaryRef = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    if (summary) summaryRef.current?.focus();
+  }, [summary]);
 
   const answer = useCallback(
     (g: Grade) => {
@@ -185,13 +193,47 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
     const card = byId.get(session.queue[session.index]);
     if (!card) return null;
     const exampleTr = card.example?.[tr];
+    const progress = t("progress", { current: session.index + 1, total: session.queue.length });
+    const srsCard = cards[card.id] ?? { id: card.id, ease: 2.5, interval: 0, reps: 0, lapses: 0, due: today, added: today };
+    const intervalOf = (g: Grade) => t("nextIn", { days: previewInterval(srsCard, g, today) });
+    const gradeLabel = (g: Grade) => (
+      <span className="flex flex-col items-center leading-tight">
+        <span>
+          <span aria-hidden="true" className="me-1 text-xs opacity-70">
+            {GRADES.indexOf(g) + 1}
+          </span>
+          {t(`grades.${g}`)}
+        </span>
+        <span className="text-xs font-semibold opacity-80">{intervalOf(g)}</span>
+      </span>
+    );
+    // Again, Hard and Easy sit around the primary button (Show answer, then Good). They stay mounted, aria-disabled
+    // until the answer shows, so nothing appears or vanishes under the finger.
+    const gradeButton = (g: Grade) => (
+      <button
+        key={g}
+        type="button"
+        data-grade={g}
+        aria-disabled={!session.flipped}
+        aria-label={t("gradeAria", { grade: t(`grades.${g}`), interval: intervalOf(g) })}
+        onClick={() => {
+          if (!session.flipped) return;
+          answer(g);
+          primaryRef.current?.focus();
+        }}
+        className={
+          GRADE_STYLE[g] +
+          " min-w-0 flex-1 px-2 py-1 text-sm aria-disabled:cursor-not-allowed aria-disabled:opacity-40 aria-disabled:hover:translate-y-0"
+        }
+      >
+        {gradeLabel(g)}
+      </button>
+    );
     return (
       <div className="mx-auto max-w-xl space-y-5">
         <h1 className="sr-only">{t("title")}</h1>
         <div className="flex items-center justify-between gap-3">
-          <p className="text-sm font-bold text-text-muted" aria-live="polite">
-            {t("progress", { current: session.index + 1, total: session.queue.length })}
-          </p>
+          <p className="text-sm font-bold text-text-muted">{progress}</p>
           <button
             type="button"
             className="btn-ghost"
@@ -215,7 +257,7 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
         </div>
         <div
           role="progressbar"
-          aria-label={t("progress", { current: session.index + 1, total: session.queue.length })}
+          aria-label={progress}
           aria-valuemin={0}
           aria-valuemax={session.queue.length}
           aria-valuenow={session.index}
@@ -233,65 +275,51 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
             </div>
           </div>
 
-          {session.flipped ? (
-            <div className="space-y-3 border-t border-border pt-5" aria-live="polite">
-              <p className="eyebrow">{t("answer")}</p>
-              <p lang={tr} className="text-2xl font-extrabold">
-                {card.translations[tr]}
-              </p>
-              {card.detail && (
-                <p className="text-text-muted">
-                  <bdi dir="ltr" lang="de">
-                    {card.detail}
-                  </bdi>
+          {/* Reserved: revealing the answer never moves the card or the page. */}
+          <div data-review-answer className="min-h-40 space-y-3 border-t border-border pt-5">
+            {session.flipped ? (
+              <>
+                <p className="eyebrow">{t("answer")}</p>
+                <p lang={tr} className="text-2xl font-extrabold">
+                  {card.translations[tr]}
                 </p>
-              )}
-              {card.example && (
-                <p className="text-sm">
-                  <bdi dir="ltr" lang="de" className="font-semibold">
-                    {card.example.de}
-                  </bdi>
-                  {exampleTr && (
-                    <span lang={tr} className="block text-text-muted">
-                      {exampleTr}
-                    </span>
-                  )}
-                </p>
-              )}
-            </div>
-          ) : (
-            <button type="button" onClick={flip} className="btn btn-primary w-full py-3 text-lg">
-              {t("showAnswer")}
-            </button>
-          )}
+                {card.detail && (
+                  <p className="text-text-muted">
+                    <bdi dir="ltr" lang="de">
+                      {card.detail}
+                    </bdi>
+                  </p>
+                )}
+                {card.example && (
+                  <p className="text-sm">
+                    <bdi dir="ltr" lang="de" className="font-semibold">
+                      {card.example.de}
+                    </bdi>
+                    {exampleTr && (
+                      <span lang={tr} className="block text-text-muted">
+                        {exampleTr}
+                      </span>
+                    )}
+                  </p>
+                )}
+              </>
+            ) : (
+              <p className="pt-8 text-sm text-text-muted">{t("thinkFirst")}</p>
+            )}
+          </div>
         </section>
 
-        {session.flipped && (
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            {GRADES.map((g, i) => {
-              const days = previewInterval(cards[card.id] ?? { id: card.id, ease: 2.5, interval: 0, reps: 0, lapses: 0, due: today, added: today }, g, today);
-              const interval = t("nextIn", { days });
-              return (
-                <button
-                  key={g}
-                  type="button"
-                  onClick={() => answer(g)}
-                  aria-label={t("gradeAria", { grade: t(`grades.${g}`), interval })}
-                  className={GRADE_STYLE[g] + " flex-col gap-0 py-2"}
-                >
-                  <span>
-                    <span aria-hidden="true" className="me-1 text-xs opacity-70">
-                      {i + 1}
-                    </span>
-                    {t(`grades.${g}`)}
-                  </span>
-                  <span className="text-xs font-semibold opacity-80">{interval}</span>
-                </button>
-              );
-            })}
-          </div>
-        )}
-        <p className="text-center text-xs text-text-muted">{session.flipped ? t("againHint") : t("keyboardHint")}</p>
+        <p className="hidden text-center text-xs text-text-muted sm:block">{session.flipped ? t("againHint") : t("keyboardHint")}</p>
+
+        {/* The bar status is the page's single live region: the progress, then the answer once it is shown. */}
+        <StickyActionBar
+          ref={primaryRef}
+          label={session.flipped ? gradeLabel("good") : t("showAnswer")}
+          onAction={session.flipped ? () => answer("good") : flip}
+          status={session.flipped ? t("answerStatus", { answer: card.translations[tr] }) : progress}
+          secondary={GRADES.slice(0, 2).map(gradeButton)}
+          trailing={gradeButton("easy")}
+        />
       </div>
     );
   }
@@ -302,9 +330,11 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
     const percent = summary.answered === 0 ? 0 : Math.round((good / summary.answered) * 100);
     return (
       <div className="mx-auto max-w-xl space-y-5">
-        <section role="status" className="card-hero space-y-4 p-6 text-center sm:p-8">
+        <section aria-labelledby="summary-title" className="card-hero space-y-4 p-6 text-center sm:p-8">
           <Mascot mood={percent >= 60 ? "cheering" : "thinking"} size={120} className="mx-auto" />
-          <h1 className="text-3xl font-extrabold">{t("summaryTitle")}</h1>
+          <h1 id="summary-title" ref={summaryRef} tabIndex={-1} className="text-3xl font-extrabold outline-none">
+            {t("summaryTitle")}
+          </h1>
           <p>{t("summaryText", { count: summary.answered })}</p>
           <p className="text-lg font-extrabold text-primary">{t("remembered", { percent })}</p>
           <div className="grid grid-cols-4 gap-2">
@@ -312,9 +342,21 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
               <Stat key={g} label={t(`grades.${g}`)} value={summary.counts[g]} />
             ))}
           </div>
-          <button type="button" className="btn btn-primary" onClick={() => setSummary(null)}>
-            {t("backToOverview")}
-          </button>
+          <p className="font-bold">{playable.length > 0 ? t("nextMore", { count: playable.length }) : t("nextDone")}</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {playable.length > 0 ? (
+              <button type="button" data-summary-next className="btn btn-primary" onClick={start}>
+                {t("practiseMore")}
+              </button>
+            ) : (
+              <Link href="/vocabulary" data-summary-next className="btn btn-primary">
+                {t("addWords")}
+              </Link>
+            )}
+            <button type="button" className="btn btn-secondary" onClick={() => setSummary(null)}>
+              {t("backToOverview")}
+            </button>
+          </div>
         </section>
       </div>
     );
@@ -407,6 +449,10 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
             <input type="file" accept=".json,application/json" onChange={onImport} className="sr-only" />
           </label>
         </div>
+        {/* Import and reset results show right under the buttons (the page's single live region, height reserved). */}
+        <FeedbackRegion size="sm" className="!min-h-12" ref={statusRef}>
+          {message && <p className="feedback-hint">{message}</p>}
+        </FeedbackRegion>
         <fieldset className="space-y-1">
           <legend className="text-sm font-bold">{t("importMode")}</legend>
           <div className="flex flex-wrap gap-4">
@@ -437,10 +483,6 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
           }}
         />
       </section>
-
-      <div role="status" aria-live="polite">
-        {message && <p className="feedback-hint">{message}</p>}
-      </div>
     </div>
   );
 }

@@ -706,7 +706,13 @@
     "reset": "Wiederholungsstapel zurücksetzen",
     "resetConfirm": "Alle Karten und den Verlauf löschen? Das lässt sich nicht rückgängig machen.",
     "resetCancel": "Stapel behalten",
-    "resetDone": "Dein Wiederholungsstapel wurde zurückgesetzt."
+    "resetDone": "Dein Wiederholungsstapel wurde zurückgesetzt.",
+    "thinkFirst": "Sag dir die Bedeutung, dann zeig die Antwort.",
+    "answerStatus": "Antwort: {answer}",
+    "nextMore": "{count, plural, one {# weitere Karte ist bereit.} other {# weitere Karten sind bereit.}}",
+    "nextDone": "Heute ist nichts mehr fällig. Füge neue Wörter hinzu, um weiterzumachen.",
+    "practiseMore": "Weiter üben",
+    "addWords": "Neue Wörter hinzufügen"
   },
   "Progress": {
     "title": "Fortschritt",
@@ -977,7 +983,13 @@
         "title": "Probeprüfung",
         "desc": "Mache eine vollständige Probeprüfung."
       }
-    }
+    },
+    "dueTitle": "Wiederholen",
+    "dueText": "{count, plural, =0 {Gerade ist keine Karte fällig.} one {# Karte heute fällig.} other {# Karten heute fällig.}}",
+    "dueEmpty": "Dein Wiederholungsstapel ist leer.",
+    "dueButton": "Jetzt wiederholen",
+    "loading": "Dein Fortschritt wird geladen…",
+    "heroNext": "Weiter: {step}"
   },
   "Search": {
     "title": "Suche",
