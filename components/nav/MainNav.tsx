@@ -25,7 +25,8 @@ export default function MainNav() {
             className={pill(isActivePath(pathname, entry.item.href))}
           >
             <span className="[&>svg]:h-5 [&>svg]:w-5">{entry.item.icon}</span>
-            {t(entry.item.key)}
+            {/* Icon-only between lg and xl so the pill nav never overflows the header; the name stays for screen readers. */}
+            <span className="max-xl:sr-only">{t(entry.item.key)}</span>
           </Link>
         ) : (
           <NavMenu
@@ -37,7 +38,7 @@ export default function MainNav() {
             trigger={(active, open) => (
               <span className={pill(active)}>
                 <span className="[&>svg]:h-5 [&>svg]:w-5">{entry.icon}</span>
-                {t(entry.key)}
+                <span className="max-xl:sr-only">{t(entry.key)}</span>
                 <Chevron open={open} />
               </span>
             )}

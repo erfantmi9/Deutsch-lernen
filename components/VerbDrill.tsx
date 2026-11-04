@@ -15,9 +15,13 @@ import type { DrillMode, DrillQuestion } from "@/lib/verbDrill";
 import { perfektForms } from "@/lib/verbs";
 import type { VerbEntry } from "@/types/verb";
 import Mascot from "./illustrations/Mascot";
+import SpecialCharBar from "./SpecialCharBar";
+import ConfirmDialog from "./ui/ConfirmDialog";
+import FeedbackRegion from "./ui/FeedbackRegion";
+import StickyActionBar from "./ui/StickyActionBar";
+import { useScrollIntoViewOnChange } from "./ui/useScrollIntoViewOnChange";
 
 const MODES: readonly DrillMode[] = ["present", "perfekt", "mixed"];
-const SPECIAL_CHARS = ["ä", "ö", "ü", "ß"] as const;
 
 interface Result {
   correct: boolean;
@@ -43,7 +47,11 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
   const [input, setInput] = useState("");
   const [aux, setAux] = useState<"haben" | "sein" | null>(null);
   const [result, setResult] = useState<Result | null>(null);
+  const [confirmReset, setConfirmReset] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const actionRef = useRef<HTMLButtonElement>(null);
+  // Result appears directly under the question; keep it inside the viewport (above the sticky bar).
+  const feedbackRef = useScrollIntoViewOnChange<HTMLDivElement>(result, { enabled: result !== null, focus: false, block: "nearest" });
 
   const newQuestion = useCallback(
     (m: DrillMode, lastVerbId: string | null) => {
@@ -69,9 +77,11 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
     };
   }, [newQuestion]);
 
-  // Focus the input for every new question.
+  // Focus: input for every new question; the persistent action button once answered (so focus never drops).
   useEffect(() => {
-    if (question && !result) inputRef.current?.focus();
+    if (!question) return;
+    if (result) actionRef.current?.focus({ preventScroll: true });
+    else inputRef.current?.focus();
   }, [question, result]);
 
   const changeMode = (m: DrillMode) => {
@@ -94,22 +104,21 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
     });
   };
 
-  const submit = (e: FormEvent) => {
-    e.preventDefault();
+  const check = () => {
     if (!question || result) return;
     const { verb, person, kind } = question;
 
     let res: Result;
     if (kind === "present") {
       const { display, accepted } = presentAnswers(verb, person);
-      const check = checkAnswer(input, accepted);
-      res = { correct: check === "correct", umlautHint: check === "umlaut", auxWrong: false, expected: display };
+      const outcome = checkAnswer(input, accepted);
+      res = { correct: outcome === "correct", umlautHint: outcome === "umlaut", auxWrong: false, expected: display };
     } else {
-      const check = checkPerfekt(aux, input, verb);
+      const outcome = checkPerfekt(aux, input, verb);
       res = {
-        correct: check.correct,
-        umlautHint: check.participle === "umlaut",
-        auxWrong: !check.auxCorrect,
+        correct: outcome.correct,
+        umlautHint: outcome.participle === "umlaut",
+        auxWrong: !outcome.auxCorrect,
         expected: perfektForms(verb)[person],
       };
     }
@@ -129,10 +138,19 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
 
   const { verb, person, kind } = question;
   const translation = verb.translations[locale === "de" ? "en" : locale];
-  const canSubmit = input.trim().length > 0 && (kind === "present" || aux !== null);
+  const hasInput = input.trim().length > 0;
+  const canSubmit = hasInput && (kind === "present" || aux !== null);
+  // Why the primary action is disabled, spelled out.
+  const missing = [kind === "perfekt" && aux === null ? t("missingAux") : null, !hasInput ? t("missingAnswer") : null].filter(Boolean);
+
+  const onSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    if (result) next();
+    else if (canSubmit) check();
+  };
 
   return (
-    <section aria-labelledby="drill-title" className="mx-auto w-full max-w-xl space-y-5">
+    <section aria-labelledby="drill-title" className="mx-auto w-full max-w-xl space-y-4">
       <div className="flex items-center justify-between">
         <h2 id="drill-title" className="text-2xl font-extrabold">
           {t("practiceTitle")}
@@ -158,8 +176,8 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
         ))}
       </div>
 
-      {/* Scoreboard */}
-      <dl className="grid grid-cols-3 gap-3">
+      {/* Scoreboard: one compact row so the question and its feedback fit on a phone. */}
+      <dl className="flex items-center justify-between gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-sm shadow-soft">
         {(
           [
             [t("score"), score],
@@ -167,27 +185,25 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
             [t("best"), bestStreak],
           ] as const
         ).map(([label, value]) => (
-          <div key={label} className="stat">
+          <div key={label} className="flex items-baseline gap-1.5">
             <dt className="eyebrow">{label}</dt>
-            <dd className="text-2xl font-extrabold tabular-nums">{value}</dd>
+            <dd className="font-extrabold tabular-nums">{value}</dd>
           </div>
         ))}
       </dl>
 
-      <form onSubmit={submit} className="space-y-4" noValidate>
+      <form onSubmit={onSubmit} className="space-y-3" noValidate>
         {/* Prompt */}
-        <div className="card-hero p-6 text-center">
-          <p className="eyebrow mb-2">
-            {kind === "present" ? t("tabs.praesens") : t("tabs.perfekt")}
-          </p>
+        <div className="card-hero p-4 text-center">
+          <p className="eyebrow mb-1">{kind === "present" ? t("tabs.praesens") : t("tabs.perfekt")}</p>
           <p dir="ltr" lang="de" className="text-3xl font-extrabold">
             <span className="text-primary">{PRONOUN[person]}</span>
             {" · "}
             {verb.infinitive}
           </p>
-          <p className="mt-2 text-sm text-text-muted">{translation}</p>
+          <p className="mt-1 text-sm text-text-muted">{translation}</p>
           {kind === "present" && verb.separable && (
-            <p className="mt-3 rounded-2xl bg-role-verb px-3 py-2 text-xs">{t("separableDrillHint", { prefix: verb.separable.prefix })}</p>
+            <p className="mt-2 rounded-2xl bg-role-verb px-3 py-2 text-xs">{t("separableDrillHint", { prefix: verb.separable.prefix })}</p>
           )}
         </div>
 
@@ -202,7 +218,7 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
                 aria-checked={aux === a}
                 disabled={result !== null}
                 onClick={() => setAux(a)}
-                className="pill min-h-14 justify-center text-lg disabled:opacity-60"
+                className="pill min-h-12 justify-center text-lg disabled:opacity-60"
               >
                 <bdi dir="ltr" lang="de">
                   {a}
@@ -230,46 +246,22 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
             autoCorrect="off"
             autoCapitalize="none"
             spellCheck={false}
+            enterKeyHint="done"
             className="w-full rounded-full border-2 border-border bg-surface px-6 py-3 text-xl text-text shadow-soft outline-none placeholder:text-text-muted focus-visible:border-primary focus-visible:ring-4 focus-visible:ring-primary/30 disabled:opacity-60"
           />
         </div>
 
-        {/* Special characters */}
-        <div role="group" aria-label={t("specialChars")} className="flex flex-wrap items-center gap-2">
-          <span className="text-xs font-bold text-text-muted">{t("specialChars")}:</span>
-          {SPECIAL_CHARS.map((ch) => (
-            <button
-              key={ch}
-              type="button"
-              disabled={result !== null}
-              onClick={() => insertChar(ch)}
-              aria-label={t("insertChar", { char: ch })}
-              className="pill h-11 w-11 justify-center px-0 text-lg text-text disabled:opacity-50"
-            >
-              {ch}
-            </button>
-          ))}
-        </div>
-
-        {!result && (
-          <button
-            type="submit"
-            disabled={!canSubmit}
-            className="btn btn-primary w-full py-3 text-lg"
-          >
-            {t("check")}
-          </button>
-        )}
+        <SpecialCharBar disabled={result !== null} onInsert={insertChar} />
       </form>
 
-      {/* Feedback */}
-      <div aria-live="polite" role="status" className="min-h-[5rem]">
+      {/* Feedback: directly under the question, live region always mounted, height reserved. */}
+      <FeedbackRegion ref={feedbackRef}>
         {result && (
-          <div className={"space-y-3 " + (result.correct ? "feedback-success" : "feedback-error")}>
-            <div className="flex items-center gap-4">
+          <div className={"space-y-2 " + (result.correct ? "feedback-success" : "feedback-error")}>
+            <div className="flex items-center gap-3">
               <Mascot
                 mood={result.correct ? "cheering" : "sad"}
-                size={80}
+                size={56}
                 className={"shrink-0 " + (result.correct ? "motion-safe:animate-bounce-soft" : "")}
               />
               <p className="font-bold">
@@ -281,18 +273,43 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
             </div>
             {result.umlautHint && <p className="feedback-hint">⚠ {t("umlautHint")}</p>}
             {result.auxWrong && <p className="feedback-hint">⚠ {t("auxHint", { aux: verb.perfekt.auxiliary })}</p>}
-            <button type="button" onClick={next} autoFocus className="btn btn-primary">
-              {t("next")} <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
-            </button>
           </div>
         )}
-      </div>
+      </FeedbackRegion>
 
       <div className="text-end">
-        <button type="button" onClick={() => reset()} className="btn-ghost">
+        <button type="button" onClick={() => setConfirmReset(true)} className="btn-ghost">
           {t("reset")}
         </button>
       </div>
+
+      <StickyActionBar
+        ref={actionRef}
+        label={
+          result ? (
+            <>
+              {t("next")} <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
+            </>
+          ) : (
+            t("check")
+          )
+        }
+        disabled={!result && !canSubmit}
+        onAction={() => (result ? next() : check())}
+        status={result ? null : missing.join(" · ")}
+      />
+
+      <ConfirmDialog
+        open={confirmReset}
+        title={t("resetConfirmTitle")}
+        message={t("resetConfirmBody")}
+        confirmLabel={t("reset")}
+        onCancel={() => setConfirmReset(false)}
+        onConfirm={() => {
+          reset();
+          setConfirmReset(false);
+        }}
+      />
     </section>
   );
 }

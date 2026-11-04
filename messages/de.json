@@ -168,6 +168,10 @@
     "wrong": "Leider falsch. Richtig:",
     "umlautHint": "Prüfe Umlaut / ß: Deine Antwort ist fast richtig.",
     "auxHint": "Falsches Hilfsverb: Dieses Verb bildet das Perfekt mit {aux}.",
+    "missingAux": "Wähle haben oder sein",
+    "missingAnswer": "Gib deine Antwort ein",
+    "resetConfirmTitle": "Fortschritt zurücksetzen?",
+    "resetConfirmBody": "Punkte, Serie und beste Serie werden auf null gesetzt.",
     "reset": "Fortschritt zurücksetzen"
   },
   "Dialogues": {

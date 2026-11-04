@@ -230,7 +230,8 @@
 html[data-action-bar] {
   --bottom-chrome-h: calc(var(--action-bar-h) + var(--safe-bottom));
 }
-html[data-action-bar] .bottom-nav {
+/* NB: not ".bottom-nav": Tailwind would read that as bottom-{spacing nav}. */
+html[data-action-bar] .app-bottom-nav {
   display: none;
 }
 @media (min-width: 1024px) {

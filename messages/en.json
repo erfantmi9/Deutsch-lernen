@@ -168,6 +168,10 @@
     "wrong": "Not quite. Correct:",
     "umlautHint": "Check the umlaut / ß: your answer is almost right.",
     "auxHint": "Wrong auxiliary: this verb uses {aux}.",
+    "missingAux": "Choose haben or sein",
+    "missingAnswer": "Type your answer",
+    "resetConfirmTitle": "Reset progress?",
+    "resetConfirmBody": "Your score, streak and best streak will be set back to zero.",
     "reset": "Reset progress"
   },
   "Dialogues": {

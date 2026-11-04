@@ -47,6 +47,7 @@ export default function StickyActionBar({
         </p>
         <button
           ref={ref}
+          data-action-button
           type="button"
           aria-disabled={disabled}
           onClick={() => {
