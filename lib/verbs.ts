@@ -32,6 +32,11 @@ export function filterVerbs(filter: VerbFilter = {}): VerbEntry[] {
   );
 }
 
+/** Parses a `?type=` query value; anything that isn't a known verb type yields null. */
+export function parseVerbType(value: string | null): VerbType | null {
+  return getAvailableTypes().find((t) => t === value) ?? null;
+}
+
 /** Verb types that actually occur in the data, in a stable display order. */
 export function getAvailableTypes(): VerbType[] {
   const order: VerbType[] = ["regular", "irregular", "modal", "separable", "reflexive"];

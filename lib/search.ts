@@ -75,7 +75,7 @@ export function buildSearchIndex(
       kind: "verb",
       title: v.infinitive,
       sub: sub(v.translations.en, v.translations.fa, locale),
-      href: `/verbs?verb=${encodeURIComponent(v.id)}`,
+      href: `/verbs/${encodeURIComponent(v.id)}`,
       haystack: haystackOf([v.infinitive, v.perfekt.partizip2, ...Object.values(v.present), v.translations.en, v.translations.fa, v.example.de]),
     });
   }

@@ -55,8 +55,12 @@ const config: Config = {
         "4xl": "2rem",
       },
       spacing: {
-        // Bottom-nav height, reused for page padding.
-        nav: "4.5rem",
+        // Fixed-chrome geometry; values live in globals.css so there is a single source.
+        nav: "var(--bottom-nav-h)",
+        header: "var(--header-h)",
+        "action-bar": "var(--action-bar-h)",
+        "bottom-chrome": "var(--bottom-chrome-h)",
+        feedback: "var(--feedback-min-h)",
       },
       boxShadow: {
         soft: "0 1px 2px rgb(var(--shadow) / 0.05), 0 4px 12px rgb(var(--shadow) / 0.06)",

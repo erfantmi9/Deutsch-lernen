@@ -75,14 +75,14 @@ export default function ArticleQuiz() {
       const idx = ["1", "2", "3"].indexOf(e.key);
       if (idx !== -1 && !answered) {
         answer(ARTICLES[idx]);
-      } else if (e.key === "Enter" && wrong) {
+      } else if (e.key === "Enter" && (wrong || (correct && showWhy))) {
         e.preventDefault();
         next();
       }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [answered, wrong, answer, next]);
+  }, [answered, wrong, correct, showWhy, answer, next]);
 
   if (!ready || !currentWord) {
     return (
@@ -180,7 +180,15 @@ export default function ArticleQuiz() {
                 {t("why")}
               </button>
             )}
-            {showWhy && <GrammarExplainCard word={currentWord} />}
+            {showWhy && (
+              <>
+                <GrammarExplainCard word={currentWord} />
+                {/* Auto-advance is cancelled while the explanation is open, so a Next control must be visible. */}
+                <button type="button" onClick={() => next()} autoFocus className="btn btn-primary">
+                  {t("next")} <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
+                </button>
+              </>
+            )}
           </div>
         )}
         {wrong && (

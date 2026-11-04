@@ -8,7 +8,7 @@ import SearchLink from "./SearchLink";
 export default function Header() {
   return (
     <header className="sticky top-0 z-30 border-b border-border/60 bg-background/85 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-4xl items-center justify-between gap-3 px-4 py-3">
+      <div className="mx-auto flex w-full max-w-4xl items-center justify-between h-header gap-3 px-4">
         <Link href="/" className="rounded-full">
           <Logo />
         </Link>

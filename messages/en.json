@@ -98,6 +98,13 @@
     "simpler": "Explain simpler",
     "detailed": "Show full rule"
   },
+  "Ui": {
+    "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "showing": "{count, plural, one {Showing # item} other {Showing # items}}",
+    "clearFilters": "Clear filters"
+  },
   "Verbs": {
     "title": "Verb conjugation",
     "subtitle": "Browse the verbs, study their forms, then practice.",
@@ -137,6 +144,9 @@
     "practice": "Practice",
     "practiceTitle": "Verb practice",
     "backToList": "Back to verbs",
+    "previousVerb": "Previous verb",
+    "nextVerb": "Next verb",
+    "verbNavigation": "More verbs",
     "mode": "Practice mode",
     "modes": {
       "present": "Present",

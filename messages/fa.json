@@ -98,6 +98,13 @@
     "simpler": "ساده‌تر توضیح بده",
     "detailed": "نمایش قاعده کامل"
   },
+  "Ui": {
+    "close": "بستن",
+    "cancel": "انصراف",
+    "confirm": "تأیید",
+    "showing": "{count, plural, one {# مورد نمایش داده شد} other {# مورد نمایش داده شد}}",
+    "clearFilters": "پاک کردن فیلترها"
+  },
   "Verbs": {
     "title": "صرف فعل",
     "subtitle": "فعل‌ها را مرور کنید، صورت‌هایشان را بیاموزید و سپس تمرین کنید.",
@@ -137,6 +144,9 @@
     "practice": "تمرین",
     "practiceTitle": "تمرین فعل",
     "backToList": "بازگشت به فعل‌ها",
+    "previousVerb": "فعل قبلی",
+    "nextVerb": "فعل بعدی",
+    "verbNavigation": "فعل‌های بیشتر",
     "mode": "حالت تمرین",
     "modes": {
       "present": "حال",

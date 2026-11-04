@@ -324,7 +324,7 @@ describe("search", () => {
   it("links to pages that exist", () => {
     for (const item of items) {
       const path = item.href.split("?")[0];
-      const dynamic = /^\/(grammar|dialogues|reading)\/[^/]+$/.test(path);
+      const dynamic = /^\/(grammar|dialogues|reading|verbs)\/[^/]+$/.test(path);
       if (!dynamic) expect(existsSync(join(process.cwd(), "app", "[locale]", path, "page.tsx")), path).toBe(true);
     }
   });
@@ -347,8 +347,8 @@ describe("site and SEO", () => {
   });
 
   it("lists every page for the sitemap, and each static page exists", () => {
-    const paths = allPaths({ lessons: grammarLessons.map((l) => l.id), dialogues: dialogues.map((d) => d.id), reading: readingTexts.map((r) => r.id) });
-    expect(paths).toHaveLength(STATIC_PATHS.length + grammarLessons.length + dialogues.length + readingTexts.length);
+    const paths = allPaths({ lessons: grammarLessons.map((l) => l.id), dialogues: dialogues.map((d) => d.id), reading: readingTexts.map((r) => r.id), verbs: verbs.map((v) => v.id) });
+    expect(paths).toHaveLength(STATIC_PATHS.length + grammarLessons.length + dialogues.length + readingTexts.length + verbs.length);
     expect(new Set(paths).size).toBe(paths.length);
     for (const p of STATIC_PATHS) {
       const file = p === "" ? join("app", "[locale]", "page.tsx") : join("app", "[locale]", p, "page.tsx");

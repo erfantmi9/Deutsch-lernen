@@ -98,6 +98,13 @@
     "simpler": "Einfacher erklären",
     "detailed": "Volle Regel zeigen"
   },
+  "Ui": {
+    "close": "Schließen",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "showing": "{count, plural, one {# Eintrag angezeigt} other {# Einträge angezeigt}}",
+    "clearFilters": "Filter zurücksetzen"
+  },
   "Verbs": {
     "title": "Verbkonjugation",
     "subtitle": "Stöbere in den Verben, lerne ihre Formen und übe dann.",
@@ -137,6 +144,9 @@
     "practice": "Üben",
     "practiceTitle": "Verbübung",
     "backToList": "Zurück zu den Verben",
+    "previousVerb": "Vorheriges Verb",
+    "nextVerb": "Nächstes Verb",
+    "verbNavigation": "Weitere Verben",
     "mode": "Übungsmodus",
     "modes": {
       "present": "Präsens",

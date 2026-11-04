@@ -21,6 +21,9 @@ export default function SpecialCharBar({
           key={ch}
           type="button"
           disabled={disabled}
+          // Keep focus (and the mobile keyboard) in the text field the character is inserted into.
+          onPointerDown={(e) => e.preventDefault()}
+          onMouseDown={(e) => e.preventDefault()}
           onClick={() => onInsert(ch)}
           aria-label={t("insertChar", { char: ch })}
           className="pill h-11 w-11 justify-center px-0 text-lg text-text disabled:opacity-50"
