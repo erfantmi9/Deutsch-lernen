@@ -750,7 +750,9 @@
     "badgesTitle": "مدال‌ها",
     "badgesCount": "{earned} از {total} به‌دست آمده",
     "badgeEarned": "به‌دست آمده",
-    "badgeLocked": "قفل: {current} از {target}"
+    "badgeLocked": "قفل: {current} از {target}",
+    "dayCount": "{count, plural, =0 {در این روز تمرینی انجام نشده.} one {# پاسخ یا تمرین در این روز.} other {# پاسخ یا تمرین در این روز.}}",
+    "weakEmptyAction": "شروع تمرین"
   },
   "Badges": {
     "firstCorrect": {

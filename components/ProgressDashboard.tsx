@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import type { KeyboardEvent, ReactNode } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { activeDayCount, calendarWeeks, currentStreak, longestStreak } from "@/lib/activity";
@@ -24,6 +25,7 @@ import PageHeader from "./PageHeader";
 import ProgressRing from "./ProgressRing";
 import { BADGE_ART } from "./illustrations/badges/registry";
 import Mascot from "./illustrations/Mascot";
+import ResponsiveSheet from "./ui/ResponsiveSheet";
 
 type Locale = "en" | "fa" | "de";
 
@@ -48,6 +50,17 @@ const CELL: Record<ActivityLevel, string> = {
 const passedCount = (results: Readonly<Record<string, { best: number }>>): number =>
   Object.values(results).filter((r) => r.best >= PASS_MARK).length;
 
+/** Where to practise a weak item: verbs open their conjugation page, every other word its filtered vocabulary list. */
+export function practiceHref(card: Pick<ReviewCard, "id" | "kind" | "front">): string {
+  const sep = card.id.indexOf(":");
+  const id = sep >= 0 ? card.id.slice(sep + 1) : card.id;
+  if (card.kind === "verb") return `/verbs/${encodeURIComponent(id)}`;
+  return `/vocabulary?kind=${card.kind}&q=${encodeURIComponent(card.front)}`;
+}
+
+const CHIP =
+  "inline-flex min-h-11 items-center gap-1 rounded-full border border-border bg-surface-2 px-3 py-1 text-sm transition hover:border-primary hover:bg-primary-soft";
+
 const ratio = (done: number, total: number): number => (total <= 0 ? 0 : Math.min(1, done / total));
 
 export default function ProgressDashboard({ cards, totals }: { cards: readonly ReviewCard[]; totals: ProgressTotals }) {
@@ -56,6 +69,9 @@ export default function ProgressDashboard({ cards, totals }: { cards: readonly R
   const locale = useLocale() as Locale;
   const [ready, setReady] = useState(false);
   const [today, setToday] = useState("1970-01-01");
+  const [openDay, setOpenDay] = useState<{ key: string; count: number } | null>(null);
+  const [focusIndex, setFocusIndex] = useState<number | null>(null);
+  const cellRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   const days = useActivityStore((s) => s.days);
   // Selectors return primitives or stored references only (a fresh object each time would re-render forever).
@@ -140,6 +156,39 @@ export default function ProgressDashboard({ cards, totals }: { cards: readonly R
 
   const tr = locale === "de" ? "en" : locale;
 
+  const cells = weeks.flat();
+  // Cells after today are not buttons; the buttons are the prefix of `cells` up to today.
+  let lastPast = 0;
+  cells.forEach((c, i) => {
+    if (!c.isFuture) lastPast = i;
+  });
+  const rovingIndex = focusIndex ?? lastPast;
+  const formatDay = (key: string) =>
+    new Intl.DateTimeFormat(locale, { weekday: "long", day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(
+      new Date(`${key}T00:00:00Z`),
+    );
+  // Roving tabindex: one Tab stop for the whole calendar; arrows move by day (up/down) and week (left/right).
+  const onCalendarKey = (e: KeyboardEvent<HTMLDivElement>) => {
+    const steps: Record<string, number> = { ArrowDown: 1, ArrowUp: -1, ArrowRight: 7, ArrowLeft: -7 };
+    const step = steps[e.key];
+    if (step === undefined && e.key !== "Home" && e.key !== "End") return;
+    e.preventDefault();
+    const next = e.key === "Home" ? 0 : e.key === "End" ? lastPast : Math.min(lastPast, Math.max(0, rovingIndex + step));
+    setFocusIndex(next);
+    cellRefs.current[next]?.focus();
+  };
+
+  const chip = (card: ReviewCard, extra: ReactNode) => (
+    <li key={card.id}>
+      <Link href={practiceHref(card)} className={CHIP}>
+        <bdi dir="ltr" lang="de" className="font-extrabold">
+          {card.front}
+        </bdi>{" "}
+        {extra}
+      </Link>
+    </li>
+  );
+
   return (
     <div className="space-y-6">
       <PageHeader
@@ -164,19 +213,38 @@ export default function ProgressDashboard({ cards, totals }: { cards: readonly R
 
         <div className="space-y-2">
           <p className="eyebrow">{t("calendarTitle")}</p>
-          <div role="img" aria-label={t("calendarAria")} className="grid grid-flow-col grid-rows-7 gap-1 sm:gap-1.5" dir="ltr">
-            {weeks.flat().map((cell) => (
-              <span
-                key={cell.key}
-                title={t("cellLabel", { date: cell.key, count: cell.count })}
-                className={
-                  "aspect-square w-full rounded-md " +
-                  CELL[ready ? cell.level : 0] +
-                  (cell.isToday ? " ring-2 ring-text" : "") +
-                  (cell.isFuture ? " opacity-30" : "")
-                }
-              />
-            ))}
+          <div
+            role="group"
+            aria-label={t("calendarAria")}
+            onKeyDown={onCalendarKey}
+            className="grid grid-flow-col grid-rows-7 gap-1 sm:gap-1.5"
+            dir="ltr"
+          >
+            {cells.map((cell, i) => {
+              const cls =
+                "aspect-square w-full rounded-md " +
+                CELL[ready ? cell.level : 0] +
+                (cell.isToday ? " ring-2 ring-text" : "") +
+                (cell.isFuture ? " opacity-30" : "");
+              if (cell.isFuture) return <span key={cell.key} aria-hidden="true" className={cls} />;
+              const count = ready ? cell.count : 0;
+              return (
+                <button
+                  key={cell.key}
+                  ref={(el) => {
+                    cellRefs.current[i] = el;
+                  }}
+                  type="button"
+                  data-day={cell.key}
+                  tabIndex={i === rovingIndex ? 0 : -1}
+                  aria-label={t("cellLabel", { date: formatDay(cell.key), count })}
+                  title={t("cellLabel", { date: cell.key, count })}
+                  onFocus={() => setFocusIndex(i)}
+                  onClick={() => setOpenDay({ key: cell.key, count })}
+                  className={cls + " outline-none focus-visible:ring-4 focus-visible:ring-primary/50"}
+                />
+              );
+            })}
           </div>
           <div className="flex items-center justify-end gap-1 text-xs text-text-muted" aria-hidden="true">
             <span>{t("legendLess")}</span>
@@ -211,23 +279,26 @@ export default function ProgressDashboard({ cards, totals }: { cards: readonly R
           {t("weakTitle")}
         </h2>
         {!ready || noWeak ? (
-          <p className="text-text-muted">{t("weakEmpty")}</p>
+          <div className="space-y-3">
+            <p className="text-text-muted">{t("weakEmpty")}</p>
+            <Link href="/arcade" className="btn btn-secondary" data-testid="weak-empty-next">
+              {t("weakEmptyAction")}
+            </Link>
+          </div>
         ) : (
           <div className="space-y-5">
             {weakArticles.length > 0 && (
               <div className="space-y-2">
                 <h3 className="font-bold">{t("weakArticles")}</h3>
                 <ul className="flex flex-wrap gap-2">
-                  {weakArticles.map((c) => (
-                    <li key={c.id} className="rounded-full border border-border bg-surface-2 px-3 py-1 text-sm">
-                      <bdi dir="ltr" lang="de" className="font-extrabold">
-                        {c.front}
-                      </bdi>{" "}
+                  {weakArticles.map((c) =>
+                    chip(
+                      c,
                       <span lang={tr} className="text-text-muted">
                         {c.translations[tr]}
-                      </span>
-                    </li>
-                  ))}
+                      </span>,
+                    ),
+                  )}
                 </ul>
                 <Link href="/arcade" className="btn btn-secondary">
                   {t("practiceArticles")}
@@ -238,16 +309,14 @@ export default function ProgressDashboard({ cards, totals }: { cards: readonly R
               <div className="space-y-2">
                 <h3 className="font-bold">{t("weakVerbs")}</h3>
                 <ul className="flex flex-wrap gap-2">
-                  {weakVerbs.map((c) => (
-                    <li key={c.id} className="rounded-full border border-border bg-surface-2 px-3 py-1 text-sm">
-                      <bdi dir="ltr" lang="de" className="font-extrabold">
-                        {c.front}
-                      </bdi>{" "}
+                  {weakVerbs.map((c) =>
+                    chip(
+                      c,
                       <span lang={tr} className="text-text-muted">
                         {c.translations[tr]}
-                      </span>
-                    </li>
-                  ))}
+                      </span>,
+                    ),
+                  )}
                 </ul>
                 <Link href="/verbs" className="btn btn-secondary">
                   {t("practiceVerbs")}
@@ -258,14 +327,7 @@ export default function ProgressDashboard({ cards, totals }: { cards: readonly R
               <div className="space-y-2">
                 <h3 className="font-bold">{t("weakCards")}</h3>
                 <ul className="flex flex-wrap gap-2">
-                  {weakCards.map(({ card, lapses }) => (
-                    <li key={card.id} className="rounded-full border border-border bg-surface-2 px-3 py-1 text-sm">
-                      <bdi dir="ltr" lang="de" className="font-extrabold">
-                        {card.front}
-                      </bdi>{" "}
-                      <span className="text-text-muted">{t("lapses", { count: lapses })}</span>
-                    </li>
-                  ))}
+                  {weakCards.map(({ card, lapses }) => chip(card, <span className="text-text-muted">{t("lapses", { count: lapses })}</span>))}
                 </ul>
                 <Link href="/review" className="btn btn-secondary">
                   {t("practiceReview")}
@@ -302,6 +364,14 @@ export default function ProgressDashboard({ cards, totals }: { cards: readonly R
           })}
         </ul>
       </section>
+
+      <ResponsiveSheet open={openDay !== null} onClose={() => setOpenDay(null)} title={openDay ? formatDay(openDay.key) : ""} variant="dialog">
+        {openDay && (
+          <p className="text-lg" data-testid="day-count">
+            {t("dayCount", { count: openDay.count })}
+          </p>
+        )}
+      </ResponsiveSheet>
     </div>
   );
 }

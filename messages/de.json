@@ -750,7 +750,9 @@
     "badgesTitle": "Abzeichen",
     "badgesCount": "{earned} von {total} erreicht",
     "badgeEarned": "Erreicht",
-    "badgeLocked": "Gesperrt: {current} von {target}"
+    "badgeLocked": "Gesperrt: {current} von {target}",
+    "dayCount": "{count, plural, =0 {An diesem Tag nicht geübt.} one {# Antwort oder Übung an diesem Tag.} other {# Antworten oder Übungen an diesem Tag.}}",
+    "weakEmptyAction": "Jetzt üben"
   },
   "Badges": {
     "firstCorrect": {

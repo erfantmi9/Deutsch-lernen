@@ -750,7 +750,9 @@
     "badgesTitle": "Badges",
     "badgesCount": "{earned} of {total} earned",
     "badgeEarned": "Earned",
-    "badgeLocked": "Locked: {current} of {target}"
+    "badgeLocked": "Locked: {current} of {target}",
+    "dayCount": "{count, plural, =0 {No practice on this day.} one {# answer or exercise on this day.} other {# answers or exercises on this day.}}",
+    "weakEmptyAction": "Start practising"
   },
   "Badges": {
     "firstCorrect": {
