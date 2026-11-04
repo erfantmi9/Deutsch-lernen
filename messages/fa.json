@@ -471,7 +471,8 @@
     "summaryScore": "از {total} پرسش، {correct} تا را درست پاسخ دادی.",
     "lessonCompleted": "درس کامل شد! همه‌ی تمرین‌ها را حل کردی.",
     "practiceAgain": "تمرین دوباره",
-    "reset": "پاک کردن پیشرفت گرامر"
+    "reset": "پاک کردن پیشرفت گرامر",
+    "jumpToPractice": "رفتن به تمرین"
   },
   "Sentences": {
     "loading": "در حال بارگذاری…",

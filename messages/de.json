@@ -471,7 +471,8 @@
     "summaryScore": "Du hast {correct} von {total} richtig beantwortet.",
     "lessonCompleted": "Lektion abgeschlossen! Du hast alle Übungen gelöst.",
     "practiceAgain": "Noch einmal üben",
-    "reset": "Grammatikfortschritt zurücksetzen"
+    "reset": "Grammatikfortschritt zurücksetzen",
+    "jumpToPractice": "Zur Übung"
   },
   "Sentences": {
     "loading": "Lädt…",

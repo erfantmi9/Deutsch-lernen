@@ -471,7 +471,8 @@
     "summaryScore": "You answered {correct} of {total} correctly.",
     "lessonCompleted": "Lesson completed! You solved every exercise.",
     "practiceAgain": "Practice again",
-    "reset": "Reset grammar progress"
+    "reset": "Reset grammar progress",
+    "jumpToPractice": "Jump to practice"
   },
   "Sentences": {
     "loading": "Loading…",

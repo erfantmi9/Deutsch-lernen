@@ -57,6 +57,16 @@ export default function LessonView({
   const t = useTranslations("Grammar");
   const locale = useLocale() as Locale;
 
+  // Scroll the practice section into view (html scroll-padding keeps it clear of the sticky header) and move focus there,
+  // so keyboard and screen-reader users land on it too.
+  const jumpToPractice = () => {
+    const el = document.getElementById("practice");
+    if (!el) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    el.focus({ preventScroll: true });
+  };
+
   return (
     <div className="space-y-8">
       <Link href="/grammar" className="btn-ghost">
@@ -66,6 +76,11 @@ export default function LessonView({
       <PageHeader
         title={lesson.title[locale]}
         subtitle={lesson.summary[locale]}
+        actions={
+          <button type="button" className="btn btn-secondary" data-practice-jump onClick={jumpToPractice}>
+            {t("jumpToPractice")} <span aria-hidden="true">↓</span>
+          </button>
+        }
         illustration={
           <div className="mx-auto w-20 sm:w-28">
             <GrammarTopicIcon topic={lesson.topic} size="100%" />
@@ -103,7 +118,7 @@ export default function LessonView({
         </Link>
       )}
 
-      <section id="practice" aria-labelledby={`${lesson.id}-practice`} className="scroll-target space-y-4">
+      <section id="practice" tabIndex={-1} aria-labelledby={`${lesson.id}-practice`} className="scroll-target space-y-4">
         <div>
           <h2 id={`${lesson.id}-practice`} className="text-2xl font-extrabold">
             {t("practiceTitle")}
