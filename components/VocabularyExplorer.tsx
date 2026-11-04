@@ -11,6 +11,7 @@ import AddToReviewButton from "./AddToReviewButton";
 import CardFront from "./CardFront";
 import SpeakButton from "./SpeakButton";
 import PageHeader from "./PageHeader";
+import ConfirmDialog from "./ui/ConfirmDialog";
 
 type Locale = "en" | "fa" | "de";
 
@@ -68,6 +69,8 @@ const normalise = (s: string): string => s.toLowerCase().normalize("NFC");
 
 export default function VocabularyExplorer({ cards }: { cards: readonly ReviewCard[] }) {
   const t = useTranslations("Vocabulary");
+  const tUi = useTranslations("Ui");
+  const [askAddAll, setAskAddAll] = useState(false);
   const locale = useLocale() as Locale;
   const tr = locale === "de" ? "en" : locale;
 
@@ -117,6 +120,10 @@ export default function VocabularyExplorer({ cards }: { cards: readonly ReviewCa
       setMessage(t("allInDeck"));
       return;
     }
+    setAskAddAll(true);
+  };
+  const confirmAddAll = () => {
+    setAskAddAll(false);
     const added = addCards(missing.map((c) => c.id));
     setMessage(t("addedAll", { count: added }));
   };
@@ -162,10 +169,20 @@ export default function VocabularyExplorer({ cards }: { cards: readonly ReviewCa
           />
         </label>
         <p className="text-sm font-bold text-text-muted">{t("count", { count: visible.length })}</p>
-        <button type="button" onClick={addAll} disabled={visible.length === 0} className="btn btn-secondary">
+        <button type="button" onClick={addAll} disabled={visible.length === 0} aria-haspopup="dialog" className="btn btn-secondary">
           {t("addAll", { count: visible.length })}
         </button>
       </div>
+
+      <ConfirmDialog
+        open={askAddAll}
+        title={tUi("addAllTitle", { count: missing.length })}
+        message={tUi("addAllMessage")}
+        confirmLabel={tUi("addAllAction")}
+        tone="primary"
+        onCancel={() => setAskAddAll(false)}
+        onConfirm={confirmAddAll}
+      />
 
       <div role="status" aria-live="polite" className="min-h-0">
         {message && (

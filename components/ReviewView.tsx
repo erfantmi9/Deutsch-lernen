@@ -14,6 +14,7 @@ import CardFront from "./CardFront";
 import SpeakButton from "./SpeakButton";
 import PageHeader from "./PageHeader";
 import Mascot from "./illustrations/Mascot";
+import ConfirmDialog from "./ui/ConfirmDialog";
 
 type Locale = "en" | "fa" | "de";
 type ImportMode = "merge" | "replace";
@@ -47,6 +48,8 @@ function Stat({ label, value }: { label: string; value: number }) {
 
 export default function ReviewView({ cards: catalog }: { cards: readonly ReviewCard[] }) {
   const t = useTranslations("Review");
+  const tUi = useTranslations("Ui");
+  const [askLeave, setAskLeave] = useState(false);
   const locale = useLocale() as Locale;
   const tr = locale === "de" ? "en" : locale;
 
@@ -189,9 +192,26 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
           <p className="text-sm font-bold text-text-muted" aria-live="polite">
             {t("progress", { current: session.index + 1, total: session.queue.length })}
           </p>
-          <button type="button" className="btn-ghost" onClick={() => setSession(null)}>
+          <button
+            type="button"
+            className="btn-ghost"
+            aria-haspopup={session.index > 0 ? "dialog" : undefined}
+            onClick={() => (session.index > 0 ? setAskLeave(true) : setSession(null))}
+          >
             {t("backToOverview")}
           </button>
+          <ConfirmDialog
+            open={askLeave}
+            title={tUi("leaveTitle")}
+            message={tUi("leaveMessage", { done: session.index, total: session.queue.length })}
+            confirmLabel={tUi("leaveAction")}
+            tone="primary"
+            onCancel={() => setAskLeave(false)}
+            onConfirm={() => {
+              setAskLeave(false);
+              setSession(null);
+            }}
+          />
         </div>
         <div
           role="progressbar"
@@ -399,32 +419,23 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
           </div>
         </fieldset>
 
-        {!confirmReset ? (
-          <button type="button" onClick={() => setConfirmReset(true)} disabled={deckEmpty} className="btn-ghost">
-            {t("reset")}
-          </button>
-        ) : (
-          <div role="alertdialog" aria-label={t("reset")} className="feedback-error space-y-3">
-            <p className="font-bold">{t("resetConfirm")}</p>
-            <div className="flex flex-wrap gap-3">
-              <button
-                type="button"
-                className="btn border border-danger bg-danger text-on-primary"
-                onClick={() => {
-                  reset();
-                  repeated.current = new Set();
-                  setConfirmReset(false);
-                  setMessage(t("resetDone"));
-                }}
-              >
-                {t("reset")}
-              </button>
-              <button type="button" className="btn btn-secondary" onClick={() => setConfirmReset(false)}>
-                {t("resetCancel")}
-              </button>
-            </div>
-          </div>
-        )}
+        <button type="button" onClick={() => setConfirmReset(true)} disabled={deckEmpty} aria-haspopup="dialog" className="btn-ghost">
+          {t("reset")}
+        </button>
+        <ConfirmDialog
+          open={confirmReset}
+          title={tUi("resetTitle")}
+          message={t("resetConfirm")}
+          confirmLabel={tUi("resetAction")}
+          cancelLabel={t("resetCancel")}
+          onCancel={() => setConfirmReset(false)}
+          onConfirm={() => {
+            reset();
+            repeated.current = new Set();
+            setConfirmReset(false);
+            setMessage(t("resetDone"));
+          }}
+        />
       </section>
 
       <div role="status" aria-live="polite">

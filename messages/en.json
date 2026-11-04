@@ -109,7 +109,22 @@
     "cancel": "Cancel",
     "confirm": "Confirm",
     "showing": "{count, plural, one {Showing # item} other {Showing # items}}",
-    "clearFilters": "Clear filters"
+    "clearFilters": "Clear filters",
+    "resetTitle": "Reset your progress?",
+    "resetMessage": "This deletes your saved progress in {area}. It cannot be undone.",
+    "resetAction": "Reset",
+    "restartTitle": "Start a new round?",
+    "restartMessage": "Your current round ({done} answered) will be lost.",
+    "discardTitle": "Switch exercise type?",
+    "discardMessage": "Your unchecked answer for this question will be lost.",
+    "switchAction": "Switch",
+    "addAllTitle": "Add {count, plural, one {# card} other {# cards}} to your review?",
+    "addAllMessage": "They go into your review deck and will come up for practice. You can remove them one by one later.",
+    "addAllAction": "Add all",
+    "leaveTitle": "Leave this session?",
+    "leaveMessage": "You have done {done} of {total}. Cards you already graded are saved; the rest stay due.",
+    "leaveAction": "Back to overview",
+    "restartAction": "New round"
   },
   "Verbs": {
     "title": "Verb conjugation",

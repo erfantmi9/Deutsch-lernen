@@ -13,6 +13,7 @@ import AnalogClock from "./AnalogClock";
 import { ClockSliders } from "./ClockExplorer";
 import Mascot from "./illustrations/Mascot";
 import SpecialCharBar from "./SpecialCharBar";
+import ConfirmDialog from "./ui/ConfirmDialog";
 
 const START_CLOCK: ClockTime = { hour: 12, minute: 0 };
 
@@ -24,6 +25,7 @@ interface Outcome extends QuestionResult {
 /** Drills for every number topic: words, digits, prices, dates, reading and setting the clock. */
 export default function NumbersDrill() {
   const t = useTranslations("Numbers");
+  const tUi = useTranslations("Ui");
   const inputId = useId();
 
   const kind = useNumbersStore((s) => s.kind);
@@ -40,6 +42,9 @@ export default function NumbersDrill() {
   const [clock, setClock] = useState<ClockTime>(START_CLOCK);
   const [outcome, setOutcome] = useState<Outcome | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const [askReset, setAskReset] = useState(false);
+  // A kind pill pressed while an unchecked answer is in progress: confirmed before that answer is thrown away.
+  const [pendingKind, setPendingKind] = useState<NumberDrillKind | null>(null);
 
   const newQuestion = useCallback((k: NumberDrillKind) => {
     setQuestion(makeQuestion(k));
@@ -67,9 +72,14 @@ export default function NumbersDrill() {
     if (typed && !outcome) inputRef.current?.focus();
   }, [typed, outcome, question]);
 
-  const changeKind = (k: NumberDrillKind) => {
+  const applyKind = (k: NumberDrillKind) => {
     setKind(k);
     newQuestion(k);
+  };
+  const inProgress = !outcome && (input.trim() !== "" || clock.hour !== START_CLOCK.hour || clock.minute !== START_CLOCK.minute);
+  const changeKind = (k: NumberDrillKind) => {
+    if (inProgress) setPendingKind(k);
+    else applyKind(k);
   };
 
   const finish = (q: NumberQuestion, response: string | ClockTime, given?: string) => {
@@ -296,9 +306,31 @@ export default function NumbersDrill() {
       </div>
 
       <div className="text-end">
-        <button type="button" onClick={() => reset()} className="btn-ghost">
+        <button type="button" onClick={() => setAskReset(true)} aria-haspopup="dialog" className="btn-ghost">
           {t("practice.reset")}
         </button>
+        <ConfirmDialog
+          open={askReset}
+          title={tUi("resetTitle")}
+          message={tUi("resetMessage", { area: t("tabs.practice") })}
+          confirmLabel={tUi("resetAction")}
+          onCancel={() => setAskReset(false)}
+          onConfirm={() => {
+            reset();
+            setAskReset(false);
+          }}
+        />
+        <ConfirmDialog
+          open={pendingKind !== null}
+          title={tUi("discardTitle")}
+          message={tUi("discardMessage")}
+          confirmLabel={tUi("switchAction")}
+          onCancel={() => setPendingKind(null)}
+          onConfirm={() => {
+            if (pendingKind) applyKind(pendingKind);
+            setPendingKind(null);
+          }}
+        />
       </div>
     </section>
   );

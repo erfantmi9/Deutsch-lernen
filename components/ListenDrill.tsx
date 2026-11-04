@@ -10,6 +10,7 @@ import { recordActivity } from "@/stores/activityStore";
 import PageHeader from "./PageHeader";
 import SpeakButton from "./SpeakButton";
 import Mascot from "./illustrations/Mascot";
+import ConfirmDialog from "./ui/ConfirmDialog";
 import { useSpeechSupport } from "./useSpeech";
 import { RATE, speak } from "@/lib/speech";
 
@@ -23,6 +24,7 @@ function makeQuestion(kind: ListenKind, cards: readonly ReviewCard[], locale: "e
 
 export default function ListenDrill({ cards }: { cards: readonly ReviewCard[] }) {
   const t = useTranslations("Listen");
+  const tUi = useTranslations("Ui");
   const locale = useLocale() as Locale;
   const tr = locale === "de" ? "en" : locale;
   const { supported, germanVoice } = useSpeechSupport();
@@ -34,6 +36,8 @@ export default function ListenDrill({ cards }: { cards: readonly ReviewCard[] })
   const [round, setRound] = useState({ asked: 0, correct: 0 });
 
   const [showResult, setShowResult] = useState(false);
+  // A kind pill pressed mid-round: confirmed before the round is thrown away.
+  const [pendingKind, setPendingKind] = useState<ListenKind | null>(null);
   const lastDone = round.asked >= ROUND_LENGTH && given !== null;
   const finished = showResult;
   const answered = given !== null;
@@ -85,11 +89,22 @@ export default function ListenDrill({ cards }: { cards: readonly ReviewCard[] })
 
       <div role="group" aria-label={t("kindLabel")} className="flex flex-wrap gap-2">
         {(["word", "number"] as const).map((k) => (
-          <button key={k} type="button" aria-pressed={kind === k} onClick={() => start(k)} disabled={!supported} className="pill">
+          <button key={k} type="button" aria-pressed={kind === k} onClick={() => (round.asked > 0 && !showResult ? setPendingKind(k) : start(k))} disabled={!supported} className="pill">
             {t(`kinds.${k}`)}
           </button>
         ))}
       </div>
+      <ConfirmDialog
+        open={pendingKind !== null}
+        title={tUi("restartTitle")}
+        message={tUi("restartMessage", { done: round.asked })}
+        confirmLabel={tUi("restartAction")}
+        onCancel={() => setPendingKind(null)}
+        onConfirm={() => {
+          if (pendingKind) start(pendingKind);
+          setPendingKind(null);
+        }}
+      />
 
       {question === null ? (
         <p className="card p-5 text-text-muted">{t("pick")}</p>

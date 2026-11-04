@@ -11,6 +11,7 @@ import PageHeader from "./PageHeader";
 import ProgressRing from "./ProgressRing";
 import ReadingKindIcon from "./illustrations/ReadingKindIcon";
 import ReadingHeader from "./illustrations/headers/ReadingHeader";
+import ConfirmDialog from "./ui/ConfirmDialog";
 
 type Locale = "en" | "fa" | "de";
 
@@ -29,6 +30,8 @@ export default function ReadingIndex({ cards }: { cards: ReadingCard[] }) {
 
   const results = useReadingStore((s) => s.results);
   const reset = useReadingStore((s) => s.reset);
+  const [askReset, setAskReset] = useState(false);
+  const tUi = useTranslations("Ui");
 
   // Persisted progress loads on the client only, after mount.
   useEffect(() => {
@@ -96,9 +99,20 @@ export default function ReadingIndex({ cards }: { cards: ReadingCard[] }) {
       </ul>
 
       <div className="text-end">
-        <button type="button" onClick={() => reset()} className="btn-ghost">
+        <button type="button" onClick={() => setAskReset(true)} aria-haspopup="dialog" className="btn-ghost">
           {t("reset")}
         </button>
+        <ConfirmDialog
+          open={askReset}
+          title={tUi("resetTitle")}
+          message={tUi("resetMessage", { area: t("title") })}
+          confirmLabel={tUi("resetAction")}
+          onCancel={() => setAskReset(false)}
+          onConfirm={() => {
+            reset();
+            setAskReset(false);
+          }}
+        />
       </div>
     </div>
   );

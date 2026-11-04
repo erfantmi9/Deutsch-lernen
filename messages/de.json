@@ -109,7 +109,22 @@
     "cancel": "Abbrechen",
     "confirm": "Bestätigen",
     "showing": "{count, plural, one {# Eintrag angezeigt} other {# Einträge angezeigt}}",
-    "clearFilters": "Filter zurücksetzen"
+    "clearFilters": "Filter zurücksetzen",
+    "resetTitle": "Fortschritt zurücksetzen?",
+    "resetMessage": "Damit wird dein gespeicherter Fortschritt in {area} gelöscht. Das kann nicht rückgängig gemacht werden.",
+    "resetAction": "Zurücksetzen",
+    "restartTitle": "Neue Runde starten?",
+    "restartMessage": "Deine aktuelle Runde ({done} beantwortet) geht verloren.",
+    "discardTitle": "Übungsart wechseln?",
+    "discardMessage": "Deine noch nicht geprüfte Antwort auf diese Frage geht verloren.",
+    "switchAction": "Wechseln",
+    "addAllTitle": "{count, plural, one {# Karte} other {# Karten}} zur Wiederholung hinzufügen?",
+    "addAllMessage": "Sie kommen in deinen Wiederholungsstapel und werden dir zum Üben gezeigt. Du kannst sie später einzeln entfernen.",
+    "addAllAction": "Alle hinzufügen",
+    "leaveTitle": "Sitzung verlassen?",
+    "leaveMessage": "Du hast {done} von {total} geschafft. Bewertete Karten sind gespeichert, die übrigen bleiben fällig.",
+    "leaveAction": "Zurück zur Übersicht",
+    "restartAction": "Neue Runde"
   },
   "Verbs": {
     "title": "Verbkonjugation",
