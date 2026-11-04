@@ -24,6 +24,7 @@ export default function StickyActionBar({
   disabled = false,
   status,
   statusTone = "hint",
+  statusLive = true,
   secondary,
   toolbar,
   ref,
@@ -37,6 +38,8 @@ export default function StickyActionBar({
    * verdict of the last answer, shown larger. Use that only where the bar status is the page's single live region.
    */
   statusTone?: "hint" | "success" | "danger";
+  /** false: plain text, not a live region (for pages whose live region is elsewhere, e.g. the exam's timer warnings). */
+  statusLive?: boolean;
   /** Optional low-emphasis controls shown before the button (back link, Reset, Skip, Details...). Never swap them in and out; disable them instead. */
   secondary?: ReactNode;
   /** Optional compact controls shown in the row while the on-screen keyboard is open. */
@@ -76,8 +79,8 @@ export default function StickyActionBar({
       <div ref={body} className="mx-auto flex max-w-4xl flex-wrap items-center gap-x-3 gap-y-0.5 px-4 py-2">
         {withToolbar && <div className="min-w-0 flex-1">{toolbar}</div>}
         <p
-          role="status"
-          aria-live="polite"
+          role={statusLive ? "status" : undefined}
+          aria-live={statusLive ? "polite" : undefined}
           className={
             withToolbar
               ? "sr-only"

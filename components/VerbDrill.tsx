@@ -202,7 +202,7 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
 
       <form ref={formRef} onSubmit={onSubmit} className="scroll-target space-y-3" noValidate>
         {/* Prompt */}
-        <div className="card-hero p-4 text-center">
+        <div className="card-hero kb-tight p-4 text-center">
           <p className="eyebrow mb-1">{kind === "present" ? t("tabs.praesens") : t("tabs.perfekt")}</p>
           <p dir="ltr" lang="de" className="text-3xl font-extrabold">
             <span className="text-primary">{PRONOUN[person]}</span>

@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { formatClock, scoreListening, scoreSpeaking, scoreWriting, toModulePoints, wordCount } from "@/lib/exam";
-import { scoreTasks } from "@/lib/readingLogic";
+import { isAnswered, scoreTasks } from "@/lib/readingLogic";
 import type { TaskResponse } from "@/lib/readingLogic";
 import { seededShuffle } from "@/lib/shuffle";
 import { RATE, speak, stopSpeaking } from "@/lib/speech";
@@ -11,6 +11,10 @@ import type { ExamData, ExamModule } from "@/types/exam";
 import type { ReadingText } from "@/types/reading";
 import { TaskCard } from "./ReadingView";
 import SpeakButton from "./SpeakButton";
+import SpecialCharBar from "./SpecialCharBar";
+import ConfirmDialog from "./ui/ConfirmDialog";
+import StickyActionBar from "./ui/StickyActionBar";
+import { useKeyboardInset } from "./ui/useKeyboardInset";
 import { useSpeechSupport } from "./useSpeech";
 
 type Locale = "en" | "fa" | "de";
@@ -21,6 +25,16 @@ export interface PartResult {
   points: number;
   got: number;
   total: number;
+}
+
+/** How much of a part is filled in: drives the bar's "n/m answered · Missing: …" and the hand-in confirmation. */
+export interface PartProgress {
+  answered: number;
+  total: number;
+  /** Short labels of what is still open (item numbers or field names). */
+  missing: string[];
+  /** Speaking is self-assessment: items are ticked, not answered. */
+  ticks?: boolean;
 }
 
 /** Counts down from `seconds` and calls `onExpire` once at zero. */
@@ -47,26 +61,44 @@ function useCountdown(seconds: number, onExpire: () => void): number {
   return remaining;
 }
 
+const MAX_LISTED = 4;
+
 function PartShell({
   title,
   seconds,
-  onExpire,
-  onHandIn,
+  progress,
+  toolbar,
+  onFinish,
   children,
 }: {
   title: string;
   seconds: number;
-  onExpire: () => void;
-  onHandIn: () => void;
+  progress: PartProgress;
+  /** Rendered in the bar's single row while the on-screen keyboard is open (e.g. the ä ö ü ß keys). */
+  toolbar?: React.ReactNode;
+  /** Scores and hands in the part. Called once by the confirmed hand-in and once by the timer, never both. */
+  onFinish: () => void;
   children: React.ReactNode;
 }) {
   const t = useTranslations("Exam");
-  const remaining = useCountdown(seconds, onExpire);
+  const [confirmOpen, setConfirmOpen] = useState(false);
+  const remaining = useCountdown(seconds, onFinish);
+  // The timer warnings are the ONE live region of an exam part (the bar status below is deliberately not live).
   const announcement = remaining <= 60 ? t("warnMinute") : remaining <= 300 ? t("warnFive") : "";
+
+  const open = progress.total - progress.answered;
+  const listed = progress.missing.slice(0, MAX_LISTED).join(", ") + (progress.missing.length > MAX_LISTED ? " …" : "");
+  const status =
+    (progress.ticks ? t("progressTicked", { answered: progress.answered, total: progress.total }) : t("progress", { answered: progress.answered, total: progress.total })) +
+    (progress.missing.length > 0 ? ` · ${t("missing", { items: listed })}` : "");
+
   return (
     <div className="space-y-5">
-      <div className="sticky top-16 z-20 flex items-center justify-between gap-3 rounded-full border border-border bg-surface/95 px-5 py-2 shadow-soft backdrop-blur">
-        <h1 className="text-lg font-extrabold">{title}</h1>
+      <div className="sticky top-header z-20 flex items-center justify-between gap-3 rounded-full border border-border bg-surface/95 px-5 py-2 shadow-soft backdrop-blur">
+        {/* Focused when the part starts, so a screen reader announces which part this is. */}
+        <h1 id="exam-focus" tabIndex={-1} className="text-lg font-extrabold outline-none">
+          {title}
+        </h1>
         <p role="timer" className={"text-lg font-extrabold tabular-nums " + (remaining <= 60 ? "text-danger" : "")} dir="ltr">
           <span className="sr-only">{t("timeLeft")}: </span>
           {formatClock(remaining)}
@@ -76,9 +108,27 @@ function PartShell({
         {announcement}
       </p>
       {children}
-      <button type="button" onClick={onHandIn} className="btn btn-primary w-full py-3 text-lg">
-        {t("handIn")}
-      </button>
+
+      <StickyActionBar
+        label={t("handIn")}
+        onAction={() => setConfirmOpen(true)}
+        status={status}
+        statusLive={false}
+        toolbar={toolbar}
+      />
+
+      <ConfirmDialog
+        open={confirmOpen}
+        title={t("handInConfirmTitle")}
+        message={open > 0 ? t("handInUnanswered", { count: open, total: progress.total }) : t("handInAll", { total: progress.total })}
+        confirmLabel={t("handInConfirm")}
+        tone={open > 0 ? "danger" : "primary"}
+        onCancel={() => setConfirmOpen(false)}
+        onConfirm={() => {
+          setConfirmOpen(false);
+          onFinish();
+        }}
+      />
     </div>
   );
 }
@@ -105,8 +155,17 @@ export function LesenPart({ texts, seconds, onDone }: { texts: ReadingText[]; se
     onDone({ module: "lesen", points: toModulePoints(got, total), got, total });
   }, [texts, onDone]);
 
+  const missing: string[] = [];
+  let total = 0;
+  texts.forEach((x, ti) =>
+    x.tasks.forEach((task, i) => {
+      total++;
+      if (!isAnswered(task, responses[ti][i])) missing.push(`${ti + 1}.${i + 1}`);
+    }),
+  );
+
   return (
-    <PartShell title={t("modules.lesen")} seconds={seconds} onExpire={finish} onHandIn={finish}>
+    <PartShell title={t("modules.lesen")} seconds={seconds} onFinish={finish} progress={{ answered: total - missing.length, total, missing }}>
       {texts.map((text, ti) => (
         <section key={text.id} className="space-y-3">
           <h3 className="text-lg font-extrabold">{text.title.de}</h3>
@@ -152,8 +211,15 @@ export function HoerenPart({ items, seconds, onDone }: { items: ExamData["hoeren
     onDone({ module: "hoeren", points: s.points, got: s.correct, total: s.total });
   }, [items, onDone]);
 
+  const missing = items.flatMap((item, i) => (answers[item.id] ? [] : [String(i + 1)]));
+
   return (
-    <PartShell title={t("modules.hoeren")} seconds={seconds} onExpire={finish} onHandIn={finish}>
+    <PartShell
+      title={t("modules.hoeren")}
+      seconds={seconds}
+      onFinish={finish}
+      progress={{ answered: items.length - missing.length, total: items.length, missing }}
+    >
       {!supported && <p className="feedback-hint">{t("noSpeech")}</p>}
       {items.map((item, i) => {
         const used = plays[item.id] ?? 0;
@@ -211,9 +277,12 @@ export function HoerenPart({ items, seconds, onDone }: { items: ExamData["hoeren
 
 // ---------------------------------------------------------------- Schreiben
 
+type TextField = HTMLInputElement | HTMLTextAreaElement;
+
 export function SchreibenPart({ data, seconds, onDone }: { data: ExamData["schreiben"]; seconds: number; onDone: (r: PartResult) => void }) {
   const t = useTranslations("Exam");
   const locale = useLocale() as Locale;
+  const keyboard = useKeyboardInset();
   const [values, setValues] = useState<Record<string, string>>({});
   const [message, setMessage] = useState("");
   const latest = useRef({ values, message });
@@ -221,14 +290,52 @@ export function SchreibenPart({ data, seconds, onDone }: { data: ExamData["schre
     latest.current = { values, message };
   });
 
+  // The ä ö ü ß keys insert into whichever field was focused last (the message by default).
+  const messageRef = useRef<HTMLTextAreaElement>(null);
+  const active = useRef<{ el: TextField; key: string } | null>(null);
+  const remember = (key: string) => (e: React.FocusEvent<TextField>) => {
+    active.current = { el: e.currentTarget, key };
+  };
+  const insertChar = (ch: string) => {
+    const target = active.current ?? (messageRef.current ? { el: messageRef.current as TextField, key: "message" } : null);
+    if (!target) return;
+    const { el, key } = target;
+    const start = el.selectionStart ?? el.value.length;
+    const end = el.selectionEnd ?? start;
+    const next = el.value.slice(0, start) + ch + el.value.slice(end);
+    if (key === "message") setMessage(next);
+    else setValues((v) => ({ ...v, [key]: next }));
+    requestAnimationFrame(() => {
+      el.focus();
+      el.setSelectionRange(start + 1, start + 1);
+    });
+  };
+
+  // Keyboard open: keep the field you are typing in between the header and the bar (scroll-padding covers both).
+  useEffect(() => {
+    if (keyboard > 0) active.current?.el.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }, [keyboard]);
+
   const finish = useCallback(() => {
     const s = scoreWriting(data, latest.current.values, latest.current.message);
     onDone({ module: "schreiben", points: s.points, got: s.formCorrect + s.found.length, total: s.formTotal + data.message.points.length });
   }, [data, onDone]);
 
   const words = wordCount(message);
+  const missing = [
+    ...data.form.fields.filter((f) => !(values[f.id] ?? "").trim()).map((f) => f.label[locale]),
+    ...(words === 0 ? [t("writing.messageTitle")] : []),
+  ];
+  const total = data.form.fields.length + 1;
+
   return (
-    <PartShell title={t("modules.schreiben")} seconds={seconds} onExpire={finish} onHandIn={finish}>
+    <PartShell
+      title={t("modules.schreiben")}
+      seconds={seconds}
+      onFinish={finish}
+      progress={{ answered: total - missing.length, total, missing }}
+      toolbar={keyboard > 0 ? <SpecialCharBar compact onInsert={insertChar} /> : null}
+    >
       <section className="card space-y-4 p-5">
         <p className="eyebrow">{t("writing.formTitle")}</p>
         <p lang={locale}>{data.form.situation[locale]}</p>
@@ -241,7 +348,10 @@ export function SchreibenPart({ data, seconds, onDone }: { data: ExamData["schre
                 dir="ltr"
                 lang="de"
                 autoComplete="off"
+                autoCapitalize="none"
+                spellCheck={false}
                 value={values[f.id] ?? ""}
+                onFocus={remember(f.id)}
                 onChange={(e) => setValues((v) => ({ ...v, [f.id]: e.target.value }))}
                 className="min-h-11 w-full rounded-full border-2 border-border bg-surface px-4 py-2 outline-none focus-visible:border-primary focus-visible:ring-4 focus-visible:ring-primary/30"
               />
@@ -256,17 +366,20 @@ export function SchreibenPart({ data, seconds, onDone }: { data: ExamData["schre
         <label className="block space-y-1">
           <span className="sr-only">{t("writing.messageTitle")}</span>
           <textarea
+            ref={messageRef}
             dir="ltr"
             lang="de"
             rows={6}
             value={message}
+            onFocus={remember("message")}
             onChange={(e) => setMessage(e.target.value)}
             className="w-full rounded-3xl border-2 border-border bg-surface p-4 text-lg outline-none focus-visible:border-primary focus-visible:ring-4 focus-visible:ring-primary/30"
           />
         </label>
-        <p className="text-sm text-text-muted" aria-live="polite">
-          {t("writing.words", { count: words })}
-        </p>
+        {/* Not a live region: the word count would be announced on every keystroke. */}
+        <p className="text-sm text-text-muted">{t("writing.words", { count: words })}</p>
+        {/* ä ö ü ß: here normally; while the keyboard is open they move into the bar, above the keyboard. */}
+        {keyboard === 0 && <SpecialCharBar onInsert={insertChar} />}
       </section>
     </PartShell>
   );
@@ -296,8 +409,17 @@ export function SprechenPart({ parts, seconds, onDone }: { parts: ExamData["spre
     return next;
   };
 
+  const total = parts.reduce((n, p) => n + p.checklist.length, 0);
+  // "Missing" lists the tasks where nothing is ticked yet.
+  const missing = parts.filter((p) => !p.checklist.some((c) => ticked.has(`${p.id}:${c.id}`))).map((p) => p.title[locale]);
+
   return (
-    <PartShell title={t("modules.sprechen")} seconds={seconds} onExpire={finish} onHandIn={finish}>
+    <PartShell
+      title={t("modules.sprechen")}
+      seconds={seconds}
+      onFinish={finish}
+      progress={{ answered: ticked.size, total, missing, ticks: true }}
+    >
       <p className="feedback-hint">{t("speaking.honest")}</p>
       {parts.map((p) => (
         <section key={p.id} className="card space-y-3 p-5">

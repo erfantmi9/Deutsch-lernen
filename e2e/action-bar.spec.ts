@@ -45,7 +45,8 @@ test.describe("action bar geometry", () => {
     expect(Math.abs(b.y + b.height - page.viewportSize()!.height)).toBeLessThanOrEqual(1);
   });
 
-  for (const path of ["/en/arcade", "/en/verbs?practice=1", "/en/verbs", "/en/grammar"]) {
+  // /en/sentences: the first visit shows the mini lesson open, which makes the page taller than the screen.
+  for (const path of ["/en/arcade", "/en/verbs?practice=1", "/en/verbs", "/en/grammar", "/en/sentences", "/en/exam"]) {
     test(`the end of the page is not covered by the fixed bar (${path})`, async ({ page }) => {
       await seedQuiz(page, false);
       await page.goto(path);

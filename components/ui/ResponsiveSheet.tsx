@@ -48,6 +48,9 @@ export default function ResponsiveSheet({
     if (!open || !dialog) return;
     const trigger = document.activeElement instanceof HTMLElement ? document.activeElement : null;
     dialog.showModal();
+    // showModal() focuses the first focusable element (the close button). React's autoFocus prop calls focus() while the
+    // dialog is still closed and so does nothing, hence an explicit opt-in marker for the safest control.
+    dialog.querySelector<HTMLElement>("[data-autofocus]")?.focus();
     lockScroll();
     return () => {
       if (dialog.open) dialog.close();

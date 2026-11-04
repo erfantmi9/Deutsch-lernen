@@ -32,7 +32,7 @@ export default function ConfirmDialog({
       variant="dialog"
       footer={
         <div className="flex flex-wrap justify-end gap-2">
-          <button type="button" autoFocus onClick={onCancel} className="btn btn-secondary">
+          <button type="button" data-autofocus onClick={onCancel} className="btn btn-secondary">
             {cancelLabel ?? t("cancel")}
           </button>
           <button
