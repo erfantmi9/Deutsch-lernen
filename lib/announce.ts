@@ -4,8 +4,10 @@
  *
  * - If the page already has a live region, it hosts the announcer: FilterBar and FeedbackRegion render an
  *   <AnnounceHost /> (an sr-only span with [data-announce-host]) inside their role=status element.
- * - Otherwise a single sr-only role=status element is appended to <body> while at least one announcing component is
- *   mounted (reference counted), and removed with the last one, so it never lingers on the next route.
+ * - Otherwise a single sr-only role=status element is appended to <body> on the first announcement (so a page where
+ *   nothing was announced has no extra live region) and removed with the last announcing component (reference
+ *   counted), so it never lingers on the next route. A host mounting later (e.g. a quiz opening) takes over and the
+ *   fallback is removed, so there is still only one region.
  */
 const HOST = "[data-announce-host]";
 let users = 0;
@@ -26,14 +28,9 @@ function removeFallback() {
   fallback = null;
 }
 
-function hasHost() {
-  return document.querySelector(HOST) !== null;
-}
-
 /** Call from an announcing component's mount effect; returns the cleanup. */
 export function retainAnnouncer(): () => void {
   users++;
-  if (!hasHost()) createFallback();
   return () => {
     users--;
     if (users <= 0) {
@@ -48,24 +45,20 @@ export function hostMounted() {
   removeFallback();
 }
 
-/** The host went away: bring the fallback back if anything still announces. */
-export function hostUnmounted() {
-  // The leaving host is still in the DOM during cleanup; check after it is gone.
-  queueMicrotask(() => {
-    if (users > 0 && !hasHost()) createFallback();
-  });
-}
-
 let timer: ReturnType<typeof setTimeout> | undefined;
 
 /** Speaks `message` politely. Clears first so that the same text twice in a row is announced again. */
 export function announce(message: string) {
   if (typeof document === "undefined") return;
-  const target = document.querySelector<HTMLElement>(HOST) ?? (createFallback(), fallback);
+  const host = document.querySelector<HTMLElement>(HOST);
+  const fresh = !host && !fallback;
+  if (!host) createFallback();
+  const target = host ?? fallback;
   if (!target) return;
   target.textContent = "";
   clearTimeout(timer);
+  // A region that was just inserted needs a moment to be registered by screen readers before its text changes.
   timer = setTimeout(() => {
     target.textContent = message;
-  }, 60);
+  }, fresh ? 150 : 60);
 }

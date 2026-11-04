@@ -3,6 +3,7 @@
 import { useLayoutEffect, useRef } from "react";
 import type { ReactNode, Ref } from "react";
 import { useKeyboardInset } from "./useKeyboardInset";
+import AnnounceHost from "./AnnounceHost";
 
 /**
  * Persistent primary action for quizzes, drills and exams (Check, then Next, then Continue).
@@ -96,6 +97,7 @@ export default function StickyActionBar({
           }
         >
           {status}
+          {statusLive && <AnnounceHost />}
         </p>
         {!withToolbar && secondary}
         <button
