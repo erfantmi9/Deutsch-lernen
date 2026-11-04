@@ -17,6 +17,9 @@ interface QuizState {
   bestStreak: number;
   lastAnswer: LastAnswer | null;
   wrongWordIds: string[];
+  /** User setting: move on by itself ~1s after a correct answer. Persisted, default on. */
+  autoAdvance: boolean;
+  setAutoAdvance: (on: boolean) => void;
   answer: (article: Article) => void;
   next: () => void;
   reset: () => void;
@@ -50,6 +53,8 @@ export const useQuizStore = create<QuizState>()(
       bestStreak: 0,
       lastAnswer: null,
       wrongWordIds: [],
+      autoAdvance: true,
+      setAutoAdvance: (on) => set({ autoAdvance: on }),
 
       answer: (article) => {
         const { currentWord, lastAnswer, streak, bestStreak, score, wrongWordIds } = get();
@@ -100,6 +105,7 @@ export const useQuizStore = create<QuizState>()(
         streak: s.streak,
         bestStreak: s.bestStreak,
         wrongWordIds: s.wrongWordIds,
+        autoAdvance: s.autoAdvance,
       }),
     },
   ),

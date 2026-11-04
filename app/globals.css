@@ -224,6 +224,7 @@
   --action-bar-h: 4.5rem;
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --feedback-min-h: 9rem;
+  --feedback-min-h-sm: 5.5rem; /* compact quizzes that must fit a 667px phone */
   /* Height of whatever is fixed to the bottom of the viewport (nav, or the action bar on drill pages). */
   --bottom-chrome-h: calc(var(--bottom-nav-h) + var(--safe-bottom));
 }
@@ -235,9 +236,12 @@ html[data-action-bar] .app-bottom-nav {
   display: none;
 }
 @media (min-width: 1024px) {
-  :root,
-  html[data-action-bar] {
+  :root {
     --bottom-chrome-h: 0px;
+  }
+  /* The action bar floats (sticky bottom-4) above the page end, so it still covers the bottom of the viewport. */
+  html[data-action-bar] {
+    --bottom-chrome-h: calc(var(--action-bar-h) + 1rem);
   }
 }
 html {

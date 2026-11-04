@@ -34,3 +34,10 @@ for (const locale of ["en", "fa"] as const) {
     });
   });
 }
+
+test("detail page canonical points at the clean URL (no filter query)", async ({ page }) => {
+  await page.goto("/en/verbs/sein?type=modal");
+  const href = await page.locator("link[rel=canonical]").getAttribute("href");
+  expect(href).toMatch(/\/en\/verbs\/sein$/);
+  expect(href).not.toContain("?");
+});

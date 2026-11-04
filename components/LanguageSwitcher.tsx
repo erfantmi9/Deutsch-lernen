@@ -39,6 +39,7 @@ export default function LanguageSwitcher() {
         aria-haspopup="true"
         aria-expanded={open}
         aria-label={`${t("language")}: ${NAMES[locale]}`}
+        title={`${t("language")}: ${NAMES[locale]}`}
         className="flex h-11 min-w-11 items-center justify-center gap-1.5 rounded-full border border-border bg-surface px-3 text-sm font-bold text-text shadow-soft transition hover:-translate-y-0.5 hover:bg-surface-2 hover:shadow-lift active:translate-y-0"
       >
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

@@ -61,6 +61,7 @@ const config: Config = {
         "action-bar": "var(--action-bar-h)",
         "bottom-chrome": "var(--bottom-chrome-h)",
         feedback: "var(--feedback-min-h)",
+        "feedback-sm": "var(--feedback-min-h-sm)",
       },
       boxShadow: {
         soft: "0 1px 2px rgb(var(--shadow) / 0.05), 0 4px 12px rgb(var(--shadow) / 0.06)",
