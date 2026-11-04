@@ -801,7 +801,8 @@
   },
   "Speech": {
     "listen": "Listen: {text}",
-    "listenSlow": "Listen slowly: {text}"
+    "listenSlow": "Listen slowly: {text}",
+    "stop": "Stop"
   },
   "Listen": {
     "title": "Listening practice",
@@ -813,7 +814,7 @@
       "word": "Words",
       "number": "Numbers"
     },
-    "pick": "Choose a drill to start. You will hear the first item right away.",
+    "pick": "Choose a drill, then tap Start and Play to hear the first item.",
     "done": "Round finished",
     "score": "{correct} of {total} correct",
     "again": "Play another round",
@@ -825,7 +826,12 @@
     "correct": "Correct",
     "wrong": "Not quite",
     "next": "Next",
-    "result": "See result"
+    "result": "See result",
+    "needVoice": "Listening drills need a German voice on this device. Add one in your system's speech settings (for example \"German (Germany)\"), then reload.",
+    "tapPlay": "Tap Play to hear it.",
+    "chooseAnswer": "Choose what you heard.",
+    "typeAnswer": "Type the number you heard.",
+    "start": "Start"
   },
   "Exam": {
     "title": "Practice exam A1",

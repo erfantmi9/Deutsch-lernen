@@ -801,7 +801,8 @@
   },
   "Speech": {
     "listen": "Anhören: {text}",
-    "listenSlow": "Langsam anhören: {text}"
+    "listenSlow": "Langsam anhören: {text}",
+    "stop": "Stopp"
   },
   "Listen": {
     "title": "Hörtraining",
@@ -813,7 +814,7 @@
       "word": "Wörter",
       "number": "Zahlen"
     },
-    "pick": "Wähle eine Übung. Du hörst sofort die erste Aufgabe.",
+    "pick": "Wähle eine Übung, tippe auf Starten und dann auf Abspielen, um das erste Wort zu hören.",
     "done": "Runde beendet",
     "score": "{correct} von {total} richtig",
     "again": "Noch eine Runde",
@@ -825,7 +826,12 @@
     "correct": "Richtig",
     "wrong": "Nicht ganz",
     "next": "Weiter",
-    "result": "Ergebnis ansehen"
+    "result": "Ergebnis ansehen",
+    "needVoice": "Für die Hörübungen braucht dieses Gerät eine deutsche Stimme. Füge in den Spracheinstellungen deines Systems eine hinzu (z. B. „Deutsch (Deutschland)“) und lade die Seite neu.",
+    "tapPlay": "Tippe auf Abspielen, um es zu hören.",
+    "chooseAnswer": "Wähle, was du gehört hast.",
+    "typeAnswer": "Tippe die Zahl, die du gehört hast.",
+    "start": "Starten"
   },
   "Exam": {
     "title": "Probeprüfung A1",
