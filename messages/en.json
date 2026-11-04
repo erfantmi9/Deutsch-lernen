@@ -265,7 +265,9 @@
       "retry": "Try again",
       "correctMark": "Correct",
       "wrongMark": "Wrong",
-      "correctAnswer": "Correct answer:"
+      "correctAnswer": "Correct answer:",
+      "progress": "{answered}/{total} answered",
+      "missing": "Missing: {items}"
     }
   },
   "Reading": {
@@ -314,7 +316,10 @@
     "evidence": "Highlighted in the text above",
     "prev": "Previous text",
     "next": "Next text",
-    "reset": "Reset reading progress"
+    "reset": "Reset reading progress",
+    "answered": "{answered}/{total} answered",
+    "missing": "Missing: {items}",
+    "result": "Result"
   },
   "Numbers": {
     "title": "Numbers & time",

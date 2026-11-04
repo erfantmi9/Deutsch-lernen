@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { buildRolePlayChoices } from "@/lib/rolePlay";
 import { useDialogueStore } from "@/stores/dialogueStore";
 import type { DialogueLine } from "@/types/dialogue";
 import Mascot from "./illustrations/Mascot";
 import SpeakerAvatar from "./SpeakerAvatar";
+import StickyActionBar from "./ui/StickyActionBar";
 
 type Locale = "en" | "fa" | "de";
 
@@ -20,6 +21,9 @@ interface Round {
 /**
  * The learner plays one speaker: the other speaker's lines appear by themselves,
  * and at every own line the right reply must be picked out of three.
+ *
+ * Layout: the chat scrolls; the reply choices sit in a sticky panel right above the StickyActionBar (Continue), and
+ * every new line is scrolled into view above that panel. The bar status is the screen's single live region.
  */
 export default function RolePlay({
   dialogueId,
@@ -41,6 +45,14 @@ export default function RolePlay({
   const [step, setStep] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
   const [correctCount, setCorrectCount] = useState(0);
+  // Same-tick double click / double Enter guard (state updates are async, a ref is not).
+  const answered = useRef(false);
+  const chatRef = useRef<HTMLOListElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const actionRef = useRef<HTMLButtonElement>(null);
+  const choicesRef = useRef<HTMLDivElement>(null);
+  const summaryRef = useRef<HTMLHeadingElement>(null);
+  const focusAfter = useRef<"action" | "choice" | "summary" | null>(null);
 
   const speakerIndex = (name: string): 0 | 1 => (speakers.indexOf(name) === 1 ? 1 : 0);
 
@@ -53,7 +65,38 @@ export default function RolePlay({
     setStep(0);
     setPicked(null);
     setCorrectCount(0);
+    answered.current = false;
+    focusAfter.current = "choice";
   };
+
+  const done = round ? step >= round.mine.length : false;
+  const current = !round ? 0 : done ? lines.length : round.mine[step];
+  const visible = !round ? [] : done ? lines : lines.slice(0, picked ? current + 1 : current);
+
+  // Keep the newest line visible above the sticky choices panel (or the bar once the panel is gone).
+  useLayoutEffect(() => {
+    const last = chatRef.current?.lastElementChild as HTMLElement | null;
+    if (!round || !last) return;
+    const r = last.getBoundingClientRect();
+    const headerBottom = document.querySelector("header")?.getBoundingClientRect().bottom ?? 0;
+    const chromeTops = [...document.querySelectorAll("[data-bottom-chrome]")]
+      .filter((c) => getComputedStyle(c).display !== "none")
+      .map((c) => c.getBoundingClientRect().top);
+    const limit = Math.min(window.innerHeight, panelRef.current?.getBoundingClientRect().top ?? Infinity, ...chromeTops) - 8;
+    let dy = 0;
+    if (r.bottom > limit) dy = r.bottom - limit;
+    // Never push the line's top under the header (very tall line on a tiny screen: show its start).
+    if (r.top - dy < headerBottom + 8) dy = r.top - headerBottom - 8;
+    if (dy !== 0) window.scrollBy({ top: dy, behavior: "auto" });
+  }, [visible.length, round]);
+
+  useEffect(() => {
+    const what = focusAfter.current;
+    focusAfter.current = null;
+    if (what === "action") actionRef.current?.focus({ preventScroll: true });
+    if (what === "choice") choicesRef.current?.querySelector<HTMLButtonElement>("button")?.focus({ preventScroll: true });
+    if (what === "summary") summaryRef.current?.focus({ preventScroll: true });
+  });
 
   if (!round) {
     return (
@@ -74,25 +117,36 @@ export default function RolePlay({
     );
   }
 
-  const done = step >= round.mine.length;
-  const current = done ? lines.length : round.mine[step];
-  const visible = done ? lines : lines.slice(0, picked ? current + 1 : current);
   const choices = done ? [] : round.choices[current];
   const wasRight = picked !== null && picked === lines[current]?.de;
 
   const choose = (choice: string) => {
-    if (picked !== null) return;
+    if (answered.current || picked !== null) return;
+    answered.current = true;
     setPicked(choice);
     if (choice === lines[current].de) setCorrectCount((n) => n + 1);
+    focusAfter.current = "action";
   };
 
   const next = () => {
-    if (step + 1 >= round.mine.length) recordRolePlay(dialogueId);
+    if (!answered.current) return;
+    answered.current = false;
+    const finished = step + 1 >= round.mine.length;
+    if (finished) recordRolePlay(dialogueId);
     setStep(step + 1);
     setPicked(null);
+    focusAfter.current = finished ? "summary" : "choice";
   };
 
   const otherRole = speakers.find((s) => s !== round.role) ?? round.role;
+
+  const status = done
+    ? t("summary", { correct: correctCount, total: round.mine.length })
+    : picked === null
+      ? t("yourTurn")
+      : wasRight
+        ? `✓ ${t("correct")}`
+        : `✗ ${t("wrong")} ${lines[current].de}`;
 
   return (
     <section aria-labelledby="rp-title" className="space-y-4">
@@ -100,12 +154,12 @@ export default function RolePlay({
         {t("title")}: {t("playAs", { name: round.role })}
       </h3>
 
-      <ol className="flex flex-col gap-3">
+      <ol ref={chatRef} className="flex flex-col gap-3">
         {visible.map((line, i) => {
           const idx = speakerIndex(line.speaker);
           const mine = line.speaker === round.role;
           return (
-            <li key={i} className={"flex max-w-[92%] gap-3 " + (idx === 0 ? "self-start" : "flex-row-reverse self-end")}>
+            <li key={i} data-line className={"flex max-w-[92%] gap-3 " + (idx === 0 ? "self-start" : "flex-row-reverse self-end")}>
               <SpeakerAvatar index={idx} size={40} />
               <div
                 className={
@@ -127,9 +181,12 @@ export default function RolePlay({
       </ol>
 
       {!done && (
-        <div className="card space-y-3 p-5">
-          <p className="font-bold">{t("yourTurn")}</p>
-          <div role="group" aria-label={t("pickReply")} className="grid gap-3">
+        <div
+          ref={panelRef}
+          data-choices-panel
+          className="sticky bottom-[calc(var(--bottom-chrome-h)+0.5rem)] z-30 rounded-3xl border border-border bg-surface/95 p-3 shadow-lift backdrop-blur"
+        >
+          <div ref={choicesRef} role="group" aria-label={t("pickReply")} className="grid gap-2">
             {choices.map((c) => {
               const isAnswer = picked !== null && c === lines[current].de;
               const isWrongPick = picked !== null && c === picked && !wasRight;
@@ -137,15 +194,17 @@ export default function RolePlay({
                 <button
                   key={c}
                   type="button"
-                  disabled={picked !== null}
+                  aria-disabled={picked !== null}
                   onClick={() => choose(c)}
                   className={
-                    "pill min-h-14 justify-start whitespace-normal py-2 text-start text-base text-text disabled:cursor-default " +
+                    "pill min-h-11 justify-start whitespace-normal py-1.5 text-start text-sm text-text aria-disabled:cursor-default sm:text-base " +
                     (isAnswer
-                      ? "border-success bg-success-soft text-success disabled:opacity-100"
+                      ? "border-success bg-success-soft text-success"
                       : isWrongPick
-                        ? "border-danger bg-danger-soft text-danger disabled:opacity-100"
-                        : "disabled:opacity-60")
+                        ? "border-danger bg-danger-soft text-danger"
+                        : picked !== null
+                          ? "opacity-60"
+                          : "")
                   }
                 >
                   <bdi dir="ltr" lang="de">
@@ -157,48 +216,40 @@ export default function RolePlay({
               );
             })}
           </div>
-
-          <div aria-live="polite" role="status">
-            {picked !== null && (
-              <div className={"space-y-3 " + (wasRight ? "feedback-success" : "feedback-error")}>
-                <div className="flex items-center gap-4">
-                  <Mascot mood={wasRight ? "cheering" : "sad"} size={64} className="shrink-0" />
-                  <p className="font-bold">
-                    {wasRight ? `✓ ${t("correct")}` : `✗ ${t("wrong")}`}
-                    {!wasRight && (
-                      <>
-                        {" "}
-                        <bdi dir="ltr" lang="de" className="font-extrabold text-text">
-                          {lines[current].de}
-                        </bdi>
-                      </>
-                    )}
-                  </p>
-                </div>
-                <button type="button" onClick={next} autoFocus className="btn btn-primary">
-                  {t("next")} <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
-                </button>
-              </div>
-            )}
-          </div>
         </div>
       )}
 
       {done && (
-        <div role="status" className="card-hero space-y-3 p-6 text-center">
+        <div className="card-hero space-y-3 p-6 text-center">
           <Mascot mood={correctCount >= round.mine.length - 1 ? "cheering" : "thinking"} size={100} className="mx-auto" />
-          <h4 className="text-2xl font-extrabold">{t("done")}</h4>
+          <h4 ref={summaryRef} tabIndex={-1} className="text-2xl font-extrabold outline-none">
+            {t("done")}
+          </h4>
           <p>{t("summary", { correct: correctCount, total: round.mine.length })}</p>
-          <div className="flex flex-wrap justify-center gap-3 pt-2">
-            <button type="button" onClick={() => start(round.role)} className="btn btn-primary">
-              {t("again")}
-            </button>
-            <button type="button" onClick={() => start(otherRole)} className="btn btn-secondary">
-              {t("otherRole")}
-            </button>
-          </div>
         </div>
       )}
+
+      <StickyActionBar
+        ref={actionRef}
+        label={
+          done ? (
+            t("again")
+          ) : (
+            <>
+              {t("next")} <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
+            </>
+          )
+        }
+        disabled={!done && picked === null}
+        onAction={done ? () => start(round.role) : next}
+        status={status}
+        statusTone={done || picked === null ? "hint" : wasRight ? "success" : "danger"}
+        secondary={
+          <button type="button" disabled={!done} onClick={() => start(otherRole)} className="btn btn-secondary shrink-0">
+            {t("otherRole")}
+          </button>
+        }
+      />
     </section>
   );
 }

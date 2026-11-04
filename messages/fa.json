@@ -265,7 +265,9 @@
       "retry": "دوباره امتحان کن",
       "correctMark": "درست",
       "wrongMark": "نادرست",
-      "correctAnswer": "پاسخ درست:"
+      "correctAnswer": "پاسخ درست:",
+      "progress": "{answered}/{total} پاسخ داده شد",
+      "missing": "مانده: {items}"
     }
   },
   "Reading": {
@@ -314,7 +316,10 @@
     "evidence": "در متن بالا مشخص شده است",
     "prev": "متن قبلی",
     "next": "متن بعدی",
-    "reset": "پاک کردن پیشرفت خواندن"
+    "reset": "پاک کردن پیشرفت خواندن",
+    "answered": "{answered}/{total} پاسخ داده شد",
+    "missing": "مانده: {items}",
+    "result": "نتیجه"
   },
   "Numbers": {
     "title": "اعداد و زمان",

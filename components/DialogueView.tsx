@@ -54,6 +54,7 @@ export default function DialogueView({
       </Link>
 
       <PageHeader
+        compact
         title={dialogue.title[locale]}
         subtitle={`${t("setting")}: ${dialogue.setting[locale]}`}
         illustration={

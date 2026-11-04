@@ -265,7 +265,9 @@
       "retry": "Noch einmal versuchen",
       "correctMark": "Richtig",
       "wrongMark": "Falsch",
-      "correctAnswer": "Richtige Antwort:"
+      "correctAnswer": "Richtige Antwort:",
+      "progress": "{answered}/{total} beantwortet",
+      "missing": "Fehlt: {items}"
     }
   },
   "Reading": {
@@ -314,7 +316,10 @@
     "evidence": "Im Text oben markiert",
     "prev": "Vorheriger Text",
     "next": "Nächster Text",
-    "reset": "Lesefortschritt zurücksetzen"
+    "reset": "Lesefortschritt zurücksetzen",
+    "answered": "{answered}/{total} beantwortet",
+    "missing": "Fehlt: {items}",
+    "result": "Ergebnis"
   },
   "Numbers": {
     "title": "Zahlen & Zeit",

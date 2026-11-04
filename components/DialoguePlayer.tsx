@@ -7,11 +7,16 @@ import type { WordHit } from "@/lib/wordLookup";
 import SpeakerAvatar from "./SpeakerAvatar";
 import SpeakButton from "./SpeakButton";
 import AddToReviewButton from "./AddToReviewButton";
+import ResponsiveSheet from "./ui/ResponsiveSheet";
 
 type Display = "german" | "translation";
 type Locale = "en" | "fa" | "de";
 
-/** Chat-bubble view of a dialogue: German only or with translation, tap known words for their meaning. */
+/**
+ * Chat-bubble view of a dialogue: German only or with translation, tap known words for their meaning.
+ * The meaning opens in a ResponsiveSheet (portalled), so nothing above the chat moves. Word buttons keep the text's
+ * line flow and get a 44px tall hit area from a ::before pseudo-element.
+ */
 export default function DialoguePlayer({ lines, speakers }: { lines: AnnotatedLine[]; speakers: string[] }) {
   const t = useTranslations("Dialogues");
   const locale = useLocale() as Locale;
@@ -32,32 +37,6 @@ export default function DialoguePlayer({ lines, speakers }: { lines: AnnotatedLi
         ))}
       </div>
       <p className="text-sm text-text-muted">{t("tapHint")}</p>
-
-      <div aria-live="polite" role="status" className="min-h-0">
-        {word && (
-          <div className="card flex items-start justify-between gap-3 p-4">
-            <div className="space-y-1">
-              <p className="text-lg font-extrabold">
-                <bdi dir="ltr" lang="de">
-                  {word.display}
-                </bdi>
-              </p>
-              <p>{word.translations[translationLocale === "fa" ? "fa" : "en"]}</p>
-              {word.inflected && (
-                <p className="text-sm text-text-muted">
-                  {t("inflected", { form: word.surface, base: word.display })}
-                </p>
-              )}
-            </div>
-            <div className="flex shrink-0 flex-col items-end gap-1">
-              <AddToReviewButton cardId={`${word.kind}:${word.id}`} word={word.display} compact />
-              <button type="button" onClick={() => setWord(null)} className="btn-ghost">
-                {t("closeWord")}
-              </button>
-            </div>
-          </div>
-        )}
-      </div>
 
       <ol className="flex flex-col gap-4">
         {lines.map((line, i) => {
@@ -83,8 +62,10 @@ export default function DialoguePlayer({ lines, speakers }: { lines: AnnotatedLi
                       <button
                         key={j}
                         type="button"
+                        data-word
+                        aria-haspopup="dialog"
                         onClick={() => setWord(tok.hit)}
-                        className="rounded-sm font-bold underline decoration-primary decoration-dotted decoration-2 underline-offset-4 hover:text-primary"
+                        className="relative rounded-sm font-bold before:absolute before:inset-x-0 before:-inset-y-3 before:content-[''] underline decoration-primary decoration-dotted decoration-2 underline-offset-4 hover:text-primary"
                       >
                         {tok.text}
                       </button>
@@ -103,6 +84,16 @@ export default function DialoguePlayer({ lines, speakers }: { lines: AnnotatedLi
           );
         })}
       </ol>
+
+      <ResponsiveSheet open={word !== null} onClose={() => setWord(null)} title={word?.display ?? ""}>
+        {word && (
+          <div className="space-y-3">
+            <p className="text-lg">{word.translations[translationLocale === "fa" ? "fa" : "en"]}</p>
+            {word.inflected && <p className="text-sm text-text-muted">{t("inflected", { form: word.surface, base: word.display })}</p>}
+            <AddToReviewButton cardId={`${word.kind}:${word.id}`} word={word.display} />
+          </div>
+        )}
+      </ResponsiveSheet>
     </div>
   );
 }
