@@ -55,8 +55,8 @@ export const quizWrites = (page: Page) => page.evaluate(() => (window as unknown
  * Fakes an on-screen keyboard (headless Chromium has none): visualViewport shrinks by `keyboardPx` while a text field
  * is focused and returns to full height when it is blurred, like a real phone. Call before page.goto.
  */
-export async function installFakeKeyboard(page: Page, keyboardPx = 290) {
-  await page.addInitScript((kb) => {
+export async function installFakeKeyboard(page: Page, keyboardPx = 290, opts: { silentClose?: boolean } = {}) {
+  await page.addInitScript(({ kb, silent }) => {
     let override: number | null = null;
     const vv = new EventTarget();
     // defineProperties, not Object.assign: assign would copy the getters' current values and freeze them.
@@ -73,8 +73,15 @@ export async function installFakeKeyboard(page: Page, keyboardPx = 290) {
     const isText = (el: Element | null) =>
       !!el && /^(INPUT|TEXTAREA)$/.test(el.tagName) && !["checkbox", "radio", "button", "submit"].includes((el as HTMLInputElement).type);
     document.addEventListener("focusin", (e) => isText(e.target as Element) && set(innerHeight - kb));
-    document.addEventListener("focusout", () => setTimeout(() => !isText(document.activeElement) && set(null), 0));
-  }, keyboardPx);
+    // silentClose: the keyboard goes away without any visualViewport event (the iOS quirk the re-measure guards against).
+    document.addEventListener("focusout", () =>
+      setTimeout(() => {
+        if (isText(document.activeElement)) return;
+        if (silent) override = null;
+        else set(null);
+      }, 0),
+    );
+  }, { kb: keyboardPx, silent: opts.silentClose ?? false });
 }
 
 /** Top edge (px) of the highest visible fixed-bottom bar (action bar or mobile nav); the viewport bottom if none. */

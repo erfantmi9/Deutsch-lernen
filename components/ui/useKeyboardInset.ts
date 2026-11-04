@@ -21,6 +21,8 @@ import { useSyncExternalStore } from "react";
 
 /** Smaller insets are browser chrome (URL / tool bar collapsing and expanding), not a keyboard. */
 const KEYBOARD_MIN_PX = 120;
+/** iOS sometimes leaves visualViewport.offsetTop stale (or fires no event) when the keyboard closes: re-measure after blur. */
+const REMEASURE_AFTER_BLUR_MS = 300;
 /** Above this the user is pinch-zooming: the visual viewport shrinks for that reason, not because of a keyboard. */
 const MAX_UNZOOMED_SCALE = 1.01;
 
@@ -49,9 +51,17 @@ function attach() {
     subscribers.forEach((notify) => notify());
   };
   update();
+  let blurTimer = 0;
+  const onFocusOut = () => {
+    window.clearTimeout(blurTimer);
+    blurTimer = window.setTimeout(update, REMEASURE_AFTER_BLUR_MS);
+  };
   vv.addEventListener("resize", update);
   vv.addEventListener("scroll", update); // iOS pans the visual viewport (offsetTop) while the keyboard is open
+  document.addEventListener("focusout", onFocusOut);
   detach = () => {
+    window.clearTimeout(blurTimer);
+    document.removeEventListener("focusout", onFocusOut);
     vv.removeEventListener("resize", update);
     vv.removeEventListener("scroll", update);
     inset = 0;

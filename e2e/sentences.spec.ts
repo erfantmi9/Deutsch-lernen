@@ -19,7 +19,8 @@ const bar = (page: Page) => action(page).locator("xpath=ancestor::*[@data-bottom
 const builder = (page: Page) => page.locator("section[aria-labelledby=builder-title]");
 const answerZone = (page: Page) => builder(page).locator("div[role=group]").nth(0);
 const bankZone = (page: Page) => builder(page).locator("div[role=group]").nth(1);
-const feedback = (page: Page) => builder(page).locator("[role=status].min-h-feedback-sm");
+/** The bar's status line: hint while building, the verdict after a check. The page's one live region. */
+const statusP = (page: Page) => bar(page).locator("p[role=status]");
 const chips = (zone: Locator) => zone.locator("li[data-chip] button");
 
 /** Seeds the persisted store (focus filter + "all mini lessons already seen" so they start collapsed). */
@@ -86,8 +87,8 @@ for (const locale of ["en", "fa"] as const) {
       // Height budget at 375x667 (this focus has 4-word sentences): everything fits without scrolling.
       await expectBelowHeader(page, builder(page).locator(".card-hero").first());
       if (isMobile) {
-        // 375x667: prompt, answer line, word bank, feedback and the bar all fit without scrolling.
-        await expectClearOfBar(page, feedback(page));
+        // 375x667: prompt, answer line, word bank and the bar all fit without scrolling.
+        await expectClearOfBar(page, bankZone(page));
         expect(await page.evaluate(() => window.scrollY)).toBe(0);
       }
 
@@ -111,10 +112,10 @@ for (const locale of ["en", "fa"] as const) {
       for (const w of [...tokens.slice(2)].reverse()) await place(page, w);
       await expect(chips(bankZone(page))).toHaveCount(0);
       await action(page).click();
-      await expect(feedback(page).locator("> div")).toBeVisible();
+      await expect(statusP(page)).toContainText("✗");
+      await expect(statusP(page)).toBeInViewport();
       await expect(builder(page).locator("li[data-chip] button span.bg-danger").first()).toBeVisible(); // ✗ on the answer line itself
-      await expect(feedback(page)).not.toContainText(ex.tokens.join(" ")); // the long hint/explanation is NOT in the feedback
-      await expectClearOfBar(page, feedback(page).locator("> div"));
+      expect((await statusP(page).innerText()).length).toBeLessThan(90); // short verdict; hint + explanation are in Details
       const zones2 = { answer: await box(answerZone(page)), bank: await box(bankZone(page)), bar: await box(bar(page)) };
       expect(zones2.answer).toEqual(zones0.answer);
       expect(zones2.bank).toEqual(zones0.bank);
@@ -123,7 +124,7 @@ for (const locale of ["en", "fa"] as const) {
       await shot(page, testInfo, "sentences", locale, "3-wrong");
 
       // Details: hint + explanation in a sheet, focus returns to its trigger.
-      const details = feedback(page).locator("button");
+      const details = bar(page).locator("button[aria-haspopup=dialog]");
       await details.click();
       await expect(page.locator("dialog[open]")).toBeVisible();
       await expect(page.locator("dialog[open] .feedback-hint")).toBeVisible();
@@ -135,7 +136,7 @@ for (const locale of ["en", "fa"] as const) {
       await expect(chips(answerZone(page))).toHaveCount(0);
       for (const w of tokens) await place(page, w);
       await action(page).click();
-      await expect(feedback(page).locator(".feedback-success")).toBeVisible();
+      await expect(statusP(page)).toContainText("✓");
       await expect(action(page)).toBeFocused(); // Enter / Space now goes to the next sentence
       // Parts coloured after a correct answer: badges are >= 12px and change no sizes.
       const badge = builder(page).locator("li[data-chip] button span.uppercase").first();
@@ -146,7 +147,6 @@ for (const locale of ["en", "fa"] as const) {
       expect(zones3.bank).toEqual(zones0.bank);
       expect(zones3.bar.height).toBe(zones0.bar.height);
       expect(await bar(page).locator("button, a").count()).toBe(barButtons0);
-      await expectClearOfBar(page, feedback(page).locator("> div"));
       await shot(page, testInfo, "sentences", locale, "4-correct");
     });
 
@@ -220,7 +220,7 @@ for (const locale of ["en", "fa"] as const) {
         b.click();
         b.click();
       });
-      await expect(feedback(page).locator(".feedback-success")).toBeVisible();
+      await expect(statusP(page)).toContainText("✓");
       const after = await page.evaluate(() => (window as unknown as { __writes: number }).__writes);
       expect(after - before).toBe(1);
     });
@@ -258,16 +258,41 @@ for (const locale of ["en", "fa"] as const) {
   });
 }
 
-test("the longest sentences (8 words) stay reachable: word bank and feedback clear of the bar after scrolling", async ({ page }) => {
-  await seed(page, "time-manner-place");
-  await page.goto("/en/sentences");
-  const ex = await (async () => {
-    await expect(chips(bankZone(page)).first()).toBeVisible();
-    return current(page, "en");
-  })();
-  for (const w of [...ex.tokens].reverse()) await place(page, w);
-  await action(page).click();
-  await expect(feedback(page).locator("> div")).toBeVisible();
-  await feedback(page).scrollIntoViewIfNeeded();
-  await expectClearOfBar(page, feedback(page).locator("> div"));
-});
+// Height budget at 375x667 for EVERY sentence, the 8-word ones included: the answer line, the word bank and the verdict
+// (in the bar) are on screen at the same time, with no scrolling, after a wrong check.
+for (const locale of ["en", "fa"] as const) {
+  test(`every sentence fits 375x667 without scrolling, verdict visible (${locale})`, async ({ page, isMobile }) => {
+    test.skip(!isMobile, "the budget is defined for the phone");
+    test.setTimeout(120_000);
+    const seen = new Set<string>();
+    for (const focus of ALL_FOCI) {
+      const inFocus = EXERCISES.filter((e) => e.grammarFocus === focus);
+      const done = new Set<string>();
+      const pg = await page.context().newPage(); // a fresh tab per focus: its own sessionStorage, so seeding runs again
+      await seed(pg, focus);
+      await pg.goto(`/${locale}/sentences`);
+      await expect(chips(bankZone(pg)).first()).toBeVisible();
+      for (let guard = 0; guard < 40 && done.size < inFocus.length; guard++) {
+        const ex = await current(pg, locale);
+        if (!done.has(ex.id)) {
+          done.add(ex.id);
+          seen.add(ex.id);
+          expect(await pg.evaluate(() => window.scrollY), `${ex.id}: scrolled at start`).toBe(0);
+          for (const w of [...ex.tokens].reverse()) await place(pg, w);
+          await action(pg).click();
+          await expect(statusP(pg)).toContainText("✗");
+          // Wrong order for this focus, unless the reverse happens to be accepted (then it shows ✓: still fine).
+          expect(await pg.evaluate(() => window.scrollY), `${ex.id}: pg had to scroll`).toBe(0);
+          await expectBelowHeader(pg, builder(pg).locator(".card-hero").first());
+          await expectClearOfBar(pg, bankZone(pg));
+          await expectClearOfBar(pg, answerZone(pg));
+          await expect(statusP(pg)).toBeInViewport();
+        }
+        await bar(pg).locator("button").nth(1).click(); // Skip: next sentence
+      }
+      await pg.close();
+      expect(done.size, `focus ${focus}: not every sentence was shown`).toBe(inFocus.length);
+    }
+    expect(seen.size).toBe(EXERCISES.length);
+  });
+}

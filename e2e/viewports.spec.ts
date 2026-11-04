@@ -67,7 +67,7 @@ for (const v of VIEWPORTS) {
     test.beforeEach(({}, testInfo) => test.skip(!testInfo.project.name.startsWith("desktop"), "viewport is set per test"));
 
     for (const focus of ["v2", "time-manner-place"]) {
-      test(`wrong check: feedback clears the bar (${focus})`, async ({ page }) => {
+      test(`wrong check: the verdict is on screen (${focus})`, async ({ page }) => {
         await page.addInitScript((f) => {
           localStorage.setItem("deutsch-learner:sentences", JSON.stringify({ state: { solvedIds: [], wrongIds: [], streak: 0, bestStreak: 0, focus: f, lessonSeen: ["v2", "question", "modal-bracket", "separable-bracket", "subordinate-weil", "negation-nicht-kein", "time-manner-place"] }, version: 1 }));
         }, focus);
@@ -79,9 +79,9 @@ for (const v of VIEWPORTS) {
           await bank.locator("li[data-chip] button").filter({ has: page.locator(`span.text-lg:text-is("${w}")`) }).first().click();
         }
         await action(page).click();
-        const fb = page.locator("section[aria-labelledby=builder-title] [role=status].min-h-feedback-sm > div");
-        await expect(fb).toBeVisible();
-        await expectClearOfBar(page, fb);
+        const status = action(page).locator("xpath=preceding-sibling::p");
+        await expect(status).toContainText("✗");
+        await expect(status).toBeInViewport(); // the verdict is in the bar: always on screen
         await expect(action(page)).toBeInViewport();
       });
     }

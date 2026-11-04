@@ -126,7 +126,7 @@ export default function SentencesExplorer() {
 
   return (
     <div className="mx-auto w-full max-w-2xl space-y-3 short:space-y-2 sm:space-y-4">
-      <PageHeader compact title={t("title")} subtitle={t("subtitle")} illustration={<SentencesHeader size="100%" />} actions={actions} />
+      <PageHeader compact="always" title={t("title")} subtitle={t("subtitle")} illustration={<SentencesHeader size="100%" />} actions={actions} />
 
       <div className="hidden sm:block short:hidden">
         <ScoreStrip

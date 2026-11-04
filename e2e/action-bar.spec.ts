@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 import type { Page } from "@playwright/test";
 import { readFileSync } from "node:fs";
-import { bottomChromeTop, seedQuiz } from "./helpers";
+import { bottomChromeTop, installFakeKeyboard, seedQuiz } from "./helpers";
 
 const action = (page: Page) => page.locator("[data-action-button]");
 const bar = (page: Page) => action(page).locator("xpath=ancestor::*[@data-bottom-chrome]");
@@ -61,6 +61,24 @@ test.describe("action bar geometry", () => {
       }).toPass({ timeout: 3000 });
     });
   }
+});
+
+test("a keyboard that closes WITHOUT any viewport event (iOS offsetTop quirk) is picked up ~300ms after blur", async ({ page, isMobile }) => {
+  test.skip(!isMobile, "an on-screen keyboard only exists on phones");
+  await installFakeKeyboard(page, 290, { silentClose: true });
+  await page.goto("/en/verbs?practice=1");
+  const field = page.locator("#verb-answer");
+  await field.focus();
+  const vh = page.viewportSize()!.height;
+  await expect(async () => {
+    const b = (await bar(page).boundingBox())!;
+    expect(Math.abs(b.y + b.height - (vh - 290))).toBeLessThanOrEqual(1); // keyboard open: bar above it
+  }).toPass({ timeout: 3000 });
+  await field.evaluate((el) => (el as HTMLInputElement).blur()); // no resize/scroll event follows
+  await expect(async () => {
+    const b = (await bar(page).boundingBox())!;
+    expect(Math.abs(b.y + b.height - vh)).toBeLessThanOrEqual(1); // back at the bottom thanks to the re-measure
+  }).toPass({ timeout: 2000 });
 });
 
 test.describe("status line", () => {

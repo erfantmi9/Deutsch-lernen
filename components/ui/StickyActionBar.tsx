@@ -23,6 +23,7 @@ export default function StickyActionBar({
   onAction,
   disabled = false,
   status,
+  statusTone = "hint",
   secondary,
   toolbar,
   ref,
@@ -31,6 +32,11 @@ export default function StickyActionBar({
   onAction: () => void;
   disabled?: boolean;
   status?: ReactNode;
+  /**
+   * "hint" (default): small muted text explaining why the button is disabled. "success" / "danger": the status IS the
+   * verdict of the last answer, shown larger. Use that only where the bar status is the page's single live region.
+   */
+  statusTone?: "hint" | "success" | "danger";
   /** Optional low-emphasis controls shown before the button (back link, Reset, Skip, Details...). Never swap them in and out; disable them instead. */
   secondary?: ReactNode;
   /** Optional compact controls shown in the row while the on-screen keyboard is open. */
@@ -75,7 +81,12 @@ export default function StickyActionBar({
           className={
             withToolbar
               ? "sr-only"
-              : "order-first min-h-5 basis-full line-clamp-2 text-xs leading-5 text-text-muted sm:order-none sm:min-h-0 sm:min-w-0 sm:flex-1 sm:basis-0 sm:text-sm"
+              : "order-first min-h-5 basis-full line-clamp-2 leading-5 sm:order-none sm:min-h-0 sm:min-w-0 sm:flex-1 sm:basis-0 " +
+                (statusTone === "success"
+                  ? "text-sm font-bold text-success"
+                  : statusTone === "danger"
+                    ? "text-sm font-bold text-danger"
+                    : "text-xs text-text-muted sm:text-sm")
           }
         >
           {status}

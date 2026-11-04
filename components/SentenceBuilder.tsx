@@ -28,10 +28,8 @@ import type { Board, Chip, OrderCheck } from "@/lib/sentenceBoard";
 import type { SentenceExercise } from "@/types/sentence";
 import RoleLegend from "./RoleLegend";
 import { ROLE_STYLE } from "./roleStyles";
-import FeedbackRegion from "./ui/FeedbackRegion";
 import ResponsiveSheet from "./ui/ResponsiveSheet";
 import StickyActionBar from "./ui/StickyActionBar";
-import { useScrollIntoViewOnChange } from "./ui/useScrollIntoViewOnChange";
 
 type ChipStatus = "wrong" | "ok" | null;
 
@@ -45,7 +43,7 @@ interface Props {
 // No `touch-none`: a finger that starts on a word must still be able to scroll the page. Dragging on touch needs a
 // press-and-hold (see the TouchSensor below); tapping is the primary way to place a word.
 const BASE_CHIP =
-  "relative block h-11 whitespace-nowrap touch-manipulation select-none rounded-2xl border-2 px-3 py-2 text-start shadow-soft outline-none transition hover:shadow-lift focus-visible:ring-4 focus-visible:ring-primary/40";
+  "relative block h-11 whitespace-nowrap touch-manipulation select-none [-webkit-touch-callout:none] rounded-2xl border-2 px-3 py-2 text-start shadow-soft outline-none transition hover:shadow-lift focus-visible:ring-4 focus-visible:ring-primary/40";
 
 function chipClasses(chip: Chip, showRole: boolean, status: ChipStatus): string {
   const tone =
@@ -247,16 +245,12 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
   const [result, setResult] = useState<OrderCheck | null>(null);
   const [detailsOpen, setDetailsOpen] = useState(false);
   const [showRoles, setShowRoles] = useState(false);
-  const [announcement, setAnnouncement] = useState("");
   const [focusId, setFocusId] = useState<string | null>(null);
   const attempts = useRef(0);
   const actionRef = useRef<HTMLButtonElement>(null);
   // Synchronous guards (state is async): a double press can neither record a result twice nor leave the exercise twice.
   const solvedRef = useRef(false);
   const leavingRef = useRef(false);
-
-  // On screens too short for everything at once, bring the verdict into view above the bar after each check.
-  const feedbackRef = useScrollIntoViewOnChange<HTMLDivElement>(result, { enabled: result !== null, focus: false, block: "nearest" });
 
   const solved = result?.correct === true;
   const hasRoles = Boolean(exercise.roles);
@@ -286,10 +280,9 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
     if (solved) actionRef.current?.focus({ preventScroll: true });
   }, [solved]);
 
-  const update = (next: Board, message: string, focus: string | null) => {
+  const update = (next: Board, focus: string | null) => {
     setBoard(next);
     setResult(null);
-    setAnnouncement(message);
     setFocusId(focus);
   };
 
@@ -297,25 +290,21 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
     if (solved) return;
     const chip = board.bank.find((c) => c.id === id);
     if (!chip) return;
-    const next = addToAnswer(board, id, index);
-    const pos = next.answer.findIndex((c) => c.id === id) + 1;
-    update(next, t("announceAdded", { word: chip.text, pos, total: next.answer.length }), id);
+    update(addToAnswer(board, id, index), id);
   };
 
   const remove = (id: string) => {
     if (solved) return;
     const chip = board.answer.find((c) => c.id === id);
     if (!chip) return;
-    update(removeFromAnswer(board, id), t("announceRemoved", { word: chip.text }), id);
+    update(removeFromAnswer(board, id), id);
   };
 
   const move = (id: string, delta: number) => {
     if (solved) return;
     const chip = board.answer.find((c) => c.id === id);
     if (!chip) return;
-    const next = moveInAnswer(board, id, delta);
-    const pos = next.answer.findIndex((c) => c.id === id) + 1;
-    update(next, t("announceMoved", { word: chip.text, pos, total: next.answer.length }), id);
+    update(moveInAnswer(board, id, delta), id);
   };
 
   const onDragEnd = (e: DragEndEvent) => {
@@ -332,9 +321,7 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
       const to = overIndex ?? board.answer.length - 1;
       const next = reorderAnswer(board, activeId, to);
       const chip = board.answer.find((c) => c.id === activeId);
-      if (chip && next !== board) {
-        update(next, t("announceMoved", { word: chip.text, pos: to + 1, total: next.answer.length }), activeId);
-      }
+      if (chip && next !== board) update(next, activeId);
     } else if (!fromAnswer && toAnswer) {
       add(activeId, overIndex);
     } else if (fromAnswer && toBank) {
@@ -373,7 +360,6 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
   const reset = () => {
     setBoard(initialBoard(exercise));
     setResult(null);
-    setAnnouncement(t("announceReset"));
   };
 
   const statusOf = (index: number): ChipStatus => {
@@ -479,36 +465,12 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
         </div>
       </DndContext>
 
-      {/* Screen-reader announcements for moves (not for results: those come from the feedback region only) */}
-      <div aria-live="polite" role="status" className="sr-only">
-        {announcement}
-      </div>
-
-      {/* Result: short. Wrong words are marked on the answer line itself; the hint and the explanation are in Details. */}
-      <FeedbackRegion size="sm" ref={feedbackRef}>
-        {result && (
-          <div className={"flex items-center justify-between gap-3 " + (result.correct ? "feedback-success" : "feedback-error") + " !p-3"}>
-            <div className="min-w-0">
-              {result.correct ? (
-                <>
-                  <p className="font-extrabold">✓ {t("correct")}</p>
-                  <p dir="ltr" lang="de" className="truncate font-bold text-text">
-                    {sentence}
-                  </p>
-                </>
-              ) : (
-                <p className="font-bold">
-                  ✗ {result.incomplete && wrongCount === 0 ? t("incomplete") : wrongCount > 0 ? t("wrongCount", { count: wrongCount }) : t("wrongOrder")}
-                </p>
-              )}
-            </div>
-            <button type="button" onClick={() => setDetailsOpen(true)} aria-haspopup="dialog" className="btn btn-secondary shrink-0 !px-4">
-              {t("details")}
-            </button>
-          </div>
-        )}
-      </FeedbackRegion>
-
+      {/*
+        The verdict lives in the bar's status line, which is therefore this page's ONE live region (it also says how many
+        words are left while building). No separate feedback box: at 375x667 an 8-word sentence needs every pixel for the
+        answer line and the word bank. Wrong words are marked on the answer line itself; the hint and explanation are
+        behind Details.
+      */}
       <StickyActionBar
         ref={actionRef}
         label={
@@ -522,7 +484,18 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
         }
         disabled={solved ? false : board.answer.length === 0}
         onAction={solved ? next : check}
-        status={solved ? null : board.answer.length === 0 ? t("tapToStart") : wordsLeft > 0 ? t("wordsLeft", { count: wordsLeft }) : null}
+        statusTone={result ? (result.correct ? "success" : "danger") : "hint"}
+        status={
+          result
+            ? result.correct
+              ? `✓ ${t("correct")} ${sentence}`
+              : `✗ ${result.incomplete && wrongCount === 0 ? t("incomplete") : wrongCount > 0 ? t("wrongCount", { count: wrongCount }) : t("wrongOrder")}`
+            : board.answer.length === 0
+              ? t("tapToStart")
+              : wordsLeft > 0
+                ? t("wordsLeft", { count: wordsLeft })
+                : null
+        }
         secondary={
           // Always present (disabled instead of swapped out), so the bar never changes shape.
           <>
@@ -531,6 +504,9 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
             </button>
             <button type="button" onClick={skip} disabled={solved} aria-label={t("skip")} title={t("skip")} className={ICON}>
               <span aria-hidden="true">⏭</span>
+            </button>
+            <button type="button" onClick={() => setDetailsOpen(true)} disabled={!result} aria-haspopup="dialog" aria-label={t("details")} title={t("details")} className={ICON}>
+              <span aria-hidden="true">ⓘ</span>
             </button>
           </>
         }
