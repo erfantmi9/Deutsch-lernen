@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useId, useRef } from "react";
+import { useEffect, useId, useRef, useSyncExternalStore } from "react";
+import { createPortal } from "react-dom";
 import type { ReactNode } from "react";
 import { useTranslations } from "next-intl";
 
@@ -25,7 +26,14 @@ export interface ResponsiveSheetProps {
   side?: "end" | "start";
 }
 
+const noopSubscribe = () => () => {};
+/** false during SSR and hydration, true afterwards: the portal target (document.body) only exists on the client. */
+const useMounted = () => useSyncExternalStore(noopSubscribe, () => true, () => false);
+
 /**
+ * Rendered through a portal into document.body, so no ancestor's layout rules (space-y-* margins, transforms,
+ * overflow) can reach the dialog.
+ *
  * Modal surface on the native <dialog>: showModal() gives focus trapping, Esc, an inert page and
  * aria-modal. On top of that: body scroll lock, focus return to the trigger, backdrop tap to close.
  * Slide animation lives in globals.css (.sheet) and is disabled by the global reduced-motion rule.
@@ -42,6 +50,7 @@ export default function ResponsiveSheet({
   const t = useTranslations("Ui");
   const ref = useRef<HTMLDialogElement>(null);
   const titleId = useId();
+  const mounted = useMounted();
 
   useEffect(() => {
     const dialog = ref.current;
@@ -57,9 +66,10 @@ export default function ResponsiveSheet({
       unlockScroll();
       if (trigger?.isConnected) trigger.focus({ preventScroll: true });
     };
-  }, [open]);
+  }, [open, mounted]);
 
-  return (
+  if (!mounted) return null;
+  return createPortal(
     <dialog
       ref={ref}
       aria-modal="true"
@@ -89,6 +99,7 @@ export default function ResponsiveSheet({
           {footer && <div className="border-t border-border px-5 py-3 pb-[max(0.75rem,var(--safe-bottom))]">{footer}</div>}
         </div>
       )}
-    </dialog>
+    </dialog>,
+    document.body,
   );
 }

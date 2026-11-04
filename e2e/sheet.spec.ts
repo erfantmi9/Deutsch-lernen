@@ -40,3 +40,23 @@ for (const locale of ["en", "fa"] as const) {
     expect(Math.abs(r.x + r.width / 2 - width / 2)).toBeLessThanOrEqual(2);
   });
 }
+
+// The trigger (and the component that renders the dialog) sit inside a space-y-* parent. The dialog must still be
+// portalled to <body>, keep a zero margin-top from that parent and land at its edge / centre.
+for (const locale of ["en", "fa"] as const) {
+  test(`dialog rendered from a space-y-* parent is portalled and positioned (${locale})`, async ({ page }) => {
+    await page.goto(`/${locale}/exam`);
+    const trigger = page.locator("main ul.grid > li").nth(2).locator("button");
+    const spaced = await trigger.evaluate((el) => !!el.closest("[class*='space-y-']"));
+    expect(spaced).toBe(true);
+    await trigger.click();
+    const dlg = page.locator("dialog[open]");
+    await expect(dlg).toBeVisible();
+    expect(await dlg.evaluate((d) => d.parentElement === document.body)).toBe(true);
+    await page.waitForTimeout(400);
+    const r = (await dlg.boundingBox())!;
+    const { width, height } = page.viewportSize()!;
+    expect(Math.abs(r.y + r.height / 2 - height / 2)).toBeLessThanOrEqual(2);
+    expect(Math.abs(r.x + r.width / 2 - width / 2)).toBeLessThanOrEqual(2);
+  });
+}
