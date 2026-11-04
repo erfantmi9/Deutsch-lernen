@@ -282,6 +282,26 @@ html {
     display: none;
   }
 }
+/*
+ * Word-bank / answer-line areas reserve the height of their rows up front (--rows set per exercise), so words moving
+ * between them never shift the targets below. Padding and border are part of the calculation: min-height is
+ * border-box, and a reservation that ignores them is exceeded (and the area jumps) by exactly their sum.
+ */
+.chip-zone {
+  --zone-pad: 0.75rem;
+  --zone-border: 1px;
+  padding: var(--zone-pad);
+  min-height: calc(var(--rows, 1) * 2.75rem + (var(--rows, 1) - 1) * 0.5rem + 2 * var(--zone-pad) + 2 * var(--zone-border));
+}
+.chip-zone[data-zone="answer"] {
+  --zone-border: 2px;
+}
+@media (max-height: 700px) {
+  .chip-zone {
+    --zone-pad: 0.5rem;
+  }
+}
+
 /* While the on-screen keyboard is open (html[data-keyboard], set by useKeyboardInset) decoration steps aside. */
 html[data-keyboard] .kb-hide {
   display: none;

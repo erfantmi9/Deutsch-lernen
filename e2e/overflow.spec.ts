@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 
 // No horizontal scrolling on the pages of the modules fixed so far. The reference width is the configured viewport
 // (window.innerWidth is useless on mobile emulation: it grows to fit overflowing content and hides the problem).
-const PAGES = ["/arcade", "/verbs", "/verbs/sein", "/verbs?practice=1", "/grammar", "/grammar/dative"];
+const PAGES = ["/arcade", "/verbs", "/verbs/sein", "/verbs?practice=1", "/grammar", "/grammar/dative", "/sentences"];
 
 for (const locale of ["en", "fa", "de"] as const) {
   for (const path of PAGES) {

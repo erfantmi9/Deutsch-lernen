@@ -26,3 +26,14 @@ Check these on a real device (iOS Safari and Android Chrome), in `/en` and `/fa`
 - [ ] The bottom navigation is replaced by the action bar while practicing and is back after leaving the page.
 - [ ] Nothing important is hidden behind the home indicator / gesture bar.
 - [ ] Pinch-zoom the page to ~150%: feedback and the bar do not overlap.
+
+## Sentences (`/sentences`) on a real phone
+
+- [ ] Tap a word: it moves to the answer line. Tap it there: it goes back. Nothing below it jumps.
+- [ ] Start a swipe **on a word** and scroll the page: it scrolls, no word is placed or picked up.
+- [ ] Press and hold a word for a moment (~¼ s), then drag it onto the answer line: it is placed (optional drag).
+- [ ] In `/fa` the German sentence still reads left to right, first word on the left.
+- [ ] Check with a wrong order: the wrong words get a red ✗ right on the answer line; "Details" opens a sheet with the hint.
+- [ ] The Check button, Reset (↺) and Skip (⏭) never change position or disappear; only Check turns into Next.
+- [ ] The 🎨 toggle colours the parts; the small labels are readable and nothing moves.
+- [ ] Mini lesson (📖): open on the very first visit of a focus, collapsed afterwards, the button toggles it.
