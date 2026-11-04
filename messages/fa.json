@@ -713,7 +713,11 @@
     "nextMore": "{count, plural, one {# کارت دیگر آماده است.} other {# کارت دیگر آماده است.}}",
     "nextDone": "امروز چیز دیگری برای مرور نیست. برای ادامه کلمه‌ی تازه اضافه کنید.",
     "practiseMore": "تمرین بیشتر",
-    "addWords": "افزودن کلمه‌ی تازه"
+    "addWords": "افزودن کلمه‌ی تازه",
+    "announceAdded": "«{word}» به مرور اضافه شد",
+    "announceAddedPlain": "به مرور اضافه شد",
+    "announceRemoved": "«{word}» از مرور حذف شد",
+    "announceRemovedPlain": "از مرور حذف شد"
   },
   "Progress": {
     "title": "پیشرفت",

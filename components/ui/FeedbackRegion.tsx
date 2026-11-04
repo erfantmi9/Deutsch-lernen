@@ -1,4 +1,5 @@
 import type { ReactNode, Ref } from "react";
+import AnnounceHost from "./AnnounceHost";
 
 const RESERVE = { sm: "min-h-feedback-sm", md: "min-h-feedback", lg: "min-h-feedback-lg" } as const;
 
@@ -21,6 +22,7 @@ export default function FeedbackRegion({
   return (
     <div ref={ref} role="status" aria-live="polite" className={RESERVE[size] + " " + className}>
       {children}
+      <AnnounceHost />
     </div>
   );
 }

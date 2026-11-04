@@ -713,7 +713,11 @@
     "nextMore": "{count, plural, one {# weitere Karte ist bereit.} other {# weitere Karten sind bereit.}}",
     "nextDone": "Heute ist nichts mehr fällig. Füge neue Wörter hinzu, um weiterzumachen.",
     "practiseMore": "Weiter üben",
-    "addWords": "Neue Wörter hinzufügen"
+    "addWords": "Neue Wörter hinzufügen",
+    "announceAdded": "{word} zur Wiederholung hinzugefügt",
+    "announceAddedPlain": "Zur Wiederholung hinzugefügt",
+    "announceRemoved": "{word} aus der Wiederholung entfernt",
+    "announceRemovedPlain": "Aus der Wiederholung entfernt"
   },
   "Progress": {
     "title": "Fortschritt",

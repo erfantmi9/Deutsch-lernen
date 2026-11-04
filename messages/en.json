@@ -713,7 +713,11 @@
     "nextMore": "{count, plural, one {# more card is ready.} other {# more cards are ready.}}",
     "nextDone": "Nothing else is due today. Add new words to keep going.",
     "practiseMore": "Practise more",
-    "addWords": "Add new words"
+    "addWords": "Add new words",
+    "announceAdded": "{word} added to review",
+    "announceAddedPlain": "Added to review",
+    "announceRemoved": "{word} removed from review",
+    "announceRemovedPlain": "Removed from review"
   },
   "Progress": {
     "title": "Progress",
