@@ -1,90 +1,34 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { evaluatePath, GOAL_CHOICES, goalFraction, resumeSection } from "@/lib/learningPath";
-import { dateKey } from "@/lib/dateKey";
-import { numbersProgress } from "@/lib/numbersStats";
-import { PASS_MARK } from "@/lib/scoreStats";
-import { useActivityStore } from "@/stores/activityStore";
-import { useDialogueStore } from "@/stores/dialogueStore";
-import { useExamStore } from "@/stores/examStore";
-import { useGrammarStore } from "@/stores/grammarStore";
-import { ensureLearnHydrated, useLearnStore } from "@/stores/learnStore";
-import { useNumbersStore } from "@/stores/numbersStore";
-import { useQuizStore } from "@/stores/quizStore";
-import { useReadingStore } from "@/stores/readingStore";
-import { useSentenceStore } from "@/stores/sentenceStore";
-import { ensureSrsHydrated, useSrsStore } from "@/stores/srsStore";
-import { useVerbStore } from "@/stores/verbStore";
+import { GOAL_CHOICES, goalFraction } from "@/lib/learningPath";
+import { useLearnStore } from "@/stores/learnStore";
 import ProgressRing from "./ProgressRing";
+import { useHomeProgress } from "./useHomeProgress";
 
-const passedCount = (results: Readonly<Record<string, { best: number }>>): number =>
-  Object.values(results).filter((r) => r.best >= PASS_MARK).length;
+const Arrow = () => (
+  <span aria-hidden="true" className="rtl:-scale-x-100">
+    →
+  </span>
+);
 
-/** Home page: daily goal, "continue where you left off", and the recommended path through the course. */
+/** Same size as a .btn with a short label; shown until saved progress has loaded. */
+const ButtonSkeleton = () => <span aria-hidden="true" className="block h-11 w-36 animate-pulse rounded-full bg-surface-2" />;
+
+/**
+ * Home page: "continue where you left off" and today's due reviews (above the module cards), the daily goal and the
+ * recommended path. Every card keeps its size while the stores load: a skeleton with aria-busy, never a default label
+ * that is swapped for the real one.
+ */
 export default function HomePath() {
   const t = useTranslations("Path");
   const tNav = useTranslations("Nav");
-  const [ready, setReady] = useState(false);
-  const [today, setToday] = useState("1970-01-01");
-
-  const quizBest = useQuizStore((s) => s.bestStreak);
-  const verbScore = useVerbStore((s) => s.score);
-  const completed = useGrammarStore((s) => s.completedLessonIds);
-  const numbers = useNumbersStore((s) => numbersProgress(s));
-  const dialogues = useDialogueStore((s) => passedCount(s.results));
-  const reading = useReadingStore((s) => passedCount(s.results));
-  const solved = useSentenceStore((s) => s.solvedIds.length);
-  const deckSize = useSrsStore((s) => Object.keys(s.cards).length);
-  const reviewLog = useSrsStore((s) => s.log);
-  const attempts = useExamStore((s) => s.attempts.length);
-  const days = useActivityStore((s) => s.days);
-  const lastVisit = useLearnStore((s) => s.lastVisit);
-  const goal = useLearnStore((s) => s.dailyGoal);
   const setGoal = useLearnStore((s) => s.setDailyGoal);
+  const { ready, steps, deckSize, due, todayCount, goal, resume } = useHomeProgress();
 
-  useEffect(() => {
-    let cancelled = false;
-    void Promise.all([
-      useQuizStore.persist.rehydrate(),
-      useVerbStore.persist.rehydrate(),
-      useGrammarStore.persist.rehydrate(),
-      useNumbersStore.persist.rehydrate(),
-      useDialogueStore.persist.rehydrate(),
-      useReadingStore.persist.rehydrate(),
-      useSentenceStore.persist.rehydrate(),
-      useExamStore.persist.rehydrate(),
-      useActivityStore.persist.rehydrate(),
-      ensureSrsHydrated(),
-      ensureLearnHydrated(),
-    ]).then(() => {
-      if (cancelled) return;
-      setToday(dateKey());
-      setReady(true);
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
-  const steps = evaluatePath({
-    quizBestStreak: quizBest,
-    verbScore,
-    completedLessonIds: completed,
-    numbersProgress: numbers,
-    dialoguesPassed: dialogues,
-    readingPassed: reading,
-    sentencesSolved: solved,
-    reviewDeckSize: deckSize,
-    reviewAnswers: Object.values(reviewLog).reduce((n, d) => n + d.reviews, 0),
-    examAttempts: attempts,
-  });
   const doneCount = steps.filter((s) => s.done).length;
-  const todayCount = ready ? (days[today] ?? 0) : 0;
   const fraction = goalFraction(todayCount, goal);
-  const section = lastVisit ? resumeSection(lastVisit) : null;
 
   return (
     <section aria-labelledby="path-title" className="space-y-5">
@@ -93,40 +37,49 @@ export default function HomePath() {
       </h2>
 
       <div className="grid gap-4 md:grid-cols-2">
-        <div className="card flex items-center gap-4 p-5">
+        <div data-continue-box aria-busy={!ready} className="card flex flex-col justify-center gap-2 p-5">
+          <p className="font-extrabold">{t("continueTitle")}</p>
+          <p className="line-clamp-2 min-h-10 text-sm leading-5 text-text-muted">
+            {!ready ? <span className="sr-only">{t("loading")}</span> : resume ? t("continueText", { section: tNav(resume.section) }) : t("continueEmpty")}
+          </p>
+          {!ready ? (
+            <ButtonSkeleton />
+          ) : (
+            <Link href={resume?.href ?? "/arcade"} className="btn btn-primary self-start">
+              {resume ? t("continueButton") : t("startButton")} <Arrow />
+            </Link>
+          )}
+        </div>
+
+        <div data-due-box aria-busy={!ready} className="card flex flex-col justify-center gap-2 p-5">
+          <p className="font-extrabold">{t("dueTitle")}</p>
+          <p className="line-clamp-2 min-h-10 text-sm leading-5 text-text-muted">
+            {!ready ? <span className="sr-only">{t("loading")}</span> : deckSize === 0 ? t("dueEmpty") : t("dueText", { count: due })}
+          </p>
+          {!ready ? (
+            <ButtonSkeleton />
+          ) : (
+            <Link href="/review" className={"self-start " + (due > 0 ? "btn btn-primary" : "btn btn-secondary")}>
+              {t("dueButton")} <Arrow />
+            </Link>
+          )}
+        </div>
+
+        <div className="card flex items-center gap-4 p-5 md:col-span-2">
           <ProgressRing value={ready ? fraction : 0} size={84} label={t("goalRing", { percent: Math.round((ready ? fraction : 0) * 100) })} />
           <div className="space-y-2">
             <p className="font-extrabold">{t("goalTitle")}</p>
-            <p className="text-sm text-text-muted" aria-live="polite">
-              {fraction >= 1 ? t("goalDone") : t("goalProgress", { done: todayCount, goal })}
+            <p className="min-h-5 text-sm leading-5 text-text-muted" aria-live="polite" aria-busy={!ready}>
+              {!ready ? "" : fraction >= 1 ? t("goalDone") : t("goalProgress", { done: todayCount, goal })}
             </p>
             <div role="group" aria-label={t("goalChoose")} className="flex flex-wrap gap-2">
               {GOAL_CHOICES.map((g) => (
-                <button key={g} type="button" aria-pressed={ready && goal === g} onClick={() => setGoal(g)} className="pill min-h-11 px-3">
+                <button key={g} type="button" aria-pressed={ready && goal === g} onClick={() => setGoal(g)} className="pill min-h-11 px-4">
                   {g}
                 </button>
               ))}
             </div>
           </div>
-        </div>
-
-        <div className="card flex flex-col justify-center gap-2 p-5">
-          <p className="font-extrabold">{t("continueTitle")}</p>
-          {ready && lastVisit && section ? (
-            <>
-              <p className="text-sm text-text-muted">{t("continueText", { section: tNav(section) })}</p>
-              <Link href={lastVisit} className="btn btn-primary self-start">
-                {t("continueButton")} <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
-              </Link>
-            </>
-          ) : (
-            <>
-              <p className="text-sm text-text-muted">{t("continueEmpty")}</p>
-              <Link href="/arcade" className="btn btn-primary self-start">
-                {t("startButton")} <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
-              </Link>
-            </>
-          )}
         </div>
       </div>
 
