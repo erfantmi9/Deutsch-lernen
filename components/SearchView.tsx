@@ -20,6 +20,19 @@ export default function SearchView({ items }: { items: readonly SearchItem[] }) 
     input.current?.focus();
   }, []);
 
+  // Write the query back to the URL (debounced, replace, not push) so Back from a result restores these results.
+  useEffect(() => {
+    const id = window.setTimeout(() => {
+      const url = new URL(window.location.href);
+      const q = query.trim();
+      if ((url.searchParams.get("q") ?? "") === q) return;
+      if (q) url.searchParams.set("q", q);
+      else url.searchParams.delete("q");
+      window.history.replaceState(window.history.state, "", url.pathname + url.search + url.hash);
+    }, 300);
+    return () => window.clearTimeout(id);
+  }, [query]);
+
   const results = useMemo(() => searchItems(items, query), [items, query]);
   const active = query.trim().length >= MIN_QUERY_LENGTH;
 
