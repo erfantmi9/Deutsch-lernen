@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 import type { Page } from "@playwright/test";
 import { readFileSync } from "node:fs";
-import { expectBelowHeader, expectClearOfBar, shot } from "./helpers";
+import { expectBelowHeader, expectClearOfBar, installFakeKeyboard, shot } from "./helpers";
 
 interface Ex {
   id: string;
@@ -15,7 +15,7 @@ const LESSON = "dative";
 
 const norm = (s: string) => s.replace(/\s+/g, " ").trim();
 const action = (page: Page) => page.locator("[data-action-button]");
-const feedback = (page: Page) => page.locator("main [role=status].min-h-feedback-lg");
+const feedback = (page: Page) => page.locator("main [role=status].min-h-feedback");
 const counter = (page: Page) => page.locator("#practice section dl dd").first();
 const input = (page: Page) => page.locator("#practice section input:not([type=checkbox])").first();
 
@@ -166,23 +166,9 @@ for (const locale of ["en", "fa"] as const) {
       }
     });
 
-    test("typed question: umlaut keys keep focus, the bar and keys ride above the keyboard (visualViewport)", async ({ page, isMobile }) => {
+    test("typed question with the keyboard open: question + field above the bar; after answering the keyboard closes and question + feedback fit", async ({ page, isMobile }) => {
       test.skip(!isMobile, "an on-screen keyboard only exists on phones");
-      // Fake a visual viewport so we can simulate the on-screen keyboard (headless Chromium has none).
-      await page.addInitScript(() => {
-        // height follows innerHeight until a test overrides it (innerHeight is not final when init scripts run).
-        let override: number | null = null;
-        const vv = new EventTarget();
-        // defineProperties, not Object.assign: assign would copy the getters' current values and freeze them.
-        Object.defineProperties(vv, {
-          offsetTop: { value: 0 }, offsetLeft: { value: 0 }, scale: { value: 1 }, pageTop: { value: 0 }, pageLeft: { value: 0 },
-          height: { get: () => override ?? innerHeight },
-          width: { get: () => innerWidth },
-          setHeight: { value: (h: number | null) => { override = h; vv.dispatchEvent(new Event("resize")); } },
-        });
-        Object.defineProperty(window, "visualViewport", { value: vv, configurable: true });
-        (window as unknown as { __vv: typeof vv }).__vv = vv;
-      });
+      await installFakeKeyboard(page, 290); // ~290px keyboard; it opens/closes with focus, like a phone
       await openPractice(page, locale);
 
       // Find a typed question (answering the others correctly).
@@ -194,39 +180,53 @@ for (const locale of ["en", "fa"] as const) {
       }
       expect(ex.type).not.toBe("choice");
       const field = input(page);
-      await field.focus(); // (no autofocus before the learner has started answering, by design)
-      const bar = page.locator("[data-bottom-chrome]").filter({ has: page.locator("[data-action-button]") });
+      const bar = action(page).locator("xpath=ancestor::*[@data-bottom-chrome]");
+      const card = page.locator("#practice form .card-hero");
       const vh = page.viewportSize()!.height;
+      const headerBottom = async () => (await page.locator("header.sticky").boundingBox())!.y + (await page.locator("header.sticky").boundingBox())!.height;
 
-      // Keyboard closed: keys inline in the form, bar at the bottom.
+      // Keyboard closed (a typed question reached after answering others is auto-focused, so blur first): umlaut
+      // keys inline in the form, not in the bar.
+      await field.evaluate((el) => (el as HTMLInputElement).blur());
       await expect(page.locator("form [role=group]")).toHaveCount(1);
       await expect(bar.locator("[role=group]")).toHaveCount(0);
 
-      // Keyboard "opens" (300px).
-      const KEYBOARD = 300;
-      await page.evaluate((h) => (window as unknown as { __vv: { setHeight(n: number | null): void } }).__vv.setHeight(innerHeight - h), KEYBOARD);
-
+      // Focus opens the (fake) keyboard.
+      await field.focus();
       await expect(bar.locator("[role=group]")).toHaveCount(1); // umlaut keys moved into the bar
       await expect(page.locator("form [role=group]")).toHaveCount(0);
       await expect(async () => {
         const b = (await bar.boundingBox())!;
-        expect(b.y + b.height).toBeLessThanOrEqual(vh - KEYBOARD + 1); // bar sits above the keyboard
-        expect(b.y + b.height).toBeGreaterThanOrEqual(vh - KEYBOARD - 1);
-      }).toPass({ timeout: 3000 });
-      await expectClearOfBar(page, page.locator("#practice form .scroll-target").first()); // the field is not behind the bar
+        expect(Math.abs(b.y + b.height - (vh - 290))).toBeLessThanOrEqual(1); // bar sits right above the keyboard
+        const barTop = b.y;
+        const c = (await card.boundingBox())!;
+        const f = (await field.boundingBox())!;
+        expect(c.y).toBeGreaterThanOrEqual((await headerBottom()) - 0.5); // question card not under the header
+        expect(f.y + f.height).toBeLessThanOrEqual(barTop + 0.5); // field not under the bar
+        expect(f.y + f.height).toBeLessThanOrEqual(vh - 290); // ...and inside the visual viewport
+      }).toPass({ timeout: 4000 });
+      // One row only: the bar did not grow a second row for the umlaut keys.
+      expect((await bar.boundingBox())!.height).toBeLessThan(80);
 
-      // Tapping an umlaut key keeps the focus in the field (no keyboard dismissal).
+      // Umlaut key: inserts, keeps focus (keyboard stays).
       await bar.locator("[role=group] button").first().click();
       await expect(field).toBeFocused();
       await expect(field).toHaveValue(/[äöüß]/);
 
-      // Keyboard closes again.
-      await page.evaluate(() => (window as unknown as { __vv: { setHeight(n: number | null): void } }).__vv.setHeight(null));
-      await expect(page.locator("form [role=group]")).toHaveCount(1);
+      // Answer with the keyboard open (Enter): the field blurs, the keyboard closes, focus parks on the bar button.
+      await field.fill(ex.answer);
+      await page.keyboard.press("Enter");
+      await expect(page.locator("main .feedback-success, main .feedback-error")).toBeVisible();
+      await expect(action(page)).toBeFocused();
       await expect(async () => {
         const b = (await bar.boundingBox())!;
-        expect(Math.abs(b.y + b.height - vh)).toBeLessThan(20); // back at the bottom (lg: sticky, 1rem above)
-      }).toPass({ timeout: 3000 });
+        expect(Math.abs(b.y + b.height - vh)).toBeLessThanOrEqual(1); // keyboard gone, bar back at the bottom
+        const c = (await card.boundingBox())!;
+        const fb = (await feedback(page).locator("> div").boundingBox())!;
+        expect(c.y).toBeGreaterThanOrEqual((await headerBottom()) - 0.5); // question AND feedback in view,
+        expect(fb.y + fb.height).toBeLessThanOrEqual(b.y + 0.5); // above the bar
+      }).toPass({ timeout: 4000 });
+      await expect(page.locator("form [role=group]")).toHaveCount(1); // umlaut keys back inline
     });
   });
 }

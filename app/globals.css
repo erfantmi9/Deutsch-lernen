@@ -221,7 +221,7 @@
 :root {
   --header-h: 4rem;
   --bottom-nav-h: 4.5rem;
-  --action-bar-h: 4.5rem;
+  --action-bar-h: 5.25rem; /* fallback until StickyActionBar publishes --action-bar-measured */
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --feedback-min-h: 9rem;
   --feedback-min-h-sm: 5.5rem; /* compact quizzes that must fit a 667px phone */
@@ -247,13 +247,21 @@ html[data-action-bar] .app-bottom-nav {
     --bottom-chrome-h: calc(var(--action-bar-measured, var(--action-bar-h)) + 1rem);
   }
 }
+body {
+  /* viewport-fit=cover lets the page extend under notches; keep content out of them in landscape. */
+  padding-inline: env(safe-area-inset-left, 0px) env(safe-area-inset-right, 0px);
+}
 html {
   scroll-padding-top: calc(var(--header-h) + 0.5rem);
   scroll-padding-bottom: calc(var(--bottom-chrome-h) + 0.5rem);
 }
+/*
+ * html's scroll-padding (above) already keeps scrolled-to content clear of the sticky header and the bottom chrome
+ * (bar + keyboard). Scroll-padding and scroll-margin ADD UP, so a target only needs a little breathing room; giving it
+ * the full chrome height as well would double-count and over-scroll (the target would land behind the header).
+ */
 .scroll-target {
-  scroll-margin-block-start: calc(var(--header-h) + 1rem);
-  scroll-margin-block-end: calc(var(--bottom-chrome-h) + 1rem);
+  scroll-margin-block: 0.5rem;
   outline: none;
 }
 @media (max-height: 700px) {
@@ -273,6 +281,27 @@ html {
   .ph-full {
     display: none;
   }
+}
+/* While the on-screen keyboard is open (html[data-keyboard], set by useKeyboardInset) decoration steps aside. */
+html[data-keyboard] .kb-hide {
+  display: none;
+}
+/* ...and the question card tightens, so card + field fit above a ~290px keyboard. */
+html[data-keyboard] .kb-tight {
+  padding: 0.5rem 0.75rem;
+  row-gap: 0.25rem;
+}
+html[data-keyboard] .kb-text {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+html[data-keyboard] .kb-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 html.scroll-locked {
   overflow: hidden;

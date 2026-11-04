@@ -50,3 +50,39 @@ export async function seedQuiz(page: Page, autoAdvance: boolean) {
 }
 
 export const quizWrites = (page: Page) => page.evaluate(() => (window as unknown as { __quizWrites: number }).__quizWrites);
+
+/**
+ * Fakes an on-screen keyboard (headless Chromium has none): visualViewport shrinks by `keyboardPx` while a text field
+ * is focused and returns to full height when it is blurred, like a real phone. Call before page.goto.
+ */
+export async function installFakeKeyboard(page: Page, keyboardPx = 290) {
+  await page.addInitScript((kb) => {
+    let override: number | null = null;
+    const vv = new EventTarget();
+    // defineProperties, not Object.assign: assign would copy the getters' current values and freeze them.
+    Object.defineProperties(vv, {
+      offsetTop: { value: 0 }, offsetLeft: { value: 0 }, scale: { value: 1 }, pageTop: { value: 0 }, pageLeft: { value: 0 },
+      height: { get: () => override ?? innerHeight },
+      width: { get: () => innerWidth },
+    });
+    const set = (h: number | null) => {
+      override = h;
+      vv.dispatchEvent(new Event("resize"));
+    };
+    Object.defineProperty(window, "visualViewport", { value: vv, configurable: true });
+    const isText = (el: Element | null) =>
+      !!el && /^(INPUT|TEXTAREA)$/.test(el.tagName) && !["checkbox", "radio", "button", "submit"].includes((el as HTMLInputElement).type);
+    document.addEventListener("focusin", (e) => isText(e.target as Element) && set(innerHeight - kb));
+    document.addEventListener("focusout", () => setTimeout(() => !isText(document.activeElement) && set(null), 0));
+  }, keyboardPx);
+}
+
+/** Top edge (px) of the highest visible fixed-bottom bar (action bar or mobile nav); the viewport bottom if none. */
+export async function bottomChromeTop(page: Page): Promise<number> {
+  return page.evaluate(() => {
+    const tops = [...document.querySelectorAll("[data-bottom-chrome]")]
+      .filter((el) => getComputedStyle(el).display !== "none" && getComputedStyle(el).position === "fixed")
+      .map((el) => el.getBoundingClientRect().top);
+    return Math.min(window.innerHeight, ...tops);
+  });
+}

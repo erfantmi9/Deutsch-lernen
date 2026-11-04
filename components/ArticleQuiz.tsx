@@ -252,11 +252,10 @@ export default function ArticleQuiz() {
         onAction={advance}
         status={answered ? null : t("chooseArticle")}
         secondary={
-          answered ? (
-            <button type="button" onClick={openExplanation} aria-haspopup="dialog" className="btn btn-secondary shrink-0">
-              {t("why")}
-            </button>
-          ) : null
+          // Always rendered (disabled until there is something to explain), so the bar never changes shape.
+          <button type="button" disabled={!answered} onClick={openExplanation} aria-haspopup="dialog" className="btn btn-secondary shrink-0">
+            {t("why")}
+          </button>
         }
       />
 

@@ -13,6 +13,7 @@ import type { GrammarExercise } from "@/types/grammar";
 import Mascot from "./illustrations/Mascot";
 import SpecialCharBar from "./SpecialCharBar";
 import FeedbackRegion from "./ui/FeedbackRegion";
+import ResponsiveSheet from "./ui/ResponsiveSheet";
 import ScoreStrip from "./ui/ScoreStrip";
 import StickyActionBar from "./ui/StickyActionBar";
 import { useKeyboardInset } from "./ui/useKeyboardInset";
@@ -28,7 +29,7 @@ interface Result {
 function GapSentence({ sentence, filled, tone }: { sentence: string; filled: string | null; tone: "success" | "danger" | null }) {
   const { before, after } = splitAtGap(sentence);
   return (
-    <p dir="ltr" lang="de" className="text-2xl font-extrabold leading-relaxed sm:text-3xl">
+    <p dir="ltr" lang="de" className="kb-text text-2xl font-extrabold leading-relaxed sm:text-3xl">
       {before}
       <span
         className={
@@ -70,7 +71,8 @@ export default function GrammarExerciseRunner({
   const [result, setResult] = useState<Result | null>(null);
   const [inView, setInView] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
-  const fieldRef = useRef<HTMLDivElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+  const [detailsOpen, setDetailsOpen] = useState(false);
   const actionRef = useRef<HTMLButtonElement>(null);
   const wrapRef = useRef<HTMLDivElement>(null);
   const headingRef = useRef<HTMLHeadingElement>(null);
@@ -108,9 +110,17 @@ export default function GrammarExerciseRunner({
   useEffect(() => {
     const el = wrapRef.current;
     if (!el) return;
-    const io = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting));
-    io.observe(el);
-    return () => io.disconnect();
+    // Hysteresis: show the bar once the block is well inside the screen (>=120px), hide it only when it has left
+    // completely. Showing the bar changes the page padding / nav, which nudges the block by a few px; a single
+    // threshold would flip the bar on and off right there.
+    const enter = new IntersectionObserver(([e]) => e.isIntersecting && setInView(true), { rootMargin: "0px 0px -120px 0px" });
+    const leave = new IntersectionObserver(([e]) => !e.isIntersecting && setInView(false));
+    enter.observe(el);
+    leave.observe(el);
+    return () => {
+      enter.disconnect();
+      leave.disconnect();
+    };
   }, []);
 
   const exercise = queue[index] ?? null;
@@ -123,14 +133,21 @@ export default function GrammarExerciseRunner({
     if (typed && !result && engaged.current) inputRef.current?.focus({ preventScroll: true });
   }, [typed, result, index]);
 
-  // After a choice answer the pressed button is disabled and loses focus: park focus on the persistent action button.
-  // (Typed answers keep focus in the read-only input, so the keyboard stays open and Enter goes on.)
+  // After an answer focus is parked on the persistent action button, never dropped. For a typed answer this also
+  // blurs the input, which closes the on-screen keyboard: with the keyboard gone, the question, the verdict and the
+  // bar all fit the screen (they cannot all fit above a ~290px keyboard).
   useEffect(() => {
-    if (result && !typed) actionRef.current?.focus({ preventScroll: true });
-  }, [result, typed]);
+    if (result) actionRef.current?.focus({ preventScroll: true });
+  }, [result]);
 
-  // Feedback appears under the question; bring it fully into view above the bar.
-  const feedbackRef = useScrollIntoViewOnChange<HTMLDivElement>(result, { enabled: result !== null, focus: false, block: "nearest" });
+  // Question + answer field + feedback form one block; after answering, scroll the minimum that shows ALL of it above
+  // the bar. The trigger includes the keyboard state: answering blurs the input, the keyboard closes a moment later and
+  // the layout changes (bar drops, hidden decoration returns), so the position is settled again once it is gone.
+  const qaRef = useScrollIntoViewOnChange<HTMLDivElement>(result ? `answered-${keyboard > 0}` : null, {
+    enabled: result !== null,
+    focus: false,
+    block: "nearest",
+  });
 
   // End of session: scroll the summary card to the top of the screen and focus its heading.
   const summaryRef = useScrollIntoViewOnChange<HTMLDivElement>(summary, { enabled: summary, focus: false, block: "start" });
@@ -138,10 +155,11 @@ export default function GrammarExerciseRunner({
     if (summary) headingRef.current?.focus({ preventScroll: true });
   }, [summary]);
 
-  // Keyboard open on a typed question: make sure the field is not hidden between the header and the bar.
+  // Keyboard open on a typed question: bring the question + field above the keyboard bar. Aligning the form's END
+  // keeps the question card visible too (the form is shorter than the space left). .scroll-target margins already
+  // include --keyboard-inset and the bar height.
   useEffect(() => {
-    // .scroll-target margins include --keyboard-inset and the bar height, so "nearest" lands above both.
-    if (keyboard > 0 && typed) fieldRef.current?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    if (keyboard > 0 && typed) formRef.current?.scrollIntoView({ block: "end", behavior: "smooth" });
   }, [keyboard, typed]);
 
   const answer = (value: string) => {
@@ -158,6 +176,7 @@ export default function GrammarExerciseRunner({
   const next = () => {
     if (!answeredRef.current) return; // nothing answered yet: Next is inert
     answeredRef.current = false;
+    setDetailsOpen(false);
     setIndex((i) => i + 1);
     setInput("");
     setResult(null);
@@ -243,17 +262,20 @@ export default function GrammarExerciseRunner({
   return wrap(
     <>
       <section aria-label={t("practiceTitle")} className="space-y-4">
-        <ScoreStrip
-          items={[
-            [t("question"), `${index + 1} / ${queue.length}`],
-            [t("streak"), streak],
-            [t("best"), bestStreak],
-          ]}
-        />
+        <div className="kb-hide">
+          <ScoreStrip
+            items={[
+              [t("question"), `${index + 1} / ${queue.length}`],
+              [t("streak"), streak],
+              [t("best"), bestStreak],
+            ]}
+          />
+        </div>
 
-        <form onSubmit={onSubmit} className="space-y-3" noValidate>
-          <div className="card-hero space-y-3 p-4 sm:p-6">
-            <p className="eyebrow">{t(`types.${exercise.type}`)}</p>
+        <div ref={qaRef} className="space-y-3">
+        <form ref={formRef} onSubmit={onSubmit} className="scroll-target space-y-3" noValidate>
+          <div className="card-hero kb-tight space-y-3 p-4 sm:p-6">
+            <p className="eyebrow kb-hide">{t(`types.${exercise.type}`)}</p>
             <p className="font-bold">{exercise.prompt[locale]}</p>
             <GapSentence sentence={exercise.sentenceDe} filled={result ? exercise.answer : null} tone={tone} />
           </div>
@@ -294,8 +316,8 @@ export default function GrammarExerciseRunner({
           )}
 
           {typed && (
-            <div ref={fieldRef} className="scroll-target">
-              <label htmlFor={inputId} className="mb-1 block text-sm font-bold text-text-muted">
+            <div>
+              <label htmlFor={inputId} className="kb-sr mb-1 block text-sm font-bold text-text-muted">
                 {t("typeAnswer")}
               </label>
               <input
@@ -303,7 +325,8 @@ export default function GrammarExerciseRunner({
                 ref={inputRef}
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                // readOnly (not disabled) once answered: focus and the on-screen keyboard stay, Enter goes to Next.
+                // readOnly (not disabled) once answered: the value stays visible and nothing flickers while focus
+                // moves to the action bar.
                 readOnly={result !== null}
                 aria-readonly={result !== null}
                 dir="ltr"
@@ -322,8 +345,9 @@ export default function GrammarExerciseRunner({
           {keyboard === 0 && charBar}
         </form>
 
-        {/* Feedback: directly under the question, live region always mounted, ~11rem reserved (result + sentence + explanation). */}
-        <FeedbackRegion size="lg" ref={feedbackRef}>
+        {/* Feedback: short verdict + the filled sentence, directly under the question. The full explanation lives behind
+            "Details" (sheet), so this stays small. Live region always mounted, height reserved. */}
+        <FeedbackRegion size="md">
           {result && (
             <div className={"space-y-2 " + (result.correct ? "feedback-success" : "feedback-error")}>
               <div className="flex items-center gap-3">
@@ -342,10 +366,10 @@ export default function GrammarExerciseRunner({
                 </div>
               </div>
               {result.check === "umlaut" && <p className="feedback-hint">⚠ {t("umlautHint")}</p>}
-              <p className="text-sm text-text">{exercise.explanation[locale]}</p>
             </div>
           )}
         </FeedbackRegion>
+        </div>
 
         {inView && (
           <StickyActionBar
@@ -354,9 +378,27 @@ export default function GrammarExerciseRunner({
             disabled={result ? false : typed ? !canSubmit : true}
             onAction={() => (result ? next() : answer(input))}
             status={result ? null : typed ? (canSubmit ? null : t("missingAnswer")) : t("missingChoice")}
-            toolbar={keyboard > 0 ? charBar : null}
+            toolbar={keyboard > 0 && typed ? <SpecialCharBar compact disabled={result !== null} onInsert={insertChar} /> : null}
+            secondary={
+              <button type="button" disabled={!result} onClick={() => setDetailsOpen(true)} aria-haspopup="dialog" className="btn btn-secondary shrink-0">
+                {t("details")}
+              </button>
+            }
           />
         )}
+
+        <ResponsiveSheet open={detailsOpen} onClose={() => setDetailsOpen(false)} title={t("details")}>
+          {result && (
+            <div className="space-y-3">
+              <p className="text-xl font-extrabold">
+                <bdi dir="ltr" lang="de">
+                  {fillGap(exercise.sentenceDe, exercise.answer)}
+                </bdi>
+              </p>
+              <p className="leading-relaxed">{exercise.explanation[locale]}</p>
+            </div>
+          )}
+        </ResponsiveSheet>
       </section>
     </>,
   );

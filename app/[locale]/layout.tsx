@@ -40,7 +40,7 @@ export async function generateMetadata({
   };
 }
 
-export const viewport: Viewport = { themeColor: THEME_COLOR, width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: THEME_COLOR, width: "device-width", initialScale: 1, viewportFit: "cover" };
 
 export default async function LocaleLayout({
   children,

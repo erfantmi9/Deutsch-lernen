@@ -79,11 +79,19 @@ for (const locale of ["en", "fa"] as const) {
 
       // 2) Correct answer, explanation opened within the 1s window: stays put.
       for (let i = 0; i < 40; i++) {
-        await answerWith(page, i);
+        await candy(page).nth(i % 3).click();
+        // Open the explanation from inside the page the moment it is enabled: no Playwright round trips, so this is
+        // far inside the 1s auto-advance window even on a loaded machine.
+        await page.evaluate(async () => {
+          const why = document.querySelector<HTMLButtonElement>("[data-bottom-chrome] button[aria-haspopup=dialog]")!;
+          while (why.disabled) await new Promise((r) => requestAnimationFrame(r));
+          why.click();
+        });
+        await expect(page.locator("dialog[open]")).toBeVisible();
         if (await page.locator("main .feedback-success").isVisible()) break;
+        await page.keyboard.press("Escape"); // wrong answer: close the sheet and try the next word
         await action(page).click();
       }
-      await page.locator("[data-bottom-chrome] button[aria-haspopup=dialog]").click();
       await page.waitForTimeout(1800);
       await page.keyboard.press("Escape");
       await expect(page.locator("main .feedback-success")).toBeVisible(); // still on the answered word

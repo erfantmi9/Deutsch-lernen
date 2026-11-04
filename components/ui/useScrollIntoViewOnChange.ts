@@ -29,8 +29,8 @@ function isComfortablyVisible(el: HTMLElement): boolean {
 
 /**
  * Fallback when a layout can't show the result in place: whenever `trigger` changes, scroll the returned ref's
- * element into view and move focus to it. Smooth unless the user prefers reduced motion. Offsets come from the
- * .scroll-target class (scroll-margin uses --header-h and --bottom-chrome-h). No scroll if already fully visible.
+ * element into view and move focus to it. Smooth unless the user prefers reduced motion. Offsets come from html's
+ * scroll-padding (header + bottom chrome) plus the small .scroll-target margin. No scroll if already fully visible.
  */
 export function useScrollIntoViewOnChange<T extends HTMLElement = HTMLElement>(trigger: unknown, opts: Options = {}) {
   const { enabled = true, focus = true, skipFirst = true, block = "start" } = opts;

@@ -438,6 +438,7 @@
     "insertChar": "Insert {char}",
     "missingAnswer": "Type your answer",
     "missingChoice": "Choose an answer",
+    "details": "Details",
     "check": "Check",
     "next": "Next",
     "finish": "Finish",

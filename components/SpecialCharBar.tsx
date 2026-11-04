@@ -8,14 +8,17 @@ const SPECIAL_CHARS = ["ä", "ö", "ü", "ß"] as const;
 export default function SpecialCharBar({
   disabled,
   onInsert,
+  compact = false,
 }: {
   disabled?: boolean;
   onInsert: (char: string) => void;
+  /** Single-row variant for the action bar: the visible caption is dropped (the group keeps its aria-label). */
+  compact?: boolean;
 }) {
   const t = useTranslations("Grammar");
   return (
-    <div role="group" aria-label={t("specialChars")} className="flex flex-wrap items-center gap-2">
-      <span className="text-xs font-bold text-text-muted">{t("specialChars")}:</span>
+    <div role="group" aria-label={t("specialChars")} className={"flex items-center gap-2 " + (compact ? "flex-nowrap" : "flex-wrap")}>
+      <span className={"text-xs font-bold text-text-muted" + (compact ? " sr-only" : "")}>{t("specialChars")}:</span>
       {SPECIAL_CHARS.map((ch) => (
         <button
           key={ch}

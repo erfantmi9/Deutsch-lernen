@@ -19,6 +19,7 @@ import SpecialCharBar from "./SpecialCharBar";
 import ConfirmDialog from "./ui/ConfirmDialog";
 import FeedbackRegion from "./ui/FeedbackRegion";
 import StickyActionBar from "./ui/StickyActionBar";
+import { useKeyboardInset } from "./ui/useKeyboardInset";
 import { useScrollIntoViewOnChange } from "./ui/useScrollIntoViewOnChange";
 
 const MODES: readonly DrillMode[] = ["present", "perfekt", "mixed"];
@@ -50,6 +51,8 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
   const [confirmReset, setConfirmReset] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const actionRef = useRef<HTMLButtonElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+  const keyboard = useKeyboardInset();
   // Result appears directly under the question; keep it inside the viewport (above the sticky bar).
   const feedbackRef = useScrollIntoViewOnChange<HTMLDivElement>(result, { enabled: result !== null, focus: false, block: "nearest" });
 
@@ -83,6 +86,11 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
     if (result) actionRef.current?.focus({ preventScroll: true });
     else inputRef.current?.focus();
   }, [question, result]);
+
+  // Keyboard open: keep the question + field above the keyboard bar (aligning the form END keeps the card visible too).
+  useEffect(() => {
+    if (keyboard > 0) formRef.current?.scrollIntoView({ block: "end", behavior: "smooth" });
+  }, [keyboard]);
 
   const changeMode = (m: DrillMode) => {
     setMode(m);
@@ -151,7 +159,7 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
 
   return (
     <section aria-labelledby="drill-title" className="mx-auto w-full max-w-xl space-y-4">
-      <div className="flex items-center justify-between">
+      <div className="kb-hide flex items-center justify-between">
         <h2 id="drill-title" className="text-2xl font-extrabold">
           {t("practiceTitle")}
         </h2>
@@ -161,7 +169,7 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
       </div>
 
       {/* Mode selector */}
-      <div role="radiogroup" aria-label={t("mode")} className="flex gap-1 rounded-full border border-border bg-surface-2 p-1">
+      <div role="radiogroup" aria-label={t("mode")} className="kb-hide flex gap-1 rounded-full border border-border bg-surface-2 p-1">
         {MODES.map((m) => (
           <button
             key={m}
@@ -177,7 +185,7 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
       </div>
 
       {/* Scoreboard: one compact row so the question and its feedback fit on a phone. */}
-      <dl className="flex items-center justify-between gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-sm shadow-soft">
+      <dl className="kb-hide flex items-center justify-between gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-sm shadow-soft">
         {(
           [
             [t("score"), score],
@@ -192,7 +200,7 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
         ))}
       </dl>
 
-      <form onSubmit={onSubmit} className="space-y-3" noValidate>
+      <form ref={formRef} onSubmit={onSubmit} className="scroll-target space-y-3" noValidate>
         {/* Prompt */}
         <div className="card-hero p-4 text-center">
           <p className="eyebrow mb-1">{kind === "present" ? t("tabs.praesens") : t("tabs.perfekt")}</p>
@@ -231,7 +239,7 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
 
         {/* Answer input */}
         <div>
-          <label htmlFor="verb-answer" className="mb-1 block text-sm font-bold text-text-muted">
+          <label htmlFor="verb-answer" className="kb-sr mb-1 block text-sm font-bold text-text-muted">
             {kind === "present" ? t("typeForm") : t("typePartizip")}
           </label>
           <input
@@ -251,7 +259,7 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
           />
         </div>
 
-        <SpecialCharBar disabled={result !== null} onInsert={insertChar} />
+        {keyboard === 0 && <SpecialCharBar disabled={result !== null} onInsert={insertChar} />}
       </form>
 
       {/* Feedback: directly under the question, live region always mounted, height reserved. */}
@@ -297,6 +305,7 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
         disabled={!result && !canSubmit}
         onAction={() => (result ? next() : check())}
         status={result ? null : missing.join(" · ")}
+        toolbar={keyboard > 0 ? <SpecialCharBar compact disabled={result !== null} onInsert={insertChar} /> : null}
       />
 
       <ConfirmDialog

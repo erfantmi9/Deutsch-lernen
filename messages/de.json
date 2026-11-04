@@ -438,6 +438,7 @@
     "insertChar": "{char} einfügen",
     "missingAnswer": "Gib deine Antwort ein",
     "missingChoice": "Wähle eine Antwort",
+    "details": "Details",
     "check": "Prüfen",
     "next": "Weiter",
     "finish": "Fertig",
