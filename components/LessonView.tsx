@@ -103,7 +103,7 @@ export default function LessonView({
         </Link>
       )}
 
-      <section id="practice" aria-labelledby={`${lesson.id}-practice`} className="scroll-mt-24 space-y-4">
+      <section id="practice" aria-labelledby={`${lesson.id}-practice`} className="scroll-target space-y-4">
         <div>
           <h2 id={`${lesson.id}-practice`} className="text-2xl font-extrabold">
             {t("practiceTitle")}

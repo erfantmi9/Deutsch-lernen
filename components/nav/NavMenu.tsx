@@ -66,6 +66,7 @@ export default function NavMenu({
         aria-controls={listId}
         aria-haspopup="true"
         aria-label={label}
+        title={label}
         onClick={() => setOpen((o) => !o)}
         className="h-full w-full"
       >
@@ -77,7 +78,7 @@ export default function NavMenu({
         className={
           "absolute z-50 min-w-[13rem] space-y-1 rounded-3xl border border-border bg-surface p-2 shadow-lift " +
           (placement === "below"
-            ? "start-0 top-full mt-2"
+            ? (groupKey === "more" ? "end-0" : "start-0") + " top-full mt-2"
             : groupKey === "learn"
               ? "bottom-full start-0 mb-3"
               : "bottom-full start-1/2 mb-3 -translate-x-1/2 rtl:translate-x-1/2")

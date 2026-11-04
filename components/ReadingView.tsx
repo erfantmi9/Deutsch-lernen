@@ -123,7 +123,7 @@ export function TaskCard({
   const ok = checkTask(task, response);
 
   return (
-    <fieldset className="card space-y-3 p-5">
+    <fieldset className="card min-w-0 space-y-3 p-5">
       <legend className="sr-only">{t("taskNumber", { n: index + 1 })}</legend>
       <p className="eyebrow">{t("taskNumber", { n: index + 1 })}</p>
 

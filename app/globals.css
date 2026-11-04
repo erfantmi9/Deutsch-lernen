@@ -213,3 +213,198 @@
     transition: none !important;
   }
 }
+
+/*
+ * Fixed-chrome geometry. Sticky offsets, scroll margins and page padding must read these
+ * variables; components never hardcode header/nav heights.
+ */
+:root {
+  --header-h: 4rem;
+  --bottom-nav-h: 4.5rem;
+  --action-bar-h: 5.25rem; /* fallback until StickyActionBar publishes --action-bar-measured */
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --feedback-min-h: 9rem;
+  --feedback-min-h-sm: 5.5rem; /* compact quizzes that must fit a 667px phone */
+  --feedback-min-h-lg: 11.5rem; /* result + filled sentence + explanation (Grammar) */
+  --keyboard-inset: 0px; /* set at runtime from visualViewport while an on-screen keyboard is open */
+  /* Height of whatever is fixed to the bottom of the viewport (nav, or the action bar on drill pages). */
+  --bottom-chrome-h: calc(var(--bottom-nav-h) + var(--safe-bottom));
+}
+html[data-action-bar] {
+  /* --action-bar-measured is published by StickyActionBar (it grows when it carries a toolbar). */
+  --bottom-chrome-h: calc(var(--action-bar-measured, var(--action-bar-h)) + var(--keyboard-inset, 0px) + var(--safe-bottom));
+}
+/* NB: not ".bottom-nav": Tailwind would read that as bottom-{spacing nav}. */
+html[data-action-bar] .app-bottom-nav {
+  display: none;
+}
+@media (min-width: 1024px) {
+  :root {
+    --bottom-chrome-h: 0px;
+  }
+  /* The action bar floats (sticky bottom-4) above the page end, so it still covers the bottom of the viewport. */
+  html[data-action-bar] {
+    --bottom-chrome-h: calc(var(--action-bar-measured, var(--action-bar-h)) + 1rem);
+  }
+}
+body {
+  /* viewport-fit=cover lets the page extend under notches; keep content out of them in landscape. */
+  padding-inline: env(safe-area-inset-left, 0px) env(safe-area-inset-right, 0px);
+}
+html {
+  scroll-padding-top: calc(var(--header-h) + 0.5rem);
+  scroll-padding-bottom: calc(var(--bottom-chrome-h) + 0.5rem);
+}
+/*
+ * html's scroll-padding (above) already keeps scrolled-to content clear of the sticky header and the bottom chrome
+ * (bar + keyboard). Scroll-padding and scroll-margin ADD UP, so a target only needs a little breathing room; giving it
+ * the full chrome height as well would double-count and over-scroll (the target would land behind the header).
+ */
+.scroll-target {
+  scroll-margin-block: 0.5rem;
+  outline: none;
+}
+@media (max-height: 700px) {
+  :root {
+    --feedback-min-h-sm: 4.5rem;
+    --feedback-min-h-lg: 10rem;
+  }
+}
+/* PageHeader compact mode: illustrated card by default, title only on phones and short screens. */
+.ph-compact {
+  display: none;
+}
+@media (max-width: 639px), (max-height: 700px) {
+  .ph-compact {
+    display: block;
+  }
+  .ph-full {
+    display: none;
+  }
+}
+/*
+ * Word-bank / answer-line areas reserve the height of their rows up front (--rows set per exercise), so words moving
+ * between them never shift the targets below. Padding and border are part of the calculation: min-height is
+ * border-box, and a reservation that ignores them is exceeded (and the area jumps) by exactly their sum.
+ */
+.chip-zone {
+  --zone-pad: 0.75rem;
+  --zone-border: 1px;
+  padding: var(--zone-pad);
+  min-height: calc(var(--rows, 1) * 2.75rem + (var(--rows, 1) - 1) * 0.5rem + 2 * var(--zone-pad) + 2 * var(--zone-border));
+}
+.chip-zone[data-zone="answer"] {
+  --zone-border: 2px;
+}
+@media (max-height: 700px) {
+  .chip-zone {
+    --zone-pad: 0.5rem;
+  }
+}
+
+/* While the on-screen keyboard is open (html[data-keyboard], set by useKeyboardInset) decoration steps aside. */
+html[data-keyboard] .kb-hide {
+  display: none;
+}
+/* ...and the question card tightens, so card + field fit above a ~290px keyboard. */
+html[data-keyboard] .kb-tight {
+  padding: 0.5rem 0.75rem;
+  row-gap: 0.25rem;
+}
+html[data-keyboard] .kb-text {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+html[data-keyboard] .kb-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+html.scroll-locked {
+  overflow: hidden;
+}
+
+/*
+ * ResponsiveSheet (native <dialog>): bottom sheet below md, side panel from md up.
+ * Logical properties + --slide make the panel flip in RTL.
+ */
+/* margins are !important: a dialog rendered inside a Tailwind space-y-* parent would otherwise inherit that parent's
+   margin-top (specificity 0,3,0) and sit at the top of the screen instead of the bottom / centre. */
+.sheet {
+  --slide: 100%;
+  inset: 0;
+  margin-block: auto 0 !important;
+  margin-inline: 0 !important;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  border: 0;
+  background: rgb(var(--surface));
+  color: rgb(var(--text));
+  border-start-start-radius: 1.5rem;
+  border-start-end-radius: 1.5rem;
+  box-shadow: 0 -8px 32px rgb(var(--shadow) / 0.2);
+}
+.sheet::backdrop {
+  background: rgb(var(--text) / 0.45);
+}
+.sheet[open] {
+  animation: sheet-up 220ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+@keyframes sheet-up {
+  from {
+    transform: translateY(100%);
+  }
+}
+@keyframes sheet-side {
+  from {
+    transform: translateX(var(--slide));
+  }
+}
+@media (min-width: 768px) {
+  .sheet:not([data-variant="dialog"]) {
+    width: min(30rem, 100%);
+    height: 100dvh;
+    max-height: 100dvh;
+    margin-block: 0 !important;
+    margin-inline: auto 0 !important;
+    border-radius: 0;
+    border-start-start-radius: 1.5rem;
+    border-end-start-radius: 1.5rem;
+    box-shadow: 0 0 32px rgb(var(--shadow) / 0.2);
+  }
+  .sheet[data-side="start"]:not([data-variant="dialog"]) {
+    margin-inline: 0 auto !important;
+    border-radius: 0;
+    border-start-end-radius: 1.5rem;
+    border-end-end-radius: 1.5rem;
+    --slide: -100%;
+  }
+  [dir="rtl"] .sheet:not([data-variant="dialog"]) {
+    --slide: -100%;
+  }
+  [dir="rtl"] .sheet[data-side="start"]:not([data-variant="dialog"]) {
+    --slide: 100%;
+  }
+  .sheet:not([data-variant="dialog"])[open] {
+    animation-name: sheet-side;
+  }
+}
+.sheet[data-variant="dialog"] {
+  width: min(26rem, calc(100% - 2rem));
+  margin: auto !important;
+  border-radius: 1.5rem;
+}
+.sheet[data-variant="dialog"][open] {
+  animation-name: sheet-pop;
+}
+@keyframes sheet-pop {
+  from {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+}

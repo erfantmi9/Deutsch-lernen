@@ -3,6 +3,7 @@ import { persist } from "zustand/middleware";
 import { recordActivity } from "./activityStore";
 import { applySentenceResult } from "@/lib/sentenceBoard";
 import type { FocusFilter } from "@/lib/sentences";
+import type { GrammarFocus } from "@/types/sentence";
 
 interface SentenceState {
   solvedIds: string[];
@@ -10,6 +11,9 @@ interface SentenceState {
   streak: number;
   bestStreak: number;
   focus: FocusFilter;
+  /** Mini lessons already shown once: they start collapsed from the second visit on. */
+  lessonSeen: GrammarFocus[];
+  markLessonSeen: (focus: GrammarFocus) => void;
   setFocus: (focus: FocusFilter) => void;
   recordResult: (id: string, correct: boolean, firstAttempt: boolean) => void;
   reset: () => void;
@@ -23,6 +27,11 @@ export const useSentenceStore = create<SentenceState>()(
       streak: 0,
       bestStreak: 0,
       focus: "all",
+      lessonSeen: [],
+
+      markLessonSeen: (focus) => {
+        if (!get().lessonSeen.includes(focus)) set({ lessonSeen: [...get().lessonSeen, focus] });
+      },
 
       setFocus: (focus) => set({ focus }),
 
@@ -44,6 +53,7 @@ export const useSentenceStore = create<SentenceState>()(
         streak: s.streak,
         bestStreak: s.bestStreak,
         focus: s.focus,
+        lessonSeen: s.lessonSeen,
       }),
     },
   ),

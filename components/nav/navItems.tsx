@@ -15,7 +15,7 @@ export type NavKey =
   | "exam"
   | "progress";
 
-export type GroupKey = "learn" | "practice" | "read";
+export type GroupKey = "learn" | "practice" | "read" | "more";
 
 export interface NavLeaf {
   key: NavKey;
@@ -144,6 +144,13 @@ export const ICONS = {
     </>,
   ),
   chevron: icon(<path d="m6 9 6 6 6-6" />),
+  more: icon(
+    <>
+      <circle cx="5" cy="12" r="1.5" />
+      <circle cx="12" cy="12" r="1.5" />
+      <circle cx="19" cy="12" r="1.5" />
+    </>,
+  ),
 } as const;
 
 const leaf = (key: NavKey, href: string): NavLeaf => ({ key, href, icon: ICONS[key] });
@@ -165,6 +172,20 @@ export const NAV_ENTRIES: readonly NavEntry[] = [
   { type: "group", key: "read", icon: ICONS.read, items: [leaf("dialogues", "/dialogues"), leaf("reading", "/reading")] },
   { type: "link", item: leaf("exam", "/exam") },
   { type: "link", item: leaf("progress", "/progress") },
+];
+
+/**
+ * Desktop header: the content column is only max-w-4xl wide, so the full six-entry nav can never fit with its
+ * text labels. These entries stay inline; everything else lives in a "More" menu.
+ */
+export const HEADER_INLINE_ENTRIES: readonly NavEntry[] = NAV_ENTRIES.filter(
+  (e) => (e.type === "link" ? e.item.key === "home" : e.key === "learn" || e.key === "practice"),
+);
+export const HEADER_MORE_ITEMS: readonly NavLeaf[] = [
+  leaf("dialogues", "/dialogues"),
+  leaf("reading", "/reading"),
+  leaf("exam", "/exam"),
+  leaf("progress", "/progress"),
 ];
 
 /** `pathname` comes from next-intl's usePathname(), i.e. without the locale prefix. */

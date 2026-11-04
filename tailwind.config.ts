@@ -19,6 +19,10 @@ const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        // Short viewports (landscape phones, 150% zoom on laptops): quizzes drop decoration to keep question + feedback in view.
+        short: { raw: "(max-height: 700px)" },
+      },
       colors: {
         background: token("background"),
         surface: token("surface"),
@@ -55,8 +59,14 @@ const config: Config = {
         "4xl": "2rem",
       },
       spacing: {
-        // Bottom-nav height, reused for page padding.
-        nav: "4.5rem",
+        // Fixed-chrome geometry; values live in globals.css so there is a single source.
+        nav: "var(--bottom-nav-h)",
+        header: "var(--header-h)",
+        "action-bar": "var(--action-bar-h)",
+        "bottom-chrome": "var(--bottom-chrome-h)",
+        feedback: "var(--feedback-min-h)",
+        "feedback-sm": "var(--feedback-min-h-sm)",
+        "feedback-lg": "var(--feedback-min-h-lg)",
       },
       boxShadow: {
         soft: "0 1px 2px rgb(var(--shadow) / 0.05), 0 4px 12px rgb(var(--shadow) / 0.06)",

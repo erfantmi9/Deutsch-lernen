@@ -13,8 +13,8 @@ export default async function ArcadePage({ params }: { params: Promise<{ locale:
 function Arcade() {
   const t = useTranslations("Arcade");
   return (
-    <div className="mx-auto w-full max-w-xl space-y-6">
-      <PageHeader title={t("title")} subtitle={t("subtitle")} illustration={<ArcadeHeader size="100%" />} />
+    <div className="mx-auto w-full max-w-xl space-y-4 sm:space-y-6">
+      <PageHeader compact="always" title={t("title")} subtitle={t("subtitle")} illustration={<ArcadeHeader size="100%" />} />
       <ArticleQuiz />
     </div>
   );

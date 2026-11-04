@@ -17,7 +17,8 @@ export default function BottomNav() {
   return (
     <nav
       aria-label={t("mainNav")}
-      className="fixed inset-x-0 bottom-0 z-40 border-t border-border bg-surface/95 pb-[env(safe-area-inset-bottom)] shadow-lift backdrop-blur lg:hidden"
+      data-bottom-chrome
+      className="app-bottom-nav fixed inset-x-0 bottom-0 z-40 border-t border-border bg-surface/95 pb-[var(--safe-bottom)] shadow-lift backdrop-blur lg:hidden"
     >
       <ul className="mx-auto flex h-nav max-w-md items-stretch justify-around gap-0.5 px-1 py-2">
         {NAV_ENTRIES.map((entry) => {

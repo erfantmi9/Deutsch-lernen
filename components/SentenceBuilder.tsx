@@ -1,11 +1,12 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import type { KeyboardEvent, ReactNode } from "react";
+import type { CSSProperties, KeyboardEvent, ReactNode } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import {
   DndContext,
-  PointerSensor,
+  MouseSensor,
+  TouchSensor,
   closestCenter,
   useDraggable,
   useDroppable,
@@ -27,7 +28,8 @@ import type { Board, Chip, OrderCheck } from "@/lib/sentenceBoard";
 import type { SentenceExercise } from "@/types/sentence";
 import RoleLegend from "./RoleLegend";
 import { ROLE_STYLE } from "./roleStyles";
-import Mascot from "./illustrations/Mascot";
+import ResponsiveSheet from "./ui/ResponsiveSheet";
+import StickyActionBar from "./ui/StickyActionBar";
 
 type ChipStatus = "wrong" | "ok" | null;
 
@@ -38,8 +40,10 @@ interface Props {
   onNext: () => void;
 }
 
+// No `touch-none`: a finger that starts on a word must still be able to scroll the page. Dragging on touch needs a
+// press-and-hold (see the TouchSensor below); tapping is the primary way to place a word.
 const BASE_CHIP =
-  "min-h-11 touch-none select-none rounded-2xl border-2 px-4 py-2 text-start shadow-soft outline-none transition hover:shadow-lift focus-visible:ring-4 focus-visible:ring-primary/40";
+  "relative block h-11 whitespace-nowrap touch-manipulation select-none [-webkit-touch-callout:none] rounded-2xl border-2 px-3 py-2 text-start shadow-soft outline-none transition hover:shadow-lift focus-visible:ring-4 focus-visible:ring-primary/40";
 
 function chipClasses(chip: Chip, showRole: boolean, status: ChipStatus): string {
   const tone =
@@ -51,6 +55,11 @@ function chipClasses(chip: Chip, showRole: boolean, status: ChipStatus): string 
   return `${BASE_CHIP} ${tone}` + (status === "ok" ? " ring-2 ring-success/60" : "");
 }
 
+/**
+ * The word, plus overlays that never change the chip's size (so nothing shifts under a finger when parts are
+ * coloured or an answer is checked): the part-of-speech badge (12px) sits on the top-start corner, the right/wrong
+ * marker on the top-end corner.
+ */
 function ChipBody({
   chip,
   showRole,
@@ -66,22 +75,27 @@ function ChipBody({
 }) {
   return (
     <>
-      <span className="block text-lg font-semibold">
-        {chip.text}
-        {status === "wrong" && (
-          <span aria-hidden="true" className="ms-1">
-            ✗
-          </span>
-        )}
-        {status === "ok" && (
-          <span aria-hidden="true" className="ms-1 text-success">
-            ✓
-          </span>
-        )}
-      </span>
+      <span className="block text-lg font-semibold leading-6">{chip.text}</span>
       {showRole && chip.role && (
-        <span className="block text-[11px] font-extrabold uppercase tracking-wide">{roleLabel}</span>
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute -top-2.5 start-2 rounded-full border border-border bg-surface px-1.5 text-xs font-extrabold uppercase leading-4 tracking-wide text-text"
+        >
+          {roleLabel}
+        </span>
       )}
+      {status && (
+        <span
+          aria-hidden="true"
+          className={
+            "pointer-events-none absolute -top-2 -end-2 flex size-5 items-center justify-center rounded-full text-xs font-extrabold text-on-primary " +
+            (status === "wrong" ? "bg-danger" : "bg-success")
+          }
+        >
+          {status === "wrong" ? "✗" : "✓"}
+        </span>
+      )}
+      {showRole && chip.role && <span className="sr-only"> ({roleLabel})</span>}
       {statusLabel && <span className="sr-only"> ({statusLabel})</span>}
     </>
   );
@@ -194,11 +208,15 @@ function DropZone({
   id,
   label,
   className,
+  style,
+  zone,
   children,
 }: {
   id: string;
   label: string;
   className: string;
+  style?: CSSProperties;
+  zone: "answer" | "bank";
   children: ReactNode;
 }) {
   const { setNodeRef, isOver } = useDroppable({ id });
@@ -207,12 +225,16 @@ function DropZone({
       ref={setNodeRef}
       role="group"
       aria-label={label}
+      data-zone={zone}
+      style={style}
       className={className + (isOver ? " border-primary shadow-lift" : "")}
     >
       {children}
     </div>
   );
 }
+
+const ICON = "btn-ghost size-11 shrink-0 !px-0 text-xl disabled:opacity-40";
 
 export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
   const t = useTranslations("Sentences");
@@ -221,16 +243,30 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
 
   const [board, setBoard] = useState<Board>(() => initialBoard(exercise));
   const [result, setResult] = useState<OrderCheck | null>(null);
-  const [showExplanation, setShowExplanation] = useState(false);
+  const [detailsOpen, setDetailsOpen] = useState(false);
   const [showRoles, setShowRoles] = useState(false);
-  const [announcement, setAnnouncement] = useState("");
   const [focusId, setFocusId] = useState<string | null>(null);
   const attempts = useRef(0);
+  const actionRef = useRef<HTMLButtonElement>(null);
+  // Synchronous guards (state is async): a double press can neither record a result twice nor leave the exercise twice.
+  const solvedRef = useRef(false);
+  const leavingRef = useRef(false);
 
   const solved = result?.correct === true;
   const hasRoles = Boolean(exercise.roles);
 
-  const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 8 } }));
+  // Tap/click is the primary way to place a word. Dragging is optional: a mouse drags after 8px, a finger only after
+  // a 250ms press-and-hold, so an ordinary swipe that starts on a word still scrolls the page.
+  const sensors = useSensors(
+    useSensor(MouseSensor, { activationConstraint: { distance: 8 } }),
+    useSensor(TouchSensor, { activationConstraint: { delay: 250, tolerance: 8 } }),
+  );
+
+  // Reserve the height of both areas for the whole exercise (about 3 words per row on a phone), so words moving between
+  // the word bank and the answer line never shift the targets below them.
+  const chipCount = board.bank.length + board.answer.length;
+  const rows = Math.max(1, Math.ceil(chipCount / 3));
+  const zoneRows = { "--rows": rows } as CSSProperties; // .chip-zone turns this into a min-height (see globals.css)
 
   // Keep keyboard focus on the chip that was just moved (it re-mounts when it changes lists).
   useEffect(() => {
@@ -239,11 +275,14 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
     setFocusId(null);
   }, [focusId, board]);
 
-  const update = (next: Board, message: string, focus: string | null) => {
+  // After a correct answer focus parks on the persistent button: Enter / Space goes to the next sentence.
+  useEffect(() => {
+    if (solved) actionRef.current?.focus({ preventScroll: true });
+  }, [solved]);
+
+  const update = (next: Board, focus: string | null) => {
     setBoard(next);
     setResult(null);
-    setShowExplanation(false);
-    setAnnouncement(message);
     setFocusId(focus);
   };
 
@@ -251,25 +290,21 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
     if (solved) return;
     const chip = board.bank.find((c) => c.id === id);
     if (!chip) return;
-    const next = addToAnswer(board, id, index);
-    const pos = next.answer.findIndex((c) => c.id === id) + 1;
-    update(next, t("announceAdded", { word: chip.text, pos, total: next.answer.length }), id);
+    update(addToAnswer(board, id, index), id);
   };
 
   const remove = (id: string) => {
     if (solved) return;
     const chip = board.answer.find((c) => c.id === id);
     if (!chip) return;
-    update(removeFromAnswer(board, id), t("announceRemoved", { word: chip.text }), id);
+    update(removeFromAnswer(board, id), id);
   };
 
   const move = (id: string, delta: number) => {
     if (solved) return;
     const chip = board.answer.find((c) => c.id === id);
     if (!chip) return;
-    const next = moveInAnswer(board, id, delta);
-    const pos = next.answer.findIndex((c) => c.id === id) + 1;
-    update(next, t("announceMoved", { word: chip.text, pos, total: next.answer.length }), id);
+    update(moveInAnswer(board, id, delta), id);
   };
 
   const onDragEnd = (e: DragEndEvent) => {
@@ -286,9 +321,7 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
       const to = overIndex ?? board.answer.length - 1;
       const next = reorderAnswer(board, activeId, to);
       const chip = board.answer.find((c) => c.id === activeId);
-      if (chip && next !== board) {
-        update(next, t("announceMoved", { word: chip.text, pos: to + 1, total: next.answer.length }), activeId);
-      }
+      if (chip && next !== board) update(next, activeId);
     } else if (!fromAnswer && toAnswer) {
       add(activeId, overIndex);
     } else if (fromAnswer && toBank) {
@@ -297,6 +330,7 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
   };
 
   const check = () => {
+    if (solvedRef.current || board.answer.length === 0) return;
     const res = checkOrder(
       board.answer.map((c) => c.text),
       exercise,
@@ -304,16 +338,28 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
     const first = attempts.current === 0;
     attempts.current += 1;
     setResult(res);
-    setShowExplanation(false);
-    if (res.correct) setShowRoles(true);
+    if (res.correct) {
+      solvedRef.current = true;
+      setShowRoles(true);
+    }
     onResult(res.correct, first);
+  };
+
+  const next = () => {
+    if (!solvedRef.current || leavingRef.current) return;
+    leavingRef.current = true;
+    onNext();
+  };
+
+  const skip = () => {
+    if (leavingRef.current) return;
+    leavingRef.current = true;
+    onNext();
   };
 
   const reset = () => {
     setBoard(initialBoard(exercise));
     setResult(null);
-    setShowExplanation(false);
-    setAnnouncement(t("announceReset"));
   };
 
   const statusOf = (index: number): ChipStatus => {
@@ -322,32 +368,50 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
     return result.wrongPositions.includes(index) ? "wrong" : "ok";
   };
 
-  const wrongWords = result && !result.correct ? result.wrongPositions.map((i) => board.answer[i]?.text).filter(Boolean) : [];
+  const wrongCount = result && !result.correct ? result.wrongPositions.length : 0;
   const translation = exercise.translations[locale === "de" ? "en" : locale];
   const rolesInUse = exercise.roles ?? [];
+  const wordsLeft = board.bank.filter((c) => !c.distractor).length;
+  const sentence = board.answer.map((c) => c.text).join(" ");
 
   return (
-    <section aria-labelledby="builder-title" className="space-y-5">
+    <section aria-labelledby="builder-title" className="space-y-3 short:space-y-2">
       {/* Task prompt: translation in the active locale */}
-      <div className="card-hero p-5">
-        <p id="builder-title" className="eyebrow mb-1">
-          {locale === "de" ? t("promptDe") : t("prompt")}
-        </p>
-        <p className="text-2xl font-extrabold">{translation}</p>
+      <div className="card-hero flex items-start justify-between gap-3 p-3 sm:p-5">
+        <div className="min-w-0">
+          <p id="builder-title" className="eyebrow mb-0.5 short:sr-only">
+            {locale === "de" ? t("promptDe") : t("prompt")}
+          </p>
+          <p className="text-xl font-extrabold sm:text-2xl">{translation}</p>
+          <p className="mt-1 hidden text-sm text-text-muted sm:block short:hidden">{t("howTo")}</p>
+        </div>
+        {hasRoles && (
+          // Always rendered, fixed size: toggling the part colours never moves anything.
+          <button
+            type="button"
+            aria-pressed={showRoles}
+            aria-label={t("partsToggle")}
+            title={t("partsToggle")}
+            onClick={() => setShowRoles((v) => !v)}
+            className="pill size-11 shrink-0 justify-center !px-0 text-lg"
+          >
+            <span aria-hidden="true">🎨</span>
+          </button>
+        )}
       </div>
-
-      <p className="text-sm text-text-muted">{t("howTo")}</p>
 
       <DndContext id="sentence-builder" sensors={sensors} collisionDetection={closestCenter} onDragEnd={onDragEnd}>
         {/* German area: ALWAYS LTR, even on /fa */}
-        <div dir="ltr" lang="de" className="space-y-4">
+        <div dir="ltr" lang="de" className="space-y-2.5">
           <DropZone
             id="answer"
             label={t("answerLine")}
-            className="relative min-h-[5.5rem] rounded-3xl border-2 border-dashed border-border bg-surface-2 p-3 transition"
+            style={zoneRows}
+            className="chip-zone relative rounded-3xl border-2 border-dashed border-border bg-surface-2 transition"
+            zone="answer"
           >
             <SortableContext items={board.answer.map((c) => c.id)} strategy={horizontalListSortingStrategy}>
-              <ul className="flex min-h-[3.5rem] flex-wrap items-center gap-2">
+              <ul className="flex flex-wrap content-start items-center gap-2">
                 {board.answer.map((chip, i) => {
                   const status = statusOf(i);
                   return (
@@ -380,9 +444,11 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
           <DropZone
             id="bank"
             label={t("wordBank")}
-            className="min-h-[4.5rem] rounded-3xl border border-border bg-surface p-3 shadow-soft transition"
+            style={zoneRows}
+            className="chip-zone rounded-3xl border border-border bg-surface shadow-soft transition"
+            zone="bank"
           >
-            <ul className="flex flex-wrap gap-2">
+            <ul className="flex flex-wrap content-start gap-2">
               {board.bank.map((chip) => (
                 <BankChip
                   key={chip.id}
@@ -399,113 +465,64 @@ export default function SentenceBuilder({ exercise, onResult, onNext }: Props) {
         </div>
       </DndContext>
 
-      {/* Colour legend + toggle */}
-      {hasRoles && (
-        <div className="space-y-2">
-          <button type="button" aria-pressed={showRoles} onClick={() => setShowRoles((v) => !v)} className="pill">
-            {showRoles ? t("hideParts") : t("showParts")}
-          </button>
-          {showRoles && <RoleLegend roles={rolesInUse} />}
-        </div>
-      )}
+      {/*
+        The verdict lives in the bar's status line, which is therefore this page's ONE live region (it also says how many
+        words are left while building). No separate feedback box: at 375x667 an 8-word sentence needs every pixel for the
+        answer line and the word bank. Wrong words are marked on the answer line itself; the hint and explanation are
+        behind Details.
+      */}
+      <StickyActionBar
+        ref={actionRef}
+        label={
+          solved ? (
+            <>
+              {t("next")} <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
+            </>
+          ) : (
+            t("check")
+          )
+        }
+        disabled={solved ? false : board.answer.length === 0}
+        onAction={solved ? next : check}
+        statusTone={result ? (result.correct ? "success" : "danger") : "hint"}
+        status={
+          result
+            ? result.correct
+              ? `✓ ${t("correct")} ${sentence}`
+              : `✗ ${result.incomplete && wrongCount === 0 ? t("incomplete") : wrongCount > 0 ? t("wrongCount", { count: wrongCount }) : t("wrongOrder")}`
+            : board.answer.length === 0
+              ? t("tapToStart")
+              : wordsLeft > 0
+                ? t("wordsLeft", { count: wordsLeft })
+                : null
+        }
+        secondary={
+          // Always present (disabled instead of swapped out), so the bar never changes shape.
+          <>
+            <button type="button" onClick={reset} disabled={solved || board.answer.length === 0} aria-label={t("reset")} title={t("reset")} className={ICON}>
+              <span aria-hidden="true">↺</span>
+            </button>
+            <button type="button" onClick={skip} disabled={solved} aria-label={t("skip")} title={t("skip")} className={ICON}>
+              <span aria-hidden="true">⏭</span>
+            </button>
+            <button type="button" onClick={() => setDetailsOpen(true)} disabled={!result} aria-haspopup="dialog" aria-label={t("details")} title={t("details")} className={ICON}>
+              <span aria-hidden="true">ⓘ</span>
+            </button>
+          </>
+        }
+      />
 
-      {/* Actions */}
-      <div className="flex flex-wrap gap-3">
-        {!solved && (
-          <button
-            type="button"
-            onClick={check}
-            disabled={board.answer.length === 0}
-            className="btn btn-primary"
-          >
-            {t("check")}
-          </button>
-        )}
-        {!solved && (
-          <button type="button" onClick={reset} className="btn btn-secondary">
-            {t("reset")}
-          </button>
-        )}
-        {solved ? (
-          <button
-            type="button"
-            onClick={onNext}
-            autoFocus
-            className="btn btn-primary"
-          >
-            {t("next")} <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
-          </button>
-        ) : (
-          <button type="button" onClick={onNext} className="btn-ghost">
-            {t("skip")}
-          </button>
-        )}
-      </div>
-
-      {/* Screen-reader announcements for moves */}
-      <div aria-live="polite" role="status" className="sr-only">
-        {announcement}
-      </div>
-
-      {/* Result (aria-live) */}
-      <div aria-live="polite" role="status" className="min-h-[4rem]">
-        {result?.correct && (
-          <div className="feedback-success space-y-3">
-            <div className="flex items-center gap-4">
-              <Mascot mood="cheering" size={80} className="shrink-0 motion-safe:animate-bounce-soft" />
-              <div className="space-y-1">
-                <p className="font-extrabold">✓ {t("correct")}</p>
-                <p dir="ltr" lang="de" className="text-lg font-extrabold text-text">
-                  {board.answer.map((c) => c.text).join(" ")}
-                </p>
-              </div>
-            </div>
-            <Explanation exercise={exercise} locale={locale} open={showExplanation} onToggle={setShowExplanation} />
-          </div>
-        )}
-        {result && !result.correct && (
-          <div className="feedback-error space-y-3">
-            <div className="flex items-center gap-4">
-              <Mascot mood="thinking" size={80} className="shrink-0" />
-              <p className="font-bold">✗ {result.incomplete && wrongWords.length === 0 ? t("incomplete") : t("wrongOrder")}</p>
-            </div>
-            {wrongWords.length > 0 && (
-              <p className="text-sm text-text">
-                {t("wrongWords")}{" "}
-                <bdi dir="ltr" lang="de" className="font-extrabold">
-                  {wrongWords.join(", ")}
-                </bdi>
-              </p>
-            )}
+      <ResponsiveSheet open={detailsOpen} onClose={() => setDetailsOpen(false)} title={t("details")}>
+        <div className="space-y-4">
+          {result && !result.correct && (
             <p className="feedback-hint">
               <span className="font-extrabold">{t("hint")}:</span> {exercise.hint[locale]}
             </p>
-            <Explanation exercise={exercise} locale={locale} open={showExplanation} onToggle={setShowExplanation} />
-          </div>
-        )}
-      </div>
+          )}
+          <p className="leading-relaxed">{exercise.explanation[locale]}</p>
+          {hasRoles && <RoleLegend roles={rolesInUse} />}
+        </div>
+      </ResponsiveSheet>
     </section>
-  );
-}
-
-function Explanation({
-  exercise,
-  locale,
-  open,
-  onToggle,
-}: {
-  exercise: SentenceExercise;
-  locale: "en" | "fa" | "de";
-  open: boolean;
-  onToggle: (open: boolean) => void;
-}) {
-  const t = useTranslations("Sentences");
-  return (
-    <div>
-      <button type="button" aria-expanded={open} onClick={() => onToggle(!open)} className="pill">
-        {open ? t("hideExplanation") : t("showExplanation")}
-      </button>
-      {open && <p className="mt-2 text-sm leading-relaxed text-text">{exercise.explanation[locale]}</p>}
-    </div>
   );
 }

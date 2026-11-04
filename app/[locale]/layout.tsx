@@ -40,7 +40,7 @@ export async function generateMetadata({
   };
 }
 
-export const viewport: Viewport = { themeColor: THEME_COLOR, width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: THEME_COLOR, width: "device-width", initialScale: 1, viewportFit: "cover" };
 
 export default async function LocaleLayout({
   children,
@@ -76,7 +76,7 @@ export default async function LocaleLayout({
               {tNav("skipToContent")}
             </a>
             <Header />
-            <main id="main" tabIndex={-1} className="mx-auto w-full max-w-4xl px-4 pb-28 pt-6 outline-none lg:pb-16">
+            <main id="main" tabIndex={-1} className="mx-auto w-full max-w-4xl px-4 pb-[calc(var(--bottom-chrome-h)+1.5rem)] pt-6 outline-none short:pt-3 lg:pb-16">
               {children}
             </main>
             <BottomNav />

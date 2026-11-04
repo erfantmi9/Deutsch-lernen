@@ -53,11 +53,11 @@ export default function VerbTable({ verb }: { verb: VerbEntry }) {
   return (
     <article className="card-hero space-y-4 p-5">
       <header className="flex flex-wrap items-center gap-3">
-        <h2 className="text-3xl font-extrabold">
+        <h1 className="text-3xl font-extrabold">
           <bdi dir="ltr" lang="de">
             {verb.infinitive}
           </bdi>
-        </h2>
+        </h1>
         <span className="text-text-muted">{translation}</span>
         <span className="rounded-full bg-primary-soft px-3 py-0.5 text-xs font-extrabold uppercase text-primary">
           {t(`types.${verb.type}`)}

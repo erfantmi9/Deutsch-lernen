@@ -3,6 +3,7 @@ import { routing } from "@/i18n/routing";
 import { dialogues } from "@/lib/dialogues";
 import { grammarLessons } from "@/lib/grammar";
 import { readingTexts } from "@/lib/reading";
+import { verbs } from "@/lib/verbs";
 import { siteUrl } from "@/lib/site";
 import { allPaths, localePath } from "@/lib/sitePaths";
 
@@ -14,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lessons: grammarLessons.map((l) => l.id),
     dialogues: dialogues.map((d) => d.id),
     reading: readingTexts.map((r) => r.id),
+    verbs: verbs.map((v) => v.id),
   });
   return paths.flatMap((path) =>
     routing.locales.map((locale) => ({

@@ -19,12 +19,13 @@ export const STATIC_PATHS = [
   "/search",
 ] as const;
 
-export function allPaths(ids: { lessons: readonly string[]; dialogues: readonly string[]; reading: readonly string[] }): string[] {
+export function allPaths(ids: { lessons: readonly string[]; dialogues: readonly string[]; reading: readonly string[]; verbs?: readonly string[] }): string[] {
   return [
     ...STATIC_PATHS,
     ...ids.lessons.map((id) => `/grammar/${id}`),
     ...ids.dialogues.map((id) => `/dialogues/${id}`),
     ...ids.reading.map((id) => `/reading/${id}`),
+    ...(ids.verbs ?? []).map((id) => `/verbs/${id}`),
   ];
 }
 

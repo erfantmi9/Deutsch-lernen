@@ -11,6 +11,7 @@ import { HoerenPart, LesenPart, SchreibenPart, SprechenPart } from "./ExamParts"
 import type { PartResult } from "./ExamParts";
 import PageHeader from "./PageHeader";
 import Mascot from "./illustrations/Mascot";
+import ConfirmDialog from "./ui/ConfirmDialog";
 
 type Locale = "en" | "fa" | "de";
 
@@ -24,6 +25,8 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
   const [results, setResults] = useState<Partial<Record<ExamModule, PartResult>>>({});
   const [fullRun, setFullRun] = useState(false);
   const [showResult, setShowResult] = useState(false);
+  // A part (or the full run) the learner asked for; its timer only starts once they confirm.
+  const [pending, setPending] = useState<{ modules: ExamModule[]; full: boolean } | null>(null);
 
   const attempts = useExamStore((s) => s.attempts);
   const recordAttempt = useExamStore((s) => s.recordAttempt);
@@ -68,6 +71,21 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
     setPlan((p) => p.slice(1));
   };
 
+  // Focus management: every screen change moves focus to that screen's heading and scrolls to the top, so a keyboard or
+  // screen-reader user lands at the start of the new content instead of on a button that no longer exists.
+  const phase = current ? `part-${current}` : fullRun && !showResult && plan.length > 0 && Object.keys(results).length > 0 ? `between-${plan.length}` : showResult ? "result" : "start";
+  const lastPhase = useRef(phase);
+  useEffect(() => {
+    if (lastPhase.current === phase) return;
+    lastPhase.current = phase;
+    window.scrollTo(0, 0);
+    const target = document.getElementById("exam-focus") ?? document.querySelector<HTMLElement>("main h1");
+    if (target) {
+      if (!target.hasAttribute("tabindex")) target.tabIndex = -1;
+      target.focus({ preventScroll: true });
+    }
+  }, [phase]);
+
   const scores = Object.fromEntries(EXAM_MODULES.filter((m) => results[m]).map((m) => [m, results[m]!.points]));
   const total = totalPoints(scores);
   const complete = isComplete(scores);
@@ -98,9 +116,11 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
     const last = EXAM_MODULES.filter((m) => results[m]).at(-1)!;
     return (
       <div className="mx-auto max-w-xl space-y-5">
-        <section role="status" className="card-hero space-y-4 p-6 text-center">
+        <section className="card-hero space-y-4 p-6 text-center">
           <Mascot mood="cheering" size={100} className="mx-auto" />
-          <h2 className="text-2xl font-extrabold">{t("partDone", { part: t(`modules.${last}`) })}</h2>
+          <h2 id="exam-focus" tabIndex={-1} className="text-2xl font-extrabold outline-none">
+            {t("partDone", { part: t(`modules.${last}`) })}
+          </h2>
           <p>{t("nextPart", { part: t(`modules.${plan[0]}`), minutes: MODULE_MINUTES[plan[0]] })}</p>
           <button type="button" className="btn btn-primary" onClick={continueExam}>
             {t("continue")}
@@ -115,9 +135,11 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
     const passed = isPassing(total);
     return (
       <div className="mx-auto max-w-xl space-y-5">
-        <section role="status" className="card-hero space-y-4 p-6 text-center">
+        <section className="card-hero space-y-4 p-6 text-center">
           <Mascot mood={complete ? (passed ? "cheering" : "thinking") : "waving"} size={110} className="mx-auto" />
-          <h1 className="text-3xl font-extrabold">{t("resultTitle")}</h1>
+          <h1 id="exam-focus" tabIndex={-1} className="text-3xl font-extrabold outline-none">
+            {t("resultTitle")}
+          </h1>
           {complete ? (
             <>
               <p className="text-4xl font-extrabold text-primary tabular-nums">{t("total", { total, max: MAX_TOTAL })}</p>
@@ -175,17 +197,42 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
             <li key={m} className="space-y-2 rounded-3xl border border-border bg-surface-2 p-4">
               <p className="font-extrabold">{t(`modules.${m}`)}</p>
               <p className="text-sm text-text-muted">{t(`about.${m}`, { minutes: MODULE_MINUTES[m] })}</p>
-              <button type="button" className="pill" onClick={() => begin([m], false)}>
+              <button type="button" className="pill" onClick={() => setPending({ modules: [m], full: false })}>
                 {t("practicePart")}
               </button>
             </li>
           ))}
         </ul>
-        <button type="button" className="btn btn-primary w-full py-3 text-lg" onClick={() => begin([...EXAM_MODULES], true)}>
+        <button type="button" className="btn btn-primary w-full py-3 text-lg" onClick={() => setPending({ modules: [...EXAM_MODULES], full: true })}>
           {t("startFull")}
         </button>
         <p className="text-sm text-text-muted">{t("fullHint", { max: MAX_TOTAL, pass: PASS_POINTS })}</p>
       </section>
+
+      <ConfirmDialog
+        open={pending !== null}
+        title={t("startConfirmTitle")}
+        message={
+          pending
+            ? pending.full
+              ? t("startConfirmFull", {
+                  total: EXAM_MODULES.reduce((n, m) => n + MODULE_MINUTES[m], 0),
+                  part: t(`modules.${pending.modules[0]}`),
+                  minutes: MODULE_MINUTES[pending.modules[0]],
+                })
+              : t("startConfirmPart", { part: t(`modules.${pending.modules[0]}`), minutes: MODULE_MINUTES[pending.modules[0]] })
+            : ""
+        }
+        confirmLabel={t("startConfirmAction")}
+        tone="primary"
+        onCancel={() => setPending(null)}
+        onConfirm={() => {
+          if (!pending) return;
+          const { modules, full } = pending;
+          setPending(null);
+          begin(modules, full);
+        }}
+      />
 
       <section aria-labelledby="exam-history" className="card space-y-3 p-5 sm:p-6">
         <h2 id="exam-history" className="text-xl font-extrabold">
