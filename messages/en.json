@@ -880,7 +880,8 @@
     },
     "backToStart": "Back to start",
     "passedShort": "passed",
-    "notPassedShort": "not passed"
+    "notPassedShort": "not passed",
+    "timeUp": "Time is up. {part} was handed in automatically with your answers so far."
   },
   "Path": {
     "title": "Your learning path",

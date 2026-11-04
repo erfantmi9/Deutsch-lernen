@@ -880,7 +880,8 @@
     },
     "backToStart": "Zurück zum Anfang",
     "passedShort": "bestanden",
-    "notPassedShort": "nicht bestanden"
+    "notPassedShort": "nicht bestanden",
+    "timeUp": "Die Zeit ist um. {part} wurde mit deinen bisherigen Antworten automatisch abgegeben."
   },
   "Path": {
     "title": "Dein Lernweg",

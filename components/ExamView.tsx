@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { bestTotal, isComplete, isPassing, MAX_TOTAL, PASS_POINTS, totalPoints } from "@/lib/exam";
+import { clearSession, EXAM_SESSION_VERSION, loadSession, saveSession } from "@/lib/examSession";
 import { useExamStore } from "@/stores/examStore";
 import { EXAM_MODULES, MODULE_MINUTES, POINTS_PER_MODULE } from "@/types/exam";
 import type { ExamData, ExamModule } from "@/types/exam";
@@ -27,6 +28,12 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
   const [showResult, setShowResult] = useState(false);
   // A part (or the full run) the learner asked for; its timer only starts once they confirm.
   const [pending, setPending] = useState<{ modules: ExamModule[]; full: boolean } | null>(null);
+  // When the running part's time is up (a timestamp, persisted: a refresh or a locked phone resumes with the real time).
+  const [endsAt, setEndsAt] = useState<number | null>(null);
+  // The part the timer handed in, for the "time is up" notice on the next screen.
+  const [timeUp, setTimeUp] = useState<ExamModule | null>(null);
+  // Each part's answer state; a ref (not state) because it changes on every keystroke and only storage reads it.
+  const answers = useRef<Partial<Record<ExamModule, unknown>>>({});
 
   const attempts = useExamStore((s) => s.attempts);
   const recordAttempt = useExamStore((s) => s.recordAttempt);
@@ -34,7 +41,18 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
   useEffect(() => {
     let cancelled = false;
     void Promise.resolve(useExamStore.persist.rehydrate()).then(() => {
-      if (!cancelled) setReady(true);
+      if (cancelled) return;
+      // Resume a run in progress (client only: storage does not exist during SSR).
+      const saved = loadSession();
+      if (saved) {
+        answers.current = saved.answers;
+        setResults(saved.results);
+        setFullRun(saved.fullRun);
+        setPlan(saved.plan);
+        setEndsAt(saved.endsAt);
+        setCurrent(saved.current);
+      }
+      setReady(true);
     });
     return () => {
       cancelled = true;
@@ -43,12 +61,41 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
 
   const recorded = useRef(false);
 
+  // Persist the run after every structural change; the parts persist their answers through `saveAnswers`.
+  const sessionRef = useRef({ current, plan, results, fullRun, endsAt });
+  sessionRef.current = { current, plan, results, fullRun, endsAt };
+  const persist = useCallback(() => {
+    const s = sessionRef.current;
+    if (!s.current && s.plan.length === 0) {
+      clearSession(); // handed in (or nothing running): nothing to resume
+      return;
+    }
+    saveSession({ version: EXAM_SESSION_VERSION, ...s, answers: answers.current });
+  }, []);
+  useEffect(() => {
+    if (ready) persist();
+  }, [ready, current, plan, results, fullRun, endsAt, persist]);
+  const saveAnswers = useCallback(
+    (module: ExamModule) => (state: unknown) => {
+      answers.current = { ...answers.current, [module]: state };
+      persist();
+    },
+    [persist],
+  );
+
+  const startPart = (module: ExamModule) => {
+    setEndsAt(Date.now() + MODULE_MINUTES[module] * 60_000);
+    setCurrent(module);
+  };
+
   const begin = (modules: ExamModule[], full: boolean) => {
     recorded.current = false;
+    answers.current = {};
+    setTimeUp(null);
     setResults({});
     setShowResult(false);
     setFullRun(full);
-    setCurrent(modules[0]);
+    startPart(modules[0]);
     setPlan(modules.slice(1));
   };
 
@@ -58,7 +105,9 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
         if (prev[r.module]) return prev; // handed in twice (button and timer at the same moment)
         return { ...prev, [r.module]: r };
       });
+      setTimeUp(r.timeUp ? r.module : null);
       setCurrent(null);
+      setEndsAt(null);
       if (plan.length === 0) {
         setShowResult(true);
       }
@@ -67,7 +116,8 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
   );
 
   const continueExam = () => {
-    setCurrent(plan[0] ?? null);
+    setTimeUp(null);
+    if (plan[0]) startPart(plan[0]);
     setPlan((p) => p.slice(1));
   };
 
@@ -99,17 +149,23 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
   });
 
   // ---------- a part is running ----------
-  if (current) {
-    const seconds = MODULE_MINUTES[current] * 60;
+  if (current && endsAt !== null) {
+    const common = { endsAt, onDone: finishPart, saved: answers.current[current], onSave: saveAnswers(current) };
     return (
       <div className="mx-auto max-w-2xl">
-        {current === "lesen" && <LesenPart key="lesen" texts={texts} seconds={seconds} onDone={finishPart} />}
-        {current === "hoeren" && <HoerenPart key="hoeren" items={data.hoeren} seconds={seconds} onDone={finishPart} />}
-        {current === "schreiben" && <SchreibenPart key="schreiben" data={data.schreiben} seconds={seconds} onDone={finishPart} />}
-        {current === "sprechen" && <SprechenPart key="sprechen" parts={data.sprechen} seconds={seconds} onDone={finishPart} />}
+        {current === "lesen" && <LesenPart key="lesen" texts={texts} {...common} />}
+        {current === "hoeren" && <HoerenPart key="hoeren" items={data.hoeren} {...common} />}
+        {current === "schreiben" && <SchreibenPart key="schreiben" data={data.schreiben} {...common} />}
+        {current === "sprechen" && <SprechenPart key="sprechen" parts={data.sprechen} {...common} />}
       </div>
     );
   }
+
+  const timeUpNotice = timeUp && (
+    <p data-time-up className="rounded-2xl border border-danger/40 bg-danger/10 px-4 py-2 font-bold text-danger">
+      {t("timeUp", { part: t(`modules.${timeUp}`) })}
+    </p>
+  );
 
   // ---------- between parts of a full run ----------
   if (fullRun && !showResult && plan.length > 0 && Object.keys(results).length > 0) {
@@ -121,6 +177,7 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
           <h2 id="exam-focus" tabIndex={-1} className="text-2xl font-extrabold outline-none">
             {t("partDone", { part: t(`modules.${last}`) })}
           </h2>
+          {timeUpNotice}
           <p>{t("nextPart", { part: t(`modules.${plan[0]}`), minutes: MODULE_MINUTES[plan[0]] })}</p>
           <button type="button" className="btn btn-primary" onClick={continueExam}>
             {t("continue")}
@@ -140,6 +197,7 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
           <h1 id="exam-focus" tabIndex={-1} className="text-3xl font-extrabold outline-none">
             {t("resultTitle")}
           </h1>
+          {timeUpNotice}
           {complete ? (
             <>
               <p className="text-4xl font-extrabold text-primary tabular-nums">{t("total", { total, max: MAX_TOTAL })}</p>
@@ -171,6 +229,7 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
               setShowResult(false);
               setResults({});
               setFullRun(false);
+              setTimeUp(null);
             }}
           >
             {t("backToStart")}
