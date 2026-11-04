@@ -436,6 +436,8 @@
     "typeAnswer": "Schreibe das fehlende Wort",
     "specialChars": "Sonderzeichen",
     "insertChar": "{char} einfügen",
+    "missingAnswer": "Gib deine Antwort ein",
+    "missingChoice": "Wähle eine Antwort",
     "check": "Prüfen",
     "next": "Weiter",
     "finish": "Fertig",

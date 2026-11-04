@@ -6,14 +6,14 @@ test.describe("fixed chrome", () => {
   for (const locale of LOCALES) {
     test(`header fits without clipping or wrapping (${locale})`, async ({ page }) => {
       await page.goto(`/${locale}/verbs`);
-      const m = await page.evaluate(() => {
+      const vw = page.viewportSize()!.width; // NOT window.innerWidth: mobile emulation grows it to fit overflowing content
+      const m = await page.evaluate((vw) => {
         const header = document.querySelector("header")!;
         const probe = document.createElement("div");
         probe.style.height = "var(--header-h)";
         document.body.appendChild(probe);
         const tokenPx = probe.getBoundingClientRect().height;
         probe.remove();
-        const vw = window.innerWidth;
         const items = [...header.querySelectorAll("a, button")].map((el) => el.getBoundingClientRect()).filter((r) => r.width > 0);
         return {
           pageOverflow: document.documentElement.scrollWidth - vw,
@@ -22,7 +22,7 @@ test.describe("fixed chrome", () => {
           clipped: items.filter((r) => r.left < -0.5 || r.right > vw + 0.5).length,
           rows: new Set(items.map((r) => Math.round(r.top + r.height / 2))).size,
         };
-      });
+      }, vw);
       expect(m.pageOverflow).toBeLessThanOrEqual(0); // no horizontal scroll
       expect(m.clipped).toBe(0); // every header control is inside the viewport
       expect(m.rows).toBe(1); // nothing wrapped to a second row

@@ -130,7 +130,7 @@ export default function ArticleQuiz() {
   };
 
   return (
-    <section aria-labelledby="quiz-title" className="mx-auto w-full max-w-xl space-y-4">
+    <section aria-labelledby="quiz-title" className="mx-auto w-full max-w-xl space-y-4 short:space-y-3">
       <h2 id="quiz-title" className="sr-only">
         {t("title")}
       </h2>
@@ -146,12 +146,14 @@ export default function ArticleQuiz() {
       {/* Word card */}
       <div
         className={
-          "card-hero flex flex-col items-center p-4 text-center sm:p-8 " +
+          "card-hero flex flex-col items-center p-4 text-center sm:p-8 short:p-3 " +
           (correct ? "motion-safe:animate-pop " : "") +
           (wrong ? "motion-safe:animate-shake " : "")
         }
       >
-        <NounIcon id={currentWord.id} category={currentWord.category} size={80} />
+        <div className="short:hidden">
+          <NounIcon id={currentWord.id} category={currentWord.category} size={80} />
+        </div>
         <p className="mb-1 mt-2 text-sm font-semibold text-text-muted">{t("prompt")}</p>
         <p lang="de" dir="ltr" className="text-4xl font-extrabold tracking-tight sm:text-5xl">
           {answered && <span className="text-primary">{currentWord.article} </span>}
@@ -176,6 +178,7 @@ export default function ArticleQuiz() {
               aria-label={`${tArticle(a)} (${i + 1})`}
               className={
                 CANDY[a] +
+                " short:min-h-12 short:py-2" +
                 (isCorrect ? " ring-4 ring-text ring-offset-2 ring-offset-background motion-safe:animate-bounce-soft" : "") +
                 (answered && !isCorrect ? " opacity-40" : "")
               }
@@ -184,15 +187,19 @@ export default function ArticleQuiz() {
                 {i + 1}
               </span>
               <bdi dir="ltr">{tArticle(a)}</bdi>
-              {isCorrect && <span aria-hidden="true"> ✓</span>}
-              {isChosenWrong && <span aria-hidden="true"> ✗</span>}
+              {/* Absolute, so the marker never wraps the label onto a second line (which made the buttons jump taller). */}
+              {(isCorrect || isChosenWrong) && (
+                <span aria-hidden="true" className="absolute end-3 top-1.5 text-base">
+                  {isCorrect ? "✓" : "✗"}
+                </span>
+              )}
             </button>
           );
         })}
       </div>
 
       {/* Feedback directly under the question; live region always mounted, height reserved. */}
-      <FeedbackRegion compact ref={feedbackRef}>
+      <FeedbackRegion size="sm" ref={feedbackRef}>
         {!answered && (
           <div className="flex justify-center">
             <Mascot mood="thinking" size={56} className="motion-safe:animate-float" />

@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 import type { Page } from "@playwright/test";
-import { expectClearOfBar, quizWrites, seedQuiz, shot } from "./helpers";
+import { expectBelowHeader, expectClearOfBar, quizWrites, seedQuiz, shot } from "./helpers";
 
 const candy = (page: Page) => page.locator("section [role=group] button.candy");
 const action = (page: Page) => page.locator("[data-action-button]");
@@ -37,6 +37,7 @@ for (const locale of ["en", "fa"] as const) {
           await expect(action(page)).toBeInViewport();
           await expect(action(page)).toBeFocused();
           await expectClearOfBar(page, feedback(page).locator("> div"));
+          await expectBelowHeader(page, page.locator("section .card-hero").first()); // no extra scroll hides the question
           await shot(page, testInfo, "arcade", locale, isCorrect ? "2-after-correct" : "3-after-wrong");
           if (isCorrect) gotCorrect = true;
           else {
@@ -46,6 +47,7 @@ for (const locale of ["en", "fa"] as const) {
             await why.click();
             await expect(page.locator("dialog[open]")).toBeVisible();
             await expect(page.locator("dialog[open]").getByRole("heading", { level: 2 })).toBeInViewport();
+            await expectBelowHeader(page, page.locator("section .card-hero").first());
             await shot(page, testInfo, "arcade", locale, "4-explanation-open");
             await page.keyboard.press("Escape");
             await expect(page.locator("dialog[open]")).toHaveCount(0);

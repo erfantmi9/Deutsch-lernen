@@ -8,19 +8,19 @@ for (const locale of ["en", "fa", "de"] as const) {
       await page.setViewportSize({ width, height: 800 });
       await page.goto(`/${locale}/verbs`);
 
-      const m = await page.evaluate(() => {
+      const m = await page.evaluate((vw) => {
         const header = document.querySelector("header")!;
         const inner = header.firstElementChild!.getBoundingClientRect();
         const main = document.querySelector("main")!.getBoundingClientRect();
         const items = [...header.querySelectorAll("a, button")].map((el) => el.getBoundingClientRect()).filter((r) => r.width > 0);
         return {
-          overflow: document.documentElement.scrollWidth - innerWidth,
+          overflow: document.documentElement.scrollWidth - vw,
           rows: new Set(items.map((r) => Math.round(r.top + r.height / 2))).size,
           clipped: items.filter((r) => r.left < inner.left - 1 || r.right > inner.right + 1).length,
           leftDelta: Math.abs(inner.left - main.left),
           rightDelta: Math.abs(inner.right - main.right),
         };
-      });
+      }, width);
       expect(m.overflow).toBeLessThanOrEqual(0);
       expect(m.rows).toBe(1);
       expect(m.clipped).toBe(0); // nothing sticks out of the header column

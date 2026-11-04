@@ -436,6 +436,8 @@
     "typeAnswer": "واژه‌ی جاافتاده را بنویس",
     "specialChars": "نویسه‌های ویژه",
     "insertChar": "درج {char}",
+    "missingAnswer": "پاسخ خود را بنویسید",
+    "missingChoice": "یک پاسخ انتخاب کنید",
     "check": "بررسی",
     "next": "بعدی",
     "finish": "پایان",

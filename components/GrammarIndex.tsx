@@ -59,7 +59,7 @@ export default function GrammarIndex({ lessons }: { lessons: LessonCard[] }) {
         }
       />
 
-      <ol aria-label={t("lessonsList")} className="grid gap-4 sm:grid-cols-2">
+      <ol aria-label={t("lessonsList")} className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {lessons.map((lesson) => {
           const progress = lessonProgress(lesson.exerciseIds, ready ? results : {});
           const done = ready && completedIds.includes(lesson.id);
@@ -78,7 +78,7 @@ export default function GrammarIndex({ lessons }: { lessons: LessonCard[] }) {
                     <p className="eyebrow">
                       {t("lessonNumber", { n: lesson.order })} · {t(`topics.${lesson.topic}`)}
                     </p>
-                    <h2 className="text-xl font-extrabold">{lesson.title[locale]}</h2>
+                    <h2 className="text-xl font-extrabold [overflow-wrap:anywhere]">{lesson.title[locale]}</h2>
                   </div>
                   <ProgressRing
                     value={progress.fraction}

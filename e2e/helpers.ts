@@ -22,6 +22,15 @@ export async function expectClearOfBar(page: Page, target: Locator) {
   }).toPass({ timeout: 3000 });
 }
 
+/** The element's top edge is not hidden under the sticky header (polled: scrolling is smooth). */
+export async function expectBelowHeader(page: Page, target: Locator) {
+  await expect(async () => {
+    const top = (await target.boundingBox())!.y;
+    const headerBottom = (await page.locator("header").first().boundingBox())!.y + (await page.locator("header").first().boundingBox())!.height;
+    expect(top).toBeGreaterThanOrEqual(headerBottom - 0.5);
+  }).toPass({ timeout: 3000 });
+}
+
 /** Seeds the persisted Arcade store (before any page script runs) and counts its localStorage writes. */
 export async function seedQuiz(page: Page, autoAdvance: boolean) {
   await page.addInitScript((auto) => {

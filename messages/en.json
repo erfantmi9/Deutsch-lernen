@@ -436,6 +436,8 @@
     "typeAnswer": "Type the missing word",
     "specialChars": "Special characters",
     "insertChar": "Insert {char}",
+    "missingAnswer": "Type your answer",
+    "missingChoice": "Choose an answer",
     "check": "Check",
     "next": "Next",
     "finish": "Finish",

@@ -225,11 +225,14 @@
   --safe-bottom: env(safe-area-inset-bottom, 0px);
   --feedback-min-h: 9rem;
   --feedback-min-h-sm: 5.5rem; /* compact quizzes that must fit a 667px phone */
+  --feedback-min-h-lg: 11.5rem; /* result + filled sentence + explanation (Grammar) */
+  --keyboard-inset: 0px; /* set at runtime from visualViewport while an on-screen keyboard is open */
   /* Height of whatever is fixed to the bottom of the viewport (nav, or the action bar on drill pages). */
   --bottom-chrome-h: calc(var(--bottom-nav-h) + var(--safe-bottom));
 }
 html[data-action-bar] {
-  --bottom-chrome-h: calc(var(--action-bar-h) + var(--safe-bottom));
+  /* --action-bar-measured is published by StickyActionBar (it grows when it carries a toolbar). */
+  --bottom-chrome-h: calc(var(--action-bar-measured, var(--action-bar-h)) + var(--keyboard-inset, 0px) + var(--safe-bottom));
 }
 /* NB: not ".bottom-nav": Tailwind would read that as bottom-{spacing nav}. */
 html[data-action-bar] .app-bottom-nav {
@@ -241,7 +244,7 @@ html[data-action-bar] .app-bottom-nav {
   }
   /* The action bar floats (sticky bottom-4) above the page end, so it still covers the bottom of the viewport. */
   html[data-action-bar] {
-    --bottom-chrome-h: calc(var(--action-bar-h) + 1rem);
+    --bottom-chrome-h: calc(var(--action-bar-measured, var(--action-bar-h)) + 1rem);
   }
 }
 html {
@@ -252,6 +255,24 @@ html {
   scroll-margin-block-start: calc(var(--header-h) + 1rem);
   scroll-margin-block-end: calc(var(--bottom-chrome-h) + 1rem);
   outline: none;
+}
+@media (max-height: 700px) {
+  :root {
+    --feedback-min-h-sm: 4.5rem;
+    --feedback-min-h-lg: 10rem;
+  }
+}
+/* PageHeader compact mode: illustrated card by default, title only on phones and short screens. */
+.ph-compact {
+  display: none;
+}
+@media (max-width: 639px), (max-height: 700px) {
+  .ph-compact {
+    display: block;
+  }
+  .ph-full {
+    display: none;
+  }
 }
 html.scroll-locked {
   overflow: hidden;

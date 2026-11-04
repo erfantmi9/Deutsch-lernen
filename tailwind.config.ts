@@ -19,6 +19,10 @@ const config: Config = {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        // Short viewports (landscape phones, 150% zoom on laptops): quizzes drop decoration to keep question + feedback in view.
+        short: { raw: "(max-height: 700px)" },
+      },
       colors: {
         background: token("background"),
         surface: token("surface"),
@@ -62,6 +66,7 @@ const config: Config = {
         "bottom-chrome": "var(--bottom-chrome-h)",
         feedback: "var(--feedback-min-h)",
         "feedback-sm": "var(--feedback-min-h-sm)",
+        "feedback-lg": "var(--feedback-min-h-lg)",
       },
       boxShadow: {
         soft: "0 1px 2px rgb(var(--shadow) / 0.05), 0 4px 12px rgb(var(--shadow) / 0.06)",

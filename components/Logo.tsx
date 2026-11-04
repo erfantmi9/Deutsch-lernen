@@ -21,7 +21,7 @@ export default function Logo() {
     <span className="flex items-center gap-2">
       <LogoMark />
       {/* Wordmark collapses to the mark on very narrow phones so the header never clips; name stays for screen readers. */}
-      <span className="text-xl font-extrabold tracking-tight text-text max-[419px]:sr-only">
+      <span className="text-xl font-extrabold tracking-tight text-text sr-only min-[420px]:not-sr-only">
         <bdi dir="ltr">
           Deutsch<span className="text-primary">Lernen</span>
         </bdi>

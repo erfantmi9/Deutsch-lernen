@@ -1,5 +1,5 @@
 /** One-row scoreboard (label + value pairs). Compact so a quiz question and its feedback fit a phone screen. */
-export default function ScoreStrip({ items }: { items: readonly (readonly [string, number])[] }) {
+export default function ScoreStrip({ items }: { items: readonly (readonly [string, number | string])[] }) {
   return (
     <dl className="flex items-center justify-between gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-sm shadow-soft">
       {items.map(([label, value]) => (

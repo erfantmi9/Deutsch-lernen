@@ -14,11 +14,7 @@ function Arcade() {
   const t = useTranslations("Arcade");
   return (
     <div className="mx-auto w-full max-w-xl space-y-4 sm:space-y-6">
-      {/* On phones the illustrated header would push the quiz below the fold, so only the title is shown there. */}
-      <h1 className="text-2xl font-extrabold sm:hidden">{t("title")}</h1>
-      <div className="hidden sm:block">
-        <PageHeader title={t("title")} subtitle={t("subtitle")} illustration={<ArcadeHeader size="100%" />} />
-      </div>
+      <PageHeader compact title={t("title")} subtitle={t("subtitle")} illustration={<ArcadeHeader size="100%" />} />
       <ArticleQuiz />
     </div>
   );
