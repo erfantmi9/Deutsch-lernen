@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useId, useRef } from "react";
+import { useEffect, useId, useRef, useSyncExternalStore } from "react";
+import { createPortal } from "react-dom";
 import type { ReactNode } from "react";
 import { useTranslations } from "next-intl";
 
@@ -25,7 +26,15 @@ export interface ResponsiveSheetProps {
   side?: "end" | "start";
 }
 
+export const OVERLAY_ROOT_ID = "overlay-root";
+const noopSubscribe = () => () => {};
+/** false during SSR and hydration, true afterwards: the portal target only exists on the client. */
+const useMounted = () => useSyncExternalStore(noopSubscribe, () => true, () => false);
+
 /**
+ * Rendered through a portal into #overlay-root (an empty element the layout renders at the end of <body>), so no ancestor's layout rules (space-y-* margins, transforms,
+ * overflow) can reach the dialog.
+ *
  * Modal surface on the native <dialog>: showModal() gives focus trapping, Esc, an inert page and
  * aria-modal. On top of that: body scroll lock, focus return to the trigger, backdrop tap to close.
  * Slide animation lives in globals.css (.sheet) and is disabled by the global reduced-motion rule.
@@ -42,6 +51,7 @@ export default function ResponsiveSheet({
   const t = useTranslations("Ui");
   const ref = useRef<HTMLDialogElement>(null);
   const titleId = useId();
+  const mounted = useMounted();
 
   useEffect(() => {
     const dialog = ref.current;
@@ -57,9 +67,10 @@ export default function ResponsiveSheet({
       unlockScroll();
       if (trigger?.isConnected) trigger.focus({ preventScroll: true });
     };
-  }, [open]);
+  }, [open, mounted]);
 
-  return (
+  if (!mounted) return null;
+  return createPortal(
     <dialog
       ref={ref}
       aria-modal="true"
@@ -89,6 +100,9 @@ export default function ResponsiveSheet({
           {footer && <div className="border-t border-border px-5 py-3 pb-[max(0.75rem,var(--safe-bottom))]">{footer}</div>}
         </div>
       )}
-    </dialog>
+    </dialog>,
+    // Never document.body itself: Next hydrates the whole document, and a node portalled into <body> while other parts of
+    // the page are still hydrating (slow chunks on a cold start) makes React meet an unexpected node -> hydration error #418.
+    document.getElementById(OVERLAY_ROOT_ID) ?? document.body,
   );
 }

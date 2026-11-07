@@ -13,16 +13,24 @@ import FilterBar from "./ui/FilterBar";
 
 type TypeFilter = "all" | VerbType;
 
-/** Verb list. The type filter and practice mode live in the URL (?type=…&practice=1) so Back and shared links work. */
+/**
+ * Verb list. The type filter and practice mode live in the URL (?type=…&practice=1) so Back and shared links work.
+ *
+ * Reading the URL (useSearchParams) on a static page renders everything below the nearest Suspense boundary on the client
+ * only. So the URL is read in this thin wrapper, and the page passes the view with no filter as the Suspense fallback:
+ * the static HTML contains the full verb list, and the wrapper applies ?type= / ?practice= once it runs.
+ */
 export default function VerbsExplorer() {
+  const params = useSearchParams();
+  return <VerbsExplorerView type={parseVerbType(params.get("type"))} practicing={params.get("practice") === "1"} />;
+}
+
+export function VerbsExplorerView({ type, practicing }: { type: VerbType | null; practicing: boolean }) {
   const t = useTranslations("Verbs");
   const locale = useLocale() as "en" | "fa" | "de";
   const router = useRouter();
-  const params = useSearchParams();
 
-  const type = parseVerbType(params.get("type"));
   const typeFilter: TypeFilter = type ?? "all";
-  const practicing = params.get("practice") === "1";
 
   const types = useMemo(() => getAvailableTypes(), []);
   const visible = useMemo(() => (type ? filterVerbs({ type }) : [...verbs]), [type]);

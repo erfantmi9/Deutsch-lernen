@@ -1,8 +1,9 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { formatClock, scoreListening, scoreSpeaking, scoreWriting, toModulePoints, wordCount } from "@/lib/exam";
+import { secondsLeft, warningFor } from "@/lib/examSession";
 import { isAnswered, scoreTasks } from "@/lib/readingLogic";
 import type { TaskResponse } from "@/lib/readingLogic";
 import { seededShuffle } from "@/lib/shuffle";
@@ -25,6 +26,41 @@ export interface PartResult {
   points: number;
   got: number;
   total: number;
+  /** Handed in by the timer (including on return after the time ran out while the page was hidden or closed). */
+  timeUp?: boolean;
+}
+
+/** Props every part shares: the deadline, its saved answers (from a resumed run) and a callback to persist them. */
+export interface PartProps {
+  endsAt: number;
+  onDone: (r: PartResult) => void;
+  /** The part's own answer state from a persisted run (validated by the part; ignored if malformed). */
+  saved?: unknown;
+  onSave?: (state: unknown) => void;
+}
+
+const asRecord = (v: unknown): Record<string, unknown> | null =>
+  typeof v === "object" && v !== null && !Array.isArray(v) ? (v as Record<string, unknown>) : null;
+const stringMap = (v: unknown): Record<string, string> => {
+  const r = asRecord(v);
+  return r ? (Object.fromEntries(Object.entries(r).filter(([, x]) => typeof x === "string")) as Record<string, string>) : {};
+};
+const stringSet = (v: unknown): Set<string> => new Set(Array.isArray(v) ? v.filter((x): x is string => typeof x === "string") : []);
+
+/** Persists a part's answer state whenever it changes (not on mount: the restored state is already stored). */
+function useSaveOnChange(state: unknown, onSave?: (s: unknown) => void) {
+  const first = useRef(true);
+  const save = useRef(onSave);
+  useEffect(() => {
+    save.current = onSave;
+  });
+  useEffect(() => {
+    if (first.current) {
+      first.current = false;
+      return;
+    }
+    save.current?.(state);
+  }, [state]);
 }
 
 /** How much of a part is filled in: drives the bar's "n/m answered · Missing: …" and the hand-in confirmation. */
@@ -37,54 +73,85 @@ export interface PartProgress {
   ticks?: boolean;
 }
 
-/** Counts down from `seconds` and calls `onExpire` once at zero. */
-function useCountdown(seconds: number, onExpire: () => void): number {
-  const [remaining, setRemaining] = useState(seconds);
+/**
+ * Counts down to `endsAt` (a timestamp, so a refresh or a locked phone loses nothing) and calls `onExpire` once at zero.
+ * Re-checks immediately when the page becomes visible again (timers are throttled or frozen while hidden), so a part
+ * whose time ran out in the background is handed in on return. Also hands in at once when the deadline had already
+ * passed on mount (a resumed run).
+ */
+function useCountdown(endsAt: number, onExpire: () => void): number {
+  const [remaining, setRemaining] = useState(() => secondsLeft(endsAt, Date.now()));
   const expire = useRef(onExpire);
   useEffect(() => {
     expire.current = onExpire;
   });
   useEffect(() => {
-    const end = Date.now() + seconds * 1000;
     let fired = false;
-    const id = window.setInterval(() => {
-      const left = Math.max(0, Math.ceil((end - Date.now()) / 1000));
+    let id = 0;
+    const tick = () => {
+      const left = secondsLeft(endsAt, Date.now());
       setRemaining(left);
       if (left === 0 && !fired) {
         fired = true;
         window.clearInterval(id);
         expire.current();
       }
-    }, 1000);
-    return () => window.clearInterval(id);
-  }, [seconds]);
+    };
+    id = window.setInterval(tick, 1000);
+    const onVisible = () => {
+      if (document.visibilityState === "visible") tick();
+    };
+    document.addEventListener("visibilitychange", onVisible);
+    window.addEventListener("pageshow", onVisible);
+    tick();
+    return () => {
+      window.clearInterval(id);
+      document.removeEventListener("visibilitychange", onVisible);
+      window.removeEventListener("pageshow", onVisible);
+    };
+  }, [endsAt]);
   return remaining;
+}
+
+/**
+ * The 5-minute, then the 1-minute warning, each set once. Kept as state that only moves forward, so the live region's
+ * text changes exactly twice per part (a resumed part with < 1 minute left only gets the 1-minute one).
+ */
+function useTimerWarning(remaining: number): "minute" | "five" | null {
+  const [warning, setWarning] = useState<"minute" | "five" | null>(null);
+  const w = warningFor(remaining);
+  if (w !== null && w !== warning && warning !== "minute") setWarning(w);
+  return warning;
 }
 
 const MAX_LISTED = 4;
 
 function PartShell({
   title,
-  seconds,
+  endsAt,
   progress,
   toolbar,
   onFinish,
   children,
 }: {
   title: string;
-  seconds: number;
+  endsAt: number;
   progress: PartProgress;
   /** Rendered in the bar's single row while the on-screen keyboard is open (e.g. the ä ö ü ß keys). */
   toolbar?: React.ReactNode;
   /** Scores and hands in the part. Called once by the confirmed hand-in and once by the timer, never both. */
-  onFinish: () => void;
+  onFinish: (timeUp?: boolean) => void;
   children: React.ReactNode;
 }) {
   const t = useTranslations("Exam");
   const [confirmOpen, setConfirmOpen] = useState(false);
-  const remaining = useCountdown(seconds, onFinish);
+  const remaining = useCountdown(endsAt, () => {
+    setConfirmOpen(false);
+    onFinish(true);
+  });
   // The timer warnings are the ONE live region of an exam part (the bar status below is deliberately not live).
-  const announcement = remaining <= 60 ? t("warnMinute") : remaining <= 300 ? t("warnFive") : "";
+  const warning = useTimerWarning(remaining);
+  const announcement = warning === "minute" ? t("warnMinute") : warning === "five" ? t("warnFive") : "";
 
   const open = progress.total - progress.answered;
   const listed = progress.missing.slice(0, MAX_LISTED).join(", ") + (progress.missing.length > MAX_LISTED ? " …" : "");
@@ -104,7 +171,7 @@ function PartShell({
           {formatClock(remaining)}
         </p>
       </div>
-      <p className="sr-only" aria-live="polite">
+      <p className="sr-only" aria-live="polite" data-timer-warning>
         {announcement}
       </p>
       {children}
@@ -135,16 +202,25 @@ function PartShell({
 
 // ---------------------------------------------------------------- Lesen
 
-export function LesenPart({ texts, seconds, onDone }: { texts: ReadingText[]; seconds: number; onDone: (r: PartResult) => void }) {
+export function LesenPart({ texts, endsAt, onDone, saved, onSave }: PartProps & { texts: ReadingText[] }) {
   const t = useTranslations("Exam");
   const locale = useLocale() as Locale;
-  const [responses, setResponses] = useState<TaskResponse[][]>(() => texts.map((x) => x.tasks.map(() => null)));
+  const [responses, setResponses] = useState<TaskResponse[][]>(() => {
+    const prev = Array.isArray(saved) ? (saved as unknown[]) : [];
+    return texts.map((x, i) =>
+      x.tasks.map((_, j) => {
+        const v = Array.isArray(prev[i]) ? (prev[i] as unknown[])[j] : null;
+        return typeof v === "boolean" || typeof v === "string" || asRecord(v) ? (v as TaskResponse) : null;
+      }),
+    );
+  });
+  useSaveOnChange(responses, onSave);
   const latest = useRef(responses);
   useEffect(() => {
     latest.current = responses;
   });
 
-  const finish = useCallback(() => {
+  const finish = useCallback((timeUp?: boolean) => {
     let got = 0;
     let total = 0;
     texts.forEach((x, i) => {
@@ -152,7 +228,7 @@ export function LesenPart({ texts, seconds, onDone }: { texts: ReadingText[]; se
       got += s.correct;
       total += s.total;
     });
-    onDone({ module: "lesen", points: toModulePoints(got, total), got, total });
+    onDone({ module: "lesen", points: toModulePoints(got, total), got, total, timeUp });
   }, [texts, onDone]);
 
   const missing: string[] = [];
@@ -165,7 +241,7 @@ export function LesenPart({ texts, seconds, onDone }: { texts: ReadingText[]; se
   );
 
   return (
-    <PartShell title={t("modules.lesen")} seconds={seconds} onFinish={finish} progress={{ answered: total - missing.length, total, missing }}>
+    <PartShell title={t("modules.lesen")} endsAt={endsAt} onFinish={finish} progress={{ answered: total - missing.length, total, missing }}>
       {texts.map((text, ti) => (
         <section key={text.id} className="space-y-3">
           <h3 className="text-lg font-extrabold">{text.title.de}</h3>
@@ -193,22 +269,27 @@ export function LesenPart({ texts, seconds, onDone }: { texts: ReadingText[]; se
 
 const MAX_PLAYS = 2;
 
-export function HoerenPart({ items, seconds, onDone }: { items: ExamData["hoeren"]; seconds: number; onDone: (r: PartResult) => void }) {
+export function HoerenPart({ items, endsAt, onDone, saved, onSave }: PartProps & { items: ExamData["hoeren"] }) {
   const t = useTranslations("Exam");
   const locale = useLocale() as Locale;
   const tr = locale === "de" ? "en" : locale;
   const { supported } = useSpeechSupport();
-  const [answers, setAnswers] = useState<Record<string, string>>({});
-  const [plays, setPlays] = useState<Record<string, number>>({});
+  const [answers, setAnswers] = useState<Record<string, string>>(() => stringMap(asRecord(saved)?.answers));
+  const [plays, setPlays] = useState<Record<string, number>>(() => {
+    const r = asRecord(asRecord(saved)?.plays) ?? {};
+    return Object.fromEntries(Object.entries(r).filter(([, v]) => typeof v === "number")) as Record<string, number>;
+  });
+  const snapshot = useMemo(() => ({ answers, plays }), [answers, plays]);
+  useSaveOnChange(snapshot, onSave);
   const latest = useRef(answers);
   useEffect(() => {
     latest.current = answers;
   });
   useEffect(() => () => stopSpeaking(), []);
 
-  const finish = useCallback(() => {
+  const finish = useCallback((timeUp?: boolean) => {
     const s = scoreListening(items, latest.current);
-    onDone({ module: "hoeren", points: s.points, got: s.correct, total: s.total });
+    onDone({ module: "hoeren", points: s.points, got: s.correct, total: s.total, timeUp });
   }, [items, onDone]);
 
   const missing = items.flatMap((item, i) => (answers[item.id] ? [] : [String(i + 1)]));
@@ -216,7 +297,7 @@ export function HoerenPart({ items, seconds, onDone }: { items: ExamData["hoeren
   return (
     <PartShell
       title={t("modules.hoeren")}
-      seconds={seconds}
+      endsAt={endsAt}
       onFinish={finish}
       progress={{ answered: items.length - missing.length, total: items.length, missing }}
     >
@@ -279,12 +360,17 @@ export function HoerenPart({ items, seconds, onDone }: { items: ExamData["hoeren
 
 type TextField = HTMLInputElement | HTMLTextAreaElement;
 
-export function SchreibenPart({ data, seconds, onDone }: { data: ExamData["schreiben"]; seconds: number; onDone: (r: PartResult) => void }) {
+export function SchreibenPart({ data, endsAt, onDone, saved, onSave }: PartProps & { data: ExamData["schreiben"] }) {
   const t = useTranslations("Exam");
   const locale = useLocale() as Locale;
   const keyboard = useKeyboardInset();
-  const [values, setValues] = useState<Record<string, string>>({});
-  const [message, setMessage] = useState("");
+  const [values, setValues] = useState<Record<string, string>>(() => stringMap(asRecord(saved)?.values));
+  const [message, setMessage] = useState(() => {
+    const m = asRecord(saved)?.message;
+    return typeof m === "string" ? m : "";
+  });
+  const snapshot = useMemo(() => ({ values, message }), [values, message]);
+  useSaveOnChange(snapshot, onSave);
   const latest = useRef({ values, message });
   useEffect(() => {
     latest.current = { values, message };
@@ -316,9 +402,9 @@ export function SchreibenPart({ data, seconds, onDone }: { data: ExamData["schre
     if (keyboard > 0) active.current?.el.scrollIntoView({ block: "nearest", behavior: "smooth" });
   }, [keyboard]);
 
-  const finish = useCallback(() => {
+  const finish = useCallback((timeUp?: boolean) => {
     const s = scoreWriting(data, latest.current.values, latest.current.message);
-    onDone({ module: "schreiben", points: s.points, got: s.formCorrect + s.found.length, total: s.formTotal + data.message.points.length });
+    onDone({ module: "schreiben", points: s.points, got: s.formCorrect + s.found.length, total: s.formTotal + data.message.points.length, timeUp });
   }, [data, onDone]);
 
   const words = wordCount(message);
@@ -331,7 +417,7 @@ export function SchreibenPart({ data, seconds, onDone }: { data: ExamData["schre
   return (
     <PartShell
       title={t("modules.schreiben")}
-      seconds={seconds}
+      endsAt={endsAt}
       onFinish={finish}
       progress={{ answered: total - missing.length, total, missing }}
       toolbar={keyboard > 0 ? <SpecialCharBar compact onInsert={insertChar} /> : null}
@@ -387,19 +473,21 @@ export function SchreibenPart({ data, seconds, onDone }: { data: ExamData["schre
 
 // ---------------------------------------------------------------- Sprechen
 
-export function SprechenPart({ parts, seconds, onDone }: { parts: ExamData["sprechen"]; seconds: number; onDone: (r: PartResult) => void }) {
+export function SprechenPart({ parts, endsAt, onDone, saved, onSave }: PartProps & { parts: ExamData["sprechen"] }) {
   const t = useTranslations("Exam");
   const locale = useLocale() as Locale;
-  const [ticked, setTicked] = useState<Set<string>>(new Set());
-  const [showModel, setShowModel] = useState<Set<string>>(new Set());
+  const [ticked, setTicked] = useState<Set<string>>(() => stringSet(asRecord(saved)?.ticked));
+  const [showModel, setShowModel] = useState<Set<string>>(() => stringSet(asRecord(saved)?.showModel));
+  const snapshot = useMemo(() => ({ ticked: [...ticked], showModel: [...showModel] }), [ticked, showModel]);
+  useSaveOnChange(snapshot, onSave);
   const latest = useRef(ticked);
   useEffect(() => {
     latest.current = ticked;
   });
 
-  const finish = useCallback(() => {
+  const finish = useCallback((timeUp?: boolean) => {
     const s = scoreSpeaking(parts, latest.current);
-    onDone({ module: "sprechen", points: s.points, got: s.ticked, total: s.total });
+    onDone({ module: "sprechen", points: s.points, got: s.ticked, total: s.total, timeUp });
   }, [parts, onDone]);
 
   const toggle = (set: Set<string>, key: string): Set<string> => {
@@ -416,7 +504,7 @@ export function SprechenPart({ parts, seconds, onDone }: { parts: ExamData["spre
   return (
     <PartShell
       title={t("modules.sprechen")}
-      seconds={seconds}
+      endsAt={endsAt}
       onFinish={finish}
       progress={{ answered: ticked.size, total, missing, ticks: true }}
     >

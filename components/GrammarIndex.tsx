@@ -12,6 +12,7 @@ import PageHeader from "./PageHeader";
 import ProgressRing from "./ProgressRing";
 import GrammarHeader from "./illustrations/headers/GrammarHeader";
 import GrammarTopicIcon from "./illustrations/GrammarTopicIcon";
+import ConfirmDialog from "./ui/ConfirmDialog";
 
 export interface LessonCard {
   id: string;
@@ -31,6 +32,8 @@ export default function GrammarIndex({ lessons }: { lessons: LessonCard[] }) {
   const results = useGrammarStore((s) => s.results);
   const completedIds = useGrammarStore((s) => s.completedLessonIds);
   const reset = useGrammarStore((s) => s.reset);
+  const [askReset, setAskReset] = useState(false);
+  const tUi = useTranslations("Ui");
 
   // Persisted progress loads on the client only, after mount.
   useEffect(() => {
@@ -101,9 +104,20 @@ export default function GrammarIndex({ lessons }: { lessons: LessonCard[] }) {
       </ol>
 
       <div className="text-end">
-        <button type="button" onClick={() => reset()} className="btn-ghost">
+        <button type="button" onClick={() => setAskReset(true)} aria-haspopup="dialog" className="btn-ghost">
           {t("reset")}
         </button>
+        <ConfirmDialog
+          open={askReset}
+          title={tUi("resetTitle")}
+          message={tUi("resetMessage", { area: t("title") })}
+          confirmLabel={tUi("resetAction")}
+          onCancel={() => setAskReset(false)}
+          onConfirm={() => {
+            reset();
+            setAskReset(false);
+          }}
+        />
       </div>
     </div>
   );

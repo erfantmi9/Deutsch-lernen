@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { pageAlternates } from "@/lib/seo";
 import { getVerb, verbs } from "@/lib/verbs";
 import VerbDetail from "@/components/VerbDetail";
-import VerbTable from "@/components/VerbTable";
 
 export const dynamicParams = false;
 
@@ -33,10 +31,6 @@ export default async function VerbPage({ params }: Props) {
   const verb = getVerb(id);
   if (!verb) notFound();
 
-  // VerbDetail reads ?type= (list filter) on the client; the static HTML already contains the full table.
-  return (
-    <Suspense fallback={<VerbTable verb={verb} />}>
-      <VerbDetail verb={verb} />
-    </Suspense>
-  );
+  // The whole body is in the static HTML; only VerbDetail's filter-dependent links read ?type= (own Suspense boundaries).
+  return <VerbDetail verb={verb} />;
 }

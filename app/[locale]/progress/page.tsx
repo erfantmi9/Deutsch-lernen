@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function ProgressPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  // Only articles and verbs are looked up by id here, so the slimmed list is enough.
-  const cards = reviewCards.filter((c) => c.kind === "noun" || c.kind === "verb");
+  // Every kind is needed: the review deck's hardest cards can be adjectives, adverbs, prepositions or phrases too.
+  const cards = reviewCards;
   return (
     <ProgressDashboard
       cards={cards}

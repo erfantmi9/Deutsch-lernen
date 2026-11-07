@@ -109,7 +109,22 @@
     "cancel": "Abbrechen",
     "confirm": "Bestätigen",
     "showing": "{count, plural, one {# Eintrag angezeigt} other {# Einträge angezeigt}}",
-    "clearFilters": "Filter zurücksetzen"
+    "clearFilters": "Filter zurücksetzen",
+    "resetTitle": "Fortschritt zurücksetzen?",
+    "resetMessage": "Damit wird dein gespeicherter Fortschritt in {area} gelöscht. Das kann nicht rückgängig gemacht werden.",
+    "resetAction": "Zurücksetzen",
+    "restartTitle": "Neue Runde starten?",
+    "restartMessage": "Deine aktuelle Runde ({done} beantwortet) geht verloren.",
+    "discardTitle": "Übungsart wechseln?",
+    "discardMessage": "Deine noch nicht geprüfte Antwort auf diese Frage geht verloren.",
+    "switchAction": "Wechseln",
+    "addAllTitle": "{count, plural, one {# Karte} other {# Karten}} zur Wiederholung hinzufügen?",
+    "addAllMessage": "Sie kommen in deinen Wiederholungsstapel und werden dir zum Üben gezeigt. Du kannst sie später einzeln entfernen.",
+    "addAllAction": "Alle hinzufügen",
+    "leaveTitle": "Sitzung verlassen?",
+    "leaveMessage": "Du hast {done} von {total} geschafft. Bewertete Karten sind gespeichert, die übrigen bleiben fällig.",
+    "leaveAction": "Zurück zur Übersicht",
+    "restartAction": "Neue Runde"
   },
   "Verbs": {
     "title": "Verbkonjugation",
@@ -250,7 +265,9 @@
       "retry": "Noch einmal versuchen",
       "correctMark": "Richtig",
       "wrongMark": "Falsch",
-      "correctAnswer": "Richtige Antwort:"
+      "correctAnswer": "Richtige Antwort:",
+      "progress": "{answered}/{total} beantwortet",
+      "missing": "Fehlt: {items}"
     }
   },
   "Reading": {
@@ -299,7 +316,10 @@
     "evidence": "Im Text oben markiert",
     "prev": "Vorheriger Text",
     "next": "Nächster Text",
-    "reset": "Lesefortschritt zurücksetzen"
+    "reset": "Lesefortschritt zurücksetzen",
+    "answered": "{answered}/{total} beantwortet",
+    "missing": "Fehlt: {items}",
+    "result": "Ergebnis"
   },
   "Numbers": {
     "title": "Zahlen & Zeit",
@@ -390,7 +410,9 @@
       "solved": "Richtig insgesamt",
       "streak": "Serie",
       "best": "Beste Serie",
-      "reset": "Fortschritt zurücksetzen"
+      "reset": "Fortschritt zurücksetzen",
+      "missingAnswer": "Gib zuerst deine Antwort ein.",
+      "missingChoice": "Wähle zuerst eine Uhrzeit."
     }
   },
   "Grammar": {
@@ -449,7 +471,8 @@
     "summaryScore": "Du hast {correct} von {total} richtig beantwortet.",
     "lessonCompleted": "Lektion abgeschlossen! Du hast alle Übungen gelöst.",
     "practiceAgain": "Noch einmal üben",
-    "reset": "Grammatikfortschritt zurücksetzen"
+    "reset": "Grammatikfortschritt zurücksetzen",
+    "jumpToPractice": "Zur Übung"
   },
   "Sentences": {
     "loading": "Lädt…",
@@ -528,8 +551,8 @@
     "answerLine": "Dein Satz",
     "wordBank": "Wortspeicher",
     "answerPlaceholder": "Wörter hier antippen oder hierher ziehen",
-    "chipAnswer": "{word}, Position {pos} von {total}. Enter entfernt das Wort, Pfeil links oder rechts verschiebt es.",
-    "chipBank": "{word}. Enter fügt das Wort deinem Satz hinzu.",
+    "chipAnswer": "{word}, Position {pos} von {total} in deinem Satz. Enter entfernt das Wort, Pfeil links oder rechts verschiebt es.",
+    "chipBank": "{word}, in der Wortauswahl. Enter fügt das Wort deinem Satz hinzu.",
     "wrongPosition": "falsche Position",
     "rightPosition": "richtige Position",
     "announceAdded": "{word} an Position {pos} von {total} hinzugefügt.",
@@ -549,7 +572,8 @@
     "hint": "Tipp",
     "showExplanation": "Erklärung anzeigen",
     "hideExplanation": "Erklärung ausblenden",
-    "resetProgress": "Fortschritt zurücksetzen"
+    "resetProgress": "Fortschritt zurücksetzen",
+    "detailsShort": "Details"
   },
   "Vocabulary": {
     "title": "Wortschatz",
@@ -683,7 +707,17 @@
     "reset": "Wiederholungsstapel zurücksetzen",
     "resetConfirm": "Alle Karten und den Verlauf löschen? Das lässt sich nicht rückgängig machen.",
     "resetCancel": "Stapel behalten",
-    "resetDone": "Dein Wiederholungsstapel wurde zurückgesetzt."
+    "resetDone": "Dein Wiederholungsstapel wurde zurückgesetzt.",
+    "thinkFirst": "Sag dir die Bedeutung, dann zeig die Antwort.",
+    "answerStatus": "Antwort: {answer}",
+    "nextMore": "{count, plural, one {# weitere Karte ist bereit.} other {# weitere Karten sind bereit.}}",
+    "nextDone": "Heute ist nichts mehr fällig. Füge neue Wörter hinzu, um weiterzumachen.",
+    "practiseMore": "Weiter üben",
+    "addWords": "Neue Wörter hinzufügen",
+    "announceAdded": "{word} zur Wiederholung hinzugefügt",
+    "announceAddedPlain": "Zur Wiederholung hinzugefügt",
+    "announceRemoved": "{word} aus der Wiederholung entfernt",
+    "announceRemovedPlain": "Aus der Wiederholung entfernt"
   },
   "Progress": {
     "title": "Fortschritt",
@@ -721,7 +755,9 @@
     "badgesTitle": "Abzeichen",
     "badgesCount": "{earned} von {total} erreicht",
     "badgeEarned": "Erreicht",
-    "badgeLocked": "Gesperrt: {current} von {target}"
+    "badgeLocked": "Gesperrt: {current} von {target}",
+    "dayCount": "{count, plural, =0 {An diesem Tag nicht geübt.} one {# Antwort oder Übung an diesem Tag.} other {# Antworten oder Übungen an diesem Tag.}}",
+    "weakEmptyAction": "Jetzt üben"
   },
   "Badges": {
     "firstCorrect": {
@@ -785,7 +821,8 @@
   },
   "Speech": {
     "listen": "Anhören: {text}",
-    "listenSlow": "Langsam anhören: {text}"
+    "listenSlow": "Langsam anhören: {text}",
+    "stop": "Stopp"
   },
   "Listen": {
     "title": "Hörtraining",
@@ -797,7 +834,7 @@
       "word": "Wörter",
       "number": "Zahlen"
     },
-    "pick": "Wähle eine Übung. Du hörst sofort die erste Aufgabe.",
+    "pick": "Wähle eine Übung, tippe auf Starten und dann auf Abspielen, um das erste Wort zu hören.",
     "done": "Runde beendet",
     "score": "{correct} von {total} richtig",
     "again": "Noch eine Runde",
@@ -809,7 +846,12 @@
     "correct": "Richtig",
     "wrong": "Nicht ganz",
     "next": "Weiter",
-    "result": "Ergebnis ansehen"
+    "result": "Ergebnis ansehen",
+    "needVoice": "Für die Hörübungen braucht dieses Gerät eine deutsche Stimme. Füge in den Spracheinstellungen deines Systems eine hinzu (z. B. „Deutsch (Deutschland)“) und lade die Seite neu.",
+    "tapPlay": "Tippe auf Abspielen, um es zu hören.",
+    "chooseAnswer": "Wähle, was du gehört hast.",
+    "typeAnswer": "Tippe die Zahl, die du gehört hast.",
+    "start": "Starten"
   },
   "Exam": {
     "title": "Probeprüfung A1",
@@ -880,7 +922,8 @@
     },
     "backToStart": "Zurück zum Anfang",
     "passedShort": "bestanden",
-    "notPassedShort": "nicht bestanden"
+    "notPassedShort": "nicht bestanden",
+    "timeUp": "Die Zeit ist um. {part} wurde mit deinen bisherigen Antworten automatisch abgegeben."
   },
   "Path": {
     "title": "Dein Lernweg",
@@ -947,7 +990,13 @@
         "title": "Probeprüfung",
         "desc": "Mache eine vollständige Probeprüfung."
       }
-    }
+    },
+    "dueTitle": "Wiederholen",
+    "dueText": "{count, plural, =0 {Gerade ist keine Karte fällig.} one {# Karte heute fällig.} other {# Karten heute fällig.}}",
+    "dueEmpty": "Dein Wiederholungsstapel ist leer.",
+    "dueButton": "Jetzt wiederholen",
+    "loading": "Dein Fortschritt wird geladen…",
+    "heroNext": "Weiter: {step}"
   },
   "Search": {
     "title": "Suche",

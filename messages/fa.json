@@ -109,7 +109,22 @@
     "cancel": "انصراف",
     "confirm": "تأیید",
     "showing": "{count, plural, one {# مورد نمایش داده شد} other {# مورد نمایش داده شد}}",
-    "clearFilters": "پاک کردن فیلترها"
+    "clearFilters": "پاک کردن فیلترها",
+    "resetTitle": "پیشرفت شما بازنشانی شود؟",
+    "resetMessage": "با این کار پیشرفت ذخیره‌شدهٔ شما در {area} پاک می‌شود و قابل بازگشت نیست.",
+    "resetAction": "بازنشانی",
+    "restartTitle": "دور تازه شروع شود؟",
+    "restartMessage": "دور فعلی شما ({done} پاسخ‌داده‌شده) از دست می‌رود.",
+    "discardTitle": "نوع تمرین عوض شود؟",
+    "discardMessage": "پاسخی که برای این پرسش نوشته‌اید و هنوز بررسی نشده از دست می‌رود.",
+    "switchAction": "عوض کن",
+    "addAllTitle": "{count, plural, one {# کارت} other {# کارت}} به مرور اضافه شود؟",
+    "addAllMessage": "این کارت‌ها به دستهٔ مرور شما اضافه می‌شوند و برای تمرین نمایش داده می‌شوند. بعداً می‌توانید آن‌ها را یکی‌یکی حذف کنید.",
+    "addAllAction": "افزودن همه",
+    "leaveTitle": "از این جلسه خارج می‌شوید؟",
+    "leaveMessage": "{done} از {total} را انجام داده‌اید. کارت‌هایی که نمره داده‌اید ذخیره شده‌اند و بقیه همچنان سررسیدند.",
+    "leaveAction": "بازگشت به نمای کلی",
+    "restartAction": "دور تازه"
   },
   "Verbs": {
     "title": "صرف فعل",
@@ -250,7 +265,9 @@
       "retry": "دوباره امتحان کن",
       "correctMark": "درست",
       "wrongMark": "نادرست",
-      "correctAnswer": "پاسخ درست:"
+      "correctAnswer": "پاسخ درست:",
+      "progress": "{answered}/{total} پاسخ داده شد",
+      "missing": "مانده: {items}"
     }
   },
   "Reading": {
@@ -299,7 +316,10 @@
     "evidence": "در متن بالا مشخص شده است",
     "prev": "متن قبلی",
     "next": "متن بعدی",
-    "reset": "پاک کردن پیشرفت خواندن"
+    "reset": "پاک کردن پیشرفت خواندن",
+    "answered": "{answered}/{total} پاسخ داده شد",
+    "missing": "مانده: {items}",
+    "result": "نتیجه"
   },
   "Numbers": {
     "title": "اعداد و زمان",
@@ -390,7 +410,9 @@
       "solved": "کل پاسخ‌های درست",
       "streak": "پیاپی",
       "best": "بهترین پیاپی",
-      "reset": "پاک کردن پیشرفت"
+      "reset": "پاک کردن پیشرفت",
+      "missingAnswer": "اول پاسخ خود را بنویسید.",
+      "missingChoice": "اول یک زمان را انتخاب کنید."
     }
   },
   "Grammar": {
@@ -449,7 +471,8 @@
     "summaryScore": "از {total} پرسش، {correct} تا را درست پاسخ دادی.",
     "lessonCompleted": "درس کامل شد! همه‌ی تمرین‌ها را حل کردی.",
     "practiceAgain": "تمرین دوباره",
-    "reset": "پاک کردن پیشرفت گرامر"
+    "reset": "پاک کردن پیشرفت گرامر",
+    "jumpToPractice": "رفتن به تمرین"
   },
   "Sentences": {
     "loading": "در حال بارگذاری…",
@@ -528,8 +551,8 @@
     "answerLine": "جمله‌ی شما",
     "wordBank": "بانک کلمات",
     "answerPlaceholder": "کلمه‌ها را اینجا لمس یا بکشید",
-    "chipAnswer": "{word}، جایگاه {pos} از {total}. برای حذف Enter و برای جابه‌جایی کلید چپ یا راست را بزنید.",
-    "chipBank": "{word}. برای افزودن به جمله Enter را بزنید.",
+    "chipAnswer": "{word}، جایگاه {pos} از {total} در جملهٔ شما. Enter آن را حذف می‌کند و کلید چپ یا راست آن را جابه‌جا می‌کند.",
+    "chipBank": "{word}، در بانک واژه‌ها. Enter آن را به جملهٔ شما اضافه می‌کند.",
     "wrongPosition": "جایگاه نادرست",
     "rightPosition": "جایگاه درست",
     "announceAdded": "{word} در جایگاه {pos} از {total} اضافه شد.",
@@ -549,7 +572,8 @@
     "hint": "راهنما",
     "showExplanation": "نمایش توضیح",
     "hideExplanation": "پنهان کردن توضیح",
-    "resetProgress": "پاک کردن پیشرفت"
+    "resetProgress": "پاک کردن پیشرفت",
+    "detailsShort": "جزئیات"
   },
   "Vocabulary": {
     "title": "واژگان",
@@ -683,7 +707,17 @@
     "reset": "بازنشانی مجموعه‌ی مرور",
     "resetConfirm": "همه‌ی کارت‌ها و تاریخچه‌ی مرور حذف شود؟ این کار قابل بازگشت نیست.",
     "resetCancel": "مجموعه‌ام را نگه‌دار",
-    "resetDone": "مجموعه‌ی مرور بازنشانی شد."
+    "resetDone": "مجموعه‌ی مرور بازنشانی شد.",
+    "thinkFirst": "اول معنی را در ذهن بگویید، بعد پاسخ را ببینید.",
+    "answerStatus": "پاسخ: {answer}",
+    "nextMore": "{count, plural, one {# کارت دیگر آماده است.} other {# کارت دیگر آماده است.}}",
+    "nextDone": "امروز چیز دیگری برای مرور نیست. برای ادامه کلمه‌ی تازه اضافه کنید.",
+    "practiseMore": "تمرین بیشتر",
+    "addWords": "افزودن کلمه‌ی تازه",
+    "announceAdded": "«{word}» به مرور اضافه شد",
+    "announceAddedPlain": "به مرور اضافه شد",
+    "announceRemoved": "«{word}» از مرور حذف شد",
+    "announceRemovedPlain": "از مرور حذف شد"
   },
   "Progress": {
     "title": "پیشرفت",
@@ -721,7 +755,9 @@
     "badgesTitle": "مدال‌ها",
     "badgesCount": "{earned} از {total} به‌دست آمده",
     "badgeEarned": "به‌دست آمده",
-    "badgeLocked": "قفل: {current} از {target}"
+    "badgeLocked": "قفل: {current} از {target}",
+    "dayCount": "{count, plural, =0 {در این روز تمرینی انجام نشده.} one {# پاسخ یا تمرین در این روز.} other {# پاسخ یا تمرین در این روز.}}",
+    "weakEmptyAction": "شروع تمرین"
   },
   "Badges": {
     "firstCorrect": {
@@ -785,7 +821,8 @@
   },
   "Speech": {
     "listen": "گوش دادن: {text}",
-    "listenSlow": "گوش دادن آهسته: {text}"
+    "listenSlow": "گوش دادن آهسته: {text}",
+    "stop": "توقف"
   },
   "Listen": {
     "title": "تمرین شنیداری",
@@ -797,7 +834,7 @@
       "word": "کلمه‌ها",
       "number": "عددها"
     },
-    "pick": "یک تمرین را انتخاب کنید تا شروع شود. مورد اول بلافاصله پخش می‌شود.",
+    "pick": "یک تمرین انتخاب کنید، سپس شروع و پخش را بزنید تا اولین مورد را بشنوید.",
     "done": "دور تمام شد",
     "score": "{correct} از {total} درست",
     "again": "یک دور دیگر",
@@ -809,7 +846,12 @@
     "correct": "درست",
     "wrong": "کمی نه",
     "next": "بعدی",
-    "result": "دیدن نتیجه"
+    "result": "دیدن نتیجه",
+    "needVoice": "تمرین‌های شنیداری به صدای آلمانی روی این دستگاه نیاز دارند. یک صدای آلمانی را در تنظیمات گفتار سیستم اضافه کنید (مثلاً «German (Germany)») و صفحه را دوباره بارگذاری کنید.",
+    "tapPlay": "برای شنیدن، پخش را بزنید.",
+    "chooseAnswer": "آنچه شنیدید را انتخاب کنید.",
+    "typeAnswer": "عددی را که شنیدید بنویسید.",
+    "start": "شروع"
   },
   "Exam": {
     "title": "آزمون تمرینی A1",
@@ -880,7 +922,8 @@
     },
     "backToStart": "بازگشت به شروع",
     "passedShort": "قبول",
-    "notPassedShort": "مردود"
+    "notPassedShort": "مردود",
+    "timeUp": "وقت تمام شد. {part} با پاسخ‌هایی که تا این لحظه داده بودید، به‌طور خودکار تحویل داده شد."
   },
   "Path": {
     "title": "مسیر یادگیری شما",
@@ -947,7 +990,13 @@
         "title": "آزمون تمرینی",
         "desc": "یک آزمون تمرینی کامل را تمام کنید."
       }
-    }
+    },
+    "dueTitle": "مرور",
+    "dueText": "{count, plural, =0 {الان کارتی برای مرور نیست.} one {# کارت برای امروز.} other {# کارت برای امروز.}}",
+    "dueEmpty": "دسته‌ی مرور شما خالی است.",
+    "dueButton": "همین حالا مرور کنید",
+    "loading": "در حال بارگذاری پیشرفت شما…",
+    "heroNext": "قدم بعدی: {step}"
   },
   "Search": {
     "title": "جستجو",

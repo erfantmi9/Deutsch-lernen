@@ -11,6 +11,7 @@ import PageHeader from "./PageHeader";
 import ProgressRing from "./ProgressRing";
 import ReadingKindIcon from "./illustrations/ReadingKindIcon";
 import ReadingHeader from "./illustrations/headers/ReadingHeader";
+import ConfirmDialog from "./ui/ConfirmDialog";
 
 type Locale = "en" | "fa" | "de";
 
@@ -29,6 +30,8 @@ export default function ReadingIndex({ cards }: { cards: ReadingCard[] }) {
 
   const results = useReadingStore((s) => s.results);
   const reset = useReadingStore((s) => s.reset);
+  const [askReset, setAskReset] = useState(false);
+  const tUi = useTranslations("Ui");
 
   // Persisted progress loads on the client only, after mount.
   useEffect(() => {
@@ -63,7 +66,7 @@ export default function ReadingIndex({ cards }: { cards: ReadingCard[] }) {
         }
       />
 
-      <ul aria-label={t("listLabel")} className="grid gap-4 sm:grid-cols-2">
+      <ul aria-label={t("listLabel")} aria-busy={!ready || undefined} className="grid gap-4 sm:grid-cols-2">
         {cards.map((c) => {
           const done = ready && isPassed(results, c.id);
           const best = ready ? bestScore(results, c.id) : null;
@@ -82,9 +85,18 @@ export default function ReadingIndex({ cards }: { cards: ReadingCard[] }) {
                   </p>
                   <h2 className="text-xl font-extrabold">{c.title[locale]}</h2>
                   <p className="flex flex-wrap items-center gap-2 pt-1 text-xs font-bold">
-                    <span className="rounded-full bg-primary-soft px-3 py-1 text-primary">
-                      {done && <span aria-hidden="true">✓ </span>}
-                      {done ? t("statusDone") : t("statusNew")}
+                    {/* Until the store has loaded, a neutral placeholder holds the badge's place: never a "New" that turns
+                        into "Done". Both labels share one grid cell, so the badge is the same size in every state. */}
+                    <span
+                      data-status-badge={ready ? (done ? "done" : "new") : "loading"}
+                      aria-hidden={!ready || undefined}
+                      className={"grid rounded-full px-3 py-1 " + (ready ? "bg-primary-soft text-primary" : "bg-surface-2")}
+                    >
+                      <span className={"col-start-1 row-start-1" + (ready && !done ? "" : " invisible")}>{t("statusNew")}</span>
+                      <span className={"col-start-1 row-start-1" + (ready && done ? "" : " invisible")}>
+                        <span aria-hidden="true">✓ </span>
+                        {t("statusDone")}
+                      </span>
                     </span>
                     {best !== null && <span className="text-text-muted">{t("bestScore", { score: best, total: c.taskCount })}</span>}
                   </p>
@@ -96,9 +108,20 @@ export default function ReadingIndex({ cards }: { cards: ReadingCard[] }) {
       </ul>
 
       <div className="text-end">
-        <button type="button" onClick={() => reset()} className="btn-ghost">
+        <button type="button" onClick={() => setAskReset(true)} aria-haspopup="dialog" className="btn-ghost">
           {t("reset")}
         </button>
+        <ConfirmDialog
+          open={askReset}
+          title={tUi("resetTitle")}
+          message={tUi("resetMessage", { area: t("title") })}
+          confirmLabel={tUi("resetAction")}
+          onCancel={() => setAskReset(false)}
+          onConfirm={() => {
+            reset();
+            setAskReset(false);
+          }}
+        />
       </div>
     </div>
   );

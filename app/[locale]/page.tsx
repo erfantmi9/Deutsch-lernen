@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import HeroCta from "@/components/HeroCta";
 import HeroHome from "@/components/illustrations/HeroHome";
 import { Blob, Sparkle } from "@/components/illustrations/shapes";
 import HomePath from "@/components/HomePath";
@@ -26,9 +26,7 @@ function Home() {
         <div className="space-y-5 text-center md:text-start">
           <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl">{t("title")}</h1>
           <p className="mx-auto max-w-md text-lg text-text-muted md:mx-0">{t("subtitle")}</p>
-          <Link href="/arcade" className="btn btn-primary px-8 py-3 text-lg">
-            {t("cta")} <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
-          </Link>
+          <HeroCta />
         </div>
         <HeroHome />
       </section>

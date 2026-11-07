@@ -109,7 +109,22 @@
     "cancel": "Cancel",
     "confirm": "Confirm",
     "showing": "{count, plural, one {Showing # item} other {Showing # items}}",
-    "clearFilters": "Clear filters"
+    "clearFilters": "Clear filters",
+    "resetTitle": "Reset your progress?",
+    "resetMessage": "This deletes your saved progress in {area}. It cannot be undone.",
+    "resetAction": "Reset",
+    "restartTitle": "Start a new round?",
+    "restartMessage": "Your current round ({done} answered) will be lost.",
+    "discardTitle": "Switch exercise type?",
+    "discardMessage": "Your unchecked answer for this question will be lost.",
+    "switchAction": "Switch",
+    "addAllTitle": "Add {count, plural, one {# card} other {# cards}} to your review?",
+    "addAllMessage": "They go into your review deck and will come up for practice. You can remove them one by one later.",
+    "addAllAction": "Add all",
+    "leaveTitle": "Leave this session?",
+    "leaveMessage": "You have done {done} of {total}. Cards you already graded are saved; the rest stay due.",
+    "leaveAction": "Back to overview",
+    "restartAction": "New round"
   },
   "Verbs": {
     "title": "Verb conjugation",
@@ -250,7 +265,9 @@
       "retry": "Try again",
       "correctMark": "Correct",
       "wrongMark": "Wrong",
-      "correctAnswer": "Correct answer:"
+      "correctAnswer": "Correct answer:",
+      "progress": "{answered}/{total} answered",
+      "missing": "Missing: {items}"
     }
   },
   "Reading": {
@@ -299,7 +316,10 @@
     "evidence": "Highlighted in the text above",
     "prev": "Previous text",
     "next": "Next text",
-    "reset": "Reset reading progress"
+    "reset": "Reset reading progress",
+    "answered": "{answered}/{total} answered",
+    "missing": "Missing: {items}",
+    "result": "Result"
   },
   "Numbers": {
     "title": "Numbers & time",
@@ -390,7 +410,9 @@
       "solved": "Correct in total",
       "streak": "Streak",
       "best": "Best streak",
-      "reset": "Reset progress"
+      "reset": "Reset progress",
+      "missingAnswer": "Type your answer first.",
+      "missingChoice": "Choose a time first."
     }
   },
   "Grammar": {
@@ -449,7 +471,8 @@
     "summaryScore": "You answered {correct} of {total} correctly.",
     "lessonCompleted": "Lesson completed! You solved every exercise.",
     "practiceAgain": "Practice again",
-    "reset": "Reset grammar progress"
+    "reset": "Reset grammar progress",
+    "jumpToPractice": "Jump to practice"
   },
   "Sentences": {
     "loading": "Loading…",
@@ -528,8 +551,8 @@
     "answerLine": "Your sentence",
     "wordBank": "Word bank",
     "answerPlaceholder": "Tap or drag words here",
-    "chipAnswer": "{word}, position {pos} of {total}. Press Enter to remove, left or right arrow to move.",
-    "chipBank": "{word}. Press Enter to add to your sentence.",
+    "chipAnswer": "{word}, position {pos} of {total} in your sentence. Enter removes it, left or right arrow moves it.",
+    "chipBank": "{word}, in the word bank. Enter adds it to your sentence.",
     "wrongPosition": "wrong position",
     "rightPosition": "right position",
     "announceAdded": "{word} added at position {pos} of {total}.",
@@ -549,7 +572,8 @@
     "hint": "Hint",
     "showExplanation": "Show explanation",
     "hideExplanation": "Hide explanation",
-    "resetProgress": "Reset progress"
+    "resetProgress": "Reset progress",
+    "detailsShort": "Details"
   },
   "Vocabulary": {
     "title": "Vocabulary",
@@ -683,7 +707,17 @@
     "reset": "Reset review deck",
     "resetConfirm": "Delete all review cards and history? This cannot be undone.",
     "resetCancel": "Keep my deck",
-    "resetDone": "Your review deck was reset."
+    "resetDone": "Your review deck was reset.",
+    "thinkFirst": "Say the meaning to yourself, then show the answer.",
+    "answerStatus": "Answer: {answer}",
+    "nextMore": "{count, plural, one {# more card is ready.} other {# more cards are ready.}}",
+    "nextDone": "Nothing else is due today. Add new words to keep going.",
+    "practiseMore": "Practise more",
+    "addWords": "Add new words",
+    "announceAdded": "{word} added to review",
+    "announceAddedPlain": "Added to review",
+    "announceRemoved": "{word} removed from review",
+    "announceRemovedPlain": "Removed from review"
   },
   "Progress": {
     "title": "Progress",
@@ -721,7 +755,9 @@
     "badgesTitle": "Badges",
     "badgesCount": "{earned} of {total} earned",
     "badgeEarned": "Earned",
-    "badgeLocked": "Locked: {current} of {target}"
+    "badgeLocked": "Locked: {current} of {target}",
+    "dayCount": "{count, plural, =0 {No practice on this day.} one {# answer or exercise on this day.} other {# answers or exercises on this day.}}",
+    "weakEmptyAction": "Start practising"
   },
   "Badges": {
     "firstCorrect": {
@@ -785,7 +821,8 @@
   },
   "Speech": {
     "listen": "Listen: {text}",
-    "listenSlow": "Listen slowly: {text}"
+    "listenSlow": "Listen slowly: {text}",
+    "stop": "Stop"
   },
   "Listen": {
     "title": "Listening practice",
@@ -797,7 +834,7 @@
       "word": "Words",
       "number": "Numbers"
     },
-    "pick": "Choose a drill to start. You will hear the first item right away.",
+    "pick": "Choose a drill, then tap Start and Play to hear the first item.",
     "done": "Round finished",
     "score": "{correct} of {total} correct",
     "again": "Play another round",
@@ -809,7 +846,12 @@
     "correct": "Correct",
     "wrong": "Not quite",
     "next": "Next",
-    "result": "See result"
+    "result": "See result",
+    "needVoice": "Listening drills need a German voice on this device. Add one in your system's speech settings (for example \"German (Germany)\"), then reload.",
+    "tapPlay": "Tap Play to hear it.",
+    "chooseAnswer": "Choose what you heard.",
+    "typeAnswer": "Type the number you heard.",
+    "start": "Start"
   },
   "Exam": {
     "title": "Practice exam A1",
@@ -880,7 +922,8 @@
     },
     "backToStart": "Back to start",
     "passedShort": "passed",
-    "notPassedShort": "not passed"
+    "notPassedShort": "not passed",
+    "timeUp": "Time is up. {part} was handed in automatically with your answers so far."
   },
   "Path": {
     "title": "Your learning path",
@@ -947,7 +990,13 @@
         "title": "Practice exam",
         "desc": "Finish a full practice exam."
       }
-    }
+    },
+    "dueTitle": "Review",
+    "dueText": "{count, plural, =0 {No cards due right now.} one {# card due today.} other {# cards due today.}}",
+    "dueEmpty": "Your review deck is empty.",
+    "dueButton": "Review now",
+    "loading": "Loading your progress…",
+    "heroNext": "Next: {step}"
   },
   "Search": {
     "title": "Search",

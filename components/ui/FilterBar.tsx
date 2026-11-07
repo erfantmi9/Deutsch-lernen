@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import { useTranslations } from "next-intl";
+import AnnounceHost from "./AnnounceHost";
 
 /**
  * Sticky filter bar with a "Showing N items" live region (always mounted, only the text changes).
@@ -14,6 +15,7 @@ export default function FilterBar({ children, count, label }: { children: ReactN
       {children}
       <p role="status" aria-live="polite" className="text-sm text-text-muted">
         {label ?? t("showing", { count })}
+        <AnnounceHost />
       </p>
     </div>
   );

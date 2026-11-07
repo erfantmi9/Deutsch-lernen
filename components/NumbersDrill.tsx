@@ -13,6 +13,14 @@ import AnalogClock from "./AnalogClock";
 import { ClockSliders } from "./ClockExplorer";
 import Mascot from "./illustrations/Mascot";
 import SpecialCharBar from "./SpecialCharBar";
+import ConfirmDialog from "./ui/ConfirmDialog";
+import FeedbackRegion from "./ui/FeedbackRegion";
+import StickyActionBar from "./ui/StickyActionBar";
+import { useKeyboardInset } from "./ui/useKeyboardInset";
+import { useScrollIntoViewOnChange } from "./ui/useScrollIntoViewOnChange";
+
+/** A second activation of the bar button this soon after Next is the tail of a double click / double Enter. */
+const DOUBLE_ACTIVATION_MS = 400;
 
 const START_CLOCK: ClockTime = { hour: 12, minute: 0 };
 
@@ -24,6 +32,7 @@ interface Outcome extends QuestionResult {
 /** Drills for every number topic: words, digits, prices, dates, reading and setting the clock. */
 export default function NumbersDrill() {
   const t = useTranslations("Numbers");
+  const tUi = useTranslations("Ui");
   const inputId = useId();
 
   const kind = useNumbersStore((s) => s.kind);
@@ -40,8 +49,21 @@ export default function NumbersDrill() {
   const [clock, setClock] = useState<ClockTime>(START_CLOCK);
   const [outcome, setOutcome] = useState<Outcome | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const actionRef = useRef<HTMLButtonElement>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+  // Synchronous guard (state is async): a double Enter / double click checks or advances exactly once.
+  const doneRef = useRef(false);
+  // When Next was last pressed. "Set the clock" has Check enabled at once, so the second click of a double click on
+  // Next would otherwise check the fresh question before the learner touched it.
+  const advancedAt = useRef(0);
+  const keyboard = useKeyboardInset();
+  const feedbackRef = useScrollIntoViewOnChange<HTMLDivElement>(outcome, { enabled: outcome !== null, focus: false, block: "nearest" });
+  const [askReset, setAskReset] = useState(false);
+  // A kind pill pressed while an unchecked answer is in progress: confirmed before that answer is thrown away.
+  const [pendingKind, setPendingKind] = useState<NumberDrillKind | null>(null);
 
   const newQuestion = useCallback((k: NumberDrillKind) => {
+    doneRef.current = false;
     setQuestion(makeQuestion(k));
     setInput("");
     setClock(START_CLOCK);
@@ -63,24 +85,53 @@ export default function NumbersDrill() {
 
   const typed = question !== null && ["cardinal", "reverse", "price", "date"].includes(question.kind);
 
+  // Focus: the answer field for a new typed question; the persistent bar button once answered (focus never drops).
   useEffect(() => {
-    if (typed && !outcome) inputRef.current?.focus();
+    if (!question) return;
+    if (outcome) actionRef.current?.focus({ preventScroll: true });
+    else if (typed) inputRef.current?.focus();
   }, [typed, outcome, question]);
 
-  const changeKind = (k: NumberDrillKind) => {
+  // Keyboard open: keep the prompt + field above the keyboard bar.
+  useEffect(() => {
+    if (keyboard > 0) formRef.current?.scrollIntoView({ block: "end", behavior: "smooth" });
+  }, [keyboard]);
+
+  const applyKind = (k: NumberDrillKind) => {
     setKind(k);
     newQuestion(k);
   };
+  const inProgress = !outcome && (input.trim() !== "" || clock.hour !== START_CLOCK.hour || clock.minute !== START_CLOCK.minute);
+  const changeKind = (k: NumberDrillKind) => {
+    if (inProgress) setPendingKind(k);
+    else applyKind(k);
+  };
 
   const finish = (q: NumberQuestion, response: string | ClockTime, given?: string) => {
+    if (doneRef.current) return;
+    doneRef.current = true;
     const res = checkQuestion(q, response);
     setOutcome({ ...res, given });
     recordResult(q.kind, res.correct);
   };
 
+  const advance = () => {
+    if (!doneRef.current) return;
+    advancedAt.current = performance.now();
+    newQuestion(kind);
+  };
+
+  const check = () => {
+    if (!question || doneRef.current) return;
+    if (performance.now() - advancedAt.current < DOUBLE_ACTIVATION_MS) return;
+    if (question.kind === "clock-set") finish(question, clock, formatClock(clock));
+    else if (typed && input.trim().length > 0) finish(question, input);
+  };
+
   const submitTyped = (e: FormEvent) => {
     e.preventDefault();
-    if (question && !outcome && input.trim().length > 0) finish(question, input);
+    if (outcome) advance();
+    else check();
   };
 
   const insertChar = (ch: string) => {
@@ -105,6 +156,10 @@ export default function NumbersDrill() {
       </div>
     );
   }
+
+  // Why Check is disabled, spelled out in the bar.
+  const missing =
+    question.kind === "clock-read" ? t("practice.missingChoice") : typed && input.trim().length === 0 ? t("practice.missingAnswer") : null;
 
   const prompt = (() => {
     switch (question.kind) {
@@ -136,12 +191,12 @@ export default function NumbersDrill() {
   })();
 
   return (
-    <section aria-labelledby="drill-title" className="mx-auto w-full max-w-xl space-y-5">
+    <section aria-labelledby="drill-title" className="mx-auto w-full max-w-xl space-y-4">
       <h2 id="drill-title" className="sr-only">
         {t("tabs.practice")}
       </h2>
 
-      <div role="group" aria-label={t("practice.kindLabel")} className="flex flex-wrap gap-2">
+      <div role="group" aria-label={t("practice.kindLabel")} className="kb-hide flex flex-wrap gap-2">
         {NUMBER_DRILL_KINDS.map((k) => (
           <button key={k} type="button" aria-pressed={kind === k} onClick={() => changeKind(k)} className="pill">
             {t(`practice.kinds.${k}`)}
@@ -149,7 +204,8 @@ export default function NumbersDrill() {
         ))}
       </div>
 
-      <dl className="grid grid-cols-3 gap-3">
+      {/* Scoreboard: one compact row so the question and its feedback fit on a phone. */}
+      <dl className="kb-hide flex items-center justify-between gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-sm shadow-soft">
         {(
           [
             [t("practice.solved"), solved],
@@ -157,14 +213,14 @@ export default function NumbersDrill() {
             [t("practice.best"), bestStreak],
           ] as const
         ).map(([label, value]) => (
-          <div key={label} className="stat">
+          <div key={label} className="flex items-baseline gap-1.5">
             <dt className="eyebrow">{label}</dt>
-            <dd className="text-2xl font-extrabold tabular-nums">{value}</dd>
+            <dd className="font-extrabold tabular-nums">{value}</dd>
           </div>
         ))}
       </dl>
 
-      <div className="card-hero space-y-3 p-6 text-center">
+      <div className="card-hero kb-tight space-y-2 p-4 text-center sm:p-6">
         <p className="eyebrow">
           {question.kind === "clock-set" ? t(`practice.styles.${question.style}`) : t(`practice.kinds.${question.kind}`)}
         </p>
@@ -182,9 +238,9 @@ export default function NumbersDrill() {
 
       {/* Typed answers */}
       {typed && (
-        <form onSubmit={submitTyped} className="space-y-4" noValidate>
+        <form ref={formRef} onSubmit={submitTyped} className="scroll-target space-y-3" noValidate>
           <div>
-            <label htmlFor={inputId} className="mb-1 block text-sm font-bold text-text-muted">
+            <label htmlFor={inputId} className="kb-sr mb-1 block text-sm font-bold text-text-muted">
               {question.kind === "reverse" ? t("practice.typeDigits") : t("practice.typeWords")}
             </label>
             <input
@@ -192,7 +248,7 @@ export default function NumbersDrill() {
               ref={inputRef}
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              disabled={outcome !== null}
+              readOnly={outcome !== null}
               dir="ltr"
               lang={question.kind === "reverse" ? undefined : "de"}
               inputMode={question.kind === "reverse" ? "numeric" : "text"}
@@ -200,15 +256,11 @@ export default function NumbersDrill() {
               autoCorrect="off"
               autoCapitalize="none"
               spellCheck={false}
-              className="w-full rounded-full border-2 border-border bg-surface px-6 py-3 text-xl text-text shadow-soft outline-none placeholder:text-text-muted focus-visible:border-primary focus-visible:ring-4 focus-visible:ring-primary/30 disabled:opacity-60"
+              enterKeyHint="done"
+              className="w-full rounded-full border-2 border-border bg-surface px-6 py-3 text-xl text-text shadow-soft outline-none placeholder:text-text-muted focus-visible:border-primary focus-visible:ring-4 focus-visible:ring-primary/30 read-only:opacity-60"
             />
           </div>
-          {question.kind !== "reverse" && <SpecialCharBar disabled={outcome !== null} onInsert={insertChar} />}
-          {!outcome && (
-            <button type="submit" disabled={input.trim().length === 0} className="btn btn-primary w-full py-3 text-lg">
-              {t("practice.check")}
-            </button>
-          )}
+          {question.kind !== "reverse" && keyboard === 0 && <SpecialCharBar disabled={outcome !== null} onInsert={insertChar} />}
         </form>
       )}
 
@@ -222,15 +274,17 @@ export default function NumbersDrill() {
               <button
                 key={opt}
                 type="button"
-                disabled={outcome !== null}
+                aria-disabled={outcome !== null}
                 onClick={() => finish(question, opt, opt)}
                 className={
-                  "pill min-h-14 justify-center text-lg text-text disabled:cursor-default " +
+                  "pill min-h-14 justify-center text-lg text-text aria-disabled:cursor-default " +
                   (isAnswer
-                    ? "border-success bg-success-soft text-success disabled:opacity-100"
+                    ? "border-success bg-success-soft text-success"
                     : isWrongPick
-                      ? "border-danger bg-danger-soft text-danger disabled:opacity-100"
-                      : "disabled:opacity-60")
+                      ? "border-danger bg-danger-soft text-danger"
+                      : outcome !== null
+                        ? "opacity-60"
+                        : "")
                 }
               >
                 <bdi dir="ltr" lang="de">
@@ -256,25 +310,19 @@ export default function NumbersDrill() {
             />
             <p className="text-sm text-text-muted">{t("clock.hint")}</p>
           </div>
-          {!outcome && (
-            <>
-              <ClockSliders time={clock} onChange={setClock} />
-              <button type="button" onClick={() => finish(question, clock, formatClock(clock))} className="btn btn-primary w-full py-3 text-lg">
-                {t("practice.check")}
-              </button>
-            </>
-          )}
+          {/* Kept mounted (locked) after answering: unmounting them collapsed the page by ~200px. Check is in the bar. */}
+          <ClockSliders time={clock} onChange={setClock} disabled={outcome !== null} />
         </div>
       )}
 
-      {/* Feedback */}
-      <div aria-live="polite" role="status" className="min-h-[5rem]">
+      {/* Feedback: the page's one live region, height reserved so nothing jumps when it fills. */}
+      <FeedbackRegion ref={feedbackRef}>
         {outcome && (
-          <div className={"space-y-3 " + (outcome.correct ? "feedback-success" : "feedback-error")}>
-            <div className="flex items-center gap-4">
+          <div className={"space-y-2 " + (outcome.correct ? "feedback-success" : "feedback-error")}>
+            <div className="flex items-center gap-3">
               <Mascot
                 mood={outcome.correct ? "cheering" : "sad"}
-                size={80}
+                size={56}
                 className={"shrink-0 " + (outcome.correct ? "motion-safe:animate-bounce-soft" : "")}
               />
               <p className="font-bold">
@@ -288,17 +336,53 @@ export default function NumbersDrill() {
               <p className="text-sm text-text">{t("practice.yourClock", { time: outcome.given })}</p>
             )}
             {outcome.umlaut && <p className="feedback-hint">⚠ {t("practice.umlautHint")}</p>}
-            <button type="button" onClick={() => newQuestion(kind)} autoFocus className="btn btn-primary">
-              {t("practice.next")} <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
-            </button>
           </div>
         )}
-      </div>
+      </FeedbackRegion>
 
       <div className="text-end">
-        <button type="button" onClick={() => reset()} className="btn-ghost">
+        <button type="button" onClick={() => setAskReset(true)} aria-haspopup="dialog" className="btn-ghost">
           {t("practice.reset")}
         </button>
+        <StickyActionBar
+          ref={actionRef}
+          label={
+            outcome ? (
+              <>
+                {t("practice.next")} <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
+              </>
+            ) : (
+              t("practice.check")
+            )
+          }
+          onAction={() => (outcome ? advance() : check())}
+          disabled={!outcome && missing !== null}
+          status={outcome ? null : missing}
+          statusLive={false}
+          toolbar={typed && question.kind !== "reverse" ? <SpecialCharBar compact disabled={outcome !== null} onInsert={insertChar} /> : null}
+        />
+        <ConfirmDialog
+          open={askReset}
+          title={tUi("resetTitle")}
+          message={tUi("resetMessage", { area: t("tabs.practice") })}
+          confirmLabel={tUi("resetAction")}
+          onCancel={() => setAskReset(false)}
+          onConfirm={() => {
+            reset();
+            setAskReset(false);
+          }}
+        />
+        <ConfirmDialog
+          open={pendingKind !== null}
+          title={tUi("discardTitle")}
+          message={tUi("discardMessage")}
+          confirmLabel={tUi("switchAction")}
+          onCancel={() => setPendingKind(null)}
+          onConfirm={() => {
+            if (pendingKind) applyKind(pendingKind);
+            setPendingKind(null);
+          }}
+        />
       </div>
     </section>
   );

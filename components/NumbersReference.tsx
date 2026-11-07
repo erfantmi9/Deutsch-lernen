@@ -6,6 +6,7 @@ import { cardinal, MAX_CARDINAL } from "@/lib/numbers";
 import { calendar, cardinalWords, ordinalWords } from "@/lib/numbersData";
 import type { CalendarItem } from "@/types/numbers";
 import DateExplorer from "./DateExplorer";
+import { useSettledValue } from "./ui/useSettledValue";
 
 export type ReferenceSection = "numbers" | "ordinals" | "calendar";
 
@@ -49,10 +50,12 @@ function Converter() {
   const trimmed = text.trim();
   const value = /^\d{1,4}$/u.test(trimmed) ? Number(trimmed) : null;
   const valid = value !== null && value <= MAX_CARDINAL;
+  // Announced once typing pauses, not after every digit.
+  const announcement = useSettledValue(valid ? cardinal(value) : trimmed.length > 0 ? t("cardinals.converterInvalid") : "");
 
   return (
     <div className="card space-y-3 p-5">
-      <h3 className="text-xl font-extrabold">{t("cardinals.converterTitle")}</h3>
+      <h2 className="text-xl font-extrabold">{t("cardinals.converterTitle")}</h2>
       <label htmlFor="converter" className="block text-sm font-bold text-text-muted">
         {t("cardinals.converterLabel")}
       </label>
@@ -66,7 +69,10 @@ function Converter() {
         maxLength={4}
         className="w-full rounded-full border-2 border-border bg-surface px-6 py-3 text-xl text-text shadow-soft outline-none focus-visible:border-primary focus-visible:ring-4 focus-visible:ring-primary/30"
       />
-      <p aria-live="polite" className="min-h-8 text-xl font-extrabold">
+      <p role="status" aria-live="polite" className="sr-only">
+        {announcement}
+      </p>
+      <p className="min-h-8 text-xl font-extrabold">
         {valid ? (
           <bdi dir="ltr" lang="de">
             {cardinal(value)}
@@ -105,6 +111,8 @@ export default function NumbersReference({ section }: { section: ReferenceSectio
   if (section === "numbers") {
     return (
       <div className="space-y-6">
+        {/* The converter is the tool people come for: first, before the reference lists. */}
+        <Converter />
         <section className="card space-y-2 p-5">
           <h2 className="text-xl font-extrabold">{t("cardinals.ruleTitle")}</h2>
           <p className="leading-relaxed">{t("cardinals.rule")}</p>
@@ -118,7 +126,6 @@ export default function NumbersReference({ section }: { section: ReferenceSectio
           <h2 className="text-xl font-extrabold">{t("cardinals.bigTitle")}</h2>
           <NumberGrid items={big} label={t("cardinals.bigTitle")} />
         </section>
-        <Converter />
       </div>
     );
   }
@@ -143,11 +150,11 @@ export default function NumbersReference({ section }: { section: ReferenceSectio
 
   return (
     <div className="space-y-8">
+      <DateExplorer />
       <p className="feedback-hint">{t("calendar.articleNote")}</p>
       <CalendarList title={t("calendar.monthsTitle")} items={calendar.months} locale={locale} />
       <CalendarList title={t("calendar.weekdaysTitle")} items={calendar.weekdays} locale={locale} />
       <CalendarList title={t("calendar.seasonsTitle")} items={calendar.seasons} locale={locale} />
-      <DateExplorer />
     </div>
   );
 }

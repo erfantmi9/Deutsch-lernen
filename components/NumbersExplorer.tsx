@@ -6,7 +6,6 @@ import ClockExplorer from "./ClockExplorer";
 import NumbersDrill from "./NumbersDrill";
 import NumbersReference from "./NumbersReference";
 import PageHeader from "./PageHeader";
-import NumbersHeader from "./illustrations/headers/NumbersHeader";
 
 const TABS = ["numbers", "ordinals", "calendar", "clock", "practice"] as const;
 type Tab = (typeof TABS)[number];
@@ -17,8 +16,9 @@ export default function NumbersExplorer() {
   const [tab, setTab] = useState<Tab>("numbers");
 
   return (
-    <div className="space-y-6">
-      <PageHeader title={t("title")} subtitle={t("subtitle")} illustration={<NumbersHeader size="100%" />} />
+    <div className="space-y-4">
+      {/* The practice drill is this page's main task: title only at every size, so the question fits above the fold. */}
+      <PageHeader title={t("title")} compact="always" />
 
       <div role="group" aria-label={t("tabsLabel")} className="flex flex-wrap gap-2">
         {TABS.map((id) => (
