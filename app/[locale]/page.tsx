@@ -9,11 +9,17 @@ import ModuleCards from "@/components/ModuleCards";
 import { dialogues } from "@/lib/dialogues";
 import { grammarExercises } from "@/lib/grammar";
 import { readingTexts } from "@/lib/reading";
+import Footer from "@/components/nav/Footer";
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <Home />;
+  return (
+    <>
+      <Home />
+      <Footer locale={locale} />
+    </>
+  );
 }
 
 function Home() {

@@ -1026,7 +1026,8 @@
       "syncing": "Fortschritt wird synchronisiert",
       "synced": "Fortschritt synchronisiert",
       "error": "Synchronisierung fehlgeschlagen, neuer Versuch folgt"
-    }
+    },
+    "account": "Konto"
   },
   "Login": {
     "signInTitle": "Anmelden",
@@ -1046,7 +1047,106 @@
       "exists": "Mit dieser E-Mail gibt es schon ein Konto. Bitte melde dich an.",
       "invalid": "Prüfe Name, E-Mail und Passwort (mindestens 8 Zeichen).",
       "notLinked": "Diese E-Mail hat schon ein Konto mit Passwort. Melde dich mit E-Mail und Passwort an.",
-      "generic": "Etwas ist schiefgelaufen. Bitte versuche es noch einmal."
-    }
+      "generic": "Etwas ist schiefgelaufen. Bitte versuche es noch einmal.",
+      "rate": "Zu viele Versuche. Bitte warte ein paar Minuten und versuche es noch einmal."
+    },
+    "forgot": "Passwort vergessen?",
+    "privacyNotice": "Mit dem Konto speichern wir deinen Namen, deine E-Mail und deinen Fortschritt, wie in der <link>Datenschutzerklärung</link> beschrieben."
+  },
+  "AccountPage": {
+    "title": "Dein Konto",
+    "name": "Name",
+    "email": "E-Mail",
+    "syncNote": "Dein Fortschritt wird in diesem Konto gespeichert und erscheint auf jedem Gerät, auf dem du dich anmeldest.",
+    "signOut": "Abmelden",
+    "signOutNote": "Beim Abmelden wird auch der Fortschritt in diesem Browser gelöscht. Im Konto bleibt er erhalten.",
+    "deleteTitle": "Konto löschen",
+    "deleteText": "Damit werden dein Konto und der gesamte gespeicherte Fortschritt endgültig gelöscht. Das lässt sich nicht rückgängig machen.",
+    "deleteConfirm": "Konto und allen gespeicherten Fortschritt endgültig löschen?",
+    "deleteButton": "Mein Konto löschen",
+    "deleteError": "Das Konto konnte nicht gelöscht werden. Bitte versuche es noch einmal.",
+    "signedOut": "Du bist nicht angemeldet.",
+    "signIn": "Anmelden"
+  },
+  "Password": {
+    "forgotTitle": "Passwort vergessen?",
+    "forgotText": "Gib deine E-Mail ein. Wir schicken dir einen Link, mit dem du ein neues Passwort wählst.",
+    "email": "E-Mail",
+    "sendLink": "Link senden",
+    "sent": "Wenn es zu dieser E-Mail ein Konto gibt, ist ein Link unterwegs. Er gilt 1 Stunde. Schau auch im Spam-Ordner nach.",
+    "rate": "Zu viele Anfragen. Bitte versuche es in einer Stunde noch einmal.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es noch einmal.",
+    "backToSignIn": "Zurück zur Anmeldung",
+    "resetTitle": "Neues Passwort wählen",
+    "newPassword": "Neues Passwort",
+    "hint": "Mindestens {min} Zeichen.",
+    "save": "Passwort speichern",
+    "done": "Dein Passwort wurde geändert. Du kannst dich jetzt damit anmelden.",
+    "expired": "Dieser Link ist abgelaufen oder wurde schon benutzt.",
+    "newLink": "Neuen Link anfordern"
+  },
+  "Footer": {
+    "privacy": "Datenschutz"
+  },
+  "Nudge": {
+    "label": "Fortschritt sichern",
+    "title": "Sichere deinen Fortschritt",
+    "text": "Im Moment ist dein Fortschritt nur in diesem Browser gespeichert. Mit einem kostenlosen Konto bleibt er sicher und ist auf jedem Gerät da.",
+    "cta": "Kostenloses Konto erstellen",
+    "later": "Später"
+  },
+  "Privacy": {
+    "title": "Datenschutzerklärung",
+    "updated": "Stand: November 2026",
+    "controllerTitle": "Verantwortlich",
+    "operatorMissing": "Angaben zum Betreiber folgen.",
+    "sections": [
+      {
+        "h": "Nutzung ohne Konto",
+        "p": [
+          "Du kannst die ganze App ohne Konto nutzen. Dein Fortschritt wird dann nur im lokalen Speicher deines Browsers auf deinem Gerät gespeichert und nie an uns gesendet.",
+          "Wir verwenden keine Analyse-, Werbe- oder Tracking-Cookies."
+        ]
+      },
+      {
+        "h": "Was wir mit einem Konto speichern",
+        "p": [
+          "Deinen vollständigen Namen, deine E-Mail-Adresse und dein Passwort. Das Passwort wird nur als gesalzener scrypt-Hash gespeichert; niemand kann es lesen.",
+          "Bei Anmeldung mit Google: deine Google-Konto-ID, deinen Namen und deine E-Mail-Adresse, wie Google sie übermittelt.",
+          "Deinen Lernfortschritt (Karteikarten, Quiz- und Übungsergebnisse, Lerntage, Einstellungen), damit er zwischen deinen Geräten abgeglichen werden kann.",
+          "Zum Schutz vor Passwort-Raten zählen wir Anmelde- und Registrierungsversuche pro E-Mail und IP-Adresse kurzzeitig. Die Zähler verfallen nach höchstens einer Stunde."
+        ]
+      },
+      {
+        "h": "Rechtsgrundlage",
+        "p": [
+          "Wir verarbeiten diese Daten, um das gewünschte Konto und den Abgleich bereitzustellen (Art. 6 Abs. 1 lit. b DSGVO) und den Dienst sicher zu halten (Art. 6 Abs. 1 lit. f DSGVO)."
+        ]
+      },
+      {
+        "h": "Cookies",
+        "p": [
+          "Wenn du dich anmeldest, setzen wir ein Cookie, das dich angemeldet hält, sowie Sicherheits-Cookies für den Anmeldevorgang. Sie sind für das Konto technisch notwendig und dienen nicht dem Tracking."
+        ]
+      },
+      {
+        "h": "Dienstleister",
+        "p": [
+          "Hosting: Vercel Inc. Datenbank: Neon (über Vercel). E-Mails zum Zurücksetzen des Passworts: Resend. Optionale Anmeldung: Google. Diese Anbieter können Daten außerhalb der EU verarbeiten, auch in den USA, auf Grundlage der EU-Standardvertragsklauseln oder des EU-US Data Privacy Framework."
+        ]
+      },
+      {
+        "h": "Speicherdauer",
+        "p": [
+          "Bis du dein Konto löschst. Links zum Zurücksetzen des Passworts verfallen nach einer Stunde."
+        ]
+      },
+      {
+        "h": "Deine Rechte",
+        "p": [
+          "Du kannst dein Konto mit allen Daten jederzeit auf der Kontoseite löschen. Außerdem hast du das Recht auf Auskunft, Berichtigung, Einschränkung, Datenübertragbarkeit und Widerspruch sowie auf Beschwerde bei einer Datenschutzaufsichtsbehörde. Schreib uns dazu an die oben genannte Adresse."
+        ]
+      }
+    ]
   }
 }

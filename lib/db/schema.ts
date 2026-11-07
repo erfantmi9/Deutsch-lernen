@@ -45,6 +45,20 @@ export const verificationTokens = pgTable(
   (t) => [primaryKey({ columns: [t.identifier, t.token] })],
 );
 
+/** Fixed-window counters for login, sign-up and password-reset attempts (lib/rateLimit.ts). */
+export const rateLimits = pgTable("rate_limit", {
+  key: text("key").primaryKey(),
+  count: integer("count").notNull(),
+  resetAt: timestamp("reset_at", { mode: "date" }).notNull(),
+});
+
+/** One-time password reset links. Only the SHA-256 of the token is stored. */
+export const passwordResets = pgTable("password_reset", {
+  tokenHash: text("token_hash").primaryKey(),
+  userId: text("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  expires: timestamp("expires", { mode: "date" }).notNull(),
+});
+
 /** One row per persisted zustand store; `data` is the store's localStorage JSON. */
 export const progress = pgTable(
   "progress",

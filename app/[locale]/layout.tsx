@@ -7,6 +7,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing, RTL_LOCALES } from "@/i18n/routing";
 import Header from "@/components/nav/Header";
 import BottomNav from "@/components/nav/BottomNav";
+import SignupNudge from "@/components/SignupNudge";
 import RegisterSW from "@/components/RegisterSW";
 import VisitTracker from "@/components/VisitTracker";
 import { SITE_NAME, siteUrl, THEME_COLOR } from "@/lib/site";
@@ -81,6 +82,7 @@ export default async function LocaleLayout({
             <main id="main" tabIndex={-1} className="mx-auto w-full max-w-4xl px-4 pb-[calc(var(--bottom-chrome-h)+1.5rem)] pt-6 outline-none short:pt-3 lg:pb-16">
               {children}
             </main>
+            <SignupNudge />
             <BottomNav />
             <VisitTracker />
             <RegisterSW />

@@ -24,6 +24,7 @@ export default function LoginForm({ googleEnabled }: { googleEnabled: boolean })
     const cb = params.get("callbackUrl");
     // Only same-site paths, never another host.
     if (cb && cb.startsWith("/") && !cb.startsWith("//")) setCallbackUrl(cb);
+    if (params.get("mode") === "signup") setMode("signUp");
     const err = params.get("error");
     if (err === "OAuthAccountNotLinked") setError(t("errors.notLinked"));
     else if (err) setError(t("errors.generic"));
@@ -41,6 +42,7 @@ export default function LoginForm({ googleEnabled }: { googleEnabled: boolean })
           body: JSON.stringify({ name, email, password }),
         });
         if (res.status === 409) return setError(t("errors.exists"));
+        if (res.status === 429) return setError(t("errors.rate"));
         if (!res.ok) return setError(t("errors.invalid"));
       }
       const result = await signIn("credentials", { email, password, redirect: false });
@@ -105,6 +107,22 @@ export default function LoginForm({ googleEnabled }: { googleEnabled: boolean })
           />
           {isSignUp && <span className="text-xs font-normal text-text-muted">{t("passwordHint", { min: PASSWORD_MIN })}</span>}
         </label>
+        {!isSignUp && (
+          <a href={`/${locale}/forgot-password`} className="-mt-2 self-end text-sm font-semibold underline underline-offset-2">
+            {t("forgot")}
+          </a>
+        )}
+        {isSignUp && (
+          <p className="text-xs text-text-muted">
+            {t.rich("privacyNotice", {
+              link: (chunks) => (
+                <a href={`/${locale}/privacy`} className="font-semibold underline underline-offset-2">
+                  {chunks}
+                </a>
+              ),
+            })}
+          </p>
+        )}
 
         {error && (
           <p role="alert" className="rounded-xl bg-danger-soft px-3 py-2 text-sm text-danger">
@@ -115,7 +133,7 @@ export default function LoginForm({ googleEnabled }: { googleEnabled: boolean })
         <button
           type="submit"
           disabled={busy}
-          className="rounded-xl bg-primary px-4 py-2.5 font-semibold text-on-primary disabled:opacity-60"
+          className="btn btn-primary"
         >
           {isSignUp ? t("createAccount") : t("signIn")}
         </button>
@@ -145,7 +163,7 @@ export default function LoginForm({ googleEnabled }: { googleEnabled: boolean })
           <button
             type="button"
             onClick={() => void signIn("google", { callbackUrl })}
-            className="w-full rounded-xl border border-border px-4 py-2.5 font-medium"
+            className="btn btn-secondary w-full"
           >
             {t("google")}
           </button>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import Footer from "@/components/nav/Footer";
 import { routing } from "@/i18n/routing";
 import LoginForm from "@/components/LoginForm";
 
@@ -16,5 +17,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function LoginPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <LoginForm googleEnabled={Boolean(process.env.AUTH_GOOGLE_ID)} />;
+  return (
+    <>
+      <LoginForm googleEnabled={Boolean(process.env.AUTH_GOOGLE_ID)} />
+      <Footer locale={locale} />
+    </>
+  );
 }

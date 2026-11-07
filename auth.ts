@@ -7,6 +7,7 @@ import { getDb } from "@/lib/db";
 import { accounts, sessions, users, verificationTokens } from "@/lib/db/schema";
 import { signInSchema } from "@/lib/authSchemas";
 import { verifyPassword } from "@/lib/password";
+import { clientIp, hit } from "@/lib/rateLimit";
 
 export const { handlers, auth, signIn, signOut } = NextAuth(() => ({
   adapter: DrizzleAdapter(getDb(), {
@@ -19,9 +20,14 @@ export const { handlers, auth, signIn, signOut } = NextAuth(() => ({
     // Main option: email + password. Accounts are created by POST /api/register.
     Credentials({
       credentials: { email: {}, password: {} },
-      authorize: async (raw) => {
+      authorize: async (raw, request) => {
         const parsed = signInSchema.safeParse(raw);
         if (!parsed.success) return null;
+        // 10 tries per email and 30 per IP every 15 minutes; past that every attempt fails, even a correct one.
+        const ip = clientIp(request.headers);
+        const okEmail = await hit(`login:email:${parsed.data.email}`, 10, 900);
+        const okIp = await hit(`login:ip:${ip}`, 30, 900);
+        if (!okEmail || !okIp) return null;
         const [user] = await getDb().select().from(users).where(eq(users.email, parsed.data.email)).limit(1);
         if (!user || !(await verifyPassword(parsed.data.password, user.passwordHash))) return null;
         return { id: user.id, name: user.name, email: user.email };

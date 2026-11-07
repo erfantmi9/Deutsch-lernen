@@ -130,6 +130,12 @@ async function applyRemote(store: PersistedStore, data: unknown) {
   await store.persist.rehydrate();
 }
 
+/** Sends any changes still waiting for the debounce. Call before signing out. */
+export async function flushSync(): Promise<void> {
+  if (timer) clearTimeout(timer);
+  await push();
+}
+
 /** Pulls the account's progress, merges it into this device, then keeps pushing local changes. */
 export async function startSync(statusCallback: (s: SyncStatus) => void) {
   if (started) return;

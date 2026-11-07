@@ -4,6 +4,7 @@ import { getDb } from "@/lib/db";
 import { users } from "@/lib/db/schema";
 import { signUpSchema } from "@/lib/authSchemas";
 import { hashPassword } from "@/lib/password";
+import { clientIp, hit } from "@/lib/rateLimit";
 
 export const dynamic = "force-dynamic";
 
@@ -18,6 +19,10 @@ export async function POST(req: Request) {
   const parsed = signUpSchema.safeParse(body);
   if (!parsed.success) return NextResponse.json({ error: "invalid" }, { status: 400 });
   const { name, email, password } = parsed.data;
+
+  if (!(await hit(`register:ip:${clientIp(req.headers)}`, 5, 3600))) {
+    return NextResponse.json({ error: "rate" }, { status: 429 });
+  }
 
   const db = getDb();
   // Any existing account with this address (password or Google) blocks sign-up: email is not verified here,

@@ -1026,7 +1026,8 @@
       "syncing": "Syncing progress",
       "synced": "Progress synced",
       "error": "Sync failed, will retry"
-    }
+    },
+    "account": "Account"
   },
   "Login": {
     "signInTitle": "Sign in",
@@ -1046,7 +1047,106 @@
       "exists": "An account with this email already exists. Sign in instead.",
       "invalid": "Check your name, email and password (at least 8 characters).",
       "notLinked": "This email already has a password account. Sign in with your email and password.",
-      "generic": "Something went wrong. Please try again."
-    }
+      "generic": "Something went wrong. Please try again.",
+      "rate": "Too many attempts. Please wait a few minutes and try again."
+    },
+    "forgot": "Forgot password?",
+    "privacyNotice": "By creating an account you agree that we store your name, email and progress as described in the <link>privacy policy</link>."
+  },
+  "AccountPage": {
+    "title": "Your account",
+    "name": "Name",
+    "email": "Email",
+    "syncNote": "Your progress is saved to this account and appears on every device where you sign in.",
+    "signOut": "Sign out",
+    "signOutNote": "Signing out also removes the progress saved in this browser. It stays in your account.",
+    "deleteTitle": "Delete account",
+    "deleteText": "This permanently deletes your account and all progress saved in it. It can't be undone.",
+    "deleteConfirm": "Delete your account and all saved progress for good?",
+    "deleteButton": "Delete my account",
+    "deleteError": "The account could not be deleted. Please try again.",
+    "signedOut": "You are not signed in.",
+    "signIn": "Sign in"
+  },
+  "Password": {
+    "forgotTitle": "Forgot your password?",
+    "forgotText": "Enter your email and we'll send you a link to choose a new password.",
+    "email": "Email",
+    "sendLink": "Send link",
+    "sent": "If an account exists for this email, a link is on its way. It works for 1 hour. Check your spam folder too.",
+    "rate": "Too many requests. Please try again in an hour.",
+    "error": "Something went wrong. Please try again.",
+    "backToSignIn": "Back to sign in",
+    "resetTitle": "Choose a new password",
+    "newPassword": "New password",
+    "hint": "At least {min} characters.",
+    "save": "Save password",
+    "done": "Your password was changed. You can sign in with it now.",
+    "expired": "This link has expired or was already used.",
+    "newLink": "Get a new link"
+  },
+  "Footer": {
+    "privacy": "Privacy policy"
+  },
+  "Nudge": {
+    "label": "Save your progress",
+    "title": "Save your progress",
+    "text": "Right now your progress lives only in this browser. Create a free account to keep it safe and use it on every device.",
+    "cta": "Create free account",
+    "later": "Not now"
+  },
+  "Privacy": {
+    "title": "Privacy policy",
+    "updated": "Last updated: November 2026",
+    "controllerTitle": "Who is responsible",
+    "operatorMissing": "Operator details to be added.",
+    "sections": [
+      {
+        "h": "Using the app without an account",
+        "p": [
+          "You can use every part of the app without an account. Your progress is then saved only in your browser's local storage on your device. It is never sent to us.",
+          "We do not use analytics, advertising or tracking cookies."
+        ]
+      },
+      {
+        "h": "What we store when you create an account",
+        "p": [
+          "Your full name, your email address and your password. The password is stored only as a salted scrypt hash; nobody can read it.",
+          "If you sign in with Google: your Google account ID, name and email address as Google provides them.",
+          "Your learning progress (review cards, quiz and exercise results, streak days, settings), so it can be synced between your devices.",
+          "We keep short-lived counters of sign-in and sign-up attempts per email and IP address to protect accounts against password guessing. They expire after at most one hour."
+        ]
+      },
+      {
+        "h": "Why (legal basis)",
+        "p": [
+          "We process this data to provide the account and sync service you asked for (Art. 6(1)(b) GDPR) and to keep the service secure (Art. 6(1)(f) GDPR)."
+        ]
+      },
+      {
+        "h": "Cookies",
+        "p": [
+          "When you sign in, we set one cookie that keeps you signed in, plus security cookies used during sign-in. They are strictly necessary for the account and are not used for tracking."
+        ]
+      },
+      {
+        "h": "Service providers",
+        "p": [
+          "Hosting: Vercel Inc. Database: Neon (via Vercel). Password-reset emails: Resend. Optional sign-in: Google. These providers may process data outside the EU, including in the USA, under the EU Standard Contractual Clauses or the EU–US Data Privacy Framework."
+        ]
+      },
+      {
+        "h": "How long we keep it",
+        "p": [
+          "Until you delete your account. Password-reset links expire after one hour."
+        ]
+      },
+      {
+        "h": "Your rights",
+        "p": [
+          "You can delete your account and all its data at any time on the account page. You also have the right to access, correct, restrict or export your data, to object, and to complain to a data protection authority. To use these rights, contact us at the address above."
+        ]
+      }
+    ]
   }
 }
