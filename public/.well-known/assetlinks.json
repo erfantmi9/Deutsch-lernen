@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.erfantmi9.deutschlernen",
+      "sha256_cert_fingerprints": [
+        "65:9B:47:55:E9:3A:CB:FA:E6:4A:A8:0B:9C:D7:27:7F:0A:18:FA:08:E5:2C:AF:73:6A:9A:8F:C0:4A:5F:54:C2"
+      ]
+    }
+  }
+]

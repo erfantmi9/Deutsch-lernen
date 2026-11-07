@@ -13,3 +13,15 @@ e2e/screenshots
 
 .vercel
 .env*
+
+# Android (TWA) build
+.android-tools/
+android/release.keystore
+android/keystore-password.txt
+android/app/build/
+android/build/
+android/.gradle/
+android/*.apk
+android/*.aab
+android/*.idsig
+android/local.properties
