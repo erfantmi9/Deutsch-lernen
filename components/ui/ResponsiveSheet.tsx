@@ -26,12 +26,13 @@ export interface ResponsiveSheetProps {
   side?: "end" | "start";
 }
 
+export const OVERLAY_ROOT_ID = "overlay-root";
 const noopSubscribe = () => () => {};
-/** false during SSR and hydration, true afterwards: the portal target (document.body) only exists on the client. */
+/** false during SSR and hydration, true afterwards: the portal target only exists on the client. */
 const useMounted = () => useSyncExternalStore(noopSubscribe, () => true, () => false);
 
 /**
- * Rendered through a portal into document.body, so no ancestor's layout rules (space-y-* margins, transforms,
+ * Rendered through a portal into #overlay-root (an empty element the layout renders at the end of <body>), so no ancestor's layout rules (space-y-* margins, transforms,
  * overflow) can reach the dialog.
  *
  * Modal surface on the native <dialog>: showModal() gives focus trapping, Esc, an inert page and
@@ -100,6 +101,8 @@ export default function ResponsiveSheet({
         </div>
       )}
     </dialog>,
-    document.body,
+    // Never document.body itself: Next hydrates the whole document, and a node portalled into <body> while other parts of
+    // the page are still hydrating (slow chunks on a cold start) makes React meet an unexpected node -> hydration error #418.
+    document.getElementById(OVERLAY_ROOT_ID) ?? document.body,
   );
 }

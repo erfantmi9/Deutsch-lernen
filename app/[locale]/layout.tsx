@@ -63,10 +63,12 @@ export default async function LocaleLayout({
       suppressHydrationWarning
       className={`${nunito.variable} ${vazir.variable}`}
     >
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
-      </head>
+      {/* No hand-written <head>: Next renders it (metadata, viewport, styles). A custom <head> whose children differ from
+          the streamed metadata made hydration resume at <head>'s first node when chunks arrived late (cold server, slow
+          network): React met <meta charset> where <body>'s first child should be -> error #418 and a full client re-render. */}
       <body className={locale === "fa" ? "font-vazir" : "font-sans"}>
+        {/* Theme before first paint: an inline, parser-blocking script runs before any of the content below is painted. */}
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
         <NextIntlClientProvider>
           <ThemeProvider>
             <a
@@ -82,6 +84,9 @@ export default async function LocaleLayout({
             <BottomNav />
             <VisitTracker />
             <RegisterSW />
+            {/* Portal target for sheets and dialogs (components/ui/ResponsiveSheet.tsx). Server-rendered and empty, so React
+                owns it before anything is portalled into it. */}
+            <div id="overlay-root" />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
