@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { signOut } from "next-auth/react";
 import type { SyncStatus } from "@/lib/sync";
 
 type Session = { user?: { name?: string | null; email?: string | null } } | null;
@@ -9,6 +10,7 @@ type Session = { user?: { name?: string | null; email?: string | null } } | null
 /** Sign in / out plus a sync dot. The session is fetched on the client, so pages stay static. */
 export default function AccountButton() {
   const t = useTranslations("Account");
+  const locale = useLocale();
   const [session, setSession] = useState<Session | undefined>(undefined);
   const [status, setStatus] = useState<SyncStatus>("idle");
   const [back, setBack] = useState("/");
@@ -41,7 +43,7 @@ export default function AccountButton() {
 
   if (!session) {
     return (
-      <a href={`/api/auth/signin?callbackUrl=${encodeURIComponent(back)}`} className={base}>
+      <a href={`/${locale}/login?callbackUrl=${encodeURIComponent(back)}`} className={base}>
         {t("signIn")}
       </a>
     );
@@ -49,14 +51,15 @@ export default function AccountButton() {
 
   const dot = status === "error" ? "bg-red-500" : status === "syncing" ? "bg-amber-400" : "bg-emerald-500";
   return (
-    <a
-      href={`/api/auth/signout?callbackUrl=${encodeURIComponent(back)}`}
+    <button
+      type="button"
+      onClick={() => void signOut({ callbackUrl: back })}
       className={base}
       title={session.user?.email ?? undefined}
     >
       <span className={`h-2 w-2 rounded-full ${dot}`} aria-hidden="true" />
       <span className="sr-only">{t(`status.${status}`)}</span>
       {t("signOut")}
-    </a>
+    </button>
   );
 }

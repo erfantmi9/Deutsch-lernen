@@ -1027,5 +1027,26 @@
       "synced": "Fortschritt synchronisiert",
       "error": "Synchronisierung fehlgeschlagen, neuer Versuch folgt"
     }
+  },
+  "Login": {
+    "signInTitle": "Anmelden",
+    "signUpTitle": "Konto erstellen",
+    "fullName": "Vollständiger Name",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "passwordHint": "Mindestens {min} Zeichen.",
+    "signIn": "Anmelden",
+    "createAccount": "Konto erstellen",
+    "noAccount": "Noch kein Konto?",
+    "haveAccount": "Schon ein Konto?",
+    "or": "oder",
+    "google": "Weiter mit Google",
+    "errors": {
+      "wrong": "E-Mail oder Passwort ist falsch.",
+      "exists": "Mit dieser E-Mail gibt es schon ein Konto. Bitte melde dich an.",
+      "invalid": "Prüfe Name, E-Mail und Passwort (mindestens 8 Zeichen).",
+      "notLinked": "Diese E-Mail hat schon ein Konto mit Passwort. Melde dich mit E-Mail und Passwort an.",
+      "generic": "Etwas ist schiefgelaufen. Bitte versuche es noch einmal."
+    }
   }
 }
