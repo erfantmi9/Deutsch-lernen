@@ -11,6 +11,10 @@ export const COLORS = {
   greenTint: "#d8f0de",
   redTint: "#fde0dd",
   white: "#ffffff",
+  /** Mascot (Dackel) coat, ear and muzzle. */
+  brown: "#b8682e",
+  brownDark: "#7a4321",
+  tan: "#f1c48d",
 } as const;
 
 /** `surface` / `surface-2` follow the active theme via CSS variables. */

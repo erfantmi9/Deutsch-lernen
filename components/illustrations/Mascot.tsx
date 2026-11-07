@@ -5,82 +5,105 @@ import { SPARKLE_D } from "./shapes";
 
 export type Mood = "happy" | "thinking" | "cheering" | "sad" | "waving";
 
-const WING_DOWN_L = "M22 60c-10 4-12 16-4 22 8-2 12-10 10-20z";
-const WING_DOWN_R = "M98 60c10 4 12 16 4 22-8-2-12-10-10-20z";
-const WING_UP_L = "M24 60C14 54 8 44 10 34c8 0 18 6 22 18z";
-const WING_UP_R = "M96 60C106 54 112 44 110 34c-8 0-18 6-22 18z";
-const WING_CHEEK = "M92 76c-6 8-16 10-22 6 1-7 10-12 18-10z";
+/*
+ * "Dackel", the mascot: a dachshund seen from the side, facing the reading direction's end (right in the 120x120
+ * space; RTL pages mirror whole scenes, not the mascot). Moods are carried by the ear, tail, eye, mouth and one paw.
+ */
 
-function Eye({ cx, cy, px = 0, py = 0 }: { cx: number; cy: number; px?: number; py?: number }) {
-  return (
-    <g>
-      <circle cx={cx} cy={cy} r={6.5} fill={COLORS.white} strokeWidth={2} />
-      <circle cx={cx + px} cy={cy + py} r={3.4} fill={INK} stroke="none" />
-      <circle cx={cx + px + 1.2} cy={cy + py - 1.2} r={1.1} fill={COLORS.white} stroke="none" />
-    </g>
-  );
-}
+const TAIL: Record<Mood, string> = {
+  happy: "M24 68C14 62 10 52 13 44",
+  waving: "M24 68C14 62 10 52 13 44",
+  cheering: "M24 66C12 58 8 46 14 36",
+  thinking: "M24 70C14 70 8 64 8 56",
+  sad: "M24 74C16 80 12 88 10 94",
+};
+
+const EAR: Record<Mood, string> = {
+  happy: "M84 36c-8 2-12 12-10 24 2 6 8 7 11 2 3-8 3-17-1-26z",
+  waving: "M84 36c-8 2-12 12-10 24 2 6 8 7 11 2 3-8 3-17-1-26z",
+  thinking: "M84 36c-8 2-12 12-10 24 2 6 8 7 11 2 3-8 3-17-1-26z",
+  // Flying back while celebrating.
+  cheering: "M82 38c-8-6-20-8-26-2 2 6 12 9 22 9 4 0 6-3 4-7z",
+  // Hanging flat.
+  sad: "M83 40c-6 4-8 16-7 28 2 5 7 5 9 0 2-9 2-19-2-28z",
+};
+
+const LEGS_BACK = "M30 86v14h8V86M42 86v14h8V86";
+const LEG_FRONT_A = "M70 86v14h8V86";
+const LEG_FRONT_B = "M82 86v14h8V86";
+/** Front paw raised for waving. */
+const PAW_UP = "M84 80c6-6 14-12 24-16l3 7c-9 4-16 9-21 15z";
 
 /** The mascot drawing in a 120x120 coordinate space, for embedding in larger scenes. */
 export function MascotArt({ mood }: { mood: Mood }) {
-  const happyEyes = mood === "cheering";
-  const wingL = mood === "cheering" ? WING_UP_L : WING_DOWN_L;
-  const wingR =
-    mood === "cheering" || mood === "waving"
-      ? WING_UP_R
-      : mood === "thinking"
-        ? WING_CHEEK
-        : WING_DOWN_R;
-  const look = mood === "thinking" ? { px: 2, py: -2 } : mood === "sad" ? { px: 0, py: 2 } : {};
+  // Thinking tilts the head; every other mood looks straight ahead.
+  const headTilt = mood === "thinking" ? "rotate(-10 92 52)" : undefined;
 
   return (
     <g>
-      <path d="M52 104v7m-5 0h10M68 104v7m-5 0h10" stroke={INK} />
-      <path d="M54 26c-2-7 1-11 4-12 0 4 2 5 2 8M64 26c1-5 5-7 8-6-2 3-3 5-4 7" />
-      <circle cx={60} cy={64} r={40} fill={COLORS.yellow} />
-      <ellipse cx={60} cy={80} rx={24} ry={19} fill={COLORS.yellowTint} stroke="none" />
-      <circle cx={34} cy={72} r={5} fill={COLORS.red} opacity={0.3} stroke="none" />
-      <circle cx={86} cy={72} r={5} fill={COLORS.red} opacity={0.3} stroke="none" />
-      <path d={wingL} fill={COLORS.yellow} />
-      <path d={wingR} fill={COLORS.yellow} />
+      {/* Tail behind the body. */}
+      <path d={TAIL[mood]} strokeWidth={5} stroke={INK} />
+      <path d={TAIL[mood]} strokeWidth={2.5} stroke={COLORS.brown} />
 
-      {happyEyes ? (
-        <path d="M39 58q7-9 14 0M67 58q7-9 14 0" strokeWidth={3} />
-      ) : (
-        <>
-          <Eye cx={46} cy={57} {...look} />
-          <Eye cx={74} cy={57} {...look} />
-        </>
-      )}
-      {mood === "sad" && (
-        <>
-          <path d="M37 49l15-6M83 49l-15-6" />
-          <path d="M40 67c-3 4-3 7 0 7s3-3 0-7z" fill={COLORS.blueTint} strokeWidth={1.8} />
-        </>
-      )}
-      {mood === "thinking" && <path d="M66 45q7-5 14 0" />}
+      {/* Legs, then the long body over their tops. */}
+      <path d={LEGS_BACK} fill={COLORS.brownDark} />
+      <path d={LEG_FRONT_A} fill={COLORS.brownDark} />
+      {mood !== "waving" && <path d={LEG_FRONT_B} fill={COLORS.brownDark} />}
+      <rect x={20} y={58} width={74} height={32} rx={16} fill={COLORS.brown} />
+      <path d="M34 84c12 5 34 5 48 0" stroke={COLORS.tan} strokeWidth={4} />
 
-      {mood === "cheering" ? (
-        <>
-          <path d="M51 66h18l-9 6z" fill={COLORS.red} />
-          <path d="M53 74h14l-7 8z" fill={COLORS.red} />
-        </>
-      ) : (
-        <path d="M53 66h14l-7 9z" fill={COLORS.red} />
-      )}
+      {/* Collar with a yellow tag. */}
+      <path d="M84 60c3 6 4 14 2 22" stroke={COLORS.red} strokeWidth={5} />
+      <circle cx={88} cy={84} r={3.6} fill={COLORS.yellow} strokeWidth={1.8} />
+      {/* Raised front paw sits in front of the chest. */}
+      {mood === "waving" && <path d={PAW_UP} fill={COLORS.brownDark} />}
+
+      <g transform={headTilt}>
+        <circle cx={92} cy={48} r={18} fill={COLORS.brown} />
+        <ellipse cx={106} cy={56} rx={12} ry={8.5} fill={COLORS.tan} />
+        <ellipse cx={116} cy={52.5} rx={3.6} ry={3} fill={INK} stroke="none" />
+        <path d={EAR[mood]} fill={COLORS.brownDark} />
+
+        {/* Eye: closed happy arc when cheering, otherwise an open eye that looks up (thinking) or down (sad). */}
+        {mood === "cheering" ? (
+          <path d="M93 45q4-6 8 0" strokeWidth={3} />
+        ) : (
+          <g>
+            <circle cx={97} cy={44} r={5} fill={COLORS.white} strokeWidth={2} />
+            <circle cx={98.5} cy={mood === "thinking" ? 42.5 : mood === "sad" ? 45.5 : 44} r={2.7} fill={INK} stroke="none" />
+            <circle cx={99.5} cy={mood === "thinking" ? 41.5 : mood === "sad" ? 44.5 : 43} r={0.9} fill={COLORS.white} stroke="none" />
+          </g>
+        )}
+        <circle cx={99} cy={56} r={3.4} fill={COLORS.red} opacity={0.3} stroke="none" />
+
+        {mood === "sad" && <path d="M92 35l9 3" />}
+        {mood === "thinking" && <path d="M92 36q5-4 10-1" />}
+
+        {mood === "cheering" ? (
+          <>
+            <path d="M101 61q7 10 14 0z" fill={COLORS.red} />
+            <path d="M105 64q3 5 6 0" fill={COLORS.redTint} stroke="none" />
+          </>
+        ) : mood === "sad" ? (
+          <path d="M103 64q5-4 10 0" />
+        ) : (
+          <path d="M103 61q5 4 10 0" />
+        )}
+        {mood === "sad" && <path d="M94 51c-2 3-2 6 0 6s2-3 0-6z" fill={COLORS.blueTint} strokeWidth={1.6} />}
+      </g>
 
       {mood === "cheering" && (
         <>
-          <path d={SPARKLE_D} transform="translate(2 4) scale(.3)" fill={COLORS.blue} stroke="none" />
-          <path d={SPARKLE_D} transform="translate(98 2) scale(.26)" fill={COLORS.green} stroke="none" />
-          <circle cx={50} cy={6} r={2.5} fill={COLORS.red} stroke="none" />
-          <circle cx={72} cy={4} r={2.5} fill={COLORS.blue} stroke="none" />
+          <path d={SPARKLE_D} transform="translate(30 6) scale(.3)" fill={COLORS.blue} stroke="none" />
+          <path d={SPARKLE_D} transform="translate(100 4) scale(.26)" fill={COLORS.green} stroke="none" />
+          <circle cx={60} cy={20} r={2.5} fill={COLORS.red} stroke="none" />
+          <circle cx={78} cy={10} r={2.5} fill={COLORS.yellow} stroke="none" />
         </>
       )}
       {mood === "thinking" && (
         <>
-          <circle cx={96} cy={30} r={3} fill={COLORS.blueTint} strokeWidth={2} />
-          <circle cx={104} cy={19} r={4.5} fill={COLORS.blueTint} strokeWidth={2} />
+          <circle cx={72} cy={26} r={3} fill={COLORS.blueTint} strokeWidth={2} />
+          <circle cx={62} cy={14} r={4.5} fill={COLORS.blueTint} strokeWidth={2} />
         </>
       )}
     </g>

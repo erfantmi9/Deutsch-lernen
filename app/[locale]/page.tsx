@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import HeroCta from "@/components/HeroCta";
+import Mascot from "@/components/illustrations/Mascot";
 import HeroFeatures from "@/components/HeroFeatures";
 import HomePath from "@/components/HomePath";
 import HomeStudy from "@/components/HomeStudy";
@@ -34,7 +35,11 @@ function Home() {
             <p className="text-sm text-text-muted">{t("hero.free")}</p>
           </div>
         </div>
-        <HeroFeatures />
+        {/* The mascot stands on the top edge of the feature grid. */}
+        <div className="relative pt-[96px]">
+          <Mascot mood="waving" size={120} className="absolute end-4 top-0" />
+          <HeroFeatures />
+        </div>
       </section>
 
       <HomePath />

@@ -1,17 +1,17 @@
-/** Mascot head ("Vogel") used as the logo mark. Flat vector, navy outline, no text. */
+/** Mascot head ("Dackel") used as the logo mark. Flat vector, navy outline, no text. */
 export function LogoMark({ size = 36 }: { size?: number }) {
   return (
     <svg viewBox="0 0 48 48" width={size} height={size} fill="none" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M24 5c1 3 0 5-1 6M28 6c1 2 1 4 0 5" stroke="#1f2937" strokeWidth="2.5" />
-      <circle cx="24" cy="26" r="17" fill="#fbbc04" stroke="#1f2937" strokeWidth="2.5" />
-      <ellipse cx="24" cy="31" rx="10" ry="8" fill="#fff4cc" />
-      <circle cx="17.5" cy="23" r="3.2" fill="#fff" stroke="#1f2937" strokeWidth="2" />
-      <circle cx="30.5" cy="23" r="3.2" fill="#fff" stroke="#1f2937" strokeWidth="2" />
-      <circle cx="18" cy="23.4" r="1.4" fill="#1f2937" />
-      <circle cx="30" cy="23.4" r="1.4" fill="#1f2937" />
-      <path d="M20.5 29h7l-3.5 5z" fill="#ea4335" stroke="#1f2937" strokeWidth="2" />
-      <circle cx="12" cy="30" r="2.4" fill="#ea4335" opacity="0.35" />
-      <circle cx="36" cy="30" r="2.4" fill="#ea4335" opacity="0.35" />
+      <g stroke="#1f2937" strokeWidth="2.5">
+        <circle cx="21" cy="24" r="15" fill="#b8682e" />
+        <ellipse cx="33" cy="31" rx="10" ry="7" fill="#f1c48d" />
+        <path d="M13 12c-7 2-10 11-8 21 2 5 7 6 9 1 3-7 3-15-1-22z" fill="#7a4321" />
+      </g>
+      <ellipse cx="42" cy="28" rx="3.2" ry="2.7" fill="#1f2937" />
+      <circle cx="25" cy="20" r="4" fill="#fff" stroke="#1f2937" strokeWidth="2" />
+      <circle cx="26.2" cy="20" r="2.1" fill="#1f2937" />
+      <path d="M30 35q4 3 8 0" stroke="#1f2937" strokeWidth="2" />
+      <circle cx="27" cy="31" r="2.4" fill="#ea4335" opacity="0.35" />
     </svg>
   );
 }
