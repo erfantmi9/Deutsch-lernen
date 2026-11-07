@@ -37,7 +37,7 @@ function homeTests(locale: "en" | "fa") {
     await expect(due).toContainText(/[2۲]/);
     await expect(due.getByRole("link")).toHaveAttribute("href", `/${locale}/review`);
 
-    const firstModule = (await page.locator(`main a[href='/${locale}/grammar']`).first().boundingBox())!;
+    const firstModule = (await page.locator(`main a[href='/${locale}/grammar']:not([data-hero-features] a)`).first().boundingBox())!;
     expect((await cont.boundingBox())!.y).toBeLessThan(firstModule.y);
     expect((await due.boundingBox())!.y).toBeLessThan(firstModule.y);
     await shot(page, testInfo, "home", locale, "1-returning");

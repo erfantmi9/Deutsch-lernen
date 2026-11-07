@@ -1,8 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
 import HeroCta from "@/components/HeroCta";
-import HeroHome from "@/components/illustrations/HeroHome";
-import { Blob, Sparkle } from "@/components/illustrations/shapes";
+import HeroFeatures from "@/components/HeroFeatures";
 import HomePath from "@/components/HomePath";
 import HomeStudy from "@/components/HomeStudy";
 import ModuleCards from "@/components/ModuleCards";
@@ -26,15 +25,16 @@ function Home() {
   const t = useTranslations("Home");
   return (
     <div className="space-y-12">
-      <section className="relative grid items-center gap-8 overflow-hidden py-6 md:grid-cols-2">
-        <Blob tone="surface-2" size={240} className="pointer-events-none absolute -bottom-20 start-[-4rem] -z-10" />
-        <Sparkle tone="yellow" size={36} className="pointer-events-none absolute end-4 top-2 motion-safe:animate-wiggle" />
+      <section className="grid items-center gap-8 py-6 md:grid-cols-2">
         <div className="space-y-5 text-center md:text-start">
           <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl">{t("title")}</h1>
           <p className="mx-auto max-w-md text-lg text-text-muted md:mx-0">{t("subtitle")}</p>
-          <HeroCta />
+          <div className="flex flex-col items-center gap-2 md:items-start">
+            <HeroCta />
+            <p className="text-sm text-text-muted">{t("hero.free")}</p>
+          </div>
         </div>
-        <HeroHome />
+        <HeroFeatures />
       </section>
 
       <HomePath />

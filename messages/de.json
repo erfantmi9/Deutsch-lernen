@@ -31,8 +31,8 @@
     "skipToContent": "Zum Hauptinhalt springen"
   },
   "Home": {
-    "title": "Meistere der, die, das",
-    "subtitle": "Lerne Deutsch Schritt für Schritt: Artikel, Verben, Grammatik, Dialoge, Lesen, eine Probeprüfung und Wiederholung mit Abstand.",
+    "title": "Deutsch A1 lernen, Schritt für Schritt",
+    "subtitle": "Artikel, Verben, Grammatik, Dialoge, Lesen und eine Übungsprüfung, mit Wiederholung in Abständen. Auf Englisch, Deutsch und Persisch.",
     "cta": "Arcade starten",
     "progress": "Fortschritt: {percent} %",
     "modules": {
@@ -63,6 +63,18 @@
       "reading": {
         "title": "Lesen",
         "desc": "Zehn kurze Texte mit Aufgaben im Prüfungsstil."
+      }
+    },
+    "hero": {
+      "free": "Kostenlos · ohne Konto",
+      "features": {
+        "label": "Was du üben kannst",
+        "articles": "Artikel",
+        "verbs": "Verben",
+        "grammar": "Grammatik",
+        "dialogues": "Dialoge",
+        "reading": "Lesen",
+        "exam": "Übungsprüfung"
       }
     }
   },

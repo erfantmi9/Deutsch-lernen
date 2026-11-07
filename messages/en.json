@@ -31,8 +31,8 @@
     "skipToContent": "Skip to main content"
   },
   "Home": {
-    "title": "Master der, die, das",
-    "subtitle": "Learn German step by step: articles, verbs, grammar, dialogues, reading, a practice exam and spaced-repetition review.",
+    "title": "Learn German A1, step by step",
+    "subtitle": "Articles, verbs, grammar, dialogues, reading and a practice exam, with spaced-repetition review. In English, German and Persian.",
     "cta": "Start the arcade",
     "progress": "Progress: {percent}%",
     "modules": {
@@ -63,6 +63,18 @@
       "reading": {
         "title": "Reading",
         "desc": "Ten short texts with exam-style tasks."
+      }
+    },
+    "hero": {
+      "free": "Free · no account needed",
+      "features": {
+        "label": "What you can practise",
+        "articles": "Articles",
+        "verbs": "Verbs",
+        "grammar": "Grammar",
+        "dialogues": "Dialogues",
+        "reading": "Reading",
+        "exam": "Practice exam"
       }
     }
   },
