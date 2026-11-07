@@ -1,7 +1,8 @@
 # Deploying to Vercel
 
-No custom Vercel configuration is needed (no `vercel.json`). The app is 100 % static: no server code, no database,
-no AI service and no paid API.
+No custom Vercel configuration is needed (no `vercel.json`). Every page is static. The only server code is
+`/api/auth/*` (sign-in, Auth.js) and `/api/progress` (progress sync), which run as Vercel Functions and use a
+Neon Postgres database. Without the database and sign-in variables the app still works, signed out, as before.
 
 ## 1. Push to GitHub
 
@@ -20,12 +21,24 @@ git push -u origin main
 2. Framework preset: **Next.js** (auto-detected). Keep the default build settings.
    The build command runs `npm run validate:data` first (the `prebuild` script), so a data mistake fails the deploy.
 
-## 3. Environment variables
+## 3. Database, sign-in and environment variables
 
-**None are required.**
+1. Vercel project > **Storage** > Create > **Neon** (Postgres, free plan) > connect it to the project.
+   This adds `DATABASE_URL` to Production, Preview and Development.
+2. Create a Google OAuth client (Google Cloud Console > APIs & Services > Credentials > OAuth client ID, type
+   "Web application"). Authorized redirect URI: `https://<your-domain>/api/auth/callback/google`
+   (add `http://localhost:3000/api/auth/callback/google` for local dev). GitHub works the same way
+   (callback `/api/auth/callback/github`).
+3. Add the variables below in Vercel > Settings > Environment Variables.
+4. Locally: `vercel link`, `vercel env pull .env.local`, then `npm run db:push` once to create the tables
+   (run it again after changing `lib/db/schema.ts`).
 
 | Variable | Needed? | What it does |
 | --- | --- | --- |
+| `DATABASE_URL` | for accounts | Set by the Neon integration. |
+| `AUTH_SECRET` | for accounts | Random string: `npx auth secret` or `openssl rand -base64 32`. |
+| `AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET` | one provider | Google sign-in. |
+| `AUTH_GITHUB_ID`, `AUTH_GITHUB_SECRET` | optional | GitHub sign-in. |
 | `NEXT_PUBLIC_SITE_URL` | optional | Public address with `https://`, for example `https://deutsch.example.org`. Use it when you add a custom domain. |
 
 Without it the app reads the production domain that Vercel provides (`VERCEL_PROJECT_PRODUCTION_URL`) at build time.
@@ -62,9 +75,10 @@ cache after a bad release, change `CACHE` at the top of `public/sw.js`. To remov
 
 ### Where progress is stored
 
-Everything the learner does is saved in the browser's `localStorage` (keys start with `deutsch-learner:`). Nothing is
-sent anywhere, so there is no account and no backup on the server. The review deck can be exported and imported from the
-Review page.
+Everything the learner does is saved in the browser's `localStorage` (keys start with `deutsch-learner:`).
+Signed-in learners also get it synced to the `progress` table, one row per store (`lib/sync.ts`): on sign-in the
+newer copy of each store wins, except the review deck, which is merged card by card; after that, changes are sent
+about 2 seconds after they happen. The review deck can still be exported and imported from the Review page.
 
 ## 6. Post-deploy checklist
 
@@ -80,4 +94,5 @@ Review page.
 - [ ] `/sitemap.xml` lists the real domain (not `localhost`) and `/robots.txt` points to it.
 - [ ] Share a link in a chat app: the card shows the title and the picture.
 - [ ] Chrome > Install app (or "Add to home screen") is offered; with the network off, a page you visited still opens.
+- [ ] Sign in, practise a little, then sign in on a second browser: the same progress appears.
 - [ ] Check Vercel > Logs for function errors.

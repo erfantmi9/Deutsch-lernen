@@ -1017,5 +1017,15 @@
       "dialogue": "Dialogue",
       "reading": "Reading"
     }
+  },
+  "Account": {
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "status": {
+      "idle": "Not synced yet",
+      "syncing": "Syncing progress",
+      "synced": "Progress synced",
+      "error": "Sync failed, will retry"
+    }
   }
 }

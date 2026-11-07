@@ -4,6 +4,7 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 import ThemeToggle from "@/components/theme/ThemeToggle";
 import MainNav from "./MainNav";
 import SearchLink from "./SearchLink";
+import AccountButton from "./AccountButton";
 
 export default function Header() {
   return (
@@ -17,6 +18,7 @@ export default function Header() {
           <SearchLink />
           <LanguageSwitcher />
           <ThemeToggle />
+          <AccountButton />
         </div>
       </div>
     </header>
