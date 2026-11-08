@@ -49,6 +49,8 @@ function homeTests(locale: "en" | "fa") {
   test(`new user: CTA starts the first step`, async ({ page }) => {
     await page.goto(`/${locale}`);
     await expect(page.locator("a[data-hero-cta]")).toHaveAttribute("href", `/${locale}/arcade`);
+    // Under the button: what finishes this step.
+    await expect(page.locator("[data-hero-hint]")).toHaveText(p.steps.articles.desc);
   });
 
   test(`no hydration shift: aria-busy skeletons keep the CTA and cards in the same box, no label swap`, async ({ page }, testInfo) => {

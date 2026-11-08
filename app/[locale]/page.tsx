@@ -32,7 +32,6 @@ function Home() {
           <p className="mx-auto max-w-md text-lg text-text-muted md:mx-0">{t("subtitle")}</p>
           <div className="flex flex-col items-center gap-2 md:items-start">
             <HeroCta />
-            <p className="text-sm text-text-muted">{t("hero.free")}</p>
           </div>
         </div>
         {/* The mascot stands on the top edge of the feature grid. */}

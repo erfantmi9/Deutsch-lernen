@@ -50,7 +50,7 @@ export default function SignupNudge() {
   return (
     <aside
       aria-label={t("label")}
-      className="fixed inset-x-4 bottom-[calc(var(--bottom-chrome-h)+0.75rem)] z-20 mx-auto max-w-md rounded-2xl border border-border bg-surface p-4 shadow-lift lg:bottom-6"
+      className="fixed inset-x-4 bottom-[calc(var(--bottom-chrome-h)+0.75rem)] z-20 mx-auto max-w-md rounded-2xl border border-border bg-surface p-4 shadow-lift lg:bottom-[calc(var(--bottom-chrome-h)+1.5rem)]"
     >
       <p className="mb-1 font-bold">{t("title")}</p>
       <p className="mb-3 text-sm text-text-muted">{t("text")}</p>

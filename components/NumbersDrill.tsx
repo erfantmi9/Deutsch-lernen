@@ -225,7 +225,8 @@ export default function NumbersDrill() {
           {question.kind === "clock-set" ? t(`practice.styles.${question.style}`) : t(`practice.kinds.${question.kind}`)}
         </p>
         <p className="font-bold">{t(`practice.prompts.${question.kind}`)}</p>
-        {prompt && <p className="text-4xl font-extrabold">{prompt}</p>}
+        {/* Written-out numbers are one long word (fünftausendfünfhundertfünfundfünfzig): let them wrap on a phone. */}
+        {prompt && <p className="text-3xl font-extrabold [overflow-wrap:anywhere] sm:text-4xl">{prompt}</p>}
         {question.kind === "clock-read" && (
           <AnalogClock
             time={question.time}
@@ -325,7 +326,7 @@ export default function NumbersDrill() {
                 size={56}
                 className={"shrink-0 " + (outcome.correct ? "motion-safe:animate-bounce-soft" : "")}
               />
-              <p className="font-bold">
+              <p className="min-w-0 font-bold [overflow-wrap:anywhere]">
                 {outcome.correct ? `✓ ${t("practice.correct")}` : `✗ ${t("practice.wrong")}`}{" "}
                 <bdi dir="ltr" lang="de" className="font-extrabold text-text">
                   {outcome.expected}
