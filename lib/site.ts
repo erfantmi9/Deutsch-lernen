@@ -11,5 +11,5 @@ export function siteUrl(env: Record<string, string | undefined> = process.env): 
   return "http://localhost:3000";
 }
 
-export const SITE_NAME = "Deutsch Lernen";
-export const THEME_COLOR = "#1a73e8";
+export const SITE_NAME = "Doch!";
+export const THEME_COLOR = "#F6C445";

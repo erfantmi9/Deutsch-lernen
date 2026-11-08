@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { MIN_QUERY_LENGTH, searchItems } from "@/lib/search";
 import type { SearchItem } from "@/lib/search";
 import PageHeader from "./PageHeader";
+import Mascot from "./illustrations/Mascot";
 
 const GERMAN_KINDS = new Set(["noun", "verb", "adjective", "adverb", "preposition", "phrase"]);
 
@@ -38,7 +39,11 @@ export default function SearchView({ items }: { items: readonly SearchItem[] }) 
 
   return (
     <div className="mx-auto max-w-2xl space-y-6">
-      <PageHeader title={t("title")} subtitle={t("subtitle")} />
+      <PageHeader
+        title={t("title")}
+        subtitle={t("subtitle")}
+        illustration={<Mascot mood="searching" size={120} className="mx-auto" />}
+      />
       <form role="search" onSubmit={(e) => e.preventDefault()}>
         <label className="block space-y-1">
           <span className="sr-only">{t("label")}</span>

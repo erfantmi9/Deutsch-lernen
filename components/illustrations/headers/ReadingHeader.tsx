@@ -8,7 +8,7 @@ export default function ReadingHeader({ size = 240, className, title }: Illustra
   return (
     <Svg viewBox="0 0 240 120" size={size} className={"rtl:-scale-x-100 " + (className ?? "")} title={title}>
       <g transform="translate(4 6) scale(.9)">
-        <MascotArt mood="thinking" />
+        <MascotArt mood="reading" />
       </g>
       <g transform="rotate(-6 160 60)">
         <rect x={122} y={34} width={84} height={56} rx={8} fill={COLORS.white} />

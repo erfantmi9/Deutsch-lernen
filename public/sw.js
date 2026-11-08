@@ -1,7 +1,7 @@
-/* Deutsch Lernen service worker: lets pages that were opened once work offline.
+/* Doch! service worker: lets pages that were opened once work offline.
    Static assets are cached for good (their file names change with every build);
    pages try the network first and fall back to the last copy. Bump CACHE to reset everything. */
-const CACHE = "deutsch-lernen-v1";
+const CACHE = "doch-v2";
 
 self.addEventListener("install", () => self.skipWaiting());
 

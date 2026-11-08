@@ -9,7 +9,7 @@ export default function GrammarHeader({ size = 240, className, title }: Illustra
   return (
     <Svg viewBox="0 0 240 120" size={size} className={"rtl:-scale-x-100 " + (className ?? "")} title={title}>
       <g transform="translate(4 6) scale(.9)">
-        <MascotArt mood="thinking" />
+        <MascotArt mood="studying" />
       </g>
       <path d="M172 42C160 34 140 34 124 40v58c16-6 36-6 48 2z" fill={COLORS.white} />
       <path d="M172 42c12-8 32-8 48-2v58c-16-6-36-6-48 2z" fill={COLORS.blueTint} />

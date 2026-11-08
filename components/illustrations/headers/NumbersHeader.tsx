@@ -14,7 +14,7 @@ export default function NumbersHeader({ size = 240, className, title }: Illustra
   return (
     <Svg viewBox="0 0 240 120" size={size} className={"rtl:-scale-x-100 " + (className ?? "")} title={title}>
       <g transform="translate(4 6) scale(.9)">
-        <MascotArt mood="waving" />
+        <MascotArt mood="counting" />
       </g>
       <rect x={118} y={30} width={62} height={64} rx={10} fill={COLORS.white} />
       <path d="M118 40a10 10 0 0 1 10-10h42a10 10 0 0 1 10 10v8h-62z" fill={COLORS.red} />

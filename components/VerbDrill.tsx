@@ -268,7 +268,7 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
           <div className={"space-y-2 " + (result.correct ? "feedback-success" : "feedback-error")}>
             <div className="flex items-center gap-3">
               <Mascot
-                mood={result.correct ? "cheering" : "sad"}
+                mood={result.correct ? "cheering" : "oops"}
                 size={56}
                 className={"shrink-0 " + (result.correct ? "motion-safe:animate-bounce-soft" : "")}
               />

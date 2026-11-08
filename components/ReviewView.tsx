@@ -331,7 +331,7 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
     return (
       <div className="mx-auto max-w-xl space-y-5">
         <section aria-labelledby="summary-title" className="card-hero space-y-4 p-6 text-center sm:p-8">
-          <Mascot mood={percent >= 60 ? "cheering" : "thinking"} size={120} className="mx-auto" />
+          <Mascot mood={percent >= 60 ? "celebrating" : "thinking"} size={120} className="mx-auto" />
           <h1 id="summary-title" ref={summaryRef} tabIndex={-1} className="text-3xl font-extrabold outline-none">
             {t("summaryTitle")}
           </h1>
@@ -369,11 +369,12 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
       <PageHeader
         title={t("title")}
         subtitle={t("subtitle")}
-        illustration={<Mascot mood="waving" size={120} className="mx-auto" />}
+        illustration={<Mascot mood="studying" size={120} className="mx-auto" />}
       />
 
       {deckEmpty ? (
         <section className="card space-y-3 p-6 text-center">
+          <Mascot mood="pretzel" size={96} className="mx-auto" />
           <h2 className="text-xl font-extrabold">{t("emptyDeckTitle")}</h2>
           <p className="text-text-muted">{t("emptyDeckText")}</p>
           <Link href="/vocabulary" className="btn btn-primary">

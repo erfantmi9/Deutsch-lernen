@@ -8,7 +8,7 @@ export default function VerbsHeader({ size = 240, className, title }: Illustrati
   return (
     <Svg viewBox="0 0 240 120" size={size} className={className} title={title}>
       <g transform="translate(4 6) scale(.9)">
-        <MascotArt mood="thinking" />
+        <MascotArt mood="writing" />
       </g>
       <rect x={128} y={34} width={96} height={72} rx={10} fill={COLORS.white} />
       <path d="M128 58h96M128 82h96M160 34v72" />

@@ -357,7 +357,7 @@ export default function ReadingView({
 
           {checked && (
             <div className={"flex items-center gap-4 " + (score.passed ? "feedback-success" : "feedback-error")}>
-              <Mascot mood={score.passed ? "cheering" : "thinking"} size={80} className="shrink-0" />
+              <Mascot mood={score.passed ? "proud" : "reading"} size={80} className="shrink-0" />
               <div className="space-y-2">
                 <h3 ref={resultRef} tabIndex={-1} data-reading-result className="font-extrabold outline-none">
                   {t("result")}: {t("score", { correct: score.correct, total: score.total })}

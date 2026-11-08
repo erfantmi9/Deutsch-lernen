@@ -321,7 +321,7 @@ export default function NumbersDrill() {
           <div className={"space-y-2 " + (outcome.correct ? "feedback-success" : "feedback-error")}>
             <div className="flex items-center gap-3">
               <Mascot
-                mood={outcome.correct ? "cheering" : "sad"}
+                mood={outcome.correct ? "cheering" : "oops"}
                 size={56}
                 className={"shrink-0 " + (outcome.correct ? "motion-safe:animate-bounce-soft" : "")}
               />

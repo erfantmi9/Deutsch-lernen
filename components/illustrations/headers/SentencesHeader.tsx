@@ -22,7 +22,7 @@ export default function SentencesHeader({ size = 240, className, title }: Illust
       title={title}
     >
       <g transform="translate(4 6) scale(.9)">
-        <MascotArt mood="waving" />
+        <MascotArt mood="thinking" />
       </g>
       {BLOCKS.map(({ x, y, w, fill }) => (
         <rect key={`${x}-${y}`} x={x} y={y} width={w} height={22} rx={11} fill={fill} />

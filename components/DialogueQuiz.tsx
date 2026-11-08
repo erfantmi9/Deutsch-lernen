@@ -149,7 +149,7 @@ export default function DialogueQuiz({ dialogueId, quiz }: { dialogueId: string;
 
       {checked && (
         <div className={"flex items-center gap-4 " + (score.passed ? "feedback-success" : "feedback-error")}>
-          <Mascot mood={score.passed ? "cheering" : "thinking"} size={80} className="shrink-0" />
+          <Mascot mood={score.passed ? "proud" : "thinking"} size={80} className="shrink-0" />
           <div className="space-y-2">
             <p ref={resultRef} data-quiz-result className="font-extrabold">
               {t("score", { correct: score.correct, total: score.total })}

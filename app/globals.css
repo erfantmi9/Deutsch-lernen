@@ -36,6 +36,11 @@
 
   --on-article: 255 255 255;
 
+  /* Article colours as text/accent on a surface (AA contrast per theme). */
+  --der-ink: 29 78 216; /* blue-700 */
+  --die-ink: 185 28 28; /* red-700 */
+  --das-ink: 21 128 61; /* green-700 */
+
   /* Feedback tones (text + soft background). */
   --success: 22 101 52;
   --success-soft: 231 246 236;
@@ -82,6 +87,10 @@
   --primary: 138 180 248; /* #8ab4f8, lighter blue for AA on dark */
   --primary-soft: 28 48 82;
   --on-primary: 15 23 32;
+
+  --der-ink: 96 165 250; /* blue-400 */
+  --die-ink: 248 113 113; /* red-400 */
+  --das-ink: 74 222 128; /* green-400 */
 
   --success: 134 239 172;
   --success-soft: 26 51 38;
@@ -186,18 +195,98 @@
     @apply rounded-2xl bg-warning-soft px-3 py-2 text-sm text-warning;
   }
 
-  /* Chunky "candy" article buttons: text label + pressed bottom border. */
+  /*
+   * Article answer buttons: tonal. A soft wash of the article colour with the label in a deeper shade of it;
+   * no borders or stripes. Only the revealed correct answer turns solid.
+   */
   .candy {
-    @apply relative min-h-16 rounded-3xl border-b-[6px] px-4 py-4 text-3xl font-extrabold text-on-article transition duration-100 hover:-translate-y-0.5 active:translate-y-1 active:border-b-2 disabled:cursor-default disabled:hover:translate-y-0;
+    --a: var(--der-ink);
+    --a-fill: var(--der);
+    --tint: 0.11;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 4.5rem;
+    border: 0;
+    border-radius: 1.25rem;
+    background: rgb(var(--a) / var(--tint));
+    color: rgb(var(--a));
+    padding: 1rem 0.5rem;
+    font-size: 1.625rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    touch-action: manipulation; /* no double-tap-zoom delay on fast repeated taps */
+    user-select: none;
+    -webkit-user-select: none;
+    transition:
+      background-color 150ms ease,
+      box-shadow 150ms ease,
+      transform 100ms ease,
+      opacity 150ms ease;
+  }
+  .dark .candy {
+    --tint: 0.16;
+  }
+  /* Hover only on real pointers: on touch screens :hover sticks after a tap. */
+  @media (hover: hover) and (pointer: fine) {
+    .candy:not(:disabled):hover {
+      background: rgb(var(--a) / calc(var(--tint) + 0.07));
+    }
+  }
+  /* Press feedback (the finger hides the label, so the whole button reacts). */
+  .candy:not(:disabled):active {
+    transform: scale(0.97);
+    background: rgb(var(--a) / calc(var(--tint) + 0.13));
+  }
+  .candy:disabled {
+    cursor: default;
   }
   .candy-der {
-    @apply border-der-edge bg-der;
+    --a: var(--der-ink);
+    --a-fill: var(--der);
   }
   .candy-die {
-    @apply border-die-edge bg-die;
+    --a: var(--die-ink);
+    --a-fill: var(--die);
   }
   .candy-das {
-    @apply border-das-edge bg-das;
+    --a: var(--das-ink);
+    --a-fill: var(--das);
+  }
+  /* Keyboard hint, desktop only. */
+  .candy-key {
+    position: absolute;
+    inset-inline-start: 0.625rem;
+    top: 0.5rem;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    line-height: 1;
+    opacity: 0.55;
+  }
+  @media not all and (hover: hover) and (pointer: fine) {
+    .candy-key,
+    .kbd-only {
+      display: none;
+    }
+  }
+  @media (min-width: 640px) {
+    .candy {
+      font-size: 1.75rem;
+      padding-inline: 1rem;
+    }
+  }
+  .candy[data-result="correct"] {
+    background: rgb(var(--a-fill));
+    color: rgb(var(--on-article));
+    box-shadow: 0 6px 18px rgb(var(--a-fill) / 0.3);
+  }
+  .candy[data-result="wrong"] {
+    box-shadow: inset 0 0 0 2px rgb(var(--danger));
+    opacity: 0.8;
+  }
+  .candy[data-result="dim"] {
+    opacity: 0.35;
   }
 }
 

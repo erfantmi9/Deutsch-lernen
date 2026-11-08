@@ -173,7 +173,7 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
     return (
       <div className="mx-auto max-w-xl space-y-5">
         <section className="card-hero space-y-4 p-6 text-center">
-          <Mascot mood="cheering" size={100} className="mx-auto" />
+          <Mascot mood="trophy" size={100} className="mx-auto" />
           <h2 id="exam-focus" tabIndex={-1} className="text-2xl font-extrabold outline-none">
             {t("partDone", { part: t(`modules.${last}`) })}
           </h2>
@@ -193,7 +193,7 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
     return (
       <div className="mx-auto max-w-xl space-y-5">
         <section className="card-hero space-y-4 p-6 text-center">
-          <Mascot mood={complete ? (passed ? "cheering" : "thinking") : "waving"} size={110} className="mx-auto" />
+          <Mascot mood={complete ? (passed ? "trophy" : "thinking") : "hello"} size={110} className="mx-auto" />
           <h1 id="exam-focus" tabIndex={-1} className="text-3xl font-extrabold outline-none">
             {t("resultTitle")}
           </h1>
@@ -242,7 +242,7 @@ export default function ExamView({ data, texts }: { data: ExamData; texts: Readi
   // ---------- start screen ----------
   return (
     <div className="space-y-6">
-      <PageHeader title={t("title")} subtitle={t("subtitle")} illustration={<Mascot mood="thinking" size={120} className="mx-auto" />} />
+      <PageHeader title={t("title")} subtitle={t("subtitle")} illustration={<Mascot mood="studying" size={120} className="mx-auto" />} />
       <p role="note" className="feedback-hint">
         {t("disclaimer")}
       </p>

@@ -10,7 +10,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Privacy" });
-  return { title: `${t("title")} – Deutsch Lernen`, alternates: pageAlternates(locale, "/privacy") };
+  return { title: `${t("title")} – Doch!`, alternates: pageAlternates(locale, "/privacy") };
 }
 
 type Section = { h: string; p: string[] };

@@ -28,7 +28,7 @@ export default function HeroHome({ className, title }: IllustrationProps) {
         <path d={SPARKLE_D} transform="translate(308 90) scale(.35)" fill={COLORS.red} stroke="none" />
         <ellipse cx={180} cy={262} rx={110} ry={9} fill={INK} opacity={0.1} stroke="none" />
         <g transform="translate(90 78) scale(1.6)">
-          <MascotArt mood="waving" />
+          <MascotArt mood="hello" />
         </g>
         <rect x={14} y={236} width={104} height={24} rx={6} fill={COLORS.blue} />
         <path d="M28 236v24M36 236v24" />

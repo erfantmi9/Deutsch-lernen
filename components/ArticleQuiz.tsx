@@ -176,20 +176,16 @@ export default function ArticleQuiz() {
               disabled={answered}
               onClick={() => answer(a)}
               aria-label={`${tArticle(a)} (${i + 1})`}
-              className={
-                CANDY[a] +
-                " short:min-h-12 short:py-2" +
-                (isCorrect ? " ring-4 ring-text ring-offset-2 ring-offset-background motion-safe:animate-bounce-soft" : "") +
-                (answered && !isCorrect ? " opacity-40" : "")
-              }
+              data-result={isCorrect ? "correct" : isChosenWrong ? "wrong" : answered ? "dim" : undefined}
+              className={CANDY[a] + " short:min-h-12 short:py-2" + (isCorrect ? " motion-safe:animate-pop" : "")}
             >
-              <span aria-hidden="true" className="absolute start-3 top-1.5 text-xs font-bold opacity-80">
+              <span aria-hidden="true" className="candy-key">
                 {i + 1}
               </span>
               <bdi dir="ltr">{tArticle(a)}</bdi>
               {/* Absolute, so the marker never wraps the label onto a second line (which made the buttons jump taller). */}
               {(isCorrect || isChosenWrong) && (
-                <span aria-hidden="true" className="absolute end-3 top-1.5 text-base">
+                <span aria-hidden="true" className="absolute end-2 top-1 text-sm font-bold sm:end-3 sm:top-2 sm:text-base">
                   {isCorrect ? "✓" : "✗"}
                 </span>
               )}
@@ -213,7 +209,7 @@ export default function ArticleQuiz() {
         )}
         {wrong && (
           <div className="feedback-error flex items-center gap-3">
-            <Mascot mood="sad" size={48} className="shrink-0" />
+            <Mascot mood="oops" size={48} className="shrink-0" />
             <p className="font-bold">
               ✗ {t("wrong")}{" "}
               <bdi dir="ltr" lang="de" className="font-extrabold text-text">
@@ -239,7 +235,7 @@ export default function ArticleQuiz() {
           {t("reset")}
         </button>
       </div>
-      <p className="text-xs text-text-muted">{t("shortcuts")}</p>
+      <p className="kbd-only text-xs text-text-muted">{t("shortcuts")}</p>
 
       <StickyActionBar
         ref={actionRef}

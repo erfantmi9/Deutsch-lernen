@@ -241,7 +241,7 @@ export default function RolePlay({
 
       {done && (
         <div className="card-hero space-y-3 p-6 text-center">
-          <Mascot mood={correctCount >= round.mine.length - 1 ? "cheering" : "thinking"} size={100} className="mx-auto" />
+          <Mascot mood={correctCount >= round.mine.length - 1 ? "celebrating" : "speaking"} size={100} className="mx-auto" />
           <h4 ref={summaryRef} tabIndex={-1} className="text-2xl font-extrabold outline-none">
             {t("done")}
           </h4>

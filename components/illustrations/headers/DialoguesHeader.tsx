@@ -8,7 +8,7 @@ export default function DialoguesHeader({ size = 240, className, title }: Illust
   return (
     <Svg viewBox="0 0 240 120" size={size} className={"rtl:-scale-x-100 " + (className ?? "")} title={title}>
       <g transform="translate(4 6) scale(.9)">
-        <MascotArt mood="waving" />
+        <MascotArt mood="speaking" />
       </g>
       <path d="M124 22h64a10 10 0 0 1 10 10v22a10 10 0 0 1-10 10h-40l-14 12V64h-10a10 10 0 0 1-10-10V32a10 10 0 0 1 10-10z" fill={COLORS.blueTint} />
       <path d="M138 36h44M138 50h28" strokeWidth={3} />

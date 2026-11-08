@@ -37,7 +37,7 @@ function Home() {
         </div>
         {/* The mascot stands on the top edge of the feature grid. */}
         <div className="relative pt-[96px]">
-          <Mascot mood="waving" size={120} className="absolute end-4 top-0" />
+          <Mascot mood="hello" size={120} className="absolute end-4 top-0" />
           <HeroFeatures />
         </div>
       </section>

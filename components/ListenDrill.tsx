@@ -168,7 +168,7 @@ export default function ListenDrill({ cards }: { cards: readonly ReviewCard[] })
             <p className="card p-5 text-text-muted">{t("pick")}</p>
           ) : finished ? (
             <section className="card-hero space-y-4 p-6 text-center">
-              <Mascot mood={round.correct >= 7 ? "cheering" : "thinking"} size={110} className="mx-auto" />
+              <Mascot mood={round.correct >= 7 ? "celebrating" : "listening"} size={110} className="mx-auto" />
               <h2 className="text-2xl font-extrabold">{t("done")}</h2>
             </section>
           ) : (

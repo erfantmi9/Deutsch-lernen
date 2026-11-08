@@ -222,7 +222,7 @@ export default function GrammarExerciseRunner({
     return wrap(
       <>
         <div ref={summaryRef} className="card-hero space-y-4 p-6 text-center">
-          <Mascot mood={good ? "cheering" : "thinking"} size={110} className="mx-auto" />
+          <Mascot mood={good ? "celebrating" : "studying"} size={110} className="mx-auto" />
           <h3 ref={headingRef} tabIndex={-1} className="text-2xl font-extrabold outline-none">
             {t("summaryTitle")}
           </h3>
@@ -352,7 +352,7 @@ export default function GrammarExerciseRunner({
             <div className={"space-y-2 " + (result.correct ? "feedback-success" : "feedback-error")}>
               <div className="flex items-center gap-3">
                 <Mascot
-                  mood={result.correct ? "cheering" : "sad"}
+                  mood={result.correct ? "cheering" : "oops"}
                   size={48}
                   className={"shrink-0 " + (result.correct ? "motion-safe:animate-bounce-soft" : "")}
                 />

@@ -194,7 +194,7 @@ export default function ProgressDashboard({ cards, totals }: { cards: readonly R
       <PageHeader
         title={t("title")}
         subtitle={t("subtitle")}
-        illustration={<Mascot mood={streak > 0 ? "cheering" : "waving"} size={120} className="mx-auto" />}
+        illustration={<Mascot mood={streak > 0 ? "proud" : "hello"} size={120} className="mx-auto" />}
       />
 
       <section aria-labelledby="streak-title" className="card space-y-4 p-5 sm:p-6">

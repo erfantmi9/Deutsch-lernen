@@ -6,17 +6,17 @@ export const dynamic = "force-static";
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: SITE_NAME,
-    short_name: SITE_NAME,
-    description: "Learn German A1 with articles, verbs, grammar, dialogues, reading and spaced repetition. English, Persian and German.",
+    short_name: "Doch!",
+    description: "Doch! — learn German A1 with articles, verbs, grammar, dialogues, reading and spaced repetition. English, Persian and German.",
     start_url: "/",
     scope: "/",
     display: "standalone",
-    background_color: "#ffffff",
+    background_color: "#F6C445",
     theme_color: THEME_COLOR,
     icons: [
       { src: "/icon-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
       { src: "/icon-512.png", sizes: "512x512", type: "image/png", purpose: "any" },
-      { src: "/icon-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
+      { src: "/brand/icon-maskable-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
     ],
   };
 }

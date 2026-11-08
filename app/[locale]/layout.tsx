@@ -34,7 +34,13 @@ export async function generateMetadata({
     description: t("description"),
     applicationName: SITE_NAME,
     manifest: "/manifest.webmanifest",
-    icons: { icon: "/icon.svg", apple: "/icon-192.png" },
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "any" },
+        { url: "/icon.svg", type: "image/svg+xml" },
+      ],
+      apple: "/apple-icon.png",
+    },
     openGraph: { type: "website", siteName: SITE_NAME, title: t("title"), description: t("description"), locale },
     twitter: { card: "summary_large_image", title: t("title"), description: t("description") },
     appleWebApp: { capable: true, title: SITE_NAME, statusBarStyle: "default" },

@@ -17,9 +17,9 @@ const schema = z.object({
 });
 
 const SUBJECT = {
-  en: "Reset your Deutsch Lernen password",
-  de: "Passwort für Deutsch Lernen zurücksetzen",
-  fa: "بازنشانی رمز عبور Deutsch Lernen",
+  en: "Reset your Doch! password",
+  de: "Passwort für Doch! zurücksetzen",
+  fa: "بازنشانی رمز عبور Doch!",
 } as const;
 
 const BODY = {

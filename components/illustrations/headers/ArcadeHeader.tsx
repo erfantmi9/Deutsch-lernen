@@ -22,7 +22,7 @@ export default function ArcadeHeader({ size = 240, className, title }: Illustrat
       ))}
       <path d={SPARKLE_D} transform="translate(206 4) scale(.4)" fill={COLORS.yellow} stroke="none" />
       <g transform="translate(6 6) scale(.9)">
-        <MascotArt mood="cheering" />
+        <MascotArt mood="playing" />
       </g>
     </Svg>
   );
