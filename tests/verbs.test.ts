@@ -7,7 +7,8 @@ import {
   presentAnswers,
   stripUmlauts,
 } from "../lib/verbDrill";
-import { filterVerbs, getChangedPersons, getVerb, getVerbsByType, perfektForms, verbs } from "../lib/verbs";
+import { filterVerbs, getChangedPersons, getVerb, getVerbsByType, parseVerbUsage, perfektForms, sortByUsage, verbs } from "../lib/verbs";
+import { VERB_USAGES } from "../types/verb";
 
 const fahren = getVerb("fahren")!;
 const aufstehen = getVerb("aufstehen")!;
@@ -60,8 +61,8 @@ describe("pickQuestion", () => {
     let hits = 0;
     const n = 4000;
     for (let i = 0; i < n; i++) if (pickQuestion(verbs, "present", ["sein"], null).verb.id === "sein") hits++;
-    // weight 4 of 4 + 39 others = 4/43 ≈ 9.3% vs 1/40 = 2.5% unweighted
-    expect(hits / n).toBeGreaterThan(0.06);
+    // weight 4 of 4 + (N-1) others = 4/(N+3) vs 1/N unweighted (N=63: ≈6.1% vs ≈1.6%), so well above 2.5/N.
+    expect(hits / n).toBeGreaterThan(2.5 / verbs.length);
   });
   it("respects the mode", () => {
     expect(pickQuestion(verbs, "perfekt", [], null).kind).toBe("perfekt");
@@ -95,8 +96,27 @@ describe("verb helpers", () => {
     expect(perfektForms(getVerb("machen")!).ich).toBe("habe gemacht");
   });
   it("getters and filters", () => {
-    expect(getVerbsByType("modal").map((v) => v.id)).toEqual(["koennen", "muessen", "wollen", "duerfen", "moegen"]);
-    expect(filterVerbs({ type: "separable", level: "A1" }).map((v) => v.id)).toEqual(["aufstehen", "anrufen", "einkaufen", "ankommen"]);
+    expect(getVerbsByType("modal").map((v) => v.id)).toEqual(["koennen", "muessen", "wollen", "duerfen", "moegen", "sollen"]);
+    expect(filterVerbs({ type: "separable", level: "A1" }).map((v) => v.id)).toEqual([
+      "aufstehen", "anrufen", "einkaufen", "ankommen", "einladen", "mitkommen", "anfangen", "aufmachen",
+      "zumachen", "fernsehen", "abholen", "aussteigen", "einsteigen", "umsteigen", "mitbringen", "abfahren", "anmachen",
+      "ausmachen", "anmelden", "ansehen", "anziehen", "ausziehen", "ausfuellen", "aussehen", "ausgehen", "aufraeumen",
+      "aufwachen", "einschlafen", "kennenlernen", "mitnehmen", "zuhoeren", "zurueckkommen", "umziehen", "ankreuzen", "aufhoeren",
+    ]);
+    expect(filterVerbs({ type: "reflexive" }).map((v) => v.id)).toEqual(["freuen", "interessieren", "setzen", "beeilen", "vorstellen", "entschuldigen"]);
+    expect(filterVerbs({ type: "modal", category: "movement" })).toEqual([]);
     expect(getVerb("nope")).toBeUndefined();
+  });
+  it("ranks every verb by usage, essentials first", () => {
+    const essential = filterVerbs({ usage: "essential" });
+    expect(essential.length).toBeGreaterThanOrEqual(35);
+    expect(essential.length).toBeLessThanOrEqual(45);
+    for (const id of ["sein", "haben", "gehen", "koennen", "machen"]) expect(getVerb(id)!.usage).toBe("essential");
+    const sorted = sortByUsage(verbs).map((v) => VERB_USAGES.indexOf(v.usage));
+    expect(sorted).toEqual([...sorted].sort((a, b) => a - b));
+    expect(sortByUsage(verbs)).toHaveLength(verbs.length);
+    expect(parseVerbUsage("common")).toBe("common");
+    expect(parseVerbUsage("nope")).toBeNull();
+    expect(parseVerbUsage(null)).toBeNull();
   });
 });

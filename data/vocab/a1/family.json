@@ -25,6 +25,7 @@
       "fa": "مرد کتابی می‌خواند."
     },
     "category": "family",
+    "subcategory": "people",
     "level": "A1"
   },
   {
@@ -53,6 +54,7 @@
       "fa": "زن قهوه می‌نوشد."
     },
     "category": "family",
+    "subcategory": "people",
     "level": "A1"
   },
   {
@@ -81,6 +83,7 @@
       "fa": "دختر در باغ بازی می‌کند."
     },
     "category": "family",
+    "subcategory": "people",
     "level": "A1",
     "tags": [
       "exception"
@@ -112,6 +115,7 @@
       "fa": "پسر فوتبال بازی می‌کند."
     },
     "category": "family",
+    "subcategory": "people",
     "level": "A1",
     "tags": [
       "exception"
@@ -143,6 +147,7 @@
       "fa": "کودک خوابیده است."
     },
     "category": "family",
+    "subcategory": "family",
     "level": "A1"
   },
   {
@@ -171,6 +176,7 @@
       "fa": "پدر امروز آشپزی می‌کند."
     },
     "category": "family",
+    "subcategory": "family",
     "level": "A1",
     "tags": [
       "person"
@@ -202,6 +208,7 @@
       "fa": "مادر در اداره کار می‌کند."
     },
     "category": "family",
+    "subcategory": "family",
     "level": "A1",
     "tags": [
       "person"
@@ -233,9 +240,793 @@
       "fa": "برادر من در برلین زندگی می‌کند."
     },
     "category": "family",
+    "subcategory": "family",
     "level": "A1",
     "tags": [
       "person"
     ]
+  },
+  {
+    "id": "schwester",
+    "word": "Schwester",
+    "article": "die",
+    "plural": "Schwestern",
+    "translations": {
+      "en": "sister",
+      "fa": "خواهر"
+    },
+    "grammarRule": {
+      "en": "Female persons are usually feminine (die): die Frau, die Mutter, die Schwester.",
+      "fa": "اسم‌های مربوط به افراد مؤنث معمولاً مؤنث (die) هستند: die Frau, die Mutter, die Schwester.",
+      "de": "Weibliche Personen sind meist feminin (die): die Frau, die Mutter, die Schwester.",
+      "simple": {
+        "en": "Women and girls are usually die.",
+        "fa": "زن‌ها معمولاً die هستند.",
+        "de": "Frauen sind meist die."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Meine Schwester heißt Lena.",
+      "en": "My sister is called Lena.",
+      "fa": "اسم خواهرم لنا است."
+    },
+    "category": "family",
+    "subcategory": "family",
+    "level": "A1"
+  },
+  {
+    "id": "sohn",
+    "word": "Sohn",
+    "article": "der",
+    "plural": "Söhne",
+    "translations": {
+      "en": "son",
+      "fa": "پسر (فرزند)"
+    },
+    "grammarRule": {
+      "en": "Male persons are masculine (der): der Mann, der Vater, der Onkel, der Freund.",
+      "fa": "اسم‌های مربوط به افراد مذکر، مذکر (der) هستند: der Mann, der Vater, der Onkel, der Freund.",
+      "de": "Männliche Personen sind maskulin (der): der Mann, der Vater, der Onkel, der Freund.",
+      "simple": {
+        "en": "Men and boys are der.",
+        "fa": "مردها و پسرها der هستند.",
+        "de": "Männer und Jungen sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Ihr Sohn ist zehn Jahre alt.",
+      "en": "Her son is ten years old.",
+      "fa": "پسرش ده سال دارد."
+    },
+    "category": "family",
+    "subcategory": "family",
+    "level": "A1"
+  },
+  {
+    "id": "tochter",
+    "word": "Tochter",
+    "article": "die",
+    "plural": "Töchter",
+    "translations": {
+      "en": "daughter",
+      "fa": "دختر (فرزند)"
+    },
+    "grammarRule": {
+      "en": "Female persons are usually feminine (die): die Frau, die Mutter, die Schwester.",
+      "fa": "اسم‌های مربوط به افراد مؤنث معمولاً مؤنث (die) هستند: die Frau, die Mutter, die Schwester.",
+      "de": "Weibliche Personen sind meist feminin (die): die Frau, die Mutter, die Schwester.",
+      "simple": {
+        "en": "Women and girls are usually die.",
+        "fa": "زن‌ها معمولاً die هستند.",
+        "de": "Frauen sind meist die."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Unsere Tochter geht zur Schule.",
+      "en": "Our daughter goes to school.",
+      "fa": "دختر ما به مدرسه می‌رود."
+    },
+    "category": "family",
+    "subcategory": "family",
+    "level": "A1"
+  },
+  {
+    "id": "ehemann",
+    "word": "Ehemann",
+    "article": "der",
+    "plural": "Ehemänner",
+    "translations": {
+      "en": "husband",
+      "fa": "شوهر"
+    },
+    "grammarRule": {
+      "en": "Male persons are masculine (der): der Mann, der Vater, der Onkel, der Freund.",
+      "fa": "اسم‌های مربوط به افراد مذکر، مذکر (der) هستند: der Mann, der Vater, der Onkel, der Freund.",
+      "de": "Männliche Personen sind maskulin (der): der Mann, der Vater, der Onkel, der Freund.",
+      "simple": {
+        "en": "Men and boys are der.",
+        "fa": "مردها و پسرها der هستند.",
+        "de": "Männer und Jungen sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Ihr Ehemann arbeitet in Berlin.",
+      "en": "Her husband works in Berlin.",
+      "fa": "شوهرش در برلین کار می‌کند."
+    },
+    "category": "family",
+    "subcategory": "family",
+    "level": "A1"
+  },
+  {
+    "id": "ehefrau",
+    "word": "Ehefrau",
+    "article": "die",
+    "plural": "Ehefrauen",
+    "translations": {
+      "en": "wife",
+      "fa": "همسر (زن)"
+    },
+    "grammarRule": {
+      "en": "Female persons are usually feminine (die): die Frau, die Mutter, die Schwester.",
+      "fa": "اسم‌های مربوط به افراد مؤنث معمولاً مؤنث (die) هستند: die Frau, die Mutter, die Schwester.",
+      "de": "Weibliche Personen sind meist feminin (die): die Frau, die Mutter, die Schwester.",
+      "simple": {
+        "en": "Women and girls are usually die.",
+        "fa": "زن‌ها معمولاً die هستند.",
+        "de": "Frauen sind meist die."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Seine Ehefrau ist Lehrerin.",
+      "en": "His wife is a teacher.",
+      "fa": "همسرش معلم است."
+    },
+    "category": "family",
+    "subcategory": "family",
+    "level": "A1"
+  },
+  {
+    "id": "familie",
+    "word": "Familie",
+    "article": "die",
+    "plural": "Familien",
+    "translations": {
+      "en": "family",
+      "fa": "خانواده"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Nase.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Nase.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Nase.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Meine Familie wohnt in Hamburg.",
+      "en": "My family lives in Hamburg.",
+      "fa": "خانواده‌ام در هامبورگ زندگی می‌کنند."
+    },
+    "category": "family",
+    "subcategory": "family",
+    "level": "A1"
+  },
+  {
+    "id": "grossvater",
+    "word": "Großvater",
+    "article": "der",
+    "plural": "Großväter",
+    "translations": {
+      "en": "grandfather",
+      "fa": "پدربزرگ"
+    },
+    "grammarRule": {
+      "en": "Male persons are masculine (der): der Mann, der Vater, der Onkel, der Freund.",
+      "fa": "اسم‌های مربوط به افراد مذکر، مذکر (der) هستند: der Mann, der Vater, der Onkel, der Freund.",
+      "de": "Männliche Personen sind maskulin (der): der Mann, der Vater, der Onkel, der Freund.",
+      "simple": {
+        "en": "Men and boys are der.",
+        "fa": "مردها و پسرها der هستند.",
+        "de": "Männer und Jungen sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Mein Großvater ist achtzig Jahre alt.",
+      "en": "My grandfather is eighty years old.",
+      "fa": "پدربزرگم هشتاد سال دارد."
+    },
+    "category": "family",
+    "subcategory": "relatives",
+    "level": "A1"
+  },
+  {
+    "id": "grossmutter",
+    "word": "Großmutter",
+    "article": "die",
+    "plural": "Großmütter",
+    "translations": {
+      "en": "grandmother",
+      "fa": "مادربزرگ"
+    },
+    "grammarRule": {
+      "en": "Female persons are usually feminine (die): die Frau, die Mutter, die Schwester.",
+      "fa": "اسم‌های مربوط به افراد مؤنث معمولاً مؤنث (die) هستند: die Frau, die Mutter, die Schwester.",
+      "de": "Weibliche Personen sind meist feminin (die): die Frau, die Mutter, die Schwester.",
+      "simple": {
+        "en": "Women and girls are usually die.",
+        "fa": "زن‌ها معمولاً die هستند.",
+        "de": "Frauen sind meist die."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Die Großmutter erzählt eine Geschichte.",
+      "en": "The grandmother tells a story.",
+      "fa": "مادربزرگ قصه تعریف می‌کند."
+    },
+    "category": "family",
+    "subcategory": "relatives",
+    "level": "A1"
+  },
+  {
+    "id": "opa",
+    "word": "Opa",
+    "article": "der",
+    "plural": "Opas",
+    "translations": {
+      "en": "grandpa",
+      "fa": "بابابزرگ"
+    },
+    "grammarRule": {
+      "en": "Male persons are masculine (der): der Mann, der Vater, der Onkel, der Freund.",
+      "fa": "اسم‌های مربوط به افراد مذکر، مذکر (der) هستند: der Mann, der Vater, der Onkel, der Freund.",
+      "de": "Männliche Personen sind maskulin (der): der Mann, der Vater, der Onkel, der Freund.",
+      "simple": {
+        "en": "Men and boys are der.",
+        "fa": "مردها و پسرها der هستند.",
+        "de": "Männer und Jungen sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Opa liest die Zeitung.",
+      "en": "Grandpa is reading the newspaper.",
+      "fa": "بابابزرگ روزنامه می‌خواند."
+    },
+    "category": "family",
+    "subcategory": "relatives",
+    "level": "A1"
+  },
+  {
+    "id": "oma",
+    "word": "Oma",
+    "article": "die",
+    "plural": "Omas",
+    "translations": {
+      "en": "grandma",
+      "fa": "مامان‌بزرگ"
+    },
+    "grammarRule": {
+      "en": "Female persons are usually feminine (die): die Frau, die Mutter, die Schwester.",
+      "fa": "اسم‌های مربوط به افراد مؤنث معمولاً مؤنث (die) هستند: die Frau, die Mutter, die Schwester.",
+      "de": "Weibliche Personen sind meist feminin (die): die Frau, die Mutter, die Schwester.",
+      "simple": {
+        "en": "Women and girls are usually die.",
+        "fa": "زن‌ها معمولاً die هستند.",
+        "de": "Frauen sind meist die."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Wir besuchen Oma am Sonntag.",
+      "en": "We visit Grandma on Sunday.",
+      "fa": "یکشنبه به دیدن مامان‌بزرگ می‌رویم."
+    },
+    "category": "family",
+    "subcategory": "relatives",
+    "level": "A1"
+  },
+  {
+    "id": "onkel",
+    "word": "Onkel",
+    "article": "der",
+    "plural": "Onkel",
+    "translations": {
+      "en": "uncle",
+      "fa": "عمو، دایی"
+    },
+    "grammarRule": {
+      "en": "Male persons are masculine (der): der Mann, der Vater, der Onkel, der Freund.",
+      "fa": "اسم‌های مربوط به افراد مذکر، مذکر (der) هستند: der Mann, der Vater, der Onkel, der Freund.",
+      "de": "Männliche Personen sind maskulin (der): der Mann, der Vater, der Onkel, der Freund.",
+      "simple": {
+        "en": "Men and boys are der.",
+        "fa": "مردها و پسرها der هستند.",
+        "de": "Männer und Jungen sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Mein Onkel wohnt in Wien.",
+      "en": "My uncle lives in Vienna.",
+      "fa": "عمویم در وین زندگی می‌کند."
+    },
+    "category": "family",
+    "subcategory": "relatives",
+    "level": "A1"
+  },
+  {
+    "id": "tante",
+    "word": "Tante",
+    "article": "die",
+    "plural": "Tanten",
+    "translations": {
+      "en": "aunt",
+      "fa": "عمه، خاله"
+    },
+    "grammarRule": {
+      "en": "Female persons are usually feminine (die): die Frau, die Mutter, die Schwester.",
+      "fa": "اسم‌های مربوط به افراد مؤنث معمولاً مؤنث (die) هستند: die Frau, die Mutter, die Schwester.",
+      "de": "Weibliche Personen sind meist feminin (die): die Frau, die Mutter, die Schwester.",
+      "simple": {
+        "en": "Women and girls are usually die.",
+        "fa": "زن‌ها معمولاً die هستند.",
+        "de": "Frauen sind meist die."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Meine Tante hat zwei Kinder.",
+      "en": "My aunt has two children.",
+      "fa": "خاله‌ام دو بچه دارد."
+    },
+    "category": "family",
+    "subcategory": "relatives",
+    "level": "A1"
+  },
+  {
+    "id": "cousin",
+    "word": "Cousin",
+    "article": "der",
+    "plural": "Cousins",
+    "translations": {
+      "en": "cousin (male)",
+      "fa": "پسرعمو، پسرخاله"
+    },
+    "grammarRule": {
+      "en": "Male persons are masculine (der): der Mann, der Vater, der Onkel, der Freund.",
+      "fa": "اسم‌های مربوط به افراد مذکر، مذکر (der) هستند: der Mann, der Vater, der Onkel, der Freund.",
+      "de": "Männliche Personen sind maskulin (der): der Mann, der Vater, der Onkel, der Freund.",
+      "simple": {
+        "en": "Men and boys are der.",
+        "fa": "مردها و پسرها der هستند.",
+        "de": "Männer und Jungen sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Mein Cousin ist zwanzig Jahre alt.",
+      "en": "My cousin is twenty years old.",
+      "fa": "پسرعمویم بیست سال دارد."
+    },
+    "category": "family",
+    "subcategory": "relatives",
+    "level": "A1"
+  },
+  {
+    "id": "cousine",
+    "word": "Cousine",
+    "article": "die",
+    "plural": "Cousinen",
+    "translations": {
+      "en": "cousin (female)",
+      "fa": "دخترعمو، دخترخاله"
+    },
+    "grammarRule": {
+      "en": "Female persons are usually feminine (die): die Frau, die Mutter, die Schwester.",
+      "fa": "اسم‌های مربوط به افراد مؤنث معمولاً مؤنث (die) هستند: die Frau, die Mutter, die Schwester.",
+      "de": "Weibliche Personen sind meist feminin (die): die Frau, die Mutter, die Schwester.",
+      "simple": {
+        "en": "Women and girls are usually die.",
+        "fa": "زن‌ها معمولاً die هستند.",
+        "de": "Frauen sind meist die."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Meine Cousine studiert Medizin.",
+      "en": "My cousin studies medicine.",
+      "fa": "دخترخاله‌ام پزشکی می‌خواند."
+    },
+    "category": "family",
+    "subcategory": "relatives",
+    "level": "A1"
+  },
+  {
+    "id": "baby",
+    "word": "Baby",
+    "article": "das",
+    "plural": "Babys",
+    "translations": {
+      "en": "baby",
+      "fa": "نوزاد"
+    },
+    "grammarRule": {
+      "en": "Young beings (children and baby animals) are usually neuter (das): das Kind, das Baby, das Kalb.",
+      "fa": "موجودات جوان (کودکان و بچه حیوانات) معمولاً خنثی (das) هستند: das Kind, das Baby, das Kalb.",
+      "de": "Junge Lebewesen (Kinder, Tierjunge) sind meist sächlich (das): das Kind, das Baby, das Kalb.",
+      "simple": {
+        "en": "Young beings (child, baby) are usually das.",
+        "fa": "موجودات جوان (کودک، نوزاد) معمولاً das هستند.",
+        "de": "Junge Wesen (Kind, Baby) sind meist das."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Das Baby schläft jetzt.",
+      "en": "The baby is sleeping now.",
+      "fa": "نوزاد الان خوابیده است."
+    },
+    "category": "family",
+    "subcategory": "people",
+    "level": "A1"
+  },
+  {
+    "id": "freund",
+    "word": "Freund",
+    "article": "der",
+    "plural": "Freunde",
+    "translations": {
+      "en": "friend (male)",
+      "fa": "دوست (مرد)"
+    },
+    "grammarRule": {
+      "en": "Male persons are masculine (der): der Mann, der Vater, der Onkel, der Freund.",
+      "fa": "اسم‌های مربوط به افراد مذکر، مذکر (der) هستند: der Mann, der Vater, der Onkel, der Freund.",
+      "de": "Männliche Personen sind maskulin (der): der Mann, der Vater, der Onkel, der Freund.",
+      "simple": {
+        "en": "Men and boys are der.",
+        "fa": "مردها و پسرها der هستند.",
+        "de": "Männer und Jungen sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Mein Freund kommt heute.",
+      "en": "My friend is coming today.",
+      "fa": "دوستم امروز می‌آید."
+    },
+    "category": "family",
+    "subcategory": "people",
+    "level": "A1"
+  },
+  {
+    "id": "freundin",
+    "word": "Freundin",
+    "article": "die",
+    "plural": "Freundinnen",
+    "translations": {
+      "en": "friend (female)",
+      "fa": "دوست (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of persons ending in -in are always feminine (die): die Freundin, die Nachbarin, die Lehrerin.",
+      "fa": "شکل مؤنث اسم افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Freundin, die Nachbarin, die Lehrerin.",
+      "de": "Weibliche Personenbezeichnungen auf -in sind immer feminin (die): die Freundin, die Nachbarin, die Lehrerin.",
+      "simple": {
+        "en": "Person words ending in -in are always die.",
+        "fa": "اسم افراد با پایان -in همیشه die هستند.",
+        "de": "Personen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Sie trifft ihre Freundin im Café.",
+      "en": "She meets her friend at the café.",
+      "fa": "او دوستش را در کافه می‌بیند."
+    },
+    "category": "family",
+    "subcategory": "people",
+    "level": "A1"
+  },
+  {
+    "id": "nachbar",
+    "word": "Nachbar",
+    "article": "der",
+    "plural": "Nachbarn",
+    "translations": {
+      "en": "neighbour (male)",
+      "fa": "همسایه (مرد)"
+    },
+    "grammarRule": {
+      "en": "Male persons are masculine (der): der Mann, der Vater, der Onkel, der Freund.",
+      "fa": "اسم‌های مربوط به افراد مذکر، مذکر (der) هستند: der Mann, der Vater, der Onkel, der Freund.",
+      "de": "Männliche Personen sind maskulin (der): der Mann, der Vater, der Onkel, der Freund.",
+      "simple": {
+        "en": "Men and boys are der.",
+        "fa": "مردها و پسرها der هستند.",
+        "de": "Männer und Jungen sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Nachbar ist sehr nett.",
+      "en": "The neighbour is very nice.",
+      "fa": "همسایه خیلی مهربان است."
+    },
+    "category": "family",
+    "subcategory": "people",
+    "level": "A1"
+  },
+  {
+    "id": "herr",
+    "word": "Herr",
+    "article": "der",
+    "plural": "Herren",
+    "translations": {
+      "en": "Mr, gentleman",
+      "fa": "آقا"
+    },
+    "grammarRule": {
+      "en": "Male persons are usually masculine (der): der Mann, der Vater, der Bruder.",
+      "fa": "اسم‌های مربوط به افراد مذکر معمولاً مذکر (der) هستند: der Mann, der Vater, der Bruder.",
+      "de": "Männliche Personen sind meist maskulin (der): der Mann, der Vater, der Bruder.",
+      "simple": {
+        "en": "Men and boys are usually der.",
+        "fa": "مردها و پسرها معمولاً der هستند.",
+        "de": "Männer und Jungen sind meist der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Herr Müller wohnt hier.",
+      "en": "Mr Müller lives here.",
+      "fa": "آقای مولر اینجا زندگی می‌کند."
+    },
+    "category": "family",
+    "subcategory": "people",
+    "level": "A1"
+  },
+  {
+    "id": "dame",
+    "word": "Dame",
+    "article": "die",
+    "plural": "Damen",
+    "translations": {
+      "en": "lady",
+      "fa": "خانم"
+    },
+    "grammarRule": {
+      "en": "Female persons are usually feminine (die): die Frau, die Mutter, die Schwester.",
+      "fa": "اسم‌های مربوط به افراد مؤنث معمولاً مؤنث (die) هستند: die Frau, die Mutter, die Schwester.",
+      "de": "Weibliche Personen sind meist feminin (die): die Frau, die Mutter, die Schwester.",
+      "simple": {
+        "en": "Women and girls are usually die.",
+        "fa": "زن‌ها معمولاً die هستند.",
+        "de": "Frauen sind meist die."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Die alte Dame ist sehr nett.",
+      "en": "The old lady is very nice.",
+      "fa": "آن خانم مسن خیلی مهربان است."
+    },
+    "category": "family",
+    "subcategory": "people",
+    "level": "A1"
+  },
+  {
+    "id": "mensch",
+    "word": "Mensch",
+    "article": "der",
+    "plural": "Menschen",
+    "translations": {
+      "en": "person, human being",
+      "fa": "انسان، آدم"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Mensch).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Mensch).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Mensch).",
+      "simple": {
+        "en": "Just learn it: der Mensch.",
+        "fa": "فقط حفظش کنید: der Mensch.",
+        "de": "Einfach lernen: der Mensch."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Viele Menschen wohnen in Berlin.",
+      "en": "Many people live in Berlin.",
+      "fa": "آدم‌های زیادی در برلین زندگی می‌کنند."
+    },
+    "category": "family",
+    "subcategory": "people",
+    "level": "A1"
+  },
+  {
+    "id": "person",
+    "word": "Person",
+    "article": "die",
+    "plural": "Personen",
+    "translations": {
+      "en": "person",
+      "fa": "نفر، شخص"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Person).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Person).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Person).",
+      "simple": {
+        "en": "Just learn it: die Person.",
+        "fa": "فقط حفظش کنید: die Person.",
+        "de": "Einfach lernen: die Person."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wir sind vier Personen.",
+      "en": "We are four people.",
+      "fa": "ما چهار نفریم."
+    },
+    "category": "family",
+    "subcategory": "people",
+    "level": "A1"
+  },
+  {
+    "id": "partner",
+    "word": "Partner",
+    "article": "der",
+    "plural": "Partner",
+    "translations": {
+      "en": "partner (male)",
+      "fa": "شریک زندگی (مرد)"
+    },
+    "grammarRule": {
+      "en": "Male persons are usually masculine (der): der Mann, der Vater, der Bruder.",
+      "fa": "اسم‌های مربوط به افراد مذکر معمولاً مذکر (der) هستند: der Mann, der Vater, der Bruder.",
+      "de": "Männliche Personen sind meist maskulin (der): der Mann, der Vater, der Bruder.",
+      "simple": {
+        "en": "Men and boys are usually der.",
+        "fa": "مردها و پسرها معمولاً der هستند.",
+        "de": "Männer und Jungen sind meist der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Mein Partner kommt aus Spanien.",
+      "en": "My partner comes from Spain.",
+      "fa": "شریک زندگی‌ام اهل اسپانیاست."
+    },
+    "category": "family",
+    "subcategory": "people",
+    "level": "A1"
+  },
+  {
+    "id": "partnerin",
+    "word": "Partnerin",
+    "article": "die",
+    "plural": "Partnerinnen",
+    "translations": {
+      "en": "partner (female)",
+      "fa": "شریک زندگی (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of persons ending in -in are always feminine (die): die Freundin, die Nachbarin, die Lehrerin.",
+      "fa": "شکل مؤنث اسم افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Freundin, die Nachbarin, die Lehrerin.",
+      "de": "Weibliche Personenbezeichnungen auf -in sind immer feminin (die): die Freundin, die Nachbarin, die Lehrerin.",
+      "simple": {
+        "en": "Person words ending in -in are always die.",
+        "fa": "اسم افراد با پایان -in همیشه die هستند.",
+        "de": "Personen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Seine Partnerin heißt Lena.",
+      "en": "His partner's name is Lena.",
+      "fa": "اسم شریک زندگی‌اش لناست."
+    },
+    "category": "family",
+    "subcategory": "people",
+    "level": "A1"
+  },
+  {
+    "id": "enkel",
+    "word": "Enkel",
+    "article": "der",
+    "plural": "Enkel",
+    "translations": {
+      "en": "grandson",
+      "fa": "نوه (پسر)"
+    },
+    "grammarRule": {
+      "en": "Male persons are usually masculine (der): der Mann, der Vater, der Bruder.",
+      "fa": "اسم‌های مربوط به افراد مذکر معمولاً مذکر (der) هستند: der Mann, der Vater, der Bruder.",
+      "de": "Männliche Personen sind meist maskulin (der): der Mann, der Vater, der Bruder.",
+      "simple": {
+        "en": "Men and boys are usually der.",
+        "fa": "مردها و پسرها معمولاً der هستند.",
+        "de": "Männer und Jungen sind meist der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Enkel besucht seine Oma.",
+      "en": "The grandson visits his grandma.",
+      "fa": "نوه به مادربزرگش سر می‌زند."
+    },
+    "category": "family",
+    "subcategory": "relatives",
+    "level": "A1"
+  },
+  {
+    "id": "enkelin",
+    "word": "Enkelin",
+    "article": "die",
+    "plural": "Enkelinnen",
+    "translations": {
+      "en": "granddaughter",
+      "fa": "نوه (دختر)"
+    },
+    "grammarRule": {
+      "en": "Female forms of persons ending in -in are always feminine (die): die Freundin, die Nachbarin, die Lehrerin.",
+      "fa": "شکل مؤنث اسم افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Freundin, die Nachbarin, die Lehrerin.",
+      "de": "Weibliche Personenbezeichnungen auf -in sind immer feminin (die): die Freundin, die Nachbarin, die Lehrerin.",
+      "simple": {
+        "en": "Person words ending in -in are always die.",
+        "fa": "اسم افراد با پایان -in همیشه die هستند.",
+        "de": "Personen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Enkelin spielt mit Opa.",
+      "en": "The granddaughter plays with grandpa.",
+      "fa": "نوه با پدربزرگش بازی می‌کند."
+    },
+    "category": "family",
+    "subcategory": "relatives",
+    "level": "A1"
+  },
+  {
+    "id": "ehepaar",
+    "word": "Ehepaar",
+    "article": "das",
+    "plural": "Ehepaare",
+    "translations": {
+      "en": "married couple",
+      "fa": "زن و شوهر، زوج"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: das Paar gives das Ehepaar.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: das Paar می‌شود das Ehepaar.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: das Paar ergibt das Ehepaar.",
+      "simple": {
+        "en": "Look at the last part: das Paar, so das Ehepaar.",
+        "fa": "به بخش آخر نگاه کنید: das Paar، پس das Ehepaar.",
+        "de": "Schau auf den letzten Teil: das Paar, also das Ehepaar."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Das Ehepaar wohnt neben uns.",
+      "en": "The married couple lives next to us.",
+      "fa": "آن زن و شوهر همسایه‌ی ما هستند."
+    },
+    "category": "family",
+    "subcategory": "family",
+    "level": "A1"
   }
 ]

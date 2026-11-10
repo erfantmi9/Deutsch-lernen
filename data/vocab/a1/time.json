@@ -25,6 +25,7 @@
       "fa": "دوشنبه کار می‌کنم."
     },
     "category": "time",
+    "subcategory": "calendar",
     "level": "A1"
   },
   {
@@ -53,6 +54,7 @@
       "fa": "سه‌شنبه آلمانی می‌خوانم."
     },
     "category": "time",
+    "subcategory": "calendar",
     "level": "A1",
     "tags": [
       "weekday"
@@ -84,6 +86,7 @@
       "fa": "در تابستان هوا گرم است."
     },
     "category": "time",
+    "subcategory": "calendar",
     "level": "A1",
     "tags": [
       "season"
@@ -115,6 +118,7 @@
       "fa": "در زمستان هوا سرد است."
     },
     "category": "time",
+    "subcategory": "calendar",
     "level": "A1",
     "tags": [
       "season"
@@ -146,6 +150,7 @@
       "fa": "هفته هفت روز دارد."
     },
     "category": "time",
+    "subcategory": "units",
     "level": "A1"
   },
   {
@@ -174,6 +179,7 @@
       "fa": "کلاس ساعت نه شروع می‌شود."
     },
     "category": "time",
+    "subcategory": "units",
     "level": "A1"
   },
   {
@@ -202,6 +208,7 @@
       "fa": "سال دوازده ماه دارد."
     },
     "category": "time",
+    "subcategory": "units",
     "level": "A1"
   },
   {
@@ -230,6 +237,684 @@
       "fa": "ساعت خراب است."
     },
     "category": "time",
+    "subcategory": "units",
+    "level": "A1"
+  },
+  {
+    "id": "januar",
+    "word": "Januar",
+    "article": "der",
+    "plural": "Januare",
+    "translations": {
+      "en": "January",
+      "fa": "ژانویه"
+    },
+    "grammarRule": {
+      "en": "Days, months and seasons are masculine (der): der Montag, der Januar, der Sommer.",
+      "fa": "روزهای هفته، ماه‌ها و فصل‌ها مذکر (der) هستند: der Montag, der Januar, der Sommer.",
+      "de": "Wochentage, Monate und Jahreszeiten sind maskulin (der): der Montag, der Januar, der Sommer.",
+      "simple": {
+        "en": "Months are always der.",
+        "fa": "ماه‌ها همیشه der هستند.",
+        "de": "Monate sind immer der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Im Januar ist es kalt.",
+      "en": "In January it is cold.",
+      "fa": "در ژانویه هوا سرد است."
+    },
+    "category": "time",
+    "subcategory": "calendar",
+    "level": "A1",
+    "tags": [
+      "month"
+    ]
+  },
+  {
+    "id": "februar",
+    "word": "Februar",
+    "article": "der",
+    "plural": "Februare",
+    "translations": {
+      "en": "February",
+      "fa": "فوریه"
+    },
+    "grammarRule": {
+      "en": "Days, months and seasons are masculine (der): der Montag, der Februar, der Sommer.",
+      "fa": "روزهای هفته، ماه‌ها و فصل‌ها مذکر (der) هستند: der Montag, der Februar, der Sommer.",
+      "de": "Wochentage, Monate und Jahreszeiten sind maskulin (der): der Montag, der Februar, der Sommer.",
+      "simple": {
+        "en": "Months are always der.",
+        "fa": "ماه‌ها همیشه der هستند.",
+        "de": "Monate sind immer der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Februar ist kurz.",
+      "en": "February is short.",
+      "fa": "فوریه کوتاه است."
+    },
+    "category": "time",
+    "subcategory": "calendar",
+    "level": "A1",
+    "tags": [
+      "month"
+    ]
+  },
+  {
+    "id": "maerz",
+    "word": "März",
+    "article": "der",
+    "plural": "Märze",
+    "translations": {
+      "en": "March",
+      "fa": "مارس"
+    },
+    "grammarRule": {
+      "en": "Days, months and seasons are masculine (der): der Montag, der März, der Sommer.",
+      "fa": "روزهای هفته، ماه‌ها و فصل‌ها مذکر (der) هستند: der Montag, der März, der Sommer.",
+      "de": "Wochentage, Monate und Jahreszeiten sind maskulin (der): der Montag, der März, der Sommer.",
+      "simple": {
+        "en": "Months are always der.",
+        "fa": "ماه‌ها همیشه der هستند.",
+        "de": "Monate sind immer der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Im März beginnt der Frühling.",
+      "en": "Spring begins in March.",
+      "fa": "بهار در مارس شروع می‌شود."
+    },
+    "category": "time",
+    "subcategory": "calendar",
+    "level": "A1",
+    "tags": [
+      "month"
+    ]
+  },
+  {
+    "id": "april",
+    "word": "April",
+    "article": "der",
+    "plural": "Aprile",
+    "translations": {
+      "en": "April",
+      "fa": "آوریل"
+    },
+    "grammarRule": {
+      "en": "Days, months and seasons are masculine (der): der Montag, der April, der Sommer.",
+      "fa": "روزهای هفته، ماه‌ها و فصل‌ها مذکر (der) هستند: der Montag, der April, der Sommer.",
+      "de": "Wochentage, Monate und Jahreszeiten sind maskulin (der): der Montag, der April, der Sommer.",
+      "simple": {
+        "en": "Months are always der.",
+        "fa": "ماه‌ها همیشه der هستند.",
+        "de": "Monate sind immer der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Im April regnet es oft.",
+      "en": "In April it often rains.",
+      "fa": "در آوریل اغلب باران می‌بارد."
+    },
+    "category": "time",
+    "subcategory": "calendar",
+    "level": "A1",
+    "tags": [
+      "month"
+    ]
+  },
+  {
+    "id": "mai",
+    "word": "Mai",
+    "article": "der",
+    "plural": "Maie",
+    "translations": {
+      "en": "May",
+      "fa": "مه"
+    },
+    "grammarRule": {
+      "en": "Days, months and seasons are masculine (der): der Montag, der Mai, der Sommer.",
+      "fa": "روزهای هفته، ماه‌ها و فصل‌ها مذکر (der) هستند: der Montag, der Mai, der Sommer.",
+      "de": "Wochentage, Monate und Jahreszeiten sind maskulin (der): der Montag, der Mai, der Sommer.",
+      "simple": {
+        "en": "Months are always der.",
+        "fa": "ماه‌ها همیشه der هستند.",
+        "de": "Monate sind immer der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Mein Geburtstag ist im Mai.",
+      "en": "My birthday is in May.",
+      "fa": "تولد من در ماه مه است."
+    },
+    "category": "time",
+    "subcategory": "calendar",
+    "level": "A1",
+    "tags": [
+      "month"
+    ]
+  },
+  {
+    "id": "juni",
+    "word": "Juni",
+    "article": "der",
+    "plural": "Junis",
+    "translations": {
+      "en": "June",
+      "fa": "ژوئن"
+    },
+    "grammarRule": {
+      "en": "Days, months and seasons are masculine (der): der Montag, der Juni, der Sommer.",
+      "fa": "روزهای هفته، ماه‌ها و فصل‌ها مذکر (der) هستند: der Montag, der Juni, der Sommer.",
+      "de": "Wochentage, Monate und Jahreszeiten sind maskulin (der): der Montag, der Juni, der Sommer.",
+      "simple": {
+        "en": "Months are always der.",
+        "fa": "ماه‌ها همیشه der هستند.",
+        "de": "Monate sind immer der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Im Juni ist es warm.",
+      "en": "In June it is warm.",
+      "fa": "در ژوئن هوا گرم است."
+    },
+    "category": "time",
+    "subcategory": "calendar",
+    "level": "A1",
+    "tags": [
+      "month"
+    ]
+  },
+  {
+    "id": "juli",
+    "word": "Juli",
+    "article": "der",
+    "plural": "Julis",
+    "translations": {
+      "en": "July",
+      "fa": "ژوئیه"
+    },
+    "grammarRule": {
+      "en": "Days, months and seasons are masculine (der): der Montag, der Juli, der Sommer.",
+      "fa": "روزهای هفته، ماه‌ها و فصل‌ها مذکر (der) هستند: der Montag, der Juli, der Sommer.",
+      "de": "Wochentage, Monate und Jahreszeiten sind maskulin (der): der Montag, der Juli, der Sommer.",
+      "simple": {
+        "en": "Months are always der.",
+        "fa": "ماه‌ها همیشه der هستند.",
+        "de": "Monate sind immer der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Im Juli habe ich Urlaub.",
+      "en": "In July I have holidays.",
+      "fa": "در ژوئیه مرخصی دارم."
+    },
+    "category": "time",
+    "subcategory": "calendar",
+    "level": "A1",
+    "tags": [
+      "month"
+    ]
+  },
+  {
+    "id": "august",
+    "word": "August",
+    "article": "der",
+    "plural": "Auguste",
+    "translations": {
+      "en": "August",
+      "fa": "اوت"
+    },
+    "grammarRule": {
+      "en": "Days, months and seasons are masculine (der): der Montag, der August, der Sommer.",
+      "fa": "روزهای هفته، ماه‌ها و فصل‌ها مذکر (der) هستند: der Montag, der August, der Sommer.",
+      "de": "Wochentage, Monate und Jahreszeiten sind maskulin (der): der Montag, der August, der Sommer.",
+      "simple": {
+        "en": "Months are always der.",
+        "fa": "ماه‌ها همیشه der هستند.",
+        "de": "Monate sind immer der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der August ist sehr heiß.",
+      "en": "August is very hot.",
+      "fa": "اوت خیلی گرم است."
+    },
+    "category": "time",
+    "subcategory": "calendar",
+    "level": "A1",
+    "tags": [
+      "month"
+    ]
+  },
+  {
+    "id": "september",
+    "word": "September",
+    "article": "der",
+    "plural": "September",
+    "translations": {
+      "en": "September",
+      "fa": "سپتامبر"
+    },
+    "grammarRule": {
+      "en": "Days, months and seasons are masculine (der): der Montag, der September, der Sommer.",
+      "fa": "روزهای هفته، ماه‌ها و فصل‌ها مذکر (der) هستند: der Montag, der September, der Sommer.",
+      "de": "Wochentage, Monate und Jahreszeiten sind maskulin (der): der Montag, der September, der Sommer.",
+      "simple": {
+        "en": "Months are always der.",
+        "fa": "ماه‌ها همیشه der هستند.",
+        "de": "Monate sind immer der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Im September beginnt die Schule.",
+      "en": "School starts in September.",
+      "fa": "مدرسه در سپتامبر شروع می‌شود."
+    },
+    "category": "time",
+    "subcategory": "calendar",
+    "level": "A1",
+    "tags": [
+      "month"
+    ]
+  },
+  {
+    "id": "oktober",
+    "word": "Oktober",
+    "article": "der",
+    "plural": "Oktober",
+    "translations": {
+      "en": "October",
+      "fa": "اکتبر"
+    },
+    "grammarRule": {
+      "en": "Days, months and seasons are masculine (der): der Montag, der Oktober, der Sommer.",
+      "fa": "روزهای هفته، ماه‌ها و فصل‌ها مذکر (der) هستند: der Montag, der Oktober, der Sommer.",
+      "de": "Wochentage, Monate und Jahreszeiten sind maskulin (der): der Montag, der Oktober, der Sommer.",
+      "simple": {
+        "en": "Months are always der.",
+        "fa": "ماه‌ها همیشه der هستند.",
+        "de": "Monate sind immer der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Im Oktober fallen die Blätter.",
+      "en": "In October the leaves fall.",
+      "fa": "در اکتبر برگ‌ها می‌ریزند."
+    },
+    "category": "time",
+    "subcategory": "calendar",
+    "level": "A1",
+    "tags": [
+      "month"
+    ]
+  },
+  {
+    "id": "november",
+    "word": "November",
+    "article": "der",
+    "plural": "November",
+    "translations": {
+      "en": "November",
+      "fa": "نوامبر"
+    },
+    "grammarRule": {
+      "en": "Days, months and seasons are masculine (der): der Montag, der November, der Sommer.",
+      "fa": "روزهای هفته، ماه‌ها و فصل‌ها مذکر (der) هستند: der Montag, der November, der Sommer.",
+      "de": "Wochentage, Monate und Jahreszeiten sind maskulin (der): der Montag, der November, der Sommer.",
+      "simple": {
+        "en": "Months are always der.",
+        "fa": "ماه‌ها همیشه der هستند.",
+        "de": "Monate sind immer der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der November ist oft grau.",
+      "en": "November is often grey.",
+      "fa": "نوامبر اغلب ابری و دلگیر است."
+    },
+    "category": "time",
+    "subcategory": "calendar",
+    "level": "A1",
+    "tags": [
+      "month"
+    ]
+  },
+  {
+    "id": "dezember",
+    "word": "Dezember",
+    "article": "der",
+    "plural": "Dezember",
+    "translations": {
+      "en": "December",
+      "fa": "دسامبر"
+    },
+    "grammarRule": {
+      "en": "Days, months and seasons are masculine (der): der Montag, der Dezember, der Sommer.",
+      "fa": "روزهای هفته، ماه‌ها و فصل‌ها مذکر (der) هستند: der Montag, der Dezember, der Sommer.",
+      "de": "Wochentage, Monate und Jahreszeiten sind maskulin (der): der Montag, der Dezember, der Sommer.",
+      "simple": {
+        "en": "Months are always der.",
+        "fa": "ماه‌ها همیشه der هستند.",
+        "de": "Monate sind immer der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Im Dezember schneit es.",
+      "en": "In December it snows.",
+      "fa": "در دسامبر برف می‌بارد."
+    },
+    "category": "time",
+    "subcategory": "calendar",
+    "level": "A1",
+    "tags": [
+      "month"
+    ]
+  },
+  {
+    "id": "moment",
+    "word": "Moment",
+    "article": "der",
+    "plural": "Momente",
+    "translations": {
+      "en": "moment",
+      "fa": "لحظه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Moment).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Moment).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Moment).",
+      "simple": {
+        "en": "Just learn it: der Moment.",
+        "fa": "فقط حفظش کنید: der Moment.",
+        "de": "Einfach lernen: der Moment."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Einen Moment, bitte!",
+      "en": "One moment, please!",
+      "fa": "یک لحظه، لطفاً!"
+    },
+    "category": "time",
+    "subcategory": "units",
+    "level": "A1"
+  },
+  {
+    "id": "zeit",
+    "word": "Zeit",
+    "article": "die",
+    "plural": "Zeiten",
+    "translations": {
+      "en": "time",
+      "fa": "وقت، زمان"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Zeit).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Zeit).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Zeit).",
+      "simple": {
+        "en": "Just learn it: die Zeit.",
+        "fa": "فقط حفظش کنید: die Zeit.",
+        "de": "Einfach lernen: die Zeit."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich habe heute keine Zeit.",
+      "en": "I have no time today.",
+      "fa": "امروز وقت ندارم."
+    },
+    "category": "time",
+    "subcategory": "units",
+    "level": "A1"
+  },
+  {
+    "id": "uhrzeit",
+    "word": "Uhrzeit",
+    "article": "die",
+    "plural": "Uhrzeiten",
+    "translations": {
+      "en": "time (of day)",
+      "fa": "ساعت (زمان روز)"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: die Zeit gives die Uhrzeit.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: die Zeit می‌شود die Uhrzeit.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: die Zeit ergibt die Uhrzeit.",
+      "simple": {
+        "en": "Look at the last part: die Zeit, so die Uhrzeit.",
+        "fa": "به بخش آخر نگاه کنید: die Zeit، پس die Uhrzeit.",
+        "de": "Schau auf den letzten Teil: die Zeit, also die Uhrzeit."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Wie ist die Uhrzeit?",
+      "en": "What time is it?",
+      "fa": "ساعت چند است؟"
+    },
+    "category": "time",
+    "subcategory": "units",
+    "level": "A1",
+    "tags": [
+      "compound"
+    ]
+  },
+  {
+    "id": "wecker",
+    "word": "Wecker",
+    "article": "der",
+    "plural": "Wecker",
+    "translations": {
+      "en": "alarm clock",
+      "fa": "ساعت زنگ‌دار"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Wecker).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Wecker).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Wecker).",
+      "simple": {
+        "en": "Just learn it: der Wecker.",
+        "fa": "فقط حفظش کنید: der Wecker.",
+        "de": "Einfach lernen: der Wecker."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Wecker klingelt um sechs.",
+      "en": "The alarm clock rings at six.",
+      "fa": "ساعت زنگ‌دار ساعت شش زنگ می‌زند."
+    },
+    "category": "time",
+    "subcategory": "units",
+    "level": "A1"
+  },
+  {
+    "id": "jahrhundert",
+    "word": "Jahrhundert",
+    "article": "das",
+    "plural": "Jahrhunderte",
+    "translations": {
+      "en": "century",
+      "fa": "قرن"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Jahrhundert).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Jahrhundert).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Jahrhundert).",
+      "simple": {
+        "en": "Just learn it: das Jahrhundert.",
+        "fa": "فقط حفظش کنید: das Jahrhundert.",
+        "de": "Einfach lernen: das Jahrhundert."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ein Jahrhundert hat hundert Jahre.",
+      "en": "A century has a hundred years.",
+      "fa": "یک قرن صد سال دارد."
+    },
+    "category": "time",
+    "subcategory": "units",
+    "level": "A1"
+  },
+  {
+    "id": "anfang",
+    "word": "Anfang",
+    "article": "der",
+    "plural": "Anfänge",
+    "translations": {
+      "en": "beginning, start",
+      "fa": "شروع، آغاز"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Anfang).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Anfang).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Anfang).",
+      "simple": {
+        "en": "Just learn it: der Anfang.",
+        "fa": "فقط حفظش کنید: der Anfang.",
+        "de": "Einfach lernen: der Anfang."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Am Anfang ist alles neu.",
+      "en": "At the beginning everything is new.",
+      "fa": "اولش همه‌چیز تازه است."
+    },
+    "category": "time",
+    "subcategory": "units",
+    "level": "A1"
+  },
+  {
+    "id": "ende",
+    "word": "Ende",
+    "article": "das",
+    "plural": "Enden",
+    "translations": {
+      "en": "end",
+      "fa": "پایان، آخر"
+    },
+    "grammarRule": {
+      "en": "Exception: most nouns ending in -e are feminine, but Ende is neuter (das Ende). Learn it as an exception.",
+      "fa": "استثنا: بیشتر اسم‌های ختم‌شده به -e مؤنث‌اند، اما Ende خنثی است (das Ende). آن را به‌عنوان استثنا حفظ کنید.",
+      "de": "Ausnahme: Die meisten Nomen auf -e sind feminin, aber Ende ist sächlich (das Ende). Lerne es als Ausnahme.",
+      "simple": {
+        "en": "Ends in -e but it is das: das Ende.",
+        "fa": "به -e ختم می‌شود اما das است: das Ende.",
+        "de": "Endet auf -e, ist aber das: das Ende."
+      }
+    },
+    "ruleCategory": "exception",
+    "example": {
+      "de": "Ende Mai habe ich Urlaub.",
+      "en": "At the end of May I am on holiday.",
+      "fa": "آخر ماه مه مرخصی دارم."
+    },
+    "category": "time",
+    "subcategory": "units",
+    "level": "A1"
+  },
+  {
+    "id": "mitternacht",
+    "word": "Mitternacht",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "midnight",
+      "fa": "نیمه‌شب"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Mitte + Nacht): the last part decides the article, die Nacht → die Mitternacht.",
+      "fa": "اسم مرکب (Mitte + Nacht): بخش آخر آرتیکل را تعیین می‌کند، die Nacht ← die Mitternacht.",
+      "de": "Zusammengesetztes Nomen (Mitte + Nacht): Das letzte Wort bestimmt den Artikel, die Nacht → die Mitternacht.",
+      "simple": {
+        "en": "Last part decides: die Nacht → die Mitternacht.",
+        "fa": "بخش آخر تعیین می‌کند: die Nacht ← die Mitternacht.",
+        "de": "Das letzte Wort entscheidet: die Nacht → die Mitternacht."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Er kommt erst um Mitternacht.",
+      "en": "He only arrives at midnight.",
+      "fa": "او تازه نیمه‌شب می‌رسد."
+    },
+    "category": "time",
+    "subcategory": "units",
+    "level": "A1"
+  },
+  {
+    "id": "viertelstunde",
+    "word": "Viertelstunde",
+    "article": "die",
+    "plural": "Viertelstunden",
+    "translations": {
+      "en": "quarter of an hour",
+      "fa": "یک ربع ساعت"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Viertel + Stunde): the last part decides the article, die Stunde → die Viertelstunde.",
+      "fa": "اسم مرکب (Viertel + Stunde): بخش آخر آرتیکل را تعیین می‌کند، die Stunde ← die Viertelstunde.",
+      "de": "Zusammengesetztes Nomen (Viertel + Stunde): Das letzte Wort bestimmt den Artikel, die Stunde → die Viertelstunde.",
+      "simple": {
+        "en": "Last part decides: die Stunde → die Viertelstunde.",
+        "fa": "بخش آخر تعیین می‌کند: die Stunde ← die Viertelstunde.",
+        "de": "Das letzte Wort entscheidet: die Stunde → die Viertelstunde."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Bus kommt in einer Viertelstunde.",
+      "en": "The bus comes in a quarter of an hour.",
+      "fa": "اتوبوس یک ربع دیگر می‌آید."
+    },
+    "category": "time",
+    "subcategory": "units",
+    "level": "A1"
+  },
+  {
+    "id": "wochentag",
+    "word": "Wochentag",
+    "article": "der",
+    "plural": "Wochentage",
+    "translations": {
+      "en": "day of the week, weekday",
+      "fa": "روز هفته"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Woche + Tag): the last part decides the article, der Tag → der Wochentag.",
+      "fa": "اسم مرکب (Woche + Tag): بخش آخر آرتیکل را تعیین می‌کند، der Tag ← der Wochentag.",
+      "de": "Zusammengesetztes Nomen (Woche + Tag): Das letzte Wort bestimmt den Artikel, der Tag → der Wochentag.",
+      "simple": {
+        "en": "Last part decides: der Tag → der Wochentag.",
+        "fa": "بخش آخر تعیین می‌کند: der Tag ← der Wochentag.",
+        "de": "Das letzte Wort entscheidet: der Tag → der Wochentag."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Montag ist mein liebster Wochentag.",
+      "en": "Monday is my favourite day of the week.",
+      "fa": "دوشنبه روز محبوبم در هفته است."
+    },
+    "category": "time",
+    "subcategory": "calendar",
     "level": "A1"
   }
 ]

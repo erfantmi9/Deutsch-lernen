@@ -1,10 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
-import HeroCta from "@/components/HeroCta";
-import Mascot from "@/components/illustrations/Mascot";
-import HeroFeatures from "@/components/HeroFeatures";
-import HomePath from "@/components/HomePath";
-import HomeStudy from "@/components/HomeStudy";
+import HomePath, { HomeGoal } from "@/components/HomePath";
+import TodayCard from "@/components/TodayCard";
 import ModuleCards from "@/components/ModuleCards";
 import { dialogues } from "@/lib/dialogues";
 import { grammarExercises } from "@/lib/grammar";
@@ -25,27 +22,25 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 function Home() {
   const t = useTranslations("Home");
   return (
-    <div className="space-y-12">
-      <section className="grid items-center gap-8 py-6 md:grid-cols-2">
-        <div className="space-y-5 text-center md:text-start">
-          <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl">{t("title")}</h1>
-          <p className="mx-auto max-w-md text-lg text-text-muted md:mx-0">{t("subtitle")}</p>
-          <div className="flex flex-col items-center gap-2 md:items-start">
-            <HeroCta />
-          </div>
-        </div>
-        {/* The mascot stands on the top edge of the feature grid. */}
-        <div className="relative pt-[96px]">
-          <Mascot mood="hello" size={120} className="absolute end-4 top-0" />
-          <HeroFeatures />
-        </div>
-      </section>
+    <div className="space-y-10">
+      <div className="space-y-5 pt-2">
+        <header className="space-y-1">
+          <h1 className="text-2xl font-extrabold leading-tight sm:text-3xl">{t("title")}</h1>
+          <p className="text-text-muted">{t("subtitle")}</p>
+        </header>
+        <TodayCard />
+      </div>
 
       <HomePath />
 
-      <ModuleCards grammarTotal={grammarExercises.length} dialogueTotal={dialogues.length} readingTotal={readingTexts.length} />
+      <HomeGoal />
 
-      <HomeStudy />
+      <section aria-labelledby="sections-title" className="space-y-4">
+        <h2 id="sections-title" className="text-2xl font-extrabold">
+          {t("sectionsTitle")}
+        </h2>
+        <ModuleCards grammarTotal={grammarExercises.length} dialogueTotal={dialogues.length} readingTotal={readingTexts.length} />
+      </section>
     </div>
   );
 }

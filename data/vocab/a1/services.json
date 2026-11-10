@@ -1,0 +1,1278 @@
+[
+  {
+    "id": "brief",
+    "word": "Brief",
+    "article": "der",
+    "plural": "Briefe",
+    "translations": {
+      "en": "letter",
+      "fa": "نامه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Brief).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Brief).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Brief).",
+      "simple": {
+        "en": "Just learn it: der Brief.",
+        "fa": "فقط حفظش کنید: der Brief.",
+        "de": "Einfach lernen: der Brief."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich schreibe einen Brief.",
+      "en": "I am writing a letter.",
+      "fa": "من یک نامه می‌نویسم."
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "paket",
+    "word": "Paket",
+    "article": "das",
+    "plural": "Pakete",
+    "translations": {
+      "en": "parcel, package",
+      "fa": "بسته (پستی)"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Paket).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Paket).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Paket).",
+      "simple": {
+        "en": "Just learn it: das Paket.",
+        "fa": "فقط حفظش کنید: das Paket.",
+        "de": "Einfach lernen: das Paket."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Paket ist sehr schwer.",
+      "en": "The parcel is very heavy.",
+      "fa": "بسته خیلی سنگین است."
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "paeckchen",
+    "word": "Päckchen",
+    "article": "das",
+    "plural": "Päckchen",
+    "translations": {
+      "en": "small parcel",
+      "fa": "بسته‌ی کوچک"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -chen are always das and do not change in the plural (das Päckchen, die Päckchen).",
+      "fa": "اسم‌هایی که به -chen ختم می‌شوند همیشه das هستند و در جمع تغییر نمی‌کنند (das Päckchen، die Päckchen).",
+      "de": "Nomen auf -chen sind immer das und bleiben im Plural gleich (das Päckchen, die Päckchen).",
+      "simple": {
+        "en": "-chen → always das.",
+        "fa": "-chen ← همیشه das.",
+        "de": "-chen → immer das."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich schicke dir ein Päckchen.",
+      "en": "I am sending you a small parcel.",
+      "fa": "برایت یک بسته‌ی کوچک می‌فرستم."
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "briefmarke",
+    "word": "Briefmarke",
+    "article": "die",
+    "plural": "Briefmarken",
+    "translations": {
+      "en": "stamp",
+      "fa": "تمبر"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Brief + Marke): the last part decides the article, die Marke → die Briefmarke.",
+      "fa": "اسم مرکب (Brief + Marke): بخش آخر آرتیکل را تعیین می‌کند، die Marke ← die Briefmarke.",
+      "de": "Zusammengesetztes Nomen (Brief + Marke): Das letzte Wort bestimmt den Artikel, die Marke → die Briefmarke.",
+      "simple": {
+        "en": "Last part decides: die Marke → die Briefmarke.",
+        "fa": "بخش آخر تعیین می‌کند: die Marke ← die Briefmarke.",
+        "de": "Das letzte Wort entscheidet: die Marke → die Briefmarke."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich kaufe zehn Briefmarken.",
+      "en": "I am buying ten stamps.",
+      "fa": "من ده تا تمبر می‌خرم."
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "briefumschlag",
+    "word": "Briefumschlag",
+    "article": "der",
+    "plural": "Briefumschläge",
+    "translations": {
+      "en": "envelope",
+      "fa": "پاکت نامه"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Brief + Umschlag): the last part decides the article, der Umschlag → der Briefumschlag.",
+      "fa": "اسم مرکب (Brief + Umschlag): بخش آخر آرتیکل را تعیین می‌کند، der Umschlag ← der Briefumschlag.",
+      "de": "Zusammengesetztes Nomen (Brief + Umschlag): Das letzte Wort bestimmt den Artikel, der Umschlag → der Briefumschlag.",
+      "simple": {
+        "en": "Last part decides: der Umschlag → der Briefumschlag.",
+        "fa": "بخش آخر تعیین می‌کند: der Umschlag ← der Briefumschlag.",
+        "de": "Das letzte Wort entscheidet: der Umschlag → der Briefumschlag."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Brief ist im Briefumschlag.",
+      "en": "The letter is in the envelope.",
+      "fa": "نامه داخل پاکت است."
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "postkarte",
+    "word": "Postkarte",
+    "article": "die",
+    "plural": "Postkarten",
+    "translations": {
+      "en": "postcard",
+      "fa": "کارت‌پستال"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Post + Karte): the last part decides the article, die Karte → die Postkarte.",
+      "fa": "اسم مرکب (Post + Karte): بخش آخر آرتیکل را تعیین می‌کند، die Karte ← die Postkarte.",
+      "de": "Zusammengesetztes Nomen (Post + Karte): Das letzte Wort bestimmt den Artikel, die Karte → die Postkarte.",
+      "simple": {
+        "en": "Last part decides: die Karte → die Postkarte.",
+        "fa": "بخش آخر تعیین می‌کند: die Karte ← die Postkarte.",
+        "de": "Das letzte Wort entscheidet: die Karte → die Postkarte."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wir schreiben eine Postkarte aus Berlin.",
+      "en": "We are writing a postcard from Berlin.",
+      "fa": "ما از برلین یک کارت‌پستال می‌نویسیم."
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "briefkasten",
+    "word": "Briefkasten",
+    "article": "der",
+    "plural": "Briefkästen",
+    "translations": {
+      "en": "mailbox, postbox",
+      "fa": "صندوق پست"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Brief + Kasten): the last part decides the article, der Kasten → der Briefkasten.",
+      "fa": "اسم مرکب (Brief + Kasten): بخش آخر آرتیکل را تعیین می‌کند، der Kasten ← der Briefkasten.",
+      "de": "Zusammengesetztes Nomen (Brief + Kasten): Das letzte Wort bestimmt den Artikel, der Kasten → der Briefkasten.",
+      "simple": {
+        "en": "Last part decides: der Kasten → der Briefkasten.",
+        "fa": "بخش آخر تعیین می‌کند: der Kasten ← der Briefkasten.",
+        "de": "Das letzte Wort entscheidet: der Kasten → der Briefkasten."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Briefkasten ist an der Ecke.",
+      "en": "The postbox is on the corner.",
+      "fa": "صندوق پست سر نبش است."
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "absender",
+    "word": "Absender",
+    "article": "der",
+    "plural": "Absender",
+    "translations": {
+      "en": "sender",
+      "fa": "فرستنده"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Absender).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Absender).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Absender).",
+      "simple": {
+        "en": "Just learn it: der Absender.",
+        "fa": "فقط حفظش کنید: der Absender.",
+        "de": "Einfach lernen: der Absender."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Absender steht oben links.",
+      "en": "The sender goes at the top left.",
+      "fa": "نام فرستنده بالا سمت چپ نوشته می‌شود."
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "amt",
+    "word": "Amt",
+    "article": "das",
+    "plural": "Ämter",
+    "translations": {
+      "en": "(public) office, authority",
+      "fa": "اداره"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Amt).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Amt).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Amt).",
+      "simple": {
+        "en": "Just learn it: das Amt.",
+        "fa": "فقط حفظش کنید: das Amt.",
+        "de": "Einfach lernen: das Amt."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Amt öffnet um acht Uhr.",
+      "en": "The office opens at eight.",
+      "fa": "اداره ساعت هشت باز می‌شود."
+    },
+    "category": "services",
+    "subcategory": "office",
+    "level": "A1"
+  },
+  {
+    "id": "behoerde",
+    "word": "Behörde",
+    "article": "die",
+    "plural": "Behörden",
+    "translations": {
+      "en": "authority, government office",
+      "fa": "اداره‌ی دولتی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Behörde).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Behörde).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Behörde).",
+      "simple": {
+        "en": "Just learn it: die Behörde.",
+        "fa": "فقط حفظش کنید: die Behörde.",
+        "de": "Einfach lernen: die Behörde."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Behörde braucht meinen Pass.",
+      "en": "The authority needs my passport.",
+      "fa": "اداره پاسپورت من را لازم دارد."
+    },
+    "category": "services",
+    "subcategory": "office",
+    "level": "A1"
+  },
+  {
+    "id": "formular",
+    "word": "Formular",
+    "article": "das",
+    "plural": "Formulare",
+    "translations": {
+      "en": "form",
+      "fa": "فرم"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Formular).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Formular).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Formular).",
+      "simple": {
+        "en": "Just learn it: das Formular.",
+        "fa": "فقط حفظش کنید: das Formular.",
+        "de": "Einfach lernen: das Formular."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Bitte füllen Sie das Formular aus.",
+      "en": "Please fill in the form.",
+      "fa": "لطفاً فرم را پر کنید."
+    },
+    "category": "services",
+    "subcategory": "office",
+    "level": "A1"
+  },
+  {
+    "id": "antrag",
+    "word": "Antrag",
+    "article": "der",
+    "plural": "Anträge",
+    "translations": {
+      "en": "application",
+      "fa": "درخواست (رسمی)"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Antrag).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Antrag).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Antrag).",
+      "simple": {
+        "en": "Just learn it: der Antrag.",
+        "fa": "فقط حفظش کنید: der Antrag.",
+        "de": "Einfach lernen: der Antrag."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich stelle einen Antrag.",
+      "en": "I am submitting an application.",
+      "fa": "من یک درخواست رسمی می‌دهم."
+    },
+    "category": "services",
+    "subcategory": "office",
+    "level": "A1"
+  },
+  {
+    "id": "unterschrift",
+    "word": "Unterschrift",
+    "article": "die",
+    "plural": "Unterschriften",
+    "translations": {
+      "en": "signature",
+      "fa": "امضا"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Unterschrift).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Unterschrift).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Unterschrift).",
+      "simple": {
+        "en": "Just learn it: die Unterschrift.",
+        "fa": "فقط حفظش کنید: die Unterschrift.",
+        "de": "Einfach lernen: die Unterschrift."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Hier fehlt noch Ihre Unterschrift.",
+      "en": "Your signature is still missing here.",
+      "fa": "اینجا هنوز امضای شما نیست."
+    },
+    "category": "services",
+    "subcategory": "office",
+    "level": "A1"
+  },
+  {
+    "id": "ausweis",
+    "word": "Ausweis",
+    "article": "der",
+    "plural": "Ausweise",
+    "translations": {
+      "en": "ID card",
+      "fa": "کارت شناسایی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Ausweis).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Ausweis).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Ausweis).",
+      "simple": {
+        "en": "Just learn it: der Ausweis.",
+        "fa": "فقط حفظش کنید: der Ausweis.",
+        "de": "Einfach lernen: der Ausweis."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Haben Sie einen Ausweis dabei?",
+      "en": "Do you have an ID card with you?",
+      "fa": "کارت شناسایی همراهتان هست؟"
+    },
+    "category": "services",
+    "subcategory": "office",
+    "level": "A1"
+  },
+  {
+    "id": "reisepass",
+    "word": "Reisepass",
+    "article": "der",
+    "plural": "Reisepässe",
+    "translations": {
+      "en": "passport",
+      "fa": "پاسپورت، گذرنامه"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Reise + Pass): the last part decides the article, der Pass → der Reisepass.",
+      "fa": "اسم مرکب (Reise + Pass): بخش آخر آرتیکل را تعیین می‌کند، der Pass ← der Reisepass.",
+      "de": "Zusammengesetztes Nomen (Reise + Pass): Das letzte Wort bestimmt den Artikel, der Pass → der Reisepass.",
+      "simple": {
+        "en": "Last part decides: der Pass → der Reisepass.",
+        "fa": "بخش آخر تعیین می‌کند: der Pass ← der Reisepass.",
+        "de": "Das letzte Wort entscheidet: der Pass → der Reisepass."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Mein Reisepass ist noch gültig.",
+      "en": "My passport is still valid.",
+      "fa": "پاسپورت من هنوز معتبر است."
+    },
+    "category": "services",
+    "subcategory": "office",
+    "level": "A1"
+  },
+  {
+    "id": "anmeldung",
+    "word": "Anmeldung",
+    "article": "die",
+    "plural": "Anmeldungen",
+    "translations": {
+      "en": "registration",
+      "fa": "ثبت‌نام، ثبت محل سکونت"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ung are always die, and the plural adds -en (die Anmeldung).",
+      "fa": "اسم‌هایی که به -ung ختم می‌شوند همیشه die هستند و جمعشان -en می‌گیرد (die Anmeldung).",
+      "de": "Nomen auf -ung sind immer die, der Plural endet auf -en (die Anmeldung).",
+      "simple": {
+        "en": "-ung → always die.",
+        "fa": "-ung ← همیشه die.",
+        "de": "-ung → immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Anmeldung ist im Rathaus.",
+      "en": "Registration is at the town hall.",
+      "fa": "ثبت محل سکونت در شهرداری انجام می‌شود."
+    },
+    "category": "services",
+    "subcategory": "office",
+    "level": "A1"
+  },
+  {
+    "id": "kopie",
+    "word": "Kopie",
+    "article": "die",
+    "plural": "Kopien",
+    "translations": {
+      "en": "copy",
+      "fa": "کپی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Kopie).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Kopie).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Kopie).",
+      "simple": {
+        "en": "Just learn it: die Kopie.",
+        "fa": "فقط حفظش کنید: die Kopie.",
+        "de": "Einfach lernen: die Kopie."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich brauche zwei Kopien.",
+      "en": "I need two copies.",
+      "fa": "من دو تا کپی لازم دارم."
+    },
+    "category": "services",
+    "subcategory": "office",
+    "level": "A1"
+  },
+  {
+    "id": "vorname",
+    "word": "Vorname",
+    "article": "der",
+    "plural": "Vornamen",
+    "translations": {
+      "en": "first name",
+      "fa": "نام (اسم کوچک)"
+    },
+    "grammarRule": {
+      "en": "Compound noun (vor + Name): the last part decides the article, der Name → der Vorname.",
+      "fa": "اسم مرکب (vor + Name): بخش آخر آرتیکل را تعیین می‌کند، der Name ← der Vorname.",
+      "de": "Zusammengesetztes Nomen (vor + Name): Das letzte Wort bestimmt den Artikel, der Name → der Vorname.",
+      "simple": {
+        "en": "Last part decides: der Name → der Vorname.",
+        "fa": "بخش آخر تعیین می‌کند: der Name ← der Vorname.",
+        "de": "Das letzte Wort entscheidet: der Name → der Vorname."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Mein Vorname ist Sara.",
+      "en": "My first name is Sara.",
+      "fa": "اسم کوچک من سارا است."
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "nachname",
+    "word": "Nachname",
+    "article": "der",
+    "plural": "Nachnamen",
+    "translations": {
+      "en": "surname, last name",
+      "fa": "نام خانوادگی"
+    },
+    "grammarRule": {
+      "en": "Compound noun (nach + Name): the last part decides the article, der Name → der Nachname.",
+      "fa": "اسم مرکب (nach + Name): بخش آخر آرتیکل را تعیین می‌کند، der Name ← der Nachname.",
+      "de": "Zusammengesetztes Nomen (nach + Name): Das letzte Wort bestimmt den Artikel, der Name → der Nachname.",
+      "simple": {
+        "en": "Last part decides: der Name → der Nachname.",
+        "fa": "بخش آخر تعیین می‌کند: der Name ← der Nachname.",
+        "de": "Das letzte Wort entscheidet: der Name → der Nachname."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wie ist Ihr Nachname?",
+      "en": "What is your surname?",
+      "fa": "نام خانوادگی شما چیست؟"
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "geburtsdatum",
+    "word": "Geburtsdatum",
+    "article": "das",
+    "plural": "Geburtsdaten",
+    "translations": {
+      "en": "date of birth",
+      "fa": "تاریخ تولد"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Geburt + Datum): the last part decides the article, das Datum → das Geburtsdatum.",
+      "fa": "اسم مرکب (Geburt + Datum): بخش آخر آرتیکل را تعیین می‌کند، das Datum ← das Geburtsdatum.",
+      "de": "Zusammengesetztes Nomen (Geburt + Datum): Das letzte Wort bestimmt den Artikel, das Datum → das Geburtsdatum.",
+      "simple": {
+        "en": "Last part decides: das Datum → das Geburtsdatum.",
+        "fa": "بخش آخر تعیین می‌کند: das Datum ← das Geburtsdatum.",
+        "de": "Das letzte Wort entscheidet: das Datum → das Geburtsdatum."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Schreiben Sie hier Ihr Geburtsdatum.",
+      "en": "Write your date of birth here.",
+      "fa": "تاریخ تولدتان را اینجا بنویسید."
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "geburtsort",
+    "word": "Geburtsort",
+    "article": "der",
+    "plural": "Geburtsorte",
+    "translations": {
+      "en": "place of birth",
+      "fa": "محل تولد"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Geburt + Ort): the last part decides the article, der Ort → der Geburtsort.",
+      "fa": "اسم مرکب (Geburt + Ort): بخش آخر آرتیکل را تعیین می‌کند، der Ort ← der Geburtsort.",
+      "de": "Zusammengesetztes Nomen (Geburt + Ort): Das letzte Wort bestimmt den Artikel, der Ort → der Geburtsort.",
+      "simple": {
+        "en": "Last part decides: der Ort → der Geburtsort.",
+        "fa": "بخش آخر تعیین می‌کند: der Ort ← der Geburtsort.",
+        "de": "Das letzte Wort entscheidet: der Ort → der Geburtsort."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Mein Geburtsort ist Teheran.",
+      "en": "My place of birth is Tehran.",
+      "fa": "محل تولد من تهران است."
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "staatsangehoerigkeit",
+    "word": "Staatsangehörigkeit",
+    "article": "die",
+    "plural": "Staatsangehörigkeiten",
+    "translations": {
+      "en": "nationality, citizenship",
+      "fa": "تابعیت، ملیت"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -keit are always die, and the plural adds -en (die Staatsangehörigkeit).",
+      "fa": "اسم‌هایی که به -keit ختم می‌شوند همیشه die هستند و جمعشان -en می‌گیرد (die Staatsangehörigkeit).",
+      "de": "Nomen auf -keit sind immer die, der Plural endet auf -en (die Staatsangehörigkeit).",
+      "simple": {
+        "en": "-keit → always die.",
+        "fa": "-keit ← همیشه die.",
+        "de": "-keit → immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Welche Staatsangehörigkeit haben Sie?",
+      "en": "What nationality are you?",
+      "fa": "تابعیت شما چیست؟"
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "wohnort",
+    "word": "Wohnort",
+    "article": "der",
+    "plural": "Wohnorte",
+    "translations": {
+      "en": "place of residence",
+      "fa": "محل سکونت"
+    },
+    "grammarRule": {
+      "en": "Compound noun (wohnen + Ort): the last part decides the article, der Ort → der Wohnort.",
+      "fa": "اسم مرکب (wohnen + Ort): بخش آخر آرتیکل را تعیین می‌کند، der Ort ← der Wohnort.",
+      "de": "Zusammengesetztes Nomen (wohnen + Ort): Das letzte Wort bestimmt den Artikel, der Ort → der Wohnort.",
+      "simple": {
+        "en": "Last part decides: der Ort → der Wohnort.",
+        "fa": "بخش آخر تعیین می‌کند: der Ort ← der Wohnort.",
+        "de": "Das letzte Wort entscheidet: der Ort → der Wohnort."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Mein Wohnort ist jetzt Hamburg.",
+      "en": "My place of residence is now Hamburg.",
+      "fa": "محل سکونت من الان هامبورگ است."
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "postleitzahl",
+    "word": "Postleitzahl",
+    "article": "die",
+    "plural": "Postleitzahlen",
+    "translations": {
+      "en": "postcode, ZIP code",
+      "fa": "کد پستی"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Postleit- + Zahl): the last part decides the article, die Zahl → die Postleitzahl.",
+      "fa": "اسم مرکب (Postleit- + Zahl): بخش آخر آرتیکل را تعیین می‌کند، die Zahl ← die Postleitzahl.",
+      "de": "Zusammengesetztes Nomen (Postleit- + Zahl): Das letzte Wort bestimmt den Artikel, die Zahl → die Postleitzahl.",
+      "simple": {
+        "en": "Last part decides: die Zahl → die Postleitzahl.",
+        "fa": "بخش آخر تعیین می‌کند: die Zahl ← die Postleitzahl.",
+        "de": "Das letzte Wort entscheidet: die Zahl → die Postleitzahl."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wie ist die Postleitzahl hier?",
+      "en": "What is the postcode here?",
+      "fa": "کد پستی اینجا چند است؟"
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "hausnummer",
+    "word": "Hausnummer",
+    "article": "die",
+    "plural": "Hausnummern",
+    "translations": {
+      "en": "house number",
+      "fa": "پلاک خانه"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Haus + Nummer): the last part decides the article, die Nummer → die Hausnummer.",
+      "fa": "اسم مرکب (Haus + Nummer): بخش آخر آرتیکل را تعیین می‌کند، die Nummer ← die Hausnummer.",
+      "de": "Zusammengesetztes Nomen (Haus + Nummer): Das letzte Wort bestimmt den Artikel, die Nummer → die Hausnummer.",
+      "simple": {
+        "en": "Last part decides: die Nummer → die Hausnummer.",
+        "fa": "بخش آخر تعیین می‌کند: die Nummer ← die Hausnummer.",
+        "de": "Das letzte Wort entscheidet: die Nummer → die Hausnummer."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Hausnummer ist zwölf.",
+      "en": "The house number is twelve.",
+      "fa": "پلاک خانه دوازده است."
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "telefonnummer",
+    "word": "Telefonnummer",
+    "article": "die",
+    "plural": "Telefonnummern",
+    "translations": {
+      "en": "phone number",
+      "fa": "شماره تلفن"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Telefon + Nummer): the last part decides the article, die Nummer → die Telefonnummer.",
+      "fa": "اسم مرکب (Telefon + Nummer): بخش آخر آرتیکل را تعیین می‌کند، die Nummer ← die Telefonnummer.",
+      "de": "Zusammengesetztes Nomen (Telefon + Nummer): Das letzte Wort bestimmt den Artikel, die Nummer → die Telefonnummer.",
+      "simple": {
+        "en": "Last part decides: die Nummer → die Telefonnummer.",
+        "fa": "بخش آخر تعیین می‌کند: die Nummer ← die Telefonnummer.",
+        "de": "Das letzte Wort entscheidet: die Nummer → die Telefonnummer."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wie ist Ihre Telefonnummer?",
+      "en": "What is your phone number?",
+      "fa": "شماره تلفن شما چند است؟"
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "post",
+    "word": "Post",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "post, post office",
+      "fa": "پست، اداره‌ی پست"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Post).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Post).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Post).",
+      "simple": {
+        "en": "Just learn it: die Post.",
+        "fa": "فقط حفظش کنید: die Post.",
+        "de": "Einfach lernen: die Post."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Post ist heute geschlossen.",
+      "en": "The post office is closed today.",
+      "fa": "اداره‌ی پست امروز بسته است."
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "email",
+    "word": "E-Mail",
+    "article": "die",
+    "plural": "E-Mails",
+    "translations": {
+      "en": "email",
+      "fa": "ایمیل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die E-Mail).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die E-Mail).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die E-Mail).",
+      "simple": {
+        "en": "Just learn it: die E-Mail.",
+        "fa": "فقط حفظش کنید: die E-Mail.",
+        "de": "Einfach lernen: die E-Mail."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich schreibe dir eine E-Mail.",
+      "en": "I am writing you an email.",
+      "fa": "برایت یک ایمیل می‌نویسم."
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "nachricht",
+    "word": "Nachricht",
+    "article": "die",
+    "plural": "Nachrichten",
+    "translations": {
+      "en": "message; news (plural)",
+      "fa": "پیام؛ اخبار (جمع)"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Nachricht).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Nachricht).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Nachricht).",
+      "simple": {
+        "en": "Just learn it: die Nachricht.",
+        "fa": "فقط حفظش کنید: die Nachricht.",
+        "de": "Einfach lernen: die Nachricht."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich habe eine Nachricht für dich.",
+      "en": "I have a message for you.",
+      "fa": "یک پیام برایت دارم."
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "anruf",
+    "word": "Anruf",
+    "article": "der",
+    "plural": "Anrufe",
+    "translations": {
+      "en": "phone call",
+      "fa": "تماس تلفنی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Anruf).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Anruf).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Anruf).",
+      "simple": {
+        "en": "Just learn it: der Anruf.",
+        "fa": "فقط حفظش کنید: der Anruf.",
+        "de": "Einfach lernen: der Anruf."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Danke für deinen Anruf!",
+      "en": "Thanks for your call!",
+      "fa": "ممنون که زنگ زدی!"
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "telefon",
+    "word": "Telefon",
+    "article": "das",
+    "plural": "Telefone",
+    "translations": {
+      "en": "telephone",
+      "fa": "تلفن"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Telefon).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Telefon).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Telefon).",
+      "simple": {
+        "en": "Just learn it: das Telefon.",
+        "fa": "فقط حفظش کنید: das Telefon.",
+        "de": "Einfach lernen: das Telefon."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Telefon klingelt.",
+      "en": "The phone is ringing.",
+      "fa": "تلفن زنگ می‌زند."
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "anrufbeantworter",
+    "word": "Anrufbeantworter",
+    "article": "der",
+    "plural": "Anrufbeantworter",
+    "translations": {
+      "en": "answering machine",
+      "fa": "پیغام‌گیر"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Anruf + Beantworter): the last part decides the article, der Beantworter → der Anrufbeantworter.",
+      "fa": "اسم مرکب (Anruf + Beantworter): بخش آخر آرتیکل را تعیین می‌کند، der Beantworter ← der Anrufbeantworter.",
+      "de": "Zusammengesetztes Nomen (Anruf + Beantworter): Das letzte Wort bestimmt den Artikel, der Beantworter → der Anrufbeantworter.",
+      "simple": {
+        "en": "Last part decides: der Beantworter → der Anrufbeantworter.",
+        "fa": "بخش آخر تعیین می‌کند: der Beantworter ← der Anrufbeantworter.",
+        "de": "Das letzte Wort entscheidet: der Beantworter → der Anrufbeantworter."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Sprich bitte auf den Anrufbeantworter.",
+      "en": "Please leave a message on the answering machine.",
+      "fa": "لطفاً روی پیغام‌گیر پیغام بگذار."
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "gruss",
+    "word": "Gruß",
+    "article": "der",
+    "plural": "Grüße",
+    "translations": {
+      "en": "greeting, regards",
+      "fa": "سلام، درود"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Gruß).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Gruß).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Gruß).",
+      "simple": {
+        "en": "Just learn it: der Gruß.",
+        "fa": "فقط حفظش کنید: der Gruß.",
+        "de": "Einfach lernen: der Gruß."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Viele Grüße aus Berlin!",
+      "en": "Best wishes from Berlin!",
+      "fa": "از برلین سلام می‌رسانیم!"
+    },
+    "category": "services",
+    "subcategory": "post",
+    "level": "A1"
+  },
+  {
+    "id": "gebuehr",
+    "word": "Gebühr",
+    "article": "die",
+    "plural": "Gebühren",
+    "translations": {
+      "en": "fee",
+      "fa": "هزینه، کارمزد"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Gebühr).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Gebühr).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Gebühr).",
+      "simple": {
+        "en": "Just learn it: die Gebühr.",
+        "fa": "فقط حفظش کنید: die Gebühr.",
+        "de": "Einfach lernen: die Gebühr."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Gebühr kostet zehn Euro.",
+      "en": "The fee is ten euros.",
+      "fa": "کارمزدش ده یورو است."
+    },
+    "category": "services",
+    "subcategory": "office",
+    "level": "A1"
+  },
+  {
+    "id": "pass",
+    "word": "Pass",
+    "article": "der",
+    "plural": "Pässe",
+    "translations": {
+      "en": "passport",
+      "fa": "گذرنامه، پاسپورت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Pass).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Pass).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Pass).",
+      "simple": {
+        "en": "Just learn it: der Pass.",
+        "fa": "فقط حفظش کنید: der Pass.",
+        "de": "Einfach lernen: der Pass."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Hier ist mein Pass.",
+      "en": "Here is my passport.",
+      "fa": "این گذرنامه‌ی من است."
+    },
+    "category": "services",
+    "subcategory": "office",
+    "level": "A1"
+  },
+  {
+    "id": "visum",
+    "word": "Visum",
+    "article": "das",
+    "plural": "Visa",
+    "translations": {
+      "en": "visa",
+      "fa": "ویزا، روادید"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Visum).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Visum).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Visum).",
+      "simple": {
+        "en": "Just learn it: das Visum.",
+        "fa": "فقط حفظش کنید: das Visum.",
+        "de": "Einfach lernen: das Visum."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Brauche ich ein Visum?",
+      "en": "Do I need a visa?",
+      "fa": "آیا ویزا لازم دارم؟"
+    },
+    "category": "services",
+    "subcategory": "office",
+    "level": "A1"
+  },
+  {
+    "id": "name",
+    "word": "Name",
+    "article": "der",
+    "plural": "Namen",
+    "translations": {
+      "en": "name",
+      "fa": "اسم، نام"
+    },
+    "grammarRule": {
+      "en": "Exception: most nouns ending in -e are feminine, but Name is masculine (der Name). Learn it as an exception.",
+      "fa": "استثنا: بیشتر اسم‌های ختم‌شده به -e مؤنث‌اند، اما Name مذکر است (der Name). آن را به‌عنوان استثنا حفظ کنید.",
+      "de": "Ausnahme: Die meisten Nomen auf -e sind feminin, aber Name ist maskulin (der Name). Lerne es als Ausnahme.",
+      "simple": {
+        "en": "Ends in -e but it is der: der Name.",
+        "fa": "به -e ختم می‌شود اما der است: der Name.",
+        "de": "Endet auf -e, ist aber der: der Name."
+      }
+    },
+    "ruleCategory": "exception",
+    "example": {
+      "de": "Wie ist Ihr Name?",
+      "en": "What is your name?",
+      "fa": "اسم شما چیست؟"
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "familienname",
+    "word": "Familienname",
+    "article": "der",
+    "plural": "Familiennamen",
+    "translations": {
+      "en": "surname, family name",
+      "fa": "نام خانوادگی"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Familie + Name): the last part decides the article, der Name → der Familienname.",
+      "fa": "اسم مرکب (Familie + Name): بخش آخر آرتیکل را تعیین می‌کند، der Name ← der Familienname.",
+      "de": "Zusammengesetztes Nomen (Familie + Name): Das letzte Wort bestimmt den Artikel, der Name → der Familienname.",
+      "simple": {
+        "en": "Last part decides: der Name → der Familienname.",
+        "fa": "بخش آخر تعیین می‌کند: der Name ← der Familienname.",
+        "de": "Das letzte Wort entscheidet: der Name → der Familienname."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Mein Familienname ist Weber.",
+      "en": "My surname is Weber.",
+      "fa": "نام خانوادگی من وبر است."
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "familienstand",
+    "word": "Familienstand",
+    "article": "der",
+    "plural": "–",
+    "translations": {
+      "en": "marital status",
+      "fa": "وضعیت تأهل"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Familie + Stand): the last part decides the article, der Stand → der Familienstand.",
+      "fa": "اسم مرکب (Familie + Stand): بخش آخر آرتیکل را تعیین می‌کند، der Stand ← der Familienstand.",
+      "de": "Zusammengesetztes Nomen (Familie + Stand): Das letzte Wort bestimmt den Artikel, der Stand → der Familienstand.",
+      "simple": {
+        "en": "Last part decides: der Stand → der Familienstand.",
+        "fa": "بخش آخر تعیین می‌کند: der Stand ← der Familienstand.",
+        "de": "Das letzte Wort entscheidet: der Stand → der Familienstand."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wie ist Ihr Familienstand?",
+      "en": "What is your marital status?",
+      "fa": "وضعیت تأهل شما چیست؟"
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "alter",
+    "word": "Alter",
+    "article": "das",
+    "plural": "–",
+    "translations": {
+      "en": "age",
+      "fa": "سن"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Alter).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Alter).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Alter).",
+      "simple": {
+        "en": "Just learn it: das Alter.",
+        "fa": "فقط حفظش کنید: das Alter.",
+        "de": "Einfach lernen: das Alter."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Bitte nennen Sie Ihr Alter.",
+      "en": "Please state your age.",
+      "fa": "لطفاً سن‌تان را بگویید."
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "geburtsjahr",
+    "word": "Geburtsjahr",
+    "article": "das",
+    "plural": "Geburtsjahre",
+    "translations": {
+      "en": "year of birth",
+      "fa": "سال تولد"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Geburt + Jahr): the last part decides the article, das Jahr → das Geburtsjahr.",
+      "fa": "اسم مرکب (Geburt + Jahr): بخش آخر آرتیکل را تعیین می‌کند، das Jahr ← das Geburtsjahr.",
+      "de": "Zusammengesetztes Nomen (Geburt + Jahr): Das letzte Wort bestimmt den Artikel, das Jahr → das Geburtsjahr.",
+      "simple": {
+        "en": "Last part decides: das Jahr → das Geburtsjahr.",
+        "fa": "بخش آخر تعیین می‌کند: das Jahr ← das Geburtsjahr.",
+        "de": "Das letzte Wort entscheidet: das Jahr → das Geburtsjahr."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Bitte schreiben Sie Ihr Geburtsjahr.",
+      "en": "Please write your year of birth.",
+      "fa": "لطفاً سال تولدتان را بنویسید."
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "heimat",
+    "word": "Heimat",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "home country, homeland",
+      "fa": "وطن، زادگاه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Heimat).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Heimat).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Heimat).",
+      "simple": {
+        "en": "Just learn it: die Heimat.",
+        "fa": "فقط حفظش کنید: die Heimat.",
+        "de": "Einfach lernen: die Heimat."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Meine Heimat ist der Iran.",
+      "en": "My homeland is Iran.",
+      "fa": "وطن من ایران است."
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "geschlecht",
+    "word": "Geschlecht",
+    "article": "das",
+    "plural": "Geschlechter",
+    "translations": {
+      "en": "sex, gender",
+      "fa": "جنسیت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Geschlecht).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Geschlecht).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Geschlecht).",
+      "simple": {
+        "en": "Just learn it: das Geschlecht.",
+        "fa": "فقط حفظش کنید: das Geschlecht.",
+        "de": "Einfach lernen: das Geschlecht."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Kreuzen Sie bitte Ihr Geschlecht an.",
+      "en": "Please tick your gender.",
+      "fa": "لطفاً جنسیت‌تان را علامت بزنید."
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  },
+  {
+    "id": "vorwahl",
+    "word": "Vorwahl",
+    "article": "die",
+    "plural": "Vorwahlen",
+    "translations": {
+      "en": "area code, dialling code",
+      "fa": "پیش‌شماره، کد شهر"
+    },
+    "grammarRule": {
+      "en": "Compound noun (vor + Wahl): the last part decides the article, die Wahl → die Vorwahl.",
+      "fa": "اسم مرکب (vor + Wahl): بخش آخر آرتیکل را تعیین می‌کند، die Wahl ← die Vorwahl.",
+      "de": "Zusammengesetztes Nomen (vor + Wahl): Das letzte Wort bestimmt den Artikel, die Wahl → die Vorwahl.",
+      "simple": {
+        "en": "Last part decides: die Wahl → die Vorwahl.",
+        "fa": "بخش آخر تعیین می‌کند: die Wahl ← die Vorwahl.",
+        "de": "Das letzte Wort entscheidet: die Wahl → die Vorwahl."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wie ist die Vorwahl von Berlin?",
+      "en": "What is the area code for Berlin?",
+      "fa": "پیش‌شماره‌ی برلین چند است؟"
+    },
+    "category": "services",
+    "subcategory": "personal-data",
+    "level": "A1"
+  }
+]

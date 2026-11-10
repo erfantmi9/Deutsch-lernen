@@ -373,5 +373,560 @@
       "fa": "شاید فردا بیایم."
     },
     "level": "A1"
+  },
+  {
+    "id": "da",
+    "word": "da",
+    "kind": "place",
+    "translations": {
+      "en": "there, here (present)",
+      "fa": "آنجا، اینجا (حاضر)"
+    },
+    "example": {
+      "de": "Ist Frau Berg heute da?",
+      "en": "Is Ms Berg in today?",
+      "fa": "خانم برگ امروز هست؟"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "danach",
+    "word": "danach",
+    "kind": "time",
+    "translations": {
+      "en": "afterwards, after that",
+      "fa": "بعد از آن"
+    },
+    "example": {
+      "de": "Danach trinken wir Kaffee.",
+      "en": "After that we drink coffee.",
+      "fa": "بعد از آن قهوه می‌خوریم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "zuerst",
+    "word": "zuerst",
+    "kind": "time",
+    "translations": {
+      "en": "first, at first",
+      "fa": "اول، اول از همه"
+    },
+    "example": {
+      "de": "Zuerst lerne ich die Wörter.",
+      "en": "First I learn the words.",
+      "fa": "اول کلمه‌ها را یاد می‌گیرم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "zuletzt",
+    "word": "zuletzt",
+    "kind": "time",
+    "translations": {
+      "en": "last, finally",
+      "fa": "در آخر، آخر از همه"
+    },
+    "example": {
+      "de": "Zuletzt kommt der Nachtisch.",
+      "en": "Dessert comes last.",
+      "fa": "آخر از همه دسر می‌آید."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "etwa",
+    "word": "etwa",
+    "kind": "degree",
+    "translations": {
+      "en": "about, approximately",
+      "fa": "حدود، تقریباً"
+    },
+    "example": {
+      "de": "Die Fahrt dauert etwa zwei Stunden.",
+      "en": "The journey takes about two hours.",
+      "fa": "سفر حدود دو ساعت طول می‌کشد."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "fast",
+    "word": "fast",
+    "kind": "degree",
+    "translations": {
+      "en": "almost",
+      "fa": "تقریباً، نزدیک به"
+    },
+    "example": {
+      "de": "Ich bin fast fertig.",
+      "en": "I am almost done.",
+      "fa": "کارم تقریباً تمام است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "genau",
+    "word": "genau",
+    "kind": "manner",
+    "translations": {
+      "en": "exactly",
+      "fa": "دقیقاً"
+    },
+    "example": {
+      "de": "Das ist genau richtig.",
+      "en": "That is exactly right.",
+      "fa": "این دقیقاً درست است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "gleich",
+    "word": "gleich",
+    "kind": "time",
+    "translations": {
+      "en": "in a moment, right away",
+      "fa": "الان، تا چند لحظهٔ دیگر"
+    },
+    "example": {
+      "de": "Ich komme gleich.",
+      "en": "I am coming right away.",
+      "fa": "الان می‌آیم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "sofort",
+    "word": "sofort",
+    "kind": "time",
+    "translations": {
+      "en": "immediately",
+      "fa": "فوراً، همین الان"
+    },
+    "example": {
+      "de": "Bitte kommen Sie sofort.",
+      "en": "Please come immediately.",
+      "fa": "لطفاً فوراً بیایید."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "hinten",
+    "word": "hinten",
+    "kind": "place",
+    "translations": {
+      "en": "at the back, behind",
+      "fa": "عقب، پشت"
+    },
+    "example": {
+      "de": "Der Ausgang ist hinten.",
+      "en": "The exit is at the back.",
+      "fa": "در خروجی عقب است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "vorne",
+    "word": "vorne",
+    "kind": "place",
+    "translations": {
+      "en": "at the front",
+      "fa": "جلو"
+    },
+    "example": {
+      "de": "Wir sitzen ganz vorne.",
+      "en": "We sit right at the front.",
+      "fa": "ما ردیف جلو می‌نشینیم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "leider",
+    "word": "leider",
+    "kind": "manner",
+    "translations": {
+      "en": "unfortunately",
+      "fa": "متأسفانه"
+    },
+    "example": {
+      "de": "Ich habe leider keine Zeit.",
+      "en": "Unfortunately I have no time.",
+      "fa": "متأسفانه وقت ندارم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "meistens",
+    "word": "meistens",
+    "kind": "frequency",
+    "translations": {
+      "en": "mostly, usually",
+      "fa": "معمولاً، بیشتر وقت‌ها"
+    },
+    "example": {
+      "de": "Ich fahre meistens mit dem Bus.",
+      "en": "I usually go by bus.",
+      "fa": "معمولاً با اتوبوس می‌روم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "selten",
+    "word": "selten",
+    "kind": "frequency",
+    "translations": {
+      "en": "rarely",
+      "fa": "به‌ندرت، کم"
+    },
+    "example": {
+      "de": "Wir gehen selten ins Kino.",
+      "en": "We rarely go to the cinema.",
+      "fa": "ما به‌ندرت به سینما می‌رویم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "morgens",
+    "word": "morgens",
+    "kind": "time",
+    "translations": {
+      "en": "in the morning(s)",
+      "fa": "صبح‌ها"
+    },
+    "example": {
+      "de": "Morgens trinke ich Tee.",
+      "en": "In the morning I drink tea.",
+      "fa": "صبح‌ها چای می‌نوشم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "mittags",
+    "word": "mittags",
+    "kind": "time",
+    "translations": {
+      "en": "at noon, at midday",
+      "fa": "ظهرها"
+    },
+    "example": {
+      "de": "Mittags esse ich in der Kantine.",
+      "en": "At midday I eat in the canteen.",
+      "fa": "ظهرها در غذاخوری غذا می‌خورم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "abends",
+    "word": "abends",
+    "kind": "time",
+    "translations": {
+      "en": "in the evening(s)",
+      "fa": "عصرها، شب‌ها"
+    },
+    "example": {
+      "de": "Abends sehe ich fern.",
+      "en": "In the evening I watch TV.",
+      "fa": "شب‌ها تلویزیون تماشا می‌کنم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "nachts",
+    "word": "nachts",
+    "kind": "time",
+    "translations": {
+      "en": "at night",
+      "fa": "شب‌ها (دیروقت)"
+    },
+    "example": {
+      "de": "Nachts ist es hier sehr ruhig.",
+      "en": "At night it is very quiet here.",
+      "fa": "شب‌ها اینجا خیلی آرام است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "natuerlich",
+    "word": "natürlich",
+    "kind": "manner",
+    "translations": {
+      "en": "of course, naturally",
+      "fa": "البته، طبیعتاً"
+    },
+    "example": {
+      "de": "Natürlich helfe ich dir.",
+      "en": "Of course I will help you.",
+      "fa": "البته که کمکت می‌کنم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "noch",
+    "word": "noch",
+    "kind": "time",
+    "translations": {
+      "en": "still, yet",
+      "fa": "هنوز"
+    },
+    "example": {
+      "de": "Ich wohne noch bei meinen Eltern.",
+      "en": "I still live with my parents.",
+      "fa": "هنوز پیش پدر و مادرم زندگی می‌کنم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "schon",
+    "word": "schon",
+    "kind": "time",
+    "translations": {
+      "en": "already",
+      "fa": "دیگر، تا حالا"
+    },
+    "example": {
+      "de": "Ich bin schon zu Hause.",
+      "en": "I am already at home.",
+      "fa": "من دیگر خانه‌ام."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "wieder",
+    "word": "wieder",
+    "kind": "frequency",
+    "translations": {
+      "en": "again",
+      "fa": "دوباره"
+    },
+    "example": {
+      "de": "Morgen regnet es wieder.",
+      "en": "Tomorrow it will rain again.",
+      "fa": "فردا دوباره باران می‌آید."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "wirklich",
+    "word": "wirklich",
+    "kind": "degree",
+    "translations": {
+      "en": "really",
+      "fa": "واقعاً"
+    },
+    "example": {
+      "de": "Das Essen ist wirklich lecker.",
+      "en": "The food is really tasty.",
+      "fa": "غذا واقعاً خوشمزه است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "zurueck",
+    "word": "zurück",
+    "kind": "place",
+    "translations": {
+      "en": "back",
+      "fa": "برگشت، به عقب"
+    },
+    "example": {
+      "de": "Ich bin um sechs zurück.",
+      "en": "I will be back at six.",
+      "fa": "ساعت شش برمی‌گردم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "ueberall",
+    "word": "überall",
+    "kind": "place",
+    "translations": {
+      "en": "everywhere",
+      "fa": "همه‌جا"
+    },
+    "example": {
+      "de": "Überall liegt Schnee.",
+      "en": "There is snow everywhere.",
+      "fa": "همه‌جا برف نشسته است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "vorher",
+    "word": "vorher",
+    "kind": "time",
+    "translations": {
+      "en": "before, beforehand",
+      "fa": "قبلش، از قبل"
+    },
+    "example": {
+      "de": "Ruf mich bitte vorher an.",
+      "en": "Please call me beforehand.",
+      "fa": "لطفاً قبلش به من زنگ بزن."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "nachher",
+    "word": "nachher",
+    "kind": "time",
+    "translations": {
+      "en": "afterwards, later",
+      "fa": "بعداً، بعدش"
+    },
+    "example": {
+      "de": "Wir sehen uns nachher.",
+      "en": "See you later.",
+      "fa": "بعداً همدیگر را می‌بینیم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "besonders",
+    "word": "besonders",
+    "kind": "degree",
+    "translations": {
+      "en": "especially",
+      "fa": "به‌خصوص، مخصوصاً"
+    },
+    "example": {
+      "de": "Heute ist es besonders kalt.",
+      "en": "Today it is especially cold.",
+      "fa": "امروز هوا به‌خصوص سرد است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "ziemlich",
+    "word": "ziemlich",
+    "kind": "degree",
+    "translations": {
+      "en": "quite, rather",
+      "fa": "نسبتاً"
+    },
+    "example": {
+      "de": "Die Wohnung ist ziemlich teuer.",
+      "en": "The flat is rather expensive.",
+      "fa": "آپارتمان نسبتاً گران است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "ganz",
+    "word": "ganz",
+    "kind": "degree",
+    "translations": {
+      "en": "quite, completely",
+      "fa": "کاملاً، کلاً"
+    },
+    "example": {
+      "de": "Das Auto ist ganz neu.",
+      "en": "The car is completely new.",
+      "fa": "ماشین کاملاً نو است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "erst",
+    "word": "erst",
+    "kind": "time",
+    "translations": {
+      "en": "only (not until), first",
+      "fa": "تازه، اول"
+    },
+    "example": {
+      "de": "Der Kurs beginnt erst um zehn.",
+      "en": "The course doesn't start until ten.",
+      "fa": "کلاس تازه ساعت ده شروع می‌شود."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "einmal",
+    "word": "einmal",
+    "kind": "frequency",
+    "translations": {
+      "en": "once",
+      "fa": "یک بار"
+    },
+    "example": {
+      "de": "Ich war einmal in Wien.",
+      "en": "I was in Vienna once.",
+      "fa": "من یک بار در وین بوده‌ام."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "uebermorgen",
+    "word": "übermorgen",
+    "kind": "time",
+    "translations": {
+      "en": "the day after tomorrow",
+      "fa": "پس‌فردا"
+    },
+    "example": {
+      "de": "Übermorgen fliege ich nach Rom.",
+      "en": "The day after tomorrow I fly to Rome.",
+      "fa": "پس‌فردا به رم پرواز می‌کنم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "vorgestern",
+    "word": "vorgestern",
+    "kind": "time",
+    "translations": {
+      "en": "the day before yesterday",
+      "fa": "پریروز"
+    },
+    "example": {
+      "de": "Vorgestern war ich krank.",
+      "en": "The day before yesterday I was ill.",
+      "fa": "پریروز مریض بودم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "frueher",
+    "word": "früher",
+    "kind": "time",
+    "translations": {
+      "en": "earlier, in the past",
+      "fa": "قبلاً، در گذشته"
+    },
+    "example": {
+      "de": "Früher habe ich in Teheran gewohnt.",
+      "en": "I used to live in Tehran.",
+      "fa": "قبلاً در تهران زندگی می‌کردم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "drinnen",
+    "word": "drinnen",
+    "kind": "place",
+    "translations": {
+      "en": "inside, indoors",
+      "fa": "داخل، توی خانه"
+    },
+    "example": {
+      "de": "Heute essen wir drinnen.",
+      "en": "Today we eat inside.",
+      "fa": "امروز داخل غذا می‌خوریم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "unbedingt",
+    "word": "unbedingt",
+    "kind": "manner",
+    "translations": {
+      "en": "definitely, absolutely",
+      "fa": "حتماً"
+    },
+    "example": {
+      "de": "Du musst unbedingt kommen!",
+      "en": "You really must come!",
+      "fa": "حتماً باید بیایی!"
+    },
+    "level": "A1"
   }
 ]

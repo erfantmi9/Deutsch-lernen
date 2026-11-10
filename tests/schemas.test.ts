@@ -18,6 +18,7 @@ const noun = {
   ruleCategory: "learn",
   example: i3,
   category: "home",
+  subcategory: "furniture",
   level: "A1",
 };
 
@@ -27,6 +28,7 @@ const verb = {
   infinitive: "machen",
   level: "A1",
   category: "daily",
+  usage: "common",
   translations: { en: "to do", fa: "انجام دادن" },
   type: "regular",
   present: conj,
@@ -57,6 +59,13 @@ describe("vocab schema", () => {
   it("rejects duplicate ids in a list", () => {
     expect(VocabListSchema.safeParse([noun, noun]).success).toBe(false);
   });
+  it("requires a known subcategory where the category has sub-groups, and forbids it elsewhere", () => {
+    const { subcategory: _omit, ...withoutSub } = noun;
+    expect(VocabEntrySchema.safeParse(withoutSub).success).toBe(false);
+    expect(VocabEntrySchema.safeParse({ ...noun, subcategory: "kitchen-sink" }).success).toBe(false);
+    expect(VocabEntrySchema.safeParse({ ...noun, category: "jobs" }).success).toBe(false);
+    expect(VocabEntrySchema.safeParse({ ...withoutSub, category: "jobs" }).success).toBe(true);
+  });
 });
 
 describe("verb schema", () => {
@@ -78,16 +87,16 @@ describe("sentence schema", () => {
 });
 
 describe("shipped data", () => {
-  it("has 256 unique nouns across 15 categories, including the legacy ids", () => {
-    expect(vocab).toHaveLength(256);
-    expect(new Set(vocab.map((w) => w.category)).size).toBe(15);
+  it("has 656 unique nouns across 19 categories, including the legacy ids", () => {
+    expect(vocab).toHaveLength(656);
+    expect(new Set(vocab.map((w) => w.category)).size).toBe(19);
     const ids = new Set(vocab.map((w) => w.id));
     for (const id of ["mann", "frau", "maedchen", "junge", "kind", "zeitung", "universitaet", "montag", "essen", "lehrerin"]) {
       expect(ids.has(id)).toBe(true);
     }
   });
-  it("keeps the 12 original verbs first (40 in total) and 15 sentences", () => {
-    expect(verbs).toHaveLength(40);
+  it("keeps the 12 original verbs first (162 in total) and 15 sentences", () => {
+    expect(verbs).toHaveLength(162);
     expect(verbs.slice(0, 12).map((v) => v.id)).toEqual([
       "sein", "haben", "machen", "wohnen", "heissen", "gehen", "fahren", "essen", "sprechen", "koennen", "muessen", "aufstehen",
     ]);

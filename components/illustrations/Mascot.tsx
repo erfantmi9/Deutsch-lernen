@@ -269,7 +269,7 @@ function Behind({ mood }: { mood: Mood }) {
       <>
         <rect x={4} y={6} width={46} height={22} rx={11} fill={C.blueTint} />
         <path d="M38 27l8 9-1-9z" fill={C.blueTint} />
-        <text x={27} y={21.5} textAnchor="middle" fontSize={11} fontWeight={800} fill={C.blue} fontFamily="inherit">
+        <text x={27} y={21.5} direction="ltr" textAnchor="middle" fontSize={11} fontWeight={800} fill={C.blue} fontFamily="inherit">
           Hallo!
         </text>
       </>
@@ -284,7 +284,7 @@ function Behind({ mood }: { mood: Mood }) {
         ].map((d) => (
           <g key={d.n}>
             <circle cx={d.x} cy={d.y} r={8} fill={d.c} />
-            <text x={d.x} y={d.y + 4} textAnchor="middle" fontSize={11} fontWeight={800} fill={C.white} fontFamily="inherit">
+            <text x={d.x} y={d.y + 4} direction="ltr" textAnchor="middle" fontSize={11} fontWeight={800} fill={C.white} fontFamily="inherit">
               {d.n}
             </text>
           </g>

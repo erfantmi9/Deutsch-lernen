@@ -1,0 +1,136 @@
+[
+  {
+    "id": "separable-01",
+    "lessonId": "separable",
+    "type": "choice",
+    "prompt": { "en": "Choose the verb for position 2.", "fa": "فعل جایگاه دوم را انتخاب کن.", "de": "Wähle das Verb für Position 2." },
+    "sentenceDe": "Ich ___ jeden Morgen um sechs Uhr auf.",
+    "options": ["stehe", "aufstehe", "stehen"],
+    "answer": "stehe",
+    "explanation": {
+      "en": "aufstehen splits: stehe is in position 2 and auf goes to the end.",
+      "fa": "aufstehen جدا می‌شود: stehe در جایگاه دوم است و auf به آخر جمله می‌رود.",
+      "de": "aufstehen wird getrennt: stehe steht auf Position 2, auf steht am Ende."
+    }
+  },
+  {
+    "id": "separable-02",
+    "lessonId": "separable",
+    "type": "choice",
+    "prompt": { "en": "Choose the prefix (einkaufen).", "fa": "پیشوند را انتخاب کن (einkaufen).", "de": "Wähle das Präfix (einkaufen)." },
+    "sentenceDe": "Wir kaufen heute im Supermarkt ___.",
+    "options": ["ein", "an", "aus"],
+    "answer": "ein",
+    "explanation": {
+      "en": "einkaufen: the prefix ein goes to the end of the sentence.",
+      "fa": "einkaufen: پیشوند ein به آخر جمله می‌رود.",
+      "de": "einkaufen: Das Präfix ein steht am Satzende."
+    }
+  },
+  {
+    "id": "separable-03",
+    "lessonId": "separable",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct form after the modal verb.", "fa": "شکل درست بعد از فعل مودال را انتخاب کن.", "de": "Wähle die richtige Form nach dem Modalverb." },
+    "sentenceDe": "Ich möchte heute Abend ___.",
+    "options": ["fernsehen", "sehe fern", "fern sehen"],
+    "answer": "fernsehen",
+    "explanation": {
+      "en": "After a modal verb the separable verb stays together as one word at the end: fernsehen.",
+      "fa": "بعد از فعل مودال، فعل جداشدنی به‌صورت یک کلمه در آخر جمله می‌ماند: fernsehen.",
+      "de": "Nach einem Modalverb bleibt das trennbare Verb als ein Wort am Ende: fernsehen."
+    }
+  },
+  {
+    "id": "separable-04",
+    "lessonId": "separable",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct Partizip II.", "fa": "اسم مفعول (Partizip II) درست را انتخاب کن.", "de": "Wähle das richtige Partizip II." },
+    "sentenceDe": "Er hat gestern seine Mutter ___.",
+    "options": ["angerufen", "geanrufen", "anrufen"],
+    "answer": "angerufen",
+    "explanation": {
+      "en": "-ge- goes between the prefix and the verb: an + ge + rufen = angerufen.",
+      "fa": "-ge- بین پیشوند و فعل می‌آید: an + ge + rufen = angerufen.",
+      "de": "-ge- steht zwischen Präfix und Verb: an + ge + rufen = angerufen."
+    }
+  },
+  {
+    "id": "separable-05",
+    "lessonId": "separable",
+    "type": "fill",
+    "prompt": { "en": "Type the verb without the prefix.", "fa": "فعل را بدون پیشوند بنویس.", "de": "Schreibe das Verb ohne Präfix." },
+    "sentenceDe": "Wann ___ der Bus an? (ankommen)",
+    "answer": "kommt",
+    "explanation": {
+      "en": "der Bus = er, so the form is kommt. The prefix an is already at the end.",
+      "fa": "der Bus همان er است، پس شکل فعل kommt است. پیشوند an در آخر جمله آمده است.",
+      "de": "der Bus = er, also heißt die Form kommt. Das Präfix an steht schon am Ende."
+    }
+  },
+  {
+    "id": "separable-06",
+    "lessonId": "separable",
+    "type": "fill",
+    "prompt": { "en": "Type the verb without the prefix.", "fa": "فعل را بدون پیشوند بنویس.", "de": "Schreibe das Verb ohne Präfix." },
+    "sentenceDe": "___ du heute Abend mit? (mitkommen)",
+    "answer": "Kommst",
+    "explanation": {
+      "en": "In a yes/no question the verb comes first (Kommst du …?) and the prefix mit goes to the end.",
+      "fa": "در پرسش بله/خیر فعل اول می‌آید (Kommst du …?) و پیشوند mit به آخر جمله می‌رود.",
+      "de": "In einer Ja/Nein-Frage steht das Verb vorn (Kommst du …?), das Präfix mit steht am Ende."
+    }
+  },
+  {
+    "id": "separable-07",
+    "lessonId": "separable",
+    "type": "fill",
+    "prompt": { "en": "Type the missing prefix.", "fa": "پیشوندِ جاافتاده را بنویس.", "de": "Schreibe das fehlende Präfix." },
+    "sentenceDe": "Ich hole dich um acht Uhr ___. (abholen)",
+    "answer": "ab",
+    "explanation": {
+      "en": "abholen: hole is in position 2 and the prefix ab goes to the end.",
+      "fa": "abholen: hole در جایگاه دوم است و پیشوند ab به آخر جمله می‌رود.",
+      "de": "abholen: hole steht auf Position 2, das Präfix ab steht am Ende."
+    }
+  },
+  {
+    "id": "separable-08",
+    "lessonId": "separable",
+    "type": "fill",
+    "prompt": { "en": "Type the Partizip II.", "fa": "اسم مفعول (Partizip II) را بنویس.", "de": "Schreibe das Partizip II." },
+    "sentenceDe": "Sie ist heute spät ___. (aufstehen)",
+    "answer": "aufgestanden",
+    "explanation": {
+      "en": "auf + ge + standen = aufgestanden, written as one word. aufstehen uses sein.",
+      "fa": "auf + ge + standen = aufgestanden، که یک کلمه نوشته می‌شود. aufstehen با sein ساخته می‌شود.",
+      "de": "auf + ge + standen = aufgestanden, in einem Wort. aufstehen steht mit sein."
+    }
+  },
+  {
+    "id": "separable-09",
+    "lessonId": "separable",
+    "type": "transform",
+    "prompt": { "en": "Add the modal verb müssen.", "fa": "فعل مودال müssen را اضافه کن.", "de": "Füge das Modalverb müssen hinzu." },
+    "sentenceDe": "Ich kaufe heute ein. → Ich muss heute ___.",
+    "answer": "einkaufen",
+    "explanation": {
+      "en": "With a modal verb the separable verb is not split: it goes to the end as an infinitive, einkaufen.",
+      "fa": "با فعل مودال، فعل جداشدنی جدا نمی‌شود و به‌صورت مصدر به آخر جمله می‌رود: einkaufen.",
+      "de": "Mit einem Modalverb wird das trennbare Verb nicht getrennt: Es steht als Infinitiv am Ende, einkaufen."
+    }
+  },
+  {
+    "id": "separable-10",
+    "lessonId": "separable",
+    "type": "transform",
+    "prompt": { "en": "Put the sentence into the Perfekt.", "fa": "جمله را به ماضی نقلی ببر.", "de": "Setze den Satz ins Perfekt." },
+    "sentenceDe": "Ich mache das Fenster auf. → Ich habe das Fenster ___.",
+    "answer": "aufgemacht",
+    "explanation": {
+      "en": "aufmachen: auf + ge + macht = aufgemacht, one word at the end.",
+      "fa": "aufmachen: auf + ge + macht = aufgemacht، یک کلمه در آخر جمله.",
+      "de": "aufmachen: auf + ge + macht = aufgemacht, ein Wort am Ende."
+    }
+  }
+]

@@ -698,5 +698,313 @@
     },
     "category": "shopping",
     "level": "A1"
+  },
+  {
+    "id": "geld",
+    "word": "Geld",
+    "article": "das",
+    "plural": "–",
+    "translations": {
+      "en": "money",
+      "fa": "پول"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Geld).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Geld).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Geld).",
+      "simple": {
+        "en": "Just learn it: das Geld.",
+        "fa": "فقط حفظش کنید: das Geld.",
+        "de": "Einfach lernen: das Geld."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich habe kein Geld mehr.",
+      "en": "I have no money left.",
+      "fa": "دیگر پولی ندارم."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "euro",
+    "word": "Euro",
+    "article": "der",
+    "plural": "Euro",
+    "translations": {
+      "en": "euro",
+      "fa": "یورو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Euro).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Euro).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Euro).",
+      "simple": {
+        "en": "Just learn it: der Euro.",
+        "fa": "فقط حفظش کنید: der Euro.",
+        "de": "Einfach lernen: der Euro."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das kostet fünf Euro.",
+      "en": "That costs five euros.",
+      "fa": "این پنج یورو قیمت دارد."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "cent",
+    "word": "Cent",
+    "article": "der",
+    "plural": "Cent",
+    "translations": {
+      "en": "cent",
+      "fa": "سنت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Cent).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Cent).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Cent).",
+      "simple": {
+        "en": "Just learn it: der Cent.",
+        "fa": "فقط حفظش کنید: der Cent.",
+        "de": "Einfach lernen: der Cent."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Banane kostet fünfzig Cent.",
+      "en": "The banana costs fifty cents.",
+      "fa": "موز پنجاه سنت است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "konto",
+    "word": "Konto",
+    "article": "das",
+    "plural": "Konten",
+    "translations": {
+      "en": "bank account",
+      "fa": "حساب (بانکی)"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Konto).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Konto).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Konto).",
+      "simple": {
+        "en": "Just learn it: das Konto.",
+        "fa": "فقط حفظش کنید: das Konto.",
+        "de": "Einfach lernen: das Konto."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich habe ein Konto bei der Bank.",
+      "en": "I have an account at the bank.",
+      "fa": "من در بانک حساب دارم."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "prospekt",
+    "word": "Prospekt",
+    "article": "der",
+    "plural": "Prospekte",
+    "translations": {
+      "en": "brochure, leaflet",
+      "fa": "بروشور، کاتالوگ"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Prospekt).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Prospekt).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Prospekt).",
+      "simple": {
+        "en": "Just learn it: der Prospekt.",
+        "fa": "فقط حفظش کنید: der Prospekt.",
+        "de": "Einfach lernen: der Prospekt."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Im Prospekt sind viele Angebote.",
+      "en": "There are many offers in the brochure.",
+      "fa": "در بروشور تخفیف‌های زیادی هست."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "liter",
+    "word": "Liter",
+    "article": "der",
+    "plural": "Liter",
+    "translations": {
+      "en": "litre",
+      "fa": "لیتر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Liter).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Liter).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Liter).",
+      "simple": {
+        "en": "Just learn it: der Liter.",
+        "fa": "فقط حفظش کنید: der Liter.",
+        "de": "Einfach lernen: der Liter."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ein Liter Milch kostet einen Euro.",
+      "en": "A litre of milk costs one euro.",
+      "fa": "یک لیتر شیر یک یورو است."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "gramm",
+    "word": "Gramm",
+    "article": "das",
+    "plural": "Gramm",
+    "translations": {
+      "en": "gram",
+      "fa": "گرم"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Gramm).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Gramm).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Gramm).",
+      "simple": {
+        "en": "Just learn it: das Gramm.",
+        "fa": "فقط حفظش کنید: das Gramm.",
+        "de": "Einfach lernen: das Gramm."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich nehme hundert Gramm Käse.",
+      "en": "I will take a hundred grams of cheese.",
+      "fa": "صد گرم پنیر می‌خواهم."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "packung",
+    "word": "Packung",
+    "article": "die",
+    "plural": "Packungen",
+    "translations": {
+      "en": "packet, pack",
+      "fa": "بسته"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ung are always feminine (die): die Zeitung, die Wohnung, die Übung.",
+      "fa": "اسم‌هایی که به -ung ختم می‌شوند همیشه مؤنث (die) هستند: die Zeitung, die Wohnung, die Übung.",
+      "de": "Nomen auf -ung sind immer feminin (die): die Zeitung, die Wohnung, die Übung.",
+      "simple": {
+        "en": "Words ending in -ung are always die.",
+        "fa": "کلمات ختم‌شده به -ung همیشه die هستند.",
+        "de": "Wörter auf -ung sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Eine Packung Reis, bitte.",
+      "en": "A packet of rice, please.",
+      "fa": "یک بسته برنج، لطفاً."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "dose",
+    "word": "Dose",
+    "article": "die",
+    "plural": "Dosen",
+    "translations": {
+      "en": "can, tin",
+      "fa": "قوطی، کنسرو"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Katze.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Katze.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Katze.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich kaufe eine Dose Tomaten.",
+      "en": "I am buying a can of tomatoes.",
+      "fa": "یک قوطی گوجه‌فرنگی می‌خرم."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "sonderangebot",
+    "word": "Sonderangebot",
+    "article": "das",
+    "plural": "Sonderangebote",
+    "translations": {
+      "en": "special offer",
+      "fa": "حراج، پیشنهاد ویژه"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Sonder + Angebot): the last part decides the article, das Angebot → das Sonderangebot.",
+      "fa": "اسم مرکب (Sonder + Angebot): بخش آخر آرتیکل را تعیین می‌کند، das Angebot ← das Sonderangebot.",
+      "de": "Zusammengesetztes Nomen (Sonder + Angebot): Das letzte Wort bestimmt den Artikel, das Angebot → das Sonderangebot.",
+      "simple": {
+        "en": "Last part decides: das Angebot → das Sonderangebot.",
+        "fa": "بخش آخر تعیین می‌کند: das Angebot ← das Sonderangebot.",
+        "de": "Das letzte Wort entscheidet: das Angebot → das Sonderangebot."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Äpfel sind heute im Sonderangebot.",
+      "en": "The apples are on special offer today.",
+      "fa": "امروز سیب‌ها تخفیف دارند."
+    },
+    "category": "shopping",
+    "level": "A1"
+  },
+  {
+    "id": "kaufhaus",
+    "word": "Kaufhaus",
+    "article": "das",
+    "plural": "Kaufhäuser",
+    "translations": {
+      "en": "department store",
+      "fa": "فروشگاه بزرگ"
+    },
+    "grammarRule": {
+      "en": "Compound noun (kaufen + Haus): the last part decides the article, das Haus → das Kaufhaus.",
+      "fa": "اسم مرکب (kaufen + Haus): بخش آخر آرتیکل را تعیین می‌کند، das Haus ← das Kaufhaus.",
+      "de": "Zusammengesetztes Nomen (kaufen + Haus): Das letzte Wort bestimmt den Artikel, das Haus → das Kaufhaus.",
+      "simple": {
+        "en": "Last part decides: das Haus → das Kaufhaus.",
+        "fa": "بخش آخر تعیین می‌کند: das Haus ← das Kaufhaus.",
+        "de": "Das letzte Wort entscheidet: das Haus → das Kaufhaus."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Kaufhaus ist im Zentrum.",
+      "en": "The department store is in the centre.",
+      "fa": "فروشگاه بزرگ در مرکز شهر است."
+    },
+    "category": "shopping",
+    "level": "A1"
   }
 ]

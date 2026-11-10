@@ -120,6 +120,40 @@ const NumbersTime: IconFC = () => (
   </g>
 );
 
+const Health: IconFC = () => (
+  <g>
+    <rect x={8} y={8} width={32} height={32} rx={8} fill={C.white} />
+    <path d="M20 14h8v6h6v8h-6v6h-8v-6h-6v-8h6z" fill={C.red} />
+  </g>
+);
+
+const Animals: IconFC = () => (
+  <g>
+    <ellipse cx={24} cy={32} rx={9} ry={8} fill={C.yellow} />
+    <circle cx={12} cy={20} r={4} fill={C.yellow} />
+    <circle cx={20} cy={12} r={4} fill={C.yellow} />
+    <circle cx={28} cy={12} r={4} fill={C.yellow} />
+    <circle cx={36} cy={20} r={4} fill={C.yellow} />
+  </g>
+);
+
+const Services: IconFC = () => (
+  <g>
+    <rect x={5} y={12} width={38} height={26} rx={4} fill={C.white} />
+    <path d="m5 14 19 13 19-13" />
+    <rect x={32} y={16} width={7} height={8} rx={1} fill={C.blue} />
+  </g>
+);
+
+const Celebrations: IconFC = () => (
+  <g>
+    <ellipse cx={24} cy={17} rx={11} ry={13} fill={C.red} />
+    <path d="m22 30 2 3 2-3z" fill={C.red} />
+    <path d="M24 33c-3 4 3 6 0 11" />
+    <path d="M18 11c1-2 3-3 5-3" stroke={C.white} strokeWidth={2.5} />
+  </g>
+);
+
 export const CATEGORY_ICONS = {
   "cat-food": Food,
   "cat-family": Family,
@@ -136,4 +170,8 @@ export const CATEGORY_ICONS = {
   "cat-city": City,
   "cat-hobbies": Hobbies,
   "cat-numbers-time": NumbersTime,
+  "cat-health": Health,
+  "cat-animals": Animals,
+  "cat-services": Services,
+  "cat-celebrations": Celebrations,
 } satisfies Record<string, IconFC>;

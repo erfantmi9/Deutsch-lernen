@@ -698,5 +698,313 @@
     },
     "category": "city",
     "level": "A1"
+  },
+  {
+    "id": "dorf",
+    "word": "Dorf",
+    "article": "das",
+    "plural": "Dörfer",
+    "translations": {
+      "en": "village",
+      "fa": "روستا"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Dorf).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Dorf).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Dorf).",
+      "simple": {
+        "en": "Just learn it: das Dorf.",
+        "fa": "فقط حفظش کنید: das Dorf.",
+        "de": "Einfach lernen: das Dorf."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Meine Oma wohnt in einem Dorf.",
+      "en": "My grandma lives in a village.",
+      "fa": "مادربزرگم در یک روستا زندگی می‌کند."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "land",
+    "word": "Land",
+    "article": "das",
+    "plural": "Länder",
+    "translations": {
+      "en": "country",
+      "fa": "کشور"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Land).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Land).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Land).",
+      "simple": {
+        "en": "Just learn it: das Land.",
+        "fa": "فقط حفظش کنید: das Land.",
+        "de": "Einfach lernen: das Land."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Deutschland ist ein schönes Land.",
+      "en": "Germany is a beautiful country.",
+      "fa": "آلمان کشور قشنگی است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "weg",
+    "word": "Weg",
+    "article": "der",
+    "plural": "Wege",
+    "translations": {
+      "en": "way, path",
+      "fa": "راه، مسیر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Weg).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Weg).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Weg).",
+      "simple": {
+        "en": "Just learn it: der Weg.",
+        "fa": "فقط حفظش کنید: der Weg.",
+        "de": "Einfach lernen: der Weg."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich frage nach dem Weg.",
+      "en": "I ask for directions.",
+      "fa": "راه را از کسی می‌پرسم."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "polizei",
+    "word": "Polizei",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "police",
+      "fa": "پلیس"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Polizei).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Polizei).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Polizei).",
+      "simple": {
+        "en": "Just learn it: die Polizei.",
+        "fa": "فقط حفظش کنید: die Polizei.",
+        "de": "Einfach lernen: die Polizei."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ruf bitte die Polizei!",
+      "en": "Please call the police!",
+      "fa": "لطفاً به پلیس زنگ بزن!"
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "kiosk",
+    "word": "Kiosk",
+    "article": "der",
+    "plural": "Kioske",
+    "translations": {
+      "en": "kiosk, newsstand",
+      "fa": "دکه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Kiosk).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Kiosk).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Kiosk).",
+      "simple": {
+        "en": "Just learn it: der Kiosk.",
+        "fa": "فقط حفظش کنید: der Kiosk.",
+        "de": "Einfach lernen: der Kiosk."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Kiosk verkauft Zeitungen.",
+      "en": "The kiosk sells newspapers.",
+      "fa": "دکه روزنامه می‌فروشد."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "schild",
+    "word": "Schild",
+    "article": "das",
+    "plural": "Schilder",
+    "translations": {
+      "en": "sign",
+      "fa": "تابلو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Schild).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Schild).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Schild).",
+      "simple": {
+        "en": "Just learn it: das Schild.",
+        "fa": "فقط حفظش کنید: das Schild.",
+        "de": "Einfach lernen: das Schild."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Schild zeigt zum Bahnhof.",
+      "en": "The sign points to the station.",
+      "fa": "تابلو راه ایستگاه قطار را نشان می‌دهد."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "ort",
+    "word": "Ort",
+    "article": "der",
+    "plural": "Orte",
+    "translations": {
+      "en": "place, town",
+      "fa": "جا، محل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Ort).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Ort).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Ort).",
+      "simple": {
+        "en": "Just learn it: der Ort.",
+        "fa": "فقط حفظش کنید: der Ort.",
+        "de": "Einfach lernen: der Ort."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das ist ein schöner Ort.",
+      "en": "This is a beautiful place.",
+      "fa": "اینجا جای قشنگی است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "werkstatt",
+    "word": "Werkstatt",
+    "article": "die",
+    "plural": "Werkstätten",
+    "translations": {
+      "en": "garage, workshop",
+      "fa": "تعمیرگاه، کارگاه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Werkstatt).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Werkstatt).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Werkstatt).",
+      "simple": {
+        "en": "Just learn it: die Werkstatt.",
+        "fa": "فقط حفظش کنید: die Werkstatt.",
+        "de": "Einfach lernen: die Werkstatt."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Auto ist in der Werkstatt.",
+      "en": "The car is at the garage.",
+      "fa": "ماشین توی تعمیرگاه است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "tankstelle",
+    "word": "Tankstelle",
+    "article": "die",
+    "plural": "Tankstellen",
+    "translations": {
+      "en": "petrol station",
+      "fa": "پمپ‌بنزین"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: die Stelle gives die Tankstelle.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: die Stelle می‌شود die Tankstelle.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: die Stelle ergibt die Tankstelle.",
+      "simple": {
+        "en": "Look at the last part: die Stelle, so die Tankstelle.",
+        "fa": "به بخش آخر نگاه کنید: die Stelle، پس die Tankstelle.",
+        "de": "Schau auf den letzten Teil: die Stelle, also die Tankstelle."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Die Tankstelle ist an der Ecke.",
+      "en": "The petrol station is on the corner.",
+      "fa": "پمپ‌بنزین سر نبش است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "hauptstadt",
+    "word": "Hauptstadt",
+    "article": "die",
+    "plural": "Hauptstädte",
+    "translations": {
+      "en": "capital (city)",
+      "fa": "پایتخت"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: die Stadt gives die Hauptstadt.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: die Stadt می‌شود die Hauptstadt.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: die Stadt ergibt die Hauptstadt.",
+      "simple": {
+        "en": "Look at the last part: die Stadt, so die Hauptstadt.",
+        "fa": "به بخش آخر نگاه کنید: die Stadt، پس die Hauptstadt.",
+        "de": "Schau auf den letzten Teil: die Stadt, also die Hauptstadt."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Berlin ist die Hauptstadt von Deutschland.",
+      "en": "Berlin is the capital of Germany.",
+      "fa": "برلین پایتخت آلمان است."
+    },
+    "category": "city",
+    "level": "A1"
+  },
+  {
+    "id": "gebaeude",
+    "word": "Gebäude",
+    "article": "das",
+    "plural": "Gebäude",
+    "translations": {
+      "en": "building",
+      "fa": "ساختمان"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Gebäude).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Gebäude).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Gebäude).",
+      "simple": {
+        "en": "Just learn it: das Gebäude.",
+        "fa": "فقط حفظش کنید: das Gebäude.",
+        "de": "Einfach lernen: das Gebäude."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Gebäude ist sehr alt.",
+      "en": "The building is very old.",
+      "fa": "این ساختمان خیلی قدیمی است."
+    },
+    "category": "city",
+    "level": "A1"
   }
 ]

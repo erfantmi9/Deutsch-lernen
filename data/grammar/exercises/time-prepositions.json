@@ -1,0 +1,136 @@
+[
+  {
+    "id": "time-prepositions-01",
+    "lessonId": "time-prepositions",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct preposition.", "fa": "حرف اضافه‌ی درست را انتخاب کن.", "de": "Wähle die richtige Präposition." },
+    "sentenceDe": "Der Kurs beginnt ___ neun Uhr.",
+    "options": ["um", "am", "im"],
+    "answer": "um",
+    "explanation": {
+      "en": "Clock times take um: um neun Uhr.",
+      "fa": "ساعت با um می‌آید: um neun Uhr.",
+      "de": "Uhrzeiten stehen mit um: um neun Uhr."
+    }
+  },
+  {
+    "id": "time-prepositions-02",
+    "lessonId": "time-prepositions",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct preposition.", "fa": "حرف اضافه‌ی درست را انتخاب کن.", "de": "Wähle die richtige Präposition." },
+    "sentenceDe": "Ich habe ___ Freitag frei.",
+    "options": ["am", "um", "im"],
+    "answer": "am",
+    "explanation": {
+      "en": "Days of the week take am: am Freitag.",
+      "fa": "روزهای هفته با am می‌آیند: am Freitag.",
+      "de": "Wochentage stehen mit am: am Freitag."
+    }
+  },
+  {
+    "id": "time-prepositions-03",
+    "lessonId": "time-prepositions",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct preposition.", "fa": "حرف اضافه‌ی درست را انتخاب کن.", "de": "Wähle die richtige Präposition." },
+    "sentenceDe": "___ Winter ist es hier sehr kalt.",
+    "options": ["Im", "Am", "Um"],
+    "answer": "Im",
+    "explanation": {
+      "en": "Seasons take im: im Winter, im Sommer.",
+      "fa": "فصل‌ها با im می‌آیند: im Winter، im Sommer.",
+      "de": "Jahreszeiten stehen mit im: im Winter, im Sommer."
+    }
+  },
+  {
+    "id": "time-prepositions-04",
+    "lessonId": "time-prepositions",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct words.", "fa": "کلمه‌های درست را انتخاب کن.", "de": "Wähle die richtigen Wörter." },
+    "sentenceDe": "Mein Vater arbeitet ___ Nacht.",
+    "options": ["in der", "am", "um"],
+    "answer": "in der",
+    "explanation": {
+      "en": "The other parts of the day take am, but the night is in der Nacht.",
+      "fa": "بقیه‌ی بخش‌های روز با am می‌آیند، اما شب می‌شود in der Nacht.",
+      "de": "Die anderen Tageszeiten stehen mit am, aber die Nacht heißt in der Nacht."
+    }
+  },
+  {
+    "id": "time-prepositions-05",
+    "lessonId": "time-prepositions",
+    "type": "fill",
+    "prompt": { "en": "Type the preposition.", "fa": "حرف اضافه را بنویس.", "de": "Schreibe die Präposition." },
+    "sentenceDe": "Mein Geburtstag ist ___ Juli.",
+    "answer": "im",
+    "explanation": {
+      "en": "Months take im: im Juli.",
+      "fa": "ماه‌ها با im می‌آیند: im Juli.",
+      "de": "Monate stehen mit im: im Juli."
+    }
+  },
+  {
+    "id": "time-prepositions-06",
+    "lessonId": "time-prepositions",
+    "type": "fill",
+    "prompt": { "en": "Type the preposition.", "fa": "حرف اضافه را بنویس.", "de": "Schreibe die Präposition." },
+    "sentenceDe": "Ich lerne ___ Abend Deutsch.",
+    "answer": "am",
+    "explanation": {
+      "en": "Parts of the day take am: am Morgen, am Abend.",
+      "fa": "بخش‌های روز با am می‌آیند: am Morgen، am Abend.",
+      "de": "Tageszeiten stehen mit am: am Morgen, am Abend."
+    }
+  },
+  {
+    "id": "time-prepositions-07",
+    "lessonId": "time-prepositions",
+    "type": "fill",
+    "prompt": { "en": "Complete the period of time.", "fa": "بازه‌ی زمانی را کامل کن.", "de": "Ergänze den Zeitraum." },
+    "sentenceDe": "Das Geschäft ist von Montag ___ Samstag geöffnet.",
+    "answer": "bis",
+    "explanation": {
+      "en": "A period of time is von … bis: von Montag bis Samstag.",
+      "fa": "بازه‌ی زمانی با von … bis گفته می‌شود: von Montag bis Samstag.",
+      "de": "Einen Zeitraum nennt man mit von … bis: von Montag bis Samstag."
+    }
+  },
+  {
+    "id": "time-prepositions-08",
+    "lessonId": "time-prepositions",
+    "type": "fill",
+    "prompt": { "en": "Type the preposition.", "fa": "حرف اضافه را بنویس.", "de": "Schreibe die Präposition." },
+    "sentenceDe": "Die Party beginnt ___ halb acht.",
+    "answer": "um",
+    "explanation": {
+      "en": "halb acht is a clock time (7:30), so: um halb acht.",
+      "fa": "halb acht یک ساعت است (۷:۳۰)، پس: um halb acht.",
+      "de": "halb acht ist eine Uhrzeit (7:30), also: um halb acht."
+    }
+  },
+  {
+    "id": "time-prepositions-09",
+    "lessonId": "time-prepositions",
+    "type": "transform",
+    "prompt": { "en": "Start the sentence with the time.", "fa": "جمله را با زمان شروع کن.", "de": "Beginne den Satz mit der Zeit." },
+    "sentenceDe": "Ich stehe um sieben Uhr auf. → Um sieben Uhr ___ ich auf.",
+    "answer": "stehe",
+    "explanation": {
+      "en": "The time is now in position 1, the verb stays in position 2 and ich moves behind it: Um sieben Uhr stehe ich auf.",
+      "fa": "زمان حالا در جایگاه اول است، فعل در جایگاه دوم می‌ماند و ich پشت آن می‌رود: Um sieben Uhr stehe ich auf.",
+      "de": "Die Zeit steht jetzt auf Position 1, das Verb bleibt auf Position 2 und ich steht dahinter: Um sieben Uhr stehe ich auf."
+    }
+  },
+  {
+    "id": "time-prepositions-10",
+    "lessonId": "time-prepositions",
+    "type": "transform",
+    "prompt": { "en": "Replace the day with the month August.", "fa": "روز را با ماه August عوض کن.", "de": "Ersetze den Tag durch den Monat August." },
+    "sentenceDe": "Wir fahren am Samstag nach Wien. → Wir fahren ___ August nach Wien.",
+    "answer": "im",
+    "explanation": {
+      "en": "Days take am, but months take im: im August.",
+      "fa": "روزها با am می‌آیند، اما ماه‌ها با im: im August.",
+      "de": "Tage stehen mit am, Monate aber mit im: im August."
+    }
+  }
+]

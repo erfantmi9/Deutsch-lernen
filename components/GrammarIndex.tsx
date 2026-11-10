@@ -6,6 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { useGrammarStore } from "@/stores/grammarStore";
 import { lessonProgress, overallProgress } from "@/lib/grammarLogic";
 import type { Locale } from "@/lib/grammarText";
+import { GRAMMAR_GROUPS, GRAMMAR_GROUP_OF_TOPIC } from "@/types/grammar";
 import type { GrammarTopic } from "@/types/grammar";
 import type { I18n3 } from "@/types/common";
 import PageHeader from "./PageHeader";
@@ -47,6 +48,10 @@ export default function GrammarIndex({ lessons }: { lessons: LessonCard[] }) {
   }, []);
 
   const overall = ready ? overallProgress(lessons, results) : 0;
+  const sections = GRAMMAR_GROUPS.map((group) => ({
+    group,
+    lessons: lessons.filter((l) => GRAMMAR_GROUP_OF_TOPIC[l.topic] === group),
+  })).filter((s) => s.lessons.length > 0);
 
   return (
     <div className="space-y-6">
@@ -62,46 +67,56 @@ export default function GrammarIndex({ lessons }: { lessons: LessonCard[] }) {
         }
       />
 
-      <ol aria-label={t("lessonsList")} className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        {lessons.map((lesson) => {
-          const progress = lessonProgress(lesson.exerciseIds, ready ? results : {});
-          const done = ready && completedIds.includes(lesson.id);
-          const status = done ? "statusDone" : progress.solved > 0 ? "statusProgress" : "statusNew";
-          return (
-            <li key={lesson.id}>
-              <Link
-                href={`/grammar/${lesson.id}`}
-                className="card group flex h-full flex-col gap-4 p-5 transition duration-150 hover:-translate-y-1 hover:shadow-lift"
-              >
-                <div className="flex items-start gap-4">
-                  <div className="w-16 shrink-0 rounded-2xl bg-surface-2 p-2 [&>svg]:h-auto [&>svg]:w-full">
-                    <GrammarTopicIcon topic={lesson.topic} size="100%" />
-                  </div>
-                  <div className="min-w-0 flex-1 space-y-1">
-                    <p className="eyebrow">
-                      {t("lessonNumber", { n: lesson.order })} · {t(`topics.${lesson.topic}`)}
-                    </p>
-                    <h2 className="text-xl font-extrabold [overflow-wrap:anywhere]">{lesson.title[locale]}</h2>
-                  </div>
-                  <ProgressRing
-                    value={progress.fraction}
-                    size={52}
-                    label={t("exercisesSolved", { solved: progress.solved, total: progress.total })}
-                  />
-                </div>
-                <p className="flex-1 text-sm text-text-muted">{lesson.summary[locale]}</p>
-                <p className="flex flex-wrap items-center justify-between gap-2 text-xs font-bold">
-                  <span className="rounded-full bg-primary-soft px-3 py-1 text-primary">
-                    {done && <span aria-hidden="true">✓ </span>}
-                    {t(status)}
-                  </span>
-                  <span className="text-text-muted">{t("exercisesSolved", { solved: progress.solved, total: progress.total })}</span>
-                </p>
-              </Link>
-            </li>
-          );
-        })}
-      </ol>
+      <div aria-label={t("lessonsList")} role="group" className="space-y-8">
+        {sections.map(({ group, lessons: groupLessons }) => (
+          <section key={group} aria-labelledby={`grammar-group-${group}`} className="space-y-3">
+            <h2 id={`grammar-group-${group}`} className="text-lg font-extrabold">
+              {t(`groups.${group}`)}{" "}
+              <span className="text-sm font-bold text-text-muted">{t("groupCount", { count: groupLessons.length })}</span>
+            </h2>
+            <ol className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              {groupLessons.map((lesson) => {
+                const progress = lessonProgress(lesson.exerciseIds, ready ? results : {});
+                const done = ready && completedIds.includes(lesson.id);
+                const status = done ? "statusDone" : progress.solved > 0 ? "statusProgress" : "statusNew";
+                return (
+                  <li key={lesson.id}>
+                    <Link
+                      href={`/grammar/${lesson.id}`}
+                      className="card group flex h-full flex-col gap-4 p-5 transition duration-150 hover:-translate-y-1 hover:shadow-lift"
+                    >
+                      <div className="flex items-start gap-4">
+                        <div className="w-16 shrink-0 rounded-2xl bg-surface-2 p-2 [&>svg]:h-auto [&>svg]:w-full">
+                          <GrammarTopicIcon topic={lesson.topic} size="100%" />
+                        </div>
+                        <div className="min-w-0 flex-1 space-y-1">
+                          <p className="eyebrow">
+                            {t("lessonNumber", { n: lesson.order })} · {t(`topics.${lesson.topic}`)}
+                          </p>
+                          <h3 className="text-xl font-extrabold [overflow-wrap:anywhere]">{lesson.title[locale]}</h3>
+                        </div>
+                        <ProgressRing
+                          value={progress.fraction}
+                          size={52}
+                          label={t("exercisesSolved", { solved: progress.solved, total: progress.total })}
+                        />
+                      </div>
+                      <p className="flex-1 text-sm text-text-muted">{lesson.summary[locale]}</p>
+                      <p className="flex flex-wrap items-center justify-between gap-2 text-xs font-bold">
+                        <span className="rounded-full bg-primary-soft px-3 py-1 text-primary">
+                          {done && <span aria-hidden="true">✓ </span>}
+                          {t(status)}
+                        </span>
+                        <span className="text-text-muted">{t("exercisesSolved", { solved: progress.solved, total: progress.total })}</span>
+                      </p>
+                    </Link>
+                  </li>
+                );
+              })}
+            </ol>
+          </section>
+        ))}
+      </div>
 
       <div className="text-end">
         <button type="button" onClick={() => setAskReset(true)} aria-haspopup="dialog" className="btn-ghost">

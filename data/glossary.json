@@ -30,5 +30,13 @@
   { "term": "pattern", "en": "pattern", "fa": "الگو", "de": "Muster" },
   { "term": "negation", "en": "negation", "fa": "نفی", "de": "Verneinung" },
   { "term": "affirmative", "en": "affirmative", "fa": "مثبت", "de": "positiv" },
-  { "term": "negative", "en": "negative", "fa": "منفی", "de": "negativ" }
+  { "term": "negative", "en": "negative", "fa": "منفی", "de": "negativ" },
+  { "term": "perfekt", "en": "Perfekt (spoken past)", "fa": "ماضی نقلی", "de": "Perfekt" },
+  { "term": "partizip2", "en": "past participle (Partizip II)", "fa": "اسم مفعول (Partizip II)", "de": "Partizip II" },
+  { "term": "auxiliary", "en": "auxiliary verb", "fa": "فعل کمکی", "de": "Hilfsverb" },
+  { "term": "infinitive", "en": "infinitive", "fa": "مصدر", "de": "Infinitiv" },
+  { "term": "prefix", "en": "prefix", "fa": "پیشوند", "de": "Präfix" },
+  { "term": "separable-verb", "en": "separable verb", "fa": "فعل جداشدنی", "de": "trennbares Verb" },
+  { "term": "main-clause", "en": "main clause", "fa": "جمله‌ی اصلی", "de": "Hauptsatz" },
+  { "term": "conjunction", "en": "conjunction", "fa": "حرف ربط", "de": "Konjunktion" }
 ]

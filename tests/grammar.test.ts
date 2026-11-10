@@ -1,3 +1,4 @@
+import { GRAMMAR_GROUPS, GRAMMAR_GROUP_OF_TOPIC } from "@/types/grammar";
 import { describe, expect, it } from "vitest";
 import {
   GlossaryListSchema,
@@ -139,7 +140,7 @@ describe("checkGrammarData", () => {
 });
 
 describe("shipped grammar data", () => {
-  it("has the eleven A1 grammar lessons in course order", () => {
+  it("has the sixteen A1 grammar lessons in course order", () => {
     expect(grammarLessons.map((l) => l.id)).toEqual([
       "pronouns",
       "nom-akk",
@@ -152,8 +153,13 @@ describe("shipped grammar data", () => {
       "imperative",
       "modal",
       "word-order",
+      "perfekt",
+      "separable",
+      "time-prepositions",
+      "conjunctions",
+      "es-gibt",
     ]);
-    expect(grammarLessons.map((l) => l.order)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]);
+    expect(grammarLessons.map((l) => l.order)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]);
   });
   it("covers every topic that the course teaches", () => {
     const topics = new Set(grammarLessons.map((l) => l.topic));
@@ -182,7 +188,8 @@ describe("shipped grammar data", () => {
     expect(getExercise("pron-01")?.lessonId).toBe("pronouns");
     expect(getNeighbours("pronouns")).toMatchObject({ prev: null, next: { id: "nom-akk" } });
     expect(getNeighbours("plural")).toMatchObject({ prev: { id: "negation" }, next: { id: "dative" } });
-    expect(getNeighbours("word-order")).toMatchObject({ prev: { id: "modal" }, next: null });
+    expect(getNeighbours("word-order")).toMatchObject({ prev: { id: "modal" }, next: { id: "perfekt" } });
+    expect(getNeighbours("es-gibt")).toMatchObject({ prev: { id: "conjunctions" }, next: null });
     expect(getNeighbours("nope")).toEqual({ prev: null, next: null });
   });
   it("keeps the masculine accusative rule in the case table", () => {
@@ -211,6 +218,15 @@ describe("grammar UI messages", () => {
     for (const m of [en, fa, de]) {
       expect(m.Nav.grammar).toBeTruthy();
       expect(m.Home.modules.grammar.title).toBeTruthy();
+    }
+  });
+});
+
+describe("grammar groups", () => {
+  it("puts every shipped lesson into one of the page groups", () => {
+    for (const l of grammarLessons) expect(GRAMMAR_GROUPS).toContain(GRAMMAR_GROUP_OF_TOPIC[l.topic]);
+    for (const g of GRAMMAR_GROUPS) {
+      expect(grammarLessons.some((l) => GRAMMAR_GROUP_OF_TOPIC[l.topic] === g), g).toBe(true);
     }
   });
 });

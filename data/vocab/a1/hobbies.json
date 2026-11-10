@@ -698,5 +698,341 @@
     },
     "category": "hobbies",
     "level": "A1"
+  },
+  {
+    "id": "freizeit",
+    "word": "Freizeit",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "free time, leisure",
+      "fa": "وقت آزاد، اوقات فراغت"
+    },
+    "grammarRule": {
+      "en": "Compound noun (frei + Zeit): the last part decides the article, die Zeit → die Freizeit.",
+      "fa": "اسم مرکب (frei + Zeit): بخش آخر آرتیکل را تعیین می‌کند، die Zeit ← die Freizeit.",
+      "de": "Zusammengesetztes Nomen (frei + Zeit): Das letzte Wort bestimmt den Artikel, die Zeit → die Freizeit.",
+      "simple": {
+        "en": "Last part decides: die Zeit → die Freizeit.",
+        "fa": "بخش آخر تعیین می‌کند: die Zeit ← die Freizeit.",
+        "de": "Das letzte Wort entscheidet: die Zeit → die Freizeit."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "In meiner Freizeit lese ich gern.",
+      "en": "In my free time I like to read.",
+      "fa": "در وقت آزادم دوست دارم کتاب بخوانم."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "spass",
+    "word": "Spaß",
+    "article": "der",
+    "plural": "–",
+    "translations": {
+      "en": "fun",
+      "fa": "خوشی، سرگرمی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Spaß).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Spaß).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Spaß).",
+      "simple": {
+        "en": "Just learn it: der Spaß.",
+        "fa": "فقط حفظش کنید: der Spaß.",
+        "de": "Einfach lernen: der Spaß."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Tanzen macht mir viel Spaß.",
+      "en": "Dancing is a lot of fun for me.",
+      "fa": "از رقصیدن خیلی لذت می‌برم."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "lust",
+    "word": "Lust",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "desire, wish (to do something)",
+      "fa": "میل، حوصله"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Lust).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Lust).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Lust).",
+      "simple": {
+        "en": "Just learn it: die Lust.",
+        "fa": "فقط حفظش کنید: die Lust.",
+        "de": "Einfach lernen: die Lust."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Hast du Lust auf Kino?",
+      "en": "Do you feel like going to the cinema?",
+      "fa": "حوصله‌ی سینما داری؟"
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "internet",
+    "word": "Internet",
+    "article": "das",
+    "plural": "–",
+    "translations": {
+      "en": "internet",
+      "fa": "اینترنت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Internet).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Internet).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Internet).",
+      "simple": {
+        "en": "Just learn it: das Internet.",
+        "fa": "فقط حفظش کنید: das Internet.",
+        "de": "Einfach lernen: das Internet."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich suche das im Internet.",
+      "en": "I am looking it up on the internet.",
+      "fa": "آن را در اینترنت جست‌وجو می‌کنم."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "tennis",
+    "word": "Tennis",
+    "article": "das",
+    "plural": "–",
+    "translations": {
+      "en": "tennis",
+      "fa": "تنیس"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Tennis).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Tennis).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Tennis).",
+      "simple": {
+        "en": "Just learn it: das Tennis.",
+        "fa": "فقط حفظش کنید: das Tennis.",
+        "de": "Einfach lernen: das Tennis."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wir spielen am Sonntag Tennis.",
+      "en": "We play tennis on Sunday.",
+      "fa": "یکشنبه‌ها تنیس بازی می‌کنیم."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "disko",
+    "word": "Disko",
+    "article": "die",
+    "plural": "Diskos",
+    "translations": {
+      "en": "disco, club",
+      "fa": "دیسکو، کلوب رقص"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Disko).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Disko).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Disko).",
+      "simple": {
+        "en": "Just learn it: die Disko.",
+        "fa": "فقط حفظش کنید: die Disko.",
+        "de": "Einfach lernen: die Disko."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Am Samstag gehen wir in die Disko.",
+      "en": "On Saturday we are going to the disco.",
+      "fa": "شنبه به دیسکو می‌رویم."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "cd",
+    "word": "CD",
+    "article": "die",
+    "plural": "CDs",
+    "translations": {
+      "en": "CD",
+      "fa": "سی‌دی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die CD).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die CD).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die CD).",
+      "simple": {
+        "en": "Just learn it: die CD.",
+        "fa": "فقط حفظش کنید: die CD.",
+        "de": "Einfach lernen: die CD."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich höre eine CD.",
+      "en": "I am listening to a CD.",
+      "fa": "دارم یک سی‌دی گوش می‌دهم."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "zeitschrift",
+    "word": "Zeitschrift",
+    "article": "die",
+    "plural": "Zeitschriften",
+    "translations": {
+      "en": "magazine",
+      "fa": "مجله"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Zeit + Schrift): the last part decides the article, die Schrift → die Zeitschrift.",
+      "fa": "اسم مرکب (Zeit + Schrift): بخش آخر آرتیکل را تعیین می‌کند، die Schrift ← die Zeitschrift.",
+      "de": "Zusammengesetztes Nomen (Zeit + Schrift): Das letzte Wort bestimmt den Artikel, die Schrift → die Zeitschrift.",
+      "simple": {
+        "en": "Last part decides: die Schrift → die Zeitschrift.",
+        "fa": "بخش آخر تعیین می‌کند: die Schrift ← die Zeitschrift.",
+        "de": "Das letzte Wort entscheidet: die Schrift → die Zeitschrift."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich lese gern eine Zeitschrift.",
+      "en": "I like reading a magazine.",
+      "fa": "دوست دارم مجله بخوانم."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "programm",
+    "word": "Programm",
+    "article": "das",
+    "plural": "Programme",
+    "translations": {
+      "en": "programme, schedule",
+      "fa": "برنامه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Programm).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Programm).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Programm).",
+      "simple": {
+        "en": "Just learn it: das Programm.",
+        "fa": "فقط حفظش کنید: das Programm.",
+        "de": "Einfach lernen: das Programm."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Programm beginnt um acht.",
+      "en": "The programme starts at eight.",
+      "fa": "برنامه ساعت هشت شروع می‌شود."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "spieler",
+    "word": "Spieler",
+    "article": "der",
+    "plural": "Spieler",
+    "translations": {
+      "en": "player (male)",
+      "fa": "بازیکن (مرد)"
+    },
+    "grammarRule": {
+      "en": "Male persons with a job or role ending in -er are masculine (der): der Lehrer, der Schüler, der Fahrer.",
+      "fa": "افراد مذکر با شغل یا نقشی که به -er ختم می‌شود مذکر (der) هستند: der Lehrer, der Schüler, der Fahrer.",
+      "de": "Männliche Personen mit Beruf oder Rolle auf -er sind maskulin (der): der Lehrer, der Schüler, der Fahrer.",
+      "simple": {
+        "en": "A man who does something (-er) is der.",
+        "fa": "مردی که کاری می‌کند (-er) der است.",
+        "de": "Ein Mann mit einer Rolle (-er) ist der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Spieler ist sehr schnell.",
+      "en": "The player is very fast.",
+      "fa": "بازیکن خیلی سریع است."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "spielerin",
+    "word": "Spielerin",
+    "article": "die",
+    "plural": "Spielerinnen",
+    "translations": {
+      "en": "player (female)",
+      "fa": "بازیکن (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Spielerin wirft den Ball.",
+      "en": "The player throws the ball.",
+      "fa": "بازیکن توپ را پرتاب می‌کند."
+    },
+    "category": "hobbies",
+    "level": "A1"
+  },
+  {
+    "id": "training",
+    "word": "Training",
+    "article": "das",
+    "plural": "Trainings",
+    "translations": {
+      "en": "training, practice",
+      "fa": "تمرین (ورزشی)"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Training).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Training).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Training).",
+      "simple": {
+        "en": "Just learn it: das Training.",
+        "fa": "فقط حفظش کنید: das Training.",
+        "de": "Einfach lernen: das Training."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Training ist am Dienstag.",
+      "en": "Training is on Tuesday.",
+      "fa": "تمرین سه‌شنبه است."
+    },
+    "category": "hobbies",
+    "level": "A1"
   }
 ]

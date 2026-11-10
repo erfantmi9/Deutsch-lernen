@@ -5,13 +5,13 @@ array, checked by `npm run validate:data` (also run before every build) and agai
 
 | File | Content | Schema |
 | --- | --- | --- |
-| `food`, `family`, `home`, `travel`, `time`, `school`, `body`, `shopping`, `jobs`, `weather`, `colors`, `clothes`, `city`, `hobbies`, `numbers-time` | nouns | `lib/schemas/vocab.ts` |
+| `food`, `family`, `home`, `travel`, `time`, `school`, `body`, `health`, `animals`, `shopping`, `jobs`, `weather`, `colors`, `clothes`, `city`, `services`, `hobbies`, `celebrations`, `numbers-time` | nouns | `lib/schemas/vocab.ts` |
 | `adjectives.json` | adjectives | `lib/schemas/vocabExtended.ts` |
 | `adverbs.json` | adverbs | same |
 | `prepositions.json` | prepositions | same |
 | `phrases.json` | everyday phrases | same |
 
-Verbs are in `data/verbs/a1.json` (40 verbs, every form written out).
+Verbs are in `data/verbs/a1.json` (162 verbs, every form written out). Each verb has a `usage` level: `essential` (the ~40 verbs almost every sentence needs), `common` (everyday talk and the A1 exam) or `useful` (good to know). The verbs page lists them in that order and can filter by it.
 
 ## Rules for every entry
 
@@ -23,6 +23,9 @@ Verbs are in `data/verbs/a1.json` (40 verbs, every form written out).
 - The **file name decides the category** of a noun: `data/vocab/a1/city.json` may only contain `"category": "city"`.
 - The example sentence must contain the word (or its plural). The validator warns otherwise.
 - Nouns without a plural (`Wetter`, `Regen`, `Musik`) use `"plural": "–"`.
+- **Sub-topics:** categories listed in `VOCAB_SUBCATEGORIES` (`types/vocab.ts`) need a `"subcategory"` on every word,
+  for example `"subcategory": "drinks"` in `food.json`. Other categories must not have one. The vocabulary page shows
+  the sub-topics as a second filter row once a topic is chosen.
 
 ## Noun (`data/vocab/a1/<category>.json`)
 
@@ -44,14 +47,19 @@ Verbs are in `data/verbs/a1.json` (40 verbs, every form written out).
 }
 ```
 
+In a category with sub-topics, add `"subcategory"` right after `"category"`.
+
 `ruleCategory` is `suffix`, `semantic`, `exception` or `learn`. Use `learn` unless the rule really holds
 (`-ung`, `-heit`, `-keit`, `-schaft`, `-chen`, `-lein`, days, months, seasons). `grammarRule` explains it in
 three languages plus a one-line `simple` version.
 
-New noun category: add it to `VOCAB_CATEGORIES` (`types/vocab.ts`), `VocabCategorySchema`
-(`lib/schemas/vocab.ts`), `data/vocab/index.ts`, the icon maps (`lib/icons.ts`,
-`components/illustrations/noun/categories.tsx`, `NounIcon.tsx`) and the messages
-(`Vocabulary.groups.noun.<category>` in `messages/*.json`).
+New noun category: add it to `VOCAB_CATEGORIES` (`types/vocab.ts`; the schema reads it from there), optionally
+its sub-topics to `VOCAB_SUBCATEGORIES`, the file to `data/vocab/index.ts`, the icon maps (`lib/icons.ts`,
+`components/illustrations/noun/categories.tsx`, the tint in `components/illustrations/NounIcon.tsx`) and the messages
+(`Vocabulary.groups.noun.<category>` and, for sub-topics, `Vocabulary.subgroups.<category>.<sub>` in `messages/*.json`).
+
+The validator warns when a noun ending in `-chen` is not `das`. Words whose `-chen` is part of the stem
+(`der Kuchen`, `der Knochen`) are listed in `NOT_DIMINUTIVE` in `lib/validation/rules.ts`.
 
 ## Adjective
 

@@ -1,0 +1,814 @@
+[
+  {
+    "id": "krankheit",
+    "word": "Krankheit",
+    "article": "die",
+    "plural": "Krankheiten",
+    "translations": {
+      "en": "illness, disease",
+      "fa": "بیماری"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -heit are always feminine (die): die Gesundheit, die Krankheit.",
+      "fa": "اسم‌هایی که به -heit ختم می‌شوند همیشه مؤنث (die) هستند: die Gesundheit, die Krankheit.",
+      "de": "Nomen auf -heit sind immer feminin (die): die Gesundheit, die Krankheit.",
+      "simple": {
+        "en": "-heit is always die.",
+        "fa": "-heit همیشه die است.",
+        "de": "-heit ist immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Krankheit ist nicht schlimm.",
+      "en": "The illness is not serious.",
+      "fa": "بیماری خطرناک نیست."
+    },
+    "category": "health",
+    "subcategory": "illness",
+    "level": "A1"
+  },
+  {
+    "id": "fieber",
+    "word": "Fieber",
+    "article": "das",
+    "plural": "–",
+    "translations": {
+      "en": "fever",
+      "fa": "تب"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Fieber).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Fieber).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Fieber).",
+      "simple": {
+        "en": "Just learn it: das Fieber.",
+        "fa": "فقط حفظش کنید: das Fieber.",
+        "de": "Einfach lernen: das Fieber."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Kind hat Fieber.",
+      "en": "The child has a fever.",
+      "fa": "بچه تب دارد."
+    },
+    "category": "health",
+    "subcategory": "illness",
+    "level": "A1"
+  },
+  {
+    "id": "erkaeltung",
+    "word": "Erkältung",
+    "article": "die",
+    "plural": "Erkältungen",
+    "translations": {
+      "en": "cold (illness)",
+      "fa": "سرماخوردگی"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ung are always feminine (die): die Wohnung, die Zeitung, die Erkältung.",
+      "fa": "اسم‌هایی که به -ung ختم می‌شوند همیشه مؤنث (die) هستند: die Wohnung, die Zeitung, die Erkältung.",
+      "de": "Nomen auf -ung sind immer feminin (die): die Wohnung, die Zeitung, die Erkältung.",
+      "simple": {
+        "en": "-ung is always die.",
+        "fa": "-ung همیشه die است.",
+        "de": "-ung ist immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich habe eine Erkältung.",
+      "en": "I have a cold.",
+      "fa": "من سرما خورده‌ام."
+    },
+    "category": "health",
+    "subcategory": "illness",
+    "level": "A1"
+  },
+  {
+    "id": "husten",
+    "word": "Husten",
+    "article": "der",
+    "plural": "–",
+    "translations": {
+      "en": "cough",
+      "fa": "سرفه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Husten).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Husten).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Husten).",
+      "simple": {
+        "en": "Just learn it: der Husten.",
+        "fa": "فقط حفظش کنید: der Husten.",
+        "de": "Einfach lernen: der Husten."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Husten ist sehr stark.",
+      "en": "The cough is very bad.",
+      "fa": "سرفه خیلی شدید است."
+    },
+    "category": "health",
+    "subcategory": "illness",
+    "level": "A1"
+  },
+  {
+    "id": "schnupfen",
+    "word": "Schnupfen",
+    "article": "der",
+    "plural": "–",
+    "translations": {
+      "en": "runny nose, head cold",
+      "fa": "آبریزش بینی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Schnupfen).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Schnupfen).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Schnupfen).",
+      "simple": {
+        "en": "Just learn it: der Schnupfen.",
+        "fa": "فقط حفظش کنید: der Schnupfen.",
+        "de": "Einfach lernen: der Schnupfen."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich habe Schnupfen.",
+      "en": "I have a runny nose.",
+      "fa": "آبریزش بینی دارم."
+    },
+    "category": "health",
+    "subcategory": "illness",
+    "level": "A1"
+  },
+  {
+    "id": "schmerz",
+    "word": "Schmerz",
+    "article": "der",
+    "plural": "Schmerzen",
+    "translations": {
+      "en": "pain",
+      "fa": "درد"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Schmerz).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Schmerz).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Schmerz).",
+      "simple": {
+        "en": "Just learn it: der Schmerz.",
+        "fa": "فقط حفظش کنید: der Schmerz.",
+        "de": "Einfach lernen: der Schmerz."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Schmerz ist stark.",
+      "en": "The pain is strong.",
+      "fa": "درد شدید است."
+    },
+    "category": "health",
+    "subcategory": "illness",
+    "level": "A1"
+  },
+  {
+    "id": "grippe",
+    "word": "Grippe",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "flu",
+      "fa": "آنفولانزا"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Grippe.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Grippe.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Grippe.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Er hat Grippe.",
+      "en": "He has the flu.",
+      "fa": "او آنفولانزا گرفته است."
+    },
+    "category": "health",
+    "subcategory": "illness",
+    "level": "A1"
+  },
+  {
+    "id": "verletzung",
+    "word": "Verletzung",
+    "article": "die",
+    "plural": "Verletzungen",
+    "translations": {
+      "en": "injury",
+      "fa": "جراحت، آسیب‌دیدگی"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ung are always feminine (die): die Wohnung, die Zeitung, die Verletzung.",
+      "fa": "اسم‌هایی که به -ung ختم می‌شوند همیشه مؤنث (die) هستند: die Wohnung, die Zeitung, die Verletzung.",
+      "de": "Nomen auf -ung sind immer feminin (die): die Wohnung, die Zeitung, die Verletzung.",
+      "simple": {
+        "en": "-ung is always die.",
+        "fa": "-ung همیشه die است.",
+        "de": "-ung ist immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Verletzung ist klein.",
+      "en": "The injury is small.",
+      "fa": "جراحت کوچک است."
+    },
+    "category": "health",
+    "subcategory": "illness",
+    "level": "A1"
+  },
+  {
+    "id": "unfall",
+    "word": "Unfall",
+    "article": "der",
+    "plural": "Unfälle",
+    "translations": {
+      "en": "accident",
+      "fa": "تصادف، حادثه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Unfall).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Unfall).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Unfall).",
+      "simple": {
+        "en": "Just learn it: der Unfall.",
+        "fa": "فقط حفظش کنید: der Unfall.",
+        "de": "Einfach lernen: der Unfall."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Unfall ist schlimm.",
+      "en": "The accident is bad.",
+      "fa": "تصادف شدید است."
+    },
+    "category": "health",
+    "subcategory": "illness",
+    "level": "A1"
+  },
+  {
+    "id": "allergie",
+    "word": "Allergie",
+    "article": "die",
+    "plural": "Allergien",
+    "translations": {
+      "en": "allergy",
+      "fa": "حساسیت، آلرژی"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Allergie.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Allergie.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Allergie.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich habe eine Allergie.",
+      "en": "I have an allergy.",
+      "fa": "من حساسیت دارم."
+    },
+    "category": "health",
+    "subcategory": "illness",
+    "level": "A1"
+  },
+  {
+    "id": "gesundheit",
+    "word": "Gesundheit",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "health",
+      "fa": "سلامتی"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -heit are always feminine (die): die Gesundheit, die Krankheit.",
+      "fa": "اسم‌هایی که به -heit ختم می‌شوند همیشه مؤنث (die) هستند: die Gesundheit, die Krankheit.",
+      "de": "Nomen auf -heit sind immer feminin (die): die Gesundheit, die Krankheit.",
+      "simple": {
+        "en": "-heit is always die.",
+        "fa": "-heit همیشه die است.",
+        "de": "-heit ist immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Gesundheit ist wichtig.",
+      "en": "Health is important.",
+      "fa": "سلامتی مهم است."
+    },
+    "category": "health",
+    "subcategory": "illness",
+    "level": "A1"
+  },
+  {
+    "id": "notfall",
+    "word": "Notfall",
+    "article": "der",
+    "plural": "Notfälle",
+    "translations": {
+      "en": "emergency",
+      "fa": "مورد اورژانسی"
+    },
+    "grammarRule": {
+      "en": "Compound noun: the last part decides the article. der Fall → der Notfall.",
+      "fa": "اسم مرکب: بخش آخر آرتیکل را تعیین می‌کند. der Fall → der Notfall.",
+      "de": "Zusammengesetztes Nomen: Der letzte Teil bestimmt den Artikel. der Fall → der Notfall.",
+      "simple": {
+        "en": "Last part decides: der Notfall.",
+        "fa": "بخش آخر تعیین می‌کند: der Notfall.",
+        "de": "Der letzte Teil zählt: der Notfall."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das ist ein Notfall!",
+      "en": "This is an emergency!",
+      "fa": "این یک مورد اورژانسی است!"
+    },
+    "category": "health",
+    "subcategory": "illness",
+    "level": "A1"
+  },
+  {
+    "id": "praxis",
+    "word": "Praxis",
+    "article": "die",
+    "plural": "Praxen",
+    "translations": {
+      "en": "doctor's practice, surgery",
+      "fa": "مطب"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Praxis).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Praxis).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Praxis).",
+      "simple": {
+        "en": "Just learn it: die Praxis.",
+        "fa": "فقط حفظش کنید: die Praxis.",
+        "de": "Einfach lernen: die Praxis."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Praxis ist am Montag geschlossen.",
+      "en": "The practice is closed on Monday.",
+      "fa": "مطب دوشنبه تعطیل است."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "rezept",
+    "word": "Rezept",
+    "article": "das",
+    "plural": "Rezepte",
+    "translations": {
+      "en": "prescription",
+      "fa": "نسخه (پزشک)"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Rezept).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Rezept).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Rezept).",
+      "simple": {
+        "en": "Just learn it: das Rezept.",
+        "fa": "فقط حفظش کنید: das Rezept.",
+        "de": "Einfach lernen: das Rezept."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Arzt schreibt ein Rezept.",
+      "en": "The doctor writes a prescription.",
+      "fa": "دکتر نسخه می‌نویسد."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "medikament",
+    "word": "Medikament",
+    "article": "das",
+    "plural": "Medikamente",
+    "translations": {
+      "en": "medicine, medication",
+      "fa": "دارو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Medikament).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Medikament).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Medikament).",
+      "simple": {
+        "en": "Just learn it: das Medikament.",
+        "fa": "فقط حفظش کنید: das Medikament.",
+        "de": "Einfach lernen: das Medikament."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Medikament hilft gut.",
+      "en": "The medicine works well.",
+      "fa": "این دارو خوب اثر می‌کند."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "tablette",
+    "word": "Tablette",
+    "article": "die",
+    "plural": "Tabletten",
+    "translations": {
+      "en": "tablet, pill",
+      "fa": "قرص"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Tablette.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Tablette.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Tablette.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich nehme zwei Tabletten.",
+      "en": "I take two tablets.",
+      "fa": "من دو قرص می‌خورم."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "pflaster",
+    "word": "Pflaster",
+    "article": "das",
+    "plural": "Pflaster",
+    "translations": {
+      "en": "plaster, band-aid",
+      "fa": "چسب زخم"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Pflaster).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Pflaster).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Pflaster).",
+      "simple": {
+        "en": "Just learn it: das Pflaster.",
+        "fa": "فقط حفظش کنید: das Pflaster.",
+        "de": "Einfach lernen: das Pflaster."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Kind braucht ein Pflaster.",
+      "en": "The child needs a plaster.",
+      "fa": "بچه چسب زخم لازم دارد."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "krankenkasse",
+    "word": "Krankenkasse",
+    "article": "die",
+    "plural": "Krankenkassen",
+    "translations": {
+      "en": "health insurance (fund)",
+      "fa": "بیمه‌ی درمانی"
+    },
+    "grammarRule": {
+      "en": "Compound noun: the last part decides the article. die Kasse → die Krankenkasse.",
+      "fa": "اسم مرکب: بخش آخر آرتیکل را تعیین می‌کند. die Kasse → die Krankenkasse.",
+      "de": "Zusammengesetztes Nomen: Der letzte Teil bestimmt den Artikel. die Kasse → die Krankenkasse.",
+      "simple": {
+        "en": "Last part decides: die Krankenkasse.",
+        "fa": "بخش آخر تعیین می‌کند: die Krankenkasse.",
+        "de": "Der letzte Teil zählt: die Krankenkasse."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Krankenkasse bezahlt den Arzt.",
+      "en": "The health insurance pays the doctor.",
+      "fa": "بیمه‌ی درمانی هزینه‌ی دکتر را می‌پردازد."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "gesundheitskarte",
+    "word": "Gesundheitskarte",
+    "article": "die",
+    "plural": "Gesundheitskarten",
+    "translations": {
+      "en": "health insurance card",
+      "fa": "کارت بیمه‌ی درمانی"
+    },
+    "grammarRule": {
+      "en": "Compound noun: the last part decides the article. die Karte → die Gesundheitskarte.",
+      "fa": "اسم مرکب: بخش آخر آرتیکل را تعیین می‌کند. die Karte → die Gesundheitskarte.",
+      "de": "Zusammengesetztes Nomen: Der letzte Teil bestimmt den Artikel. die Karte → die Gesundheitskarte.",
+      "simple": {
+        "en": "Last part decides: die Gesundheitskarte.",
+        "fa": "بخش آخر تعیین می‌کند: die Gesundheitskarte.",
+        "de": "Der letzte Teil zählt: die Gesundheitskarte."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Haben Sie Ihre Gesundheitskarte?",
+      "en": "Do you have your health insurance card?",
+      "fa": "کارت بیمه‌تان را دارید؟"
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "patient",
+    "word": "Patient",
+    "article": "der",
+    "plural": "Patienten",
+    "translations": {
+      "en": "patient (male)",
+      "fa": "بیمار (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Lehrer, der Patient.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Lehrer, der Patient.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Lehrer, der Patient.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Patient wartet schon lange.",
+      "en": "The patient has been waiting a long time.",
+      "fa": "بیمار مدت زیادی است که منتظر است."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "patientin",
+    "word": "Patientin",
+    "article": "die",
+    "plural": "Patientinnen",
+    "translations": {
+      "en": "patient (female)",
+      "fa": "بیمار (زن)"
+    },
+    "grammarRule": {
+      "en": "Words for female people are feminine (die), and -in is always die: die Ärztin, die Lehrerin, die Patientin.",
+      "fa": "کلمات مربوط به زنان مؤنث (die) هستند و پسوند -in همیشه die است: die Ärztin, die Lehrerin, die Patientin.",
+      "de": "Wörter für weibliche Personen sind feminin (die), -in ist immer die: die Ärztin, die Lehrerin, die Patientin.",
+      "simple": {
+        "en": "A woman (-in): die.",
+        "fa": "برای زن‌ها (-in): die.",
+        "de": "Eine Frau (-in): die."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Die Patientin hat Fieber.",
+      "en": "The patient has a fever.",
+      "fa": "خانم بیمار تب دارد."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "sprechstunde",
+    "word": "Sprechstunde",
+    "article": "die",
+    "plural": "Sprechstunden",
+    "translations": {
+      "en": "office hours (doctor)",
+      "fa": "ساعت پذیرش مطب"
+    },
+    "grammarRule": {
+      "en": "Compound noun: the last part decides the article. die Stunde → die Sprechstunde.",
+      "fa": "اسم مرکب: بخش آخر آرتیکل را تعیین می‌کند. die Stunde → die Sprechstunde.",
+      "de": "Zusammengesetztes Nomen: Der letzte Teil bestimmt den Artikel. die Stunde → die Sprechstunde.",
+      "simple": {
+        "en": "Last part decides: die Sprechstunde.",
+        "fa": "بخش آخر تعیین می‌کند: die Sprechstunde.",
+        "de": "Der letzte Teil zählt: die Sprechstunde."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Sprechstunde beginnt um acht Uhr.",
+      "en": "Office hours start at eight o'clock.",
+      "fa": "پذیرش مطب ساعت هشت شروع می‌شود."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "wartezimmer",
+    "word": "Wartezimmer",
+    "article": "das",
+    "plural": "Wartezimmer",
+    "translations": {
+      "en": "waiting room",
+      "fa": "اتاق انتظار"
+    },
+    "grammarRule": {
+      "en": "Compound noun: the last part decides the article. das Zimmer → das Wartezimmer.",
+      "fa": "اسم مرکب: بخش آخر آرتیکل را تعیین می‌کند. das Zimmer → das Wartezimmer.",
+      "de": "Zusammengesetztes Nomen: Der letzte Teil bestimmt den Artikel. das Zimmer → das Wartezimmer.",
+      "simple": {
+        "en": "Last part decides: das Wartezimmer.",
+        "fa": "بخش آخر تعیین می‌کند: das Wartezimmer.",
+        "de": "Der letzte Teil zählt: das Wartezimmer."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Im Wartezimmer sitzen drei Leute.",
+      "en": "Three people are sitting in the waiting room.",
+      "fa": "سه نفر در اتاق انتظار نشسته‌اند."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "untersuchung",
+    "word": "Untersuchung",
+    "article": "die",
+    "plural": "Untersuchungen",
+    "translations": {
+      "en": "examination, check-up",
+      "fa": "معاینه"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ung are always feminine (die): die Wohnung, die Zeitung, die Untersuchung.",
+      "fa": "اسم‌هایی که به -ung ختم می‌شوند همیشه مؤنث (die) هستند: die Wohnung, die Zeitung, die Untersuchung.",
+      "de": "Nomen auf -ung sind immer feminin (die): die Wohnung, die Zeitung, die Untersuchung.",
+      "simple": {
+        "en": "-ung is always die.",
+        "fa": "-ung همیشه die است.",
+        "de": "-ung ist immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Untersuchung dauert zehn Minuten.",
+      "en": "The examination takes ten minutes.",
+      "fa": "معاینه ده دقیقه طول می‌کشد."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "krankenwagen",
+    "word": "Krankenwagen",
+    "article": "der",
+    "plural": "Krankenwagen",
+    "translations": {
+      "en": "ambulance",
+      "fa": "آمبولانس"
+    },
+    "grammarRule": {
+      "en": "Compound noun: the last part decides the article. der Wagen → der Krankenwagen.",
+      "fa": "اسم مرکب: بخش آخر آرتیکل را تعیین می‌کند. der Wagen → der Krankenwagen.",
+      "de": "Zusammengesetztes Nomen: Der letzte Teil bestimmt den Artikel. der Wagen → der Krankenwagen.",
+      "simple": {
+        "en": "Last part decides: der Krankenwagen.",
+        "fa": "بخش آخر تعیین می‌کند: der Krankenwagen.",
+        "de": "Der letzte Teil zählt: der Krankenwagen."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Krankenwagen kommt schnell.",
+      "en": "The ambulance comes quickly.",
+      "fa": "آمبولانس سریع می‌آید."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "hilfe",
+    "word": "Hilfe",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "help",
+      "fa": "کمک"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Katze.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Katze.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Katze.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich brauche Hilfe!",
+      "en": "I need help!",
+      "fa": "به کمک احتیاج دارم!"
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "zahnarzt",
+    "word": "Zahnarzt",
+    "article": "der",
+    "plural": "Zahnärzte",
+    "translations": {
+      "en": "dentist (male)",
+      "fa": "دندان‌پزشک (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Ich muss zum Zahnarzt.",
+      "en": "I have to go to the dentist.",
+      "fa": "باید پیش دندان‌پزشک بروم."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "zahnaerztin",
+    "word": "Zahnärztin",
+    "article": "die",
+    "plural": "Zahnärztinnen",
+    "translations": {
+      "en": "dentist (female)",
+      "fa": "دندان‌پزشک (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Zahnärztin ist sehr nett.",
+      "en": "The dentist is very nice.",
+      "fa": "دندان‌پزشک خیلی مهربان است."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  }
+]

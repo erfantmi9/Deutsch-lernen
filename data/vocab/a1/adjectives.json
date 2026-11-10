@@ -395,5 +395,964 @@
       "fa": "فروشنده مهربان است."
     },
     "level": "A1"
+  },
+  {
+    "id": "arm",
+    "word": "arm",
+    "comparative": "ärmer",
+    "superlative": "am ärmsten",
+    "opposite": "reich",
+    "translations": {
+      "en": "poor",
+      "fa": "فقیر"
+    },
+    "example": {
+      "de": "Die Familie ist arm.",
+      "en": "The family is poor.",
+      "fa": "این خانواده فقیر است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "reich",
+    "word": "reich",
+    "comparative": "reicher",
+    "superlative": "am reichsten",
+    "opposite": "arm",
+    "translations": {
+      "en": "rich",
+      "fa": "ثروتمند، پولدار"
+    },
+    "example": {
+      "de": "Der Mann ist sehr reich.",
+      "en": "The man is very rich.",
+      "fa": "آن مرد خیلی پولدار است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "bekannt",
+    "word": "bekannt",
+    "comparative": "bekannter",
+    "superlative": "am bekanntesten",
+    "translations": {
+      "en": "well-known, famous",
+      "fa": "معروف، شناخته‌شده"
+    },
+    "example": {
+      "de": "Der Sänger ist sehr bekannt.",
+      "en": "The singer is very well-known.",
+      "fa": "این خواننده خیلی معروف است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "besetzt",
+    "word": "besetzt",
+    "opposite": "frei",
+    "translations": {
+      "en": "taken, occupied, busy",
+      "fa": "اشغال، گرفته‌شده"
+    },
+    "example": {
+      "de": "Der Platz ist leider besetzt.",
+      "en": "Sorry, the seat is taken.",
+      "fa": "متأسفانه این صندلی گرفته شده است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "dick",
+    "word": "dick",
+    "comparative": "dicker",
+    "superlative": "am dicksten",
+    "opposite": "dünn",
+    "translations": {
+      "en": "thick, fat",
+      "fa": "کلفت، چاق"
+    },
+    "example": {
+      "de": "Das Buch ist sehr dick.",
+      "en": "The book is very thick.",
+      "fa": "این کتاب خیلی قطور است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "duenn",
+    "word": "dünn",
+    "comparative": "dünner",
+    "superlative": "am dünnsten",
+    "opposite": "dick",
+    "translations": {
+      "en": "thin",
+      "fa": "نازک، لاغر"
+    },
+    "example": {
+      "de": "Die Wand ist sehr dünn.",
+      "en": "The wall is very thin.",
+      "fa": "دیوار خیلی نازک است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "dunkel",
+    "word": "dunkel",
+    "comparative": "dunkler",
+    "superlative": "am dunkelsten",
+    "opposite": "hell",
+    "translations": {
+      "en": "dark",
+      "fa": "تاریک، تیره"
+    },
+    "example": {
+      "de": "Im Winter ist es früh dunkel.",
+      "en": "In winter it gets dark early.",
+      "fa": "زمستان‌ها هوا زود تاریک می‌شود."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "hell",
+    "word": "hell",
+    "comparative": "heller",
+    "superlative": "am hellsten",
+    "opposite": "dunkel",
+    "translations": {
+      "en": "bright, light",
+      "fa": "روشن"
+    },
+    "example": {
+      "de": "Das Zimmer ist schön hell.",
+      "en": "The room is nice and bright.",
+      "fa": "اتاق حسابی روشن است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "einfach",
+    "word": "einfach",
+    "comparative": "einfacher",
+    "superlative": "am einfachsten",
+    "opposite": "schwer",
+    "translations": {
+      "en": "simple, easy",
+      "fa": "ساده، آسان"
+    },
+    "example": {
+      "de": "Die Aufgabe ist einfach.",
+      "en": "The exercise is easy.",
+      "fa": "این تمرین ساده است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "schwer",
+    "word": "schwer",
+    "comparative": "schwerer",
+    "superlative": "am schwersten",
+    "opposite": "leicht",
+    "translations": {
+      "en": "heavy, difficult",
+      "fa": "سنگین، سخت"
+    },
+    "example": {
+      "de": "Der Koffer ist schwer.",
+      "en": "The suitcase is heavy.",
+      "fa": "چمدان سنگین است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "leicht",
+    "word": "leicht",
+    "comparative": "leichter",
+    "superlative": "am leichtesten",
+    "opposite": "schwer",
+    "translations": {
+      "en": "light, easy",
+      "fa": "سبک، آسان"
+    },
+    "example": {
+      "de": "Die Tasche ist ganz leicht.",
+      "en": "The bag is very light.",
+      "fa": "کیف خیلی سبک است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "falsch",
+    "word": "falsch",
+    "opposite": "richtig",
+    "translations": {
+      "en": "wrong",
+      "fa": "غلط، اشتباه"
+    },
+    "example": {
+      "de": "Die Antwort ist falsch.",
+      "en": "The answer is wrong.",
+      "fa": "جواب غلط است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "richtig",
+    "word": "richtig",
+    "opposite": "falsch",
+    "translations": {
+      "en": "right, correct",
+      "fa": "درست"
+    },
+    "example": {
+      "de": "Ihre Antwort ist richtig.",
+      "en": "Your answer is correct.",
+      "fa": "جواب شما درست است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "fertig",
+    "word": "fertig",
+    "translations": {
+      "en": "ready, finished",
+      "fa": "آماده، تمام"
+    },
+    "example": {
+      "de": "Das Essen ist gleich fertig.",
+      "en": "The food is almost ready.",
+      "fa": "غذا الان آماده می‌شود."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "frei",
+    "word": "frei",
+    "opposite": "besetzt",
+    "translations": {
+      "en": "free, vacant",
+      "fa": "آزاد، خالی"
+    },
+    "example": {
+      "de": "Ist der Platz hier frei?",
+      "en": "Is this seat free?",
+      "fa": "این صندلی خالی است؟"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "fremd",
+    "word": "fremd",
+    "translations": {
+      "en": "foreign, strange",
+      "fa": "غریبه، ناآشنا"
+    },
+    "example": {
+      "de": "Ich bin fremd hier.",
+      "en": "I am a stranger here.",
+      "fa": "من اینجا غریبه‌ام."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "froh",
+    "word": "froh",
+    "translations": {
+      "en": "glad",
+      "fa": "خوشحال، شاد"
+    },
+    "example": {
+      "de": "Ich bin froh, dass du da bist.",
+      "en": "I am glad that you are here.",
+      "fa": "خوشحالم که اینجایی."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "gesund",
+    "word": "gesund",
+    "comparative": "gesünder",
+    "superlative": "am gesündesten",
+    "opposite": "krank",
+    "translations": {
+      "en": "healthy",
+      "fa": "سالم"
+    },
+    "example": {
+      "de": "Mein Opa ist noch gesund.",
+      "en": "My grandpa is still healthy.",
+      "fa": "پدربزرگم هنوز سالم است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "krank",
+    "word": "krank",
+    "comparative": "kränker",
+    "superlative": "am kränksten",
+    "opposite": "gesund",
+    "translations": {
+      "en": "ill, sick",
+      "fa": "بیمار، مریض"
+    },
+    "example": {
+      "de": "Heute ist mein Sohn krank.",
+      "en": "My son is ill today.",
+      "fa": "پسرم امروز مریض است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "gluecklich",
+    "word": "glücklich",
+    "comparative": "glücklicher",
+    "superlative": "am glücklichsten",
+    "opposite": "traurig",
+    "translations": {
+      "en": "happy",
+      "fa": "خوشحال، خوشبخت"
+    },
+    "example": {
+      "de": "Das Kind ist glücklich.",
+      "en": "The child is happy.",
+      "fa": "بچه خوشحال است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "traurig",
+    "word": "traurig",
+    "comparative": "trauriger",
+    "superlative": "am traurigsten",
+    "opposite": "glücklich",
+    "translations": {
+      "en": "sad",
+      "fa": "غمگین، ناراحت"
+    },
+    "example": {
+      "de": "Warum bist du so traurig?",
+      "en": "Why are you so sad?",
+      "fa": "چرا این‌قدر ناراحتی؟"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "guenstig",
+    "word": "günstig",
+    "comparative": "günstiger",
+    "superlative": "am günstigsten",
+    "opposite": "teuer",
+    "translations": {
+      "en": "inexpensive, good value",
+      "fa": "ارزان، به‌صرفه"
+    },
+    "example": {
+      "de": "Das Hotel ist sehr günstig.",
+      "en": "The hotel is very good value.",
+      "fa": "قیمت این هتل خیلی مناسب است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "hoch",
+    "word": "hoch",
+    "comparative": "höher",
+    "superlative": "am höchsten",
+    "translations": {
+      "en": "high, tall",
+      "fa": "بلند، مرتفع"
+    },
+    "example": {
+      "de": "Der Berg ist sehr hoch.",
+      "en": "The mountain is very high.",
+      "fa": "کوه خیلی بلند است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "huebsch",
+    "word": "hübsch",
+    "comparative": "hübscher",
+    "superlative": "am hübschesten",
+    "translations": {
+      "en": "pretty",
+      "fa": "قشنگ، خوشگل"
+    },
+    "example": {
+      "de": "Das Kleid ist hübsch.",
+      "en": "The dress is pretty.",
+      "fa": "این لباس قشنگ است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "kaputt",
+    "word": "kaputt",
+    "translations": {
+      "en": "broken",
+      "fa": "خراب"
+    },
+    "example": {
+      "de": "Mein Handy ist kaputt.",
+      "en": "My mobile phone is broken.",
+      "fa": "گوشی‌ام خراب است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "kurz",
+    "word": "kurz",
+    "comparative": "kürzer",
+    "superlative": "am kürzesten",
+    "opposite": "lang",
+    "translations": {
+      "en": "short",
+      "fa": "کوتاه"
+    },
+    "example": {
+      "de": "Der Film ist kurz.",
+      "en": "The film is short.",
+      "fa": "فیلم کوتاه است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "langsam",
+    "word": "langsam",
+    "comparative": "langsamer",
+    "superlative": "am langsamsten",
+    "opposite": "schnell",
+    "translations": {
+      "en": "slow",
+      "fa": "آهسته، کند"
+    },
+    "example": {
+      "de": "Bitte sprechen Sie langsam.",
+      "en": "Please speak slowly.",
+      "fa": "لطفاً آهسته صحبت کنید."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "laut",
+    "word": "laut",
+    "comparative": "lauter",
+    "superlative": "am lautesten",
+    "opposite": "leise",
+    "translations": {
+      "en": "loud, noisy",
+      "fa": "بلند (صدا)، پرسروصدا"
+    },
+    "example": {
+      "de": "Die Musik ist zu laut.",
+      "en": "The music is too loud.",
+      "fa": "صدای موسیقی زیادی بلند است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "leise",
+    "word": "leise",
+    "comparative": "leiser",
+    "superlative": "am leisesten",
+    "opposite": "laut",
+    "translations": {
+      "en": "quiet, soft",
+      "fa": "آرام، کم‌صدا"
+    },
+    "example": {
+      "de": "Die Kinder sind jetzt leise.",
+      "en": "The children are quiet now.",
+      "fa": "بچه‌ها الان ساکت‌اند."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "leer",
+    "word": "leer",
+    "opposite": "voll",
+    "translations": {
+      "en": "empty",
+      "fa": "خالی"
+    },
+    "example": {
+      "de": "Der Kühlschrank ist leer.",
+      "en": "The fridge is empty.",
+      "fa": "یخچال خالی است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "voll",
+    "word": "voll",
+    "opposite": "leer",
+    "translations": {
+      "en": "full",
+      "fa": "پر"
+    },
+    "example": {
+      "de": "Der Bus ist heute voll.",
+      "en": "The bus is full today.",
+      "fa": "اتوبوس امروز پر است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "ledig",
+    "word": "ledig",
+    "opposite": "verheiratet",
+    "translations": {
+      "en": "single (not married)",
+      "fa": "مجرد"
+    },
+    "example": {
+      "de": "Ich bin noch ledig.",
+      "en": "I am still single.",
+      "fa": "من هنوز مجردم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "verheiratet",
+    "word": "verheiratet",
+    "opposite": "ledig",
+    "translations": {
+      "en": "married",
+      "fa": "متأهل"
+    },
+    "example": {
+      "de": "Meine Schwester ist verheiratet.",
+      "en": "My sister is married.",
+      "fa": "خواهرم ازدواج کرده است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "geschieden",
+    "word": "geschieden",
+    "translations": {
+      "en": "divorced",
+      "fa": "طلاق‌گرفته"
+    },
+    "example": {
+      "de": "Er ist seit zwei Jahren geschieden.",
+      "en": "He has been divorced for two years.",
+      "fa": "او دو سال است که طلاق گرفته."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "nett",
+    "word": "nett",
+    "comparative": "netter",
+    "superlative": "am nettesten",
+    "translations": {
+      "en": "nice, kind",
+      "fa": "مهربان، خوب"
+    },
+    "example": {
+      "de": "Mein Nachbar ist sehr nett.",
+      "en": "My neighbour is very nice.",
+      "fa": "همسایه‌ام آدم خیلی خوبی است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "lieb",
+    "word": "lieb",
+    "translations": {
+      "en": "dear, sweet, kind",
+      "fa": "عزیز، مهربان"
+    },
+    "example": {
+      "de": "Unser Hund ist sehr lieb.",
+      "en": "Our dog is very sweet.",
+      "fa": "سگ ما خیلی مهربان است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "offen",
+    "word": "offen",
+    "opposite": "geschlossen",
+    "translations": {
+      "en": "open",
+      "fa": "باز"
+    },
+    "example": {
+      "de": "Die Tür ist offen.",
+      "en": "The door is open.",
+      "fa": "در باز است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "geschlossen",
+    "word": "geschlossen",
+    "opposite": "offen",
+    "translations": {
+      "en": "closed",
+      "fa": "بسته"
+    },
+    "example": {
+      "de": "Der Supermarkt ist sonntags geschlossen.",
+      "en": "The supermarket is closed on Sundays.",
+      "fa": "سوپرمارکت یکشنبه‌ها بسته است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "ruhig",
+    "word": "ruhig",
+    "comparative": "ruhiger",
+    "superlative": "am ruhigsten",
+    "opposite": "laut",
+    "translations": {
+      "en": "quiet, calm",
+      "fa": "آرام، ساکت"
+    },
+    "example": {
+      "de": "Die Straße ist ruhig.",
+      "en": "The street is quiet.",
+      "fa": "خیابان آرام است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "sauber",
+    "word": "sauber",
+    "comparative": "sauberer",
+    "superlative": "am saubersten",
+    "opposite": "schmutzig",
+    "translations": {
+      "en": "clean",
+      "fa": "تمیز"
+    },
+    "example": {
+      "de": "Die Küche ist sauber.",
+      "en": "The kitchen is clean.",
+      "fa": "آشپزخانه تمیز است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "schmutzig",
+    "word": "schmutzig",
+    "comparative": "schmutziger",
+    "superlative": "am schmutzigsten",
+    "opposite": "sauber",
+    "translations": {
+      "en": "dirty",
+      "fa": "کثیف"
+    },
+    "example": {
+      "de": "Meine Schuhe sind schmutzig.",
+      "en": "My shoes are dirty.",
+      "fa": "کفش‌هایم کثیف‌اند."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "schlecht",
+    "word": "schlecht",
+    "comparative": "schlechter",
+    "superlative": "am schlechtesten",
+    "opposite": "gut",
+    "translations": {
+      "en": "bad",
+      "fa": "بد"
+    },
+    "example": {
+      "de": "Das Wetter ist heute schlecht.",
+      "en": "The weather is bad today.",
+      "fa": "امروز هوا بد است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "sicher",
+    "word": "sicher",
+    "comparative": "sicherer",
+    "superlative": "am sichersten",
+    "translations": {
+      "en": "sure, safe",
+      "fa": "مطمئن، امن"
+    },
+    "example": {
+      "de": "Ich bin nicht sicher.",
+      "en": "I am not sure.",
+      "fa": "مطمئن نیستم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "spaet",
+    "word": "spät",
+    "comparative": "später",
+    "superlative": "am spätesten",
+    "opposite": "früh",
+    "translations": {
+      "en": "late",
+      "fa": "دیر"
+    },
+    "example": {
+      "de": "Es ist schon spät.",
+      "en": "It is already late.",
+      "fa": "دیگر دیر شده است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "frueh",
+    "word": "früh",
+    "comparative": "früher",
+    "superlative": "am frühesten",
+    "opposite": "spät",
+    "translations": {
+      "en": "early",
+      "fa": "زود"
+    },
+    "example": {
+      "de": "Ich stehe früh auf.",
+      "en": "I get up early.",
+      "fa": "من زود بیدار می‌شوم."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "toll",
+    "word": "toll",
+    "comparative": "toller",
+    "superlative": "am tollsten",
+    "translations": {
+      "en": "great, fantastic",
+      "fa": "عالی، فوق‌العاده"
+    },
+    "example": {
+      "de": "Der Urlaub war toll.",
+      "en": "The holiday was great.",
+      "fa": "تعطیلات عالی بود."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "wichtig",
+    "word": "wichtig",
+    "comparative": "wichtiger",
+    "superlative": "am wichtigsten",
+    "translations": {
+      "en": "important",
+      "fa": "مهم"
+    },
+    "example": {
+      "de": "Der Termin ist sehr wichtig.",
+      "en": "The appointment is very important.",
+      "fa": "این قرار خیلی مهم است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "interessant",
+    "word": "interessant",
+    "comparative": "interessanter",
+    "superlative": "am interessantesten",
+    "opposite": "langweilig",
+    "translations": {
+      "en": "interesting",
+      "fa": "جالب"
+    },
+    "example": {
+      "de": "Das Buch ist interessant.",
+      "en": "The book is interesting.",
+      "fa": "کتاب جالب است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "langweilig",
+    "word": "langweilig",
+    "comparative": "langweiliger",
+    "superlative": "am langweiligsten",
+    "opposite": "interessant",
+    "translations": {
+      "en": "boring",
+      "fa": "خسته‌کننده، کسل‌کننده"
+    },
+    "example": {
+      "de": "Der Film ist langweilig.",
+      "en": "The film is boring.",
+      "fa": "فیلم خسته‌کننده است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "kostenlos",
+    "word": "kostenlos",
+    "translations": {
+      "en": "free (of charge)",
+      "fa": "رایگان، مجانی"
+    },
+    "example": {
+      "de": "Der Eintritt ist kostenlos.",
+      "en": "Admission is free.",
+      "fa": "ورود رایگان است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "moeglich",
+    "word": "möglich",
+    "translations": {
+      "en": "possible",
+      "fa": "ممکن"
+    },
+    "example": {
+      "de": "Ist das morgen möglich?",
+      "en": "Is that possible tomorrow?",
+      "fa": "فردا امکانش هست؟"
+    },
+    "level": "A1"
+  },
+  {
+    "id": "privat",
+    "word": "privat",
+    "translations": {
+      "en": "private",
+      "fa": "خصوصی"
+    },
+    "example": {
+      "de": "Die Party ist privat.",
+      "en": "The party is private.",
+      "fa": "این مهمانی خصوصی است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "suess",
+    "word": "süß",
+    "comparative": "süßer",
+    "superlative": "am süßesten",
+    "translations": {
+      "en": "sweet, cute",
+      "fa": "شیرین، بامزه"
+    },
+    "example": {
+      "de": "Der Kuchen ist sehr süß.",
+      "en": "The cake is very sweet.",
+      "fa": "کیک خیلی شیرین است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "sauer",
+    "word": "sauer",
+    "comparative": "saurer",
+    "superlative": "am sauersten",
+    "translations": {
+      "en": "sour, angry",
+      "fa": "ترش، عصبانی"
+    },
+    "example": {
+      "de": "Der Apfel ist sehr sauer.",
+      "en": "The apple is very sour.",
+      "fa": "سیب خیلی ترش است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "nass",
+    "word": "nass",
+    "opposite": "trocken",
+    "translations": {
+      "en": "wet",
+      "fa": "خیس"
+    },
+    "example": {
+      "de": "Meine Haare sind nass.",
+      "en": "My hair is wet.",
+      "fa": "موهایم خیس است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "trocken",
+    "word": "trocken",
+    "comparative": "trockener",
+    "superlative": "am trockensten",
+    "opposite": "nass",
+    "translations": {
+      "en": "dry",
+      "fa": "خشک"
+    },
+    "example": {
+      "de": "Die Wäsche ist schon trocken.",
+      "en": "The laundry is already dry.",
+      "fa": "لباس‌ها دیگر خشک شده‌اند."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "kuehl",
+    "word": "kühl",
+    "comparative": "kühler",
+    "superlative": "am kühlsten",
+    "opposite": "warm",
+    "translations": {
+      "en": "cool",
+      "fa": "خنک"
+    },
+    "example": {
+      "de": "Abends ist es kühl.",
+      "en": "It is cool in the evening.",
+      "fa": "عصرها هوا خنک است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "zufrieden",
+    "word": "zufrieden",
+    "comparative": "zufriedener",
+    "superlative": "am zufriedensten",
+    "translations": {
+      "en": "satisfied, content",
+      "fa": "راضی"
+    },
+    "example": {
+      "de": "Ich bin mit der Wohnung zufrieden.",
+      "en": "I am happy with the flat.",
+      "fa": "من از آپارتمانم راضی‌ام."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "bequem",
+    "word": "bequem",
+    "comparative": "bequemer",
+    "superlative": "am bequemsten",
+    "translations": {
+      "en": "comfortable",
+      "fa": "راحت"
+    },
+    "example": {
+      "de": "Das Sofa ist sehr bequem.",
+      "en": "The sofa is very comfortable.",
+      "fa": "این مبل خیلی راحت است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "praktisch",
+    "word": "praktisch",
+    "comparative": "praktischer",
+    "superlative": "am praktischsten",
+    "translations": {
+      "en": "practical, handy",
+      "fa": "کاربردی، به‌دردبخور"
+    },
+    "example": {
+      "de": "Die Tasche ist sehr praktisch.",
+      "en": "The bag is very practical.",
+      "fa": "این کیف خیلی کاربردی است."
+    },
+    "level": "A1"
   }
 ]

@@ -1,7 +1,7 @@
 import raw from "../data/verbs/a1.json";
 import { VerbListSchema } from "./schemas/verb";
-import { PERSONS } from "../types/verb";
-import type { Conjugation, Person, VerbCategory, VerbEntry, VerbType } from "../types/verb";
+import { PERSONS, VERB_CATEGORIES, VERB_USAGES } from "../types/verb";
+import type { Conjugation, Person, VerbCategory, VerbEntry, VerbType, VerbUsage } from "../types/verb";
 import type { Level } from "../types/common";
 
 // Validated once at module load; throws a ZodError on malformed data.
@@ -21,6 +21,7 @@ export interface VerbFilter {
   level?: Level;
   category?: VerbCategory;
   type?: VerbType;
+  usage?: VerbUsage;
 }
 
 export function filterVerbs(filter: VerbFilter = {}): VerbEntry[] {
@@ -28,13 +29,34 @@ export function filterVerbs(filter: VerbFilter = {}): VerbEntry[] {
     (v) =>
       (filter.level === undefined || v.level === filter.level) &&
       (filter.category === undefined || v.category === filter.category) &&
-      (filter.type === undefined || v.type === filter.type),
+      (filter.type === undefined || v.type === filter.type) &&
+      (filter.usage === undefined || v.usage === filter.usage),
   );
 }
 
 /** Parses a `?type=` query value; anything that isn't a known verb type yields null. */
 export function parseVerbType(value: string | null): VerbType | null {
   return getAvailableTypes().find((t) => t === value) ?? null;
+}
+
+/** Parses a `?topic=` query value; anything that isn't a known verb category yields null. */
+export function parseVerbCategory(value: string | null): VerbCategory | null {
+  return getAvailableCategories().find((c) => c === value) ?? null;
+}
+
+/** Parses a `?usage=` query value; anything that isn't a known usage level yields null. */
+export function parseVerbUsage(value: string | null): VerbUsage | null {
+  return VERB_USAGES.find((u) => u === value) ?? null;
+}
+
+/** Most needed first (essential, common, useful); the data order is kept inside each level. */
+export function sortByUsage(list: readonly VerbEntry[]): VerbEntry[] {
+  return [...list].sort((a, b) => VERB_USAGES.indexOf(a.usage) - VERB_USAGES.indexOf(b.usage));
+}
+
+/** Verb categories (topics) that actually occur in the data, in a stable display order. */
+export function getAvailableCategories(): VerbCategory[] {
+  return VERB_CATEGORIES.filter((c) => verbs.some((v) => v.category === c));
 }
 
 /** Verb types that actually occur in the data, in a stable display order. */

@@ -25,6 +25,7 @@
       "fa": "سر درد می‌کند."
     },
     "category": "body",
+    "subcategory": "head",
     "level": "A1"
   },
   {
@@ -53,6 +54,7 @@
       "fa": "دست سرد است."
     },
     "category": "body",
+    "subcategory": "body",
     "level": "A1"
   },
   {
@@ -81,6 +83,7 @@
       "fa": "بازو درد می‌کند."
     },
     "category": "body",
+    "subcategory": "body",
     "level": "A1"
   },
   {
@@ -109,6 +112,7 @@
       "fa": "پا درد می‌کند."
     },
     "category": "body",
+    "subcategory": "body",
     "level": "A1"
   },
   {
@@ -137,6 +141,7 @@
       "fa": "چشم آبی است."
     },
     "category": "body",
+    "subcategory": "head",
     "level": "A1",
     "tags": [
       "exception"
@@ -168,6 +173,7 @@
       "fa": "بینی کوچک است."
     },
     "category": "body",
+    "subcategory": "head",
     "level": "A1"
   },
   {
@@ -196,6 +202,7 @@
       "fa": "پا (کف پا) درد می‌کند."
     },
     "category": "body",
+    "subcategory": "body",
     "level": "A1"
   },
   {
@@ -224,6 +231,529 @@
       "fa": "گوش سرد است."
     },
     "category": "body",
+    "subcategory": "head",
+    "level": "A1"
+  },
+  {
+    "id": "mund",
+    "word": "Mund",
+    "article": "der",
+    "plural": "Münder",
+    "translations": {
+      "en": "mouth",
+      "fa": "دهان"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Mund).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Mund).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Mund).",
+      "simple": {
+        "en": "Just learn it: der Mund.",
+        "fa": "فقط حفظش کنید: der Mund.",
+        "de": "Einfach lernen: der Mund."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Mund ist offen.",
+      "en": "The mouth is open.",
+      "fa": "دهان باز است."
+    },
+    "category": "body",
+    "subcategory": "head",
+    "level": "A1"
+  },
+  {
+    "id": "zahn",
+    "word": "Zahn",
+    "article": "der",
+    "plural": "Zähne",
+    "translations": {
+      "en": "tooth",
+      "fa": "دندان"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Zahn).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Zahn).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Zahn).",
+      "simple": {
+        "en": "Just learn it: der Zahn.",
+        "fa": "فقط حفظش کنید: der Zahn.",
+        "de": "Einfach lernen: der Zahn."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Mein Zahn tut weh.",
+      "en": "My tooth hurts.",
+      "fa": "دندانم درد می‌کند."
+    },
+    "category": "body",
+    "subcategory": "head",
+    "level": "A1"
+  },
+  {
+    "id": "haar",
+    "word": "Haar",
+    "article": "das",
+    "plural": "Haare",
+    "translations": {
+      "en": "hair",
+      "fa": "مو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Haar).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Haar).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Haar).",
+      "simple": {
+        "en": "Just learn it: das Haar.",
+        "fa": "فقط حفظش کنید: das Haar.",
+        "de": "Einfach lernen: das Haar."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Sie hat lange Haare.",
+      "en": "She has long hair.",
+      "fa": "او موهای بلندی دارد."
+    },
+    "category": "body",
+    "subcategory": "head",
+    "level": "A1"
+  },
+  {
+    "id": "gesicht",
+    "word": "Gesicht",
+    "article": "das",
+    "plural": "Gesichter",
+    "translations": {
+      "en": "face",
+      "fa": "صورت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Gesicht).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Gesicht).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Gesicht).",
+      "simple": {
+        "en": "Just learn it: das Gesicht.",
+        "fa": "فقط حفظش کنید: das Gesicht.",
+        "de": "Einfach lernen: das Gesicht."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich wasche mein Gesicht.",
+      "en": "I wash my face.",
+      "fa": "من صورتم را می‌شویم."
+    },
+    "category": "body",
+    "subcategory": "head",
+    "level": "A1"
+  },
+  {
+    "id": "lippe",
+    "word": "Lippe",
+    "article": "die",
+    "plural": "Lippen",
+    "translations": {
+      "en": "lip",
+      "fa": "لب"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Lippe.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Lippe.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Lippe.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Meine Lippen sind trocken.",
+      "en": "My lips are dry.",
+      "fa": "لب‌هایم خشک‌اند."
+    },
+    "category": "body",
+    "subcategory": "head",
+    "level": "A1"
+  },
+  {
+    "id": "zunge",
+    "word": "Zunge",
+    "article": "die",
+    "plural": "Zungen",
+    "translations": {
+      "en": "tongue",
+      "fa": "زبان (عضو بدن)"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Zunge.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Zunge.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Zunge.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Zunge ist rot.",
+      "en": "The tongue is red.",
+      "fa": "زبان قرمز است."
+    },
+    "category": "body",
+    "subcategory": "head",
+    "level": "A1"
+  },
+  {
+    "id": "hals",
+    "word": "Hals",
+    "article": "der",
+    "plural": "Hälse",
+    "translations": {
+      "en": "neck; throat",
+      "fa": "گردن؛ گلو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Hals).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Hals).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Hals).",
+      "simple": {
+        "en": "Just learn it: der Hals.",
+        "fa": "فقط حفظش کنید: der Hals.",
+        "de": "Einfach lernen: der Hals."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Mein Hals tut weh.",
+      "en": "My throat hurts.",
+      "fa": "گلویم درد می‌کند."
+    },
+    "category": "body",
+    "subcategory": "body",
+    "level": "A1"
+  },
+  {
+    "id": "bauch",
+    "word": "Bauch",
+    "article": "der",
+    "plural": "Bäuche",
+    "translations": {
+      "en": "belly, stomach",
+      "fa": "شکم"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Bauch).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Bauch).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Bauch).",
+      "simple": {
+        "en": "Just learn it: der Bauch.",
+        "fa": "فقط حفظش کنید: der Bauch.",
+        "de": "Einfach lernen: der Bauch."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Mein Bauch ist voll.",
+      "en": "My stomach is full.",
+      "fa": "شکمم پر است."
+    },
+    "category": "body",
+    "subcategory": "body",
+    "level": "A1"
+  },
+  {
+    "id": "ruecken",
+    "word": "Rücken",
+    "article": "der",
+    "plural": "Rücken",
+    "translations": {
+      "en": "back",
+      "fa": "کمر، پشت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Rücken).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Rücken).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Rücken).",
+      "simple": {
+        "en": "Just learn it: der Rücken.",
+        "fa": "فقط حفظش کنید: der Rücken.",
+        "de": "Einfach lernen: der Rücken."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Mein Rücken tut weh.",
+      "en": "My back hurts.",
+      "fa": "کمرم درد می‌کند."
+    },
+    "category": "body",
+    "subcategory": "body",
+    "level": "A1"
+  },
+  {
+    "id": "finger",
+    "word": "Finger",
+    "article": "der",
+    "plural": "Finger",
+    "translations": {
+      "en": "finger",
+      "fa": "انگشت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Finger).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Finger).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Finger).",
+      "simple": {
+        "en": "Just learn it: der Finger.",
+        "fa": "فقط حفظش کنید: der Finger.",
+        "de": "Einfach lernen: der Finger."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Hand hat fünf Finger.",
+      "en": "The hand has five fingers.",
+      "fa": "دست پنج انگشت دارد."
+    },
+    "category": "body",
+    "subcategory": "body",
+    "level": "A1"
+  },
+  {
+    "id": "daumen",
+    "word": "Daumen",
+    "article": "der",
+    "plural": "Daumen",
+    "translations": {
+      "en": "thumb",
+      "fa": "انگشت شست"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Daumen).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Daumen).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Daumen).",
+      "simple": {
+        "en": "Just learn it: der Daumen.",
+        "fa": "فقط حفظش کنید: der Daumen.",
+        "de": "Einfach lernen: der Daumen."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Daumen ist kurz.",
+      "en": "The thumb is short.",
+      "fa": "شست کوتاه است."
+    },
+    "category": "body",
+    "subcategory": "body",
+    "level": "A1"
+  },
+  {
+    "id": "knie",
+    "word": "Knie",
+    "article": "das",
+    "plural": "Knie",
+    "translations": {
+      "en": "knee",
+      "fa": "زانو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Knie).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Knie).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Knie).",
+      "simple": {
+        "en": "Just learn it: das Knie.",
+        "fa": "فقط حفظش کنید: das Knie.",
+        "de": "Einfach lernen: das Knie."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ihr Knie ist dick.",
+      "en": "Her knee is swollen.",
+      "fa": "زانویش ورم کرده است."
+    },
+    "category": "body",
+    "subcategory": "body",
+    "level": "A1"
+  },
+  {
+    "id": "schulter",
+    "word": "Schulter",
+    "article": "die",
+    "plural": "Schultern",
+    "translations": {
+      "en": "shoulder",
+      "fa": "شانه (کتف)"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Schulter).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Schulter).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Schulter).",
+      "simple": {
+        "en": "Just learn it: die Schulter.",
+        "fa": "فقط حفظش کنید: die Schulter.",
+        "de": "Einfach lernen: die Schulter."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Er hat breite Schultern.",
+      "en": "He has broad shoulders.",
+      "fa": "او شانه‌های پهنی دارد."
+    },
+    "category": "body",
+    "subcategory": "body",
+    "level": "A1"
+  },
+  {
+    "id": "herz",
+    "word": "Herz",
+    "article": "das",
+    "plural": "Herzen",
+    "translations": {
+      "en": "heart",
+      "fa": "قلب"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Herz).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Herz).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Herz).",
+      "simple": {
+        "en": "Just learn it: das Herz.",
+        "fa": "فقط حفظش کنید: das Herz.",
+        "de": "Einfach lernen: das Herz."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Herz schlägt schnell.",
+      "en": "The heart beats fast.",
+      "fa": "قلب تند می‌زند."
+    },
+    "category": "body",
+    "subcategory": "body",
+    "level": "A1"
+  },
+  {
+    "id": "koerper",
+    "word": "Körper",
+    "article": "der",
+    "plural": "Körper",
+    "translations": {
+      "en": "body",
+      "fa": "بدن"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Körper).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Körper).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Körper).",
+      "simple": {
+        "en": "Just learn it: der Körper.",
+        "fa": "فقط حفظش کنید: der Körper.",
+        "de": "Einfach lernen: der Körper."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Sport ist gut für den Körper.",
+      "en": "Sport is good for the body.",
+      "fa": "ورزش برای بدن خوب است."
+    },
+    "category": "body",
+    "subcategory": "body",
+    "level": "A1"
+  },
+  {
+    "id": "zeh",
+    "word": "Zeh",
+    "article": "der",
+    "plural": "Zehen",
+    "translations": {
+      "en": "toe",
+      "fa": "انگشت پا"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Zeh).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Zeh).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Zeh).",
+      "simple": {
+        "en": "Just learn it: der Zeh.",
+        "fa": "فقط حفظش کنید: der Zeh.",
+        "de": "Einfach lernen: der Zeh."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Fuß hat fünf Zehen.",
+      "en": "The foot has five toes.",
+      "fa": "پا پنج انگشت دارد."
+    },
+    "category": "body",
+    "subcategory": "body",
+    "level": "A1"
+  },
+  {
+    "id": "haut",
+    "word": "Haut",
+    "article": "die",
+    "plural": "Häute",
+    "translations": {
+      "en": "skin",
+      "fa": "پوست"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Haut).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Haut).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Haut).",
+      "simple": {
+        "en": "Just learn it: die Haut.",
+        "fa": "فقط حفظش کنید: die Haut.",
+        "de": "Einfach lernen: die Haut."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ihre Haut ist sehr hell.",
+      "en": "Her skin is very fair.",
+      "fa": "پوستش خیلی روشن است."
+    },
+    "category": "body",
+    "subcategory": "body",
+    "level": "A1"
+  },
+  {
+    "id": "blut",
+    "word": "Blut",
+    "article": "das",
+    "plural": "–",
+    "translations": {
+      "en": "blood",
+      "fa": "خون"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Blut).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Blut).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Blut).",
+      "simple": {
+        "en": "Just learn it: das Blut.",
+        "fa": "فقط حفظش کنید: das Blut.",
+        "de": "Einfach lernen: das Blut."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Blut ist rot.",
+      "en": "Blood is red.",
+      "fa": "خون قرمز است."
+    },
+    "category": "body",
+    "subcategory": "body",
     "level": "A1"
   }
 ]

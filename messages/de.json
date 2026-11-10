@@ -31,72 +31,74 @@
     "skipToContent": "Zum Hauptinhalt springen"
   },
   "Home": {
-    "title": "Deutsch A1 lernen, Schritt für Schritt",
-    "subtitle": "Artikel, Verben, Grammatik, Dialoge, Lesen und eine Übungsprüfung, mit Wiederholung in Abständen. Auf Englisch, Deutsch und Persisch.",
-    "cta": "Arcade starten",
+    "title": "Vom ersten Wort bis zur A1-Prüfung",
+    "subtitle": "Kurze Lektionen, tägliches Üben und cleveres Wiederholen – alles auf einem klaren Weg.",
+    "cta": "Los geht's!",
     "progress": "Fortschritt: {percent} %",
     "modules": {
       "arcade": {
         "title": "Artikel-Arcade",
-        "desc": "Schnelle Runden mit der, die, das und sofortigem Feedback."
+        "desc": "Schnelle Runden mit der, die, das. Du siehst sofort, ob es stimmt."
       },
       "verbs": {
         "title": "Verben",
-        "desc": "Konjugationstabellen ansehen und die Formen üben."
+        "desc": "Schau dir die Formen an und übe sie, bis sie sitzen."
       },
       "sentences": {
         "title": "Sätze",
-        "desc": "Ziehe die Wörter in die richtige Reihenfolge."
+        "desc": "Schieb die Wörter an die richtige Stelle – wie ein Puzzle."
       },
       "grammar": {
         "title": "Grammatik",
-        "desc": "Elf Lektionen von Pronomen und Kasus bis zu Modalverben und Wortstellung."
+        "desc": "Sechzehn kurze Lektionen: von Pronomen und Fällen bis zum Perfekt und zu Konjunktionen."
       },
       "numbers": {
         "title": "Zahlen & Zeit",
-        "desc": "Zahlen, Datum, Uhrzeit und Preise zum Lernen und Üben."
+        "desc": "Zahlen, Datum, Uhrzeit und Preise – erst lernen, dann üben."
       },
       "dialogues": {
         "title": "Dialoge",
-        "desc": "Zwölf Alltagsgespräche mit Rollenspiel und Quiz."
+        "desc": "Zwölf Gespräche aus dem Alltag. Spiel mit und teste dich im Quiz."
       },
       "reading": {
         "title": "Lesen",
-        "desc": "Zehn kurze Texte mit Aufgaben im Prüfungsstil."
+        "desc": "Zehn kurze Texte mit Aufgaben wie in der Prüfung."
+      },
+      "vocabulary": {
+        "title": "Wortschatz",
+        "desc": "Alle A1-Wörter nach Themen – pack sie in deinen Stapel."
+      },
+      "listen": {
+        "title": "Hören",
+        "desc": "Hör ein Wort oder eine Zahl und schreib, was du gehört hast."
+      },
+      "review": {
+        "title": "Wiederholen",
+        "desc": "Deine Lernkarten kommen genau dann, wenn du sie fast vergessen hast."
       }
     },
-    "hero": {
-      "features": {
-        "label": "Was du üben kannst",
-        "articles": "Artikel",
-        "verbs": "Verben",
-        "grammar": "Grammatik",
-        "dialogues": "Dialoge",
-        "reading": "Lesen",
-        "exam": "Übungsprüfung"
-      }
-    }
+    "sectionsTitle": "Alles auf einen Blick"
   },
   "Arcade": {
     "title": "Artikel-Quiz",
-    "prompt": "Welcher Artikel passt zu diesem Nomen?",
+    "prompt": "Welcher Artikel passt hier?",
     "plural": "Plural",
     "score": "Punkte",
     "streak": "Serie",
     "best": "Beste Serie",
-    "correct": "Richtig!",
-    "wrong": "Leider falsch. Richtig ist",
+    "correct": "Super, richtig!",
+    "wrong": "Knapp daneben! Richtig ist",
     "next": "Weiter",
     "reset": "Fortschritt zurücksetzen",
     "loading": "Lädt…",
     "shortcuts": "Tastatur: 1 = der, 2 = die, 3 = das",
-    "chooseArticle": "Wähle der, die oder das",
+    "chooseArticle": "Wähl der, die oder das",
     "autoAdvance": "Nach einer richtigen Antwort automatisch weiter",
     "explanationTitle": "Warum dieser Artikel?",
     "resetConfirmTitle": "Fortschritt zurücksetzen?",
     "resetConfirmBody": "Punkte, Serie und beste Serie werden auf null gesetzt.",
     "why": "Warum?",
-    "subtitle": "Wähle den richtigen Artikel und baue deine Serie aus."
+    "subtitle": "Wähl den richtigen Artikel und bau deine Serie aus. Wie weit kommst du?"
   },
   "Articles": {
     "der": "der",
@@ -112,7 +114,7 @@
   "Explain": {
     "rule": "Regel",
     "example": "Beispiel",
-    "simpler": "Einfacher erklären",
+    "simpler": "Einfacher, bitte",
     "detailed": "Volle Regel zeigen"
   },
   "Ui": {
@@ -125,21 +127,21 @@
     "resetMessage": "Damit wird dein gespeicherter Fortschritt in {area} gelöscht. Das kann nicht rückgängig gemacht werden.",
     "resetAction": "Zurücksetzen",
     "restartTitle": "Neue Runde starten?",
-    "restartMessage": "Deine aktuelle Runde ({done} beantwortet) geht verloren.",
+    "restartMessage": "Deine aktuelle Runde ({done} beantwortet) ist dann weg.",
     "discardTitle": "Übungsart wechseln?",
-    "discardMessage": "Deine noch nicht geprüfte Antwort auf diese Frage geht verloren.",
+    "discardMessage": "Deine Antwort auf diese Frage ist noch nicht geprüft und geht dann verloren.",
     "switchAction": "Wechseln",
     "addAllTitle": "{count, plural, one {# Karte} other {# Karten}} zur Wiederholung hinzufügen?",
-    "addAllMessage": "Sie kommen in deinen Wiederholungsstapel und werden dir zum Üben gezeigt. Du kannst sie später einzeln entfernen.",
+    "addAllMessage": "Sie landen in deinem Wiederholungsstapel und kommen beim Üben dran. Einzelne Karten kannst du später wieder entfernen.",
     "addAllAction": "Alle hinzufügen",
-    "leaveTitle": "Sitzung verlassen?",
-    "leaveMessage": "Du hast {done} von {total} geschafft. Bewertete Karten sind gespeichert, die übrigen bleiben fällig.",
+    "leaveTitle": "Schon Pause machen?",
+    "leaveMessage": "Du hast {done} von {total} geschafft – nicht schlecht! Bewertete Karten sind gespeichert, der Rest wartet auf dich.",
     "leaveAction": "Zurück zur Übersicht",
     "restartAction": "Neue Runde"
   },
   "Verbs": {
     "title": "Verbkonjugation",
-    "subtitle": "Stöbere in den Verben, lerne ihre Formen und übe dann.",
+    "subtitle": "Stöbere in den Verben, schau dir ihre Formen an und dann: üben!",
     "loading": "Lädt…",
     "filterByType": "Nach Verbtyp filtern",
     "filterAll": "Alle",
@@ -188,32 +190,49 @@
     "score": "Punkte",
     "streak": "Serie",
     "best": "Beste Serie",
-    "typeForm": "Gib die Verbform ein",
-    "typePartizip": "Gib das Partizip II ein",
-    "chooseAux": "Wähle das Hilfsverb",
-    "separableDrillHint": "Trennbares Verb: Gib auch das Präfix „{prefix}“ ein.",
+    "typeForm": "Schreib die Verbform",
+    "typePartizip": "Schreib das Partizip II",
+    "chooseAux": "Wähl das Hilfsverb",
+    "separableDrillHint": "Trennbares Verb: Denk auch an das Präfix „{prefix}“.",
     "specialChars": "Sonderzeichen",
     "insertChar": "{char} einfügen",
     "check": "Prüfen",
     "next": "Weiter",
-    "correct": "Richtig!",
-    "wrong": "Leider falsch. Richtig:",
-    "umlautHint": "Prüfe Umlaut / ß: Deine Antwort ist fast richtig.",
-    "auxHint": "Falsches Hilfsverb: Dieses Verb bildet das Perfekt mit {aux}.",
-    "missingAux": "Wähle haben oder sein",
-    "missingAnswer": "Gib deine Antwort ein",
+    "correct": "Klasse, richtig!",
+    "wrong": "Knapp daneben! Richtig:",
+    "umlautHint": "Fast! Schau noch mal auf Umlaut / ß.",
+    "auxHint": "Fast! Nur das Hilfsverb stimmt nicht: Dieses Verb bildet das Perfekt mit {aux}.",
+    "missingAux": "Wähl haben oder sein",
+    "missingAnswer": "Schreib zuerst deine Antwort",
     "resetConfirmTitle": "Fortschritt zurücksetzen?",
     "resetConfirmBody": "Punkte, Serie und beste Serie werden auf null gesetzt.",
-    "reset": "Fortschritt zurücksetzen"
+    "reset": "Fortschritt zurücksetzen",
+    "filterByTopic": "Nach Thema filtern",
+    "filterAllTopics": "Alle Themen",
+    "categories": {
+      "basic": "Grundverben",
+      "daily": "Alltag",
+      "movement": "Bewegung & Reisen",
+      "communication": "Kommunikation",
+      "modal": "Modalverben"
+    },
+    "empty": "Hmm, dazu finde ich kein Verb. Probier andere Filter!",
+    "filterByUsage": "Nach Nutzen filtern",
+    "filterAllUsages": "Alle Stufen",
+    "usages": {
+      "essential": "Unverzichtbar",
+      "common": "Häufig",
+      "useful": "Gut zu wissen"
+    }
   },
   "Dialogues": {
     "title": "Dialoge",
-    "subtitle": "Kurze Alltagsgespräche. Lies sie, spiele eine Rolle und teste dich dann selbst.",
+    "subtitle": "Kurze Gespräche aus dem Alltag. Lies mit, spiel eine Rolle und teste dich dann selbst.",
     "loading": "Lädt…",
     "listLabel": "Dialoge",
     "lines": "{n} Zeilen",
     "statusNew": "Neu",
-    "statusDone": "Abgeschlossen",
+    "statusDone": "Geschafft",
     "bestScore": "Bestes Ergebnis: {score} von {total}",
     "progress": "Fortschritt: {percent} %",
     "topics": {
@@ -241,7 +260,7 @@
       "german": "Nur Deutsch",
       "translation": "Mit Übersetzung"
     },
-    "tapHint": "Tippe auf ein unterstrichenes Wort, um seine Bedeutung zu sehen.",
+    "tapHint": "Tipp auf ein unterstrichenes Wort, dann siehst du, was es bedeutet.",
     "inflected": "„{form}“ ist eine Form von „{base}“.",
     "closeWord": "Schließen",
     "words": "Wörter aus diesem Dialog",
@@ -251,29 +270,29 @@
     "reset": "Dialogfortschritt zurücksetzen",
     "roleplay": {
       "title": "Rollenspiel",
-      "intro": "Wähle eine Rolle. Du antwortest für diese Person: Wähle jedes Mal, wenn du dran bist, die richtige Antwort.",
-      "chooseRole": "Wähle deine Rolle",
+      "intro": "Wähl eine Rolle – du sprichst für diese Person. Immer wenn du dran bist, wählst du die passende Antwort.",
+      "chooseRole": "Wähl deine Rolle",
       "playAs": "Als {name} spielen",
-      "yourTurn": "Du bist dran: Wähle die richtige Antwort.",
-      "pickReply": "Wähle die Antwort",
-      "correct": "Richtig!",
-      "wrong": "Leider falsch. Die richtige Antwort ist:",
+      "yourTurn": "Du bist dran! Was sagst du?",
+      "pickReply": "Wähl die Antwort",
+      "correct": "Genau!",
+      "wrong": "Nicht ganz! Richtig ist:",
       "next": "Weiter",
-      "done": "Rollenspiel beendet",
+      "done": "Vorhang zu – Rollenspiel geschafft!",
       "summary": "{correct} von {total} Antworten waren richtig.",
-      "again": "Noch einmal spielen",
-      "otherRole": "Die andere Rolle spielen"
+      "again": "Gleich noch mal",
+      "otherRole": "Jetzt die andere Rolle"
     },
     "quiz": {
-      "title": "Quiz zum Textverständnis",
-      "intro": "Beantworte die vier Fragen zum Dialog. Mit drei richtigen Antworten ist er abgeschlossen.",
+      "title": "Hast du alles verstanden?",
+      "intro": "Vier Fragen zum Dialog. Drei richtige, und der Dialog ist geschafft.",
       "question": "Frage {n} von {total}",
       "check": "Antworten prüfen",
-      "answerAll": "Beantworte alle Fragen, um zu prüfen.",
-      "score": "Du hast {correct} von {total} richtig beantwortet.",
-      "passed": "Gut gemacht! Dieser Dialog ist abgeschlossen.",
-      "notPassed": "Lies den Dialog noch einmal und versuche es erneut.",
-      "retry": "Noch einmal versuchen",
+      "answerAll": "Beantworte erst alle Fragen, dann kannst du prüfen.",
+      "score": "Du hast {correct} von {total} richtig.",
+      "passed": "Klasse! Diesen Dialog hast du geschafft.",
+      "notPassed": "Fast! Lies den Dialog noch einmal und probier es gleich wieder.",
+      "retry": "Noch mal versuchen",
       "correctMark": "Richtig",
       "wrongMark": "Falsch",
       "correctAnswer": "Richtige Antwort:",
@@ -283,12 +302,12 @@
   },
   "Reading": {
     "title": "Lesen",
-    "subtitle": "Kurze Alltagstexte mit Aufgaben im Prüfungsstil: richtig/falsch, Multiple Choice und Zuordnung.",
+    "subtitle": "Kurze Texte aus dem Alltag mit Aufgaben wie in der Prüfung: richtig/falsch, Multiple Choice und Zuordnung.",
     "loading": "Lädt…",
     "listLabel": "Lesetexte",
     "tasks": "{n} Aufgaben",
     "statusNew": "Neu",
-    "statusDone": "Abgeschlossen",
+    "statusDone": "Geschafft",
     "bestScore": "Bestes Ergebnis: {score} von {total}",
     "progress": "Fortschritt: {percent} %",
     "kinds": {
@@ -316,15 +335,15 @@
     "choose": "Wählen …",
     "answerFor": "Antwort für: {item}",
     "check": "Antworten prüfen",
-    "answerAll": "Beantworte alle Aufgaben, um zu prüfen.",
-    "score": "Du hast {correct} von {total} Aufgaben richtig gelöst.",
-    "passed": "Gut gemacht! Dieser Text ist abgeschlossen.",
-    "notPassed": "Lies den Text noch einmal und versuche es erneut.",
-    "retry": "Noch einmal versuchen",
+    "answerAll": "Beantworte erst alle Aufgaben, dann kannst du prüfen.",
+    "score": "Du hast {correct} von {total} Aufgaben richtig.",
+    "passed": "Klasse! Diesen Text hast du geschafft.",
+    "notPassed": "Fast! Lies den Text noch einmal und probier es gleich wieder.",
+    "retry": "Noch mal versuchen",
     "correct": "Richtig",
     "wrong": "Falsch",
     "correctAnswer": "Richtige Antwort:",
-    "evidence": "Im Text oben markiert",
+    "evidence": "Steht oben im Text (markiert)",
     "prev": "Vorheriger Text",
     "next": "Nächster Text",
     "reset": "Lesefortschritt zurücksetzen",
@@ -334,7 +353,7 @@
   },
   "Numbers": {
     "title": "Zahlen & Zeit",
-    "subtitle": "Zahlen, Datum, Uhrzeit und Preise: erst lernen, dann üben.",
+    "subtitle": "Zahlen, Datum, Uhrzeit und Preise: erst lernen, dann üben – bis du jeden Kaffee auf Deutsch bezahlen kannst.",
     "loading": "Lädt…",
     "tabsLabel": "Bereiche",
     "tabs": {
@@ -347,8 +366,8 @@
     "cardinals": {
       "basicTitle": "0 bis 20",
       "bigTitle": "Zehner und große Zahlen",
-      "ruleTitle": "So baut das Deutsche Zahlen",
-      "rule": "Ab 21 sagt man zuerst die Einer und dann die Zehner, verbunden mit und: 21 ist ein·und·zwanzig. Achte auf die Schreibung: 16 sechzehn und 17 siebzehn verlieren Buchstaben, ebenso 60 sechzig und 70 siebzig. 30 ist dreißig mit ß. Schreibe jede Zahl als ein Wort.",
+      "ruleTitle": "So baut Deutsch seine Zahlen",
+      "rule": "Ab 21 sagst du zuerst die Einer und dann die Zehner, verbunden mit und: 21 ist ein·und·zwanzig. Achte auf die Schreibung: 16 sechzehn und 17 siebzehn verlieren Buchstaben, genauso 60 sechzig und 70 siebzig. 30 ist dreißig mit ß. Und jede Zahl schreibst du als ein Wort.",
       "hundredNote": "100 kann hundert oder einhundert heißen, 1000 tausend oder eintausend. Nach den Hundertern geht es einfach weiter: 101 ist hunderteins, 321 ist dreihunderteinundzwanzig.",
       "converterTitle": "Zahlenumrechner",
       "converterLabel": "Gib eine Zahl von 0 bis 9999 ein",
@@ -356,7 +375,7 @@
     },
     "ordinals": {
       "title": "Ordnungszahlen 1–31",
-      "rule": "Bis 19 hängst du -te an: vierte, fünfte, zehnte. Vier sind unregelmäßig: erste, dritte, siebte, achte. Ab 20 kommt -ste: zwanzigste, einunddreißigste. Im Datum bekommt die Ordnungszahl eine Adjektivendung: -e nach der (der dritte), -en nach am (am dritten).",
+      "rule": "Bis 19 hängst du -te an: vierte, fünfte, zehnte. Vier tanzen aus der Reihe: erste, dritte, siebte, achte. Ab 20 kommt -ste: zwanzigste, einunddreißigste. Im Datum bekommt die Ordnungszahl eine Adjektivendung: -e nach der (der dritte), -en nach am (am dritten).",
       "written": "Schriftlich steht nach der Zahl ein Punkt: 3. November.",
       "listLabel": "Ordnungszahlen"
     },
@@ -364,7 +383,7 @@
       "monthsTitle": "Monate",
       "weekdaysTitle": "Wochentage",
       "seasonsTitle": "Jahreszeiten",
-      "articleNote": "Alle Monate, Wochentage und Jahreszeiten sind maskulin: der Januar, der Montag, der Sommer.",
+      "articleNote": "Gute Nachricht: Alle Monate, Wochentage und Jahreszeiten sind maskulin – der Januar, der Montag, der Sommer.",
       "explorerTitle": "Das Datum sagen",
       "pickMonth": "Monat",
       "written": "Geschrieben",
@@ -377,14 +396,14 @@
     },
     "clock": {
       "title": "Die Uhr",
-      "hint": "Ziehe am Zifferblatt oder benutze die Schieberegler.",
+      "hint": "Zieh die Zeiger oder nimm die Schieberegler.",
       "hour": "Stunde (0–23)",
       "minute": "Minute (0–59)",
       "official": "Offiziell (24 Stunden)",
       "everyday": "Umgangssprachlich (12 Stunden)",
       "digital": "Digital",
-      "noEveryday": "Die Umgangssprache kennt nur 5-Minuten-Schritte. Stelle die Minute auf ein Vielfaches von 5.",
-      "tip": "halb bedeutet „halb vor“: halb drei ist 2:30, nicht 3:30. halb und Viertel vor schauen immer auf die nächste Stunde.",
+      "noEveryday": "Im Alltag spricht man nur in 5-Minuten-Schritten. Stell die Minute auf ein Vielfaches von 5.",
+      "tip": "Aufgepasst: halb drei ist 2:30, nicht 3:30! halb und Viertel vor schauen immer auf die nächste Stunde.",
       "label": "Uhr mit der Zeit {time}"
     },
     "practice": {
@@ -398,12 +417,12 @@
         "clock-set": "Uhr stellen"
       },
       "prompts": {
-        "cardinal": "Schreibe diese Zahl in Worten.",
-        "reverse": "Welche Zahl ist das? Schreibe die Ziffern.",
-        "price": "Schreibe diesen Preis in Worten.",
-        "date": "Sage dieses Datum. Beginne mit „der …“.",
-        "clock-read": "Wie spät zeigt die Uhr? (Umgangssprache)",
-        "clock-set": "Stelle die Uhr auf diese Zeit."
+        "cardinal": "Schreib diese Zahl in Worten.",
+        "reverse": "Welche Zahl ist das? Schreib sie mit Ziffern.",
+        "price": "Schreib diesen Preis in Worten.",
+        "date": "Sag dieses Datum. Fang mit „der …“ an.",
+        "clock-read": "Wie spät ist es? (so wie im Alltag)",
+        "clock-set": "Stell die Uhr auf diese Zeit."
       },
       "styles": {
         "official": "Offizielle Uhrzeit",
@@ -411,31 +430,31 @@
       },
       "typeWords": "Deine Antwort in Worten",
       "typeDigits": "Deine Antwort in Ziffern",
-      "chooseTime": "Wähle die Uhrzeit",
+      "chooseTime": "Wähl die Uhrzeit",
       "check": "Prüfen",
       "next": "Weiter",
-      "correct": "Richtig!",
-      "wrong": "Leider falsch. Richtig ist:",
-      "umlautHint": "Prüfe Umlaut / ß: Deine Antwort ist fast richtig.",
+      "correct": "Stimmt genau!",
+      "wrong": "Knapp daneben! Richtig ist:",
+      "umlautHint": "Fast! Schau noch mal auf Umlaut / ß.",
       "yourClock": "Du hast {time} gestellt.",
       "solved": "Richtig insgesamt",
       "streak": "Serie",
       "best": "Beste Serie",
       "reset": "Fortschritt zurücksetzen",
-      "missingAnswer": "Gib zuerst deine Antwort ein.",
-      "missingChoice": "Wähle zuerst eine Uhrzeit."
+      "missingAnswer": "Schreib zuerst deine Antwort.",
+      "missingChoice": "Wähl zuerst eine Uhrzeit."
     }
   },
   "Grammar": {
     "title": "Grammatik",
-    "subtitle": "Kurze Lektionen mit Tabellen und Beispielen, danach üben.",
+    "subtitle": "Kurze Lektionen mit Tabellen und Beispielen – und danach gleich üben.",
     "loading": "Lädt…",
     "lessonsList": "Grammatiklektionen",
     "lessonNumber": "Lektion {n}",
-    "exercisesSolved": "{solved} von {total} Übungen gelöst",
+    "exercisesSolved": "{solved} von {total} Übungen geschafft",
     "statusNew": "Nicht begonnen",
     "statusProgress": "In Arbeit",
-    "statusDone": "Abgeschlossen",
+    "statusDone": "Geschafft",
     "progress": "Fortschritt: {percent} %",
     "topics": {
       "pronouns": "Pronomen",
@@ -448,13 +467,16 @@
       "questions": "Fragewörter",
       "imperative": "Imperativ",
       "modal": "Modalverben",
-      "word-order": "Wortstellung"
+      "word-order": "Wortstellung",
+      "perfekt": "Perfekt",
+      "separable": "Trennbare Verben",
+      "conjunctions": "Konjunktionen"
     },
     "toSentences": "Wortstellung im Satzbau üben",
     "backToGrammar": "Alle Grammatiklektionen",
     "examples": "Beispiele",
     "practiceTitle": "Üben",
-    "practiceIntro": "Fehler kommen beim nächsten Üben zuerst wieder.",
+    "practiceIntro": "Keine Sorge wegen Fehlern: Sie kommen beim nächsten Mal zuerst dran, bis sie sitzen.",
     "prevLesson": "Vorherige Lektion",
     "nextLesson": "Nächste Lektion",
     "question": "Frage",
@@ -465,30 +487,38 @@
       "fill": "Lücke füllen",
       "transform": "Umformen"
     },
-    "chooseAnswer": "Wähle die Antwort",
-    "typeAnswer": "Schreibe das fehlende Wort",
+    "chooseAnswer": "Wähl die Antwort",
+    "typeAnswer": "Schreib das fehlende Wort",
     "specialChars": "Sonderzeichen",
     "insertChar": "{char} einfügen",
-    "missingAnswer": "Gib deine Antwort ein",
-    "missingChoice": "Wähle eine Antwort",
+    "missingAnswer": "Schreib zuerst deine Antwort",
+    "missingChoice": "Wähl zuerst eine Antwort",
     "details": "Details",
     "check": "Prüfen",
     "next": "Weiter",
-    "finish": "Fertig",
-    "correct": "Richtig!",
-    "wrong": "Leider falsch. Richtiger Satz:",
-    "umlautHint": "Prüfe Umlaut / ß: Deine Antwort ist fast richtig.",
-    "summaryTitle": "Runde beendet",
-    "summaryScore": "Du hast {correct} von {total} richtig beantwortet.",
-    "lessonCompleted": "Lektion abgeschlossen! Du hast alle Übungen gelöst.",
-    "practiceAgain": "Noch einmal üben",
+    "finish": "Fertig!",
+    "correct": "Super, richtig!",
+    "wrong": "Knapp daneben! So ist es richtig:",
+    "umlautHint": "Fast! Schau noch mal auf Umlaut / ß.",
+    "summaryTitle": "Runde geschafft!",
+    "summaryScore": "Du hast {correct} von {total} richtig.",
+    "lessonCompleted": "Lektion geschafft! Du hast alle Übungen gelöst. Stark!",
+    "practiceAgain": "Noch eine Runde",
     "reset": "Grammatikfortschritt zurücksetzen",
-    "jumpToPractice": "Zur Übung"
+    "jumpToPractice": "Ab zur Übung",
+    "groups": {
+      "nouns": "Nomen & Fälle",
+      "pronouns": "Pronomen",
+      "verbs": "Verben & Zeiten",
+      "prepositions": "Präpositionen",
+      "sentences": "Sätze & Fragen"
+    },
+    "groupCount": "{count, plural, one {# Lektion} other {# Lektionen}}"
   },
   "Sentences": {
     "loading": "Lädt…",
     "title": "Sätze bauen",
-    "subtitle": "Bringe die Wörter in die richtige Reihenfolge. Per Tippen, Ziehen oder Tastatur.",
+    "subtitle": "Bring die Wörter in die richtige Reihenfolge – per Tippen, Ziehen oder mit der Tastatur.",
     "filterByFocus": "Nach Grammatikschwerpunkt filtern",
     "filterAll": "Alle",
     "focus": {
@@ -502,11 +532,11 @@
     },
     "details": "Details",
     "partsToggle": "Satzteile farbig zeigen",
-    "tapToStart": "Tippe ein Wort an",
+    "tapToStart": "Tipp ein Wort an",
     "wordsLeft": "{count, plural, one {# Wort übrig} other {# Wörter übrig}}",
-    "wrongCount": "{count, plural, one {# Wort steht an der falschen Stelle (rot)} other {# Wörter stehen an der falschen Stelle (rot)}}",
+    "wrongCount": "{count, plural, one {Fast! # Wort steht noch an der falschen Stelle (rot).} other {Fast! # Wörter stehen noch an der falschen Stelle (rot).}}",
     "resetConfirmTitle": "Fortschritt zurücksetzen?",
-    "resetConfirmBody": "Gelöste Sätze, Serie und beste Serie werden gelöscht.",
+    "resetConfirmBody": "Gelöste Sätze, Serie und beste Serie werden gelöscht. Danach startest du bei null.",
     "lessonOpen": "Mini-Lektion anzeigen",
     "lessonClose": "Mini-Lektion ausblenden",
     "solved": "Gelöst",
@@ -516,7 +546,7 @@
     "lessons": {
       "v2": {
         "title": "Das Verb steht an zweiter Stelle (V2)",
-        "body": "Im deutschen Aussagesatz ist das konjugierte Verb immer das zweite Element. Das erste Element kann das Subjekt oder etwas anderes sein, zum Beispiel die Zeit. Steht etwas anderes vorn, rückt das Subjekt hinter das Verb."
+        "body": "Im deutschen Aussagesatz ist das konjugierte Verb immer das zweite Element. Vorn kann das Subjekt stehen oder etwas anderes, zum Beispiel die Zeit. Steht etwas anderes vorn, rutscht das Subjekt hinter das Verb."
       },
       "question": {
         "title": "Fragen stellen",
@@ -556,9 +586,9 @@
       "connector": "Konjunktion",
       "other": "Sonstiges"
     },
-    "prompt": "Baue diesen Satz auf Deutsch:",
-    "promptDe": "Baue diesen Satz auf Deutsch (englische Übersetzung):",
-    "howTo": "Tippe auf ein Wort, um es in deinen Satz zu legen, und tippe erneut, um es zurückzulegen. Mit den Pfeiltasten änderst du die Reihenfolge.",
+    "prompt": "Bau diesen Satz auf Deutsch:",
+    "promptDe": "Bau diesen Satz auf Deutsch (englische Übersetzung):",
+    "howTo": "Tipp auf ein Wort, dann landet es in deinem Satz. Tipp noch mal, und es geht zurück. Mit den Pfeiltasten änderst du die Reihenfolge.",
     "answerLine": "Dein Satz",
     "wordBank": "Wortspeicher",
     "answerPlaceholder": "Wörter hier antippen oder hierher ziehen",
@@ -576,9 +606,9 @@
     "reset": "Zurücksetzen",
     "next": "Weiter",
     "skip": "Überspringen",
-    "correct": "Richtig!",
-    "wrongOrder": "Leider falsch. Einige Wörter stehen an der falschen Stelle.",
-    "incomplete": "Dein Satz ist noch nicht fertig.",
+    "correct": "Klasse, der Satz sitzt!",
+    "wrongOrder": "Fast! Ein paar Wörter stehen noch an der falschen Stelle.",
+    "incomplete": "Da fehlt noch was – bau den Satz fertig.",
     "wrongWords": "Wörter an falscher Position:",
     "hint": "Tipp",
     "showExplanation": "Erklärung anzeigen",
@@ -588,7 +618,7 @@
   },
   "Vocabulary": {
     "title": "Wortschatz",
-    "subtitle": "Nomen, Adjektive, Adverbien, Präpositionen und Redewendungen für A1.",
+    "subtitle": "Nomen, Adjektive, Adverbien, Präpositionen und Redewendungen – alles, was du für A1 brauchst.",
     "kindLabel": "Wortart",
     "kinds": {
       "noun": "Nomen",
@@ -618,7 +648,11 @@
         "clothes": "Kleidung",
         "city": "Stadt",
         "hobbies": "Hobbys & Freizeit",
-        "numbers-time": "Zahlen & Zeit"
+        "numbers-time": "Zahlen & Zeit",
+        "health": "Gesundheit",
+        "animals": "Tiere",
+        "services": "Post & Ämter",
+        "celebrations": "Feste & Feiern"
       },
       "adverb": {
         "time": "Zeit",
@@ -644,10 +678,10 @@
       }
     },
     "count": "{count, plural, one {# Wort} other {# Wörter}}",
-    "empty": "Keine Wörter passen zu deiner Suche.",
+    "empty": "Hmm, dazu finde ich nichts. Probier ein anderes Wort!",
     "addAll": "Alle {count} zur Wiederholung hinzufügen",
-    "addedAll": "{count, plural, one {# neue Karte wurde zu deinem Wiederholungsstapel hinzugefügt.} other {# neue Karten wurden zu deinem Wiederholungsstapel hinzugefügt.}}",
-    "allInDeck": "Alle diese Wörter sind schon in deinem Wiederholungsstapel.",
+    "addedAll": "{count, plural, one {Erledigt! # neue Karte liegt jetzt in deinem Wiederholungsstapel.} other {Erledigt! # neue Karten liegen jetzt in deinem Wiederholungsstapel.}}",
+    "allInDeck": "Die hast du alle schon in deinem Wiederholungsstapel. Sehr fleißig!",
     "plural": "Plural",
     "forms": "Wichtige Formen",
     "example": "Beispiel",
@@ -655,11 +689,67 @@
     "caseLabel": "Steht mit",
     "reviewLink": "Zur Wiederholung",
     "noPlural": "kein Plural",
-    "comparison": "Steigerung"
+    "comparison": "Steigerung",
+    "subgroupLabel": "Unterthema",
+    "subgroupAll": "Alle",
+    "subgroups": {
+      "food": {
+        "fruit-veg": "Obst & Gemüse",
+        "groceries": "Lebensmittel",
+        "meals": "Mahlzeiten & Gerichte",
+        "drinks": "Getränke"
+      },
+      "family": {
+        "family": "Engste Familie",
+        "relatives": "Verwandte",
+        "people": "Menschen"
+      },
+      "home": {
+        "rooms": "Räume",
+        "furniture": "Möbel",
+        "household": "Haushalt"
+      },
+      "travel": {
+        "transport": "Verkehrsmittel",
+        "station": "Bahnhof & Flughafen",
+        "holiday": "Urlaub"
+      },
+      "time": {
+        "calendar": "Tage, Monate, Jahreszeiten",
+        "units": "Zeiteinheiten"
+      },
+      "school": {
+        "classroom": "Im Unterricht",
+        "people-places": "Personen & Orte",
+        "subjects": "Fächer & Aufgaben"
+      },
+      "body": {
+        "head": "Kopf & Gesicht",
+        "body": "Körper"
+      },
+      "health": {
+        "illness": "Krankheit",
+        "doctor": "Beim Arzt"
+      },
+      "animals": {
+        "pets": "Haustiere",
+        "farm": "Bauernhof",
+        "wild": "Wilde Tiere"
+      },
+      "services": {
+        "post": "Post",
+        "office": "Ämter & Formulare",
+        "personal-data": "Persönliche Daten"
+      },
+      "celebrations": {
+        "holidays": "Feiertage",
+        "party": "Feiern"
+      }
+    }
   },
   "Review": {
     "title": "Wiederholen",
-    "subtitle": "Spaced Repetition: Jedes Wort kommt kurz bevor du es vergessen würdest wieder.",
+    "subtitle": "Jedes Wort kommt wieder, kurz bevor du es vergessen würdest. So bleibt es im Kopf.",
     "add": "Zur Wiederholung",
     "addAria": "{word} zur Wiederholung hinzufügen",
     "inDeck": "In Wiederholung",
@@ -668,14 +758,14 @@
     "dueLabel": "Fällig",
     "newLabel": "Neu",
     "doneLabel": "Heute wiederholt",
-    "start": "Wiederholung starten",
-    "emptyDeckTitle": "Dein Wiederholungsstapel ist leer",
-    "emptyDeckText": "Füge Wörter auf den Seiten Wortschatz oder Verben oder aus einem Dialog hinzu. Dann erscheinen sie hier.",
+    "start": "Los geht's!",
+    "emptyDeckTitle": "Dein Stapel ist noch leer",
+    "emptyDeckText": "Pack ein paar Wörter aus dem Wortschatz, den Verben oder einem Dialog in deinen Stapel – dann geht es hier los.",
     "goVocabulary": "Zum Wortschatz",
-    "allDoneTitle": "Für heute geschafft",
-    "allDoneText": "Gerade ist nichts fällig. Komm morgen wieder oder erhöhe die Zahl neuer Karten pro Tag.",
+    "allDoneTitle": "Für heute alles geschafft!",
+    "allDoneText": "Gerade ist nichts fällig. Gönn deinem Kopf eine Pause und komm morgen wieder – oder hol dir mehr neue Karten pro Tag.",
     "keyboardHint": "Tastatur: Leertaste zeigt die Antwort, 1 bis 4 wählen Nochmal, Schwer, Gut oder Leicht.",
-    "againHint": "Karten, die du verpasst, kommen am Ende dieser Runde noch einmal.",
+    "againHint": "Karten, die du nicht wusstest, kommen am Ende dieser Runde noch einmal. Kein Stress!",
     "progress": "Karte {current} von {total}",
     "cardAria": "Lernkarte",
     "front": "Deutsch",
@@ -690,8 +780,8 @@
     },
     "nextIn": "{days, plural, one {# Tag} other {# Tage}}",
     "gradeAria": "{grade}, nächste Wiederholung in {interval}",
-    "summaryTitle": "Runde geschafft",
-    "summaryText": "{count, plural, one {Du hast # Karte wiederholt.} other {Du hast # Karten wiederholt.}}",
+    "summaryTitle": "Runde geschafft!",
+    "summaryText": "{count, plural, one {Du hast # Karte wiederholt. Gut gemacht!} other {Du hast # Karten wiederholt. Gut gemacht!}}",
     "remembered": "{percent} % gewusst",
     "backToOverview": "Zurück zur Übersicht",
     "deckTitle": "Dein Stapel",
@@ -703,10 +793,10 @@
     },
     "settingsTitle": "Einstellungen",
     "newPerDay": "Neue Karten pro Tag",
-    "newPerDayHint": "Wie viele ungesehene Karten zur Runde des Tages hinzukommen. Bei 0 pausieren neue Wörter.",
+    "newPerDayHint": "So viele neue Karten kommen jeden Tag dazu. Bei 0 machen neue Wörter Pause.",
     "backlog": "{count, plural, one {# neue Karte wartet auf einen späteren Tag.} other {# neue Karten warten auf spätere Tage.}}",
     "dataTitle": "Sicherung",
-    "dataText": "Dein Stapel liegt in diesem Browser. Exportiere ihn für eine Kopie oder den Umzug auf ein anderes Gerät.",
+    "dataText": "Dein Stapel liegt in diesem Browser. Exportier ihn als Kopie oder für den Umzug auf ein anderes Gerät.",
     "export": "Stapel exportieren (JSON)",
     "importLabel": "Stapel-Datei importieren",
     "importMode": "Beim Importieren",
@@ -718,11 +808,11 @@
     "reset": "Wiederholungsstapel zurücksetzen",
     "resetConfirm": "Alle Karten und den Verlauf löschen? Das lässt sich nicht rückgängig machen.",
     "resetCancel": "Stapel behalten",
-    "resetDone": "Dein Wiederholungsstapel wurde zurückgesetzt.",
-    "thinkFirst": "Sag dir die Bedeutung, dann zeig die Antwort.",
+    "resetDone": "Dein Wiederholungsstapel ist jetzt leer. Bereit für einen Neustart!",
+    "thinkFirst": "Überleg kurz, was es bedeutet – dann zeig die Antwort.",
     "answerStatus": "Antwort: {answer}",
-    "nextMore": "{count, plural, one {# weitere Karte ist bereit.} other {# weitere Karten sind bereit.}}",
-    "nextDone": "Heute ist nichts mehr fällig. Füge neue Wörter hinzu, um weiterzumachen.",
+    "nextMore": "{count, plural, one {Noch # Karte wartet auf dich.} other {Noch # Karten warten auf dich.}}",
+    "nextDone": "Heute ist nichts mehr fällig. Lust auf mehr? Pack neue Wörter in deinen Stapel.",
     "practiseMore": "Weiter üben",
     "addWords": "Neue Wörter hinzufügen",
     "announceAdded": "{word} zur Wiederholung hinzugefügt",
@@ -732,7 +822,7 @@
   },
   "Progress": {
     "title": "Fortschritt",
-    "subtitle": "Deine Serie, deine Kurse und die Wörter, die mehr Übung brauchen.",
+    "subtitle": "Deine Serie, deine Kurse und die Wörter, die noch ein bisschen Übung brauchen.",
     "streakTitle": "Serie",
     "currentStreak": "{count, plural, one {# Tag in Folge} other {# Tage in Folge}}",
     "longest": "Längste Serie: {count}",
@@ -754,81 +844,71 @@
       "review": "Wiederholungsstapel"
     },
     "ringsHint": "Wiederholungsstapel: gefestigte Karten von allen Karten in deinem Stapel.",
-    "weakTitle": "Braucht Übung",
-    "weakEmpty": "Noch keine Schwächen. Falsch beantwortete Wörter erscheinen hier.",
-    "weakArticles": "Verpasste Artikel",
-    "weakVerbs": "Verpasste Verben",
-    "weakCards": "Karten, die du oft vergisst",
+    "weakTitle": "Da geht noch was",
+    "weakEmpty": "Noch keine Stolpersteine! Wörter, die du falsch beantwortest, landen hier.",
+    "weakArticles": "Knifflige Artikel",
+    "weakVerbs": "Knifflige Verben",
+    "weakCards": "Karten, die dir oft entwischen",
     "lapses": "{count, plural, one {# Mal vergessen} other {# Mal vergessen}}",
     "practiceArticles": "Artikel üben",
     "practiceVerbs": "Verben üben",
     "practiceReview": "Wiederholung öffnen",
     "badgesTitle": "Abzeichen",
-    "badgesCount": "{earned} von {total} erreicht",
-    "badgeEarned": "Erreicht",
-    "badgeLocked": "Gesperrt: {current} von {target}",
-    "dayCount": "{count, plural, =0 {An diesem Tag nicht geübt.} one {# Antwort oder Übung an diesem Tag.} other {# Antworten oder Übungen an diesem Tag.}}",
+    "badgesCount": "{earned} von {total} gesammelt",
+    "badgeEarned": "Geschafft!",
+    "badgeLocked": "Noch offen: {current} von {target}",
+    "dayCount": "{count, plural, =0 {An diesem Tag Pause gemacht.} one {# Antwort oder Übung an diesem Tag.} other {# Antworten oder Übungen an diesem Tag.}}",
     "weakEmptyAction": "Jetzt üben"
   },
   "Badges": {
     "firstCorrect": {
       "title": "Erster Schritt",
-      "desc": "Beantworte einen Artikel richtig."
+      "desc": "Finde einmal den richtigen Artikel – der Anfang ist gemacht!"
     },
     "streak5": {
       "title": "In Fahrt",
-      "desc": "Gib 5 richtige Antworten hintereinander."
+      "desc": "Schaff 5 richtige Antworten hintereinander."
     },
     "streak10": {
       "title": "Doppelte Flamme",
-      "desc": "Gib 10 richtige Antworten hintereinander."
+      "desc": "Schaff 10 richtige Antworten hintereinander."
     },
     "verbs10": {
-      "title": "Verbenläufer",
+      "title": "Verbprofi",
       "desc": "Beantworte 10 Verbfragen richtig."
     },
     "sentences10": {
       "title": "Satzbauer",
-      "desc": "Löse 10 Sätze."
+      "desc": "Bau 10 Sätze richtig."
     },
     "daily": {
       "title": "Stammgast",
-      "desc": "Übe an 3 verschiedenen Tagen."
+      "desc": "Üb an 3 verschiedenen Tagen."
     },
     "grammar3": {
-      "title": "Grammatik-Start",
-      "desc": "Schließe 3 Grammatiklektionen ab."
+      "title": "Grammatik-Fan",
+      "desc": "Schaff 3 Grammatiklektionen."
     },
     "dialogue5": {
       "title": "Plaudertasche",
-      "desc": "Bestehe 5 Dialog-Quizze."
+      "desc": "Schaff 5 Dialog-Quizze."
     },
     "reading5": {
       "title": "Leseratte",
-      "desc": "Bestehe 5 Lesetexte."
+      "desc": "Schaff 5 Lesetexte."
     },
     "review50": {
-      "title": "Gedächtnisbauer",
-      "desc": "Beantworte 50 Wiederholungskarten."
+      "title": "Elefantengedächtnis",
+      "desc": "Wiederhole 50 Karten."
     },
     "streak7": {
-      "title": "Wochenserie",
-      "desc": "Übe 7 Tage in Folge."
+      "title": "Wochenheld",
+      "desc": "Üb 7 Tage in Folge."
     },
     "mature25": {
       "title": "Felsenfest",
-      "desc": "Bringe 25 Karten auf ein Intervall von drei Wochen."
+      "desc": "Bring 25 Karten so weit, dass sie erst in drei Wochen wiederkommen."
     }
-  },
-  "HomeStudy": {
-    "title": "Lernwerkzeuge",
-    "vocabulary": "Wortschatz",
-    "vocabularyDesc": "Alle A1-Wörter nach Thema",
-    "review": "Wiederholen",
-    "reviewDue": "{count, plural, =0 {Nichts fällig} one {# Karte fällig} other {# Karten fällig}}",
-    "reviewEmpty": "Stapel anlegen",
-    "progress": "Fortschritt",
-    "progressStreak": "{count, plural, =0 {Serie starten} one {# Tag Serie} other {# Tage Serie}}"
   },
   "Speech": {
     "listen": "Anhören: {text}",
@@ -837,7 +917,7 @@
   },
   "Listen": {
     "title": "Hörtraining",
-    "subtitle": "Hör ein deutsches Wort oder eine Zahl und wähle oder tippe, was du gehört hast.",
+    "subtitle": "Ohren auf! Hör ein deutsches Wort oder eine Zahl und wähl oder tipp, was du gehört hast.",
     "unsupported": "Dein Browser kann kein Deutsch vorlesen. Probiere Chrome, Edge oder Safari für das Hörtraining.",
     "noGermanVoice": "Auf diesem Gerät wurde keine deutsche Stimme gefunden. Die Wörter klingen vielleicht falsch. Installiere eine deutsche Stimme in den Systemeinstellungen.",
     "kindLabel": "Übungsart",
@@ -845,24 +925,24 @@
       "word": "Wörter",
       "number": "Zahlen"
     },
-    "pick": "Wähle eine Übung, tippe auf Starten und dann auf Abspielen, um das erste Wort zu hören.",
-    "done": "Runde beendet",
+    "pick": "Wähl eine Übung, tipp auf Starten und dann auf Abspielen – und hör gut zu!",
+    "done": "Runde geschafft!",
     "score": "{correct} von {total} richtig",
     "again": "Noch eine Runde",
     "question": "Frage {current} von {total}",
-    "askWord": "Hör zu und wähle die Bedeutung.",
-    "askNumber": "Hör zu und tippe die Zahl mit Ziffern.",
+    "askWord": "Hör gut zu: Was bedeutet das?",
+    "askNumber": "Hör gut zu und tipp die Zahl mit Ziffern.",
     "typeNumber": "Zahl eintippen",
     "check": "Prüfen",
-    "correct": "Richtig",
+    "correct": "Richtig gehört!",
     "wrong": "Nicht ganz",
     "next": "Weiter",
-    "result": "Ergebnis ansehen",
+    "result": "Wie war ich?",
     "needVoice": "Für die Hörübungen braucht dieses Gerät eine deutsche Stimme. Füge in den Spracheinstellungen deines Systems eine hinzu (z. B. „Deutsch (Deutschland)“) und lade die Seite neu.",
-    "tapPlay": "Tippe auf Abspielen, um es zu hören.",
-    "chooseAnswer": "Wähle, was du gehört hast.",
-    "typeAnswer": "Tippe die Zahl, die du gehört hast.",
-    "start": "Starten"
+    "tapPlay": "Tipp auf Abspielen und hör zu.",
+    "chooseAnswer": "Was hast du gehört?",
+    "typeAnswer": "Tipp die Zahl, die du gehört hast.",
+    "start": "Los geht's!"
   },
   "Exam": {
     "title": "Probeprüfung A1",
@@ -885,7 +965,7 @@
     "startFull": "Ganze Prüfung starten",
     "fullHint": "Die ganze Prüfung hat 4 Teile mit je 25 Punkten. Mit {pass} von {max} Punkten bestehst du.",
     "historyTitle": "Deine Versuche",
-    "historyEmpty": "Noch kein vollständiger Versuch.",
+    "historyEmpty": "Noch kein ganzer Versuch. Trau dich – es ist nur eine Übung!",
     "best": "Bestes Ergebnis: {total} von {max}",
     "timeLeft": "Verbleibende Zeit",
     "warnFive": "Noch fünf Minuten.",
@@ -900,7 +980,7 @@
     "startConfirmTitle": "Timer starten?",
     "startConfirmPart": "{part}: Der Timer ({minutes} Minuten) startet, sobald du bestätigst. Er kann nicht angehalten werden.",
     "startConfirmFull": "Die ganze Prüfung hat vier Teile mit Timer (insgesamt {total} Minuten). Der erste Teil ({part}, {minutes} Minuten) startet, sobald du bestätigst. Timer können nicht angehalten werden.",
-    "startConfirmAction": "Jetzt starten",
+    "startConfirmAction": "Los geht's",
     "handIn": "Diesen Teil abgeben",
     "listeningItem": "Aufnahme {n}",
     "play": "Abspielen (noch {left})",
@@ -916,13 +996,13 @@
       "checklist": "Prüfe dich selbst",
       "model": "Beispielantworten zeigen"
     },
-    "partDone": "{part} abgeschlossen",
+    "partDone": "{part} geschafft!",
     "nextPart": "Als Nächstes: {part} ({minutes} Minuten).",
     "continue": "Weiter",
     "resultTitle": "Dein Ergebnis",
     "total": "{total} von {max} Punkten",
-    "passed": "Bestanden: {pass} Punkte oder mehr.",
-    "notPassed": "Noch nicht bestanden: Du brauchst {pass} Punkte.",
+    "passed": "Bestanden – Glückwunsch! Du hast {pass} Punkte oder mehr.",
+    "notPassed": "Noch nicht bestanden: Du brauchst {pass} Punkte. Beim nächsten Mal klappt's!",
     "partOnly": "Du hast einzelne Teile geübt, deshalb gibt es keine Gesamtpunktzahl.",
     "points": "{points} von {max}",
     "kind": {
@@ -937,85 +1017,111 @@
     "timeUp": "Die Zeit ist um. {part} wurde mit deinen bisherigen Antworten automatisch abgegeben."
   },
   "Path": {
-    "title": "Dein Lernweg",
+    "title": "Dein Weg",
     "goalRing": "Tagesziel: {percent} %",
     "goalTitle": "Tagesziel",
-    "goalDone": "Tagesziel erreicht. Super!",
+    "goalDone": "Tagesziel geschafft. Super!",
     "goalProgress": "{done} von {goal} Antworten heute",
     "goalChoose": "Antworten pro Tag",
-    "continueTitle": "Da weitermachen, wo du aufgehört hast",
-    "continueText": "Zuletzt warst du hier: {section}.",
-    "continueButton": "Weiter",
-    "continueEmpty": "Fang mit dem Artikel-Arcade an.",
-    "startButton": "Starten",
     "pathTitle": "Empfohlene Reihenfolge",
     "pathCount": "{done} von {total} Schritten geschafft",
-    "stateDone": "Geschafft",
+    "stateDone": "Geschafft!",
     "stateNext": "Als Nächstes",
     "steps": {
       "articles": {
         "title": "Artikel",
-        "desc": "Erreiche im Arcade 5 richtige Antworten in Folge."
+        "desc": "Beantworte im Artikelspiel 5 Fragen in Folge richtig.",
+        "why": "Jedes deutsche Nomen hat der, die oder das. Lern den Artikel ab dem ersten Tag mit jedem Wort – das spart dir später viel Ärger."
       },
       "pronouns": {
         "title": "Pronomen",
-        "desc": "Schließe die Pronomen-Lektion ab."
+        "desc": "Schließe die Pronomen-Lektion ab.",
+        "why": "ich, du, er, sie … Die brauchst du in jedem Satz, und die Verbendung hängt von ihnen ab."
       },
       "verbs": {
         "title": "Verben",
-        "desc": "Beantworte 10 Verbfragen richtig."
+        "desc": "Beantworte 10 Verbfragen richtig.",
+        "why": "Mit sein, haben und den häufigsten Verben kannst du schon eine Menge über dich erzählen."
       },
       "cases": {
         "title": "Nominativ und Akkusativ",
-        "desc": "Schließe die Kasus-Lektion ab."
+        "desc": "Schließe die Kasus-Lektion ab.",
+        "why": "Nominativ oder Akkusativ entscheidet, ob es der oder den heißt. Damit fangen richtige Sätze an!"
       },
       "vocabulary": {
         "title": "Wortschatz",
-        "desc": "Füge 10 Wörter zu deinem Wiederholungsstapel hinzu."
+        "desc": "Pack 10 Wörter in deinen Wiederholungsstapel.",
+        "why": "Wörter in deinem Stapel kommen zurück, kurz bevor du sie vergessen würdest. So bleiben sie hängen."
       },
       "numbers": {
         "title": "Zahlen und Zeit",
-        "desc": "Übe, bis der Ring halb voll ist."
+        "desc": "Üb, bis der Ring halb voll ist.",
+        "why": "Preise, Uhrzeiten, Daten und Telefonnummern kommen in jedem Gespräch vor – und in der Prüfung auch."
       },
       "modal": {
         "title": "Modalverben",
-        "desc": "Schließe die Modalverben-Lektion ab."
+        "desc": "Schließe die Modalverben-Lektion ab.",
+        "why": "können, müssen, wollen: Damit sagst du, was du kannst, musst und willst."
       },
       "dialogues": {
         "title": "Dialoge",
-        "desc": "Bestehe 3 Dialog-Quizze."
+        "desc": "Schaff 3 Dialog-Quizze.",
+        "why": "Erleb, was du gelernt hast, in echten Alltagssituationen – und spiel selbst eine Rolle."
       },
       "reading": {
         "title": "Lesen",
-        "desc": "Bestehe 3 Lesetexte."
+        "desc": "Schaff 3 Lesetexte.",
+        "why": "Kurze Texte, die genau das üben, was im Leseteil der A1-Prüfung drankommt."
       },
       "sentences": {
         "title": "Sätze",
-        "desc": "Löse 10 Sätze."
+        "desc": "Bau 10 Sätze richtig.",
+        "why": "Üb, wohin das Verb gehört: auf Position zwei oder, mit einem zweiten Verb, ans Ende."
       },
       "review": {
         "title": "Wiederholen",
-        "desc": "Beantworte 50 Wiederholungskarten."
+        "desc": "Wiederhole 50 Karten.",
+        "why": "Wer regelmäßig wiederholt, behält die Wörter im Langzeitgedächtnis. Ein paar Minuten am Tag reichen."
       },
       "exam": {
         "title": "Probeprüfung",
-        "desc": "Mache eine vollständige Probeprüfung."
+        "desc": "Mach eine ganze Probeprüfung.",
+        "why": "Schau vor der echten Prüfung, wo du stehst – Teil für Teil. Ganz ohne Druck."
       }
     },
-    "dueTitle": "Wiederholen",
-    "dueText": "{count, plural, =0 {Gerade ist keine Karte fällig.} one {# Karte heute fällig.} other {# Karten heute fällig.}}",
-    "dueEmpty": "Dein Wiederholungsstapel ist leer.",
     "dueButton": "Jetzt wiederholen",
     "loading": "Dein Fortschritt wird geladen…",
-    "heroNext": "Weiter: {step}"
+    "pathIntro": "Zwölf Schritte durch A1, in einer guten Reihenfolge. Du kannst aber jeden Schritt jederzeit öffnen.",
+    "howTitle": "So geht's",
+    "howLearn": "Lernen",
+    "howPractise": "Üben",
+    "howReview": "Wiederholen",
+    "todayStep": "Heute · Schritt {n} von {total}",
+    "allDone": "Alle {total} Schritte geschafft – Wahnsinn!",
+    "reviewTitle": "{count, plural, one {# Karte wiederholen} other {# Karten wiederholen}}",
+    "reviewWhy": "Diese Wörter sind wieder dran: Sie kommen zurück, kurz bevor du sie vergessen würdest. Das dauert nur ein paar Minuten, dann geht es mit deinem nächsten Schritt weiter.",
+    "startFirst": "Los geht's mit Schritt 1",
+    "skipToStep": "Lieber gleich weiter: {step}",
+    "finishLabel": "Dein Ziel:",
+    "backTo": "Oder zurück zu {section}",
+    "streak": "{count, plural, one {# Tag in Folge} other {# Tage in Folge}}",
+    "progressLink": "Dein Fortschritt",
+    "startStep": "Los geht's!",
+    "firstStep": "Dein erster Schritt",
+    "greeting": {
+      "morning": "Guten Morgen",
+      "day": "Guten Tag",
+      "evening": "Guten Abend",
+      "night": "Noch wach?"
+    }
   },
   "Search": {
     "title": "Suche",
-    "subtitle": "Finde Wörter, Verben, Grammatiklektionen, Dialoge und Texte.",
+    "subtitle": "Wörter, Verben, Grammatik, Dialoge und Texte – alles an einem Ort.",
     "label": "Im Kurs suchen",
     "placeholder": "Auf Deutsch oder Englisch suchen",
-    "hint": "Tippe mindestens {min} Buchstaben.",
-    "none": "Nichts gefunden. Probiere eine andere Schreibweise.",
+    "hint": "Tipp mindestens {min} Buchstaben.",
+    "none": "Hmm, dazu finde ich nichts. Probier ein anderes Wort oder eine andere Schreibweise!",
     "count": "{count, plural, one {# Treffer} other {# Treffer}}",
     "kinds": {
       "noun": "Nomen",
@@ -1102,7 +1208,7 @@
   "Nudge": {
     "label": "Fortschritt sichern",
     "title": "Sichere deinen Fortschritt",
-    "text": "Im Moment ist dein Fortschritt nur in diesem Browser gespeichert. Mit einem kostenlosen Konto bleibt er sicher und ist auf jedem Gerät da.",
+    "text": "Dein Fortschritt liegt gerade nur in diesem Browser. Mit einem kostenlosen Konto ist er sicher und auf jedem Gerät dabei.",
     "cta": "Kostenloses Konto erstellen",
     "later": "Später"
   },
