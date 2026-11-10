@@ -1,14 +1,13 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { ChangeEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { dateKey } from "@/lib/dateKey";
 import type { ReviewCard } from "@/lib/reviewCards";
 import { buildQueue, clampNewPerDay, deckStats, GRADES, previewInterval, requeueAfterAgain } from "@/lib/srs";
 import type { Grade } from "@/lib/srs";
-import { exportSrs, parseSrsImport } from "@/lib/srsData";
+import { useSession } from "@/lib/useSession";
 import { ensureSrsHydrated, useSrsStore } from "@/stores/srsStore";
 import CardFront from "./CardFront";
 import SpeakButton from "./SpeakButton";
@@ -19,7 +18,6 @@ import FeedbackRegion from "./ui/FeedbackRegion";
 import StickyActionBar from "./ui/StickyActionBar";
 
 type Locale = "en" | "fa" | "de";
-type ImportMode = "merge" | "replace";
 
 interface Session {
   queue: string[];
@@ -60,15 +58,15 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
   const [session, setSession] = useState<Session | null>(null);
   const [summary, setSummary] = useState<Session | null>(null);
   const [message, setMessage] = useState<string | null>(null);
-  const [importMode, setImportMode] = useState<ImportMode>("merge");
   const [confirmReset, setConfirmReset] = useState(false);
+  // Keeping the deck needs an account: signed out, it lives only in this browser. undefined while loading.
+  const account = useSession();
 
   const cards = useSrsStore((s) => s.cards);
   const log = useSrsStore((s) => s.log);
   const newPerDay = useSrsStore((s) => s.newPerDay);
   const grade = useSrsStore((s) => s.grade);
   const setNewPerDay = useSrsStore((s) => s.setNewPerDay);
-  const importState = useSrsStore((s) => s.importState);
   const reset = useSrsStore((s) => s.reset);
 
   useEffect(() => {
@@ -154,30 +152,6 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [session, flip, answer]);
-
-  const exportDeck = () => {
-    const { cards: c, log: l, newPerDay: n } = useSrsStore.getState();
-    const blob = new Blob([exportSrs({ cards: c, log: l, newPerDay: n })], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `deutsch-lernen-review-${today}.json`;
-    a.click();
-    URL.revokeObjectURL(url);
-  };
-
-  const onImport = async (e: ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    e.target.value = "";
-    if (!file) return;
-    const result = parseSrsImport(await file.text());
-    if (!result.ok) {
-      setMessage(result.error === "json" ? t("importJson") : t("importShape"));
-      return;
-    }
-    importState(result.state, importMode);
-    setMessage(t("importOk", { count: Object.keys(useSrsStore.getState().cards).length }));
-  };
 
   if (!ready) {
     return (
@@ -417,6 +391,27 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
         </div>
       </section>
 
+      <section aria-labelledby="save-title" data-save className="card space-y-3 p-5 sm:p-6">
+        <h2 id="save-title" className="text-xl font-extrabold">
+          {t("saveTitle")}
+        </h2>
+        {account === null ? (
+          <>
+            <p className="text-sm text-text-muted">{t("saveSignedOut")}</p>
+            <div className="flex flex-wrap items-center gap-3">
+              <a href={`/${locale}/login?mode=signup&callbackUrl=${encodeURIComponent(`/${locale}/review`)}`} className="btn btn-primary">
+                {t("saveSignup")}
+              </a>
+              <a href={`/${locale}/login?callbackUrl=${encodeURIComponent(`/${locale}/review`)}`} className="btn btn-secondary">
+                {t("saveLogin")}
+              </a>
+            </div>
+          </>
+        ) : (
+          <p className="min-h-5 text-sm text-text-muted">{account ? t("saveSignedIn") : ""}</p>
+        )}
+      </section>
+
       <section aria-labelledby="settings-title" className="card space-y-3 p-5 sm:p-6">
         <h2 id="settings-title" className="text-xl font-extrabold">
           {t("settingsTitle")}
@@ -434,41 +429,13 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
           />
         </label>
         <p className="text-sm text-text-muted">{t("newPerDayHint")}</p>
-      </section>
-
-      <section aria-labelledby="data-title" className="card space-y-4 p-5 sm:p-6">
-        <h2 id="data-title" className="text-xl font-extrabold">
-          {t("dataTitle")}
-        </h2>
-        <p className="text-sm text-text-muted">{t("dataText")}</p>
-        <div className="flex flex-wrap items-center gap-3">
-          <button type="button" onClick={exportDeck} className="btn btn-secondary">
-            {t("export")}
-          </button>
-          <label className="btn btn-secondary cursor-pointer focus-within:ring-4 focus-within:ring-primary/30">
-            {t("importLabel")}
-            <input type="file" accept=".json,application/json" onChange={onImport} className="sr-only" />
-          </label>
-        </div>
-        {/* Import and reset results show right under the buttons (the page's single live region, height reserved). */}
-        <FeedbackRegion size="sm" className="!min-h-12" ref={statusRef}>
-          {message && <p className="feedback-hint">{message}</p>}
-        </FeedbackRegion>
-        <fieldset className="space-y-1">
-          <legend className="text-sm font-bold">{t("importMode")}</legend>
-          <div className="flex flex-wrap gap-4">
-            {(["merge", "replace"] as const).map((m) => (
-              <label key={m} className="flex min-h-11 items-center gap-2">
-                <input type="radio" name="import-mode" checked={importMode === m} onChange={() => setImportMode(m)} />
-                {m === "merge" ? t("importMerge") : t("importReplace")}
-              </label>
-            ))}
-          </div>
-        </fieldset>
-
         <button type="button" onClick={() => setConfirmReset(true)} disabled={deckEmpty} aria-haspopup="dialog" className="btn-ghost">
           {t("reset")}
         </button>
+        {/* The reset result shows right under the button (the page's single live region, height reserved). */}
+        <FeedbackRegion size="sm" className="!min-h-12" ref={statusRef}>
+          {message && <p className="feedback-hint">{message}</p>}
+        </FeedbackRegion>
         <ConfirmDialog
           open={confirmReset}
           title={tUi("resetTitle")}

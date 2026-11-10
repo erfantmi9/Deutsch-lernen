@@ -4,6 +4,8 @@ import {
   buildQueue,
   clampNewPerDay,
   deckStats,
+  FIRST_INTERVALS,
+  GRADES,
   hardestCards,
   isDue,
   isNew,
@@ -66,19 +68,19 @@ describe("SM-2 ease", () => {
 });
 
 describe("review", () => {
-  it("starts a new card with interval 1, then 6, then interval x ease", () => {
+  it("starts a new card at 2 days (good), then 6, then interval x ease", () => {
     let card = newCard("noun:kopf", D0);
     expect(isNew(card)).toBe(true);
 
     card = review(card, "good", D0);
-    expect(card.interval).toBe(1);
-    expect(card.due).toBe("2026-03-02");
+    expect(card.interval).toBe(2);
+    expect(card.due).toBe("2026-03-03");
     expect(card.reps).toBe(1);
     expect(isNew(card)).toBe(false);
 
     card = review(card, "good", card.due);
     expect(card.interval).toBe(6);
-    expect(card.due).toBe("2026-03-08");
+    expect(card.due).toBe("2026-03-09");
 
     card = review(card, "good", card.due);
     expect(card.interval).toBe(15); // round(6 * 2.5)
@@ -114,8 +116,8 @@ describe("review", () => {
     expect(card.lapses).toBe(1);
     expect(card.due).toBe("2026-03-21");
     expect(card.ease).toBeLessThan(before.ease);
-    // The next good answer starts over at 1 day.
-    expect(review(card, "good", card.due).interval).toBe(1);
+    // The next good answer starts over like a new card.
+    expect(review(card, "good", card.due).interval).toBe(FIRST_INTERVALS.good);
   });
 
   it("always grows the interval by at least a day after the second pass", () => {
@@ -132,9 +134,26 @@ describe("review", () => {
   });
 
   it("previews the interval of each answer", () => {
-    const card = review(newCard("a", D0), "good", D0); // interval 1, reps 1
-    expect(previewInterval(card, "again", "2026-03-02")).toBe(1);
-    expect(previewInterval(card, "good", "2026-03-02")).toBe(6);
+    const card = review(newCard("a", D0), "good", D0); // interval 2, reps 1
+    expect(previewInterval(card, "again", "2026-03-03")).toBe(1);
+    expect(previewInterval(card, "good", "2026-03-03")).toBe(6);
+  });
+
+  it("gives every answer of a new card its own interval: hard 1, good 2, easy 4 days", () => {
+    const card = newCard("a", D0);
+    expect(GRADES.map((g) => previewInterval(card, g, D0))).toEqual([1, 1, 2, 4]);
+  });
+
+  it("keeps hard < good < easy at every stage, whatever the ease", () => {
+    for (const ease of [MIN_EASE, 1.8, 2.5, 3.2]) {
+      for (const [reps, interval] of [[1, 1], [1, 4], [2, 6], [3, 2], [5, 40]] as const) {
+        const card: SrsCard = { ...newCard("a", D0), reps, interval, ease, last: D0 };
+        const [, hard, good, easy] = GRADES.map((g) => previewInterval(card, g, D0));
+        expect(hard).toBeGreaterThan(interval);
+        expect(good).toBeGreaterThan(hard);
+        expect(easy).toBeGreaterThan(good);
+      }
+    }
   });
 });
 

@@ -98,26 +98,26 @@ function reviewTests(locale: "en" | "fa", tag: string) {
     await expect(action(page)).toHaveCount(0);
   });
 
-  test(`Reset asks first; import and reset status sit under the Import button${tag}`, async ({ page }, testInfo) => {
+  test(`signed out: keeping the deck means signing up or in; no file export or import${tag}`, async ({ page }, testInfo) => {
+    await seedDeck(page);
+    await page.goto(`/${locale}/review`);
+    await expect(page.getByRole("button", { name: r.start })).toBeVisible();
+    const save = page.locator("[data-save]");
+    await expect(save).toContainText(r.saveSignedOut);
+    const back = encodeURIComponent(`/${locale}/review`);
+    await expect(save.getByRole("link", { name: r.saveSignup })).toHaveAttribute("href", `/${locale}/login?mode=signup&callbackUrl=${back}`);
+    await expect(save.getByRole("link", { name: r.saveLogin })).toHaveAttribute("href", `/${locale}/login?callbackUrl=${back}`);
+    await expect(page.locator("input[type=file]")).toHaveCount(0);
+    await save.scrollIntoViewIfNeeded();
+    await shot(page, testInfo, "review", locale, `4-save${tag}`);
+  });
+
+  test(`Reset asks first; its status shows under the button${tag}`, async ({ page }) => {
     await seedDeck(page);
     await page.goto(`/${locale}/review`);
     await expect(page.getByRole("button", { name: r.start })).toBeVisible();
     expect(await liveRegions(page)).toBe(1);
-    const importLabel = page.locator("label", { hasText: r.importLabel });
     const status = page.locator("[role=status]");
-    const statusBefore = await docBox(page, "[role=status]");
-
-    await importLabel.locator("input[type=file]").setInputFiles({ name: "bad.json", mimeType: "application/json", buffer: Buffer.from("{nope") });
-    await expect(status).toHaveText(r.importJson);
-    const lb = (await importLabel.boundingBox())!;
-    const sb = (await status.boundingBox())!;
-    expect(sb.y - (lb.y + lb.height)).toBeGreaterThanOrEqual(0);
-    expect(sb.y - (lb.y + lb.height)).toBeLessThanOrEqual(40);
-    const statusAfter = await docBox(page, "[role=status]");
-    expect(Math.abs(statusAfter.height - statusBefore.height)).toBeLessThanOrEqual(1); // reserved: no jump
-    await importLabel.scrollIntoViewIfNeeded();
-    await shot(page, testInfo, "review", locale, `4-import-status${tag}`);
-
     await page.getByRole("button", { name: r.reset }).click();
     const dialog = page.getByRole("dialog");
     await expect(dialog).toBeVisible();

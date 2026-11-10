@@ -6,7 +6,12 @@ import type { DateKey } from "./dateKey";
  *
  * The four answer buttons map to SM-2 quality grades: again = 1, hard = 3, good = 4, easy = 5.
  * Quality below 3 is a lapse: repetitions restart and the card comes back the next day.
- * Otherwise the interval is 1 day, then 6 days, then interval x ease. Ease never drops below 1.3.
+ *
+ * Intervals differ by answer (as in Anki), so the buttons always mean something different:
+ * - a new card: hard 1 day, good 2 days, easy 4 days;
+ * - the second pass: good at least 6 days (or interval x ease), hard about half of that, easy x 1.3;
+ * - later: good = interval x ease, hard = interval x 1.2, easy = interval x ease x 1.3.
+ * Hard < good < easy always, and every pass grows the interval by at least a day. Ease never drops below 1.3.
  */
 
 export type Grade = "again" | "hard" | "good" | "easy";
@@ -15,6 +20,10 @@ export const GRADES: readonly Grade[] = ["again", "hard", "good", "easy"];
 export const QUALITY: Readonly<Record<Grade, number>> = { again: 1, hard: 3, good: 4, easy: 5 };
 
 export const START_EASE = 2.5;
+/** First interval of a new (or lapsed) card per answer, in days. */
+export const FIRST_INTERVALS: Readonly<Record<Exclude<Grade, "again">, number>> = { hard: 1, good: 2, easy: 4 };
+const HARD_FACTOR = 1.2;
+const EASY_BONUS = 1.3;
 export const MIN_EASE = 1.3;
 /** An interval of at least this many days counts as a "mature" (well learned) card. */
 export const MATURE_DAYS = 21;
@@ -67,8 +76,22 @@ export function review(card: SrsCard, grade: Grade, today: DateKey): SrsCard {
   }
 
   const reps = card.reps + 1;
-  const interval = reps === 1 ? 1 : reps === 2 ? 6 : Math.max(card.interval + 1, Math.round(card.interval * ease));
+  const interval = passIntervals(card)[grade as Exclude<Grade, "again">];
   return { ...card, ease, interval, reps, due: addDays(today, interval), last: today };
+}
+
+/** Interval for each passing answer; strictly increasing from hard to easy. */
+function passIntervals(card: SrsCard): Record<Exclude<Grade, "again">, number> {
+  if (card.reps === 0) return { ...FIRST_INTERVALS };
+  const i = Math.max(1, card.interval);
+  const goodEase = nextEase(card.ease, QUALITY.good);
+  const easyEase = nextEase(card.ease, QUALITY.easy);
+  const second = card.reps === 1;
+  // good is at least 2 days longer, so hard (at least 1 day longer) always fits between the interval and good.
+  const good = Math.max(i + 2, second ? 6 : 0, Math.round(i * goodEase));
+  const hard = Math.min(good - 1, Math.max(i + 1, second ? Math.round(good / 2) : Math.round(i * HARD_FACTOR)));
+  const easy = Math.max(good + 1, Math.round((second ? good : i * easyEase) * EASY_BONUS));
+  return { hard: Math.max(1, hard), good, easy };
 }
 
 /** Days until the next review if `grade` were chosen now (for the button labels). */

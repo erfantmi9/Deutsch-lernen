@@ -52,7 +52,9 @@ const config: Config = {
         ...roleColors,
       },
       fontFamily: {
-        sans: ["var(--font-nunito)", "system-ui", "sans-serif"],
+        // Vazirmatn after Nunito: Nunito has no Persian letters, so Persian text inside an en/de page (a user name) still
+        // gets the app font instead of the system fallback. Its arabic subset only loads when such letters appear.
+        sans: ["var(--font-nunito)", "var(--font-vazir)", "system-ui", "sans-serif"],
         vazir: ["var(--font-vazir)", "system-ui", "sans-serif"],
       },
       borderRadius: {

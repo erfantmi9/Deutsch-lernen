@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { newCard, review } from "@/lib/srs";
 import type { SrsCard } from "@/lib/srs";
-import { emptySrsState, exportSrs, mergeSrsStates, migrateSrs, parseSrsImport, sanitizeSrsState } from "@/lib/srsData";
+import { emptySrsState, mergeSrsStates, migrateSrs, sanitizeSrsState } from "@/lib/srsData";
 import type { SrsState } from "@/lib/srsData";
 
 const D0 = "2026-03-01";
@@ -10,39 +10,6 @@ const sample = (): SrsState => {
   const a = review(newCard("noun:kopf", D0), "good", D0);
   return { cards: { [a.id]: a, "verb:gehen": newCard("verb:gehen", D0) }, log: { [D0]: { reviews: 1, newCards: 1 } }, newPerDay: 7 };
 };
-
-describe("export and import", () => {
-  it("round-trips a deck", () => {
-    const state = sample();
-    const result = parseSrsImport(exportSrs(state, new Date("2026-03-02T10:00:00Z")));
-    expect(result).toEqual({ ok: true, state });
-  });
-
-  it("rejects text that is not JSON", () => {
-    expect(parseSrsImport("not json")).toEqual({ ok: false, error: "json" });
-  });
-
-  it("rejects files with the wrong shape", () => {
-    expect(parseSrsImport(JSON.stringify({ hello: "world" }))).toEqual({ ok: false, error: "shape" });
-    expect(parseSrsImport("[]")).toEqual({ ok: false, error: "shape" });
-  });
-
-  it("rejects an invalid card instead of importing part of the file", () => {
-    const parsed = JSON.parse(exportSrs(sample()));
-    parsed.cards[0].due = "tomorrow";
-    expect(parseSrsImport(JSON.stringify(parsed))).toEqual({ ok: false, error: "shape" });
-    const dup = JSON.parse(exportSrs(sample()));
-    dup.cards.push(dup.cards[0]);
-    expect(parseSrsImport(JSON.stringify(dup))).toEqual({ ok: false, error: "shape" });
-  });
-
-  it("clamps an out-of-range daily limit", () => {
-    const parsed = JSON.parse(exportSrs(sample()));
-    parsed.newPerDay = 9999;
-    const result = parseSrsImport(JSON.stringify(parsed));
-    expect(result.ok && result.state.newPerDay).toBe(100);
-  });
-});
 
 describe("merge", () => {
   it("keeps the union of cards and the more recently reviewed copy", () => {
