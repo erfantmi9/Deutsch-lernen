@@ -698,5 +698,89 @@
     },
     "category": "clothes",
     "level": "A1"
+  },
+  {
+    "id": "kleidung",
+    "word": "Kleidung",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "clothing, clothes",
+      "fa": "لباس، پوشاک"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ung are always feminine (die): die Zeitung, die Wohnung, die Übung.",
+      "fa": "اسم‌هایی که به -ung ختم می‌شوند همیشه مؤنث (die) هستند: die Zeitung, die Wohnung, die Übung.",
+      "de": "Nomen auf -ung sind immer feminin (die): die Zeitung, die Wohnung, die Übung.",
+      "simple": {
+        "en": "Words ending in -ung are always die.",
+        "fa": "کلمات ختم‌شده به -ung همیشه die هستند.",
+        "de": "Wörter auf -ung sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich kaufe neue Kleidung.",
+      "en": "I am buying new clothes.",
+      "fa": "لباس نو می‌خرم."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "handtasche",
+    "word": "Handtasche",
+    "article": "die",
+    "plural": "Handtaschen",
+    "translations": {
+      "en": "handbag",
+      "fa": "کیف دستی"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Hand + Tasche): the last part decides the article, die Tasche → die Handtasche.",
+      "fa": "اسم مرکب (Hand + Tasche): بخش آخر آرتیکل را تعیین می‌کند، die Tasche ← die Handtasche.",
+      "de": "Zusammengesetztes Nomen (Hand + Tasche): Das letzte Wort bestimmt den Artikel, die Tasche → die Handtasche.",
+      "simple": {
+        "en": "Last part decides: die Tasche → die Handtasche.",
+        "fa": "بخش آخر تعیین می‌کند: die Tasche ← die Handtasche.",
+        "de": "Das letzte Wort entscheidet: die Tasche → die Handtasche."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Meine Handtasche ist schwarz.",
+      "en": "My handbag is black.",
+      "fa": "کیف دستی‌ام مشکی است."
+    },
+    "category": "clothes",
+    "level": "A1"
+  },
+  {
+    "id": "sonnenbrille",
+    "word": "Sonnenbrille",
+    "article": "die",
+    "plural": "Sonnenbrillen",
+    "translations": {
+      "en": "sunglasses",
+      "fa": "عینک آفتابی"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Sonne + Brille): the last part decides the article, die Brille → die Sonnenbrille.",
+      "fa": "اسم مرکب (Sonne + Brille): بخش آخر آرتیکل را تعیین می‌کند، die Brille ← die Sonnenbrille.",
+      "de": "Zusammengesetztes Nomen (Sonne + Brille): Das letzte Wort bestimmt den Artikel, die Brille → die Sonnenbrille.",
+      "simple": {
+        "en": "Last part decides: die Brille → die Sonnenbrille.",
+        "fa": "بخش آخر تعیین می‌کند: die Brille ← die Sonnenbrille.",
+        "de": "Das letzte Wort entscheidet: die Brille → die Sonnenbrille."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wo ist meine Sonnenbrille?",
+      "en": "Where are my sunglasses?",
+      "fa": "عینک آفتابی‌ام کجاست؟"
+    },
+    "category": "clothes",
+    "level": "A1"
   }
 ]

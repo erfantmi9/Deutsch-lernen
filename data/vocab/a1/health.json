@@ -723,5 +723,92 @@
     "category": "health",
     "subcategory": "doctor",
     "level": "A1"
+  },
+  {
+    "id": "hilfe",
+    "word": "Hilfe",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "help",
+      "fa": "کمک"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Katze.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Katze.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Katze.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich brauche Hilfe!",
+      "en": "I need help!",
+      "fa": "به کمک احتیاج دارم!"
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "zahnarzt",
+    "word": "Zahnarzt",
+    "article": "der",
+    "plural": "Zahnärzte",
+    "translations": {
+      "en": "dentist (male)",
+      "fa": "دندان‌پزشک (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Ich muss zum Zahnarzt.",
+      "en": "I have to go to the dentist.",
+      "fa": "باید پیش دندان‌پزشک بروم."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
+  },
+  {
+    "id": "zahnaerztin",
+    "word": "Zahnärztin",
+    "article": "die",
+    "plural": "Zahnärztinnen",
+    "translations": {
+      "en": "dentist (female)",
+      "fa": "دندان‌پزشک (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Zahnärztin ist sehr nett.",
+      "en": "The dentist is very nice.",
+      "fa": "دندان‌پزشک خیلی مهربان است."
+    },
+    "category": "health",
+    "subcategory": "doctor",
+    "level": "A1"
   }
 ]

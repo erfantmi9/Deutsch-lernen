@@ -32,6 +32,7 @@ const verb: VerbEntry = {
   infinitive: "aufstehen",
   level: "A1",
   category: "daily",
+  usage: "common",
   translations: { en: "to get up", fa: "بلند شدن" },
   type: "separable",
   separable: { prefix: "auf", stem: "stehen" },

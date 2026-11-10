@@ -10,13 +10,13 @@ import { VOCAB_CATEGORIES } from "@/types/vocab";
 import { buildWordIndex, lookupWord } from "@/lib/wordLookup";
 
 describe("shipped vocabulary", () => {
-  it("has 25 nouns in each of the 8 new categories", () => {
+  it("has at least 25 nouns in each of the 8 newer categories", () => {
     const added = ["shopping", "jobs", "weather", "colors", "clothes", "city", "hobbies", "numbers-time"] as const;
     for (const c of added) {
-      expect(vocab.filter((w) => w.category === c)).toHaveLength(25);
+      expect(vocab.filter((w) => w.category === c).length).toBeGreaterThanOrEqual(25);
       expect(VOCAB_CATEGORIES).toContain(c);
     }
-    expect(vocab.length).toBe(477);
+    expect(vocab.length).toBe(656);
   });
 
   it("has unique noun ids and consistent articles", () => {
@@ -24,14 +24,14 @@ describe("shipped vocabulary", () => {
     for (const w of vocab) expect(["der", "die", "das"]).toContain(w.article);
   });
 
-  it("has 63 verbs with unique ids", () => {
-    expect(verbs).toHaveLength(63);
-    expect(new Set(verbs.map((v) => v.id)).size).toBe(63);
+  it("has 162 verbs with unique ids", () => {
+    expect(verbs).toHaveLength(162);
+    expect(new Set(verbs.map((v) => v.id)).size).toBe(162);
   });
 
-  it("starts every batch with 25 adjectives, adverbs, prepositions and about 25 phrases", () => {
-    expect(adjectives).toHaveLength(25);
-    expect(adverbs).toHaveLength(25);
+  it("has the A1 adjectives, adverbs, prepositions and about 25 phrases", () => {
+    expect(adjectives).toHaveLength(85);
+    expect(adverbs).toHaveLength(62);
     expect(prepositions).toHaveLength(25);
     expect(phrases.length).toBeGreaterThanOrEqual(25);
   });

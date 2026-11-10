@@ -771,5 +771,150 @@
     "category": "time",
     "subcategory": "units",
     "level": "A1"
+  },
+  {
+    "id": "anfang",
+    "word": "Anfang",
+    "article": "der",
+    "plural": "Anfänge",
+    "translations": {
+      "en": "beginning, start",
+      "fa": "شروع، آغاز"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Anfang).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Anfang).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Anfang).",
+      "simple": {
+        "en": "Just learn it: der Anfang.",
+        "fa": "فقط حفظش کنید: der Anfang.",
+        "de": "Einfach lernen: der Anfang."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Am Anfang ist alles neu.",
+      "en": "At the beginning everything is new.",
+      "fa": "اولش همه‌چیز تازه است."
+    },
+    "category": "time",
+    "subcategory": "units",
+    "level": "A1"
+  },
+  {
+    "id": "ende",
+    "word": "Ende",
+    "article": "das",
+    "plural": "Enden",
+    "translations": {
+      "en": "end",
+      "fa": "پایان، آخر"
+    },
+    "grammarRule": {
+      "en": "Exception: most nouns ending in -e are feminine, but Ende is neuter (das Ende). Learn it as an exception.",
+      "fa": "استثنا: بیشتر اسم‌های ختم‌شده به -e مؤنث‌اند، اما Ende خنثی است (das Ende). آن را به‌عنوان استثنا حفظ کنید.",
+      "de": "Ausnahme: Die meisten Nomen auf -e sind feminin, aber Ende ist sächlich (das Ende). Lerne es als Ausnahme.",
+      "simple": {
+        "en": "Ends in -e but it is das: das Ende.",
+        "fa": "به -e ختم می‌شود اما das است: das Ende.",
+        "de": "Endet auf -e, ist aber das: das Ende."
+      }
+    },
+    "ruleCategory": "exception",
+    "example": {
+      "de": "Ende Mai habe ich Urlaub.",
+      "en": "At the end of May I am on holiday.",
+      "fa": "آخر ماه مه مرخصی دارم."
+    },
+    "category": "time",
+    "subcategory": "units",
+    "level": "A1"
+  },
+  {
+    "id": "mitternacht",
+    "word": "Mitternacht",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "midnight",
+      "fa": "نیمه‌شب"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Mitte + Nacht): the last part decides the article, die Nacht → die Mitternacht.",
+      "fa": "اسم مرکب (Mitte + Nacht): بخش آخر آرتیکل را تعیین می‌کند، die Nacht ← die Mitternacht.",
+      "de": "Zusammengesetztes Nomen (Mitte + Nacht): Das letzte Wort bestimmt den Artikel, die Nacht → die Mitternacht.",
+      "simple": {
+        "en": "Last part decides: die Nacht → die Mitternacht.",
+        "fa": "بخش آخر تعیین می‌کند: die Nacht ← die Mitternacht.",
+        "de": "Das letzte Wort entscheidet: die Nacht → die Mitternacht."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Er kommt erst um Mitternacht.",
+      "en": "He only arrives at midnight.",
+      "fa": "او تازه نیمه‌شب می‌رسد."
+    },
+    "category": "time",
+    "subcategory": "units",
+    "level": "A1"
+  },
+  {
+    "id": "viertelstunde",
+    "word": "Viertelstunde",
+    "article": "die",
+    "plural": "Viertelstunden",
+    "translations": {
+      "en": "quarter of an hour",
+      "fa": "یک ربع ساعت"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Viertel + Stunde): the last part decides the article, die Stunde → die Viertelstunde.",
+      "fa": "اسم مرکب (Viertel + Stunde): بخش آخر آرتیکل را تعیین می‌کند، die Stunde ← die Viertelstunde.",
+      "de": "Zusammengesetztes Nomen (Viertel + Stunde): Das letzte Wort bestimmt den Artikel, die Stunde → die Viertelstunde.",
+      "simple": {
+        "en": "Last part decides: die Stunde → die Viertelstunde.",
+        "fa": "بخش آخر تعیین می‌کند: die Stunde ← die Viertelstunde.",
+        "de": "Das letzte Wort entscheidet: die Stunde → die Viertelstunde."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Bus kommt in einer Viertelstunde.",
+      "en": "The bus comes in a quarter of an hour.",
+      "fa": "اتوبوس یک ربع دیگر می‌آید."
+    },
+    "category": "time",
+    "subcategory": "units",
+    "level": "A1"
+  },
+  {
+    "id": "wochentag",
+    "word": "Wochentag",
+    "article": "der",
+    "plural": "Wochentage",
+    "translations": {
+      "en": "day of the week, weekday",
+      "fa": "روز هفته"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Woche + Tag): the last part decides the article, der Tag → der Wochentag.",
+      "fa": "اسم مرکب (Woche + Tag): بخش آخر آرتیکل را تعیین می‌کند، der Tag ← der Wochentag.",
+      "de": "Zusammengesetztes Nomen (Woche + Tag): Das letzte Wort bestimmt den Artikel, der Tag → der Wochentag.",
+      "simple": {
+        "en": "Last part decides: der Tag → der Wochentag.",
+        "fa": "بخش آخر تعیین می‌کند: der Tag ← der Wochentag.",
+        "de": "Das letzte Wort entscheidet: der Tag → der Wochentag."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Montag ist mein liebster Wochentag.",
+      "en": "Monday is my favourite day of the week.",
+      "fa": "دوشنبه روز محبوبم در هفته است."
+    },
+    "category": "time",
+    "subcategory": "calendar",
+    "level": "A1"
   }
 ]

@@ -16,6 +16,7 @@ export const VerbEntrySchema = z.object({
   infinitive: TextSchema,
   level: LevelSchema,
   category: z.enum(["basic", "daily", "movement", "communication", "modal"]),
+  usage: z.enum(["essential", "common", "useful"]),
   translations: I18n2Schema,
   type: z.enum(["regular", "irregular", "modal", "separable", "reflexive"]),
   stemChange: TextSchema.optional(),

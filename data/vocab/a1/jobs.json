@@ -698,5 +698,425 @@
     },
     "category": "jobs",
     "level": "A1"
+  },
+  {
+    "id": "arbeit",
+    "word": "Arbeit",
+    "article": "die",
+    "plural": "Arbeiten",
+    "translations": {
+      "en": "work",
+      "fa": "کار"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Arbeit).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Arbeit).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Arbeit).",
+      "simple": {
+        "en": "Just learn it: die Arbeit.",
+        "fa": "فقط حفظش کنید: die Arbeit.",
+        "de": "Einfach lernen: die Arbeit."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich gehe jetzt zur Arbeit.",
+      "en": "I am going to work now.",
+      "fa": "الان دارم می‌روم سر کار."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "job",
+    "word": "Job",
+    "article": "der",
+    "plural": "Jobs",
+    "translations": {
+      "en": "job",
+      "fa": "کار، شغل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Job).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Job).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Job).",
+      "simple": {
+        "en": "Just learn it: der Job.",
+        "fa": "فقط حفظش کنید: der Job.",
+        "de": "Einfach lernen: der Job."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Er sucht einen neuen Job.",
+      "en": "He is looking for a new job.",
+      "fa": "او دنبال یک کار جدید است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "hausfrau",
+    "word": "Hausfrau",
+    "article": "die",
+    "plural": "Hausfrauen",
+    "translations": {
+      "en": "housewife",
+      "fa": "زن خانه‌دار"
+    },
+    "grammarRule": {
+      "en": "Female persons are usually feminine (die): die Frau, die Mutter, die Schwester.",
+      "fa": "اسم‌های مربوط به افراد مؤنث معمولاً مؤنث (die) هستند: die Frau, die Mutter, die Schwester.",
+      "de": "Weibliche Personen sind meist feminin (die): die Frau, die Mutter, die Schwester.",
+      "simple": {
+        "en": "Women and girls are usually die.",
+        "fa": "زن‌ها معمولاً die هستند.",
+        "de": "Frauen sind meist die."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Meine Mutter ist Hausfrau.",
+      "en": "My mother is a housewife.",
+      "fa": "مادرم خانه‌دار است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "hausmann",
+    "word": "Hausmann",
+    "article": "der",
+    "plural": "Hausmänner",
+    "translations": {
+      "en": "househusband",
+      "fa": "مرد خانه‌دار"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Mein Vater ist Hausmann.",
+      "en": "My father is a househusband.",
+      "fa": "پدرم خانه‌دار است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "sekretaer",
+    "word": "Sekretär",
+    "article": "der",
+    "plural": "Sekretäre",
+    "translations": {
+      "en": "secretary (male)",
+      "fa": "منشی (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Sekretär schreibt viele E-Mails.",
+      "en": "The secretary writes lots of emails.",
+      "fa": "منشی کلی ایمیل می‌نویسد."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "sekretaerin",
+    "word": "Sekretärin",
+    "article": "die",
+    "plural": "Sekretärinnen",
+    "translations": {
+      "en": "secretary (female)",
+      "fa": "منشی (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Sekretärin telefoniert gerade.",
+      "en": "The secretary is on the phone right now.",
+      "fa": "منشی الان دارد تلفن حرف می‌زند."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "praktikum",
+    "word": "Praktikum",
+    "article": "das",
+    "plural": "Praktika",
+    "translations": {
+      "en": "internship",
+      "fa": "کارآموزی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Praktikum).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Praktikum).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Praktikum).",
+      "simple": {
+        "en": "Just learn it: das Praktikum.",
+        "fa": "فقط حفظش کنید: das Praktikum.",
+        "de": "Einfach lernen: das Praktikum."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich mache ein Praktikum.",
+      "en": "I am doing an internship.",
+      "fa": "من دارم کارآموزی می‌کنم."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "pause",
+    "word": "Pause",
+    "article": "die",
+    "plural": "Pausen",
+    "translations": {
+      "en": "break",
+      "fa": "استراحت، زنگ تفریح"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Pause).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Pause).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Pause).",
+      "simple": {
+        "en": "Just learn it: die Pause.",
+        "fa": "فقط حفظش کنید: die Pause.",
+        "de": "Einfach lernen: die Pause."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wir machen jetzt eine Pause.",
+      "en": "We are taking a break now.",
+      "fa": "حالا کمی استراحت می‌کنیم."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "mitarbeiter",
+    "word": "Mitarbeiter",
+    "article": "der",
+    "plural": "Mitarbeiter",
+    "translations": {
+      "en": "employee (male)",
+      "fa": "کارمند (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Die Firma hat zehn Mitarbeiter.",
+      "en": "The company has ten employees.",
+      "fa": "این شرکت ده کارمند دارد."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "mitarbeiterin",
+    "word": "Mitarbeiterin",
+    "article": "die",
+    "plural": "Mitarbeiterinnen",
+    "translations": {
+      "en": "employee (female)",
+      "fa": "کارمند (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Mitarbeiterin hilft uns gern.",
+      "en": "The employee is happy to help us.",
+      "fa": "کارمند با کمال میل به ما کمک می‌کند."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "friseurin",
+    "word": "Friseurin",
+    "article": "die",
+    "plural": "Friseurinnen",
+    "translations": {
+      "en": "hairdresser (female)",
+      "fa": "آرایشگر (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Friseurin schneidet meine Haare.",
+      "en": "The hairdresser cuts my hair.",
+      "fa": "آرایشگر موهایم را کوتاه می‌کند."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "fahrerin",
+    "word": "Fahrerin",
+    "article": "die",
+    "plural": "Fahrerinnen",
+    "translations": {
+      "en": "driver (female)",
+      "fa": "راننده (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Fahrerin wartet vor dem Hotel.",
+      "en": "The driver is waiting in front of the hotel.",
+      "fa": "راننده جلوی هتل منتظر است."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "baeckerin",
+    "word": "Bäckerin",
+    "article": "die",
+    "plural": "Bäckerinnen",
+    "translations": {
+      "en": "baker (female)",
+      "fa": "نانوا (زن)"
+    },
+    "grammarRule": {
+      "en": "Female forms of jobs and persons ending in -in are always feminine (die): die Ärztin, die Köchin, die Lehrerin.",
+      "fa": "شکل مؤنث شغل‌ها و افراد که به -in ختم می‌شود همیشه مؤنث (die) است: die Ärztin, die Köchin, die Lehrerin.",
+      "de": "Weibliche Formen von Berufen und Personen auf -in sind immer feminin (die): die Ärztin, die Köchin, die Lehrerin.",
+      "simple": {
+        "en": "Women's job words ending in -in are always die.",
+        "fa": "کلمات شغلی زنانه با پایان -in همیشه die هستند.",
+        "de": "Berufe für Frauen auf -in sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Bäckerin backt frisches Brot.",
+      "en": "The baker bakes fresh bread.",
+      "fa": "نانوا نان تازه می‌پزد."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "krankenpfleger",
+    "word": "Krankenpfleger",
+    "article": "der",
+    "plural": "Krankenpfleger",
+    "translations": {
+      "en": "nurse (male)",
+      "fa": "پرستار (مرد)"
+    },
+    "grammarRule": {
+      "en": "Words for male people are masculine (der): der Arzt, der Koch, der Lehrer.",
+      "fa": "کلمات مربوط به مردان مذکر (der) هستند: der Arzt, der Koch, der Lehrer.",
+      "de": "Wörter für männliche Personen sind maskulin (der): der Arzt, der Koch, der Lehrer.",
+      "simple": {
+        "en": "A man: der.",
+        "fa": "برای مردها: der.",
+        "de": "Ein Mann: der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Krankenpfleger arbeitet nachts.",
+      "en": "The nurse works at night.",
+      "fa": "پرستار شب‌ها کار می‌کند."
+    },
+    "category": "jobs",
+    "level": "A1"
+  },
+  {
+    "id": "arbeitszeit",
+    "word": "Arbeitszeit",
+    "article": "die",
+    "plural": "Arbeitszeiten",
+    "translations": {
+      "en": "working hours",
+      "fa": "ساعت کاری"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: die Zeit gives die Arbeitszeit.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: die Zeit می‌شود die Arbeitszeit.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: die Zeit ergibt die Arbeitszeit.",
+      "simple": {
+        "en": "Look at the last part: die Zeit, so die Arbeitszeit.",
+        "fa": "به بخش آخر نگاه کنید: die Zeit، پس die Arbeitszeit.",
+        "de": "Schau auf den letzten Teil: die Zeit, also die Arbeitszeit."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Meine Arbeitszeit ist flexibel.",
+      "en": "My working hours are flexible.",
+      "fa": "ساعت کاری‌ام شناور است."
+    },
+    "category": "jobs",
+    "level": "A1"
   }
 ]

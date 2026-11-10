@@ -726,5 +726,34 @@
     "category": "body",
     "subcategory": "body",
     "level": "A1"
+  },
+  {
+    "id": "blut",
+    "word": "Blut",
+    "article": "das",
+    "plural": "–",
+    "translations": {
+      "en": "blood",
+      "fa": "خون"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Blut).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Blut).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Blut).",
+      "simple": {
+        "en": "Just learn it: das Blut.",
+        "fa": "فقط حفظش کنید: das Blut.",
+        "de": "Einfach lernen: das Blut."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Blut ist rot.",
+      "en": "Blood is red.",
+      "fa": "خون قرمز است."
+    },
+    "category": "body",
+    "subcategory": "body",
+    "level": "A1"
   }
 ]

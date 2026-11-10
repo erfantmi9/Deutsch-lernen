@@ -773,5 +773,614 @@
     "category": "food",
     "subcategory": "drinks",
     "level": "A1"
+  },
+  {
+    "id": "bier",
+    "word": "Bier",
+    "article": "das",
+    "plural": "Biere",
+    "translations": {
+      "en": "beer",
+      "fa": "آبجو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Bier).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Bier).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Bier).",
+      "simple": {
+        "en": "Just learn it: das Bier.",
+        "fa": "فقط حفظش کنید: das Bier.",
+        "de": "Einfach lernen: das Bier."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Er trinkt gern Bier.",
+      "en": "He likes drinking beer.",
+      "fa": "او آبجو دوست دارد."
+    },
+    "category": "food",
+    "subcategory": "drinks",
+    "level": "A1"
+  },
+  {
+    "id": "wein",
+    "word": "Wein",
+    "article": "der",
+    "plural": "Weine",
+    "translations": {
+      "en": "wine",
+      "fa": "شراب"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Wein).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Wein).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Wein).",
+      "simple": {
+        "en": "Just learn it: der Wein.",
+        "fa": "فقط حفظش کنید: der Wein.",
+        "de": "Einfach lernen: der Wein."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Wein kommt aus Italien.",
+      "en": "The wine comes from Italy.",
+      "fa": "این شراب مال ایتالیاست."
+    },
+    "category": "food",
+    "subcategory": "drinks",
+    "level": "A1"
+  },
+  {
+    "id": "mineralwasser",
+    "word": "Mineralwasser",
+    "article": "das",
+    "plural": "–",
+    "translations": {
+      "en": "mineral water",
+      "fa": "آب معدنی"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: das Wasser gives das Mineralwasser.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: das Wasser می‌شود das Mineralwasser.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: das Wasser ergibt das Mineralwasser.",
+      "simple": {
+        "en": "Look at the last part: das Wasser, so das Mineralwasser.",
+        "fa": "به بخش آخر نگاه کنید: das Wasser، پس das Mineralwasser.",
+        "de": "Schau auf den letzten Teil: das Wasser, also das Mineralwasser."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Ein Mineralwasser, bitte.",
+      "en": "A mineral water, please.",
+      "fa": "یک آب معدنی، لطفاً."
+    },
+    "category": "food",
+    "subcategory": "drinks",
+    "level": "A1"
+  },
+  {
+    "id": "fisch",
+    "word": "Fisch",
+    "article": "der",
+    "plural": "Fische",
+    "translations": {
+      "en": "fish",
+      "fa": "ماهی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Fisch).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Fisch).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Fisch).",
+      "simple": {
+        "en": "Just learn it: der Fisch.",
+        "fa": "فقط حفظش کنید: der Fisch.",
+        "de": "Einfach lernen: der Fisch."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wir essen heute Fisch.",
+      "en": "We are eating fish today.",
+      "fa": "امروز ماهی می‌خوریم."
+    },
+    "category": "food",
+    "subcategory": "groceries",
+    "level": "A1"
+  },
+  {
+    "id": "wurst",
+    "word": "Wurst",
+    "article": "die",
+    "plural": "Würste",
+    "translations": {
+      "en": "sausage",
+      "fa": "سوسیس، کالباس"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Wurst).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Wurst).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Wurst).",
+      "simple": {
+        "en": "Just learn it: die Wurst.",
+        "fa": "فقط حفظش کنید: die Wurst.",
+        "de": "Einfach lernen: die Wurst."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Wurst ist sehr lecker.",
+      "en": "The sausage is very tasty.",
+      "fa": "سوسیس خیلی خوشمزه است."
+    },
+    "category": "food",
+    "subcategory": "groceries",
+    "level": "A1"
+  },
+  {
+    "id": "zucker",
+    "word": "Zucker",
+    "article": "der",
+    "plural": "–",
+    "translations": {
+      "en": "sugar",
+      "fa": "شکر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Zucker).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Zucker).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Zucker).",
+      "simple": {
+        "en": "Just learn it: der Zucker.",
+        "fa": "فقط حفظش کنید: der Zucker.",
+        "de": "Einfach lernen: der Zucker."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich trinke Tee ohne Zucker.",
+      "en": "I drink tea without sugar.",
+      "fa": "من چای را بدون شکر می‌خورم."
+    },
+    "category": "food",
+    "subcategory": "groceries",
+    "level": "A1"
+  },
+  {
+    "id": "haehnchen",
+    "word": "Hähnchen",
+    "article": "das",
+    "plural": "Hähnchen",
+    "translations": {
+      "en": "chicken (food)",
+      "fa": "مرغ (گوشت مرغ)"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in the diminutive suffix -chen are always neuter (das): das Brötchen, das Mädchen.",
+      "fa": "اسم‌هایی که با پسوند تصغیر -chen تمام می‌شوند همیشه خنثی (das) هستند: das Brötchen, das Mädchen.",
+      "de": "Nomen mit der Verkleinerungsendung -chen sind immer sächlich (das): das Brötchen, das Mädchen.",
+      "simple": {
+        "en": "Words ending in -chen are always das.",
+        "fa": "کلمات ختم‌شده به -chen همیشه das هستند.",
+        "de": "Wörter auf -chen sind immer das."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Das Hähnchen ist im Ofen.",
+      "en": "The chicken is in the oven.",
+      "fa": "مرغ توی فر است."
+    },
+    "category": "food",
+    "subcategory": "groceries",
+    "level": "A1"
+  },
+  {
+    "id": "salz",
+    "word": "Salz",
+    "article": "das",
+    "plural": "–",
+    "translations": {
+      "en": "salt",
+      "fa": "نمک"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Salz).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Salz).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Salz).",
+      "simple": {
+        "en": "Just learn it: das Salz.",
+        "fa": "فقط حفظش کنید: das Salz.",
+        "de": "Einfach lernen: das Salz."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Salz steht auf dem Tisch.",
+      "en": "The salt is on the table.",
+      "fa": "نمک روی میز است."
+    },
+    "category": "food",
+    "subcategory": "groceries",
+    "level": "A1"
+  },
+  {
+    "id": "pfeffer",
+    "word": "Pfeffer",
+    "article": "der",
+    "plural": "–",
+    "translations": {
+      "en": "pepper",
+      "fa": "فلفل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Pfeffer).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Pfeffer).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Pfeffer).",
+      "simple": {
+        "en": "Just learn it: der Pfeffer.",
+        "fa": "فقط حفظش کنید: der Pfeffer.",
+        "de": "Einfach lernen: der Pfeffer."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Gib mir bitte den Pfeffer.",
+      "en": "Please pass me the pepper.",
+      "fa": "لطفاً فلفل را بده به من."
+    },
+    "category": "food",
+    "subcategory": "groceries",
+    "level": "A1"
+  },
+  {
+    "id": "oel",
+    "word": "Öl",
+    "article": "das",
+    "plural": "–",
+    "translations": {
+      "en": "oil",
+      "fa": "روغن"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Öl).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Öl).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Öl).",
+      "simple": {
+        "en": "Just learn it: das Öl.",
+        "fa": "فقط حفظش کنید: das Öl.",
+        "de": "Einfach lernen: das Öl."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich koche mit wenig Öl.",
+      "en": "I cook with a little oil.",
+      "fa": "من با روغن کم غذا می‌پزم."
+    },
+    "category": "food",
+    "subcategory": "groceries",
+    "level": "A1"
+  },
+  {
+    "id": "marmelade",
+    "word": "Marmelade",
+    "article": "die",
+    "plural": "Marmeladen",
+    "translations": {
+      "en": "jam",
+      "fa": "مربا"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Marmelade).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Marmelade).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Marmelade).",
+      "simple": {
+        "en": "Just learn it: die Marmelade.",
+        "fa": "فقط حفظش کنید: die Marmelade.",
+        "de": "Einfach lernen: die Marmelade."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich esse Brot mit Marmelade.",
+      "en": "I eat bread with jam.",
+      "fa": "من نان و مربا می‌خورم."
+    },
+    "category": "food",
+    "subcategory": "groceries",
+    "level": "A1"
+  },
+  {
+    "id": "honig",
+    "word": "Honig",
+    "article": "der",
+    "plural": "–",
+    "translations": {
+      "en": "honey",
+      "fa": "عسل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Honig).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Honig).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Honig).",
+      "simple": {
+        "en": "Just learn it: der Honig.",
+        "fa": "فقط حفظش کنید: der Honig.",
+        "de": "Einfach lernen: der Honig."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Honig ist sehr süß.",
+      "en": "The honey is very sweet.",
+      "fa": "عسل خیلی شیرین است."
+    },
+    "category": "food",
+    "subcategory": "groceries",
+    "level": "A1"
+  },
+  {
+    "id": "nudel",
+    "word": "Nudel",
+    "article": "die",
+    "plural": "Nudeln",
+    "translations": {
+      "en": "noodle, pasta",
+      "fa": "ماکارونی، رشته"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Nudel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Nudel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Nudel).",
+      "simple": {
+        "en": "Just learn it: die Nudel.",
+        "fa": "فقط حفظش کنید: die Nudel.",
+        "de": "Einfach lernen: die Nudel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Kinder essen gern Nudeln.",
+      "en": "The children like eating pasta.",
+      "fa": "بچه‌ها ماکارونی دوست دارند."
+    },
+    "category": "food",
+    "subcategory": "groceries",
+    "level": "A1"
+  },
+  {
+    "id": "zwiebel",
+    "word": "Zwiebel",
+    "article": "die",
+    "plural": "Zwiebeln",
+    "translations": {
+      "en": "onion",
+      "fa": "پیاز"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Zwiebel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Zwiebel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Zwiebel).",
+      "simple": {
+        "en": "Just learn it: die Zwiebel.",
+        "fa": "فقط حفظش کنید: die Zwiebel.",
+        "de": "Einfach lernen: die Zwiebel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Zwiebel ist sehr scharf.",
+      "en": "The onion is very sharp.",
+      "fa": "پیاز خیلی تند است."
+    },
+    "category": "food",
+    "subcategory": "fruit-veg",
+    "level": "A1"
+  },
+  {
+    "id": "birne",
+    "word": "Birne",
+    "article": "die",
+    "plural": "Birnen",
+    "translations": {
+      "en": "pear",
+      "fa": "گلابی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Birne).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Birne).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Birne).",
+      "simple": {
+        "en": "Just learn it: die Birne.",
+        "fa": "فقط حفظش کنید: die Birne.",
+        "de": "Einfach lernen: die Birne."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Birne ist süß und weich.",
+      "en": "The pear is sweet and soft.",
+      "fa": "گلابی شیرین و نرم است."
+    },
+    "category": "food",
+    "subcategory": "fruit-veg",
+    "level": "A1"
+  },
+  {
+    "id": "gurke",
+    "word": "Gurke",
+    "article": "die",
+    "plural": "Gurken",
+    "translations": {
+      "en": "cucumber",
+      "fa": "خیار"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Gurke).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Gurke).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Gurke).",
+      "simple": {
+        "en": "Just learn it: die Gurke.",
+        "fa": "فقط حفظش کنید: die Gurke.",
+        "de": "Einfach lernen: die Gurke."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich kaufe zwei Gurken.",
+      "en": "I am buying two cucumbers.",
+      "fa": "من دو تا خیار می‌خرم."
+    },
+    "category": "food",
+    "subcategory": "fruit-veg",
+    "level": "A1"
+  },
+  {
+    "id": "pizza",
+    "word": "Pizza",
+    "article": "die",
+    "plural": "Pizzen",
+    "translations": {
+      "en": "pizza",
+      "fa": "پیتزا"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Pizza).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Pizza).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Pizza).",
+      "simple": {
+        "en": "Just learn it: die Pizza.",
+        "fa": "فقط حفظش کنید: die Pizza.",
+        "de": "Einfach lernen: die Pizza."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wir bestellen heute eine Pizza.",
+      "en": "We are ordering a pizza today.",
+      "fa": "امروز پیتزا سفارش می‌دهیم."
+    },
+    "category": "food",
+    "subcategory": "meals",
+    "level": "A1"
+  },
+  {
+    "id": "nachtisch",
+    "word": "Nachtisch",
+    "article": "der",
+    "plural": "Nachtische",
+    "translations": {
+      "en": "dessert",
+      "fa": "دسر"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: der Tisch gives der Nachtisch.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: der Tisch می‌شود der Nachtisch.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: der Tisch ergibt der Nachtisch.",
+      "simple": {
+        "en": "Look at the last part: der Tisch, so der Nachtisch.",
+        "fa": "به بخش آخر نگاه کنید: der Tisch، پس der Nachtisch.",
+        "de": "Schau auf den letzten Teil: der Tisch, also der Nachtisch."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Was gibt es zum Nachtisch?",
+      "en": "What is there for dessert?",
+      "fa": "برای دسر چه داریم؟"
+    },
+    "category": "food",
+    "subcategory": "meals",
+    "level": "A1"
+  },
+  {
+    "id": "speisekarte",
+    "word": "Speisekarte",
+    "article": "die",
+    "plural": "Speisekarten",
+    "translations": {
+      "en": "menu",
+      "fa": "منو، فهرست غذا"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: die Karte gives die Speisekarte.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: die Karte می‌شود die Speisekarte.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: die Karte ergibt die Speisekarte.",
+      "simple": {
+        "en": "Look at the last part: die Karte, so die Speisekarte.",
+        "fa": "به بخش آخر نگاه کنید: die Karte، پس die Speisekarte.",
+        "de": "Schau auf den letzten Teil: die Karte, also die Speisekarte."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Die Speisekarte ist auf Deutsch.",
+      "en": "The menu is in German.",
+      "fa": "منو به زبان آلمانی است."
+    },
+    "category": "food",
+    "subcategory": "meals",
+    "level": "A1"
+  },
+  {
+    "id": "hunger",
+    "word": "Hunger",
+    "article": "der",
+    "plural": "–",
+    "translations": {
+      "en": "hunger",
+      "fa": "گرسنگی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Hunger).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Hunger).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Hunger).",
+      "simple": {
+        "en": "Just learn it: der Hunger.",
+        "fa": "فقط حفظش کنید: der Hunger.",
+        "de": "Einfach lernen: der Hunger."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich habe großen Hunger.",
+      "en": "I am very hungry.",
+      "fa": "من خیلی گرسنه‌ام."
+    },
+    "category": "food",
+    "subcategory": "meals",
+    "level": "A1"
+  },
+  {
+    "id": "durst",
+    "word": "Durst",
+    "article": "der",
+    "plural": "–",
+    "translations": {
+      "en": "thirst",
+      "fa": "تشنگی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Durst).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Durst).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Durst).",
+      "simple": {
+        "en": "Just learn it: der Durst.",
+        "fa": "فقط حفظش کنید: der Durst.",
+        "de": "Einfach lernen: der Durst."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Hast du Durst?",
+      "en": "Are you thirsty?",
+      "fa": "تشنه‌ای؟"
+    },
+    "category": "food",
+    "subcategory": "meals",
+    "level": "A1"
   }
 ]

@@ -698,5 +698,201 @@
     },
     "category": "weather",
     "level": "A1"
+  },
+  {
+    "id": "luft",
+    "word": "Luft",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "air",
+      "fa": "هوا"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Luft).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Luft).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Luft).",
+      "simple": {
+        "en": "Just learn it: die Luft.",
+        "fa": "فقط حفظش کنید: die Luft.",
+        "de": "Einfach lernen: die Luft."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Luft ist heute frisch.",
+      "en": "The air is fresh today.",
+      "fa": "امروز هوا تازه است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "natur",
+    "word": "Natur",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "nature",
+      "fa": "طبیعت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Natur).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Natur).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Natur).",
+      "simple": {
+        "en": "Just learn it: die Natur.",
+        "fa": "فقط حفظش کنید: die Natur.",
+        "de": "Einfach lernen: die Natur."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich bin gern in der Natur.",
+      "en": "I like being out in nature.",
+      "fa": "دوست دارم در طبیعت باشم."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "see",
+    "word": "See",
+    "article": "der",
+    "plural": "Seen",
+    "translations": {
+      "en": "lake",
+      "fa": "دریاچه"
+    },
+    "grammarRule": {
+      "en": "Exception: most nouns ending in -e are feminine, but See is masculine (der See). Careful: die See means the sea. Learn it as an exception.",
+      "fa": "استثنا: بیشتر اسم‌های ختم‌شده به -e مؤنث‌اند، اما See مذکر است (der See). دقت کنید: die See یعنی دریا. آن را به‌عنوان استثنا حفظ کنید.",
+      "de": "Ausnahme: Die meisten Nomen auf -e sind feminin, aber See ist maskulin (der See). Achtung: die See bedeutet das Meer. Lerne es als Ausnahme.",
+      "simple": {
+        "en": "Ends in -e but it is der: der See.",
+        "fa": "به -e ختم می‌شود اما der است: der See.",
+        "de": "Endet auf -e, ist aber der: der See."
+      }
+    },
+    "ruleCategory": "exception",
+    "example": {
+      "de": "Wir schwimmen im See.",
+      "en": "We swim in the lake.",
+      "fa": "ما در دریاچه شنا می‌کنیم."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "insel",
+    "word": "Insel",
+    "article": "die",
+    "plural": "Inseln",
+    "translations": {
+      "en": "island",
+      "fa": "جزیره"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Insel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Insel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Insel).",
+      "simple": {
+        "en": "Just learn it: die Insel.",
+        "fa": "فقط حفظش کنید: die Insel.",
+        "de": "Einfach lernen: die Insel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Insel ist sehr klein.",
+      "en": "The island is very small.",
+      "fa": "جزیره خیلی کوچک است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "welt",
+    "word": "Welt",
+    "article": "die",
+    "plural": "Welten",
+    "translations": {
+      "en": "world",
+      "fa": "دنیا، جهان"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Welt).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Welt).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Welt).",
+      "simple": {
+        "en": "Just learn it: die Welt.",
+        "fa": "فقط حفظش کنید: die Welt.",
+        "de": "Einfach lernen: die Welt."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Welt ist groß.",
+      "en": "The world is big.",
+      "fa": "دنیا بزرگ است."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "hitze",
+    "word": "Hitze",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "heat",
+      "fa": "گرما"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Katze.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Katze.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Katze.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich mag die Hitze nicht.",
+      "en": "I do not like the heat.",
+      "fa": "من گرما را دوست ندارم."
+    },
+    "category": "weather",
+    "level": "A1"
+  },
+  {
+    "id": "kaelte",
+    "word": "Kälte",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "cold",
+      "fa": "سرما"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Katze.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Katze.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Katze.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Im Winter ist die Kälte stark.",
+      "en": "In winter the cold is severe.",
+      "fa": "زمستان سرما شدید است."
+    },
+    "category": "weather",
+    "level": "A1"
   }
 ]

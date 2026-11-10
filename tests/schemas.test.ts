@@ -28,6 +28,7 @@ const verb = {
   infinitive: "machen",
   level: "A1",
   category: "daily",
+  usage: "common",
   translations: { en: "to do", fa: "انجام دادن" },
   type: "regular",
   present: conj,
@@ -86,16 +87,16 @@ describe("sentence schema", () => {
 });
 
 describe("shipped data", () => {
-  it("has 477 unique nouns across 19 categories, including the legacy ids", () => {
-    expect(vocab).toHaveLength(477);
+  it("has 656 unique nouns across 19 categories, including the legacy ids", () => {
+    expect(vocab).toHaveLength(656);
     expect(new Set(vocab.map((w) => w.category)).size).toBe(19);
     const ids = new Set(vocab.map((w) => w.id));
     for (const id of ["mann", "frau", "maedchen", "junge", "kind", "zeitung", "universitaet", "montag", "essen", "lehrerin"]) {
       expect(ids.has(id)).toBe(true);
     }
   });
-  it("keeps the 12 original verbs first (63 in total) and 15 sentences", () => {
-    expect(verbs).toHaveLength(63);
+  it("keeps the 12 original verbs first (162 in total) and 15 sentences", () => {
+    expect(verbs).toHaveLength(162);
     expect(verbs.slice(0, 12).map((v) => v.id)).toEqual([
       "sein", "haben", "machen", "wohnen", "heissen", "gehen", "fahren", "essen", "sprechen", "koennen", "muessen", "aufstehen",
     ]);

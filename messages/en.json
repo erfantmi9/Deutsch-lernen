@@ -216,7 +216,14 @@
       "communication": "Communication",
       "modal": "Modal verbs"
     },
-    "empty": "No verbs match these filters. Try loosening them a bit."
+    "empty": "No verbs match these filters. Try loosening them a bit.",
+    "filterByUsage": "Filter by how useful",
+    "filterAllUsages": "All levels",
+    "usages": {
+      "essential": "Essential",
+      "common": "Common",
+      "useful": "Good to know"
+    }
   },
   "Dialogues": {
     "title": "Dialogues",

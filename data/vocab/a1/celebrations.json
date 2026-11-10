@@ -694,5 +694,92 @@
     "category": "celebrations",
     "subcategory": "party",
     "level": "A1"
+  },
+  {
+    "id": "glueck",
+    "word": "Glück",
+    "article": "das",
+    "plural": "–",
+    "translations": {
+      "en": "luck, happiness",
+      "fa": "شانس، خوشبختی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Glück).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Glück).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Glück).",
+      "simple": {
+        "en": "Just learn it: das Glück.",
+        "fa": "فقط حفظش کنید: das Glück.",
+        "de": "Einfach lernen: das Glück."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Viel Glück bei der Prüfung!",
+      "en": "Good luck with the exam!",
+      "fa": "در امتحان موفق باشی!"
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  },
+  {
+    "id": "neujahr",
+    "word": "Neujahr",
+    "article": "das",
+    "plural": "–",
+    "translations": {
+      "en": "New Year's Day",
+      "fa": "سال نو (اول ژانویه)"
+    },
+    "grammarRule": {
+      "en": "Compound noun (neu + Jahr): the last part decides the article, das Jahr → das Neujahr.",
+      "fa": "اسم مرکب (neu + Jahr): بخش آخر آرتیکل را تعیین می‌کند، das Jahr ← das Neujahr.",
+      "de": "Zusammengesetztes Nomen (neu + Jahr): Das letzte Wort bestimmt den Artikel, das Jahr → das Neujahr.",
+      "simple": {
+        "en": "Last part decides: das Jahr → das Neujahr.",
+        "fa": "بخش آخر تعیین می‌کند: das Jahr ← das Neujahr.",
+        "de": "Das letzte Wort entscheidet: das Jahr → das Neujahr."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wir feiern Neujahr mit Freunden.",
+      "en": "We celebrate New Year with friends.",
+      "fa": "سال نو را با دوستان جشن می‌گیریم."
+    },
+    "category": "celebrations",
+    "subcategory": "holidays",
+    "level": "A1"
+  },
+  {
+    "id": "karneval",
+    "word": "Karneval",
+    "article": "der",
+    "plural": "Karnevale",
+    "translations": {
+      "en": "carnival",
+      "fa": "کارناوال"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Karneval).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Karneval).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Karneval).",
+      "simple": {
+        "en": "Just learn it: der Karneval.",
+        "fa": "فقط حفظش کنید: der Karneval.",
+        "de": "Einfach lernen: der Karneval."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Im Februar feiern wir Karneval.",
+      "en": "In February we celebrate carnival.",
+      "fa": "در فوریه کارناوال را جشن می‌گیریم."
+    },
+    "category": "celebrations",
+    "subcategory": "holidays",
+    "level": "A1"
   }
 ]

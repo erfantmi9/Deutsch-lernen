@@ -11,6 +11,13 @@ export const VERB_CATEGORIES: readonly VerbCategory[] = [
   "modal",
 ];
 
+/**
+ * How much a learner needs the verb, independent of its topic. essential: the ~40 verbs almost every A1 sentence
+ * uses; common: frequent in everyday talk and in the A1 exam; useful: good to know, learn them last.
+ */
+export type VerbUsage = "essential" | "common" | "useful";
+export const VERB_USAGES: readonly VerbUsage[] = ["essential", "common", "useful"];
+
 export const PERSONS = ["ich", "du", "er_sie_es", "wir", "ihr", "sie_Sie"] as const;
 export type Person = (typeof PERSONS)[number];
 
@@ -21,6 +28,7 @@ export interface VerbEntry {
   infinitive: string;
   level: Level;
   category: VerbCategory;
+  usage: VerbUsage;
   translations: I18n2;
   type: VerbType;
   /** e.g. "a→ä" */

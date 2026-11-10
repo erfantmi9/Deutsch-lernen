@@ -11,7 +11,7 @@ array, checked by `npm run validate:data` (also run before every build) and agai
 | `prepositions.json` | prepositions | same |
 | `phrases.json` | everyday phrases | same |
 
-Verbs are in `data/verbs/a1.json` (63 verbs, every form written out).
+Verbs are in `data/verbs/a1.json` (162 verbs, every form written out). Each verb has a `usage` level: `essential` (the ~40 verbs almost every sentence needs), `common` (everyday talk and the A1 exam) or `useful` (good to know). The verbs page lists them in that order and can filter by it.
 
 ## Rules for every entry
 

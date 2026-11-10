@@ -216,7 +216,14 @@
       "communication": "Kommunikation",
       "modal": "Modalverben"
     },
-    "empty": "Hmm, dazu finde ich kein Verb. Probier andere Filter!"
+    "empty": "Hmm, dazu finde ich kein Verb. Probier andere Filter!",
+    "filterByUsage": "Nach Nutzen filtern",
+    "filterAllUsages": "Alle Stufen",
+    "usages": {
+      "essential": "Unverzichtbar",
+      "common": "Häufig",
+      "useful": "Gut zu wissen"
+    }
   },
   "Dialogues": {
     "title": "Dialoge",
