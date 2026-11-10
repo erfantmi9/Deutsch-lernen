@@ -1,0 +1,275 @@
+[
+  {
+    "id": "perfekt",
+    "order": 12,
+    "topic": "perfekt",
+    "title": {
+      "en": "Perfekt: talking about the past",
+      "fa": "ماضی نقلی: صحبت درباره‌ی گذشته",
+      "de": "Perfekt: über die Vergangenheit sprechen"
+    },
+    "summary": {
+      "en": "Ich habe gelernt. Ich bin gefahren. haben or sein in position 2, the Partizip II at the end.",
+      "fa": "Ich habe gelernt. Ich bin gefahren. فعل haben یا sein در جایگاه دوم، اسم مفعول (Partizip II) در آخر جمله.",
+      "de": "Ich habe gelernt. Ich bin gefahren. haben oder sein auf Position 2, das Partizip II am Ende."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "haben or sein + Partizip II",
+          "fa": "haben یا sein + اسم مفعول",
+          "de": "haben oder sein + Partizip II"
+        },
+        "body": {
+          "en": "In spoken German you usually talk about the past with the **Perfekt**. It has two parts:\n\n- `haben` or `sein` in the right form, in position 2\n- the **Partizip II** at the end of the sentence\n\nTogether they make a frame around the rest of the sentence: `Ich habe gestern Pizza gegessen.` In a yes/no question `haben` or `sein` comes first: `Hast du gut geschlafen?`",
+          "fa": "در آلمانیِ گفتاری معمولاً برای صحبت درباره‌ی گذشته از **ماضی نقلی (Perfekt)** استفاده می‌شود. این زمان دو بخش دارد:\n\n- `haben` یا `sein` به شکل صرف‌شده، در جایگاه دوم\n- **اسم مفعول (Partizip II)** در آخر جمله\n\nاین دو با هم یک چارچوب دور بقیه‌ی جمله می‌سازند: `Ich habe gestern Pizza gegessen.` در پرسش بله/خیر، `haben` یا `sein` اول می‌آید: `Hast du gut geschlafen?`",
+          "de": "Im gesprochenen Deutsch sprichst du über die Vergangenheit meistens im **Perfekt**. Es hat zwei Teile:\n\n- `haben` oder `sein` in der richtigen Form, auf Position 2\n- das **Partizip II** am Satzende\n\nZusammen bilden sie eine Klammer um den Rest des Satzes: `Ich habe gestern Pizza gegessen.` In einer Ja/Nein-Frage steht `haben` oder `sein` am Anfang: `Hast du gut geschlafen?`"
+        },
+        "table": {
+          "headers": ["1", "gloss:auxiliary", "…", "gloss:partizip2"],
+          "rows": [
+            ["Ich", "**habe**", "gestern Pizza", "**gegessen**."],
+            ["Gestern", "**habe**", "ich Pizza", "**gegessen**."],
+            ["Wir", "**sind**", "nach Berlin", "**gefahren**."],
+            ["Er", "**hat**", "einen Brief", "**geschrieben**."]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "Forming the Partizip II",
+          "fa": "ساختن اسم مفعول",
+          "de": "Das Partizip II bilden"
+        },
+        "body": {
+          "en": "- **Regular verbs**: `ge-` + stem + `-t`: `machen` → `gemacht`, `kaufen` → `gekauft`. If the stem ends in -t or -d, the ending is `-et`: `arbeiten` → `gearbeitet`.\n- **Irregular verbs**: `ge-` + stem + `-en`, often with a changed stem: `sehen` → `gesehen`, `trinken` → `getrunken`, `gehen` → `gegangen`. Learn these forms together with the verb.\n\nVerbs ending in `-ieren` have no `ge-`: `studieren` → `studiert`.",
+          "fa": "- **فعل‌های باقاعده**: `ge-` + ریشه + `-t`: `machen` ← `gemacht`، `kaufen` ← `gekauft`. اگر ریشه به t یا d ختم شود، پایانه `-et` است: `arbeiten` ← `gearbeitet`.\n- **فعل‌های بی‌قاعده**: `ge-` + ریشه + `-en`، اغلب با ریشه‌ی تغییریافته: `sehen` ← `gesehen`، `trinken` ← `getrunken`، `gehen` ← `gegangen`. این شکل‌ها را همراه با خود فعل حفظ کن.\n\nفعل‌هایی که به `-ieren` ختم می‌شوند `ge-` نمی‌گیرند: `studieren` ← `studiert`.",
+          "de": "- **Regelmäßige Verben**: `ge-` + Stamm + `-t`: `machen` → `gemacht`, `kaufen` → `gekauft`. Endet der Stamm auf -t oder -d, ist die Endung `-et`: `arbeiten` → `gearbeitet`.\n- **Unregelmäßige Verben**: `ge-` + Stamm + `-en`, oft mit verändertem Stamm: `sehen` → `gesehen`, `trinken` → `getrunken`, `gehen` → `gegangen`. Lerne diese Formen zusammen mit dem Verb.\n\nVerben auf `-ieren` haben kein `ge-`: `studieren` → `studiert`."
+        },
+        "table": {
+          "headers": ["gloss:infinitive", "gloss:partizip2"],
+          "rows": [
+            ["machen", "**ge**mach**t**"],
+            ["kaufen", "**ge**kauf**t**"],
+            ["arbeiten", "**ge**arbeit**et**"],
+            ["sehen", "**ge**seh**en**"],
+            ["trinken", "**ge**trunk**en**"],
+            ["gehen", "**ge**gang**en**"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "haben or sein?",
+          "fa": "haben یا sein؟",
+          "de": "haben oder sein?"
+        },
+        "body": {
+          "en": "Most verbs form the Perfekt with `haben`. These verbs use `sein`:\n\n- movement from one place to another: `gehen`, `fahren`, `kommen`, `laufen`\n- a change of state: `aufstehen` (from lying to standing)\n- and also `sein` and `bleiben`: `Ich bin zu Hause geblieben.`",
+          "fa": "بیشتر فعل‌ها ماضی نقلی را با `haben` می‌سازند. این فعل‌ها با `sein` ساخته می‌شوند:\n\n- حرکت از جایی به جای دیگر: `gehen`، `fahren`، `kommen`، `laufen`\n- تغییر حالت: `aufstehen` (از حالت خوابیده به ایستاده)\n- و همچنین `sein` و `bleiben`: `Ich bin zu Hause geblieben.`",
+          "de": "Die meisten Verben bilden das Perfekt mit `haben`. Diese Verben benutzen `sein`:\n\n- Bewegung von einem Ort zu einem anderen: `gehen`, `fahren`, `kommen`, `laufen`\n- eine Veränderung des Zustands: `aufstehen` (vom Liegen zum Stehen)\n- und außerdem `sein` und `bleiben`: `Ich bin zu Hause geblieben.`"
+        },
+        "table": {
+          "headers": ["gloss:infinitive", "gloss:auxiliary", "gloss:partizip2"],
+          "rows": [
+            ["gehen", "**sein**", "gegangen"],
+            ["fahren", "**sein**", "gefahren"],
+            ["kommen", "**sein**", "gekommen"],
+            ["aufstehen", "**sein**", "aufgestanden"],
+            ["bleiben", "**sein**", "geblieben"],
+            ["sein", "**sein**", "gewesen"],
+            ["essen", "haben", "gegessen"],
+            ["schlafen", "haben", "geschlafen"]
+          ]
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe gestern Deutsch gelernt.",
+        "en": "I studied German yesterday.",
+        "fa": "من دیروز آلمانی یاد گرفتم.",
+        "highlight": ["habe", "gelernt"]
+      },
+      {
+        "de": "Wir sind am Wochenende nach Hamburg gefahren.",
+        "en": "We went to Hamburg at the weekend.",
+        "fa": "ما آخر هفته به هامبورگ رفتیم.",
+        "highlight": ["sind", "gefahren"]
+      },
+      {
+        "de": "Hast du schon gegessen?",
+        "en": "Have you eaten yet?",
+        "fa": "غذا خورده‌ای؟",
+        "highlight": ["Hast", "gegessen"]
+      },
+      {
+        "de": "Sie ist um sechs Uhr aufgestanden.",
+        "en": "She got up at six o'clock.",
+        "fa": "او ساعت شش بیدار شد.",
+        "highlight": ["ist", "aufgestanden"]
+      },
+      {
+        "de": "Mein Bruder hat einen Brief geschrieben.",
+        "en": "My brother wrote a letter.",
+        "fa": "برادرم یک نامه نوشت.",
+        "highlight": ["hat", "geschrieben"]
+      },
+      {
+        "de": "Gestern bin ich zu Hause geblieben.",
+        "en": "Yesterday I stayed at home.",
+        "fa": "دیروز در خانه ماندم.",
+        "highlight": ["bin", "geblieben"]
+      }
+    ],
+    "exerciseIds": [
+      "perfekt-01",
+      "perfekt-02",
+      "perfekt-03",
+      "perfekt-04",
+      "perfekt-05",
+      "perfekt-06",
+      "perfekt-07",
+      "perfekt-08",
+      "perfekt-09",
+      "perfekt-10"
+    ]
+  },
+  {
+    "id": "separable",
+    "order": 13,
+    "topic": "separable",
+    "title": {
+      "en": "Separable verbs",
+      "fa": "فعل‌های جداشدنی",
+      "de": "Trennbare Verben"
+    },
+    "summary": {
+      "en": "aufstehen, einkaufen, anrufen: the prefix goes to the end of the sentence.",
+      "fa": "aufstehen، einkaufen، anrufen: پیشوند به آخر جمله می‌رود.",
+      "de": "aufstehen, einkaufen, anrufen: Das Präfix steht am Ende des Satzes."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "The prefix goes to the end",
+          "fa": "پیشوند به آخر جمله می‌رود",
+          "de": "Das Präfix steht am Ende"
+        },
+        "body": {
+          "en": "Many verbs have a short prefix: `aufstehen`, `einkaufen`, `anrufen`. In a sentence the verb splits. The conjugated part takes its normal place (position 2, or position 1 in a yes/no question), and the prefix goes to the very end: `Ich stehe um sieben Uhr auf.`, `Kommst du mit?`\n\nThe stress is on the prefix: `**AUF**stehen`, `**EIN**kaufen`.",
+          "fa": "بسیاری از فعل‌ها یک پیشوند کوتاه دارند: `aufstehen`، `einkaufen`، `anrufen`. در جمله این فعل‌ها جدا می‌شوند: بخش صرف‌شده سر جای همیشگی‌اش می‌آید (جایگاه دوم، یا جایگاه اول در پرسش بله/خیر) و پیشوند به آخر جمله می‌رود: `Ich stehe um sieben Uhr auf.`، `Kommst du mit?`\n\nتکیه‌ی صدا روی پیشوند است: `**AUF**stehen`، `**EIN**kaufen`.",
+          "de": "Viele Verben haben ein kurzes Präfix: `aufstehen`, `einkaufen`, `anrufen`. Im Satz wird das Verb getrennt. Der konjugierte Teil steht an seinem normalen Platz (Position 2 oder Position 1 in einer Ja/Nein-Frage), und das Präfix steht ganz am Ende: `Ich stehe um sieben Uhr auf.`, `Kommst du mit?`\n\nDie Betonung liegt auf dem Präfix: `**AUF**stehen`, `**EIN**kaufen`."
+        },
+        "table": {
+          "headers": ["1", "2", "…", "gloss:prefix"],
+          "rows": [
+            ["Ich", "**stehe**", "um sieben Uhr", "**auf**."],
+            ["Wir", "**kaufen**", "heute im Supermarkt", "**ein**."],
+            ["Am Abend", "**rufe**", "ich meine Mutter", "**an**."],
+            ["Wann", "**kommt**", "der Zug", "**an**?"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "Common prefixes",
+          "fa": "پیشوندهای رایج",
+          "de": "Häufige Präfixe"
+        },
+        "body": {
+          "en": "These prefixes are separable: `an-`, `auf-`, `aus-`, `ein-`, `mit-`, `zu-`, `ab-`, and also `fern-` in `fernsehen`.\n\nThe prefixes `be-`, `ver-` and `er-` are **not** separable and are not stressed: `Ich bezahle.`, `Ich verstehe dich.`, `Er erzählt eine Geschichte.`",
+          "fa": "این پیشوندها جداشدنی هستند: `an-`، `auf-`، `aus-`، `ein-`، `mit-`، `zu-`، `ab-` و همچنین `fern-` در `fernsehen`.\n\nپیشوندهای `be-`، `ver-` و `er-` جدا **نمی‌شوند** و تکیه هم نمی‌گیرند: `Ich bezahle.`، `Ich verstehe dich.`، `Er erzählt eine Geschichte.`",
+          "de": "Diese Präfixe sind trennbar: `an-`, `auf-`, `aus-`, `ein-`, `mit-`, `zu-`, `ab-` und auch `fern-` in `fernsehen`.\n\nDie Präfixe `be-`, `ver-` und `er-` sind **nicht** trennbar und nicht betont: `Ich bezahle.`, `Ich verstehe dich.`, `Er erzählt eine Geschichte.`"
+        },
+        "table": {
+          "headers": ["gloss:prefix", "gloss:infinitive", "gloss:example"],
+          "rows": [
+            ["an-", "anrufen", "Ich **rufe** dich **an**."],
+            ["auf-", "aufstehen", "Er **steht** früh **auf**."],
+            ["aus-", "aussteigen", "Wir **steigen** hier **aus**."],
+            ["ein-", "einkaufen", "Sie **kauft** heute **ein**."],
+            ["mit-", "mitkommen", "**Kommst** du **mit**?"],
+            ["zu-", "zumachen", "Er **macht** die Tür **zu**."],
+            ["ab-", "abholen", "Ich **hole** dich **ab**."],
+            ["fern-", "fernsehen", "Ihr **seht** am Abend **fern**."]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "With modal verbs and in the Perfekt",
+          "fa": "با فعل‌های مودال و در ماضی نقلی",
+          "de": "Mit Modalverben und im Perfekt"
+        },
+        "body": {
+          "en": "With a modal verb the separable verb stays together and goes to the end as an infinitive: `Ich muss morgen früh aufstehen.`, `Kannst du mich abholen?`\n\nIn the Partizip II, `-ge-` goes between the prefix and the verb, and it is all one word: `aufgestanden`, `eingekauft`, `angerufen`. Verbs with `be-`, `ver-` or `er-` get no `ge-` at all: `bezahlt`, `verstanden`.",
+          "fa": "با فعل مودال، فعل جداشدنی جدا نمی‌شود و به‌صورت مصدر به آخر جمله می‌رود: `Ich muss morgen früh aufstehen.`، `Kannst du mich abholen?`\n\nدر اسم مفعول (Partizip II)، `-ge-` بین پیشوند و فعل می‌آید و همه یک کلمه است: `aufgestanden`، `eingekauft`، `angerufen`. فعل‌هایی که `be-`، `ver-` یا `er-` دارند اصلاً `ge-` نمی‌گیرند: `bezahlt`، `verstanden`.",
+          "de": "Mit einem Modalverb bleibt das trennbare Verb zusammen und steht als Infinitiv am Ende: `Ich muss morgen früh aufstehen.`, `Kannst du mich abholen?`\n\nIm Partizip II steht `-ge-` zwischen Präfix und Verb, und alles ist ein Wort: `aufgestanden`, `eingekauft`, `angerufen`. Verben mit `be-`, `ver-` oder `er-` bekommen gar kein `ge-`: `bezahlt`, `verstanden`."
+        },
+        "table": {
+          "headers": ["gloss:infinitive", "gloss:auxiliary", "gloss:partizip2"],
+          "rows": [
+            ["aufstehen", "sein", "auf**ge**standen"],
+            ["ankommen", "sein", "an**ge**kommen"],
+            ["mitkommen", "sein", "mit**ge**kommen"],
+            ["einkaufen", "haben", "ein**ge**kauft"],
+            ["anrufen", "haben", "an**ge**rufen"],
+            ["abholen", "haben", "ab**ge**holt"],
+            ["fernsehen", "haben", "fern**ge**sehen"]
+          ]
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich stehe jeden Tag um sieben Uhr auf.",
+        "en": "I get up at seven o'clock every day.",
+        "fa": "من هر روز ساعت هفت بیدار می‌شوم.",
+        "highlight": ["stehe", "auf"]
+      },
+      {
+        "de": "Wir kaufen am Samstag im Supermarkt ein.",
+        "en": "We do the shopping at the supermarket on Saturday.",
+        "fa": "ما شنبه در سوپرمارکت خرید می‌کنیم.",
+        "highlight": ["kaufen", "ein"]
+      },
+      {
+        "de": "Rufst du mich heute Abend an?",
+        "en": "Will you call me this evening?",
+        "fa": "امشب به من زنگ می‌زنی؟",
+        "highlight": ["Rufst", "an"]
+      },
+      {
+        "de": "Ich muss morgen früh aufstehen.",
+        "en": "I have to get up early tomorrow.",
+        "fa": "من فردا باید زود بیدار شوم.",
+        "highlight": ["muss", "aufstehen"]
+      },
+      {
+        "de": "Der Zug ist pünktlich angekommen.",
+        "en": "The train arrived on time.",
+        "fa": "قطار سر وقت رسید.",
+        "highlight": ["ist", "angekommen"]
+      },
+      {
+        "de": "Gestern habe ich lange ferngesehen.",
+        "en": "Yesterday I watched TV for a long time.",
+        "fa": "دیروز مدت زیادی تلویزیون تماشا کردم.",
+        "highlight": ["habe", "ferngesehen"]
+      }
+    ],
+    "exerciseIds": [
+      "separable-01",
+      "separable-02",
+      "separable-03",
+      "separable-04",
+      "separable-05",
+      "separable-06",
+      "separable-07",
+      "separable-08",
+      "separable-09",
+      "separable-10"
+    ]
+  }
+]

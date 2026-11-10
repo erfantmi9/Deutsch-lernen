@@ -99,6 +99,31 @@ function Art({ topic }: { topic: GrammarTopic }) {
           <path d="M10 48h42M44 41l8 7-8 7" />
         </>
       );
+    case "perfekt":
+      return (
+        <>
+          <circle cx={32} cy={34} r={20} fill={COLORS.blueTint} />
+          <path d="M32 22v12l-8 5" />
+          <path d="M8 16a26 26 0 0 1 12-9M8 16l1-8M8 16l8 0" stroke={COLORS.red} strokeWidth={4} />
+        </>
+      );
+    case "separable":
+      return (
+        <>
+          <rect x={4} y={22} width={20} height={20} rx={6} fill={COLORS.yellow} />
+          <rect x={40} y={22} width={20} height={20} rx={6} fill={COLORS.blue} />
+          <path d="M27 32h10M31 28l-4 4 4 4M33 28l4 4-4 4" />
+        </>
+      );
+    case "conjunctions":
+      return (
+        <>
+          <rect x={4} y={22} width={18} height={20} rx={6} fill={COLORS.blue} />
+          <rect x={42} y={22} width={18} height={20} rx={6} fill={COLORS.green} />
+          <circle cx={32} cy={32} r={7} fill={COLORS.yellow} />
+          <path d="M22 32h3M39 32h3" />
+        </>
+      );
     default:
       return (
         <>

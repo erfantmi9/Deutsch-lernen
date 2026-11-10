@@ -1,0 +1,344 @@
+[
+  {
+    "id": "time-prepositions",
+    "order": 14,
+    "topic": "prepositions",
+    "title": {
+      "en": "Time: am, um, im",
+      "fa": "زمان: am، um، im",
+      "de": "Zeitangaben: am, um, im"
+    },
+    "summary": {
+      "en": "am for days and parts of the day, um for clock times, im for months and seasons, von … bis for a period.",
+      "fa": "am برای روزها و بخش‌های روز، um برای ساعت، im برای ماه‌ها و فصل‌ها، و von … bis برای یک بازه‌ی زمانی.",
+      "de": "am für Tage und Tageszeiten, um für die Uhrzeit, im für Monate und Jahreszeiten, von … bis für einen Zeitraum."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "am, um, im",
+          "fa": "am، um، im",
+          "de": "am, um, im"
+        },
+        "body": {
+          "en": "The question is **wann?** (when?). Three small words answer it:\n\n- `am` (= an + dem): days, dates and parts of the day: `am Montag`, `am Wochenende`, `am 3. Mai`, `am Morgen`, `am Nachmittag`, `am Abend`\n- `um`: clock times: `um acht Uhr`, `um halb neun`\n- `im` (= in + dem): months and seasons: `im Mai`, `im Sommer`, `im Winter`",
+          "fa": "پرسش **wann؟** (کی؟) است. سه کلمه‌ی کوچک به آن پاسخ می‌دهند:\n\n- `am` (= an + dem): روزها، تاریخ‌ها و بخش‌های روز: `am Montag`، `am Wochenende`، `am 3. Mai`، `am Morgen`، `am Nachmittag`، `am Abend`\n- `um`: ساعت: `um acht Uhr`، `um halb neun`\n- `im` (= in + dem): ماه‌ها و فصل‌ها: `im Mai`، `im Sommer`، `im Winter`",
+          "de": "Die Frage ist **wann?**. Drei kleine Wörter antworten darauf:\n\n- `am` (= an + dem): Tage, Daten und Tageszeiten: `am Montag`, `am Wochenende`, `am 3. Mai`, `am Morgen`, `am Nachmittag`, `am Abend`\n- `um`: Uhrzeiten: `um acht Uhr`, `um halb neun`\n- `im` (= in + dem): Monate und Jahreszeiten: `im Mai`, `im Sommer`, `im Winter`"
+        },
+        "table": {
+          "headers": ["gloss:preposition", "gloss:example"],
+          "rows": [
+            ["**am**", "am Montag · am Abend · am 3. Mai"],
+            ["**um**", "um acht Uhr · um halb neun"],
+            ["**im**", "im Mai · im Sommer"],
+            ["**in der**", "in der Nacht"]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "Careful: in der Nacht",
+          "fa": "دقت کن: in der Nacht",
+          "de": "Achtung: in der Nacht"
+        },
+        "body": {
+          "en": "The parts of the day take `am`, but the night is different: `in der Nacht` (die Nacht is feminine).\n\nSome time words need no preposition at all: `heute`, `morgen`, `jetzt`, and years: `2026 fahre ich nach Wien.`",
+          "fa": "بخش‌های روز با `am` می‌آیند، اما شب فرق دارد: `in der Nacht` (die Nacht مؤنث است).\n\nبعضی کلمه‌های زمانی اصلاً حرف اضافه نمی‌خواهند: `heute`، `morgen`، `jetzt` و سال‌ها: `2026 fahre ich nach Wien.`",
+          "de": "Die Tageszeiten stehen mit `am`, aber die Nacht ist anders: `in der Nacht` (die Nacht ist feminin).\n\nManche Zeitwörter brauchen gar keine Präposition: `heute`, `morgen`, `jetzt` und Jahreszahlen: `2026 fahre ich nach Wien.`"
+        }
+      },
+      {
+        "heading": {
+          "en": "From … to: von … bis",
+          "fa": "از … تا: von … bis",
+          "de": "Zeitraum: von … bis"
+        },
+        "body": {
+          "en": "For a period of time use `von … bis`. Days and clock times come without an article here:\n\n- `von Montag bis Freitag`\n- `von neun bis fünf Uhr`\n\nA time phrase can also stand in position 1. The verb stays in position 2 and the subject moves behind it: `Am Montag arbeite ich.`",
+          "fa": "برای یک بازه‌ی زمانی از `von … bis` استفاده کن. روزها و ساعت‌ها اینجا بدون آرتیکل می‌آیند:\n\n- `von Montag bis Freitag`\n- `von neun bis fünf Uhr`\n\nعبارت زمانی می‌تواند در جایگاه اول هم بیاید. فعل در جایگاه دوم می‌ماند و فاعل پشت آن می‌رود: `Am Montag arbeite ich.`",
+          "de": "Für einen Zeitraum benutzt du `von … bis`. Tage und Uhrzeiten stehen hier ohne Artikel:\n\n- `von Montag bis Freitag`\n- `von neun bis fünf Uhr`\n\nDie Zeitangabe kann auch auf Position 1 stehen. Das Verb bleibt auf Position 2, das Subjekt steht dahinter: `Am Montag arbeite ich.`"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Am Montag gehe ich ins Kino.",
+        "en": "On Monday I am going to the cinema.",
+        "fa": "دوشنبه به سینما می‌روم.",
+        "highlight": ["Am Montag"]
+      },
+      {
+        "de": "Der Film beginnt um acht Uhr.",
+        "en": "The film starts at eight o'clock.",
+        "fa": "فیلم ساعت هشت شروع می‌شود.",
+        "highlight": ["um acht Uhr"]
+      },
+      {
+        "de": "Im Sommer fahren wir ans Meer.",
+        "en": "In summer we go to the sea.",
+        "fa": "تابستان به کنار دریا می‌رویم.",
+        "highlight": ["Im Sommer"]
+      },
+      {
+        "de": "Mein Geburtstag ist im Mai.",
+        "en": "My birthday is in May.",
+        "fa": "تولد من در ماه مه است.",
+        "highlight": ["im Mai"]
+      },
+      {
+        "de": "Am Abend lese ich ein Buch.",
+        "en": "In the evening I read a book.",
+        "fa": "شب‌ها کتاب می‌خوانم.",
+        "highlight": ["Am Abend"]
+      },
+      {
+        "de": "In der Nacht ist es hier sehr ruhig.",
+        "en": "At night it is very quiet here.",
+        "fa": "شب اینجا خیلی آرام است.",
+        "highlight": ["In der Nacht"]
+      },
+      {
+        "de": "Ich arbeite von Montag bis Freitag.",
+        "en": "I work from Monday to Friday.",
+        "fa": "من از دوشنبه تا جمعه کار می‌کنم.",
+        "highlight": ["von Montag bis Freitag"]
+      }
+    ],
+    "exerciseIds": [
+      "time-prepositions-01",
+      "time-prepositions-02",
+      "time-prepositions-03",
+      "time-prepositions-04",
+      "time-prepositions-05",
+      "time-prepositions-06",
+      "time-prepositions-07",
+      "time-prepositions-08",
+      "time-prepositions-09",
+      "time-prepositions-10"
+    ]
+  },
+  {
+    "id": "conjunctions",
+    "order": 15,
+    "topic": "conjunctions",
+    "title": {
+      "en": "und, aber, oder, denn",
+      "fa": "und، aber، oder، denn",
+      "de": "und, aber, oder, denn"
+    },
+    "summary": {
+      "en": "Four words that join two sentences. They stand in position 0, so the word order after them does not change.",
+      "fa": "چهار کلمه که دو جمله را به هم وصل می‌کنند. آن‌ها در جایگاه صفر می‌آیند، پس ترتیب کلمات بعد از آن‌ها عوض نمی‌شود.",
+      "de": "Vier Wörter, die zwei Sätze verbinden. Sie stehen auf Position 0, deshalb ändert sich die Wortstellung danach nicht."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "Position 0: the word order stays normal",
+          "fa": "جایگاه صفر: ترتیب کلمات عادی می‌ماند",
+          "de": "Position 0: Die Wortstellung bleibt normal"
+        },
+        "body": {
+          "en": "- `und`: and\n- `aber`: but\n- `oder`: or\n- `denn`: because\n\nThese conjunctions join two main clauses. They stand in **position 0**: they do not count. After them comes a normal sentence with the verb in position 2: `Ich bin müde, denn ich arbeite viel.`\n\nIf something else comes first, the subject moves behind the verb as usual: `Ich arbeite viel, aber am Sonntag habe ich frei.`",
+          "fa": "- `und`: و\n- `aber`: اما\n- `oder`: یا\n- `denn`: چون\n\nاین حروف ربط دو جمله‌ی اصلی را به هم وصل می‌کنند. آن‌ها در **جایگاه صفر** می‌آیند، یعنی شمرده نمی‌شوند. بعد از آن‌ها یک جمله‌ی عادی می‌آید که فعلش در جایگاه دوم است: `Ich bin müde, denn ich arbeite viel.`\n\nاگر چیز دیگری اول بیاید، فاعل مثل همیشه پشت فعل می‌رود: `Ich arbeite viel, aber am Sonntag habe ich frei.`",
+          "de": "- `und`: verbindet\n- `aber`: Gegensatz\n- `oder`: Alternative\n- `denn`: Grund\n\nDiese Konjunktionen verbinden zwei Hauptsätze. Sie stehen auf **Position 0**, das heißt, sie zählen nicht. Danach kommt ein normaler Satz mit dem Verb auf Position 2: `Ich bin müde, denn ich arbeite viel.`\n\nSteht etwas anderes vorn, kommt das Subjekt wie immer hinter das Verb: `Ich arbeite viel, aber am Sonntag habe ich frei.`"
+        },
+        "table": {
+          "headers": ["gloss:main-clause", "0", "1", "2", "…"],
+          "rows": [
+            ["Ich lerne Deutsch", "**und**", "mein Bruder", "lernt", "Englisch."],
+            ["Ich trinke Kaffee,", "**aber**", "meine Schwester", "trinkt", "Tee."],
+            ["Wir gehen ins Kino", "**oder**", "wir", "bleiben", "zu Hause."],
+            ["Ich bleibe im Bett,", "**denn**", "ich", "bin", "krank."]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "Commas and short sentences",
+          "fa": "ویرگول و جمله‌های کوتاه",
+          "de": "Komma und kurze Sätze"
+        },
+        "body": {
+          "en": "- Before `aber` and `denn` there is always a comma.\n- Before `und` and `oder` there is usually no comma.\n- `und` and `oder` can also join single words: `Kaffee oder Tee?`\n- If both parts have the same subject, you can leave it out after `und`: `Ich stehe auf und trinke Kaffee.`",
+          "fa": "- قبل از `aber` و `denn` همیشه ویرگول می‌آید.\n- قبل از `und` و `oder` معمولاً ویرگول نمی‌آید.\n- `und` و `oder` می‌توانند تک‌کلمه‌ها را هم به هم وصل کنند: `Kaffee oder Tee?`\n- اگر فاعل هر دو بخش یکی باشد، می‌توانی آن را بعد از `und` حذف کنی: `Ich stehe auf und trinke Kaffee.`",
+          "de": "- Vor `aber` und `denn` steht immer ein Komma.\n- Vor `und` und `oder` steht meistens kein Komma.\n- `und` und `oder` können auch einzelne Wörter verbinden: `Kaffee oder Tee?`\n- Haben beide Teile dasselbe Subjekt, kannst du es nach `und` weglassen: `Ich stehe auf und trinke Kaffee.`"
+        }
+      },
+      {
+        "heading": {
+          "en": "nicht …, sondern … and a note on weil",
+          "fa": "nicht …, sondern … و نکته‌ای درباره‌ی weil",
+          "de": "nicht …, sondern … und ein Hinweis zu weil"
+        },
+        "body": {
+          "en": "After a negation (`nicht` or `kein`) use `sondern` for the correct version: `Er kommt nicht heute, sondern morgen.` Before `sondern` there is a comma.\n\n`weil` also means because, but after `weil` the verb goes to the end. You will practise it later; for now use `denn`.",
+          "fa": "بعد از نفی (`nicht` یا `kein`) برای گفتن حالت درست از `sondern` (بلکه) استفاده کن: `Er kommt nicht heute, sondern morgen.` قبل از `sondern` ویرگول می‌آید.\n\n`weil` هم به معنای «چون» است، اما بعد از `weil` فعل به آخر جمله می‌رود. آن را بعداً تمرین می‌کنی؛ فعلاً از `denn` استفاده کن.",
+          "de": "Nach einer Verneinung (`nicht` oder `kein`) nennst du mit `sondern` das Richtige: `Er kommt nicht heute, sondern morgen.` Vor `sondern` steht ein Komma.\n\n`weil` nennt auch einen Grund, aber nach `weil` steht das Verb am Ende. Das übst du später; benutze jetzt `denn`."
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich trinke Kaffee und meine Schwester trinkt Tee.",
+        "en": "I drink coffee and my sister drinks tea.",
+        "fa": "من قهوه می‌نوشم و خواهرم چای می‌نوشد.",
+        "highlight": ["und"]
+      },
+      {
+        "de": "Das Hotel ist schön, aber es ist teuer.",
+        "en": "The hotel is nice, but it is expensive.",
+        "fa": "هتل قشنگ است، اما گران است.",
+        "highlight": ["aber"]
+      },
+      {
+        "de": "Fährst du mit dem Bus oder gehst du zu Fuß?",
+        "en": "Are you taking the bus or are you walking?",
+        "fa": "با اتوبوس می‌روی یا پیاده می‌روی؟",
+        "highlight": ["oder"]
+      },
+      {
+        "de": "Ich bleibe heute zu Hause, denn ich bin müde.",
+        "en": "I am staying at home today because I am tired.",
+        "fa": "امروز در خانه می‌مانم، چون خسته‌ام.",
+        "highlight": ["denn"]
+      },
+      {
+        "de": "Ich arbeite viel, aber am Sonntag habe ich frei.",
+        "en": "I work a lot, but on Sunday I am off.",
+        "fa": "من زیاد کار می‌کنم، اما یکشنبه‌ها تعطیلم.",
+        "highlight": ["aber", "habe ich"]
+      },
+      {
+        "de": "Ich trinke keinen Kaffee, sondern Tee.",
+        "en": "I don't drink coffee, but tea.",
+        "fa": "من قهوه نمی‌نوشم، بلکه چای می‌نوشم.",
+        "highlight": ["sondern"]
+      }
+    ],
+    "exerciseIds": [
+      "conjunctions-01",
+      "conjunctions-02",
+      "conjunctions-03",
+      "conjunctions-04",
+      "conjunctions-05",
+      "conjunctions-06",
+      "conjunctions-07",
+      "conjunctions-08",
+      "conjunctions-09",
+      "conjunctions-10"
+    ]
+  },
+  {
+    "id": "es-gibt",
+    "order": 16,
+    "topic": "cases",
+    "title": {
+      "en": "es gibt: there is, there are",
+      "fa": "es gibt: وجود دارد، هست",
+      "de": "es gibt"
+    },
+    "summary": {
+      "en": "es gibt says that something exists. It is always followed by the accusative: Es gibt einen Park.",
+      "fa": "es gibt می‌گوید چیزی وجود دارد. بعد از آن همیشه حالت مفعولی می‌آید: Es gibt einen Park.",
+      "de": "Mit es gibt sagst du, dass etwas existiert. Danach steht immer der Akkusativ: Es gibt einen Park."
+    },
+    "sections": [
+      {
+        "heading": {
+          "en": "es gibt + accusative",
+          "fa": "es gibt + حالت مفعولی",
+          "de": "es gibt + Akkusativ"
+        },
+        "body": {
+          "en": "`es gibt` means there is or there are. The verb is always `gibt`, also with a plural: `Es gibt viele Cafés.`\n\nThe thing that exists is in the **accusative**. Only the masculine changes: `ein` becomes `einen`, `kein` becomes `keinen`. In the plural there is no article: `Es gibt Cafés.`",
+          "fa": "`es gibt` یعنی «وجود دارد» یا «هست». فعل همیشه `gibt` است، حتی با جمع: `Es gibt viele Cafés.`\n\nچیزی که وجود دارد در **حالت مفعولی** می‌آید. فقط مذکر عوض می‌شود: `ein` به `einen` و `kein` به `keinen` تبدیل می‌شود. در جمع آرتیکل نمی‌آید: `Es gibt Cafés.`",
+          "de": "`es gibt` bedeutet: etwas ist da, etwas existiert. Das Verb ist immer `gibt`, auch im Plural: `Es gibt viele Cafés.`\n\nDas, was es gibt, steht im **Akkusativ**. Nur maskulin ändert sich: `ein` wird zu `einen`, `kein` wird zu `keinen`. Im Plural steht kein Artikel: `Es gibt Cafés.`"
+        },
+        "table": {
+          "headers": ["gloss:gender", "gloss:affirmative", "gloss:negative"],
+          "rows": [
+            ["gloss:masculine", "Es gibt **einen** Park.", "Es gibt **keinen** Park."],
+            ["gloss:feminine", "Es gibt eine Bäckerei.", "Es gibt keine Bäckerei."],
+            ["gloss:neuter", "Es gibt ein Kino.", "Es gibt kein Kino."],
+            ["gloss:plural", "Es gibt Cafés.", "Es gibt keine Cafés."]
+          ]
+        }
+      },
+      {
+        "heading": {
+          "en": "Questions and word order: Gibt es …?",
+          "fa": "پرسش و ترتیب کلمات: Gibt es …?",
+          "de": "Fragen und Wortstellung: Gibt es …?"
+        },
+        "body": {
+          "en": "In a yes/no question `gibt` comes first: `Gibt es hier eine Apotheke?` – `Ja, es gibt eine Apotheke am Bahnhof.` or `Nein, hier gibt es keine Apotheke.`\n\nA place often stands in position 1. Then `es` moves behind the verb: `In meiner Straße gibt es einen Supermarkt.`",
+          "fa": "در پرسش بله/خیر `gibt` اول می‌آید: `Gibt es hier eine Apotheke?` – `Ja, es gibt eine Apotheke am Bahnhof.` یا `Nein, hier gibt es keine Apotheke.`\n\nمکان اغلب در جایگاه اول می‌آید. آن‌وقت `es` پشت فعل می‌رود: `In meiner Straße gibt es einen Supermarkt.`",
+          "de": "In einer Ja/Nein-Frage steht `gibt` vorn: `Gibt es hier eine Apotheke?` – `Ja, es gibt eine Apotheke am Bahnhof.` oder `Nein, hier gibt es keine Apotheke.`\n\nOft steht ein Ort auf Position 1. Dann kommt `es` hinter das Verb: `In meiner Straße gibt es einen Supermarkt.`"
+        }
+      },
+      {
+        "heading": {
+          "en": "es gibt or ist / sind?",
+          "fa": "es gibt یا ist / sind؟",
+          "de": "es gibt oder ist / sind?"
+        },
+        "body": {
+          "en": "- `es gibt` + accusative says that something exists: `Gibt es hier einen Park?`\n- `sein` + nominative describes a thing or says where a known thing is: `Der Park ist groß.` `Wo ist der Park?`\n\nSo first ask `Gibt es hier eine Apotheke?` and then `Wo ist die Apotheke?`",
+          "fa": "- `es gibt` + حالت مفعولی می‌گوید که چیزی وجود دارد: `Gibt es hier einen Park?`\n- `sein` + حالت فاعلی چیزی را توصیف می‌کند یا می‌گوید یک چیز مشخص کجاست: `Der Park ist groß.` `Wo ist der Park?`\n\nپس اول بپرس `Gibt es hier eine Apotheke?` و بعد `Wo ist die Apotheke?`",
+          "de": "- `es gibt` + Akkusativ sagt, dass etwas existiert: `Gibt es hier einen Park?`\n- `sein` + Nominativ beschreibt etwas oder sagt, wo eine bekannte Sache ist: `Der Park ist groß.` `Wo ist der Park?`\n\nFrage also zuerst `Gibt es hier eine Apotheke?` und dann `Wo ist die Apotheke?`"
+        }
+      }
+    ],
+    "examples": [
+      {
+        "de": "In meiner Straße gibt es einen Supermarkt.",
+        "en": "There is a supermarket in my street.",
+        "fa": "در خیابان ما یک سوپرمارکت هست.",
+        "highlight": ["gibt es einen"]
+      },
+      {
+        "de": "Hier gibt es keinen Parkplatz.",
+        "en": "There is no parking space here.",
+        "fa": "اینجا جای پارک نیست.",
+        "highlight": ["gibt es keinen"]
+      },
+      {
+        "de": "Gibt es hier eine Apotheke?",
+        "en": "Is there a pharmacy here?",
+        "fa": "این‌جا داروخانه هست؟",
+        "highlight": ["Gibt es"]
+      },
+      {
+        "de": "In Berlin gibt es viele Museen.",
+        "en": "There are many museums in Berlin.",
+        "fa": "در برلین موزه‌های زیادی هست.",
+        "highlight": ["gibt es"]
+      },
+      {
+        "de": "Im Kühlschrank gibt es keine Milch.",
+        "en": "There is no milk in the fridge.",
+        "fa": "در یخچال شیر نیست.",
+        "highlight": ["gibt es keine"]
+      },
+      {
+        "de": "Der Park ist sehr groß.",
+        "en": "The park is very big.",
+        "fa": "پارک خیلی بزرگ است.",
+        "highlight": ["Der Park ist"]
+      }
+    ],
+    "exerciseIds": [
+      "es-gibt-01",
+      "es-gibt-02",
+      "es-gibt-03",
+      "es-gibt-04",
+      "es-gibt-05",
+      "es-gibt-06",
+      "es-gibt-07",
+      "es-gibt-08",
+      "es-gibt-09",
+      "es-gibt-10"
+    ]
+  }
+]

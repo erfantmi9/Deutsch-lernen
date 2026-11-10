@@ -21,6 +21,10 @@ const CATEGORY_TINT: Record<VocabCategory, string> = {
   city: COLORS.greenTint,
   hobbies: COLORS.redTint,
   "numbers-time": COLORS.yellowTint,
+  health: COLORS.redTint,
+  animals: COLORS.greenTint,
+  services: COLORS.blueTint,
+  celebrations: COLORS.yellowTint,
 };
 
 export type NounIconProps = IllustrationProps & {

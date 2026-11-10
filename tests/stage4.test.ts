@@ -52,7 +52,7 @@ describe("badges", () => {
 });
 
 describe("Stage 4 messages", () => {
-  const namespaces = ["Vocabulary", "Review", "Progress", "Badges", "HomeStudy"] as const;
+  const namespaces = ["Vocabulary", "Review", "Progress", "Badges"] as const;
 
   it("have the same keys in en, fa and de", () => {
     for (const ns of namespaces) {

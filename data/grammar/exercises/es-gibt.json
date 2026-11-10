@@ -1,0 +1,137 @@
+[
+  {
+    "id": "es-gibt-01",
+    "lessonId": "es-gibt",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct article.", "fa": "آرتیکل درست را انتخاب کن.", "de": "Wähle den richtigen Artikel." },
+    "sentenceDe": "In unserer Stadt gibt es ___ Bahnhof.",
+    "options": ["einen", "ein", "einem"],
+    "answer": "einen",
+    "explanation": {
+      "en": "es gibt takes the accusative. der Bahnhof is masculine: einen Bahnhof.",
+      "fa": "بعد از es gibt حالت مفعولی می‌آید. der Bahnhof مذکر است: einen Bahnhof.",
+      "de": "Nach es gibt steht der Akkusativ. der Bahnhof ist maskulin: einen Bahnhof."
+    }
+  },
+  {
+    "id": "es-gibt-02",
+    "lessonId": "es-gibt",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct article.", "fa": "آرتیکل درست را انتخاب کن.", "de": "Wähle den richtigen Artikel." },
+    "sentenceDe": "Gibt es hier ___ Bäckerei?",
+    "options": ["eine", "einen", "einer"],
+    "answer": "eine",
+    "explanation": {
+      "en": "die Bäckerei is feminine. In the accusative eine stays eine.",
+      "fa": "die Bäckerei مؤنث است. در حالت مفعولی eine همان eine می‌ماند.",
+      "de": "die Bäckerei ist feminin. Im Akkusativ bleibt eine gleich."
+    }
+  },
+  {
+    "id": "es-gibt-03",
+    "lessonId": "es-gibt",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct word.", "fa": "کلمه‌ی درست را انتخاب کن.", "de": "Wähle das richtige Wort." },
+    "sentenceDe": "In unserem Dorf gibt es ___ Kino.",
+    "options": ["kein", "keinen", "keine"],
+    "answer": "kein",
+    "explanation": {
+      "en": "das Kino is neuter. In the accusative kein stays kein.",
+      "fa": "das Kino خنثی است. در حالت مفعولی kein همان kein می‌ماند.",
+      "de": "das Kino ist neutral. Im Akkusativ bleibt kein gleich."
+    }
+  },
+  {
+    "id": "es-gibt-04",
+    "lessonId": "es-gibt",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct verb form.", "fa": "شکل درست فعل را انتخاب کن.", "de": "Wähle die richtige Verbform." },
+    "sentenceDe": "Hier ___ es viele Cafés.",
+    "options": ["gibt", "geben", "sind"],
+    "answer": "gibt",
+    "explanation": {
+      "en": "The verb is always gibt, also with a plural: Hier gibt es viele Cafés.",
+      "fa": "فعل همیشه gibt است، حتی با جمع: Hier gibt es viele Cafés.",
+      "de": "Das Verb ist immer gibt, auch im Plural: Hier gibt es viele Cafés."
+    }
+  },
+  {
+    "id": "es-gibt-05",
+    "lessonId": "es-gibt",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct verb.", "fa": "فعل درست را انتخاب کن.", "de": "Wähle das richtige Verb." },
+    "sentenceDe": "___ es hier einen Arzt?",
+    "options": ["Gibt", "Ist", "Sind"],
+    "answer": "Gibt",
+    "explanation": {
+      "en": "You are asking if something exists, and einen is accusative: Gibt es hier einen Arzt?",
+      "fa": "می‌پرسی آیا چیزی وجود دارد، و einen حالت مفعولی است: Gibt es hier einen Arzt?",
+      "de": "Du fragst, ob es etwas gibt, und einen ist Akkusativ: Gibt es hier einen Arzt?"
+    }
+  },
+  {
+    "id": "es-gibt-06",
+    "lessonId": "es-gibt",
+    "type": "fill",
+    "prompt": { "en": "Type the correct form of kein.", "fa": "شکل درست kein را بنویس.", "de": "Schreibe die richtige Form von kein." },
+    "sentenceDe": "In meiner Straße gibt es ___ Supermarkt.",
+    "answer": "keinen",
+    "explanation": {
+      "en": "der Supermarkt is masculine. After es gibt (accusative): keinen Supermarkt.",
+      "fa": "der Supermarkt مذکر است. بعد از es gibt (حالت مفعولی): keinen Supermarkt.",
+      "de": "der Supermarkt ist maskulin. Nach es gibt (Akkusativ): keinen Supermarkt."
+    }
+  },
+  {
+    "id": "es-gibt-07",
+    "lessonId": "es-gibt",
+    "type": "fill",
+    "prompt": { "en": "Type the correct form of ein.", "fa": "شکل درست ein را بنویس.", "de": "Schreibe die richtige Form von ein." },
+    "sentenceDe": "Der Park ist schön. Dort gibt es ___ See.",
+    "answer": "einen",
+    "explanation": {
+      "en": "der See (lake) is masculine. After es gibt (accusative): einen See.",
+      "fa": "der See (دریاچه) مذکر است. بعد از es gibt (حالت مفعولی): einen See.",
+      "de": "der See ist maskulin. Nach es gibt (Akkusativ): einen See."
+    }
+  },
+  {
+    "id": "es-gibt-08",
+    "lessonId": "es-gibt",
+    "type": "fill",
+    "prompt": { "en": "Type the correct verb.", "fa": "فعل درست را بنویس.", "de": "Schreibe das richtige Verb." },
+    "sentenceDe": "Wo ___ der Bahnhof?",
+    "answer": "ist",
+    "explanation": {
+      "en": "You ask where a known thing is (der Bahnhof, nominative), so use sein: Wo ist der Bahnhof?",
+      "fa": "می‌پرسی یک چیز مشخص کجاست (der Bahnhof، حالت فاعلی)، پس از sein استفاده کن: Wo ist der Bahnhof?",
+      "de": "Du fragst, wo eine bekannte Sache ist (der Bahnhof, Nominativ), also sein: Wo ist der Bahnhof?"
+    }
+  },
+  {
+    "id": "es-gibt-09",
+    "lessonId": "es-gibt",
+    "type": "transform",
+    "prompt": { "en": "Make a yes/no question.", "fa": "یک پرسش بله/خیر بساز.", "de": "Bilde eine Ja/Nein-Frage." },
+    "sentenceDe": "Es gibt hier ein Restaurant. → ___ hier ein Restaurant?",
+    "answer": "Gibt es",
+    "explanation": {
+      "en": "In a yes/no question the verb comes first: Gibt es hier ein Restaurant?",
+      "fa": "در پرسش بله/خیر فعل اول می‌آید: Gibt es hier ein Restaurant?",
+      "de": "In einer Ja/Nein-Frage steht das Verb vorn: Gibt es hier ein Restaurant?"
+    }
+  },
+  {
+    "id": "es-gibt-10",
+    "lessonId": "es-gibt",
+    "type": "transform",
+    "prompt": { "en": "Start the sentence with hier.", "fa": "جمله را با hier شروع کن.", "de": "Beginne den Satz mit hier." },
+    "sentenceDe": "Es gibt hier eine Post. → Hier ___ eine Post.",
+    "answer": "gibt es",
+    "explanation": {
+      "en": "hier is in position 1, gibt stays in position 2 and es moves behind it: Hier gibt es eine Post.",
+      "fa": "hier در جایگاه اول است، gibt در جایگاه دوم می‌ماند و es پشت آن می‌رود: Hier gibt es eine Post.",
+      "de": "hier steht auf Position 1, gibt bleibt auf Position 2 und es steht dahinter: Hier gibt es eine Post."
+    }
+  }
+]

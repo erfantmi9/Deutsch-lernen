@@ -25,6 +25,7 @@
       "fa": "خانه بزرگ است."
     },
     "category": "home",
+    "subcategory": "rooms",
     "level": "A1"
   },
   {
@@ -53,6 +54,7 @@
       "fa": "اتاق کوچک است."
     },
     "category": "home",
+    "subcategory": "rooms",
     "level": "A1"
   },
   {
@@ -81,6 +83,7 @@
       "fa": "آشپزخانه مدرن است."
     },
     "category": "home",
+    "subcategory": "rooms",
     "level": "A1"
   },
   {
@@ -109,6 +112,7 @@
       "fa": "آپارتمان روشن است."
     },
     "category": "home",
+    "subcategory": "rooms",
     "level": "A1"
   },
   {
@@ -137,6 +141,7 @@
       "fa": "در باز است."
     },
     "category": "home",
+    "subcategory": "rooms",
     "level": "A1"
   },
   {
@@ -165,6 +170,7 @@
       "fa": "پنجره بسته است."
     },
     "category": "home",
+    "subcategory": "rooms",
     "level": "A1"
   },
   {
@@ -193,6 +199,7 @@
       "fa": "میز نو است."
     },
     "category": "home",
+    "subcategory": "furniture",
     "level": "A1",
     "tags": [
       "furniture"
@@ -224,9 +231,503 @@
       "fa": "چراغ روشن است."
     },
     "category": "home",
+    "subcategory": "furniture",
     "level": "A1",
     "tags": [
       "furniture"
     ]
+  },
+  {
+    "id": "bad",
+    "word": "Bad",
+    "article": "das",
+    "plural": "Bäder",
+    "translations": {
+      "en": "bathroom",
+      "fa": "حمام"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Bad).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Bad).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Bad).",
+      "simple": {
+        "en": "Just learn it: das Bad.",
+        "fa": "فقط حفظش کنید: das Bad.",
+        "de": "Einfach lernen: das Bad."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Bad ist klein.",
+      "en": "The bathroom is small.",
+      "fa": "حمام کوچک است."
+    },
+    "category": "home",
+    "subcategory": "rooms",
+    "level": "A1"
+  },
+  {
+    "id": "schlafzimmer",
+    "word": "Schlafzimmer",
+    "article": "das",
+    "plural": "Schlafzimmer",
+    "translations": {
+      "en": "bedroom",
+      "fa": "اتاق خواب"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: das Zimmer → das Schlafzimmer.",
+      "fa": "اسم مرکب آرتیکلِ بخش آخرش را می‌گیرد: das Zimmer → das Schlafzimmer.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel des letzten Teils: das Zimmer → das Schlafzimmer.",
+      "simple": {
+        "en": "The last part decides: das Zimmer, so das Schlafzimmer.",
+        "fa": "بخش آخر تعیین می‌کند: das Zimmer، پس das Schlafzimmer.",
+        "de": "Der letzte Teil entscheidet: das Zimmer, also das Schlafzimmer."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Schlafzimmer hat ein großes Fenster.",
+      "en": "The bedroom has a big window.",
+      "fa": "اتاق خواب یک پنجره‌ی بزرگ دارد."
+    },
+    "category": "home",
+    "subcategory": "rooms",
+    "level": "A1"
+  },
+  {
+    "id": "wohnzimmer",
+    "word": "Wohnzimmer",
+    "article": "das",
+    "plural": "Wohnzimmer",
+    "translations": {
+      "en": "living room",
+      "fa": "اتاق نشیمن"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: das Zimmer → das Wohnzimmer.",
+      "fa": "اسم مرکب آرتیکلِ بخش آخرش را می‌گیرد: das Zimmer → das Wohnzimmer.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel des letzten Teils: das Zimmer → das Wohnzimmer.",
+      "simple": {
+        "en": "The last part decides: das Zimmer, so das Wohnzimmer.",
+        "fa": "بخش آخر تعیین می‌کند: das Zimmer، پس das Wohnzimmer.",
+        "de": "Der letzte Teil entscheidet: das Zimmer, also das Wohnzimmer."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wir sitzen im Wohnzimmer.",
+      "en": "We are sitting in the living room.",
+      "fa": "ما در اتاق نشیمن نشسته‌ایم."
+    },
+    "category": "home",
+    "subcategory": "rooms",
+    "level": "A1"
+  },
+  {
+    "id": "stuhl",
+    "word": "Stuhl",
+    "article": "der",
+    "plural": "Stühle",
+    "translations": {
+      "en": "chair",
+      "fa": "صندلی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Stuhl).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Stuhl).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Stuhl).",
+      "simple": {
+        "en": "Just learn it: der Stuhl.",
+        "fa": "فقط حفظش کنید: der Stuhl.",
+        "de": "Einfach lernen: der Stuhl."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Stuhl ist bequem.",
+      "en": "The chair is comfortable.",
+      "fa": "صندلی راحت است."
+    },
+    "category": "home",
+    "subcategory": "furniture",
+    "level": "A1"
+  },
+  {
+    "id": "bett",
+    "word": "Bett",
+    "article": "das",
+    "plural": "Betten",
+    "translations": {
+      "en": "bed",
+      "fa": "تخت"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Bett).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Bett).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Bett).",
+      "simple": {
+        "en": "Just learn it: das Bett.",
+        "fa": "فقط حفظش کنید: das Bett.",
+        "de": "Einfach lernen: das Bett."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Kind geht ins Bett.",
+      "en": "The child goes to bed.",
+      "fa": "بچه به رختخواب می‌رود."
+    },
+    "category": "home",
+    "subcategory": "furniture",
+    "level": "A1"
+  },
+  {
+    "id": "sofa",
+    "word": "Sofa",
+    "article": "das",
+    "plural": "Sofas",
+    "translations": {
+      "en": "sofa",
+      "fa": "کاناپه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Sofa).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Sofa).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Sofa).",
+      "simple": {
+        "en": "Just learn it: das Sofa.",
+        "fa": "فقط حفظش کنید: das Sofa.",
+        "de": "Einfach lernen: das Sofa."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Sofa ist neu.",
+      "en": "The sofa is new.",
+      "fa": "کاناپه نو است."
+    },
+    "category": "home",
+    "subcategory": "furniture",
+    "level": "A1"
+  },
+  {
+    "id": "schrank",
+    "word": "Schrank",
+    "article": "der",
+    "plural": "Schränke",
+    "translations": {
+      "en": "cupboard, wardrobe",
+      "fa": "کمد"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Schrank).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Schrank).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Schrank).",
+      "simple": {
+        "en": "Just learn it: der Schrank.",
+        "fa": "فقط حفظش کنید: der Schrank.",
+        "de": "Einfach lernen: der Schrank."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Kleider sind im Schrank.",
+      "en": "The clothes are in the wardrobe.",
+      "fa": "لباس‌ها توی کمد هستند."
+    },
+    "category": "home",
+    "subcategory": "furniture",
+    "level": "A1"
+  },
+  {
+    "id": "regal",
+    "word": "Regal",
+    "article": "das",
+    "plural": "Regale",
+    "translations": {
+      "en": "shelf",
+      "fa": "قفسه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Regal).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Regal).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Regal).",
+      "simple": {
+        "en": "Just learn it: das Regal.",
+        "fa": "فقط حفظش کنید: das Regal.",
+        "de": "Einfach lernen: das Regal."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Bücher stehen im Regal.",
+      "en": "The books are on the shelf.",
+      "fa": "کتاب‌ها در قفسه هستند."
+    },
+    "category": "home",
+    "subcategory": "furniture",
+    "level": "A1"
+  },
+  {
+    "id": "sessel",
+    "word": "Sessel",
+    "article": "der",
+    "plural": "Sessel",
+    "translations": {
+      "en": "armchair",
+      "fa": "مبل تک‌نفره"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Sessel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Sessel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Sessel).",
+      "simple": {
+        "en": "Just learn it: der Sessel.",
+        "fa": "فقط حفظش کنید: der Sessel.",
+        "de": "Einfach lernen: der Sessel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Opa sitzt im Sessel.",
+      "en": "Grandpa is sitting in the armchair.",
+      "fa": "بابابزرگ روی مبل نشسته است."
+    },
+    "category": "home",
+    "subcategory": "furniture",
+    "level": "A1"
+  },
+  {
+    "id": "teppich",
+    "word": "Teppich",
+    "article": "der",
+    "plural": "Teppiche",
+    "translations": {
+      "en": "carpet, rug",
+      "fa": "فرش"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Teppich).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Teppich).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Teppich).",
+      "simple": {
+        "en": "Just learn it: der Teppich.",
+        "fa": "فقط حفظش کنید: der Teppich.",
+        "de": "Einfach lernen: der Teppich."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Teppich ist sehr alt.",
+      "en": "The carpet is very old.",
+      "fa": "فرش خیلی قدیمی است."
+    },
+    "category": "home",
+    "subcategory": "furniture",
+    "level": "A1"
+  },
+  {
+    "id": "kuehlschrank",
+    "word": "Kühlschrank",
+    "article": "der",
+    "plural": "Kühlschränke",
+    "translations": {
+      "en": "fridge",
+      "fa": "یخچال"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: der Schrank → der Kühlschrank.",
+      "fa": "اسم مرکب آرتیکلِ بخش آخرش را می‌گیرد: der Schrank → der Kühlschrank.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel des letzten Teils: der Schrank → der Kühlschrank.",
+      "simple": {
+        "en": "The last part decides: der Schrank, so der Kühlschrank.",
+        "fa": "بخش آخر تعیین می‌کند: der Schrank، پس der Kühlschrank.",
+        "de": "Der letzte Teil entscheidet: der Schrank, also der Kühlschrank."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Milch ist im Kühlschrank.",
+      "en": "The milk is in the fridge.",
+      "fa": "شیر توی یخچال است."
+    },
+    "category": "home",
+    "subcategory": "household",
+    "level": "A1"
+  },
+  {
+    "id": "herd",
+    "word": "Herd",
+    "article": "der",
+    "plural": "Herde",
+    "translations": {
+      "en": "stove, cooker",
+      "fa": "اجاق گاز"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Herd).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Herd).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Herd).",
+      "simple": {
+        "en": "Just learn it: der Herd.",
+        "fa": "فقط حفظش کنید: der Herd.",
+        "de": "Einfach lernen: der Herd."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Topf steht auf dem Herd.",
+      "en": "The pot is on the stove.",
+      "fa": "قابلمه روی اجاق است."
+    },
+    "category": "home",
+    "subcategory": "household",
+    "level": "A1"
+  },
+  {
+    "id": "waschmaschine",
+    "word": "Waschmaschine",
+    "article": "die",
+    "plural": "Waschmaschinen",
+    "translations": {
+      "en": "washing machine",
+      "fa": "ماشین لباسشویی"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Nase.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Nase.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Nase.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Waschmaschine ist kaputt.",
+      "en": "The washing machine is broken.",
+      "fa": "ماشین لباسشویی خراب است."
+    },
+    "category": "home",
+    "subcategory": "household",
+    "level": "A1"
+  },
+  {
+    "id": "teller",
+    "word": "Teller",
+    "article": "der",
+    "plural": "Teller",
+    "translations": {
+      "en": "plate",
+      "fa": "بشقاب"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Teller).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Teller).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Teller).",
+      "simple": {
+        "en": "Just learn it: der Teller.",
+        "fa": "فقط حفظش کنید: der Teller.",
+        "de": "Einfach lernen: der Teller."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Teller sind sauber.",
+      "en": "The plates are clean.",
+      "fa": "بشقاب‌ها تمیزند."
+    },
+    "category": "home",
+    "subcategory": "household",
+    "level": "A1"
+  },
+  {
+    "id": "tasse",
+    "word": "Tasse",
+    "article": "die",
+    "plural": "Tassen",
+    "translations": {
+      "en": "cup",
+      "fa": "فنجان"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Nase.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Nase.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Nase.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich trinke eine Tasse Tee.",
+      "en": "I drink a cup of tea.",
+      "fa": "یک فنجان چای می‌نوشم."
+    },
+    "category": "home",
+    "subcategory": "household",
+    "level": "A1"
+  },
+  {
+    "id": "glas",
+    "word": "Glas",
+    "article": "das",
+    "plural": "Gläser",
+    "translations": {
+      "en": "glass",
+      "fa": "لیوان"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Glas).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Glas).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Glas).",
+      "simple": {
+        "en": "Just learn it: das Glas.",
+        "fa": "فقط حفظش کنید: das Glas.",
+        "de": "Einfach lernen: das Glas."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Glas ist leer.",
+      "en": "The glass is empty.",
+      "fa": "لیوان خالی است."
+    },
+    "category": "home",
+    "subcategory": "household",
+    "level": "A1"
+  },
+  {
+    "id": "spiegel",
+    "word": "Spiegel",
+    "article": "der",
+    "plural": "Spiegel",
+    "translations": {
+      "en": "mirror",
+      "fa": "آینه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Spiegel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Spiegel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Spiegel).",
+      "simple": {
+        "en": "Just learn it: der Spiegel.",
+        "fa": "فقط حفظش کنید: der Spiegel.",
+        "de": "Einfach lernen: der Spiegel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Spiegel hängt im Bad.",
+      "en": "The mirror hangs in the bathroom.",
+      "fa": "آینه در حمام آویزان است."
+    },
+    "category": "home",
+    "subcategory": "household",
+    "level": "A1"
   }
 ]

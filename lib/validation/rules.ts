@@ -26,12 +26,14 @@ export function isPermutation(a: readonly string[], b: readonly string[]): boole
 }
 
 const DAS_SUFFIXES = ["chen", "lein"];
+/** Words whose "-chen" is part of the stem, not the diminutive ending (der Kuchen, der Knochen). */
+const NOT_DIMINUTIVE = new Set(["kuchen", "knochen"]);
 const DIE_SUFFIXES = ["ung", "heit", "keit", "schaft"];
 
 export function checkNoun(entry: VocabEntry): Problem[] {
   const problems: Problem[] = [];
   const w = entry.word.toLowerCase();
-  const das = DAS_SUFFIXES.find((s) => w.endsWith(s));
+  const das = NOT_DIMINUTIVE.has(w) ? undefined : DAS_SUFFIXES.find((s) => w.endsWith(s));
   if (das && entry.article !== "das") {
     problems.push(warn(`"${entry.word}" ends in -${das} but article is "${entry.article}" (expected das)`));
   }

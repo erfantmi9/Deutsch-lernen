@@ -60,8 +60,8 @@ describe("pickQuestion", () => {
     let hits = 0;
     const n = 4000;
     for (let i = 0; i < n; i++) if (pickQuestion(verbs, "present", ["sein"], null).verb.id === "sein") hits++;
-    // weight 4 of 4 + 39 others = 4/43 ≈ 9.3% vs 1/40 = 2.5% unweighted
-    expect(hits / n).toBeGreaterThan(0.06);
+    // weight 4 of 4 + (N-1) others = 4/(N+3) vs 1/N unweighted (N=63: ≈6.1% vs ≈1.6%), so well above 2.5/N.
+    expect(hits / n).toBeGreaterThan(2.5 / verbs.length);
   });
   it("respects the mode", () => {
     expect(pickQuestion(verbs, "perfekt", [], null).kind).toBe("perfekt");
@@ -96,7 +96,12 @@ describe("verb helpers", () => {
   });
   it("getters and filters", () => {
     expect(getVerbsByType("modal").map((v) => v.id)).toEqual(["koennen", "muessen", "wollen", "duerfen", "moegen"]);
-    expect(filterVerbs({ type: "separable", level: "A1" }).map((v) => v.id)).toEqual(["aufstehen", "anrufen", "einkaufen", "ankommen"]);
+    expect(filterVerbs({ type: "separable", level: "A1" }).map((v) => v.id)).toEqual([
+      "aufstehen", "anrufen", "einkaufen", "ankommen", "einladen", "mitkommen", "anfangen", "aufmachen",
+      "zumachen", "fernsehen", "abholen", "aussteigen", "einsteigen", "umsteigen", "mitbringen",
+    ]);
+    expect(filterVerbs({ type: "reflexive" }).map((v) => v.id)).toEqual(["freuen", "interessieren", "setzen", "beeilen"]);
+    expect(filterVerbs({ type: "modal", category: "movement" })).toEqual([]);
     expect(getVerb("nope")).toBeUndefined();
   });
 });

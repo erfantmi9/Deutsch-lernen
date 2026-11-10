@@ -1,0 +1,136 @@
+[
+  {
+    "id": "perfekt-01",
+    "lessonId": "perfekt",
+    "type": "choice",
+    "prompt": { "en": "Choose haben or sein.", "fa": "haben یا sein را انتخاب کن.", "de": "Wähle haben oder sein." },
+    "sentenceDe": "Ich ___ gestern Pizza gegessen.",
+    "options": ["habe", "bin", "hat"],
+    "answer": "habe",
+    "explanation": {
+      "en": "essen is not a movement, so it uses haben: ich habe gegessen.",
+      "fa": "essen حرکت نیست، پس با haben ساخته می‌شود: ich habe gegessen.",
+      "de": "essen ist keine Bewegung, also steht es mit haben: ich habe gegessen."
+    }
+  },
+  {
+    "id": "perfekt-02",
+    "lessonId": "perfekt",
+    "type": "choice",
+    "prompt": { "en": "Choose haben or sein.", "fa": "haben یا sein را انتخاب کن.", "de": "Wähle haben oder sein." },
+    "sentenceDe": "Wir ___ mit dem Zug nach Köln gefahren.",
+    "options": ["haben", "sind", "seid"],
+    "answer": "sind",
+    "explanation": {
+      "en": "fahren is a movement from one place to another, so it uses sein: wir sind gefahren.",
+      "fa": "fahren حرکت از جایی به جای دیگر است، پس با sein ساخته می‌شود: wir sind gefahren.",
+      "de": "fahren ist eine Bewegung von einem Ort zu einem anderen, also steht es mit sein: wir sind gefahren."
+    }
+  },
+  {
+    "id": "perfekt-03",
+    "lessonId": "perfekt",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct Partizip II.", "fa": "اسم مفعول (Partizip II) درست را انتخاب کن.", "de": "Wähle das richtige Partizip II." },
+    "sentenceDe": "Sie hat das Buch schon ___.",
+    "options": ["gelesen", "gelest", "lesen"],
+    "answer": "gelesen",
+    "explanation": {
+      "en": "lesen is irregular: ge- + stem + -en, so gelesen.",
+      "fa": "lesen بی‌قاعده است: ge- + ریشه + en-، پس gelesen.",
+      "de": "lesen ist unregelmäßig: ge- + Stamm + -en, also gelesen."
+    }
+  },
+  {
+    "id": "perfekt-04",
+    "lessonId": "perfekt",
+    "type": "choice",
+    "prompt": { "en": "Choose the word that starts the question.", "fa": "کلمه‌ای را که پرسش با آن شروع می‌شود انتخاب کن.", "de": "Wähle das Wort am Anfang der Frage." },
+    "sentenceDe": "___ du gut geschlafen?",
+    "options": ["Hast", "Bist", "Hat"],
+    "answer": "Hast",
+    "explanation": {
+      "en": "schlafen uses haben, and with du the form is hast. In a yes/no question it comes first.",
+      "fa": "schlafen با haben ساخته می‌شود و شکل آن با du می‌شود hast. در پرسش بله/خیر این فعل اول می‌آید.",
+      "de": "schlafen steht mit haben, und bei du heißt die Form hast. In einer Ja/Nein-Frage steht sie vorn."
+    }
+  },
+  {
+    "id": "perfekt-05",
+    "lessonId": "perfekt",
+    "type": "fill",
+    "prompt": { "en": "Type the Partizip II.", "fa": "اسم مفعول (Partizip II) را بنویس.", "de": "Schreibe das Partizip II." },
+    "sentenceDe": "Ich habe ein Brot ___. (kaufen)",
+    "answer": "gekauft",
+    "explanation": {
+      "en": "kaufen is regular: ge- + kauf + -t = gekauft.",
+      "fa": "kaufen باقاعده است: ge- + kauf + t- = gekauft.",
+      "de": "kaufen ist regelmäßig: ge- + kauf + -t = gekauft."
+    }
+  },
+  {
+    "id": "perfekt-06",
+    "lessonId": "perfekt",
+    "type": "fill",
+    "prompt": { "en": "Type the Partizip II.", "fa": "اسم مفعول (Partizip II) را بنویس.", "de": "Schreibe das Partizip II." },
+    "sentenceDe": "Mein Vater hat heute lange ___. (arbeiten)",
+    "answer": "gearbeitet",
+    "explanation": {
+      "en": "The stem arbeit- ends in -t, so the ending is -et: gearbeitet.",
+      "fa": "ریشه‌ی arbeit- به t ختم می‌شود، پس پایانه et- است: gearbeitet.",
+      "de": "Der Stamm arbeit- endet auf -t, deshalb ist die Endung -et: gearbeitet."
+    }
+  },
+  {
+    "id": "perfekt-07",
+    "lessonId": "perfekt",
+    "type": "fill",
+    "prompt": { "en": "Type the correct form of haben or sein.", "fa": "شکل درست haben یا sein را بنویس.", "de": "Schreibe die richtige Form von haben oder sein." },
+    "sentenceDe": "Lisa ___ gestern zu Hause geblieben. (haben / sein)",
+    "answer": "ist",
+    "explanation": {
+      "en": "bleiben forms the Perfekt with sein, although it is not a movement: Lisa ist geblieben.",
+      "fa": "bleiben ماضی نقلی را با sein می‌سازد، هرچند حرکت نیست: Lisa ist geblieben.",
+      "de": "bleiben bildet das Perfekt mit sein, obwohl es keine Bewegung ist: Lisa ist geblieben."
+    }
+  },
+  {
+    "id": "perfekt-08",
+    "lessonId": "perfekt",
+    "type": "fill",
+    "prompt": { "en": "Type the Partizip II.", "fa": "اسم مفعول (Partizip II) را بنویس.", "de": "Schreibe das Partizip II." },
+    "sentenceDe": "Habt ihr schon Kaffee ___? (trinken)",
+    "answer": "getrunken",
+    "explanation": {
+      "en": "trinken is irregular and changes its vowel: getrunken.",
+      "fa": "trinken بی‌قاعده است و حرف صدادارش تغییر می‌کند: getrunken.",
+      "de": "trinken ist unregelmäßig und ändert den Vokal: getrunken."
+    }
+  },
+  {
+    "id": "perfekt-09",
+    "lessonId": "perfekt",
+    "type": "transform",
+    "prompt": { "en": "Put the sentence into the Perfekt.", "fa": "جمله را به ماضی نقلی ببر.", "de": "Setze den Satz ins Perfekt." },
+    "sentenceDe": "Ich lerne Deutsch. → Ich habe Deutsch ___.",
+    "answer": "gelernt",
+    "explanation": {
+      "en": "lernen is regular: ich habe gelernt. The Partizip II goes to the end.",
+      "fa": "lernen باقاعده است: ich habe gelernt. اسم مفعول به آخر جمله می‌رود.",
+      "de": "lernen ist regelmäßig: ich habe gelernt. Das Partizip II steht am Ende."
+    }
+  },
+  {
+    "id": "perfekt-10",
+    "lessonId": "perfekt",
+    "type": "transform",
+    "prompt": { "en": "Put the sentence into the Perfekt.", "fa": "جمله را به ماضی نقلی ببر.", "de": "Setze den Satz ins Perfekt." },
+    "sentenceDe": "Wir kommen um acht Uhr. → Wir ___ um acht Uhr gekommen.",
+    "answer": "sind",
+    "explanation": {
+      "en": "kommen is a movement, so it uses sein: wir sind gekommen.",
+      "fa": "kommen حرکت است، پس با sein ساخته می‌شود: wir sind gekommen.",
+      "de": "kommen ist eine Bewegung, also steht es mit sein: wir sind gekommen."
+    }
+  }
+]

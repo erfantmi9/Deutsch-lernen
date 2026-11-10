@@ -18,6 +18,8 @@ export interface ReviewCard {
   front: string;
   /** Sub-group for filtering: noun category, adverb kind, preposition case, phrase situation. */
   group?: string;
+  /** Only for nouns in a category with sub-groups (see VOCAB_SUBCATEGORIES). */
+  subgroup?: string;
   /** Only for nouns: colours the front by article. */
   article?: Article;
   /** German detail line for the back: plural, key forms, case, typical reply. */
@@ -63,6 +65,7 @@ export function buildReviewCards(input: {
       id: cardId("noun", n.id),
       kind: "noun",
       group: n.category,
+      subgroup: n.subcategory,
       front: `${n.article} ${n.word}`,
       article: n.article,
       detail: n.plural === "–" ? undefined : `die ${n.plural}`,

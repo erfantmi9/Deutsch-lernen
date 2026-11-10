@@ -1,6 +1,6 @@
 import raw from "../data/verbs/a1.json";
 import { VerbListSchema } from "./schemas/verb";
-import { PERSONS } from "../types/verb";
+import { PERSONS, VERB_CATEGORIES } from "../types/verb";
 import type { Conjugation, Person, VerbCategory, VerbEntry, VerbType } from "../types/verb";
 import type { Level } from "../types/common";
 
@@ -35,6 +35,16 @@ export function filterVerbs(filter: VerbFilter = {}): VerbEntry[] {
 /** Parses a `?type=` query value; anything that isn't a known verb type yields null. */
 export function parseVerbType(value: string | null): VerbType | null {
   return getAvailableTypes().find((t) => t === value) ?? null;
+}
+
+/** Parses a `?topic=` query value; anything that isn't a known verb category yields null. */
+export function parseVerbCategory(value: string | null): VerbCategory | null {
+  return getAvailableCategories().find((c) => c === value) ?? null;
+}
+
+/** Verb categories (topics) that actually occur in the data, in a stable display order. */
+export function getAvailableCategories(): VerbCategory[] {
+  return VERB_CATEGORIES.filter((c) => verbs.some((v) => v.category === c));
 }
 
 /** Verb types that actually occur in the data, in a stable display order. */

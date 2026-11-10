@@ -4,8 +4,8 @@ import { useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
-import { filterVerbs, getAvailableTypes, parseVerbType, verbs } from "@/lib/verbs";
-import type { VerbType } from "@/types/verb";
+import { filterVerbs, getAvailableCategories, getAvailableTypes, parseVerbCategory, parseVerbType } from "@/lib/verbs";
+import type { VerbCategory, VerbType } from "@/types/verb";
 import VerbDrill from "./VerbDrill";
 import PageHeader from "./PageHeader";
 import VerbsHeader from "./illustrations/headers/VerbsHeader";
@@ -22,10 +22,24 @@ type TypeFilter = "all" | VerbType;
  */
 export default function VerbsExplorer() {
   const params = useSearchParams();
-  return <VerbsExplorerView type={parseVerbType(params.get("type"))} practicing={params.get("practice") === "1"} />;
+  return (
+    <VerbsExplorerView
+      type={parseVerbType(params.get("type"))}
+      topic={parseVerbCategory(params.get("topic"))}
+      practicing={params.get("practice") === "1"}
+    />
+  );
 }
 
-export function VerbsExplorerView({ type, practicing }: { type: VerbType | null; practicing: boolean }) {
+export function VerbsExplorerView({
+  type,
+  topic = null,
+  practicing,
+}: {
+  type: VerbType | null;
+  topic?: VerbCategory | null;
+  practicing: boolean;
+}) {
   const t = useTranslations("Verbs");
   const locale = useLocale() as "en" | "fa" | "de";
   const router = useRouter();
@@ -33,17 +47,19 @@ export function VerbsExplorerView({ type, practicing }: { type: VerbType | null;
   const typeFilter: TypeFilter = type ?? "all";
 
   const types = useMemo(() => getAvailableTypes(), []);
-  const visible = useMemo(() => (type ? filterVerbs({ type }) : [...verbs]), [type]);
+  const topics = useMemo(() => getAvailableCategories(), []);
+  const visible = useMemo(() => filterVerbs({ type: type ?? undefined, category: topic ?? undefined }), [type, topic]);
 
-  const query = (ty: VerbType | null, practice: boolean) => {
+  const query = (ty: VerbType | null, practice: boolean, to: VerbCategory | null = topic) => {
     const q: Record<string, string> = {};
     if (ty) q.type = ty;
+    if (to) q.topic = to;
     if (practice) q.practice = "1";
     return q;
   };
   const qs = type ? `?type=${type}` : "";
 
-  if (practicing) {
+  if (practicing && visible.length > 0) {
     return <VerbDrill pool={visible} onExit={() => router.replace({ pathname: "/verbs", query: query(type, false) }, { scroll: false })} />;
   }
 
@@ -61,6 +77,18 @@ export function VerbsExplorerView({ type, practicing }: { type: VerbType | null;
     </button>
   );
 
+  const topicChip = (value: VerbCategory | null, label: string) => (
+    <button
+      key={value ?? "all"}
+      type="button"
+      aria-pressed={topic === value}
+      onClick={() => router.replace({ pathname: "/verbs", query: query(type, false, value) }, { scroll: false })}
+      className="pill"
+    >
+      {label}
+    </button>
+  );
+
   return (
     <div className="space-y-4">
       <PageHeader
@@ -71,6 +99,7 @@ export function VerbsExplorerView({ type, practicing }: { type: VerbType | null;
           <button
             type="button"
             onClick={() => router.push({ pathname: "/verbs", query: query(type, true) })}
+            disabled={visible.length === 0}
             className="btn btn-primary"
           >
             {t("practice")} <span aria-hidden="true" className="rtl:-scale-x-100">→</span>
@@ -83,7 +112,24 @@ export function VerbsExplorerView({ type, practicing }: { type: VerbType | null;
           {chip("all", t("filterAll"))}
           {types.map((ty) => chip(ty, t(`types.${ty}`)))}
         </div>
+        <div role="group" aria-label={t("filterByTopic")} className="flex flex-wrap gap-2">
+          {topicChip(null, t("filterAllTopics"))}
+          {topics.map((c) => topicChip(c, t(`categories.${c}`)))}
+        </div>
       </FilterBar>
+
+      {visible.length === 0 && (
+        <div className="card space-y-3 p-5">
+          <p className="text-text-muted">{t("empty")}</p>
+          <button
+            type="button"
+            onClick={() => router.replace({ pathname: "/verbs", query: {} }, { scroll: false })}
+            className="btn btn-secondary"
+          >
+            {t("filterAll")}
+          </button>
+        </div>
+      )}
 
       <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {visible.map((v) => (

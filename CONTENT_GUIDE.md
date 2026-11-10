@@ -40,9 +40,13 @@ npm run build
 | Practice exam | `data/exam/a1.json` | `lib/schemas/exam.ts` | listening scripts, writing tasks, speaking parts |
 | UI text | `messages/{en,fa,de}.json` | checked by the validator | same keys and same `{arguments}` in all three |
 
-A new file in an existing folder is picked up automatically only where the loader reads the whole folder (grammar
-lessons and exercises, sentences, dialogues, reading). For nouns add the file to `data/vocab/index.ts`; for a new noun
-category follow the checklist in `data/vocab/README.md`.
+A new file in an existing folder is picked up automatically only where the loader reads the whole folder (sentences,
+dialogues, reading). For nouns add the file to `data/vocab/index.ts`; for a new noun category follow the checklist in
+`data/vocab/README.md`. For a new grammar lesson or exercise file add its import to `lib/grammar.ts`.
+
+The grammar page groups lessons by topic (`GRAMMAR_GROUP_OF_TOPIC` in `types/grammar.ts`). A lesson with a new
+`topic` needs an entry there, in `GRAMMAR_TOPICS`, a drawing in `components/illustrations/GrammarTopicIcon.tsx` and a
+label in `Grammar.topics` (all three message files).
 
 ## Typical tasks
 
@@ -58,6 +62,9 @@ category follow the checklist in `data/vocab/README.md`.
 Add an entry to `data/verbs/a1.json` with **all** present forms, `perfekt.auxiliary` and `perfekt.partizip2`.
 Separable verbs: set `type` to `separable`, give `separable.prefix` and `separable.stem`, and write the present forms
 **without** the prefix (`stehe`, `stehst`, ...). Add a `praeteritum` only for modal verbs and `sein`/`haben`.
+Reflexive verbs: set `type` to `reflexive`, write the id without `sich` (`freuen`), the infinitive with it
+(`sich freuen`) and the present forms with the pronoun (`freue mich`, `freust dich`, ...). `category` is the topic shown
+in the verb page's topic filter (`basic`, `daily`, `movement`, `communication`, `modal`).
 
 ### Add a dialogue
 

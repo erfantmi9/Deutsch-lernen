@@ -13,6 +13,13 @@ import questionsRaw from "../data/grammar/exercises/questions.json";
 import imperativeRaw from "../data/grammar/exercises/imperative.json";
 import modalRaw from "../data/grammar/exercises/modal.json";
 import wordOrderRaw from "../data/grammar/exercises/word-order.json";
+import perfektSeparableLessonsRaw from "../data/grammar/lessons-perfekt-separable.json";
+import timeConjunctionLessonsRaw from "../data/grammar/lessons-time-conjunctions.json";
+import perfektRaw from "../data/grammar/exercises/perfekt.json";
+import separableRaw from "../data/grammar/exercises/separable.json";
+import timePrepositionsRaw from "../data/grammar/exercises/time-prepositions.json";
+import conjunctionsRaw from "../data/grammar/exercises/conjunctions.json";
+import esGibtRaw from "../data/grammar/exercises/es-gibt.json";
 import {
   GlossaryListSchema,
   GrammarExerciseListSchema,
@@ -22,7 +29,13 @@ import type { GlossaryEntry, GrammarExercise, GrammarLesson } from "../types/gra
 
 // Validated once at module load; throws a ZodError on malformed data.
 export const grammarLessons: readonly GrammarLesson[] = [
-  ...GrammarLessonListSchema.parse([...lessonsRaw, ...prepositionLessonsRaw, ...verbLessonsRaw]),
+  ...GrammarLessonListSchema.parse([
+    ...lessonsRaw,
+    ...prepositionLessonsRaw,
+    ...verbLessonsRaw,
+    ...perfektSeparableLessonsRaw,
+    ...timeConjunctionLessonsRaw,
+  ]),
 ].sort((a, b) => a.order - b.order);
 
 export const grammarExercises: readonly GrammarExercise[] = GrammarExerciseListSchema.parse([
@@ -37,6 +50,11 @@ export const grammarExercises: readonly GrammarExercise[] = GrammarExerciseListS
   ...imperativeRaw,
   ...modalRaw,
   ...wordOrderRaw,
+  ...perfektRaw,
+  ...separableRaw,
+  ...timePrepositionsRaw,
+  ...conjunctionsRaw,
+  ...esGibtRaw,
 ]);
 
 export const glossary: readonly GlossaryEntry[] = GlossaryListSchema.parse(glossaryRaw);

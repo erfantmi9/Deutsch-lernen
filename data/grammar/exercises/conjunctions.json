@@ -1,0 +1,137 @@
+[
+  {
+    "id": "conjunctions-01",
+    "lessonId": "conjunctions",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct conjunction.", "fa": "حرف ربط درست را انتخاب کن.", "de": "Wähle die richtige Konjunktion." },
+    "sentenceDe": "Ich habe einen Bruder ___ eine Schwester.",
+    "options": ["und", "aber", "denn"],
+    "answer": "und",
+    "explanation": {
+      "en": "und adds something: a brother and a sister.",
+      "fa": "und چیزی را اضافه می‌کند: یک برادر و یک خواهر.",
+      "de": "und verbindet zwei Dinge: einen Bruder und eine Schwester."
+    }
+  },
+  {
+    "id": "conjunctions-02",
+    "lessonId": "conjunctions",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct conjunction.", "fa": "حرف ربط درست را انتخاب کن.", "de": "Wähle die richtige Konjunktion." },
+    "sentenceDe": "Die Wohnung ist schön, ___ sie ist sehr klein.",
+    "options": ["aber", "oder", "denn"],
+    "answer": "aber",
+    "explanation": {
+      "en": "The second part is a contrast (nice, but small), so: aber.",
+      "fa": "بخش دوم در تضاد با اولی است (قشنگ، اما کوچک)، پس: aber.",
+      "de": "Der zweite Teil ist ein Gegensatz (schön, aber klein), also: aber."
+    }
+  },
+  {
+    "id": "conjunctions-03",
+    "lessonId": "conjunctions",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct conjunction.", "fa": "حرف ربط درست را انتخاب کن.", "de": "Wähle die richtige Konjunktion." },
+    "sentenceDe": "Ich gehe ins Bett, ___ ich bin müde.",
+    "options": ["denn", "oder", "aber"],
+    "answer": "denn",
+    "explanation": {
+      "en": "The second part gives the reason (I am tired), so: denn.",
+      "fa": "بخش دوم دلیل را می‌گوید (خسته‌ام)، پس: denn.",
+      "de": "Der zweite Teil nennt den Grund (ich bin müde), also: denn."
+    }
+  },
+  {
+    "id": "conjunctions-04",
+    "lessonId": "conjunctions",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct conjunction.", "fa": "حرف ربط درست را انتخاب کن.", "de": "Wähle die richtige Konjunktion." },
+    "sentenceDe": "Möchtest du Tee ___ Kaffee?",
+    "options": ["oder", "denn", "aber"],
+    "answer": "oder",
+    "explanation": {
+      "en": "The question offers a choice between two things: oder.",
+      "fa": "پرسش بین دو چیز حق انتخاب می‌دهد: oder.",
+      "de": "Die Frage bietet eine Wahl zwischen zwei Dingen: oder."
+    }
+  },
+  {
+    "id": "conjunctions-05",
+    "lessonId": "conjunctions",
+    "type": "choice",
+    "prompt": { "en": "Choose the correct word order.", "fa": "ترتیب درست کلمات را انتخاب کن.", "de": "Wähle die richtige Wortstellung." },
+    "sentenceDe": "Ich koche jetzt, denn ___ Hunger.",
+    "options": ["ich habe", "habe ich", "ich Hunger habe"],
+    "answer": "ich habe",
+    "explanation": {
+      "en": "denn is in position 0. After it comes a normal sentence: subject, then the verb in position 2: denn ich habe Hunger.",
+      "fa": "denn در جایگاه صفر است. بعد از آن یک جمله‌ی عادی می‌آید: اول فاعل، بعد فعل در جایگاه دوم: denn ich habe Hunger.",
+      "de": "denn steht auf Position 0. Danach kommt ein normaler Satz: Subjekt, dann das Verb auf Position 2: denn ich habe Hunger."
+    }
+  },
+  {
+    "id": "conjunctions-06",
+    "lessonId": "conjunctions",
+    "type": "fill",
+    "prompt": { "en": "Type the conjunction.", "fa": "حرف ربط را بنویس.", "de": "Schreibe die Konjunktion." },
+    "sentenceDe": "Ich esse gern Fisch, ___ ich esse kein Fleisch.",
+    "answer": "aber",
+    "explanation": {
+      "en": "Fish yes, meat no: this is a contrast, so: aber.",
+      "fa": "ماهی بله، گوشت نه: این یک تضاد است، پس: aber.",
+      "de": "Fisch ja, Fleisch nein: Das ist ein Gegensatz, also: aber."
+    }
+  },
+  {
+    "id": "conjunctions-07",
+    "lessonId": "conjunctions",
+    "type": "fill",
+    "prompt": { "en": "Type the conjunction.", "fa": "حرف ربط را بنویس.", "de": "Schreibe die Konjunktion." },
+    "sentenceDe": "Er kommt nicht heute, ___ morgen.",
+    "answer": "sondern",
+    "explanation": {
+      "en": "After a negation (nicht heute) sondern gives the correct version: nicht heute, sondern morgen.",
+      "fa": "بعد از نفی (nicht heute)، sondern حالت درست را می‌گوید: nicht heute, sondern morgen.",
+      "de": "Nach einer Verneinung (nicht heute) nennt sondern das Richtige: nicht heute, sondern morgen."
+    }
+  },
+  {
+    "id": "conjunctions-08",
+    "lessonId": "conjunctions",
+    "type": "fill",
+    "prompt": { "en": "Type the conjunction.", "fa": "حرف ربط را بنویس.", "de": "Schreibe die Konjunktion." },
+    "sentenceDe": "Meine Mutter ist Ärztin ___ mein Vater ist Lehrer.",
+    "answer": "und",
+    "explanation": {
+      "en": "Two pieces of information are simply joined: und. There is no comma, so aber and denn do not fit.",
+      "fa": "دو اطلاعات فقط به هم وصل می‌شوند: und. ویرگول نیست، پس aber و denn مناسب نیستند.",
+      "de": "Zwei Informationen werden einfach verbunden: und. Es gibt kein Komma, also passen aber und denn nicht."
+    }
+  },
+  {
+    "id": "conjunctions-09",
+    "lessonId": "conjunctions",
+    "type": "transform",
+    "prompt": { "en": "Join the two sentences with denn.", "fa": "دو جمله را با denn به هم وصل کن.", "de": "Verbinde die zwei Sätze mit denn." },
+    "sentenceDe": "Ich bleibe zu Hause. Ich bin krank. → Ich bleibe zu Hause, denn ___ krank.",
+    "answer": "ich bin",
+    "explanation": {
+      "en": "After denn the word order does not change: ich bin krank. Before denn there is a comma.",
+      "fa": "بعد از denn ترتیب کلمات عوض نمی‌شود: ich bin krank. قبل از denn ویرگول می‌آید.",
+      "de": "Nach denn ändert sich die Wortstellung nicht: ich bin krank. Vor denn steht ein Komma."
+    }
+  },
+  {
+    "id": "conjunctions-10",
+    "lessonId": "conjunctions",
+    "type": "transform",
+    "prompt": { "en": "Join the two sentences with aber.", "fa": "دو جمله را با aber به هم وصل کن.", "de": "Verbinde die zwei Sätze mit aber." },
+    "sentenceDe": "Heute habe ich keine Zeit. Morgen komme ich. → Heute habe ich keine Zeit, aber morgen ___ ich.",
+    "answer": "komme",
+    "explanation": {
+      "en": "aber is in position 0. morgen is in position 1, so the verb follows in position 2 and ich comes after it: aber morgen komme ich.",
+      "fa": "aber در جایگاه صفر است. morgen در جایگاه اول است، پس فعل در جایگاه دوم می‌آید و ich بعد از آن: aber morgen komme ich.",
+      "de": "aber steht auf Position 0. morgen steht auf Position 1, also folgt das Verb auf Position 2 und danach ich: aber morgen komme ich."
+    }
+  }
+]

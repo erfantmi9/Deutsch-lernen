@@ -1,0 +1,698 @@
+[
+  {
+    "id": "feiertag",
+    "word": "Feiertag",
+    "article": "der",
+    "plural": "Feiertage",
+    "translations": {
+      "en": "public holiday",
+      "fa": "روز تعطیل رسمی"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Feier + Tag): the last part decides the article, der Tag → der Feiertag.",
+      "fa": "اسم مرکب (Feier + Tag): بخش آخر آرتیکل را تعیین می‌کند، der Tag ← der Feiertag.",
+      "de": "Zusammengesetztes Nomen (Feier + Tag): Das letzte Wort bestimmt den Artikel, der Tag → der Feiertag.",
+      "simple": {
+        "en": "Last part decides: der Tag → der Feiertag.",
+        "fa": "بخش آخر تعیین می‌کند: der Tag ← der Feiertag.",
+        "de": "Das letzte Wort entscheidet: der Tag → der Feiertag."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Morgen ist ein Feiertag.",
+      "en": "Tomorrow is a public holiday.",
+      "fa": "فردا تعطیل رسمی است."
+    },
+    "category": "celebrations",
+    "subcategory": "holidays",
+    "level": "A1"
+  },
+  {
+    "id": "weihnachtsfest",
+    "word": "Weihnachtsfest",
+    "article": "das",
+    "plural": "Weihnachtsfeste",
+    "translations": {
+      "en": "Christmas (celebration)",
+      "fa": "جشن کریسمس"
+    },
+    "grammarRule": {
+      "en": "Weihnachten (Christmas) itself is usually used without an article: Frohe Weihnachten!, an Weihnachten. The compound is clear: the last part decides, das Fest → das Weihnachtsfest.",
+      "fa": "خودِ کلمه‌ی Weihnachten (کریسمس) معمولاً بدون آرتیکل به کار می‌رود: Frohe Weihnachten!، an Weihnachten. اسم مرکب روشن است: بخش آخر آرتیکل را تعیین می‌کند، das Fest ← das Weihnachtsfest.",
+      "de": "Weihnachten selbst steht meistens ohne Artikel: Frohe Weihnachten!, an Weihnachten. Beim zusammengesetzten Nomen ist es klar: Das letzte Wort bestimmt den Artikel, das Fest → das Weihnachtsfest.",
+      "simple": {
+        "en": "Weihnachten: no article. das Fest → das Weihnachtsfest.",
+        "fa": "Weihnachten: بدون آرتیکل. das Fest ← das Weihnachtsfest.",
+        "de": "Weihnachten: ohne Artikel. das Fest → das Weihnachtsfest."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Weihnachtsfest feiern wir zu Hause.",
+      "en": "We celebrate Christmas at home.",
+      "fa": "ما کریسمس را در خانه جشن می‌گیریم."
+    },
+    "category": "celebrations",
+    "subcategory": "holidays",
+    "level": "A1"
+  },
+  {
+    "id": "osterfest",
+    "word": "Osterfest",
+    "article": "das",
+    "plural": "Osterfeste",
+    "translations": {
+      "en": "Easter (celebration)",
+      "fa": "جشن عید پاک"
+    },
+    "grammarRule": {
+      "en": "Ostern (Easter) itself is usually used without an article: Frohe Ostern!, an Ostern. The compound is clear: the last part decides, das Fest → das Osterfest.",
+      "fa": "خودِ کلمه‌ی Ostern (عید پاک) معمولاً بدون آرتیکل به کار می‌رود: Frohe Ostern!، an Ostern. اسم مرکب روشن است: بخش آخر آرتیکل را تعیین می‌کند، das Fest ← das Osterfest.",
+      "de": "Ostern selbst steht meistens ohne Artikel: Frohe Ostern!, an Ostern. Beim zusammengesetzten Nomen ist es klar: Das letzte Wort bestimmt den Artikel, das Fest → das Osterfest.",
+      "simple": {
+        "en": "Ostern: no article. das Fest → das Osterfest.",
+        "fa": "Ostern: بدون آرتیکل. das Fest ← das Osterfest.",
+        "de": "Ostern: ohne Artikel. das Fest → das Osterfest."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Osterfest ist im Frühling.",
+      "en": "Easter is in spring.",
+      "fa": "عید پاک در بهار است."
+    },
+    "category": "celebrations",
+    "subcategory": "holidays",
+    "level": "A1"
+  },
+  {
+    "id": "weihnachtsbaum",
+    "word": "Weihnachtsbaum",
+    "article": "der",
+    "plural": "Weihnachtsbäume",
+    "translations": {
+      "en": "Christmas tree",
+      "fa": "درخت کریسمس"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Weihnachten + Baum): the last part decides the article, der Baum → der Weihnachtsbaum.",
+      "fa": "اسم مرکب (Weihnachten + Baum): بخش آخر آرتیکل را تعیین می‌کند، der Baum ← der Weihnachtsbaum.",
+      "de": "Zusammengesetztes Nomen (Weihnachten + Baum): Das letzte Wort bestimmt den Artikel, der Baum → der Weihnachtsbaum.",
+      "simple": {
+        "en": "Last part decides: der Baum → der Weihnachtsbaum.",
+        "fa": "بخش آخر تعیین می‌کند: der Baum ← der Weihnachtsbaum.",
+        "de": "Das letzte Wort entscheidet: der Baum → der Weihnachtsbaum."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Weihnachtsbaum steht im Wohnzimmer.",
+      "en": "The Christmas tree is in the living room.",
+      "fa": "درخت کریسمس در اتاق نشیمن است."
+    },
+    "category": "celebrations",
+    "subcategory": "holidays",
+    "level": "A1"
+  },
+  {
+    "id": "weihnachtsmarkt",
+    "word": "Weihnachtsmarkt",
+    "article": "der",
+    "plural": "Weihnachtsmärkte",
+    "translations": {
+      "en": "Christmas market",
+      "fa": "بازار کریسمس"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Weihnachten + Markt): the last part decides the article, der Markt → der Weihnachtsmarkt.",
+      "fa": "اسم مرکب (Weihnachten + Markt): بخش آخر آرتیکل را تعیین می‌کند، der Markt ← der Weihnachtsmarkt.",
+      "de": "Zusammengesetztes Nomen (Weihnachten + Markt): Das letzte Wort bestimmt den Artikel, der Markt → der Weihnachtsmarkt.",
+      "simple": {
+        "en": "Last part decides: der Markt → der Weihnachtsmarkt.",
+        "fa": "بخش آخر تعیین می‌کند: der Markt ← der Weihnachtsmarkt.",
+        "de": "Das letzte Wort entscheidet: der Markt → der Weihnachtsmarkt."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Weihnachtsmarkt ist sehr schön.",
+      "en": "The Christmas market is very nice.",
+      "fa": "بازار کریسمس خیلی قشنگ است."
+    },
+    "category": "celebrations",
+    "subcategory": "holidays",
+    "level": "A1"
+  },
+  {
+    "id": "adventskranz",
+    "word": "Adventskranz",
+    "article": "der",
+    "plural": "Adventskränze",
+    "translations": {
+      "en": "Advent wreath",
+      "fa": "تاج‌گل اَدوِنت (پیش از کریسمس)"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Advent + Kranz): the last part decides the article, der Kranz → der Adventskranz.",
+      "fa": "اسم مرکب (Advent + Kranz): بخش آخر آرتیکل را تعیین می‌کند، der Kranz ← der Adventskranz.",
+      "de": "Zusammengesetztes Nomen (Advent + Kranz): Das letzte Wort bestimmt den Artikel, der Kranz → der Adventskranz.",
+      "simple": {
+        "en": "Last part decides: der Kranz → der Adventskranz.",
+        "fa": "بخش آخر تعیین می‌کند: der Kranz ← der Adventskranz.",
+        "de": "Das letzte Wort entscheidet: der Kranz → der Adventskranz."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Adventskranz hat vier Kerzen.",
+      "en": "The Advent wreath has four candles.",
+      "fa": "تاج‌گل ادونت چهار شمع دارد."
+    },
+    "category": "celebrations",
+    "subcategory": "holidays",
+    "level": "A1"
+  },
+  {
+    "id": "osterei",
+    "word": "Osterei",
+    "article": "das",
+    "plural": "Ostereier",
+    "translations": {
+      "en": "Easter egg",
+      "fa": "تخم‌مرغ عید پاک"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Ostern + Ei): the last part decides the article, das Ei → das Osterei.",
+      "fa": "اسم مرکب (Ostern + Ei): بخش آخر آرتیکل را تعیین می‌کند، das Ei ← das Osterei.",
+      "de": "Zusammengesetztes Nomen (Ostern + Ei): Das letzte Wort bestimmt den Artikel, das Ei → das Osterei.",
+      "simple": {
+        "en": "Last part decides: das Ei → das Osterei.",
+        "fa": "بخش آخر تعیین می‌کند: das Ei ← das Osterei.",
+        "de": "Das letzte Wort entscheidet: das Ei → das Osterei."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Kinder suchen Ostereier.",
+      "en": "The children are looking for Easter eggs.",
+      "fa": "بچه‌ها دنبال تخم‌مرغ‌های عید پاک می‌گردند."
+    },
+    "category": "celebrations",
+    "subcategory": "holidays",
+    "level": "A1"
+  },
+  {
+    "id": "osterhase",
+    "word": "Osterhase",
+    "article": "der",
+    "plural": "Osterhasen",
+    "translations": {
+      "en": "Easter Bunny",
+      "fa": "خرگوش عید پاک"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Ostern + Hase): the last part decides the article, der Hase → der Osterhase.",
+      "fa": "اسم مرکب (Ostern + Hase): بخش آخر آرتیکل را تعیین می‌کند، der Hase ← der Osterhase.",
+      "de": "Zusammengesetztes Nomen (Ostern + Hase): Das letzte Wort bestimmt den Artikel, der Hase → der Osterhase.",
+      "simple": {
+        "en": "Last part decides: der Hase → der Osterhase.",
+        "fa": "بخش آخر تعیین می‌کند: der Hase ← der Osterhase.",
+        "de": "Das letzte Wort entscheidet: der Hase → der Osterhase."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Osterhase bringt die Eier.",
+      "en": "The Easter Bunny brings the eggs.",
+      "fa": "خرگوش عید پاک تخم‌مرغ‌ها را می‌آورد."
+    },
+    "category": "celebrations",
+    "subcategory": "holidays",
+    "level": "A1"
+  },
+  {
+    "id": "feuerwerk",
+    "word": "Feuerwerk",
+    "article": "das",
+    "plural": "Feuerwerke",
+    "translations": {
+      "en": "fireworks",
+      "fa": "آتش‌بازی"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Feuer + Werk): the last part decides the article, das Werk → das Feuerwerk.",
+      "fa": "اسم مرکب (Feuer + Werk): بخش آخر آرتیکل را تعیین می‌کند، das Werk ← das Feuerwerk.",
+      "de": "Zusammengesetztes Nomen (Feuer + Werk): Das letzte Wort bestimmt den Artikel, das Werk → das Feuerwerk.",
+      "simple": {
+        "en": "Last part decides: das Werk → das Feuerwerk.",
+        "fa": "بخش آخر تعیین می‌کند: das Werk ← das Feuerwerk.",
+        "de": "Das letzte Wort entscheidet: das Werk → das Feuerwerk."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "An Silvester gibt es ein Feuerwerk.",
+      "en": "There are fireworks on New Year's Eve.",
+      "fa": "شب سال نو آتش‌بازی هست."
+    },
+    "category": "celebrations",
+    "subcategory": "holidays",
+    "level": "A1"
+  },
+  {
+    "id": "laterne",
+    "word": "Laterne",
+    "article": "die",
+    "plural": "Laternen",
+    "translations": {
+      "en": "lantern",
+      "fa": "فانوس"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Laterne).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Laterne).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Laterne).",
+      "simple": {
+        "en": "Just learn it: die Laterne.",
+        "fa": "فقط حفظش کنید: die Laterne.",
+        "de": "Einfach lernen: die Laterne."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Kind trägt eine Laterne.",
+      "en": "The child is carrying a lantern.",
+      "fa": "بچه یک فانوس در دست دارد."
+    },
+    "category": "celebrations",
+    "subcategory": "holidays",
+    "level": "A1"
+  },
+  {
+    "id": "fest",
+    "word": "Fest",
+    "article": "das",
+    "plural": "Feste",
+    "translations": {
+      "en": "celebration, festival",
+      "fa": "جشن"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Fest).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Fest).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Fest).",
+      "simple": {
+        "en": "Just learn it: das Fest.",
+        "fa": "فقط حفظش کنید: das Fest.",
+        "de": "Einfach lernen: das Fest."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Fest beginnt um sieben Uhr.",
+      "en": "The celebration starts at seven.",
+      "fa": "جشن ساعت هفت شروع می‌شود."
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  },
+  {
+    "id": "feier",
+    "word": "Feier",
+    "article": "die",
+    "plural": "Feiern",
+    "translations": {
+      "en": "celebration, party",
+      "fa": "جشن، مراسم"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Feier).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Feier).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Feier).",
+      "simple": {
+        "en": "Just learn it: die Feier.",
+        "fa": "فقط حفظش کنید: die Feier.",
+        "de": "Einfach lernen: die Feier."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Feier ist am Samstag.",
+      "en": "The party is on Saturday.",
+      "fa": "جشن شنبه است."
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  },
+  {
+    "id": "einladung",
+    "word": "Einladung",
+    "article": "die",
+    "plural": "Einladungen",
+    "translations": {
+      "en": "invitation",
+      "fa": "دعوت، دعوت‌نامه"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ung are always die, and the plural adds -en (die Einladung).",
+      "fa": "اسم‌هایی که به -ung ختم می‌شوند همیشه die هستند و جمعشان -en می‌گیرد (die Einladung).",
+      "de": "Nomen auf -ung sind immer die, der Plural endet auf -en (die Einladung).",
+      "simple": {
+        "en": "-ung → always die.",
+        "fa": "-ung ← همیشه die.",
+        "de": "-ung → immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Danke für die Einladung!",
+      "en": "Thank you for the invitation!",
+      "fa": "ممنون بابت دعوت!"
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  },
+  {
+    "id": "gast",
+    "word": "Gast",
+    "article": "der",
+    "plural": "Gäste",
+    "translations": {
+      "en": "guest",
+      "fa": "مهمان"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Gast).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Gast).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Gast).",
+      "simple": {
+        "en": "Just learn it: der Gast.",
+        "fa": "فقط حفظش کنید: der Gast.",
+        "de": "Einfach lernen: der Gast."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wir haben heute zehn Gäste.",
+      "en": "We have ten guests today.",
+      "fa": "ما امروز ده مهمان داریم."
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  },
+  {
+    "id": "gastgeber",
+    "word": "Gastgeber",
+    "article": "der",
+    "plural": "Gastgeber",
+    "translations": {
+      "en": "host",
+      "fa": "میزبان"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Gastgeber).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Gastgeber).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Gastgeber).",
+      "simple": {
+        "en": "Just learn it: der Gastgeber.",
+        "fa": "فقط حفظش کنید: der Gastgeber.",
+        "de": "Einfach lernen: der Gastgeber."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Gastgeber öffnet die Tür.",
+      "en": "The host opens the door.",
+      "fa": "میزبان در را باز می‌کند."
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  },
+  {
+    "id": "kerze",
+    "word": "Kerze",
+    "article": "die",
+    "plural": "Kerzen",
+    "translations": {
+      "en": "candle",
+      "fa": "شمع"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Kerze).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Kerze).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Kerze).",
+      "simple": {
+        "en": "Just learn it: die Kerze.",
+        "fa": "فقط حفظش کنید: die Kerze.",
+        "de": "Einfach lernen: die Kerze."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Kerze brennt auf dem Tisch.",
+      "en": "The candle is burning on the table.",
+      "fa": "شمع روی میز روشن است."
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  },
+  {
+    "id": "hochzeitstag",
+    "word": "Hochzeitstag",
+    "article": "der",
+    "plural": "Hochzeitstage",
+    "translations": {
+      "en": "wedding anniversary",
+      "fa": "سالگرد ازدواج"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Hochzeit + Tag): the last part decides the article, der Tag → der Hochzeitstag.",
+      "fa": "اسم مرکب (Hochzeit + Tag): بخش آخر آرتیکل را تعیین می‌کند، der Tag ← der Hochzeitstag.",
+      "de": "Zusammengesetztes Nomen (Hochzeit + Tag): Das letzte Wort bestimmt den Artikel, der Tag → der Hochzeitstag.",
+      "simple": {
+        "en": "Last part decides: der Tag → der Hochzeitstag.",
+        "fa": "بخش آخر تعیین می‌کند: der Tag ← der Hochzeitstag.",
+        "de": "Das letzte Wort entscheidet: der Tag → der Hochzeitstag."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Heute ist unser Hochzeitstag.",
+      "en": "Today is our wedding anniversary.",
+      "fa": "امروز سالگرد ازدواج ماست."
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  },
+  {
+    "id": "hochzeit",
+    "word": "Hochzeit",
+    "article": "die",
+    "plural": "Hochzeiten",
+    "translations": {
+      "en": "wedding",
+      "fa": "عروسی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Hochzeit).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Hochzeit).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Hochzeit).",
+      "simple": {
+        "en": "Just learn it: die Hochzeit.",
+        "fa": "فقط حفظش کنید: die Hochzeit.",
+        "de": "Einfach lernen: die Hochzeit."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Hochzeit ist im Juni.",
+      "en": "The wedding is in June.",
+      "fa": "عروسی در ماه ژوئن است."
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  },
+  {
+    "id": "glueckwunsch",
+    "word": "Glückwunsch",
+    "article": "der",
+    "plural": "Glückwünsche",
+    "translations": {
+      "en": "congratulations, good wishes",
+      "fa": "تبریک"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Glück + Wunsch): the last part decides the article, der Wunsch → der Glückwunsch.",
+      "fa": "اسم مرکب (Glück + Wunsch): بخش آخر آرتیکل را تعیین می‌کند، der Wunsch ← der Glückwunsch.",
+      "de": "Zusammengesetztes Nomen (Glück + Wunsch): Das letzte Wort bestimmt den Artikel, der Wunsch → der Glückwunsch.",
+      "simple": {
+        "en": "Last part decides: der Wunsch → der Glückwunsch.",
+        "fa": "بخش آخر تعیین می‌کند: der Wunsch ← der Glückwunsch.",
+        "de": "Das letzte Wort entscheidet: der Wunsch → der Glückwunsch."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Herzlichen Glückwunsch zum Geburtstag!",
+      "en": "Happy birthday!",
+      "fa": "تولدت مبارک!"
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  },
+  {
+    "id": "glueckwunschkarte",
+    "word": "Glückwunschkarte",
+    "article": "die",
+    "plural": "Glückwunschkarten",
+    "translations": {
+      "en": "greeting card",
+      "fa": "کارت تبریک"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Glückwunsch + Karte): the last part decides the article, die Karte → die Glückwunschkarte.",
+      "fa": "اسم مرکب (Glückwunsch + Karte): بخش آخر آرتیکل را تعیین می‌کند، die Karte ← die Glückwunschkarte.",
+      "de": "Zusammengesetztes Nomen (Glückwunsch + Karte): Das letzte Wort bestimmt den Artikel, die Karte → die Glückwunschkarte.",
+      "simple": {
+        "en": "Last part decides: die Karte → die Glückwunschkarte.",
+        "fa": "بخش آخر تعیین می‌کند: die Karte ← die Glückwunschkarte.",
+        "de": "Das letzte Wort entscheidet: die Karte → die Glückwunschkarte."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wir schreiben eine Glückwunschkarte.",
+      "en": "We are writing a greeting card.",
+      "fa": "ما یک کارت تبریک می‌نویسیم."
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  },
+  {
+    "id": "luftballon",
+    "word": "Luftballon",
+    "article": "der",
+    "plural": "Luftballons",
+    "translations": {
+      "en": "balloon",
+      "fa": "بادکنک"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Luft + Ballon): the last part decides the article, der Ballon → der Luftballon.",
+      "fa": "اسم مرکب (Luft + Ballon): بخش آخر آرتیکل را تعیین می‌کند، der Ballon ← der Luftballon.",
+      "de": "Zusammengesetztes Nomen (Luft + Ballon): Das letzte Wort bestimmt den Artikel, der Ballon → der Luftballon.",
+      "simple": {
+        "en": "Last part decides: der Ballon → der Luftballon.",
+        "fa": "بخش آخر تعیین می‌کند: der Ballon ← der Luftballon.",
+        "de": "Das letzte Wort entscheidet: der Ballon → der Luftballon."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Luftballons sind bunt.",
+      "en": "The balloons are colourful.",
+      "fa": "بادکنک‌ها رنگارنگ هستند."
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  },
+  {
+    "id": "ueberraschung",
+    "word": "Überraschung",
+    "article": "die",
+    "plural": "Überraschungen",
+    "translations": {
+      "en": "surprise",
+      "fa": "غافلگیری، سورپرایز"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ung are always die, and the plural adds -en (die Überraschung).",
+      "fa": "اسم‌هایی که به -ung ختم می‌شوند همیشه die هستند و جمعشان -en می‌گیرد (die Überraschung).",
+      "de": "Nomen auf -ung sind immer die, der Plural endet auf -en (die Überraschung).",
+      "simple": {
+        "en": "-ung → always die.",
+        "fa": "-ung ← همیشه die.",
+        "de": "-ung → immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Das ist eine schöne Überraschung!",
+      "en": "What a nice surprise!",
+      "fa": "چه غافلگیری قشنگی!"
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  },
+  {
+    "id": "kostuem",
+    "word": "Kostüm",
+    "article": "das",
+    "plural": "Kostüme",
+    "translations": {
+      "en": "costume",
+      "fa": "لباس مبدل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Kostüm).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Kostüm).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Kostüm).",
+      "simple": {
+        "en": "Just learn it: das Kostüm.",
+        "fa": "فقط حفظش کنید: das Kostüm.",
+        "de": "Einfach lernen: das Kostüm."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Mein Kostüm für Karneval ist rot.",
+      "en": "My carnival costume is red.",
+      "fa": "لباس کارناوال من قرمز است."
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  },
+  {
+    "id": "blumenstrauss",
+    "word": "Blumenstrauß",
+    "article": "der",
+    "plural": "Blumensträuße",
+    "translations": {
+      "en": "bouquet of flowers",
+      "fa": "دسته‌گل"
+    },
+    "grammarRule": {
+      "en": "Compound noun (Blumen + Strauß): the last part decides the article, der Strauß → der Blumenstrauß.",
+      "fa": "اسم مرکب (Blumen + Strauß): بخش آخر آرتیکل را تعیین می‌کند، der Strauß ← der Blumenstrauß.",
+      "de": "Zusammengesetztes Nomen (Blumen + Strauß): Das letzte Wort bestimmt den Artikel, der Strauß → der Blumenstrauß.",
+      "simple": {
+        "en": "Last part decides: der Strauß → der Blumenstrauß.",
+        "fa": "بخش آخر تعیین می‌کند: der Strauß ← der Blumenstrauß.",
+        "de": "Das letzte Wort entscheidet: der Strauß → der Blumenstrauß."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Ich bringe einen Blumenstrauß mit.",
+      "en": "I am bringing a bouquet of flowers.",
+      "fa": "من یک دسته‌گل با خودم می‌آورم."
+    },
+    "category": "celebrations",
+    "subcategory": "party",
+    "level": "A1"
+  }
+]

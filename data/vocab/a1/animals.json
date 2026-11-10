@@ -1,0 +1,733 @@
+[
+  {
+    "id": "hund",
+    "word": "Hund",
+    "article": "der",
+    "plural": "Hunde",
+    "translations": {
+      "en": "dog",
+      "fa": "سگ"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Hund).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Hund).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Hund).",
+      "simple": {
+        "en": "Just learn it: der Hund.",
+        "fa": "فقط حفظش کنید: der Hund.",
+        "de": "Einfach lernen: der Hund."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Hund spielt im Garten.",
+      "en": "The dog plays in the garden.",
+      "fa": "سگ در حیاط بازی می‌کند."
+    },
+    "category": "animals",
+    "subcategory": "pets",
+    "level": "A1"
+  },
+  {
+    "id": "katze",
+    "word": "Katze",
+    "article": "die",
+    "plural": "Katzen",
+    "translations": {
+      "en": "cat",
+      "fa": "گربه"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Katze.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Katze.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Katze.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Katze schläft auf dem Sofa.",
+      "en": "The cat sleeps on the sofa.",
+      "fa": "گربه روی مبل می‌خوابد."
+    },
+    "category": "animals",
+    "subcategory": "pets",
+    "level": "A1"
+  },
+  {
+    "id": "vogel",
+    "word": "Vogel",
+    "article": "der",
+    "plural": "Vögel",
+    "translations": {
+      "en": "bird",
+      "fa": "پرنده"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Vogel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Vogel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Vogel).",
+      "simple": {
+        "en": "Just learn it: der Vogel.",
+        "fa": "فقط حفظش کنید: der Vogel.",
+        "de": "Einfach lernen: der Vogel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Vogel singt am Morgen.",
+      "en": "The bird sings in the morning.",
+      "fa": "پرنده صبح آواز می‌خواند."
+    },
+    "category": "animals",
+    "subcategory": "pets",
+    "level": "A1"
+  },
+  {
+    "id": "maus",
+    "word": "Maus",
+    "article": "die",
+    "plural": "Mäuse",
+    "translations": {
+      "en": "mouse",
+      "fa": "موش"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Maus).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Maus).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Maus).",
+      "simple": {
+        "en": "Just learn it: die Maus.",
+        "fa": "فقط حفظش کنید: die Maus.",
+        "de": "Einfach lernen: die Maus."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Maus ist sehr klein.",
+      "en": "The mouse is very small.",
+      "fa": "موش خیلی کوچک است."
+    },
+    "category": "animals",
+    "subcategory": "pets",
+    "level": "A1"
+  },
+  {
+    "id": "hamster",
+    "word": "Hamster",
+    "article": "der",
+    "plural": "Hamster",
+    "translations": {
+      "en": "hamster",
+      "fa": "همستر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Hamster).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Hamster).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Hamster).",
+      "simple": {
+        "en": "Just learn it: der Hamster.",
+        "fa": "فقط حفظش کنید: der Hamster.",
+        "de": "Einfach lernen: der Hamster."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Mein Hamster frisst gern Karotten.",
+      "en": "My hamster likes eating carrots.",
+      "fa": "همستر من هویج دوست دارد."
+    },
+    "category": "animals",
+    "subcategory": "pets",
+    "level": "A1"
+  },
+  {
+    "id": "kaninchen",
+    "word": "Kaninchen",
+    "article": "das",
+    "plural": "Kaninchen",
+    "translations": {
+      "en": "rabbit",
+      "fa": "خرگوش"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -chen are always neuter (das): das Mädchen, das Brötchen, das Kaninchen.",
+      "fa": "اسم‌هایی که به -chen ختم می‌شوند همیشه خنثی (das) هستند: das Mädchen, das Brötchen, das Kaninchen.",
+      "de": "Nomen auf -chen sind immer sächlich (das): das Mädchen, das Brötchen, das Kaninchen.",
+      "simple": {
+        "en": "-chen is always das.",
+        "fa": "-chen همیشه das است.",
+        "de": "-chen ist immer das."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Das Kaninchen hat lange Ohren.",
+      "en": "The rabbit has long ears.",
+      "fa": "خرگوش گوش‌های بلندی دارد."
+    },
+    "category": "animals",
+    "subcategory": "pets",
+    "level": "A1"
+  },
+  {
+    "id": "haustier",
+    "word": "Haustier",
+    "article": "das",
+    "plural": "Haustiere",
+    "translations": {
+      "en": "pet",
+      "fa": "حیوان خانگی"
+    },
+    "grammarRule": {
+      "en": "Compound noun: the last part decides the article. das Tier → das Haustier.",
+      "fa": "اسم مرکب: بخش آخر آرتیکل را تعیین می‌کند. das Tier → das Haustier.",
+      "de": "Zusammengesetztes Nomen: Der letzte Teil bestimmt den Artikel. das Tier → das Haustier.",
+      "simple": {
+        "en": "Last part decides: das Haustier.",
+        "fa": "بخش آخر تعیین می‌کند: das Haustier.",
+        "de": "Der letzte Teil zählt: das Haustier."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Hast du ein Haustier?",
+      "en": "Do you have a pet?",
+      "fa": "حیوان خانگی داری؟"
+    },
+    "category": "animals",
+    "subcategory": "pets",
+    "level": "A1"
+  },
+  {
+    "id": "goldfisch",
+    "word": "Goldfisch",
+    "article": "der",
+    "plural": "Goldfische",
+    "translations": {
+      "en": "goldfish",
+      "fa": "ماهی قرمز"
+    },
+    "grammarRule": {
+      "en": "Compound noun: the last part decides the article. der Fisch → der Goldfisch.",
+      "fa": "اسم مرکب: بخش آخر آرتیکل را تعیین می‌کند. der Fisch → der Goldfisch.",
+      "de": "Zusammengesetztes Nomen: Der letzte Teil bestimmt den Artikel. der Fisch → der Goldfisch.",
+      "simple": {
+        "en": "Last part decides: der Goldfisch.",
+        "fa": "بخش آخر تعیین می‌کند: der Goldfisch.",
+        "de": "Der letzte Teil zählt: der Goldfisch."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Goldfisch schwimmt im Glas.",
+      "en": "The goldfish swims in the bowl.",
+      "fa": "ماهی قرمز در تنگ شنا می‌کند."
+    },
+    "category": "animals",
+    "subcategory": "pets",
+    "level": "A1"
+  },
+  {
+    "id": "bauernhof",
+    "word": "Bauernhof",
+    "article": "der",
+    "plural": "Bauernhöfe",
+    "translations": {
+      "en": "farm",
+      "fa": "مزرعه"
+    },
+    "grammarRule": {
+      "en": "Compound noun: the last part decides the article. der Hof → der Bauernhof.",
+      "fa": "اسم مرکب: بخش آخر آرتیکل را تعیین می‌کند. der Hof → der Bauernhof.",
+      "de": "Zusammengesetztes Nomen: Der letzte Teil bestimmt den Artikel. der Hof → der Bauernhof.",
+      "simple": {
+        "en": "Last part decides: der Bauernhof.",
+        "fa": "بخش آخر تعیین می‌کند: der Bauernhof.",
+        "de": "Der letzte Teil zählt: der Bauernhof."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Wir besuchen einen Bauernhof.",
+      "en": "We visit a farm.",
+      "fa": "ما به یک مزرعه سر می‌زنیم."
+    },
+    "category": "animals",
+    "subcategory": "farm",
+    "level": "A1"
+  },
+  {
+    "id": "kuh",
+    "word": "Kuh",
+    "article": "die",
+    "plural": "Kühe",
+    "translations": {
+      "en": "cow",
+      "fa": "گاو"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (die Kuh).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (die Kuh).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (die Kuh).",
+      "simple": {
+        "en": "Just learn it: die Kuh.",
+        "fa": "فقط حفظش کنید: die Kuh.",
+        "de": "Einfach lernen: die Kuh."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Kuh gibt Milch.",
+      "en": "The cow gives milk.",
+      "fa": "گاو شیر می‌دهد."
+    },
+    "category": "animals",
+    "subcategory": "farm",
+    "level": "A1"
+  },
+  {
+    "id": "schwein",
+    "word": "Schwein",
+    "article": "das",
+    "plural": "Schweine",
+    "translations": {
+      "en": "pig",
+      "fa": "خوک"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Schwein).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Schwein).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Schwein).",
+      "simple": {
+        "en": "Just learn it: das Schwein.",
+        "fa": "فقط حفظش کنید: das Schwein.",
+        "de": "Einfach lernen: das Schwein."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Schwein ist rosa.",
+      "en": "The pig is pink.",
+      "fa": "خوک صورتی است."
+    },
+    "category": "animals",
+    "subcategory": "farm",
+    "level": "A1"
+  },
+  {
+    "id": "pferd",
+    "word": "Pferd",
+    "article": "das",
+    "plural": "Pferde",
+    "translations": {
+      "en": "horse",
+      "fa": "اسب"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Pferd).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Pferd).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Pferd).",
+      "simple": {
+        "en": "Just learn it: das Pferd.",
+        "fa": "فقط حفظش کنید: das Pferd.",
+        "de": "Einfach lernen: das Pferd."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Pferd läuft schnell.",
+      "en": "The horse runs fast.",
+      "fa": "اسب تند می‌دود."
+    },
+    "category": "animals",
+    "subcategory": "farm",
+    "level": "A1"
+  },
+  {
+    "id": "schaf",
+    "word": "Schaf",
+    "article": "das",
+    "plural": "Schafe",
+    "translations": {
+      "en": "sheep",
+      "fa": "گوسفند"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Schaf).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Schaf).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Schaf).",
+      "simple": {
+        "en": "Just learn it: das Schaf.",
+        "fa": "فقط حفظش کنید: das Schaf.",
+        "de": "Einfach lernen: das Schaf."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Die Schafe sind auf der Wiese.",
+      "en": "The sheep are in the meadow.",
+      "fa": "گوسفندها در چمنزار هستند."
+    },
+    "category": "animals",
+    "subcategory": "farm",
+    "level": "A1"
+  },
+  {
+    "id": "ziege",
+    "word": "Ziege",
+    "article": "die",
+    "plural": "Ziegen",
+    "translations": {
+      "en": "goat",
+      "fa": "بز"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Ziege.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Ziege.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Ziege.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Ziege frisst Gras.",
+      "en": "The goat eats grass.",
+      "fa": "بز علف می‌خورد."
+    },
+    "category": "animals",
+    "subcategory": "farm",
+    "level": "A1"
+  },
+  {
+    "id": "ente",
+    "word": "Ente",
+    "article": "die",
+    "plural": "Enten",
+    "translations": {
+      "en": "duck",
+      "fa": "اردک"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Ente.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Ente.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Ente.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Enten schwimmen im See.",
+      "en": "The ducks swim in the lake.",
+      "fa": "اردک‌ها در دریاچه شنا می‌کنند."
+    },
+    "category": "animals",
+    "subcategory": "farm",
+    "level": "A1"
+  },
+  {
+    "id": "huhn",
+    "word": "Huhn",
+    "article": "das",
+    "plural": "Hühner",
+    "translations": {
+      "en": "chicken, hen",
+      "fa": "مرغ"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Huhn).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Huhn).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Huhn).",
+      "simple": {
+        "en": "Just learn it: das Huhn.",
+        "fa": "فقط حفظش کنید: das Huhn.",
+        "de": "Einfach lernen: das Huhn."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Huhn legt ein Ei.",
+      "en": "The hen lays an egg.",
+      "fa": "مرغ تخم می‌گذارد."
+    },
+    "category": "animals",
+    "subcategory": "farm",
+    "level": "A1"
+  },
+  {
+    "id": "esel",
+    "word": "Esel",
+    "article": "der",
+    "plural": "Esel",
+    "translations": {
+      "en": "donkey",
+      "fa": "الاغ"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Esel).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Esel).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Esel).",
+      "simple": {
+        "en": "Just learn it: der Esel.",
+        "fa": "فقط حفظش کنید: der Esel.",
+        "de": "Einfach lernen: der Esel."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Esel ist grau.",
+      "en": "The donkey is grey.",
+      "fa": "الاغ خاکستری است."
+    },
+    "category": "animals",
+    "subcategory": "farm",
+    "level": "A1"
+  },
+  {
+    "id": "zoo",
+    "word": "Zoo",
+    "article": "der",
+    "plural": "Zoos",
+    "translations": {
+      "en": "zoo",
+      "fa": "باغ وحش"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Zoo).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Zoo).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Zoo).",
+      "simple": {
+        "en": "Just learn it: der Zoo.",
+        "fa": "فقط حفظش کنید: der Zoo.",
+        "de": "Einfach lernen: der Zoo."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Am Sonntag gehen wir in den Zoo.",
+      "en": "On Sunday we go to the zoo.",
+      "fa": "یکشنبه به باغ وحش می‌رویم."
+    },
+    "category": "animals",
+    "subcategory": "wild",
+    "level": "A1"
+  },
+  {
+    "id": "loewe",
+    "word": "Löwe",
+    "article": "der",
+    "plural": "Löwen",
+    "translations": {
+      "en": "lion",
+      "fa": "شیر (جانور)"
+    },
+    "grammarRule": {
+      "en": "Exception: most nouns ending in -e are feminine, but Löwe is masculine (der Löwe), like der Junge.",
+      "fa": "استثنا: بیشتر اسم‌های ختم‌شده به -e مؤنث‌اند، اما Löwe مذکر است (der Löwe)، مانند der Junge.",
+      "de": "Ausnahme: Die meisten Nomen auf -e sind feminin, aber Löwe ist maskulin (der Löwe), wie der Junge.",
+      "simple": {
+        "en": "Ends in -e but it is der: der Löwe.",
+        "fa": "به -e ختم می‌شود اما der است: der Löwe.",
+        "de": "Endet auf -e, ist aber der: der Löwe."
+      }
+    },
+    "ruleCategory": "exception",
+    "example": {
+      "de": "Der Löwe schläft in der Sonne.",
+      "en": "The lion sleeps in the sun.",
+      "fa": "شیر زیر آفتاب می‌خوابد."
+    },
+    "category": "animals",
+    "subcategory": "wild",
+    "level": "A1",
+    "tags": [
+      "exception"
+    ]
+  },
+  {
+    "id": "elefant",
+    "word": "Elefant",
+    "article": "der",
+    "plural": "Elefanten",
+    "translations": {
+      "en": "elephant",
+      "fa": "فیل"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Elefant).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Elefant).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Elefant).",
+      "simple": {
+        "en": "Just learn it: der Elefant.",
+        "fa": "فقط حفظش کنید: der Elefant.",
+        "de": "Einfach lernen: der Elefant."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Elefant ist sehr groß.",
+      "en": "The elephant is very big.",
+      "fa": "فیل خیلی بزرگ است."
+    },
+    "category": "animals",
+    "subcategory": "wild",
+    "level": "A1"
+  },
+  {
+    "id": "affe",
+    "word": "Affe",
+    "article": "der",
+    "plural": "Affen",
+    "translations": {
+      "en": "monkey",
+      "fa": "میمون"
+    },
+    "grammarRule": {
+      "en": "Exception: most nouns ending in -e are feminine, but Affe is masculine (der Affe), like der Junge.",
+      "fa": "استثنا: بیشتر اسم‌های ختم‌شده به -e مؤنث‌اند، اما Affe مذکر است (der Affe)، مانند der Junge.",
+      "de": "Ausnahme: Die meisten Nomen auf -e sind feminin, aber Affe ist maskulin (der Affe), wie der Junge.",
+      "simple": {
+        "en": "Ends in -e but it is der: der Affe.",
+        "fa": "به -e ختم می‌شود اما der است: der Affe.",
+        "de": "Endet auf -e, ist aber der: der Affe."
+      }
+    },
+    "ruleCategory": "exception",
+    "example": {
+      "de": "Der Affe isst eine Banane.",
+      "en": "The monkey eats a banana.",
+      "fa": "میمون موز می‌خورد."
+    },
+    "category": "animals",
+    "subcategory": "wild",
+    "level": "A1",
+    "tags": [
+      "exception"
+    ]
+  },
+  {
+    "id": "baer",
+    "word": "Bär",
+    "article": "der",
+    "plural": "Bären",
+    "translations": {
+      "en": "bear",
+      "fa": "خرس"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Bär).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Bär).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Bär).",
+      "simple": {
+        "en": "Just learn it: der Bär.",
+        "fa": "فقط حفظش کنید: der Bär.",
+        "de": "Einfach lernen: der Bär."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Bär lebt im Wald.",
+      "en": "The bear lives in the forest.",
+      "fa": "خرس در جنگل زندگی می‌کند."
+    },
+    "category": "animals",
+    "subcategory": "wild",
+    "level": "A1"
+  },
+  {
+    "id": "tiger",
+    "word": "Tiger",
+    "article": "der",
+    "plural": "Tiger",
+    "translations": {
+      "en": "tiger",
+      "fa": "ببر"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Tiger).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Tiger).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Tiger).",
+      "simple": {
+        "en": "Just learn it: der Tiger.",
+        "fa": "فقط حفظش کنید: der Tiger.",
+        "de": "Einfach lernen: der Tiger."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Tiger hat Streifen.",
+      "en": "The tiger has stripes.",
+      "fa": "ببر راه‌راه است."
+    },
+    "category": "animals",
+    "subcategory": "wild",
+    "level": "A1"
+  },
+  {
+    "id": "giraffe",
+    "word": "Giraffe",
+    "article": "die",
+    "plural": "Giraffen",
+    "translations": {
+      "en": "giraffe",
+      "fa": "زرافه"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Giraffe.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Giraffe.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Giraffe.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Giraffe hat einen langen Hals.",
+      "en": "The giraffe has a long neck.",
+      "fa": "زرافه گردن درازی دارد."
+    },
+    "category": "animals",
+    "subcategory": "wild",
+    "level": "A1"
+  },
+  {
+    "id": "fuchs",
+    "word": "Fuchs",
+    "article": "der",
+    "plural": "Füchse",
+    "translations": {
+      "en": "fox",
+      "fa": "روباه"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Fuchs).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Fuchs).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Fuchs).",
+      "simple": {
+        "en": "Just learn it: der Fuchs.",
+        "fa": "فقط حفظش کنید: der Fuchs.",
+        "de": "Einfach lernen: der Fuchs."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Fuchs ist schlau.",
+      "en": "The fox is clever.",
+      "fa": "روباه زرنگ است."
+    },
+    "category": "animals",
+    "subcategory": "wild",
+    "level": "A1"
+  }
+]

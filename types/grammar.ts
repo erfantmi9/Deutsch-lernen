@@ -12,8 +12,32 @@ export const GRAMMAR_TOPICS = [
   "imperative",
   "modal",
   "word-order",
+  "perfekt",
+  "separable",
+  "conjunctions",
 ] as const;
 export type GrammarTopic = (typeof GRAMMAR_TOPICS)[number];
+
+/** The grammar page groups lessons by these headings, in this order. Labels: `Grammar.groups.<group>`. */
+export const GRAMMAR_GROUPS = ["nouns", "pronouns", "verbs", "prepositions", "sentences"] as const;
+export type GrammarGroup = (typeof GRAMMAR_GROUPS)[number];
+
+export const GRAMMAR_GROUP_OF_TOPIC: Readonly<Record<GrammarTopic, GrammarGroup>> = {
+  articles: "nouns",
+  cases: "nouns",
+  plural: "nouns",
+  pronouns: "pronouns",
+  possessives: "pronouns",
+  modal: "verbs",
+  imperative: "verbs",
+  perfekt: "verbs",
+  separable: "verbs",
+  prepositions: "prepositions",
+  "word-order": "sentences",
+  questions: "sentences",
+  negation: "sentences",
+  conjunctions: "sentences",
+};
 
 export const EXERCISE_TYPES = ["choice", "fill", "transform"] as const;
 export type GrammarExerciseType = (typeof EXERCISE_TYPES)[number];

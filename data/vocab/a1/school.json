@@ -25,6 +25,7 @@
       "fa": "من روزنامه می‌خوانم."
     },
     "category": "school",
+    "subcategory": "classroom",
     "level": "A1"
   },
   {
@@ -53,6 +54,7 @@
       "fa": "من در دانشگاه درس می‌خوانم."
     },
     "category": "school",
+    "subcategory": "people-places",
     "level": "A1"
   },
   {
@@ -81,6 +83,7 @@
       "fa": "معلم دستور زبان را توضیح می‌دهد."
     },
     "category": "school",
+    "subcategory": "people-places",
     "level": "A1"
   },
   {
@@ -109,6 +112,7 @@
       "fa": "مدرسه ساعت هشت شروع می‌شود."
     },
     "category": "school",
+    "subcategory": "people-places",
     "level": "A1"
   },
   {
@@ -137,6 +141,7 @@
       "fa": "معلم تمرین را توضیح می‌دهد."
     },
     "category": "school",
+    "subcategory": "people-places",
     "level": "A1",
     "tags": [
       "person"
@@ -168,6 +173,7 @@
       "fa": "دانش‌آموز تکلیف را انجام می‌دهد."
     },
     "category": "school",
+    "subcategory": "people-places",
     "level": "A1",
     "tags": [
       "person"
@@ -199,6 +205,7 @@
       "fa": "کتاب جالب است."
     },
     "category": "school",
+    "subcategory": "classroom",
     "level": "A1"
   },
   {
@@ -227,6 +234,521 @@
       "fa": "دفتر روی میز است."
     },
     "category": "school",
+    "subcategory": "classroom",
+    "level": "A1"
+  },
+  {
+    "id": "kugelschreiber",
+    "word": "Kugelschreiber",
+    "article": "der",
+    "plural": "Kugelschreiber",
+    "translations": {
+      "en": "ballpoint pen",
+      "fa": "خودکار"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: der Schreiber gives der Kugelschreiber.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: der Schreiber می‌شود der Kugelschreiber.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: der Schreiber ergibt der Kugelschreiber.",
+      "simple": {
+        "en": "Look at the last part: der Schreiber, so der Kugelschreiber.",
+        "fa": "به بخش آخر نگاه کنید: der Schreiber، پس der Kugelschreiber.",
+        "de": "Schau auf den letzten Teil: der Schreiber, also der Kugelschreiber."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Der Kugelschreiber schreibt blau.",
+      "en": "The ballpoint pen writes in blue.",
+      "fa": "خودکار آبی می‌نویسد."
+    },
+    "category": "school",
+    "subcategory": "classroom",
+    "level": "A1",
+    "tags": [
+      "compound"
+    ]
+  },
+  {
+    "id": "bleistift",
+    "word": "Bleistift",
+    "article": "der",
+    "plural": "Bleistifte",
+    "translations": {
+      "en": "pencil",
+      "fa": "مداد"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: der Stift gives der Bleistift.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: der Stift می‌شود der Bleistift.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: der Stift ergibt der Bleistift.",
+      "simple": {
+        "en": "Look at the last part: der Stift, so der Bleistift.",
+        "fa": "به بخش آخر نگاه کنید: der Stift، پس der Bleistift.",
+        "de": "Schau auf den letzten Teil: der Stift, also der Bleistift."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Ich schreibe mit dem Bleistift.",
+      "en": "I write with the pencil.",
+      "fa": "من با مداد می‌نویسم."
+    },
+    "category": "school",
+    "subcategory": "classroom",
+    "level": "A1",
+    "tags": [
+      "compound"
+    ]
+  },
+  {
+    "id": "radiergummi",
+    "word": "Radiergummi",
+    "article": "der",
+    "plural": "Radiergummis",
+    "translations": {
+      "en": "eraser",
+      "fa": "پاک‌کن"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Radiergummi).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Radiergummi).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Radiergummi).",
+      "simple": {
+        "en": "Just learn it: der Radiergummi.",
+        "fa": "فقط حفظش کنید: der Radiergummi.",
+        "de": "Einfach lernen: der Radiergummi."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Hast du einen Radiergummi?",
+      "en": "Do you have an eraser?",
+      "fa": "پاک‌کن داری؟"
+    },
+    "category": "school",
+    "subcategory": "classroom",
+    "level": "A1"
+  },
+  {
+    "id": "lineal",
+    "word": "Lineal",
+    "article": "das",
+    "plural": "Lineale",
+    "translations": {
+      "en": "ruler",
+      "fa": "خط‌کش"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Lineal).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Lineal).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Lineal).",
+      "simple": {
+        "en": "Just learn it: das Lineal.",
+        "fa": "فقط حفظش کنید: das Lineal.",
+        "de": "Einfach lernen: das Lineal."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Das Lineal ist lang.",
+      "en": "The ruler is long.",
+      "fa": "خط‌کش بلند است."
+    },
+    "category": "school",
+    "subcategory": "classroom",
+    "level": "A1"
+  },
+  {
+    "id": "woerterbuch",
+    "word": "Wörterbuch",
+    "article": "das",
+    "plural": "Wörterbücher",
+    "translations": {
+      "en": "dictionary",
+      "fa": "فرهنگ لغت"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: das Buch gives das Wörterbuch.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: das Buch می‌شود das Wörterbuch.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: das Buch ergibt das Wörterbuch.",
+      "simple": {
+        "en": "Look at the last part: das Buch, so das Wörterbuch.",
+        "fa": "به بخش آخر نگاه کنید: das Buch، پس das Wörterbuch.",
+        "de": "Schau auf den letzten Teil: das Buch, also das Wörterbuch."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Das Wörterbuch ist dick.",
+      "en": "The dictionary is thick.",
+      "fa": "فرهنگ لغت قطور است."
+    },
+    "category": "school",
+    "subcategory": "classroom",
+    "level": "A1",
+    "tags": [
+      "compound"
+    ]
+  },
+  {
+    "id": "schere",
+    "word": "Schere",
+    "article": "die",
+    "plural": "Scheren",
+    "translations": {
+      "en": "scissors",
+      "fa": "قیچی"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Nase.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Nase.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Nase.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Schere ist scharf.",
+      "en": "The scissors are sharp.",
+      "fa": "قیچی تیز است."
+    },
+    "category": "school",
+    "subcategory": "classroom",
+    "level": "A1"
+  },
+  {
+    "id": "schultasche",
+    "word": "Schultasche",
+    "article": "die",
+    "plural": "Schultaschen",
+    "translations": {
+      "en": "school bag",
+      "fa": "کیف مدرسه"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: die Tasche gives die Schultasche.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: die Tasche می‌شود die Schultasche.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: die Tasche ergibt die Schultasche.",
+      "simple": {
+        "en": "Look at the last part: die Tasche, so die Schultasche.",
+        "fa": "به بخش آخر نگاه کنید: die Tasche، پس die Schultasche.",
+        "de": "Schau auf den letzten Teil: die Tasche, also die Schultasche."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Die Schultasche ist voll.",
+      "en": "The school bag is full.",
+      "fa": "کیف مدرسه پر است."
+    },
+    "category": "school",
+    "subcategory": "classroom",
+    "level": "A1",
+    "tags": [
+      "compound"
+    ]
+  },
+  {
+    "id": "schuelerin",
+    "word": "Schülerin",
+    "article": "die",
+    "plural": "Schülerinnen",
+    "translations": {
+      "en": "pupil (female)",
+      "fa": "دانش‌آموز (دختر)"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -in (female form of a person) are always feminine (die): die Lehrerin, die Schülerin, die Studentin.",
+      "fa": "اسم‌هایی که به -in ختم می‌شوند (شکل مؤنث افراد) همیشه مؤنث (die) هستند: die Lehrerin, die Schülerin, die Studentin.",
+      "de": "Nomen auf -in (weibliche Personen) sind immer feminin (die): die Lehrerin, die Schülerin, die Studentin.",
+      "simple": {
+        "en": "Words ending in -in (female person) are always die.",
+        "fa": "کلمات ختم‌شده به -in (شخص مؤنث) همیشه die هستند.",
+        "de": "Wörter auf -in (weibliche Person) sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Schülerin liest ein Buch.",
+      "en": "The pupil is reading a book.",
+      "fa": "دانش‌آموز یک کتاب می‌خواند."
+    },
+    "category": "school",
+    "subcategory": "people-places",
+    "level": "A1",
+    "tags": [
+      "person"
+    ]
+  },
+  {
+    "id": "klasse",
+    "word": "Klasse",
+    "article": "die",
+    "plural": "Klassen",
+    "translations": {
+      "en": "class",
+      "fa": "کلاس"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Nase.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Nase.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Nase.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Klasse hat zwanzig Schüler.",
+      "en": "The class has twenty pupils.",
+      "fa": "کلاس بیست دانش‌آموز دارد."
+    },
+    "category": "school",
+    "subcategory": "people-places",
+    "level": "A1"
+  },
+  {
+    "id": "klassenzimmer",
+    "word": "Klassenzimmer",
+    "article": "das",
+    "plural": "Klassenzimmer",
+    "translations": {
+      "en": "classroom",
+      "fa": "کلاس درس"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: das Zimmer gives das Klassenzimmer.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: das Zimmer می‌شود das Klassenzimmer.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: das Zimmer ergibt das Klassenzimmer.",
+      "simple": {
+        "en": "Look at the last part: das Zimmer, so das Klassenzimmer.",
+        "fa": "به بخش آخر نگاه کنید: das Zimmer، پس das Klassenzimmer.",
+        "de": "Schau auf den letzten Teil: das Zimmer, also das Klassenzimmer."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Das Klassenzimmer ist hell.",
+      "en": "The classroom is bright.",
+      "fa": "کلاس درس روشن است."
+    },
+    "category": "school",
+    "subcategory": "people-places",
+    "level": "A1",
+    "tags": [
+      "compound"
+    ]
+  },
+  {
+    "id": "hausaufgabe",
+    "word": "Hausaufgabe",
+    "article": "die",
+    "plural": "Hausaufgaben",
+    "translations": {
+      "en": "homework",
+      "fa": "تکلیف خانه"
+    },
+    "grammarRule": {
+      "en": "A compound noun takes the article of its last part: die Aufgabe gives die Hausaufgabe.",
+      "fa": "اسم مرکب آرتیکل بخش آخر خود را می‌گیرد: die Aufgabe می‌شود die Hausaufgabe.",
+      "de": "Ein zusammengesetztes Nomen hat den Artikel seines letzten Teils: die Aufgabe ergibt die Hausaufgabe.",
+      "simple": {
+        "en": "Look at the last part: die Aufgabe, so die Hausaufgabe.",
+        "fa": "به بخش آخر نگاه کنید: die Aufgabe، پس die Hausaufgabe.",
+        "de": "Schau auf den letzten Teil: die Aufgabe, also die Hausaufgabe."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Die Hausaufgabe ist leicht.",
+      "en": "The homework is easy.",
+      "fa": "تکلیف خانه آسان است."
+    },
+    "category": "school",
+    "subcategory": "subjects",
+    "level": "A1",
+    "tags": [
+      "compound"
+    ]
+  },
+  {
+    "id": "pruefung",
+    "word": "Prüfung",
+    "article": "die",
+    "plural": "Prüfungen",
+    "translations": {
+      "en": "exam",
+      "fa": "امتحان"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ung are always feminine (die): die Zeitung, die Wohnung, die Übung.",
+      "fa": "اسم‌هایی که به -ung ختم می‌شوند همیشه مؤنث (die) هستند: die Zeitung, die Wohnung, die Übung.",
+      "de": "Nomen auf -ung sind immer feminin (die): die Zeitung, die Wohnung, die Übung.",
+      "simple": {
+        "en": "Words ending in -ung are always die.",
+        "fa": "کلمات ختم‌شده به -ung همیشه die هستند.",
+        "de": "Wörter auf -ung sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Morgen habe ich eine Prüfung.",
+      "en": "Tomorrow I have an exam.",
+      "fa": "فردا امتحان دارم."
+    },
+    "category": "school",
+    "subcategory": "subjects",
+    "level": "A1"
+  },
+  {
+    "id": "uebung",
+    "word": "Übung",
+    "article": "die",
+    "plural": "Übungen",
+    "translations": {
+      "en": "exercise",
+      "fa": "تمرین"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ung are always feminine (die): die Zeitung, die Wohnung, die Übung.",
+      "fa": "اسم‌هایی که به -ung ختم می‌شوند همیشه مؤنث (die) هستند: die Zeitung, die Wohnung, die Übung.",
+      "de": "Nomen auf -ung sind immer feminin (die): die Zeitung, die Wohnung, die Übung.",
+      "simple": {
+        "en": "Words ending in -ung are always die.",
+        "fa": "کلمات ختم‌شده به -ung همیشه die هستند.",
+        "de": "Wörter auf -ung sind immer die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Die Übung ist schwer.",
+      "en": "The exercise is difficult.",
+      "fa": "تمرین سخت است."
+    },
+    "category": "school",
+    "subcategory": "subjects",
+    "level": "A1"
+  },
+  {
+    "id": "mathematik",
+    "word": "Mathematik",
+    "article": "die",
+    "plural": "–",
+    "translations": {
+      "en": "mathematics",
+      "fa": "ریاضی"
+    },
+    "grammarRule": {
+      "en": "Nouns ending in -ik are usually feminine (die): die Musik, die Mathematik, die Physik.",
+      "fa": "اسم‌هایی که به -ik ختم می‌شوند معمولاً مؤنث (die) هستند: die Musik, die Mathematik, die Physik.",
+      "de": "Nomen auf -ik sind meist feminin (die): die Musik, die Mathematik, die Physik.",
+      "simple": {
+        "en": "Words ending in -ik are usually die.",
+        "fa": "کلمات ختم‌شده به -ik معمولاً die هستند.",
+        "de": "Wörter auf -ik sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich lerne gern Mathematik.",
+      "en": "I like learning mathematics.",
+      "fa": "من ریاضی خواندن را دوست دارم."
+    },
+    "category": "school",
+    "subcategory": "subjects",
+    "level": "A1"
+  },
+  {
+    "id": "fach",
+    "word": "Fach",
+    "article": "das",
+    "plural": "Fächer",
+    "translations": {
+      "en": "subject",
+      "fa": "درس، رشته‌ی درسی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (das Fach).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (das Fach).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (das Fach).",
+      "simple": {
+        "en": "Just learn it: das Fach.",
+        "fa": "فقط حفظش کنید: das Fach.",
+        "de": "Einfach lernen: das Fach."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Welches Fach magst du?",
+      "en": "Which subject do you like?",
+      "fa": "کدام درس را دوست داری؟"
+    },
+    "category": "school",
+    "subcategory": "subjects",
+    "level": "A1"
+  },
+  {
+    "id": "kurs",
+    "word": "Kurs",
+    "article": "der",
+    "plural": "Kurse",
+    "translations": {
+      "en": "course",
+      "fa": "دوره، کلاس آموزشی"
+    },
+    "grammarRule": {
+      "en": "No reliable rule: learn the article together with the noun (der Kurs).",
+      "fa": "قاعده‌ی قابل‌اعتمادی وجود ندارد: آرتیکل را همراه با اسم حفظ کنید (der Kurs).",
+      "de": "Keine verlässliche Regel: Lerne den Artikel immer zusammen mit dem Nomen (der Kurs).",
+      "simple": {
+        "en": "Just learn it: der Kurs.",
+        "fa": "فقط حفظش کنید: der Kurs.",
+        "de": "Einfach lernen: der Kurs."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Der Kurs beginnt am Montag.",
+      "en": "The course starts on Monday.",
+      "fa": "دوره دوشنبه شروع می‌شود."
+    },
+    "category": "school",
+    "subcategory": "subjects",
+    "level": "A1"
+  },
+  {
+    "id": "frage",
+    "word": "Frage",
+    "article": "die",
+    "plural": "Fragen",
+    "translations": {
+      "en": "question",
+      "fa": "سؤال"
+    },
+    "grammarRule": {
+      "en": "Most nouns ending in -e are feminine (die): die Lampe, die Reise, die Nase.",
+      "fa": "بیشتر اسم‌هایی که به -e ختم می‌شوند مؤنث (die) هستند: die Lampe, die Reise, die Nase.",
+      "de": "Die meisten Nomen auf -e sind feminin (die): die Lampe, die Reise, die Nase.",
+      "simple": {
+        "en": "Words ending in -e are usually die.",
+        "fa": "کلمات ختم‌شده به -e معمولاً die هستند.",
+        "de": "Wörter auf -e sind meist die."
+      }
+    },
+    "ruleCategory": "suffix",
+    "example": {
+      "de": "Ich habe eine Frage.",
+      "en": "I have a question.",
+      "fa": "من یک سؤال دارم."
+    },
+    "category": "school",
+    "subcategory": "subjects",
     "level": "A1"
   }
 ]

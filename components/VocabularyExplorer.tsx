@@ -5,7 +5,8 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { ReviewCard, ReviewKind } from "@/lib/reviewCards";
 import { useSrsStore } from "@/stores/srsStore";
-import { VOCAB_CATEGORIES } from "@/types/vocab";
+import { VOCAB_CATEGORIES, VOCAB_SUBCATEGORIES } from "@/types/vocab";
+import type { VocabCategory } from "@/types/vocab";
 import { ADVERB_KINDS, PHRASE_SITUATIONS } from "@/types/vocab-extended";
 import AddToReviewButton from "./AddToReviewButton";
 import CardFront from "./CardFront";
@@ -77,6 +78,7 @@ export default function VocabularyExplorer({ cards }: { cards: readonly ReviewCa
 
   const [kind, setKind] = useState<ReviewKind>("noun");
   const [group, setGroup] = useState<string>("all");
+  const [subgroup, setSubgroup] = useState<string>("all");
   const [query, setQuery] = useState("");
   const [message, setMessage] = useState<string | null>(null);
   const addCards = useSrsStore((s) => s.addCards);
@@ -101,12 +103,19 @@ export default function VocabularyExplorer({ cards }: { cards: readonly ReviewCa
   }, []);
 
   const groups = GROUPS[kind];
+  const subgroups = kind === "noun" && group !== "all" ? VOCAB_SUBCATEGORIES[group as VocabCategory] : undefined;
+
+  const chooseGroup = (next: string) => {
+    setGroup(next);
+    setSubgroup("all");
+  };
 
   const visible = useMemo(() => {
     const q = normalise(query.trim());
     return cards.filter((c) => {
       if (c.kind !== kind) return false;
       if (group !== "all" && c.group !== group) return false;
+      if (subgroup !== "all" && c.subgroup !== subgroup) return false;
       if (q === "") return true;
       return (
         normalise(c.front).includes(q) ||
@@ -115,13 +124,14 @@ export default function VocabularyExplorer({ cards }: { cards: readonly ReviewCa
         (c.example !== undefined && normalise(c.example.de).includes(q))
       );
     });
-  }, [cards, kind, group, query]);
+  }, [cards, kind, group, subgroup, query]);
 
   const missing = visible.filter((c) => deckIds[c.id] === undefined);
 
   const chooseKind = (next: ReviewKind) => {
     setKind(next);
     setGroup("all");
+    setSubgroup("all");
     setMessage(null);
   };
 
@@ -141,6 +151,7 @@ export default function VocabularyExplorer({ cards }: { cards: readonly ReviewCa
   const clearFilters = () => {
     setKind("noun");
     setGroup("all");
+    setSubgroup("all");
     setQuery("");
     setMessage(null);
     searchInput.current?.focus();
@@ -163,12 +174,25 @@ export default function VocabularyExplorer({ cards }: { cards: readonly ReviewCa
 
         {groups && (
           <div role="group" aria-label={t("groupLabel")} className={pillRow}>
-            <button type="button" aria-pressed={group === "all"} onClick={() => setGroup("all")} className="pill">
+            <button type="button" aria-pressed={group === "all"} onClick={() => chooseGroup("all")} className="pill">
               {t("groupAll")}
             </button>
             {groups.map((g) => (
-              <button key={g} type="button" aria-pressed={group === g} onClick={() => setGroup(g)} className="pill">
+              <button key={g} type="button" aria-pressed={group === g} onClick={() => chooseGroup(g)} className="pill">
                 {t(`groups.${kind}.${g}`)}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {subgroups && (
+          <div role="group" aria-label={t("subgroupLabel")} className={pillRow}>
+            <button type="button" aria-pressed={subgroup === "all"} onClick={() => setSubgroup("all")} className="pill">
+              {t("subgroupAll")}
+            </button>
+            {subgroups.map((s) => (
+              <button key={s} type="button" aria-pressed={subgroup === s} onClick={() => setSubgroup(s)} className="pill">
+                {t(`subgroups.${group}.${s}`)}
               </button>
             ))}
           </div>

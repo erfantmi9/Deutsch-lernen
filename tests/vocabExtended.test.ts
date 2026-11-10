@@ -16,7 +16,7 @@ describe("shipped vocabulary", () => {
       expect(vocab.filter((w) => w.category === c)).toHaveLength(25);
       expect(VOCAB_CATEGORIES).toContain(c);
     }
-    expect(vocab.length).toBe(56 + 200);
+    expect(vocab.length).toBe(477);
   });
 
   it("has unique noun ids and consistent articles", () => {
@@ -24,9 +24,9 @@ describe("shipped vocabulary", () => {
     for (const w of vocab) expect(["der", "die", "das"]).toContain(w.article);
   });
 
-  it("has 40 verbs with unique ids", () => {
-    expect(verbs).toHaveLength(40);
-    expect(new Set(verbs.map((v) => v.id)).size).toBe(40);
+  it("has 63 verbs with unique ids", () => {
+    expect(verbs).toHaveLength(63);
+    expect(new Set(verbs.map((v) => v.id)).size).toBe(63);
   });
 
   it("starts every batch with 25 adjectives, adverbs, prepositions and about 25 phrases", () => {

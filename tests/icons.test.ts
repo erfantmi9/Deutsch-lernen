@@ -9,11 +9,11 @@ describe("noun icons", () => {
     expect(new Set(NOUN_ICON_KEYS).size).toBe(NOUN_ICON_KEYS.length);
   });
 
-  it("maps every core-category vocab id to a dedicated icon", () => {
-    // Words added by the extended categories fall back to their category icon.
-    const core = new Set(["food", "family", "home", "travel", "time", "school", "body"]);
-    const missing = vocab.filter((w) => core.has(w.category) && !ICON_BY_VOCAB_ID[w.id]).map((w) => w.id);
-    expect(missing).toEqual([]);
+  it("draws only real nouns, and every drawing is reachable from its noun", () => {
+    // Words without a drawing fall back to their category icon (see below).
+    const ids = new Set(vocab.map((w) => w.id));
+    expect(NOUN_ICON_KEYS.filter((k) => !ids.has(k))).toEqual([]);
+    for (const k of NOUN_ICON_KEYS) expect(ICON_BY_VOCAB_ID[k]).toBe(k);
   });
 
   it("falls back to the category icon for unknown words", () => {

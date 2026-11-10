@@ -16,6 +16,10 @@ import clothes from "./a1/clothes.json";
 import city from "./a1/city.json";
 import hobbies from "./a1/hobbies.json";
 import numbersTime from "./a1/numbers-time.json";
+import health from "./a1/health.json";
+import animals from "./a1/animals.json";
+import services from "./a1/services.json";
+import celebrations from "./a1/celebrations.json";
 
 // Add new category files to this list. Validated once at module load; throws a ZodError on bad data.
 const all: unknown[] = [
@@ -34,6 +38,10 @@ const all: unknown[] = [
   ...city,
   ...hobbies,
   ...numbersTime,
+  ...health,
+  ...animals,
+  ...services,
+  ...celebrations,
 ];
 
 export const vocab: readonly VocabEntry[] = VocabListSchema.parse(all);

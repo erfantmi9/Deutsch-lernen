@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { useQuizStore } from "@/stores/quizStore";
@@ -15,16 +14,6 @@ import { numbersProgress } from "@/lib/numbersStats";
 import { PASS_MARK } from "@/lib/scoreStats";
 import { sentences } from "@/lib/sentences";
 import ProgressRing from "./ProgressRing";
-
-// Below the fold: split into their own chunks and keep the layout stable while they load.
-const placeholder = () => <div aria-hidden="true" className="aspect-[2/1] w-full" />;
-const ArcadeHeader = dynamic(() => import("./illustrations/headers/ArcadeHeader"), { loading: placeholder });
-const VerbsHeader = dynamic(() => import("./illustrations/headers/VerbsHeader"), { loading: placeholder });
-const SentencesHeader = dynamic(() => import("./illustrations/headers/SentencesHeader"), { loading: placeholder });
-const GrammarHeader = dynamic(() => import("./illustrations/headers/GrammarHeader"), { loading: placeholder });
-const NumbersHeader = dynamic(() => import("./illustrations/headers/NumbersHeader"), { loading: placeholder });
-const DialoguesHeader = dynamic(() => import("./illustrations/headers/DialoguesHeader"), { loading: placeholder });
-const ReadingHeader = dynamic(() => import("./illustrations/headers/ReadingHeader"), { loading: placeholder });
 
 /** A streak of this many correct answers counts as 100% for the arcade and verb rings. */
 const STREAK_GOAL = 10;
@@ -72,34 +61,36 @@ export default function ModuleCards({
     };
   }, []);
 
-  const modules = [
-    { key: "grammar", href: "/grammar", art: <GrammarHeader size="100%" />, value: grammarTotal === 0 ? 0 : grammarSolved / grammarTotal },
-    { key: "numbers", href: "/numbers", art: <NumbersHeader size="100%" />, value: numbersDone },
-    { key: "dialogues", href: "/dialogues", art: <DialoguesHeader size="100%" />, value: dialogueTotal === 0 ? 0 : dialoguesPassed / dialogueTotal },
-    { key: "reading", href: "/reading", art: <ReadingHeader size="100%" />, value: readingTotal === 0 ? 0 : readingPassed / readingTotal },
-    { key: "arcade", href: "/arcade", art: <ArcadeHeader size="100%" />, value: quizBest / STREAK_GOAL },
-    { key: "verbs", href: "/verbs", art: <VerbsHeader size="100%" />, value: verbBest / STREAK_GOAL },
-    { key: "sentences", href: "/sentences", art: <SentencesHeader size="100%" />, value: solved / sentences.length },
-  ] as const;
+  const modules: { key: string; href: string; value: number | null }[] = [
+    { key: "arcade", href: "/arcade", value: quizBest / STREAK_GOAL },
+    { key: "grammar", href: "/grammar", value: grammarTotal === 0 ? 0 : grammarSolved / grammarTotal },
+    { key: "verbs", href: "/verbs", value: verbBest / STREAK_GOAL },
+    { key: "vocabulary", href: "/vocabulary", value: null },
+    { key: "numbers", href: "/numbers", value: numbersDone },
+    { key: "sentences", href: "/sentences", value: solved / sentences.length },
+    { key: "dialogues", href: "/dialogues", value: dialogueTotal === 0 ? 0 : dialoguesPassed / dialogueTotal },
+    { key: "reading", href: "/reading", value: readingTotal === 0 ? 0 : readingPassed / readingTotal },
+    { key: "listen", href: "/listen", value: null },
+    { key: "review", href: "/review", value: null },
+  ];
 
   return (
-    <ul className="grid gap-5 sm:grid-cols-2">
+    <ul className="grid gap-3 sm:grid-cols-2">
       {modules.map((m) => {
-        const value = ready ? Math.min(1, m.value) : 0;
+        const value = m.value === null ? null : ready ? Math.min(1, m.value) : 0;
         return (
           <li key={m.key}>
             <Link
               href={m.href}
-              className="card group flex h-full flex-col gap-4 p-5 transition duration-150 hover:-translate-y-1 hover:shadow-lift"
+              className="card flex h-full items-center justify-between gap-3 p-4 transition duration-150 hover:-translate-y-0.5 hover:shadow-lift"
             >
-              <div className="rounded-2xl bg-surface-2 p-3 [&>svg]:h-auto [&>svg]:w-full">{m.art}</div>
-              <div className="flex flex-1 items-start justify-between gap-3">
-                <div className="space-y-1">
-                  <h2 className="text-xl font-extrabold">{t(`modules.${m.key}.title`)}</h2>
-                  <p className="text-sm text-text-muted">{t(`modules.${m.key}.desc`)}</p>
-                </div>
-                <ProgressRing value={value} label={t("progress", { percent: Math.round(value * 100) })} />
-              </div>
+              <span className="min-w-0 space-y-0.5">
+                <span className="block font-extrabold">{t(`modules.${m.key}.title`)}</span>
+                <span className="block text-sm text-text-muted">{t(`modules.${m.key}.desc`)}</span>
+              </span>
+              {value !== null && (
+                <ProgressRing value={value} size={44} label={t("progress", { percent: Math.round(value * 100) })} />
+              )}
             </Link>
           </li>
         );

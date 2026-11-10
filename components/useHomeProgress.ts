@@ -91,6 +91,7 @@ export function useHomeProgress() {
   });
   const due = buildQueue(srsCards, { today, newPerDay, newDoneToday: reviewLog[today]?.newCards ?? 0 }).ids.length;
   const section = lastVisit ? resumeSection(lastVisit) : null;
+  const hasActivity = Object.values(days).some((n) => n > 0);
 
   return {
     ready,
@@ -102,5 +103,10 @@ export function useHomeProgress() {
     todayCount: days[today] ?? 0,
     goal,
     resume: lastVisit && section ? { href: lastVisit, section } : null,
+    /** Nothing saved yet: no step done, no review cards, no answers, no visited section. */
+    isNew: !steps.some((s) => s.done) && deckSize === 0 && !hasActivity && !section,
+    /** Answers given on any day so far, including today. */
+    hasActivity,
+    streakDays: days,
   };
 }
