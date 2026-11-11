@@ -2,9 +2,7 @@ import { expect, test } from "@playwright/test";
 import type { Page } from "@playwright/test";
 import { shot } from "./helpers";
 
-// Vocabulary: sticky FilterBar (kind pills, topic pills, search, "Showing N" count). The count is the page's only live region.
-const liveRegions = (page: Page) =>
-  page.evaluate(() => document.querySelectorAll("main [role=status], main [aria-live=polite], main [aria-live=assertive]").length);
+// Vocabulary: topic grid -> topic word list (pills, search, expandable rows, practice bar) -> topic practice round.
 const allLiveRegions = (page: Page) =>
   page.evaluate(
     () =>
@@ -13,90 +11,90 @@ const allLiveRegions = (page: Page) =>
       ).length,
   );
 
-/** Records every text change of the FilterBar count, so a single filter change is shown to announce exactly once. */
-async function watchCount(page: Page) {
-  await page.evaluate(() => {
-    const w = window as unknown as { __countChanges: string[] };
-    w.__countChanges = [];
-    const el = document.querySelector("main [role=status]")!;
-    new MutationObserver(() => w.__countChanges.push(el.textContent ?? "")).observe(el, { childList: true, characterData: true, subtree: true });
-  });
-}
-const countChanges = (page: Page) => page.evaluate(() => (window as unknown as { __countChanges: string[] }).__countChanges);
-
 for (const locale of ["en", "fa"] as const) {
   test.describe(`vocabulary (${locale})`, () => {
-    test("filter bar sticks under the header, stays small and holds the one live count", async ({ page }, testInfo) => {
+    test("topic grid lists every topic and opens one", async ({ page }, testInfo) => {
       await page.goto(`/${locale}/vocabulary`);
-      const bar = page.locator("main div.sticky").filter({ has: page.locator("input[type=search]") });
-      const status = bar.getByRole("status");
-      await expect(status).toHaveText(/\p{Nd}/u);
+      await expect(page.locator("main a[data-topic]")).toHaveCount(23);
       expect(await allLiveRegions(page)).toBe(1);
-      expect(await liveRegions(page)).toBe(1);
+      // The deck loads on the client; each tile then names its review share for screen readers.
+      await expect(page.locator("main a[data-topic=family] .sr-only")).toHaveText(/\p{Nd}/u);
+      await shot(page, testInfo, "vocabulary", locale, "topics");
 
-      const vh = page.viewportSize()!.height;
-      const height = (await bar.boundingBox())!.height;
-      expect(height).toBeLessThanOrEqual(vh * 0.4);
-
-      // Kind and topic pills are single scrollable rows, so they never wrap into a tall block.
-      for (const group of await bar.getByRole("group").all()) {
-        const pills = group.getByRole("button");
-        const first = (await pills.first().boundingBox())!;
-        const last = (await pills.last().boundingBox())!;
-        expect(Math.abs(first.y - last.y)).toBeLessThan(2);
-      }
-
-      await shot(page, testInfo, "vocabulary", locale, "top");
-      await page.mouse.wheel(0, 1500);
-      await expect(async () => {
-        const header = (await page.locator("header").first().boundingBox())!;
-        const box = (await bar.boundingBox())!;
-        expect(Math.abs(box.y - (header.y + header.height))).toBeLessThan(2);
-      }).toPass({ timeout: 3000 });
-      await expect(status).toBeInViewport();
-      await shot(page, testInfo, "vocabulary", locale, "scrolled");
+      await page.locator("main a[data-topic=family]").click();
+      await expect(page).toHaveURL(new RegExp(`/${locale}/vocabulary/family$`));
+      await expect(page.locator("main h1")).toBeVisible();
+      await expect(page.locator("main [data-word-row]").first()).toBeVisible();
     });
 
-    test("count updates once per filter change", async ({ page }) => {
+    test("search: results, then nothing found with a way back to the topics", async ({ page }, testInfo) => {
       await page.goto(`/${locale}/vocabulary`);
-      const status = page.locator("main [role=status]");
-      await expect(status).toHaveText(/\p{Nd}/u);
-      const before = await status.textContent();
-      await watchCount(page);
-      await page.locator("main [role=group]").nth(1).getByRole("button").nth(1).click(); // first topic
-      await expect(status).not.toHaveText(before!);
-      await page.waitForTimeout(300);
-      expect(await countChanges(page)).toHaveLength(1);
-      expect(await allLiveRegions(page)).toBe(1);
-    });
-
-    test("empty state: Clear filters resets kind, topic and query and focuses the search", async ({ page }, testInfo) => {
-      await page.goto(`/${locale}/vocabulary`);
-      await page.getByRole("button", { name: /Adjectives|صفت/ }).first().click();
       const search = page.locator("main input[type=search]");
+      await search.fill("Vater");
+      await expect(page.locator("main [data-word-row]").first()).toContainText("Vater");
+      await expect(page.locator("main a[data-topic]")).toHaveCount(0);
+
       await search.fill("zzzzqqq");
-      const clear = page.locator("main .card button");
-      await expect(clear).toBeVisible();
-      await expect(clear).toBeInViewport();
+      await expect(page.locator("main [data-word-row]")).toHaveCount(0);
       await shot(page, testInfo, "vocabulary", locale, "empty");
-      await clear.click();
+      await expect(page.locator("main a[href$='/vocabulary/family']")).toBeVisible(); // a suggested topic
+      await page.getByRole("button", { name: /Clear search|پاک کردن جستجو/ }).last().click();
       await expect(search).toHaveValue("");
       await expect(search).toBeFocused();
-      await expect(page.locator("main [role=group]").first().getByRole("button").first()).toHaveAttribute("aria-pressed", "true");
-      await expect(page.locator("main [role=group]").nth(1).getByRole("button").first()).toHaveAttribute("aria-pressed", "true");
-      await expect(page.locator("main ul li.card").first()).toBeVisible();
+      await expect(page.locator("main a[data-topic]")).toHaveCount(23);
       expect(await allLiveRegions(page)).toBe(1);
     });
 
-    test("add-all result is shown without adding a second live region", async ({ page }) => {
-      await page.goto(`/${locale}/vocabulary`);
-      await page.locator("main [role=group]").nth(1).getByRole("button").nth(1).click();
-      await page.locator("main button[aria-haspopup=dialog].btn-secondary").click();
-      await page.locator("dialog[open] button.btn-primary").click();
-      const result = page.getByTestId("add-all-result");
-      await expect(result).toBeVisible();
-      await expect(result).toBeFocused();
+    test("topic page: pills filter, a row opens in place, adding marks it", async ({ page }, testInfo) => {
+      await page.goto(`/${locale}/vocabulary/family`);
+      const rows = page.locator("main [data-word-row]");
+      const all = await rows.count();
+      const pills = page.locator("main [role=group] button");
+      const first = (await pills.first().boundingBox())!;
+      const last = (await pills.last().boundingBox())!;
+      expect(Math.abs(first.y - last.y)).toBeLessThan(2); // one scrollable row
+      await pills.nth(1).click();
+      await expect(pills.nth(1)).toHaveAttribute("aria-pressed", "true");
+      await expect.poll(() => rows.count()).toBeLessThan(all);
+
+      const toggle = rows.first().locator("button[aria-expanded]");
+      await toggle.click();
+      await expect(toggle).toHaveAttribute("aria-expanded", "true");
+      const add = rows.first().locator("button[data-add-review]");
+      await expect(add).not.toHaveAttribute("aria-busy", "true");
+      await add.click();
+      await expect(add).toHaveAttribute("aria-pressed", "true");
+      await expect(rows.first().getByText(/In your review deck|در مرور تو هست/)).toHaveCount(1);
+      await shot(page, testInfo, "vocabulary", locale, "topic-open");
       expect(await allLiveRegions(page)).toBe(1);
+
+      // The practice bar stays in view above the bottom navigation and starts the selected sub-topic.
+      const cta = page.locator("main a[data-practice-link]");
+      await expect(cta).toBeInViewport();
+      await expect(cta).toHaveAttribute("href", /\/vocabulary\/family\/practice\?sub=/);
+    });
+
+    test("the colour tip shows with the colour adjectives", async ({ page }, testInfo) => {
+      await page.goto(`/${locale}/vocabulary/adjectives?sub=color`);
+      await expect(page.locator("main [role=group] button[aria-pressed=true]")).not.toHaveText(/All|همه/);
+      await expect(page.locator("main bdi", { hasText: "dunkelblau" }).first()).toBeVisible();
+      await shot(page, testInfo, "vocabulary", locale, "colours");
+    });
+
+    test("practice round: ten questions, then a summary", async ({ page }, testInfo) => {
+      await page.goto(`/${locale}/vocabulary/family/practice`);
+      const next = page.locator("[data-action-button]");
+      for (let i = 0; i < 10; i++) {
+        const options = page.locator("main [data-option]");
+        await expect(options).toHaveCount(4);
+        await options.first().click();
+        await expect(options.first()).toHaveAttribute("data-result", /correct|wrong/);
+        if (i === 0) await shot(page, testInfo, "vocabulary", locale, "practice");
+        await next.click();
+      }
+      await expect(page.locator("#practice-summary")).toBeVisible();
+      await expect(next).toHaveCount(0);
+      await shot(page, testInfo, "vocabulary", locale, "practice-summary");
     });
   });
 }

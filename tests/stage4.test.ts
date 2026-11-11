@@ -97,7 +97,7 @@ describe("Stage 4 messages", () => {
     const groups = en.Vocabulary.groups as Record<string, Record<string, string>>;
     for (const c of reviewCards) {
       if (c.group === undefined) continue;
-      if (c.kind === "verb" || c.kind === "adjective") continue;
+      if (c.kind === "verb") continue;
       expect(groups[c.kind]?.[c.group], `${c.kind}:${c.group}`).toBeTruthy();
     }
   });

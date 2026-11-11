@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { ADVERB_KINDS, PHRASE_SITUATIONS } from "../../types/vocab-extended";
+import { ADJECTIVE_KINDS, ADVERB_KINDS, PHRASE_SITUATIONS } from "../../types/vocab-extended";
 import type { AdjectiveEntry, AdverbEntry, PhraseEntry, PrepositionEntry } from "../../types/vocab-extended";
 import { I18n2Schema, I18n3Schema, LevelSchema, TextSchema } from "./common";
 
@@ -9,6 +9,7 @@ export const AdjectiveEntrySchema = z
   .object({
     id: TextSchema,
     word: TextSchema,
+    kind: z.enum(ADJECTIVE_KINDS),
     comparative: TextSchema.optional(),
     superlative: TextSchema.optional(),
     opposite: TextSchema.optional(),

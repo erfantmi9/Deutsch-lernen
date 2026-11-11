@@ -2,6 +2,7 @@
   {
     "id": "rot",
     "word": "rot",
+    "kind": "color",
     "translations": {
       "en": "red",
       "fa": "قرمز"
@@ -16,6 +17,7 @@
   {
     "id": "blau",
     "word": "blau",
+    "kind": "color",
     "translations": {
       "en": "blue",
       "fa": "آبی"
@@ -30,6 +32,7 @@
   {
     "id": "gruen",
     "word": "grün",
+    "kind": "color",
     "translations": {
       "en": "green",
       "fa": "سبز"
@@ -44,6 +47,7 @@
   {
     "id": "gelb",
     "word": "gelb",
+    "kind": "color",
     "translations": {
       "en": "yellow",
       "fa": "زرد"
@@ -58,6 +62,7 @@
   {
     "id": "schwarz",
     "word": "schwarz",
+    "kind": "color",
     "opposite": "weiß",
     "translations": {
       "en": "black",
@@ -73,6 +78,7 @@
   {
     "id": "weiss",
     "word": "weiß",
+    "kind": "color",
     "opposite": "schwarz",
     "translations": {
       "en": "white",
@@ -88,6 +94,7 @@
   {
     "id": "braun",
     "word": "braun",
+    "kind": "color",
     "translations": {
       "en": "brown",
       "fa": "قهوه‌ای"
@@ -102,6 +109,7 @@
   {
     "id": "grau",
     "word": "grau",
+    "kind": "color",
     "translations": {
       "en": "grey",
       "fa": "خاکستری"
@@ -116,6 +124,7 @@
   {
     "id": "bunt",
     "word": "bunt",
+    "kind": "color",
     "translations": {
       "en": "colourful",
       "fa": "رنگارنگ"
@@ -130,6 +139,7 @@
   {
     "id": "orange",
     "word": "orange",
+    "kind": "color",
     "translations": {
       "en": "orange",
       "fa": "نارنجی"
@@ -144,6 +154,7 @@
   {
     "id": "lila",
     "word": "lila",
+    "kind": "color",
     "translations": {
       "en": "purple",
       "fa": "بنفش"
@@ -158,6 +169,7 @@
   {
     "id": "rosa",
     "word": "rosa",
+    "kind": "color",
     "translations": {
       "en": "pink",
       "fa": "صورتی"
@@ -172,6 +184,7 @@
   {
     "id": "dunkelblau",
     "word": "dunkelblau",
+    "kind": "color",
     "translations": {
       "en": "dark blue",
       "fa": "سرمه‌ای، آبی تیره (dunkel + blau)"
@@ -186,6 +199,7 @@
   {
     "id": "hellblau",
     "word": "hellblau",
+    "kind": "color",
     "translations": {
       "en": "light blue",
       "fa": "آبی روشن (hell + blau)"
@@ -200,6 +214,7 @@
   {
     "id": "dunkelgruen",
     "word": "dunkelgrün",
+    "kind": "color",
     "translations": {
       "en": "dark green",
       "fa": "سبز تیره (dunkel + grün)"
@@ -214,6 +229,7 @@
   {
     "id": "hellgruen",
     "word": "hellgrün",
+    "kind": "color",
     "translations": {
       "en": "light green",
       "fa": "سبز روشن (hell + grün)"
@@ -228,6 +244,7 @@
   {
     "id": "dunkelrot",
     "word": "dunkelrot",
+    "kind": "color",
     "translations": {
       "en": "dark red",
       "fa": "قرمز تیره، زرشکی (dunkel + rot)"
@@ -242,6 +259,7 @@
   {
     "id": "gut",
     "word": "gut",
+    "kind": "quality",
     "comparative": "besser",
     "superlative": "am besten",
     "opposite": "schlecht",
@@ -259,6 +277,7 @@
   {
     "id": "gross",
     "word": "groß",
+    "kind": "size",
     "comparative": "größer",
     "superlative": "am größten",
     "opposite": "klein",
@@ -276,6 +295,7 @@
   {
     "id": "klein",
     "word": "klein",
+    "kind": "size",
     "comparative": "kleiner",
     "superlative": "am kleinsten",
     "opposite": "groß",
@@ -293,6 +313,7 @@
   {
     "id": "neu",
     "word": "neu",
+    "kind": "quality",
     "comparative": "neuer",
     "superlative": "am neuesten",
     "opposite": "alt",
@@ -310,6 +331,7 @@
   {
     "id": "alt",
     "word": "alt",
+    "kind": "quality",
     "comparative": "älter",
     "superlative": "am ältesten",
     "opposite": "neu",
@@ -327,6 +349,7 @@
   {
     "id": "jung",
     "word": "jung",
+    "kind": "people",
     "comparative": "jünger",
     "superlative": "am jüngsten",
     "opposite": "alt",
@@ -344,6 +367,7 @@
   {
     "id": "schnell",
     "word": "schnell",
+    "kind": "quality",
     "comparative": "schneller",
     "superlative": "am schnellsten",
     "opposite": "langsam",
@@ -361,6 +385,7 @@
   {
     "id": "teuer",
     "word": "teuer",
+    "kind": "quality",
     "comparative": "teurer",
     "superlative": "am teuersten",
     "opposite": "billig",
@@ -378,6 +403,7 @@
   {
     "id": "billig",
     "word": "billig",
+    "kind": "quality",
     "comparative": "billiger",
     "superlative": "am billigsten",
     "opposite": "teuer",
@@ -395,6 +421,7 @@
   {
     "id": "kalt",
     "word": "kalt",
+    "kind": "quality",
     "comparative": "kälter",
     "superlative": "am kältesten",
     "opposite": "warm",
@@ -412,6 +439,7 @@
   {
     "id": "warm",
     "word": "warm",
+    "kind": "quality",
     "comparative": "wärmer",
     "superlative": "am wärmsten",
     "opposite": "kalt",
@@ -429,6 +457,7 @@
   {
     "id": "heiss",
     "word": "heiß",
+    "kind": "quality",
     "comparative": "heißer",
     "superlative": "am heißesten",
     "opposite": "kalt",
@@ -446,6 +475,7 @@
   {
     "id": "schoen",
     "word": "schön",
+    "kind": "quality",
     "comparative": "schöner",
     "superlative": "am schönsten",
     "opposite": "hässlich",
@@ -463,6 +493,7 @@
   {
     "id": "lang",
     "word": "lang",
+    "kind": "size",
     "comparative": "länger",
     "superlative": "am längsten",
     "opposite": "kurz",
@@ -480,6 +511,7 @@
   {
     "id": "muede",
     "word": "müde",
+    "kind": "people",
     "translations": {
       "en": "tired",
       "fa": "خسته"
@@ -494,6 +526,7 @@
   {
     "id": "freundlich",
     "word": "freundlich",
+    "kind": "people",
     "comparative": "freundlicher",
     "superlative": "am freundlichsten",
     "opposite": "unfreundlich",
@@ -511,6 +544,7 @@
   {
     "id": "arm",
     "word": "arm",
+    "kind": "people",
     "comparative": "ärmer",
     "superlative": "am ärmsten",
     "opposite": "reich",
@@ -528,6 +562,7 @@
   {
     "id": "reich",
     "word": "reich",
+    "kind": "people",
     "comparative": "reicher",
     "superlative": "am reichsten",
     "opposite": "arm",
@@ -545,6 +580,7 @@
   {
     "id": "bekannt",
     "word": "bekannt",
+    "kind": "quality",
     "comparative": "bekannter",
     "superlative": "am bekanntesten",
     "translations": {
@@ -561,6 +597,7 @@
   {
     "id": "besetzt",
     "word": "besetzt",
+    "kind": "quality",
     "opposite": "frei",
     "translations": {
       "en": "taken, occupied, busy",
@@ -576,6 +613,7 @@
   {
     "id": "dick",
     "word": "dick",
+    "kind": "size",
     "comparative": "dicker",
     "superlative": "am dicksten",
     "opposite": "dünn",
@@ -593,6 +631,7 @@
   {
     "id": "duenn",
     "word": "dünn",
+    "kind": "size",
     "comparative": "dünner",
     "superlative": "am dünnsten",
     "opposite": "dick",
@@ -610,6 +649,7 @@
   {
     "id": "dunkel",
     "word": "dunkel",
+    "kind": "quality",
     "comparative": "dunkler",
     "superlative": "am dunkelsten",
     "opposite": "hell",
@@ -627,6 +667,7 @@
   {
     "id": "hell",
     "word": "hell",
+    "kind": "quality",
     "comparative": "heller",
     "superlative": "am hellsten",
     "opposite": "dunkel",
@@ -644,6 +685,7 @@
   {
     "id": "einfach",
     "word": "einfach",
+    "kind": "quality",
     "comparative": "einfacher",
     "superlative": "am einfachsten",
     "opposite": "schwer",
@@ -661,6 +703,7 @@
   {
     "id": "schwer",
     "word": "schwer",
+    "kind": "quality",
     "comparative": "schwerer",
     "superlative": "am schwersten",
     "opposite": "leicht",
@@ -678,6 +721,7 @@
   {
     "id": "leicht",
     "word": "leicht",
+    "kind": "quality",
     "comparative": "leichter",
     "superlative": "am leichtesten",
     "opposite": "schwer",
@@ -695,6 +739,7 @@
   {
     "id": "falsch",
     "word": "falsch",
+    "kind": "quality",
     "opposite": "richtig",
     "translations": {
       "en": "wrong",
@@ -710,6 +755,7 @@
   {
     "id": "richtig",
     "word": "richtig",
+    "kind": "quality",
     "opposite": "falsch",
     "translations": {
       "en": "right, correct",
@@ -725,6 +771,7 @@
   {
     "id": "fertig",
     "word": "fertig",
+    "kind": "quality",
     "translations": {
       "en": "ready, finished",
       "fa": "آماده، تمام"
@@ -739,6 +786,7 @@
   {
     "id": "frei",
     "word": "frei",
+    "kind": "quality",
     "opposite": "besetzt",
     "translations": {
       "en": "free, vacant",
@@ -754,6 +802,7 @@
   {
     "id": "fremd",
     "word": "fremd",
+    "kind": "quality",
     "translations": {
       "en": "foreign, strange",
       "fa": "غریبه، ناآشنا"
@@ -768,6 +817,7 @@
   {
     "id": "froh",
     "word": "froh",
+    "kind": "people",
     "translations": {
       "en": "glad",
       "fa": "خوشحال، شاد"
@@ -782,6 +832,7 @@
   {
     "id": "gesund",
     "word": "gesund",
+    "kind": "people",
     "comparative": "gesünder",
     "superlative": "am gesündesten",
     "opposite": "krank",
@@ -799,6 +850,7 @@
   {
     "id": "krank",
     "word": "krank",
+    "kind": "people",
     "comparative": "kränker",
     "superlative": "am kränksten",
     "opposite": "gesund",
@@ -816,6 +868,7 @@
   {
     "id": "gluecklich",
     "word": "glücklich",
+    "kind": "people",
     "comparative": "glücklicher",
     "superlative": "am glücklichsten",
     "opposite": "traurig",
@@ -833,6 +886,7 @@
   {
     "id": "traurig",
     "word": "traurig",
+    "kind": "people",
     "comparative": "trauriger",
     "superlative": "am traurigsten",
     "opposite": "glücklich",
@@ -850,6 +904,7 @@
   {
     "id": "guenstig",
     "word": "günstig",
+    "kind": "quality",
     "comparative": "günstiger",
     "superlative": "am günstigsten",
     "opposite": "teuer",
@@ -867,6 +922,7 @@
   {
     "id": "hoch",
     "word": "hoch",
+    "kind": "size",
     "comparative": "höher",
     "superlative": "am höchsten",
     "translations": {
@@ -883,6 +939,7 @@
   {
     "id": "huebsch",
     "word": "hübsch",
+    "kind": "people",
     "comparative": "hübscher",
     "superlative": "am hübschesten",
     "translations": {
@@ -899,6 +956,7 @@
   {
     "id": "kaputt",
     "word": "kaputt",
+    "kind": "quality",
     "translations": {
       "en": "broken",
       "fa": "خراب"
@@ -913,6 +971,7 @@
   {
     "id": "kurz",
     "word": "kurz",
+    "kind": "size",
     "comparative": "kürzer",
     "superlative": "am kürzesten",
     "opposite": "lang",
@@ -930,6 +989,7 @@
   {
     "id": "langsam",
     "word": "langsam",
+    "kind": "quality",
     "comparative": "langsamer",
     "superlative": "am langsamsten",
     "opposite": "schnell",
@@ -947,6 +1007,7 @@
   {
     "id": "laut",
     "word": "laut",
+    "kind": "quality",
     "comparative": "lauter",
     "superlative": "am lautesten",
     "opposite": "leise",
@@ -964,6 +1025,7 @@
   {
     "id": "leise",
     "word": "leise",
+    "kind": "quality",
     "comparative": "leiser",
     "superlative": "am leisesten",
     "opposite": "laut",
@@ -981,6 +1043,7 @@
   {
     "id": "leer",
     "word": "leer",
+    "kind": "size",
     "opposite": "voll",
     "translations": {
       "en": "empty",
@@ -996,6 +1059,7 @@
   {
     "id": "voll",
     "word": "voll",
+    "kind": "size",
     "opposite": "leer",
     "translations": {
       "en": "full",
@@ -1011,6 +1075,7 @@
   {
     "id": "ledig",
     "word": "ledig",
+    "kind": "people",
     "opposite": "verheiratet",
     "translations": {
       "en": "single (not married)",
@@ -1026,6 +1091,7 @@
   {
     "id": "verheiratet",
     "word": "verheiratet",
+    "kind": "people",
     "opposite": "ledig",
     "translations": {
       "en": "married",
@@ -1041,6 +1107,7 @@
   {
     "id": "geschieden",
     "word": "geschieden",
+    "kind": "people",
     "translations": {
       "en": "divorced",
       "fa": "طلاق‌گرفته"
@@ -1055,6 +1122,7 @@
   {
     "id": "nett",
     "word": "nett",
+    "kind": "people",
     "comparative": "netter",
     "superlative": "am nettesten",
     "translations": {
@@ -1071,6 +1139,7 @@
   {
     "id": "lieb",
     "word": "lieb",
+    "kind": "people",
     "translations": {
       "en": "dear, sweet, kind",
       "fa": "عزیز، مهربان"
@@ -1085,6 +1154,7 @@
   {
     "id": "offen",
     "word": "offen",
+    "kind": "quality",
     "opposite": "geschlossen",
     "translations": {
       "en": "open",
@@ -1100,6 +1170,7 @@
   {
     "id": "geschlossen",
     "word": "geschlossen",
+    "kind": "quality",
     "opposite": "offen",
     "translations": {
       "en": "closed",
@@ -1115,6 +1186,7 @@
   {
     "id": "ruhig",
     "word": "ruhig",
+    "kind": "quality",
     "comparative": "ruhiger",
     "superlative": "am ruhigsten",
     "opposite": "laut",
@@ -1132,6 +1204,7 @@
   {
     "id": "sauber",
     "word": "sauber",
+    "kind": "quality",
     "comparative": "sauberer",
     "superlative": "am saubersten",
     "opposite": "schmutzig",
@@ -1149,6 +1222,7 @@
   {
     "id": "schmutzig",
     "word": "schmutzig",
+    "kind": "quality",
     "comparative": "schmutziger",
     "superlative": "am schmutzigsten",
     "opposite": "sauber",
@@ -1166,6 +1240,7 @@
   {
     "id": "schlecht",
     "word": "schlecht",
+    "kind": "quality",
     "comparative": "schlechter",
     "superlative": "am schlechtesten",
     "opposite": "gut",
@@ -1183,6 +1258,7 @@
   {
     "id": "sicher",
     "word": "sicher",
+    "kind": "quality",
     "comparative": "sicherer",
     "superlative": "am sichersten",
     "translations": {
@@ -1199,6 +1275,7 @@
   {
     "id": "spaet",
     "word": "spät",
+    "kind": "quality",
     "comparative": "später",
     "superlative": "am spätesten",
     "opposite": "früh",
@@ -1216,6 +1293,7 @@
   {
     "id": "frueh",
     "word": "früh",
+    "kind": "quality",
     "comparative": "früher",
     "superlative": "am frühesten",
     "opposite": "spät",
@@ -1233,6 +1311,7 @@
   {
     "id": "toll",
     "word": "toll",
+    "kind": "quality",
     "comparative": "toller",
     "superlative": "am tollsten",
     "translations": {
@@ -1249,6 +1328,7 @@
   {
     "id": "wichtig",
     "word": "wichtig",
+    "kind": "quality",
     "comparative": "wichtiger",
     "superlative": "am wichtigsten",
     "translations": {
@@ -1265,6 +1345,7 @@
   {
     "id": "interessant",
     "word": "interessant",
+    "kind": "quality",
     "comparative": "interessanter",
     "superlative": "am interessantesten",
     "opposite": "langweilig",
@@ -1282,6 +1363,7 @@
   {
     "id": "langweilig",
     "word": "langweilig",
+    "kind": "quality",
     "comparative": "langweiliger",
     "superlative": "am langweiligsten",
     "opposite": "interessant",
@@ -1299,6 +1381,7 @@
   {
     "id": "kostenlos",
     "word": "kostenlos",
+    "kind": "quality",
     "translations": {
       "en": "free (of charge)",
       "fa": "رایگان، مجانی"
@@ -1313,6 +1396,7 @@
   {
     "id": "moeglich",
     "word": "möglich",
+    "kind": "quality",
     "translations": {
       "en": "possible",
       "fa": "ممکن"
@@ -1327,6 +1411,7 @@
   {
     "id": "privat",
     "word": "privat",
+    "kind": "quality",
     "translations": {
       "en": "private",
       "fa": "خصوصی"
@@ -1341,6 +1426,7 @@
   {
     "id": "suess",
     "word": "süß",
+    "kind": "quality",
     "comparative": "süßer",
     "superlative": "am süßesten",
     "translations": {
@@ -1357,6 +1443,7 @@
   {
     "id": "sauer",
     "word": "sauer",
+    "kind": "quality",
     "comparative": "saurer",
     "superlative": "am sauersten",
     "translations": {
@@ -1373,6 +1460,7 @@
   {
     "id": "nass",
     "word": "nass",
+    "kind": "quality",
     "opposite": "trocken",
     "translations": {
       "en": "wet",
@@ -1388,6 +1476,7 @@
   {
     "id": "trocken",
     "word": "trocken",
+    "kind": "quality",
     "comparative": "trockener",
     "superlative": "am trockensten",
     "opposite": "nass",
@@ -1405,6 +1494,7 @@
   {
     "id": "kuehl",
     "word": "kühl",
+    "kind": "quality",
     "comparative": "kühler",
     "superlative": "am kühlsten",
     "opposite": "warm",
@@ -1422,6 +1512,7 @@
   {
     "id": "zufrieden",
     "word": "zufrieden",
+    "kind": "people",
     "comparative": "zufriedener",
     "superlative": "am zufriedensten",
     "translations": {
@@ -1438,6 +1529,7 @@
   {
     "id": "bequem",
     "word": "bequem",
+    "kind": "quality",
     "comparative": "bequemer",
     "superlative": "am bequemsten",
     "translations": {
@@ -1454,6 +1546,7 @@
   {
     "id": "praktisch",
     "word": "praktisch",
+    "kind": "quality",
     "comparative": "praktischer",
     "superlative": "am praktischsten",
     "translations": {

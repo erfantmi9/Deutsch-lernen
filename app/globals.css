@@ -36,6 +36,10 @@
 
   --on-article: 255 255 255;
 
+  /* Brand mustard (BRAND.md), same in both themes. Text on it is always --on-brand (ink), never white. */
+  --brand: 246 196 69; /* #f6c445 */
+  --on-brand: 43 33 24; /* #2b2118 */
+
   /* Article colours as text/accent on a surface (AA contrast per theme). */
   --der-ink: 29 78 216; /* blue-700 */
   --die-ink: 185 28 28; /* red-700 */

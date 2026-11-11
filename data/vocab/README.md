@@ -65,7 +65,7 @@ The validator warns when a noun ending in `-chen` is not `das`. Words whose `-ch
 
 ```json
 {
-  "id": "gut", "word": "gut",
+  "id": "gut", "word": "gut", "kind": "quality",
   "comparative": "besser", "superlative": "am besten", "opposite": "schlecht",
   "translations": { "en": "good", "fa": "خوب" },
   "example": { "de": "Das Essen ist gut.", "en": "The food is good.", "fa": "غذا خوب است." },
@@ -74,6 +74,10 @@ The validator warns when a noun ending in `-chen` is not `das`. Words whose `-ch
 ```
 
 `comparative` and `superlative` come as a pair, or both are left out (colours, `müde`). The superlative starts with `am `.
+
+`"kind"` is the filter on the adjectives page: `color`, `size` (size and amount: `groß`, `voll`), `people` (describes a
+person or how they feel: `müde`, `verheiratet`) or `quality` (everything else). A colour also needs a swatch in
+`COLOR_SWATCH` (`lib/vocabTopics.ts`).
 
 ## Adverb
 

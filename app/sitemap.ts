@@ -5,6 +5,7 @@ import { grammarLessons } from "@/lib/grammar";
 import { readingTexts } from "@/lib/reading";
 import { verbs } from "@/lib/verbs";
 import { siteUrl } from "@/lib/site";
+import { TOPIC_IDS } from "@/lib/vocabTopics";
 import { allPaths, localePath } from "@/lib/sitePaths";
 
 export const dynamic = "force-static";
@@ -16,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     dialogues: dialogues.map((d) => d.id),
     reading: readingTexts.map((r) => r.id),
     verbs: verbs.map((v) => v.id),
+    vocabTopics: TOPIC_IDS,
   });
   return paths.flatMap((path) =>
     routing.locales.map((locale) => ({

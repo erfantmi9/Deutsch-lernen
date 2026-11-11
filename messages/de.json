@@ -618,7 +618,7 @@
   },
   "Vocabulary": {
     "title": "Wortschatz",
-    "subtitle": "Nomen, Adjektive, Adverbien, Präpositionen und Redewendungen – alles, was du für A1 brauchst.",
+    "subtitle": "Such dir ein Thema aus und lern die Wörter eins nach dem anderen.",
     "kindLabel": "Wortart",
     "kinds": {
       "noun": "Nomen",
@@ -629,7 +629,7 @@
       "phrase": "Redewendungen"
     },
     "searchLabel": "Wörter suchen",
-    "searchPlaceholder": "Auf Deutsch oder Englisch suchen",
+    "searchPlaceholder": "Wort suchen, auf Deutsch oder Englisch",
     "groupLabel": "Thema",
     "groupAll": "Alle",
     "groups": {
@@ -675,6 +675,12 @@
         "restaurant": "Restaurant",
         "help": "Um Hilfe bitten",
         "phone": "Am Telefon"
+      },
+      "adjective": {
+        "color": "Farben",
+        "size": "Größe & Menge",
+        "people": "Menschen & Gefühle",
+        "quality": "Eigenschaften"
       }
     },
     "count": "{count, plural, one {# Wort} other {# Wörter}}",
@@ -746,7 +752,39 @@
         "holidays": "Feiertage",
         "party": "Feiern"
       }
-    }
+    },
+    "inReview": "{percent} % in Wiederholung",
+    "topicStats": "{words} · {review}",
+    "back": "Zurück zu allen Themen",
+    "searchTopic": "In {topic} suchen",
+    "openSearch": "In diesem Thema suchen",
+    "clearSearch": "Suche löschen",
+    "tryTopics": "Oder fang mit einem dieser Themen an:",
+    "results": "{count, plural, one {# Wort gefunden} other {# Wörter gefunden}}",
+    "inDeckMark": "In deiner Wiederholung",
+    "practiceCta": "Los geht's, übe dieses Thema!",
+    "practiceCtaAria": "Dieses Thema üben ({count, plural, one {# Wort} other {# Wörter}})",
+    "colorTip": "Formel: <b>hell</b> / <b>dunkel</b> + Farbe = ein Wort, z. B. <b>dunkelblau</b>"
+  },
+  "TopicPractice": {
+    "title": "Üben: {topic}",
+    "prompt": "Was bedeutet dieses Wort?",
+    "question": "Frage",
+    "correctLabel": "Richtig",
+    "correct": "Ja, genau!",
+    "wrong": "Fast! Es bedeutet: {answer}",
+    "next": "Weiter",
+    "finish": "Ergebnis ansehen",
+    "pick": "Wähl eine Bedeutung",
+    "summaryTitle": "Runde geschafft!",
+    "summaryScore": "{correct} von {total} richtig",
+    "perfect": "Alle richtig. Doch!",
+    "missedTitle": "Schau dir diese noch mal an",
+    "addMissed": "{count, plural, one {Das # falsche Wort zur Wiederholung} other {Die # falschen Wörter zur Wiederholung}}",
+    "addedMissed": "{count, plural, =0 {Die waren schon in deiner Wiederholung.} one {Super! # Wort ist jetzt in deiner Wiederholung.} other {Super! # Wörter sind jetzt in deiner Wiederholung.}}",
+    "again": "Noch eine Runde",
+    "backToTopic": "Zurück zu den Wörtern",
+    "loading": "Ich mische die Wörter…"
   },
   "Review": {
     "title": "Wiederholen",

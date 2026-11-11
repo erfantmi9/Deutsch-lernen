@@ -64,12 +64,17 @@ describe("shipped vocabulary", () => {
 
 describe("extended schemas", () => {
   const example = { de: "Das ist gut.", en: "That is good.", fa: "این خوب است." };
-  const base = { id: "x", word: "gut", translations: { en: "good", fa: "خوب" }, example, level: "A1" as const };
+  const base = { id: "x", word: "gut", kind: "quality" as const, translations: { en: "good", fa: "خوب" }, example, level: "A1" as const };
 
   it("requires comparative and superlative together", () => {
     expect(AdjectiveListSchema.safeParse([{ ...base, comparative: "besser" }]).success).toBe(false);
     expect(AdjectiveListSchema.safeParse([{ ...base, comparative: "besser", superlative: "am besten" }]).success).toBe(true);
     expect(AdjectiveListSchema.safeParse([base]).success).toBe(true);
+  });
+
+  it("requires a known adjective kind", () => {
+    expect(AdjectiveListSchema.safeParse([{ ...base, kind: undefined }]).success).toBe(false);
+    expect(AdjectiveListSchema.safeParse([{ ...base, kind: "shape" }]).success).toBe(false);
   });
 
   it("keeps wechsel and cases consistent", () => {

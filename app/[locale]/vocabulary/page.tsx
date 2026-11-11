@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { pageAlternates } from "@/lib/seo";
-import VocabularyExplorer from "@/components/VocabularyExplorer";
+import VocabularyHome from "@/components/vocab/VocabularyHome";
 import { reviewCards } from "@/lib/reviewData";
 
 export function generateStaticParams() {
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function VocabularyPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  // Verbs have their own page; everything else is browsed here.
+  // Verbs have their own page; everything else is browsed here (the search needs every word, the grid only counts).
   const cards = reviewCards.filter((c) => c.kind !== "verb");
-  return <VocabularyExplorer cards={cards} />;
+  return <VocabularyHome cards={cards} />;
 }

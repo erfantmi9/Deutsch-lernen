@@ -2,9 +2,14 @@ import type { I18n2, I18n3, Level } from "./common";
 
 /** Word classes beyond nouns and verbs. Nouns keep using VocabEntry (types/vocab.ts). */
 
+/** Topic filter for adjectives on the vocabulary page. "quality" is everything that is not a colour, size or person. */
+export const ADJECTIVE_KINDS = ["color", "size", "people", "quality"] as const;
+export type AdjectiveKind = (typeof ADJECTIVE_KINDS)[number];
+
 export interface AdjectiveEntry {
   id: string;
   word: string;
+  kind: AdjectiveKind;
   /** Only set when the forms are certain; colours and a few others have none. */
   comparative?: string;
   superlative?: string;

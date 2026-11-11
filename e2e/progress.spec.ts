@@ -74,7 +74,7 @@ for (const locale of ["en", "fa"] as const) {
       await rot.click();
       await expect(page).toHaveURL(/\/vocabulary\?kind=adjective&q=rot/);
       await expect(page.locator("main input[type=search]")).toHaveValue("rot");
-      await expect(page.locator("main ul li.card").first()).toContainText("rot");
+      await expect(page.locator("main li[data-word-row]").first()).toContainText("rot");
     });
 
     test("no weak items: offers a next step", async ({ page }, testInfo) => {
