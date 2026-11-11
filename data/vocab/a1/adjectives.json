@@ -128,6 +128,118 @@
     "level": "A1"
   },
   {
+    "id": "orange",
+    "word": "orange",
+    "translations": {
+      "en": "orange",
+      "fa": "نارنجی"
+    },
+    "example": {
+      "de": "Die Orange ist orange.",
+      "en": "The orange is orange.",
+      "fa": "پرتقال نارنجی است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "lila",
+    "word": "lila",
+    "translations": {
+      "en": "purple",
+      "fa": "بنفش"
+    },
+    "example": {
+      "de": "Mein Lieblingskleid ist lila.",
+      "en": "My favourite dress is purple.",
+      "fa": "لباس محبوبم بنفش است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "rosa",
+    "word": "rosa",
+    "translations": {
+      "en": "pink",
+      "fa": "صورتی"
+    },
+    "example": {
+      "de": "Die Blume ist rosa.",
+      "en": "The flower is pink.",
+      "fa": "گل صورتی است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "dunkelblau",
+    "word": "dunkelblau",
+    "translations": {
+      "en": "dark blue",
+      "fa": "سرمه‌ای، آبی تیره (dunkel + blau)"
+    },
+    "example": {
+      "de": "Meine Jacke ist dunkelblau.",
+      "en": "My jacket is dark blue.",
+      "fa": "کاپشنم سرمه‌ای است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "hellblau",
+    "word": "hellblau",
+    "translations": {
+      "en": "light blue",
+      "fa": "آبی روشن (hell + blau)"
+    },
+    "example": {
+      "de": "Der Himmel ist hellblau.",
+      "en": "The sky is light blue.",
+      "fa": "آسمان آبی روشن است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "dunkelgruen",
+    "word": "dunkelgrün",
+    "translations": {
+      "en": "dark green",
+      "fa": "سبز تیره (dunkel + grün)"
+    },
+    "example": {
+      "de": "Der Wald ist dunkelgrün.",
+      "en": "The forest is dark green.",
+      "fa": "جنگل سبز تیره است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "hellgruen",
+    "word": "hellgrün",
+    "translations": {
+      "en": "light green",
+      "fa": "سبز روشن (hell + grün)"
+    },
+    "example": {
+      "de": "Das Gras im Frühling ist hellgrün.",
+      "en": "The grass in spring is light green.",
+      "fa": "چمن در بهار سبز روشن است."
+    },
+    "level": "A1"
+  },
+  {
+    "id": "dunkelrot",
+    "word": "dunkelrot",
+    "translations": {
+      "en": "dark red",
+      "fa": "قرمز تیره، زرشکی (dunkel + rot)"
+    },
+    "example": {
+      "de": "Die Kirsche ist dunkelrot.",
+      "en": "The cherry is dark red.",
+      "fa": "گیلاس قرمز تیره است."
+    },
+    "level": "A1"
+  },
+  {
     "id": "gut",
     "word": "gut",
     "comparative": "besser",

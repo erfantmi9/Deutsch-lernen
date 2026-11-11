@@ -4,6 +4,9 @@ import { recordActivity } from "./activityStore";
 import { vocab } from "@/lib/vocab";
 import type { Article, VocabEntry } from "@/types/vocab";
 
+/** Plural-only nouns always take the plural "die", so asking for their gender would teach the wrong thing. */
+const quizVocab = vocab.filter((w) => !w.pluralOnly);
+
 export interface LastAnswer {
   wordId: string;
   chosen: Article;
@@ -33,7 +36,7 @@ export function pickWord(
   wrongIds: readonly string[],
   rng: () => number = Math.random,
 ): VocabEntry {
-  const pool = vocab.length > 1 ? vocab.filter((w) => w.id !== excludeId) : vocab;
+  const pool = quizVocab.length > 1 ? quizVocab.filter((w) => w.id !== excludeId) : quizVocab;
   const weights = pool.map((w) => (wrongIds.includes(w.id) ? WRONG_WEIGHT : 1));
   const total = weights.reduce((a, b) => a + b, 0);
   let r = rng() * total;

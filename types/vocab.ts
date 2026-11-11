@@ -59,4 +59,9 @@ export interface VocabEntry {
   subcategory?: string;
   level: Level;
   tags?: string[];
+  /**
+   * Plural-only noun (die Eltern, die Geschwister). `word` and `plural` are the same plural form and `article` is
+   * the plural "die", so these words are left out of the der/die/das quiz and shown without the article colour.
+   */
+  pluralOnly?: true;
 }

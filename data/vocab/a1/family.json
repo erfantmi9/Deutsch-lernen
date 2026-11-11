@@ -1028,5 +1028,183 @@
     "category": "family",
     "subcategory": "family",
     "level": "A1"
+  },
+  {
+    "id": "eltern",
+    "word": "Eltern",
+    "article": "die",
+    "plural": "Eltern",
+    "translations": {
+      "en": "parents",
+      "fa": "پدر و مادر، والدین"
+    },
+    "grammarRule": {
+      "en": "Plural-only noun: there is no singular, so it always takes the plural article: die Eltern.",
+      "fa": "این اسم فقط جمع است، پس همیشه با آرتیکل جمع می‌آید: die Eltern.",
+      "de": "Nur Plural: Es gibt keinen Singular, deshalb immer mit dem Pluralartikel: die Eltern.",
+      "simple": {
+        "en": "Only plural: die Eltern.",
+        "fa": "فقط جمع: die Eltern.",
+        "de": "Nur Plural: die Eltern."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Meine Eltern wohnen in Berlin.",
+      "en": "My parents live in Berlin.",
+      "fa": "پدر و مادرم در برلین زندگی می‌کنند."
+    },
+    "category": "family",
+    "subcategory": "family",
+    "level": "A1",
+    "pluralOnly": true
+  },
+  {
+    "id": "geschwister",
+    "word": "Geschwister",
+    "article": "die",
+    "plural": "Geschwister",
+    "translations": {
+      "en": "siblings (brothers and sisters)",
+      "fa": "خواهر و برادر"
+    },
+    "grammarRule": {
+      "en": "Plural-only noun: there is no singular in everyday use (one sibling = der Bruder / die Schwester), so it always takes the plural article: die Geschwister.",
+      "fa": "این اسم فقط جمع است (برای یک نفر می‌گوییم der Bruder یا die Schwester)، پس همیشه با آرتیکل جمع می‌آید: die Geschwister.",
+      "de": "Nur Plural: Es gibt keinen Singular im Alltag (eine Person: der Bruder / die Schwester), deshalb immer mit dem Pluralartikel: die Geschwister.",
+      "simple": {
+        "en": "Only plural: die Geschwister.",
+        "fa": "فقط جمع: die Geschwister.",
+        "de": "Nur Plural: die Geschwister."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Hast du Geschwister?",
+      "en": "Do you have any brothers or sisters?",
+      "fa": "خواهر یا برادر داری؟"
+    },
+    "category": "family",
+    "subcategory": "family",
+    "level": "A1",
+    "pluralOnly": true
+  },
+  {
+    "id": "grosseltern",
+    "word": "Großeltern",
+    "article": "die",
+    "plural": "Großeltern",
+    "translations": {
+      "en": "grandparents",
+      "fa": "پدربزرگ و مادربزرگ"
+    },
+    "grammarRule": {
+      "en": "Plural-only noun: there is no singular, so it always takes the plural article: die Großeltern.",
+      "fa": "این اسم فقط جمع است، پس همیشه با آرتیکل جمع می‌آید: die Großeltern.",
+      "de": "Nur Plural: Es gibt keinen Singular, deshalb immer mit dem Pluralartikel: die Großeltern.",
+      "simple": {
+        "en": "Only plural: die Großeltern.",
+        "fa": "فقط جمع: die Großeltern.",
+        "de": "Nur Plural: die Großeltern."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Am Sonntag besuchen wir die Großeltern.",
+      "en": "On Sunday we visit our grandparents.",
+      "fa": "یکشنبه به دیدن پدربزرگ و مادربزرگ می‌رویم."
+    },
+    "category": "family",
+    "subcategory": "relatives",
+    "level": "A1",
+    "pluralOnly": true
+  },
+  {
+    "id": "verwandte",
+    "word": "Verwandten",
+    "article": "die",
+    "plural": "Verwandten",
+    "translations": {
+      "en": "relatives",
+      "fa": "فامیل، خویشاوندان"
+    },
+    "grammarRule": {
+      "en": "Used here in the plural: die Verwandten. One person is der Verwandte (a man) or die Verwandte (a woman). Without an article it is just Verwandte.",
+      "fa": "این‌جا به‌صورت جمع آمده: die Verwandten. برای یک نفر می‌گوییم der Verwandte (مرد) یا die Verwandte (زن). بدون آرتیکل فقط Verwandte.",
+      "de": "Hier im Plural: die Verwandten. Eine Person: der Verwandte (Mann) oder die Verwandte (Frau). Ohne Artikel: Verwandte.",
+      "simple": {
+        "en": "Plural: die Verwandten.",
+        "fa": "جمع: die Verwandten.",
+        "de": "Plural: die Verwandten."
+      }
+    },
+    "ruleCategory": "learn",
+    "example": {
+      "de": "Alle Verwandten kommen zur Hochzeit.",
+      "en": "All the relatives are coming to the wedding.",
+      "fa": "همه‌ی فامیل به عروسی می‌آیند."
+    },
+    "category": "family",
+    "subcategory": "relatives",
+    "level": "A1",
+    "pluralOnly": true
+  },
+  {
+    "id": "neffe",
+    "word": "Neffe",
+    "article": "der",
+    "plural": "Neffen",
+    "translations": {
+      "en": "nephew",
+      "fa": "برادرزاده یا خواهرزاده (پسر)"
+    },
+    "grammarRule": {
+      "en": "Male persons are masculine (der): der Mann, der Vater, der Onkel, der Freund.",
+      "fa": "اسم‌های مربوط به افراد مذکر، مذکر (der) هستند: der Mann, der Vater, der Onkel, der Freund.",
+      "de": "Männliche Personen sind maskulin (der): der Mann, der Vater, der Onkel, der Freund.",
+      "simple": {
+        "en": "Men and boys are der.",
+        "fa": "مردها و پسرها der هستند.",
+        "de": "Männer und Jungen sind der."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Mein Neffe ist fünf Jahre alt.",
+      "en": "My nephew is five years old.",
+      "fa": "برادرزاده‌ام پنج سالش است."
+    },
+    "category": "family",
+    "subcategory": "relatives",
+    "level": "A1"
+  },
+  {
+    "id": "nichte",
+    "word": "Nichte",
+    "article": "die",
+    "plural": "Nichten",
+    "translations": {
+      "en": "niece",
+      "fa": "برادرزاده یا خواهرزاده (دختر)"
+    },
+    "grammarRule": {
+      "en": "Female persons are usually feminine (die): die Frau, die Mutter, die Schwester.",
+      "fa": "اسم‌های مربوط به افراد مؤنث معمولاً مؤنث (die) هستند: die Frau, die Mutter, die Schwester.",
+      "de": "Weibliche Personen sind meist feminin (die): die Frau, die Mutter, die Schwester.",
+      "simple": {
+        "en": "Women and girls are usually die.",
+        "fa": "زن‌ها معمولاً die هستند.",
+        "de": "Frauen sind meist die."
+      }
+    },
+    "ruleCategory": "semantic",
+    "example": {
+      "de": "Meine Nichte geht schon zur Schule.",
+      "en": "My niece already goes to school.",
+      "fa": "خواهرزاده‌ام دیگر مدرسه می‌رود."
+    },
+    "category": "family",
+    "subcategory": "relatives",
+    "level": "A1"
   }
 ]

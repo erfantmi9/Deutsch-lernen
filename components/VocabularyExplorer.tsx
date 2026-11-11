@@ -43,6 +43,7 @@ function WordCard({ card, locale }: { card: ReviewCard; locale: Locale }) {
           <AddToReviewButton cardId={card.id} word={card.front} compact />
         </div>
       </div>
+      {card.pluralOnly && <p className="text-sm text-text-muted">{t("pluralOnly")}</p>}
       {card.detail && (
         <p className="text-sm text-text-muted">
           {card.kind === "noun" ? `${t("plural")}: ` : card.kind === "phrase" ? `${t("reply")}: ` : ""}
@@ -93,12 +94,21 @@ export default function VocabularyExplorer({ cards }: { cards: readonly ReviewCa
     window.setTimeout(() => messageRef.current?.focus(), 50);
   };
 
-  // Search results link here with ?kind=<kind>&q=<word>.
+  // Search results link here with ?kind=<kind>&q=<word>. Shared links can also open a topic:
+  // ?kind=noun&group=family&subgroup=relatives (kind defaults to noun).
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const k = params.get("kind");
     const q = params.get("q");
-    if (k && (KINDS as readonly string[]).includes(k)) setKind(k as ReviewKind);
+    const g = params.get("group");
+    const sg = params.get("subgroup");
+    const nextKind = k && (KINDS as readonly string[]).includes(k) ? (k as ReviewKind) : "noun";
+    if (k && nextKind === k) setKind(nextKind);
+    if (g && GROUPS[nextKind]?.includes(g)) {
+      setGroup(g);
+      const subs = nextKind === "noun" ? VOCAB_SUBCATEGORIES[g as VocabCategory] : undefined;
+      if (sg && subs?.includes(sg)) setSubgroup(sg);
+    }
     if (q) setQuery(q.replace(/^(der|die|das) /, ""));
   }, []);
 

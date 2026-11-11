@@ -87,8 +87,8 @@ describe("sentence schema", () => {
 });
 
 describe("shipped data", () => {
-  it("has 656 unique nouns across 19 categories, including the legacy ids", () => {
-    expect(vocab).toHaveLength(656);
+  it("has 662 unique nouns across 19 categories, including the legacy ids", () => {
+    expect(vocab).toHaveLength(662);
     expect(new Set(vocab.map((w) => w.category)).size).toBe(19);
     const ids = new Set(vocab.map((w) => w.id));
     for (const id of ["mann", "frau", "maedchen", "junge", "kind", "zeitung", "universitaet", "montag", "essen", "lehrerin"]) {

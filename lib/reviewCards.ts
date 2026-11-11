@@ -22,6 +22,8 @@ export interface ReviewCard {
   subgroup?: string;
   /** Only for nouns: colours the front by article. */
   article?: Article;
+  /** Only for nouns: the word exists only in the plural (die Eltern). */
+  pluralOnly?: true;
   /** German detail line for the back: plural, key forms, case, typical reply. */
   detail?: string;
   translations: I18n2;
@@ -67,8 +69,10 @@ export function buildReviewCards(input: {
       group: n.category,
       subgroup: n.subcategory,
       front: `${n.article} ${n.word}`,
-      article: n.article,
-      detail: n.plural === "–" ? undefined : `die ${n.plural}`,
+      // Plural-only nouns take the plural "die", not the feminine one, so they get no article colour.
+      article: n.pluralOnly ? undefined : n.article,
+      pluralOnly: n.pluralOnly,
+      detail: n.plural === "–" || n.pluralOnly ? undefined : `die ${n.plural}`,
       translations: n.translations,
       example: n.example,
     });

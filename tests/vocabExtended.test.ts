@@ -16,7 +16,7 @@ describe("shipped vocabulary", () => {
       expect(vocab.filter((w) => w.category === c).length).toBeGreaterThanOrEqual(25);
       expect(VOCAB_CATEGORIES).toContain(c);
     }
-    expect(vocab.length).toBe(656);
+    expect(vocab.length).toBe(662);
   });
 
   it("has unique noun ids and consistent articles", () => {
@@ -30,7 +30,7 @@ describe("shipped vocabulary", () => {
   });
 
   it("has the A1 adjectives, adverbs, prepositions and about 25 phrases", () => {
-    expect(adjectives).toHaveLength(85);
+    expect(adjectives).toHaveLength(93);
     expect(adverbs).toHaveLength(62);
     expect(prepositions).toHaveLength(25);
     expect(phrases.length).toBeGreaterThanOrEqual(25);

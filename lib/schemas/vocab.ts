@@ -19,8 +19,16 @@ export const VocabEntrySchema = z.object({
   subcategory: TextSchema.optional(),
   level: LevelSchema,
   tags: z.array(TextSchema).optional(),
+  pluralOnly: z.literal(true).optional(),
 })
   .superRefine((e, ctx) => {
+    if (e.pluralOnly && (e.article !== "die" || e.plural !== e.word)) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ["pluralOnly"],
+        message: "a plural-only noun needs article \"die\" and plural equal to word",
+      });
+    }
     const subs = VOCAB_SUBCATEGORIES[e.category];
     if (subs && (e.subcategory === undefined || !subs.includes(e.subcategory))) {
       ctx.addIssue({
