@@ -177,10 +177,11 @@ for (const locale of ["en", "fa"] as const) {
     });
 
     test("AddToReviewButton announces through the page's existing live region when there is one", async ({ page }) => {
-      await page.goto(`/${locale}/vocabulary`);
+      await page.goto(`/${locale}/vocabulary/family`);
+      await page.locator("main [data-word-row] button[aria-expanded]").first().click();
       const b = page.locator("button[data-add-review]").first();
       await expect(b).not.toHaveAttribute("aria-busy", "true");
-      expect(await liveRegions(page)).toBe(1); // the FilterBar's "Showing N"
+      expect(await liveRegions(page)).toBe(1); // the topic page's word count
       await b.click();
       await expect(b).toHaveAttribute("aria-pressed", "true");
       await expect(page.locator("main [role=status] [data-announce-host]")).toHaveText(/\S/);

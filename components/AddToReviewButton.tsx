@@ -14,11 +14,14 @@ export default function AddToReviewButton({
   cardId,
   word,
   compact = false,
+  block = false,
 }: {
   cardId: string;
   /** The German word, used for the screen-reader label. */
   word?: string;
   compact?: boolean;
+  /** Full-width button (word details on the vocabulary page): outlined to add, tinted once the word is in the deck. */
+  block?: boolean;
 }) {
   const t = useTranslations("Review");
   const [ready, setReady] = useState(false);
@@ -41,7 +44,11 @@ export default function AddToReviewButton({
 
   const inDeck = ready && card !== undefined;
   const kept = inDeck && !isNew(card);
-  const size = compact ? "pill" : "btn btn-secondary";
+  const size = block
+    ? "btn w-full rounded-2xl border-2 " + (inDeck ? "border-transparent bg-primary-soft text-primary" : "border-primary bg-transparent text-primary")
+    : compact
+      ? "pill"
+      : "btn btn-secondary";
 
   // Both labels are stacked in one grid cell and the inactive one is invisible, so the button is always as wide as the
   // wider label (in every locale) and never changes size when toggled or when the deck loads.

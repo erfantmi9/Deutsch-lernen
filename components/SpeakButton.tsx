@@ -15,11 +15,14 @@ export default function SpeakButton({
   text,
   slow = false,
   compact = false,
+  plain = false,
   className = "",
 }: {
   text: string;
   slow?: boolean;
   compact?: boolean;
+  /** Icon only, no border or fill (inside list rows). Implies compact. */
+  plain?: boolean;
   className?: string;
 }) {
   const t = useTranslations("Speech");
@@ -45,13 +48,16 @@ export default function SpeakButton({
         else speak(text, rate);
       }}
       className={
-        "inline-flex shrink-0 items-center justify-center rounded-full border border-border bg-surface text-text-muted transition hover:bg-surface-2 hover:text-text focus-visible:ring-4 focus-visible:ring-primary/30 data-[speaking]:border-primary data-[speaking]:text-primary " +
-        (compact ? "size-11 " : "min-h-11 gap-2 px-4 text-sm font-bold ") +
+        "inline-flex shrink-0 items-center justify-center rounded-full transition focus-visible:ring-4 focus-visible:ring-primary/30 data-[speaking]:text-primary " +
+        (plain
+          ? "size-11 text-primary hover:bg-primary-soft "
+          : "border border-border bg-surface text-text-muted hover:bg-surface-2 hover:text-text data-[speaking]:border-primary " +
+            (compact ? "size-11 " : "min-h-11 gap-2 px-4 text-sm font-bold ")) +
         (supported ? "" : "invisible ") +
         className
       }
     >
-      <svg viewBox="0 0 24 24" width={20} height={20} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width={plain ? 24 : 20} height={plain ? 24 : 20} fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         {speaking ? (
           <rect x="7" y="7" width="10" height="10" rx="1.5" fill="currentColor" stroke="none" />
         ) : slow ? (

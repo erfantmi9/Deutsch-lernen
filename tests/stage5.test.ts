@@ -33,6 +33,7 @@ import { buildSearchIndex, foldVariants, searchItems } from "@/lib/search";
 import { pageAlternates } from "@/lib/seo";
 import { siteUrl } from "@/lib/site";
 import { allPaths, STATIC_PATHS } from "@/lib/sitePaths";
+import { TOPIC_IDS } from "@/lib/vocabTopics";
 import { mulberry32 } from "@/lib/shuffle";
 import { pickGermanVoice } from "@/lib/speech";
 import { checkExam } from "@/lib/validation/examRules";
@@ -347,8 +348,8 @@ describe("site and SEO", () => {
   });
 
   it("lists every page for the sitemap, and each static page exists", () => {
-    const paths = allPaths({ lessons: grammarLessons.map((l) => l.id), dialogues: dialogues.map((d) => d.id), reading: readingTexts.map((r) => r.id), verbs: verbs.map((v) => v.id) });
-    expect(paths).toHaveLength(STATIC_PATHS.length + grammarLessons.length + dialogues.length + readingTexts.length + verbs.length);
+    const paths = allPaths({ lessons: grammarLessons.map((l) => l.id), dialogues: dialogues.map((d) => d.id), reading: readingTexts.map((r) => r.id), verbs: verbs.map((v) => v.id), vocabTopics: TOPIC_IDS });
+    expect(paths).toHaveLength(STATIC_PATHS.length + grammarLessons.length + dialogues.length + readingTexts.length + verbs.length + TOPIC_IDS.length);
     expect(new Set(paths).size).toBe(paths.length);
     for (const p of STATIC_PATHS) {
       const file = p === "" ? join("app", "[locale]", "page.tsx") : join("app", "[locale]", p, "page.tsx");

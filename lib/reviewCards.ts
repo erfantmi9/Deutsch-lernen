@@ -91,6 +91,7 @@ export function buildReviewCards(input: {
     cards.push({
       id: cardId("adjective", a.id),
       kind: "adjective",
+      group: a.kind,
       front: a.word,
       detail: a.comparative && a.superlative ? `${a.comparative} · ${a.superlative}` : undefined,
       translations: a.translations,

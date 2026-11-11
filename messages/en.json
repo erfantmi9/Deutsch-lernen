@@ -618,7 +618,7 @@
   },
   "Vocabulary": {
     "title": "Vocabulary",
-    "subtitle": "Nouns, adjectives, adverbs, prepositions and handy phrases for A1.",
+    "subtitle": "Pick a topic and learn its words one by one.",
     "kindLabel": "Word type",
     "kinds": {
       "noun": "Nouns",
@@ -629,7 +629,7 @@
       "phrase": "Phrases"
     },
     "searchLabel": "Search words",
-    "searchPlaceholder": "Search in German or in your language",
+    "searchPlaceholder": "Find a word, in German or English",
     "groupLabel": "Topic",
     "groupAll": "All",
     "groups": {
@@ -675,10 +675,16 @@
         "restaurant": "Restaurant",
         "help": "Asking for help",
         "phone": "On the phone"
+      },
+      "adjective": {
+        "color": "Colours",
+        "size": "Size & amount",
+        "people": "People & feelings",
+        "quality": "Qualities"
       }
     },
     "count": "{count, plural, one {# word} other {# words}}",
-    "empty": "Hmm, nothing here. Try another word or spelling.",
+    "empty": "Hmm, I found nothing. Try another word!",
     "addAll": "Add all {count} to review",
     "addedAll": "{count, plural, one {# new card is in your review deck. Off you go!} other {# new cards are in your review deck. Off you go!}}",
     "allInDeck": "You already have all of these in your review deck.",
@@ -746,7 +752,39 @@
         "holidays": "Holidays",
         "party": "Parties"
       }
-    }
+    },
+    "inReview": "{percent}% in review",
+    "topicStats": "{words} · {review}",
+    "back": "Back to all topics",
+    "searchTopic": "Search in {topic}",
+    "openSearch": "Search this topic",
+    "clearSearch": "Clear search",
+    "tryTopics": "Or start with one of these topics:",
+    "results": "{count, plural, one {# word found} other {# words found}}",
+    "inDeckMark": "In your review deck",
+    "practiceCta": "Let's go, practise this topic!",
+    "practiceCtaAria": "Practise this topic ({count, plural, one {# word} other {# words}})",
+    "colorTip": "Formula: <b>hell</b> (light) / <b>dunkel</b> (dark) + colour = one word, e.g. <b>dunkelblau</b>"
+  },
+  "TopicPractice": {
+    "title": "Practise: {topic}",
+    "prompt": "What does this word mean?",
+    "question": "Question",
+    "correctLabel": "Correct",
+    "correct": "Yes, that's it!",
+    "wrong": "So close! It means: {answer}",
+    "next": "Next",
+    "finish": "See my result",
+    "pick": "Pick a meaning",
+    "summaryTitle": "Round done!",
+    "summaryScore": "{correct} of {total} right",
+    "perfect": "Every single one. Doch!",
+    "missedTitle": "Have another look at these",
+    "addMissed": "{count, plural, one {Add the # missed word to review} other {Add the # missed words to review}}",
+    "addedMissed": "{count, plural, =0 {They were already in your review.} one {Done! # word added to your review.} other {Done! # words added to your review.}}",
+    "again": "One more round",
+    "backToTopic": "Back to the words",
+    "loading": "Shuffling the words…"
   },
   "Review": {
     "title": "Review",

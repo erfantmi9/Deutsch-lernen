@@ -49,14 +49,5 @@ for (const locale of ["en", "fa"] as const) {
       await expect(page.getByRole("button", { name: m.Numbers.practice.kinds.price, exact: true })).toHaveAttribute("aria-pressed", "true");
     });
 
-    test("vocabulary: Add all asks with the number of cards", async ({ page }) => {
-      await page.goto(`/${locale}/vocabulary`);
-      const addAll = page.locator("main button[aria-haspopup=dialog].btn-secondary");
-      await addAll.click();
-      await expect(dialog(page)).toBeVisible();
-      await expect(dialog(page).locator("h2")).toContainText(/\d|[۰-۹]/);
-      await cancel(page).click();
-      await expect(dialog(page)).toHaveCount(0);
-    });
   });
 }

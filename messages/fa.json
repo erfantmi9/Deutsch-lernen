@@ -618,7 +618,7 @@
   },
   "Vocabulary": {
     "title": "واژگان",
-    "subtitle": "اسم، صفت، قید، حرف اضافه و عبارت‌های سطح A1، همه یک‌جا.",
+    "subtitle": "موضوعت را انتخاب کن و کلمه‌ها را یکی‌یکی یاد بگیر.",
     "kindLabel": "نوع کلمه",
     "kinds": {
       "noun": "اسم‌ها",
@@ -629,7 +629,7 @@
       "phrase": "عبارت‌ها"
     },
     "searchLabel": "جستجوی کلمه‌ها",
-    "searchPlaceholder": "به آلمانی یا به زبان خودت جستجو کن",
+    "searchPlaceholder": "یک کلمه پیدا کن، آلمانی یا فارسی",
     "groupLabel": "موضوع",
     "groupAll": "همه",
     "groups": {
@@ -675,10 +675,16 @@
         "restaurant": "رستوران",
         "help": "کمک خواستن",
         "phone": "تلفن"
+      },
+      "adjective": {
+        "color": "رنگ‌ها",
+        "size": "اندازه و مقدار",
+        "people": "آدم‌ها و احساس",
+        "quality": "ویژگی‌ها"
       }
     },
     "count": "{count, plural, other {# کلمه}}",
-    "empty": "هوم، با این جستجو چیزی پیدا نکردم. یک کلمه‌ی دیگر امتحان کن!",
+    "empty": "هوم، چیزی پیدا نکردم. یک کلمه‌ی دیگر امتحان کن!",
     "addAll": "هر {count} تا را به مرور اضافه کن",
     "addedAll": "{count, plural, other {ایول! # کارت تازه به مرورت اضافه شد.}}",
     "allInDeck": "همه‌ی این کلمه‌ها از قبل در مرورت هستند.",
@@ -746,7 +752,39 @@
         "holidays": "تعطیلات و جشن‌ها",
         "party": "مهمانی"
       }
-    }
+    },
+    "inReview": "{percent}٪ در مرور",
+    "topicStats": "{words} · {review}",
+    "back": "بازگشت به همه‌ی موضوع‌ها",
+    "searchTopic": "در {topic} بگرد",
+    "openSearch": "جستجو در این موضوع",
+    "clearSearch": "پاک کردن جستجو",
+    "tryTopics": "یا از یکی از این موضوع‌ها شروع کن:",
+    "results": "{count, plural, other {# کلمه پیدا شد}}",
+    "inDeckMark": "در مرور تو هست",
+    "practiceCta": "بزن بریم، تمرین همین موضوع!",
+    "practiceCtaAria": "تمرین همین موضوع ({count, plural, other {# کلمه}})",
+    "colorTip": "فرمول: <b>hell</b> (روشن) / <b>dunkel</b> (تیره) + رنگ = یک کلمه، مثلاً <b>dunkelblau</b>"
+  },
+  "TopicPractice": {
+    "title": "تمرین: {topic}",
+    "prompt": "معنی این کلمه چیست؟",
+    "question": "سؤال",
+    "correctLabel": "درست",
+    "correct": "آفرین، درست است!",
+    "wrong": "نزدیک بود! معنی‌اش: {answer}",
+    "next": "بعدی",
+    "finish": "دیدن نتیجه",
+    "pick": "یک معنی انتخاب کن",
+    "summaryTitle": "این دور تمام شد!",
+    "summaryScore": "{correct} از {total} درست",
+    "perfect": "همه را درست زدی. Doch!",
+    "missedTitle": "این‌ها را یک بار دیگر ببین",
+    "addMissed": "{count, plural, other {# کلمه‌ی اشتباه را به مرور اضافه کن}}",
+    "addedMissed": "{count, plural, =0 {همه از قبل در مرورت بودند.} other {ایول! # کلمه به مرورت اضافه شد.}}",
+    "again": "یک دور دیگر",
+    "backToTopic": "برگشت به کلمه‌ها",
+    "loading": "دارم کلمه‌ها را بُر می‌زنم…"
   },
   "Review": {
     "title": "مرور",
