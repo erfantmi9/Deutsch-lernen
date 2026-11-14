@@ -1018,7 +1018,8 @@
         "slow": "Versuch es zuerst im normalen Tempo: Im Alltag spricht niemand langsam.",
         "keywords": "Du musst nicht jedes Wort verstehen. Achte auf die wichtigen Infos: Uhrzeit, Preis, Ort, Tag.",
         "shadow": "Sprich laut nach, was du hörst (Shadowing). Das trainiert Ohr und Aussprache zusammen.",
-        "daily": "Zehn Minuten jeden Tag bringen mehr als eine Stunde pro Woche."
+        "daily": "Zehn Minuten jeden Tag bringen mehr als eine Stunde pro Woche.",
+        "headphones": "Nimm für die schwereren Stufen Kopfhörer: Der Hintergrund soll eine echte Herausforderung sein."
       }
     },
     "dictation": {
@@ -1133,6 +1134,21 @@
       "showText": "Text zeigen",
       "hideText": "Text verbergen",
       "openDialogue": "Diesen Dialog mit Text, Rollenspiel und Wörtern öffnen"
+    },
+    "difficulty": {
+      "label": "Schwierigkeit",
+      "levels": {
+        "easy": "Leicht",
+        "real": "Wie im Alltag",
+        "hard": "Prüfung (schwer)"
+      },
+      "hints": {
+        "easy": "Leiser Hintergrund, längere Pausen.",
+        "real": "Normale Geräusche im Hintergrund, wie im Alltag.",
+        "hard": "Lauter Hintergrund, kurze Pausen, kein langsames Abspielen und nur {plays}-mal hören pro Text, wie in der Prüfung."
+      },
+      "plays": "{plays} von {max}-mal gehört",
+      "noMorePlays": "Kein Abspielen mehr. Antworte jetzt."
     }
   },
   "Exam": {
@@ -1453,6 +1469,13 @@
         "h": "Deine Rechte",
         "p": [
           "Du kannst dein Konto mit allen Daten jederzeit auf der Kontoseite löschen. Außerdem hast du das Recht auf Auskunft, Berichtigung, Einschränkung, Datenübertragbarkeit und Widerspruch sowie auf Beschwerde bei einer Datenschutzaufsichtsbehörde. Schreib uns dazu an die oben genannte Adresse."
+        ]
+      },
+      {
+        "h": "Stimmen in den Hörübungen",
+        "p": [
+          "Die aufgenommenen Stimmen wurden mit Piper, einer Open-Source-Sprachsynthese, auf unserem eigenen Computer erzeugt. Was du eintippst, wird nie an einen Sprachdienst geschickt.",
+          "Stimmmodelle: Thorsten-Voice und Kerstin (beide CC0)."
         ]
       }
     ]

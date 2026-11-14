@@ -3,9 +3,12 @@ import { persist } from "zustand/middleware";
 import { recordActivity } from "./activityStore";
 import { applyDictation, applyMessage, applySound, EMPTY_LISTEN_STATS } from "@/lib/listenStats";
 import type { ListenStats } from "@/lib/listenStats";
-import type { SoundContrast } from "@/types/listening";
+import type { Difficulty, SoundContrast } from "@/types/listening";
 
 interface ListenState extends ListenStats {
+  /** Background level, speed and play limit of the listening texts. */
+  difficulty: Difficulty;
+  setDifficulty: (d: Difficulty) => void;
   recordDictation: (id: string, passed: boolean) => void;
   recordMessage: (id: string, correct: boolean) => void;
   recordSound: (contrast: SoundContrast, correct: boolean) => void;
@@ -18,6 +21,8 @@ export const useListenStore = create<ListenState>()(
   persist(
     (set, get) => ({
       ...EMPTY_LISTEN_STATS,
+      difficulty: "real",
+      setDifficulty: (difficulty) => set({ difficulty }),
       recordDictation: (id, passed) => {
         set(applyDictation(stats(get()), id, passed));
         recordActivity();
@@ -36,7 +41,7 @@ export const useListenStore = create<ListenState>()(
       name: "deutsch-learner:listen",
       version: 1,
       skipHydration: true, // call useListenStore.persist.rehydrate() on the client after mount
-      partialize: (s) => stats(s),
+      partialize: (s) => ({ ...stats(s), difficulty: s.difficulty }),
     },
   ),
 );

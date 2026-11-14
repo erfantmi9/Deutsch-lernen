@@ -2,31 +2,37 @@
 
 import { useEffect, useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
-import { getSpeakingKey, RATE, speakSequence, speechKey, stopSpeaking, subscribeSpeech } from "@/lib/speech";
-import type { SpokenPart } from "@/lib/speech";
+import { getSpeakingKey, stopSpeaking, subscribeSpeech } from "@/lib/speech";
+import { play, playKey } from "@/lib/player";
+import type { PlayItem, PlaySetting } from "@/lib/player";
 
 /**
- * Plays several parts one after another (a conversation in two voices, an announcement); turns into Stop while it
- * plays. `id` names the sequence, so two buttons for the same text (normal and slow) know which one is playing.
+ * Plays a listening text (recordings in their scene, or the browser voice); turns into Stop while it plays. `id` names
+ * the text, so two buttons for it (normal and slow) know which one is playing. `onPlay` runs when playback starts.
  */
 export default function SequenceButton({
   id,
   parts,
+  setting,
   slow = false,
   compact = false,
+  disabled = false,
+  onPlay,
   className = "",
 }: {
   id: string;
-  parts: readonly SpokenPart[];
+  parts: readonly PlayItem[];
+  setting?: PlaySetting;
   slow?: boolean;
   /** Icon only. */
   compact?: boolean;
+  disabled?: boolean;
+  onPlay?: () => void;
   className?: string;
 }) {
   const t = useTranslations("Listen");
   const tSpeech = useTranslations("Speech");
-  const rate = slow ? RATE.slow : RATE.normal;
-  const speaking = useSyncExternalStore(subscribeSpeech, getSpeakingKey, () => null) === speechKey(id, rate);
+  const speaking = useSyncExternalStore(subscribeSpeech, getSpeakingKey, () => null) === playKey(id, slow);
 
   useEffect(() => () => stopSpeaking(), []);
 
@@ -36,14 +42,18 @@ export default function SequenceButton({
       type="button"
       aria-label={compact ? label : undefined}
       title={compact ? label : undefined}
+      aria-disabled={(disabled && !speaking) || undefined}
       data-sequence-button={slow ? "slow" : "normal"}
       data-speaking={speaking ? "" : undefined}
       onClick={() => {
         if (speaking) stopSpeaking();
-        else speakSequence(id, parts, rate);
+        else if (!disabled) {
+          play(id, parts, slow, setting);
+          onPlay?.();
+        }
       }}
       className={
-        "inline-flex shrink-0 items-center justify-center rounded-full border transition focus-visible:ring-4 focus-visible:ring-primary/30 " +
+        "inline-flex shrink-0 items-center justify-center rounded-full border transition focus-visible:ring-4 focus-visible:ring-primary/30 aria-disabled:cursor-not-allowed aria-disabled:opacity-40 " +
         (slow
           ? "border-border bg-surface text-text-muted hover:bg-surface-2 hover:text-text data-[speaking]:border-primary data-[speaking]:text-primary "
           : "border-primary bg-primary text-on-primary hover:brightness-110 ") +

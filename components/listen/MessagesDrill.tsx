@@ -19,6 +19,8 @@ import { useScrollIntoViewOnChange } from "../ui/useScrollIntoViewOnChange";
 import BackToListen from "./BackToListen";
 import SequenceButton from "./SequenceButton";
 import SpeechGate from "./SpeechGate";
+import DifficultyPicker, { PlayCount, usePlayLimit } from "./DifficultyPicker";
+import { messageFx } from "@/lib/audio/fx";
 
 type Locale = "en" | "fa" | "de";
 type KindFilter = MessageKind | "all";
@@ -49,7 +51,16 @@ function withEvidence(text: string, evidence: string): ReactNode {
  * Short everyday listening texts as in the A1 exam: read the situation and the question, listen (as often as needed,
  * also slowly), pick the answer. Afterwards the transcript shows where the answer was.
  */
-export default function MessagesDrill({ messages }: { messages: ListeningMessage[] }) {
+export default function MessagesDrill({
+  messages,
+  audio,
+  babble,
+}: {
+  messages: ListeningMessage[];
+  /** Recording of each line per message id (null: not recorded). */
+  audio: Record<string, (string | null)[]>;
+  babble: string[];
+}) {
   const t = useTranslations("Listen.messages");
   const tL = useTranslations("Listen");
   const tUi = useTranslations("Ui");
@@ -88,7 +99,13 @@ export default function MessagesDrill({ messages }: { messages: ListeningMessage
   const answered = given !== null;
   const correct = message !== null && given === message.answer;
   const options = useMemo(() => (message ? seededShuffle(message.options, message.id) : []), [message]);
-  const parts = useMemo(() => message?.lines.map((l) => ({ text: l.de, speaker: l.speaker })) ?? [], [message]);
+  const parts = useMemo(
+    () => message?.lines.map((l, i) => ({ text: l.de, speaker: l.speaker, src: audio[message.id]?.[i] ?? null, fx: messageFx(message, l.speaker) })) ?? [],
+    [message, audio],
+  );
+  const limit = usePlayLimit(message?.id ?? "");
+  const setting = message ? { scene: message.scene, difficulty: limit.difficulty, babble } : undefined;
+  const recorded = messages.every((m) => (audio[m.id] ?? []).length === m.lines.length && audio[m.id].every((a) => a !== null));
   const solvedSet = useMemo(() => new Set(solvedIds), [solvedIds]);
   const total = (k: KindFilter) => messages.filter((m) => k === "all" || m.kind === k);
 
@@ -157,9 +174,10 @@ export default function MessagesDrill({ messages }: { messages: ListeningMessage
 
   const replay =
     message && !finished ? (
-      <div className="flex shrink-0 gap-2">
-        <SequenceButton id={`msg:${message.id}`} parts={parts} compact />
-        <SequenceButton id={`msg:${message.id}`} parts={parts} compact slow />
+      <div className="flex shrink-0 items-center gap-2">
+        <PlayCount plays={limit.plays} hard={limit.hard} />
+        <SequenceButton id={`msg:${message.id}`} parts={parts} setting={setting} compact disabled={limit.exhausted} onPlay={limit.played} />
+        {!limit.hard && <SequenceButton id={`msg:${message.id}`} parts={parts} setting={setting} compact slow onPlay={limit.played} />}
       </div>
     ) : null;
 
@@ -168,7 +186,8 @@ export default function MessagesDrill({ messages }: { messages: ListeningMessage
       <BackToListen />
       <PageHeader title={t("title")} compact="always" />
 
-      <SpeechGate>
+      <SpeechGate recorded={recorded}>
+        <DifficultyPicker />
         <div role="group" aria-label={t("kindLabel")} className="flex flex-wrap gap-2">
           {(["all", ...MESSAGE_KINDS] as const).map((k) => (
             <button key={k} type="button" aria-pressed={kind === k} onClick={() => pickKind(k)} className="pill">
@@ -279,7 +298,7 @@ export default function MessagesDrill({ messages }: { messages: ListeningMessage
                         {l[tr]}
                       </p>
                     </div>
-                    <SpeakButton text={l.de} compact />
+                    <SpeakButton text={l.de} compact clip={{ src: audio[message.id]?.[i] ?? null, fx: messageFx(message, l.speaker) }} />
                   </li>
                 ))}
               </ol>

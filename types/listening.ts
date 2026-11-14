@@ -1,5 +1,16 @@
 import type { I18n2, I18n3 } from "./common";
 
+/**
+ * Where a listening text takes place. Drives the background sound (café murmur, station rumble, traffic ...) and, for
+ * "phone", the telephone sound of the remote speaker.
+ */
+export const SCENES = ["quiet", "home", "classroom", "office", "cafe", "shop", "street", "station", "phone"] as const;
+export type Scene = (typeof SCENES)[number];
+
+/** How hard the listening is: background level, speed, and (hard) at most two plays as in the exam. */
+export const DIFFICULTIES = ["easy", "real", "hard"] as const;
+export type Difficulty = (typeof DIFFICULTIES)[number];
+
 /** Short listening texts in the style of the A1 exam: an announcement, a phone message or a short conversation. */
 export const MESSAGE_KINDS = ["announcement", "phone", "conversation"] as const;
 export type MessageKind = (typeof MESSAGE_KINDS)[number];
@@ -17,6 +28,9 @@ export interface ListeningMessage {
   kind: MessageKind;
   /** Where the learner is, shown before listening ("You are at the station."). */
   situation: I18n3;
+  scene: Scene;
+  /** In a conversation on the phone: the speaker heard through the telephone. */
+  phoneSpeaker?: 0 | 1;
   lines: MessageLine[];
   question: I18n3;
   /** Three German options; numbers, times and prices in digits. */

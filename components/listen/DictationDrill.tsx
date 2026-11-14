@@ -5,7 +5,7 @@ import type { KeyboardEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { checkDictation, DICTATION_LEVELS, DICTATION_ROUND, isMinor, levelOf, pickRound, sentenceParts } from "@/lib/dictation";
 import type { DictationLevel, DictationOp, DictationResult, DictationSentence, WordMark } from "@/lib/dictation";
-import { getSpeakingKey, RATE, speak, speechKey, stopSpeaking, subscribeSpeech } from "@/lib/speech";
+import { getSpeakingKey, RATE, speechKey, stopSpeaking, subscribeSpeech } from "@/lib/speech";
 import { useListenStore } from "@/stores/listenStore";
 import PageHeader from "../PageHeader";
 import SpeakButton from "../SpeakButton";
@@ -17,11 +17,20 @@ import StickyActionBar from "../ui/StickyActionBar";
 import { useScrollIntoViewOnChange } from "../ui/useScrollIntoViewOnChange";
 import BackToListen from "./BackToListen";
 import SpeechGate from "./SpeechGate";
+import DifficultyPicker from "./DifficultyPicker";
+import { play } from "@/lib/player";
+import type { DictationAudio } from "@/lib/audio/listeningAudio";
+import type { Difficulty, Scene } from "@/types/listening";
+
+export type DictationItem = DictationSentence & { audio: DictationAudio };
+
+/** Dictation has no place of its own: the difficulty decides how noisy it is around the speaker. */
+export const DICTATION_SCENE: Record<Difficulty, Scene> = { easy: "quiet", real: "classroom", hard: "cafe" };
 
 type Locale = "en" | "fa" | "de";
 
 /** A small numbered button that plays one part of the sentence slowly. */
-function PartButton({ text, n, total }: { text: string; n: number; total: number }) {
+function PartButton({ text, n, total, src }: { text: string; n: number; total: number; src: string | null }) {
   const t = useTranslations("Listen.dictation");
   const speaking = useSyncExternalStore(subscribeSpeech, getSpeakingKey, () => null) === speechKey(text, RATE.slow);
   return (
@@ -30,7 +39,7 @@ function PartButton({ text, n, total }: { text: string; n: number; total: number
       data-part-button
       data-speaking={speaking ? "" : undefined}
       aria-label={t("partLabel", { n, total })}
-      onClick={() => (speaking ? stopSpeaking() : speak(text, RATE.slow))}
+      onClick={() => (speaking ? stopSpeaking() : play(text, [{ text, src }], true))}
       className="pill min-h-11 min-w-11 justify-center data-[speaking]:border-primary data-[speaking]:text-primary"
     >
       {n}
@@ -86,7 +95,7 @@ function marksIn(ops: DictationOp[]): (WordMark | "extra")[] {
  * Dictation: hear a sentence, type it, see word by word what was right. The sentence can be played as often as wanted,
  * slowly, or in short parts. Small slips (capital letter, ä ö ü ß, one letter) are shown but do not fail the sentence.
  */
-export default function DictationDrill({ pool }: { pool: DictationSentence[] }) {
+export default function DictationDrill({ pool, babble }: { pool: DictationItem[]; babble: string[] }) {
   const t = useTranslations("Listen.dictation");
   const tL = useTranslations("Listen");
   const tUi = useTranslations("Ui");
@@ -106,8 +115,9 @@ export default function DictationDrill({ pool }: { pool: DictationSentence[] }) 
     };
   }, []);
 
+  const difficulty = useListenStore((s) => s.difficulty);
   const [level, setLevel] = useState<DictationLevel>("short");
-  const [round, setRound] = useState<DictationSentence[] | null>(null);
+  const [round, setRound] = useState<DictationItem[] | null>(null);
   const [index, setIndex] = useState(0);
   const [typed, setTyped] = useState("");
   const [result, setResult] = useState<DictationResult | null>(null);
@@ -123,6 +133,8 @@ export default function DictationDrill({ pool }: { pool: DictationSentence[] }) 
   useEffect(() => () => stopSpeaking(), []);
 
   const sentence = round?.[index] ?? null;
+  const setting = { scene: DICTATION_SCENE[difficulty], difficulty, babble };
+  const recorded = pool.length > 0 && pool.every((s) => s.audio.src !== null);
   const parts = useMemo(() => (sentence ? sentenceParts(sentence.de) : []), [sentence]);
   const passedSet = useMemo(() => new Set(passedIds), [passedIds]);
   const counts = useMemo(() => {
@@ -177,7 +189,7 @@ export default function DictationDrill({ pool }: { pool: DictationSentence[] }) 
       const nextSentence = round[index + 1];
       setIndex(index + 1);
       // Part of the learner's own tap, so the next sentence may start playing right away.
-      speak(nextSentence.de, RATE.normal);
+      play(nextSentence.de, [{ text: nextSentence.de, src: nextSentence.audio.src }], false, setting);
     }
   };
 
@@ -231,8 +243,8 @@ export default function DictationDrill({ pool }: { pool: DictationSentence[] }) 
   const replay =
     sentence && !finished ? (
       <div className="flex shrink-0 gap-2">
-        <SpeakButton text={sentence.de} compact hideText />
-        <SpeakButton text={sentence.de} compact slow hideText />
+        <SpeakButton text={sentence.de} compact hideText clip={{ src: sentence.audio.src, ...setting }} />
+        {difficulty !== "hard" && <SpeakButton text={sentence.de} compact slow hideText clip={{ src: sentence.audio.src, ...setting }} />}
       </div>
     ) : null;
 
@@ -244,7 +256,8 @@ export default function DictationDrill({ pool }: { pool: DictationSentence[] }) 
       <BackToListen />
       <PageHeader title={t("title")} compact="always" />
 
-      <SpeechGate>
+      <SpeechGate recorded={recorded}>
+        <DifficultyPicker />
         <div role="group" aria-label={t("levelLabel")} className="flex flex-wrap gap-2">
           {DICTATION_LEVELS.map((l) => (
             <button key={l} type="button" aria-pressed={level === l} onClick={() => pickLevel(l)} className="pill">
@@ -298,7 +311,7 @@ export default function DictationDrill({ pool }: { pool: DictationSentence[] }) 
                 <div className="flex flex-wrap items-center gap-2">
                   <span className="text-sm font-bold text-text-muted">{t("parts")}</span>
                   {parts.map((p, i) => (
-                    <PartButton key={i} text={p} n={i + 1} total={parts.length} />
+                    <PartButton key={i} text={p} n={i + 1} total={parts.length} src={sentence.audio.parts[i] ?? null} />
                   ))}
                 </div>
               )}
@@ -369,7 +382,7 @@ export default function DictationDrill({ pool }: { pool: DictationSentence[] }) 
               </ul>
             )}
             <div className="flex items-start gap-3 border-t border-border pt-3">
-              <SpeakButton text={sentence.de} compact />
+              <SpeakButton text={sentence.de} compact clip={{ src: sentence.audio.src }} />
               <div className="min-w-0 space-y-1">
                 <p dir="ltr" lang="de" className="font-extrabold">
                   {sentence.de}

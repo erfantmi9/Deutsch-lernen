@@ -1,6 +1,7 @@
 [
   {
     "id": "kennenlernen",
+    "scene": "classroom",
     "topic": "introduce",
     "title": { "en": "Getting to know each other", "fa": "آشنا شدن", "de": "Sich kennenlernen" },
     "setting": {
@@ -45,6 +46,7 @@
   },
   {
     "id": "neuer-kollege",
+    "scene": "office",
     "topic": "introduce",
     "title": { "en": "Meeting a colleague", "fa": "آشنایی با یک همکار", "de": "Ein neuer Kollege" },
     "setting": {
@@ -89,6 +91,7 @@
   },
   {
     "id": "im-cafe",
+    "scene": "cafe",
     "topic": "order-food",
     "title": { "en": "In the café", "fa": "در کافه", "de": "Im Café" },
     "setting": {
@@ -134,6 +137,7 @@
   },
   {
     "id": "beim-baecker",
+    "scene": "shop",
     "topic": "shopping",
     "title": { "en": "At the bakery", "fa": "در نانوایی", "de": "Beim Bäcker" },
     "setting": {
@@ -179,6 +183,7 @@
   },
   {
     "id": "jacke-kaufen",
+    "scene": "shop",
     "topic": "shopping",
     "title": { "en": "Buying a jacket", "fa": "خرید یک ژاکت", "de": "Eine Jacke kaufen" },
     "setting": {
@@ -222,6 +227,7 @@
   },
   {
     "id": "nach-dem-weg-fragen",
+    "scene": "street",
     "topic": "directions",
     "title": { "en": "Asking the way", "fa": "پرسیدن آدرس", "de": "Nach dem Weg fragen" },
     "setting": {

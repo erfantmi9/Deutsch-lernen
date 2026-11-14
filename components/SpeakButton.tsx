@@ -3,6 +3,9 @@
 import { useEffect, useSyncExternalStore } from "react";
 import { useTranslations } from "next-intl";
 import { getSpeakingKey, RATE, speak, speechKey, stopSpeaking, subscribeSpeech } from "@/lib/speech";
+import { play } from "@/lib/player";
+import type { PlaySetting } from "@/lib/player";
+import type { VoiceFx } from "@/lib/audioScene";
 import { useSpeechSupport } from "./useSpeech";
 
 /**
@@ -17,6 +20,7 @@ export default function SpeakButton({
   compact = false,
   plain = false,
   hideText = false,
+  clip,
   className = "",
 }: {
   text: string;
@@ -26,10 +30,14 @@ export default function SpeakButton({
   plain?: boolean;
   /** The label and tooltip leave the text out ("Listen" instead of "Listen: der Kopf"): for listening exercises, where the text is the answer. */
   hideText?: boolean;
+  /** A recording of the text and where it is heard: played instead of the browser voice when `src` is set. */
+  clip?: PlaySetting & { src: string | null; fx?: VoiceFx };
   className?: string;
 }) {
   const t = useTranslations("Speech");
-  const { supported } = useSpeechSupport();
+  const { supported: speech } = useSpeechSupport();
+  // A recording plays without a browser voice.
+  const supported = speech || !!clip?.src;
   const rate = slow ? RATE.slow : RATE.normal;
   const speaking = useSyncExternalStore(subscribeSpeech, getSpeakingKey, () => null) === speechKey(text, rate);
 
@@ -56,6 +64,7 @@ export default function SpeakButton({
       data-speaking={speaking ? "" : undefined}
       onClick={() => {
         if (speaking) stopSpeaking();
+        else if (clip) play(text, [{ text, src: clip.src, fx: clip.fx }], slow, clip);
         else speak(text, rate);
       }}
       className={

@@ -1,4 +1,5 @@
 import type { I18n3 } from "./common";
+import type { Scene } from "./listening";
 
 export const DIALOGUE_TOPICS = [
   "introduce",
@@ -40,6 +41,10 @@ export interface Dialogue {
   grammarLessonIds?: string[];
   /** Exactly four comprehension questions. */
   quiz: QuizQuestion[];
+  /** Where it takes place: the background sound when listening. */
+  scene: Scene;
+  /** On the phone: the speaker heard through the telephone (the learner is with the other one). */
+  phoneSpeaker?: string;
 }
 
 export const MIN_DIALOGUE_LINES = 6;

@@ -1,6 +1,8 @@
 [
   {
     "id": "termin-machen",
+    "scene": "phone",
+    "phoneSpeaker": "Empfang",
     "topic": "appointment",
     "title": { "en": "Making an appointment", "fa": "وقت گرفتن", "de": "Einen Termin machen" },
     "setting": {
@@ -45,6 +47,7 @@
   },
   {
     "id": "formular-ausfuellen",
+    "scene": "office",
     "topic": "form",
     "title": { "en": "Filling in a form", "fa": "پر کردن فرم", "de": "Ein Formular ausfüllen" },
     "setting": {
@@ -91,6 +94,8 @@
   },
   {
     "id": "am-telefon",
+    "scene": "phone",
+    "phoneSpeaker": "Laura",
     "topic": "phone",
     "title": { "en": "A phone call", "fa": "یک تماس تلفنی", "de": "Ein Telefongespräch" },
     "setting": {
@@ -135,6 +140,7 @@
   },
   {
     "id": "meine-familie",
+    "scene": "home",
     "topic": "family",
     "title": { "en": "My family", "fa": "خانواده‌ی من", "de": "Meine Familie" },
     "setting": {
@@ -179,6 +185,7 @@
   },
   {
     "id": "mein-tag",
+    "scene": "home",
     "topic": "daily-routine",
     "title": { "en": "A normal day", "fa": "یک روز معمولی", "de": "Ein ganz normaler Tag" },
     "setting": {
@@ -223,6 +230,7 @@
   },
   {
     "id": "das-wetter",
+    "scene": "street",
     "topic": "weather",
     "title": { "en": "The weather", "fa": "هوا", "de": "Das Wetter" },
     "setting": {

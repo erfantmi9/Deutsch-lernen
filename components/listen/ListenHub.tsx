@@ -145,7 +145,7 @@ export default function ListenHub({
           {t("tipsTitle")}
         </h2>
         <ol className="list-inside list-decimal space-y-2 text-text-muted">
-          {(["first", "slow", "keywords", "shadow", "daily"] as const).map((k) => (
+          {(["first", "slow", "keywords", "headphones", "shadow", "daily"] as const).map((k) => (
             <li key={k}>{t(`tips.${k}`)}</li>
           ))}
         </ol>

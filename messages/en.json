@@ -1018,7 +1018,8 @@
         "slow": "Try normal speed before the slow button: nobody speaks slowly in real life.",
         "keywords": "You don't need every word. Listen for the key details: times, prices, places, days.",
         "shadow": "Repeat out loud what you hear (shadowing). It trains your ear and your pronunciation together.",
-        "daily": "Ten minutes every day beat one hour a week."
+        "daily": "Ten minutes every day beat one hour a week.",
+        "headphones": "Use headphones for the harder levels: the background is meant to be a real challenge."
       }
     },
     "dictation": {
@@ -1133,6 +1134,21 @@
       "showText": "Show the text",
       "hideText": "Hide the text",
       "openDialogue": "Open this dialogue with text, role-play and words"
+    },
+    "difficulty": {
+      "label": "Difficulty",
+      "levels": {
+        "easy": "Easy",
+        "real": "Real life",
+        "hard": "Exam (hard)"
+      },
+      "hints": {
+        "easy": "Quiet background, longer pauses.",
+        "real": "Normal background noise, as in everyday life.",
+        "hard": "Loud background, short pauses, no slow button, and only {plays} plays per text, as in the exam."
+      },
+      "plays": "Played {plays} of {max}",
+      "noMorePlays": "No plays left. Answer now."
     }
   },
   "Exam": {
@@ -1453,6 +1469,13 @@
         "h": "Your rights",
         "p": [
           "You can delete your account and all its data at any time on the account page. You also have the right to access, correct, restrict or export your data, to object, and to complain to a data protection authority. To use these rights, contact us at the address above."
+        ]
+      },
+      {
+        "h": "Voices in the listening exercises",
+        "p": [
+          "The recorded voices were made with Piper, an open-source text-to-speech engine, on our own computer. No text you type is ever sent to a speech service.",
+          "Voice models: Thorsten-Voice and Kerstin (both CC0)."
         ]
       }
     ]

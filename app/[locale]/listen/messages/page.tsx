@@ -4,6 +4,8 @@ import { routing } from "@/i18n/routing";
 import { pageAlternates } from "@/lib/seo";
 import MessagesDrill from "@/components/listen/MessagesDrill";
 import { listeningMessages } from "@/lib/listening";
+import { dialogues } from "@/lib/dialogues";
+import { babblePool, messageAudio } from "@/lib/audio/listeningAudio";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -18,5 +20,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <MessagesDrill messages={[...listeningMessages]} />;
+  return (
+    <MessagesDrill
+      messages={[...listeningMessages]}
+      audio={Object.fromEntries(listeningMessages.map((m) => [m.id, messageAudio(m)]))}
+      babble={babblePool(dialogues)}
+    />
+  );
 }

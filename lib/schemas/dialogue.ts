@@ -7,6 +7,7 @@ import {
 } from "../../types/dialogue";
 import type { Dialogue, DialogueLine, QuizQuestion } from "../../types/dialogue";
 import { I18n3Schema, TextSchema } from "./common";
+import { SCENES } from "../../types/listening";
 
 export const DialogueLineSchema = z.object({
   speaker: TextSchema,
@@ -40,11 +41,16 @@ export const DialogueSchema = z
     vocabIds: z.array(TextSchema).optional(),
     grammarLessonIds: z.array(TextSchema).optional(),
     quiz: z.array(QuizQuestionSchema).length(QUIZ_QUESTIONS),
+    scene: z.enum(SCENES),
+    phoneSpeaker: TextSchema.optional(),
   })
   .superRefine((d, ctx) => {
     const speakers = new Set(d.lines.map((l) => l.speaker));
     if (speakers.size !== 2) {
       ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["lines"], message: `needs exactly 2 speakers (has ${speakers.size})` });
+    }
+    if (d.phoneSpeaker !== undefined && (d.scene !== "phone" || !speakers.has(d.phoneSpeaker))) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["phoneSpeaker"], message: "phoneSpeaker must be a speaker of a dialogue with scene phone" });
     }
   }) satisfies z.ZodType<Dialogue>;
 

@@ -207,20 +207,20 @@ export type Rng = () => number;
  * Picks the sentences of a round: not yet passed ones first (in random order), then the rest.
  * `exclude` keeps the sentences of the round just played out where possible.
  */
-export function pickRound(
-  pool: readonly DictationSentence[],
+export function pickRound<T extends DictationSentence>(
+  pool: readonly T[],
   level: DictationLevel,
   passed: ReadonlySet<string>,
   rng: Rng,
   size: number = DICTATION_ROUND,
   exclude: ReadonlySet<string> = new Set(),
-): DictationSentence[] {
+): T[] {
   const inLevel = pool.filter((s) => levelOf(s.de) === level);
   const shuffled = [...inLevel];
   for (let k = shuffled.length - 1; k > 0; k--) {
     const r = Math.floor(rng() * (k + 1));
     [shuffled[k], shuffled[r]] = [shuffled[r], shuffled[k]];
   }
-  const rank = (s: DictationSentence) => (passed.has(s.id) ? 2 : 0) + (exclude.has(s.id) ? 1 : 0);
+  const rank = (s: T) => (passed.has(s.id) ? 2 : 0) + (exclude.has(s.id) ? 1 : 0);
   return shuffled.sort((a, b) => rank(a) - rank(b)).slice(0, size);
 }

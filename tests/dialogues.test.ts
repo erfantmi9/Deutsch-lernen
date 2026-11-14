@@ -17,6 +17,7 @@ const quizQ = { question: i3, options: ["a", "b", "c"], answer: "a" };
 const valid = {
   id: "t",
   topic: "weather",
+  scene: "street",
   title: i3,
   setting: i3,
   lines: ["A", "B", "A", "B", "A", "B"].map((speaker, i) => ({ speaker, de: `Satz ${i}.`, en: "x", fa: "ی" })),

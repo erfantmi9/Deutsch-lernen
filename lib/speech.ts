@@ -49,7 +49,38 @@ export function isSpeechSupported(): boolean {
  * Which utterance is playing, as "<text>|<rate>", so every Play button for that text can show Stop. For a sequence
  * `utterance` is its last part and `part` the index of the part being spoken.
  */
-let current: { key: string; utterance: SpeechSynthesisUtterance; part: number } | null = null;
+let current: { key: string; utterance: SpeechSynthesisUtterance | null; part: number } | null = null;
+
+/*
+ * Another player (the recorded-audio engine in lib/audioScene.ts) reports what it plays here, so every Play / Stop
+ * button and getSpeakingPart() work the same for recordings and for the browser voice, and starting one stops the other.
+ */
+let externalStop: (() => void) | null = null;
+
+function stopExternal(): void {
+  const stop = externalStop;
+  externalStop = null;
+  stop?.();
+}
+
+/** Called by an external player when it starts (`stop` ends it), moves to another part, or ends (`key` null). */
+export function reportPlayback(key: string | null, part = 0, stop?: () => void): void {
+  if (key === null) {
+    if (current && current.utterance === null) {
+      current = null;
+      externalStop = null;
+      emit();
+    }
+    return;
+  }
+  if (stop) {
+    if (isSpeechSupported()) window.speechSynthesis.cancel();
+    if (externalStop !== stop) stopExternal();
+    externalStop = stop;
+  }
+  current = { key, utterance: null, part };
+  emit();
+}
 const listeners = new Set<() => void>();
 const emit = () => listeners.forEach((l) => l());
 
@@ -72,8 +103,8 @@ export function getSpeakingPart(): number | null {
 }
 
 export function stopSpeaking(): void {
-  if (!isSpeechSupported()) return;
-  window.speechSynthesis.cancel();
+  stopExternal();
+  if (isSpeechSupported()) window.speechSynthesis.cancel();
   if (current) {
     current = null;
     emit();
@@ -88,6 +119,7 @@ export function stopSpeaking(): void {
 export function speak(text: string, rate: number = RATE.normal, onEnd?: () => void): boolean {
   if (!isSpeechSupported() || text.trim() === "") return false;
   const synth = window.speechSynthesis;
+  stopExternal();
   synth.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = GERMAN_LANG;
@@ -126,6 +158,7 @@ export function speakSequence(key: string, parts: readonly SpokenPart[], rate: n
   const spoken = parts.filter((p) => p.text.trim() !== "");
   if (!isSpeechSupported() || spoken.length === 0) return false;
   const synth = window.speechSynthesis;
+  stopExternal();
   synth.cancel();
   const voices = synth.getVoices();
   const utterances = spoken.map((p) => {

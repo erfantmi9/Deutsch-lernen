@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { soundAccuracy } from "@/lib/listenStats";
-import { RATE, speak, stopSpeaking } from "@/lib/speech";
+import { stopSpeaking } from "@/lib/speech";
 import { SOUND_CONTRASTS } from "@/types/listening";
 import type { MinimalPair, SoundContrast } from "@/types/listening";
 import { useListenStore } from "@/stores/listenStore";
@@ -16,6 +16,10 @@ import StickyActionBar from "../ui/StickyActionBar";
 import { useScrollIntoViewOnChange } from "../ui/useScrollIntoViewOnChange";
 import BackToListen from "./BackToListen";
 import SpeechGate from "./SpeechGate";
+import { play } from "@/lib/player";
+import type { PairAudio } from "@/lib/audio/listeningAudio";
+
+export type PairItem = MinimalPair & { audio: PairAudio };
 
 type Locale = "en" | "fa" | "de";
 type ContrastFilter = SoundContrast | "mixed";
@@ -23,24 +27,26 @@ type ContrastFilter = SoundContrast | "mixed";
 export const SOUNDS_ROUND = 10;
 
 interface SoundQuestion {
-  pair: MinimalPair;
+  pair: PairItem;
   /** Which of the two words is spoken. */
   spoken: "a" | "b";
+  /** Recorded by a woman or a man, at random: the ear must not rely on one voice. */
+  voice: "f" | "m";
 }
 
 /** A new question: never the same pair twice in a row when there is a choice. */
-function nextQuestion(pairs: readonly MinimalPair[], filter: ContrastFilter, prev: SoundQuestion | null): SoundQuestion {
+function nextQuestion(pairs: readonly PairItem[], filter: ContrastFilter, prev: SoundQuestion | null): SoundQuestion {
   const pool = pairs.filter((p) => filter === "mixed" || p.contrast === filter);
   const choices = pool.length > 1 ? pool.filter((p) => p.id !== prev?.pair.id) : pool;
   const pair = choices[Math.floor(Math.random() * choices.length)];
-  return { pair, spoken: Math.random() < 0.5 ? "a" : "b" };
+  return { pair, spoken: Math.random() < 0.5 ? "a" : "b", voice: Math.random() < 0.5 ? "f" : "m" };
 }
 
 /**
  * Minimal pairs: two words that differ in one sound (schon / schön). One is spoken, the learner picks which. Each
  * contrast has a short tip on how the sounds differ, and the per-contrast accuracy shows which sounds need work.
  */
-export default function SoundsDrill({ pairs }: { pairs: MinimalPair[] }) {
+export default function SoundsDrill({ pairs }: { pairs: PairItem[] }) {
   const t = useTranslations("Listen.sounds");
   const tL = useTranslations("Listen");
   const tUi = useTranslations("Ui");
@@ -76,6 +82,8 @@ export default function SoundsDrill({ pairs }: { pairs: MinimalPair[] }) {
   const answered = given !== null;
   const right = question !== null && given === question.spoken;
   const spokenWord = question ? question.pair[question.spoken].de : "";
+  const srcOf = (q: SoundQuestion, side: "a" | "b") => q.pair.audio[side][q.voice];
+  const recorded = pairs.length > 0 && pairs.every((p) => p.audio.a.f && p.audio.a.m && p.audio.b.f && p.audio.b.m);
   const lastDone = round.asked >= SOUNDS_ROUND && answered;
 
   useEffect(() => {
@@ -92,12 +100,15 @@ export default function SoundsDrill({ pairs }: { pairs: MinimalPair[] }) {
     [scores],
   );
 
-  const next = (f: ContrastFilter, fresh: boolean, play: boolean) => {
+  const next = (f: ContrastFilter, fresh: boolean, autoplay: boolean) => {
     const q = nextQuestion(pairs, f, fresh ? null : question);
     answeredRef.current = false;
     setQuestion(q);
     setGiven(null);
-    if (play) speak(q.pair[q.spoken].de, RATE.normal);
+    if (autoplay) {
+      const word = q.pair[q.spoken].de;
+      play(word, [{ text: word, src: srcOf(q, q.spoken) }], false);
+    }
     else stopSpeaking();
   };
 
@@ -155,8 +166,8 @@ export default function SoundsDrill({ pairs }: { pairs: MinimalPair[] }) {
   const replay =
     question !== null && !finished ? (
       <div className="flex shrink-0 gap-2">
-        <SpeakButton text={spokenWord} compact hideText />
-        <SpeakButton text={spokenWord} compact slow hideText />
+        <SpeakButton text={spokenWord} compact hideText clip={{ src: srcOf(question, question.spoken) }} />
+        <SpeakButton text={spokenWord} compact slow hideText clip={{ src: srcOf(question, question.spoken) }} />
       </div>
     ) : null;
 
@@ -167,7 +178,7 @@ export default function SoundsDrill({ pairs }: { pairs: MinimalPair[] }) {
       <BackToListen />
       <PageHeader title={t("title")} compact="always" />
 
-      <SpeechGate>
+      <SpeechGate recorded={recorded}>
         <div role="group" aria-label={t("contrastLabel")} className="flex flex-wrap gap-2">
           {(["mixed", ...SOUND_CONTRASTS] as const).map((c) => {
             const acc = c === "mixed" ? null : soundAccuracy(scores[c]);
@@ -294,7 +305,7 @@ export default function SoundsDrill({ pairs }: { pairs: MinimalPair[] }) {
             <div className="flex flex-wrap gap-4">
               {(["a", "b"] as const).map((side) => (
                 <span key={side} className="flex items-center gap-2">
-                  <SpeakButton text={question.pair[side].de} compact />
+                  <SpeakButton text={question.pair[side].de} compact clip={{ src: srcOf(question, side) }} />
                   <bdi dir="ltr" lang="de" className="font-extrabold">
                     {question.pair[side].de}
                   </bdi>

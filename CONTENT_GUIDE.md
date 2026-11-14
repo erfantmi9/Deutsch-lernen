@@ -74,6 +74,8 @@ Add it to a file in `data/dialogues/`. Use exactly two speakers. Quiz answers mu
 `noun:` and `verb:` (for example `noun:essen`). `grammarLessonIds` must exist. Words that are in the vocabulary become
 tappable automatically. Each speaker needs a portrait in `LOOKS` (`components/illustrations/people/looks.ts`): pick skin,
 hair, hairstyle, shirt colour and extras so the two speakers look clearly different (a test checks this).
+Give the dialogue a `scene` (its background sound; `phoneSpeaker` names who is heard through the telephone in a phone
+call) and each new speaker a voice in `CHARACTER_VOICES` (`lib/audio/voices.ts`), then record it (DEPLOY.md, step 3b).
 
 ### Add a reading text
 
@@ -89,6 +91,11 @@ the part of a line that gives the answer; it is highlighted in the transcript.
 
 Dictation needs no content of its own: it uses dialogue lines, listening-message lines and word-order sentences without
 digits (see `isDictatable` in `lib/dictation.ts`).
+
+Every listening message has a `scene` (`quiet`, `home`, `classroom`, `office`, `cafe`, `shop`, `street`, `station`,
+`phone`): it sets the background sound. A phone message has scene `phone`; in a conversation on the phone,
+`phoneSpeaker` (0 or 1) is the person heard through the telephone. Give every new message a voice per speaker in
+`MESSAGE_VOICES` (`lib/audio/voices.ts`) and record it (see DEPLOY.md, step 3b).
 
 ### Add a minimal pair
 

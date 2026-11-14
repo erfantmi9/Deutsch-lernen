@@ -4,6 +4,7 @@ import { routing } from "@/i18n/routing";
 import { pageAlternates } from "@/lib/seo";
 import SoundsDrill from "@/components/listen/SoundsDrill";
 import { minimalPairs } from "@/lib/listening";
+import { pairAudio } from "@/lib/audio/listeningAudio";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -18,5 +19,5 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <SoundsDrill pairs={[...minimalPairs]} />;
+  return <SoundsDrill pairs={minimalPairs.map((p) => ({ ...p, audio: pairAudio(p) }))} />;
 }

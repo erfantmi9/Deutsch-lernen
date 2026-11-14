@@ -1,6 +1,7 @@
 [
   {
     "id": "gleis-wechsel",
+    "scene": "station",
     "kind": "announcement",
     "situation": { "en": "You are at the train station.", "fa": "در ایستگاه قطار هستی.", "de": "Du bist am Bahnhof." },
     "lines": [
@@ -18,6 +19,7 @@
   },
   {
     "id": "zug-verspaetung",
+    "scene": "station",
     "kind": "announcement",
     "situation": { "en": "You are waiting for a train to Cologne.", "fa": "منتظر قطار کلن هستی.", "de": "Du wartest auf den Zug nach Köln." },
     "lines": [
@@ -35,6 +37,7 @@
   },
   {
     "id": "supermarkt-aepfel",
+    "scene": "shop",
     "kind": "announcement",
     "situation": { "en": "You are shopping in a supermarket.", "fa": "در سوپرمارکت خرید می‌کنی.", "de": "Du kaufst im Supermarkt ein." },
     "lines": [
@@ -52,6 +55,7 @@
   },
   {
     "id": "kaufhaus-schliesst",
+    "scene": "shop",
     "kind": "announcement",
     "situation": { "en": "You are in a department store.", "fa": "در یک فروشگاه بزرگ هستی.", "de": "Du bist in einem Kaufhaus." },
     "lines": [
@@ -69,6 +73,7 @@
   },
   {
     "id": "flughafen-ausgang",
+    "scene": "station",
     "kind": "announcement",
     "situation": { "en": "You are at the airport and want to fly to Vienna.", "fa": "در فرودگاه هستی و می‌خواهی به وین پرواز کنی.", "de": "Du bist am Flughafen und willst nach Wien fliegen." },
     "lines": [
@@ -86,6 +91,7 @@
   },
   {
     "id": "kaufhaus-stock",
+    "scene": "shop",
     "kind": "announcement",
     "situation": { "en": "You want to buy a jacket.", "fa": "می‌خواهی یک کاپشن بخری.", "de": "Du möchtest eine Jacke kaufen." },
     "lines": [
@@ -103,6 +109,7 @@
   },
   {
     "id": "kurs-raum",
+    "scene": "classroom",
     "kind": "announcement",
     "situation": { "en": "You are at your language school.", "fa": "در آموزشگاه زبانت هستی.", "de": "Du bist in deiner Sprachschule." },
     "lines": [
@@ -120,6 +127,7 @@
   },
   {
     "id": "bus-baustelle",
+    "scene": "street",
     "kind": "announcement",
     "situation": { "en": "You are on bus number five and want to go to the market square.", "fa": "در اتوبوس شماره‌ی پنج هستی و می‌خواهی به میدان بازار بروی.", "de": "Du bist im Bus Linie fünf und willst zum Marktplatz." },
     "lines": [
@@ -137,6 +145,7 @@
   },
   {
     "id": "praxis-termin",
+    "scene": "phone",
     "kind": "phone",
     "situation": { "en": "You hear a message on your answering machine.", "fa": "یک پیام روی پیغام‌گیر تلفنت می‌شنوی.", "de": "Du hörst eine Nachricht auf deinem Anrufbeantworter." },
     "lines": [
@@ -154,6 +163,7 @@
   },
   {
     "id": "kino-treffen",
+    "scene": "phone",
     "kind": "phone",
     "situation": { "en": "A friend leaves you a message.", "fa": "یک دوست برایت پیام گذاشته است.", "de": "Eine Freundin hinterlässt dir eine Nachricht." },
     "lines": [
@@ -171,6 +181,7 @@
   },
   {
     "id": "mama-einkaufen",
+    "scene": "phone",
     "kind": "phone",
     "situation": { "en": "Jonas hears a message from his mother.", "fa": "یوناس پیامی از مادرش می‌شنود.", "de": "Jonas hört eine Nachricht von seiner Mutter." },
     "lines": [
@@ -188,6 +199,7 @@
   },
   {
     "id": "fahrrad-reparatur",
+    "scene": "phone",
     "kind": "phone",
     "situation": { "en": "Your bike is being repaired. The shop calls you.", "fa": "دوچرخه‌ات در حال تعمیر است. مغازه به تو زنگ می‌زند.", "de": "Dein Fahrrad ist in der Reparatur. Der Laden ruft an." },
     "lines": [
@@ -205,6 +217,7 @@
   },
   {
     "id": "kollegin-krank",
+    "scene": "phone",
     "kind": "phone",
     "situation": { "en": "A colleague leaves Anna a message.", "fa": "یک همکار برای آنا پیام می‌گذارد.", "de": "Eine Kollegin hinterlässt Anna eine Nachricht." },
     "lines": [
@@ -222,6 +235,7 @@
   },
   {
     "id": "vermieter-techniker",
+    "scene": "phone",
     "kind": "phone",
     "situation": { "en": "Your landlord calls you.", "fa": "صاحب‌خانه‌ات به تو زنگ می‌زند.", "de": "Dein Vermieter ruft dich an." },
     "lines": [
@@ -239,6 +253,7 @@
   },
   {
     "id": "party-samstag",
+    "scene": "phone",
     "kind": "phone",
     "situation": { "en": "Ben leaves Lisa a message about his party.", "fa": "بن درباره‌ی مهمانی‌اش برای لیزا پیام می‌گذارد.", "de": "Ben hinterlässt Lisa eine Nachricht über seine Party." },
     "lines": [
@@ -256,6 +271,7 @@
   },
   {
     "id": "restaurant-tisch",
+    "scene": "phone",
     "kind": "phone",
     "situation": { "en": "You booked a table. The restaurant calls back.", "fa": "یک میز رزرو کرده‌ای. رستوران با تو تماس می‌گیرد.", "de": "Du hast einen Tisch reserviert. Das Restaurant ruft zurück." },
     "lines": [
@@ -273,6 +289,7 @@
   },
   {
     "id": "baeckerei-preis",
+    "scene": "shop",
     "kind": "conversation",
     "situation": { "en": "You are at the bakery.", "fa": "در نانوایی هستی.", "de": "Du bist in der Bäckerei." },
     "lines": [
@@ -287,6 +304,7 @@
   },
   {
     "id": "weg-post",
+    "scene": "street",
     "kind": "conversation",
     "situation": { "en": "Someone asks the way in the street.", "fa": "کسی در خیابان آدرس می‌پرسد.", "de": "Jemand fragt auf der Straße nach dem Weg." },
     "lines": [
@@ -301,6 +319,7 @@
   },
   {
     "id": "bus-viertel",
+    "scene": "street",
     "kind": "conversation",
     "situation": { "en": "Two people talk at the bus stop.", "fa": "دو نفر در ایستگاه اتوبوس صحبت می‌کنند.", "de": "Zwei Personen sprechen an der Bushaltestelle." },
     "lines": [
@@ -316,6 +335,7 @@
   },
   {
     "id": "wochenende-eltern",
+    "scene": "cafe",
     "kind": "conversation",
     "situation": { "en": "Two friends talk about the weekend.", "fa": "دو دوست درباره‌ی آخر هفته صحبت می‌کنند.", "de": "Zwei Freunde sprechen über das Wochenende." },
     "lines": [
@@ -329,6 +349,7 @@
   },
   {
     "id": "jacke-farbe",
+    "scene": "shop",
     "kind": "conversation",
     "situation": { "en": "A customer is in a clothes shop.", "fa": "یک مشتری در مغازه‌ی لباس است.", "de": "Eine Kundin ist in einem Kleidungsgeschäft." },
     "lines": [
@@ -344,6 +365,8 @@
   },
   {
     "id": "praxis-anruf",
+    "scene": "phone",
+    "phoneSpeaker": 0,
     "kind": "conversation",
     "situation": { "en": "A patient calls the doctor's practice.", "fa": "یک بیمار به مطب دکتر زنگ می‌زند.", "de": "Ein Patient ruft in der Arztpraxis an." },
     "lines": [
@@ -358,6 +381,7 @@
   },
   {
     "id": "wohnung-zimmer",
+    "scene": "cafe",
     "kind": "conversation",
     "situation": { "en": "Two friends talk about a new flat.", "fa": "دو دوست درباره‌ی یک آپارتمان جدید صحبت می‌کنند.", "de": "Zwei Freundinnen sprechen über eine neue Wohnung." },
     "lines": [
@@ -371,6 +395,7 @@
   },
   {
     "id": "geburtstag-mai",
+    "scene": "office",
     "kind": "conversation",
     "situation": { "en": "Two colleagues talk.", "fa": "دو همکار با هم صحبت می‌کنند.", "de": "Zwei Kollegen sprechen miteinander." },
     "lines": [
@@ -385,6 +410,7 @@
   },
   {
     "id": "kurs-beginn",
+    "scene": "classroom",
     "kind": "conversation",
     "situation": { "en": "A new student asks at the language school.", "fa": "یک زبان‌آموز جدید در آموزشگاه سؤال می‌کند.", "de": "Ein neuer Schüler fragt in der Sprachschule." },
     "lines": [
