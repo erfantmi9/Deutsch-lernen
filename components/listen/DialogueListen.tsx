@@ -13,6 +13,7 @@ import SpeakerAvatar from "../SpeakerAvatar";
 import BackToListen from "./BackToListen";
 import SequenceButton from "./SequenceButton";
 import SpeechGate from "./SpeechGate";
+import DifficultyPicker, { PlayCount, usePlayLimit } from "./DifficultyPicker";
 
 type Locale = "en" | "fa" | "de";
 
@@ -20,7 +21,7 @@ type Locale = "en" | "fa" | "de";
  * A dialogue by ear: the text stays hidden. The learner reads the four questions, plays the whole conversation (two
  * voices, normal or slow) and answers. The transcript can be opened at any time, best after checking.
  */
-export default function DialogueListen({ dialogue }: { dialogue: Dialogue }) {
+export default function DialogueListen({ dialogue, audio, babble }: { dialogue: Dialogue; audio: (string | null)[]; babble: string[] }) {
   const t = useTranslations("Listen.dialogues");
   const locale = useLocale() as Locale;
   const tr = locale === "de" ? "en" : locale;
@@ -31,8 +32,16 @@ export default function DialogueListen({ dialogue }: { dialogue: Dialogue }) {
   const id = `dialogue:${dialogue.id}`;
   const parts = useMemo(() => {
     const names = speakersOf(dialogue.lines);
-    return dialogue.lines.map((l) => ({ text: l.de, speaker: names.indexOf(l.speaker) === 1 ? (1 as const) : (0 as const) }));
-  }, [dialogue]);
+    return dialogue.lines.map((l, i) => ({
+      text: l.de,
+      speaker: names.indexOf(l.speaker) === 1 ? (1 as const) : (0 as const),
+      src: audio[i],
+      fx: l.speaker === dialogue.phoneSpeaker ? ("phone" as const) : ("dry" as const),
+    }));
+  }, [dialogue, audio]);
+  const limit = usePlayLimit(dialogue.id);
+  const setting = { scene: dialogue.scene, difficulty: limit.difficulty, babble };
+  const recorded = audio.length > 0 && audio.every((a) => a !== null);
 
   const key = useSyncExternalStore(subscribeSpeech, getSpeakingKey, () => null);
   const part = useSyncExternalStore(subscribeSpeech, getSpeakingPart, () => null);
@@ -44,15 +53,17 @@ export default function DialogueListen({ dialogue }: { dialogue: Dialogue }) {
       <BackToListen />
       <PageHeader title={dialogue.title[locale]} subtitle={dialogue.setting[locale]} compact="always" />
 
-      <SpeechGate>
+      <SpeechGate recorded={recorded}>
         <section className="card space-y-4 p-5" aria-labelledby="dl-player">
           <h2 id="dl-player" className="text-lg font-extrabold">
             {t("player")}
           </h2>
           <p className="text-sm text-text-muted">{t("how")}</p>
+          <DifficultyPicker />
           <div className="flex flex-wrap items-center gap-2">
-            <SequenceButton id={id} parts={parts} />
-            <SequenceButton id={id} parts={parts} slow />
+            <SequenceButton id={id} parts={parts} setting={setting} disabled={limit.exhausted} onPlay={limit.played} />
+            {!limit.hard && <SequenceButton id={id} parts={parts} setting={setting} slow onPlay={limit.played} />}
+            <PlayCount plays={limit.plays} hard={limit.hard} />
           </div>
           {/* Who is speaking: a visual aid only (a live region would talk over the voice). */}
           <div aria-hidden="true" className="flex min-h-11 items-center gap-3 text-sm font-bold text-text-muted" data-now-speaking={line ? part : undefined}>
@@ -89,7 +100,7 @@ export default function DialogueListen({ dialogue }: { dialogue: Dialogue }) {
                       {l[tr]}
                     </p>
                   </div>
-                  <SpeakButton text={l.de} compact />
+                  <SpeakButton text={l.de} compact clip={{ src: audio[i], fx: l.speaker === dialogue.phoneSpeaker ? "phone" : "dry" }} />
                 </li>
               ))}
             </ol>

@@ -8,6 +8,7 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "validate:data": "tsx scripts/validate-data.ts",
+    "audio:generate": "tsx scripts/generate-audio.ts",
     "prebuild": "npm run validate:data",
     "test": "vitest run",
     "test:e2e": "playwright test",

@@ -45,6 +45,33 @@ Without it the app reads the production domain that Vercel provides (`VERCEL_PRO
 That address ends up in the sitemap, `robots.txt`, canonical links, `hreflang` links and the social card.
 On a local build, without Vercel, it is `http://localhost:3000`.
 
+## 3b. Recordings for the listening section (optional, once)
+
+Without recordings the listening exercises use the browser's own voice, which often sounds the same for both people of a
+dialogue. With recordings every character has their own voice, phone calls sound like a phone, announcements like a
+station loudspeaker, and the background (café, street, station ...) is mixed in by the app.
+
+The recordings are made **offline on your computer** with [Piper](https://github.com/rhasspy/piper), an open-source
+text-to-speech engine: no account, no API key, no billing. They are committed as MP3 files; the deployed app never
+generates speech. Needs Python 3.9 or newer.
+
+1. One-time setup (a private Python environment in `.tts/`, which git ignores):
+   ```bash
+   python -m venv .tts/venv
+   .tts/venv/Scripts/pip install piper-tts lameenc        # macOS / Linux: .tts/venv/bin/pip
+   ```
+2. Record (the two German voices, about 180 MB, are downloaded to `.tts/voices` on the first run):
+   ```bash
+   npm run audio:generate -- --dry-run   # what would be recorded
+   npm run audio:generate                # writes public/audio/*.mp3 and data/audio/manifest.json
+   ```
+3. Commit `public/audio/` and `data/audio/manifest.json`.
+
+After changing a dialogue, message or minimal pair, run `npm run audio:generate` again: only new or changed lines are
+recorded (`--prune` deletes files nothing uses). `npm run validate:data` warns when texts have no recording yet.
+Voices per character are set in `lib/audio/voices.ts`: Piper's clean German woman's and man's voice, each at several
+pitches so every character sounds like a different person. Both voices are CC0 (`MODEL_CARD` in `.tts/voices`).
+
 ## 4. Deploy
 
 Pushing to `main` deploys automatically. From the CLI:

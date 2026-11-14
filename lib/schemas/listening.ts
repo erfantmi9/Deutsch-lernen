@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { MAX_MESSAGE_LINES, MESSAGE_KINDS, SOUND_CONTRASTS } from "../../types/listening";
+import { MAX_MESSAGE_LINES, MESSAGE_KINDS, SCENES, SOUND_CONTRASTS } from "../../types/listening";
 import type { ListeningMessage, MessageLine, MinimalPair, PairWord } from "../../types/listening";
 import { I18n2Schema, I18n3Schema, TextSchema } from "./common";
 
@@ -15,6 +15,8 @@ export const ListeningMessageSchema = z
     id: TextSchema,
     kind: z.enum(MESSAGE_KINDS),
     situation: I18n3Schema,
+    scene: z.enum(SCENES),
+    phoneSpeaker: z.union([z.literal(0), z.literal(1)]).optional(),
     lines: z.array(MessageLineSchema).min(1).max(MAX_MESSAGE_LINES),
     question: I18n3Schema,
     options: z.array(TextSchema).length(3),
@@ -32,6 +34,12 @@ export const ListeningMessageSchema = z
     const speakers = new Set(m.lines.map((l) => l.speaker));
     if (m.kind === "conversation" && speakers.size !== 2) {
       ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["lines"], message: "a conversation needs speakers 0 and 1" });
+    }
+    if (m.phoneSpeaker !== undefined && (m.kind !== "conversation" || m.scene !== "phone")) {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["phoneSpeaker"], message: "phoneSpeaker is only for conversations with scene phone" });
+    }
+    if (m.kind === "phone" && m.scene !== "phone") {
+      ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["scene"], message: "a phone message has scene phone" });
     }
     if (m.kind !== "conversation" && (speakers.size !== 1 || !speakers.has(0))) {
       ctx.addIssue({ code: z.ZodIssueCode.custom, path: ["lines"], message: `a ${m.kind} has one speaker (0)` });

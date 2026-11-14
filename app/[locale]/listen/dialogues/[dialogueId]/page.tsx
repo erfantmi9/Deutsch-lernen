@@ -5,6 +5,7 @@ import { routing } from "@/i18n/routing";
 import { pageAlternates } from "@/lib/seo";
 import { dialogues, getDialogue } from "@/lib/dialogues";
 import DialogueListen from "@/components/listen/DialogueListen";
+import { babblePool, dialogueAudio } from "@/lib/audio/listeningAudio";
 
 export const dynamicParams = false;
 
@@ -32,5 +33,6 @@ export default async function ListenDialoguePage({ params }: Props) {
   setRequestLocale(locale);
   const dialogue = getDialogue(dialogueId);
   if (!dialogue) notFound();
-  return <DialogueListen dialogue={dialogue} />;
+  const audio = dialogueAudio(dialogue);
+  return <DialogueListen dialogue={dialogue} audio={audio} babble={babblePool(dialogues, audio)} />;
 }

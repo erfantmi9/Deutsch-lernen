@@ -4,6 +4,8 @@ import { routing } from "@/i18n/routing";
 import { pageAlternates } from "@/lib/seo";
 import DictationDrill from "@/components/listen/DictationDrill";
 import { dictationPool } from "@/lib/listening";
+import { dialogues } from "@/lib/dialogues";
+import { babblePool, dictationAudio } from "@/lib/audio/listeningAudio";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -18,5 +20,5 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <DictationDrill pool={dictationPool()} />;
+  return <DictationDrill pool={dictationPool().map((s) => ({ ...s, audio: dictationAudio(s) }))} babble={babblePool(dialogues)} />;
 }

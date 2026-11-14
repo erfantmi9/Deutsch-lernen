@@ -13,3 +13,6 @@ e2e/screenshots
 
 .vercel
 .env*
+
+# offline TTS voices and venv (scripts/generate-audio)
+/.tts/

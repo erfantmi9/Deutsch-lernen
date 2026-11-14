@@ -15,6 +15,10 @@ import { AdjectiveListSchema, AdverbListSchema, PhraseListSchema, PrepositionLis
 import { ExamSchema } from "../lib/schemas/exam";
 import { ListeningMessageListSchema, MinimalPairListSchema } from "../lib/schemas/listening";
 import { isDictatable } from "../lib/dictation";
+import { dictationPool } from "../lib/listening";
+import { clipJobs } from "../lib/audio/clips";
+import { AUDIO_DIR, MANIFEST_FILE } from "../lib/audio/manifest";
+import type { AudioManifest } from "../lib/audio/manifest";
 import { checkExam } from "../lib/validation/examRules";
 import { checkMessages } from "../lib/validation/messageRules";
 import { checkGrammarData } from "../lib/validation/grammarRules";
@@ -293,6 +297,27 @@ try {
   report("data/exam/a1.json", "-", { severity: "error", message: `cannot read: ${(e as Error).message}` });
 }
 
+// ---- recordings: every manifest entry points to a file, every key is still used ----
+loadedFiles.add(MANIFEST_FILE);
+let recordedClips = 0;
+try {
+  const manifest = JSON.parse(readFileSync(join(ROOT, MANIFEST_FILE), "utf8")) as AudioManifest;
+  const keys = new Set(
+    clipJobs({ dialogues: dialogueEntries, messages: listeningMessages, dictation: dictationPool(), pairs }).map((j) => j.key),
+  );
+  for (const [key, clip] of Object.entries(manifest.clips ?? {})) {
+    recordedClips++;
+    if (!existsSync(join(ROOT, AUDIO_DIR, clip.file))) report(MANIFEST_FILE, key, { severity: "error", message: `file ${clip.file} is missing in ${AUDIO_DIR}` });
+    if (!keys.has(key)) report(MANIFEST_FILE, key, { severity: "warning", message: "no exercise uses this recording any more (run npm run audio:generate)" });
+  }
+  const missing = [...keys].filter((k) => !(k in (manifest.clips ?? {}))).length;
+  if (recordedClips > 0 && missing > 0) {
+    report(MANIFEST_FILE, "-", { severity: "warning", message: `${missing} text(s) changed or are new and have no recording yet (run npm run audio:generate)` });
+  }
+} catch (e) {
+  report(MANIFEST_FILE, "-", { severity: "error", message: `cannot read: ${(e as Error).message}` });
+}
+
 // ---- every JSON file in data/ is covered ----
 for (const file of jsonFiles("data")) {
   const rel = file.replaceAll("\\", "/");
@@ -310,6 +335,6 @@ for (const loc of ["fa", "de"]) {
 for (const p of findDuplicateIds(seen)) report("(all files)", "-", p);
 
 console.log(
-  `\nValidated ${vocabFiles.length} noun file(s), ${extendedCount} adjective/adverb/preposition/phrase item(s), ${grammarLessons.length} grammar lesson(s), ${grammarExercises.length} grammar exercise(s), ${glossaryEntries.length} glossary term(s), ${cardinalEntries.length} cardinal(s), ${ordinalEntries.length} ordinal(s), ${calendarItems} calendar item(s), ${dialogueEntries.length} dialogue(s), ${readingEntries.length} reading text(s), ${listeningMessages.length} listening message(s), ${pairs.length} minimal pair(s), ${examItems} exam item(s), 3 message file(s); ${seen.length} entries in total: ${errors} error(s), ${warnings} warning(s).`,
+  `\nValidated ${vocabFiles.length} noun file(s), ${extendedCount} adjective/adverb/preposition/phrase item(s), ${grammarLessons.length} grammar lesson(s), ${grammarExercises.length} grammar exercise(s), ${glossaryEntries.length} glossary term(s), ${cardinalEntries.length} cardinal(s), ${ordinalEntries.length} ordinal(s), ${calendarItems} calendar item(s), ${dialogueEntries.length} dialogue(s), ${readingEntries.length} reading text(s), ${listeningMessages.length} listening message(s), ${pairs.length} minimal pair(s), ${recordedClips} recording(s), ${examItems} exam item(s), 3 message file(s); ${seen.length} entries in total: ${errors} error(s), ${warnings} warning(s).`,
 );
 process.exit(errors > 0 ? 1 : 0);
