@@ -70,7 +70,7 @@
       },
       "listen": {
         "title": "Hören",
-        "desc": "Hör ein Wort oder eine Zahl und schreib, was du gehört hast."
+        "desc": "Diktat, Durchsagen, Dialoge nur hören und ähnliche Laute."
       },
       "review": {
         "title": "Wiederholen",
@@ -298,7 +298,8 @@
       "correctAnswer": "Richtige Antwort:",
       "progress": "{answered}/{total} beantwortet",
       "missing": "Fehlt: {items}"
-    }
+    },
+    "listenOnly": "Ohne Text hören"
   },
   "Reading": {
     "title": "Lesen",
@@ -947,11 +948,13 @@
   "Speech": {
     "listen": "Anhören: {text}",
     "listenSlow": "Langsam anhören: {text}",
-    "stop": "Stopp"
+    "stop": "Stopp",
+    "play": "Abspielen",
+    "playSlow": "Langsam abspielen"
   },
   "Listen": {
-    "title": "Hörtraining",
-    "subtitle": "Ohren auf! Hör ein deutsches Wort oder eine Zahl und wähl oder tipp, was du gehört hast.",
+    "title": "Wörter & Zahlen",
+    "subtitle": "Kurze Übung: Hör ein deutsches Wort oder eine Zahl und wähl oder tipp, was du gehört hast.",
     "unsupported": "Dein Browser kann kein Deutsch vorlesen. Probiere Chrome, Edge oder Safari für das Hörtraining.",
     "noGermanVoice": "Auf diesem Gerät wurde keine deutsche Stimme gefunden. Die Wörter klingen vielleicht falsch. Installiere eine deutsche Stimme in den Systemeinstellungen.",
     "kindLabel": "Übungsart",
@@ -976,7 +979,161 @@
     "tapPlay": "Tipp auf Abspielen und hör zu.",
     "chooseAnswer": "Was hast du gehört?",
     "typeAnswer": "Tipp die Zahl, die du gehört hast.",
-    "start": "Los geht's!"
+    "start": "Los geht's!",
+    "back": "Hören",
+    "play": "Abspielen",
+    "playSlow": "Langsam",
+    "hub": {
+      "title": "Hörtraining",
+      "subtitle": "Trainiere dein Ohr mit echten Sätzen: Schreib, was du hörst, versteh die wichtigen Infos und unterscheide ähnliche Laute.",
+      "count": "{done} von {total} geschafft",
+      "percent": "{percent} % geschafft",
+      "modules": {
+        "dictation": {
+          "tag": "Hören und schreiben",
+          "title": "Diktat",
+          "desc": "Hör einen Satz und schreib ihn auf. Du siehst Wort für Wort, was richtig war."
+        },
+        "messages": {
+          "tag": "Wie in der Prüfung · A1",
+          "title": "Durchsagen & Nachrichten",
+          "desc": "Durchsagen, Nachrichten am Telefon und kurze Gespräche. Versteh Uhrzeit, Preis und Ort."
+        },
+        "sounds": {
+          "tag": "Aussprache",
+          "title": "Ähnliche Laute",
+          "desc": "schon oder schön? Trainiere dein Ohr für ü, ö, ei und ie, lange Vokale und mehr."
+        },
+        "words": {
+          "tag": "Zum Aufwärmen",
+          "title": "Wörter & Zahlen",
+          "desc": "Kurze Übung: Hör ein Wort oder eine Zahl und wähl oder tipp es."
+        }
+      },
+      "dialoguesTitle": "Dialoge nur hören",
+      "dialoguesDesc": "Lies die vier Fragen, hör das Gespräch ohne Text und antworte dann.",
+      "tipsTitle": "So trainierst du dein Ohr",
+      "tips": {
+        "first": "Hör zuerst ohne Text. Lies erst danach mit.",
+        "slow": "Versuch es zuerst im normalen Tempo: Im Alltag spricht niemand langsam.",
+        "keywords": "Du musst nicht jedes Wort verstehen. Achte auf die wichtigen Infos: Uhrzeit, Preis, Ort, Tag.",
+        "shadow": "Sprich laut nach, was du hörst (Shadowing). Das trainiert Ohr und Aussprache zusammen.",
+        "daily": "Zehn Minuten jeden Tag bringen mehr als eine Stunde pro Woche."
+      }
+    },
+    "dictation": {
+      "title": "Diktat",
+      "subtitle": "Hör einen deutschen Satz, schreib ihn auf und sieh Wort für Wort, was richtig war.",
+      "levelLabel": "Satzlänge",
+      "levels": {
+        "short": "Kurz",
+        "medium": "Mittel",
+        "long": "Lang"
+      },
+      "intro": "Du hörst einen Satz. Schreib genau, was du hörst, mit Großbuchstaben und ä, ö, ü, ß.",
+      "tipParts": "Langer Satz? Hör ihn mit den Zahlen-Knöpfen in Teilen.",
+      "tipSlips": "Kleine Fehler (Groß- und Kleinschreibung, a statt ä, ein falscher Buchstabe) werden markiert, zählen aber als richtig.",
+      "tipLevel": "Eine Runde hat {count} Sätze. Sätze, die du noch nicht richtig geschrieben hast, kommen zuerst.",
+      "question": "Satz {current} von {total}",
+      "askFirst": "Tipp auf Abspielen, hör den ersten Satz und schreib ihn auf.",
+      "ask": "Hör zu und schreib, was du hörst.",
+      "parts": "Teile (langsam):",
+      "partLabel": "Teil {n} von {total} langsam abspielen",
+      "inputLabel": "Was du gehört hast",
+      "placeholder": "Schreib den Satz …",
+      "typeFirst": "Schreib, was du gehört hast.",
+      "perfect": "Perfekt!",
+      "almost": "Richtig, mit kleinen Fehlern.",
+      "notYet": "Noch nicht ganz.",
+      "wordsRight": "{correct} von {total} Wörtern genau richtig.",
+      "checked": "Dein Satz, korrigiert",
+      "average": "Durchschnitt: {percent} %",
+      "marks": {
+        "case": "Groß/klein",
+        "umlaut": "ä ö ü ß",
+        "typo": "Ein Buchstabe falsch",
+        "wrong": "Falsches Wort",
+        "missing": "Wort fehlt",
+        "extra": "Wort zu viel"
+      }
+    },
+    "messages": {
+      "title": "Durchsagen & Nachrichten",
+      "subtitle": "Kurze Durchsagen, Nachrichten am Telefon und Gespräche, wie in der A1-Prüfung.",
+      "kindLabel": "Textart",
+      "kinds": {
+        "all": "Alle",
+        "announcement": "Durchsagen",
+        "phone": "Telefonnachrichten",
+        "conversation": "Gespräche"
+      },
+      "intro": "Lies zuerst, wo du bist und was die Frage ist. Dann hör zu und wähl die Antwort.",
+      "tipQuestionFirst": "Lies die Frage vor dem Hören: Dann weißt du, worauf du achten musst.",
+      "tipKeyWords": "Vorsicht, Fallen: »halb acht« ist 7:30 Uhr, und »nicht …, sondern …« ändert die Antwort.",
+      "tipExam": "In der Prüfung hörst du jeden Text zweimal. Hier kannst du so oft hören, wie du willst.",
+      "progress": "Text {current} von {total}",
+      "tapPlay": "Tipp auf Abspielen und hör zu.",
+      "rightAnswer": "Richtig ist:",
+      "showText": "Text zeigen",
+      "hideText": "Text verbergen"
+    },
+    "sounds": {
+      "title": "Ähnliche Laute",
+      "subtitle": "Zwei Wörter, ein Unterschied. Welches hast du gehört?",
+      "contrastLabel": "Laute",
+      "mixed": "Gemischt",
+      "intro": "Du hörst eines von zwei Wörtern, die sich nur in einem Laut unterscheiden. Wähl das Wort, das du gehört hast. Fang mit »Gemischt« an oder wähl einen Laut.",
+      "weakest": "Noch üben:",
+      "tipTitle": "So klingt es",
+      "ask": "Welches Wort hast du gehört?",
+      "which": "Welches Wort war es?",
+      "itWas": "Es war:",
+      "compare": "Vergleich beide:",
+      "contrasts": {
+        "ue-u": {
+          "label": "ü / u",
+          "tip": "Für ü sprich ein langes »i« und runde dabei die Lippen wie bei »u«. Die Zunge bleibt vorne. Bei u geht sie nach hinten."
+        },
+        "ue-i": {
+          "label": "ü / i",
+          "tip": "Bei beiden ist die Zunge vorne. Nur die Lippen sind anders: rund bei ü, breit (wie beim Lächeln) bei i."
+        },
+        "oe-o": {
+          "label": "ö / o",
+          "tip": "Für ö sprich »e« und runde die Lippen. Das o kommt weiter hinten aus dem Mund."
+        },
+        "oe-e": {
+          "label": "ö / e",
+          "tip": "Die Zunge bleibt an derselben Stelle: runde Lippen bei ö, breite Lippen bei e. Probier es vor dem Spiegel."
+        },
+        "ei-ie": {
+          "label": "ei / ie",
+          "tip": "Sprich den zweiten Buchstaben: ei klingt wie »ai« (mein), ie ist ein langes »i« (Lied)."
+        },
+        "long-short": {
+          "label": "Miete / Mitte",
+          "tip": "Zwei Konsonanten nach einem Vokal machen ihn kurz (Mitte, Stadt, offen). Ein Konsonant, ein h, ein doppelter Vokal oder ie machen ihn lang (Ofen, Staat, Miete). Die Länge ändert die Bedeutung!"
+        },
+        "ch-sch": {
+          "label": "ch / sch",
+          "tip": "Nach i, e, ä, ö, ü, ei, eu (und l, n, r) ist ch weich: Zunge wie beim »j« in »ja« und Luft ausblasen. Das ist kein »sch«; bei sch sind die Lippen rund."
+        },
+        "s-z": {
+          "label": "s / z",
+          "tip": "Das deutsche z klingt immer wie »ts« (Zeit). Ein s vor einem Vokal ist weich und summt (so, Saal)."
+        }
+      }
+    },
+    "dialogues": {
+      "pageTitle": "{title} (Hören)",
+      "player": "Hör das Gespräch",
+      "how": "Lies zuerst die Fragen unten. Dann spiel den Dialog ab: Der Text bleibt versteckt. Hör so oft, wie du willst.",
+      "line": "Zeile {current} von {total}",
+      "speakers": "Sprecher: {a} und {b}",
+      "showText": "Text zeigen",
+      "hideText": "Text verbergen",
+      "openDialogue": "Diesen Dialog mit Text, Rollenspiel und Wörtern öffnen"
+    }
   },
   "Exam": {
     "title": "Probeprüfung A1",

@@ -349,7 +349,7 @@ describe("site and SEO", () => {
 
   it("lists every page for the sitemap, and each static page exists", () => {
     const paths = allPaths({ lessons: grammarLessons.map((l) => l.id), dialogues: dialogues.map((d) => d.id), reading: readingTexts.map((r) => r.id), verbs: verbs.map((v) => v.id), vocabTopics: TOPIC_IDS });
-    expect(paths).toHaveLength(STATIC_PATHS.length + grammarLessons.length + dialogues.length + readingTexts.length + verbs.length + TOPIC_IDS.length);
+    expect(paths).toHaveLength(STATIC_PATHS.length + grammarLessons.length + 2 * dialogues.length + readingTexts.length + verbs.length + TOPIC_IDS.length);
     expect(new Set(paths).size).toBe(paths.length);
     for (const p of STATIC_PATHS) {
       const file = p === "" ? join("app", "[locale]", "page.tsx") : join("app", "[locale]", p, "page.tsx");

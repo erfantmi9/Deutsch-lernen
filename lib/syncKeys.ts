@@ -5,6 +5,7 @@ export const SYNCED_KEYS = [
   "deutsch-learner:exam",
   "deutsch-learner:grammar",
   "deutsch-learner:learn",
+  "deutsch-learner:listen",
   "deutsch-learner:numbers",
   "deutsch-learner:quiz",
   "deutsch-learner:reading",

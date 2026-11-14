@@ -1,0 +1,400 @@
+[
+  {
+    "id": "gleis-wechsel",
+    "kind": "announcement",
+    "situation": { "en": "You are at the train station.", "fa": "در ایستگاه قطار هستی.", "de": "Du bist am Bahnhof." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Achtung, bitte! Der Zug nach München fährt heute nicht von Gleis drei, sondern von Gleis sieben.",
+        "en": "Attention, please! Today the train to Munich does not leave from platform three but from platform seven.",
+        "fa": "توجه، لطفاً! قطار مونیخ امروز از سکوی سه حرکت نمی‌کند، بلکه از سکوی هفت."
+      }
+    ],
+    "question": { "en": "Which platform does the train to Munich leave from?", "fa": "قطار مونیخ از کدام سکو حرکت می‌کند؟", "de": "Von welchem Gleis fährt der Zug nach München?" },
+    "options": ["Gleis 3", "Gleis 7", "Gleis 17"],
+    "answer": "Gleis 7",
+    "evidence": "sondern von Gleis sieben"
+  },
+  {
+    "id": "zug-verspaetung",
+    "kind": "announcement",
+    "situation": { "en": "You are waiting for a train to Cologne.", "fa": "منتظر قطار کلن هستی.", "de": "Du wartest auf den Zug nach Köln." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Information zum Zug nach Köln: Der Zug hat heute zwanzig Minuten Verspätung. Wir bitten um Entschuldigung.",
+        "en": "Information about the train to Cologne: the train is twenty minutes late today. We apologise.",
+        "fa": "اطلاعیه درباره‌ی قطار کلن: قطار امروز بیست دقیقه تأخیر دارد. پوزش می‌خواهیم."
+      }
+    ],
+    "question": { "en": "How late is the train?", "fa": "قطار چقدر تأخیر دارد؟", "de": "Wie viel Verspätung hat der Zug?" },
+    "options": ["12 Minuten", "20 Minuten", "30 Minuten"],
+    "answer": "20 Minuten",
+    "evidence": "zwanzig Minuten Verspätung"
+  },
+  {
+    "id": "supermarkt-aepfel",
+    "kind": "announcement",
+    "situation": { "en": "You are shopping in a supermarket.", "fa": "در سوپرمارکت خرید می‌کنی.", "de": "Du kaufst im Supermarkt ein." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Liebe Kundinnen und Kunden, heute haben wir ein Angebot: Ein Kilo Äpfel kostet nur ein Euro neunundneunzig.",
+        "en": "Dear customers, today we have a special offer: one kilo of apples costs only one euro ninety-nine.",
+        "fa": "مشتریان عزیز، امروز یک پیشنهاد ویژه داریم: یک کیلو سیب فقط یک یورو و نود و نه سنت است."
+      }
+    ],
+    "question": { "en": "How much is a kilo of apples?", "fa": "یک کیلو سیب چند است؟", "de": "Was kostet ein Kilo Äpfel?" },
+    "options": ["1,19 €", "1,99 €", "9,99 €"],
+    "answer": "1,99 €",
+    "evidence": "ein Euro neunundneunzig"
+  },
+  {
+    "id": "kaufhaus-schliesst",
+    "kind": "announcement",
+    "situation": { "en": "You are in a department store.", "fa": "در یک فروشگاه بزرگ هستی.", "de": "Du bist in einem Kaufhaus." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Sehr geehrte Kunden, unser Kaufhaus schließt in fünfzehn Minuten. Bitte kommen Sie jetzt zur Kasse.",
+        "en": "Dear customers, our store closes in fifteen minutes. Please come to the checkout now.",
+        "fa": "مشتریان گرامی، فروشگاه ما تا پانزده دقیقه‌ی دیگر بسته می‌شود. لطفاً همین حالا به صندوق بیایید."
+      }
+    ],
+    "question": { "en": "When does the store close?", "fa": "فروشگاه کی بسته می‌شود؟", "de": "Wann schließt das Kaufhaus?" },
+    "options": ["in 5 Minuten", "in 15 Minuten", "in 50 Minuten"],
+    "answer": "in 15 Minuten",
+    "evidence": "in fünfzehn Minuten"
+  },
+  {
+    "id": "flughafen-ausgang",
+    "kind": "announcement",
+    "situation": { "en": "You are at the airport and want to fly to Vienna.", "fa": "در فرودگاه هستی و می‌خواهی به وین پرواز کنی.", "de": "Du bist am Flughafen und willst nach Wien fliegen." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Letzter Aufruf für den Flug nach Wien. Bitte kommen Sie sofort zum Ausgang B zwölf.",
+        "en": "Last call for the flight to Vienna. Please come to gate B twelve immediately.",
+        "fa": "آخرین فراخوان برای پرواز وین. لطفاً فوراً به گیت B دوازده بیایید."
+      }
+    ],
+    "question": { "en": "Which gate do you have to go to?", "fa": "باید به کدام گیت بروی؟", "de": "Zu welchem Ausgang musst du gehen?" },
+    "options": ["A 12", "B 2", "B 12"],
+    "answer": "B 12",
+    "evidence": "zum Ausgang B zwölf"
+  },
+  {
+    "id": "kaufhaus-stock",
+    "kind": "announcement",
+    "situation": { "en": "You want to buy a jacket.", "fa": "می‌خواهی یک کاپشن بخری.", "de": "Du möchtest eine Jacke kaufen." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Heute im dritten Stock: Alle Jacken und Mäntel sind zwanzig Prozent billiger!",
+        "en": "Today on the third floor: all jackets and coats are twenty percent cheaper!",
+        "fa": "امروز در طبقه‌ی سوم: همه‌ی کاپشن‌ها و پالتوها بیست درصد ارزان‌ترند!"
+      }
+    ],
+    "question": { "en": "Where are the jackets?", "fa": "کاپشن‌ها کجا هستند؟", "de": "Wo sind die Jacken?" },
+    "options": ["im 1. Stock", "im 2. Stock", "im 3. Stock"],
+    "answer": "im 3. Stock",
+    "evidence": "im dritten Stock"
+  },
+  {
+    "id": "kurs-raum",
+    "kind": "announcement",
+    "situation": { "en": "You are at your language school.", "fa": "در آموزشگاه زبانت هستی.", "de": "Du bist in deiner Sprachschule." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Liebe Kursteilnehmer, der Deutschkurs ist heute nicht in Raum zwölf, sondern in Raum zwanzig.",
+        "en": "Dear course participants, today the German course is not in room twelve but in room twenty.",
+        "fa": "زبان‌آموزان عزیز، کلاس آلمانی امروز در اتاق دوازده نیست، بلکه در اتاق بیست است."
+      }
+    ],
+    "question": { "en": "Which room is the course in today?", "fa": "کلاس امروز در کدام اتاق است؟", "de": "In welchem Raum ist der Kurs heute?" },
+    "options": ["Raum 2", "Raum 12", "Raum 20"],
+    "answer": "Raum 20",
+    "evidence": "sondern in Raum zwanzig"
+  },
+  {
+    "id": "bus-baustelle",
+    "kind": "announcement",
+    "situation": { "en": "You are on bus number five and want to go to the market square.", "fa": "در اتوبوس شماره‌ی پنج هستی و می‌خواهی به میدان بازار بروی.", "de": "Du bist im Bus Linie fünf und willst zum Marktplatz." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Liebe Fahrgäste, heute hält der Bus nicht am Marktplatz. Bitte steigen Sie am Bahnhof aus.",
+        "en": "Dear passengers, today the bus does not stop at the market square. Please get off at the station.",
+        "fa": "مسافران عزیز، اتوبوس امروز در میدان بازار توقف نمی‌کند. لطفاً در ایستگاه قطار پیاده شوید."
+      }
+    ],
+    "question": { "en": "Where should you get off?", "fa": "کجا باید پیاده شوی؟", "de": "Wo sollst du aussteigen?" },
+    "options": ["am Marktplatz", "am Bahnhof", "an der Schule"],
+    "answer": "am Bahnhof",
+    "evidence": "Bitte steigen Sie am Bahnhof aus"
+  },
+  {
+    "id": "praxis-termin",
+    "kind": "phone",
+    "situation": { "en": "You hear a message on your answering machine.", "fa": "یک پیام روی پیغام‌گیر تلفنت می‌شنوی.", "de": "Du hörst eine Nachricht auf deinem Anrufbeantworter." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Guten Tag, Frau Weber, hier ist die Praxis Doktor Schulz. Ihr Termin am Montag geht leider nicht. Können Sie am Mittwoch um neun Uhr kommen?",
+        "en": "Hello, Ms Weber, this is Dr Schulz's practice. Unfortunately your appointment on Monday is not possible. Can you come on Wednesday at nine o'clock?",
+        "fa": "روز بخیر خانم وبر، از مطب دکتر شولتس تماس می‌گیرم. متأسفانه وقت شما در روز دوشنبه ممکن نیست. می‌توانید چهارشنبه ساعت نه بیایید؟"
+      }
+    ],
+    "question": { "en": "When is the new appointment?", "fa": "وقت جدید کی است؟", "de": "Wann ist der neue Termin?" },
+    "options": ["Montag, 9 Uhr", "Mittwoch, 9 Uhr", "Mittwoch, 10 Uhr"],
+    "answer": "Mittwoch, 9 Uhr",
+    "evidence": "am Mittwoch um neun Uhr"
+  },
+  {
+    "id": "kino-treffen",
+    "kind": "phone",
+    "situation": { "en": "A friend leaves you a message.", "fa": "یک دوست برایت پیام گذاشته است.", "de": "Eine Freundin hinterlässt dir eine Nachricht." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Hallo Tom, hier ist Sara. Wollen wir heute ins Kino gehen? Der Film beginnt um acht. Wir treffen uns um halb acht vor dem Kino. Bis später!",
+        "en": "Hi Tom, it's Sara. Shall we go to the cinema today? The film starts at eight. We'll meet at half past seven in front of the cinema. See you later!",
+        "fa": "سلام تام، سارا هستم. امروز برویم سینما؟ فیلم ساعت هشت شروع می‌شود. ساعت هفت و نیم جلوی سینما همدیگر را می‌بینیم. تا بعد!"
+      }
+    ],
+    "question": { "en": "When do Tom and Sara meet?", "fa": "تام و سارا کی همدیگر را می‌بینند؟", "de": "Wann treffen sich Tom und Sara?" },
+    "options": ["7:30 Uhr", "8:00 Uhr", "8:30 Uhr"],
+    "answer": "7:30 Uhr",
+    "evidence": "um halb acht"
+  },
+  {
+    "id": "mama-einkaufen",
+    "kind": "phone",
+    "situation": { "en": "Jonas hears a message from his mother.", "fa": "یوناس پیامی از مادرش می‌شنود.", "de": "Jonas hört eine Nachricht von seiner Mutter." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Hallo Jonas, hier ist Mama. Ich komme heute erst um sieben nach Hause. Kannst du bitte Brot und Milch kaufen? Danke!",
+        "en": "Hi Jonas, it's Mum. I'm only coming home at seven today. Can you please buy bread and milk? Thanks!",
+        "fa": "سلام یوناس، مامان هستم. امروز تازه ساعت هفت به خانه می‌آیم. لطفاً می‌توانی نان و شیر بخری؟ ممنون!"
+      }
+    ],
+    "question": { "en": "What should Jonas buy?", "fa": "یوناس چه چیزی باید بخرد؟", "de": "Was soll Jonas kaufen?" },
+    "options": ["Brot und Käse", "Brot und Milch", "Milch und Eier"],
+    "answer": "Brot und Milch",
+    "evidence": "Brot und Milch kaufen"
+  },
+  {
+    "id": "fahrrad-reparatur",
+    "kind": "phone",
+    "situation": { "en": "Your bike is being repaired. The shop calls you.", "fa": "دوچرخه‌ات در حال تعمیر است. مغازه به تو زنگ می‌زند.", "de": "Dein Fahrrad ist in der Reparatur. Der Laden ruft an." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Guten Tag, Herr Brandt, hier ist Fahrrad Müller. Ihr Fahrrad ist fertig. Die Reparatur kostet fünfundvierzig Euro. Wir sind bis achtzehn Uhr da.",
+        "en": "Hello, Mr Brandt, this is Müller Bikes. Your bike is ready. The repair costs forty-five euros. We are here until six p.m.",
+        "fa": "روز بخیر آقای برانت، از دوچرخه‌فروشی مولر تماس می‌گیرم. دوچرخه‌تان آماده است. تعمیر چهل و پنج یورو می‌شود. ما تا ساعت هجده اینجا هستیم."
+      }
+    ],
+    "question": { "en": "How much does the repair cost?", "fa": "تعمیر چقدر هزینه دارد؟", "de": "Was kostet die Reparatur?" },
+    "options": ["15 €", "45 €", "54 €"],
+    "answer": "45 €",
+    "evidence": "fünfundvierzig Euro"
+  },
+  {
+    "id": "kollegin-krank",
+    "kind": "phone",
+    "situation": { "en": "A colleague leaves Anna a message.", "fa": "یک همکار برای آنا پیام می‌گذارد.", "de": "Eine Kollegin hinterlässt Anna eine Nachricht." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Hallo Anna, hier ist Petra. Ich bin krank und komme morgen nicht ins Büro. Kannst du bitte um zehn Uhr mit Herrn Klein sprechen? Danke!",
+        "en": "Hi Anna, it's Petra. I'm ill and won't come to the office tomorrow. Can you please talk to Mr Klein at ten o'clock? Thanks!",
+        "fa": "سلام آنا، پترا هستم. مریضم و فردا به دفتر نمی‌آیم. لطفاً می‌توانی ساعت ده با آقای کلاین صحبت کنی؟ ممنون!"
+      }
+    ],
+    "question": { "en": "Why does Petra not come to the office?", "fa": "چرا پترا به دفتر نمی‌آید؟", "de": "Warum kommt Petra nicht ins Büro?" },
+    "options": ["Sie ist krank.", "Sie hat Urlaub.", "Ihr Kind ist krank."],
+    "answer": "Sie ist krank.",
+    "evidence": "Ich bin krank"
+  },
+  {
+    "id": "vermieter-techniker",
+    "kind": "phone",
+    "situation": { "en": "Your landlord calls you.", "fa": "صاحب‌خانه‌ات به تو زنگ می‌زند.", "de": "Dein Vermieter ruft dich an." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Guten Tag, hier ist Herr Lange, Ihr Vermieter. Am Donnerstag kommt der Techniker zwischen acht und zwölf Uhr. Bitte seien Sie zu Hause.",
+        "en": "Hello, this is Mr Lange, your landlord. On Thursday the technician is coming between eight and twelve o'clock. Please be at home.",
+        "fa": "روز بخیر، لانگه هستم، صاحب‌خانه‌تان. پنجشنبه تعمیرکار بین ساعت هشت تا دوازده می‌آید. لطفاً خانه باشید."
+      }
+    ],
+    "question": { "en": "Which day does the technician come?", "fa": "تعمیرکار چه روزی می‌آید؟", "de": "An welchem Tag kommt der Techniker?" },
+    "options": ["Dienstag", "Donnerstag", "Samstag"],
+    "answer": "Donnerstag",
+    "evidence": "Am Donnerstag"
+  },
+  {
+    "id": "party-samstag",
+    "kind": "phone",
+    "situation": { "en": "Ben leaves Lisa a message about his party.", "fa": "بن درباره‌ی مهمانی‌اش برای لیزا پیام می‌گذارد.", "de": "Ben hinterlässt Lisa eine Nachricht über seine Party." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Hallo Lisa, hier ist Ben. Meine Party ist am Samstag, nicht am Freitag! Sie beginnt um sieben. Bring bitte etwas zu trinken mit. Tschüss!",
+        "en": "Hi Lisa, it's Ben. My party is on Saturday, not on Friday! It starts at seven. Please bring something to drink. Bye!",
+        "fa": "سلام لیزا، بن هستم. مهمانی‌ام شنبه است، نه جمعه! ساعت هفت شروع می‌شود. لطفاً یک چیزی برای نوشیدن بیاور. خداحافظ!"
+      }
+    ],
+    "question": { "en": "On which day is the party?", "fa": "مهمانی چه روزی است؟", "de": "An welchem Tag ist die Party?" },
+    "options": ["Freitag", "Samstag", "Sonntag"],
+    "answer": "Samstag",
+    "evidence": "Meine Party ist am Samstag"
+  },
+  {
+    "id": "restaurant-tisch",
+    "kind": "phone",
+    "situation": { "en": "You booked a table. The restaurant calls back.", "fa": "یک میز رزرو کرده‌ای. رستوران با تو تماس می‌گیرد.", "de": "Du hast einen Tisch reserviert. Das Restaurant ruft zurück." },
+    "lines": [
+      {
+        "speaker": 0,
+        "de": "Guten Abend, hier ist das Restaurant Bella. Ihr Tisch für vier Personen ist am Freitag um acht Uhr abends frei. Bis Freitag!",
+        "en": "Good evening, this is Restaurant Bella. Your table for four people is free on Friday at eight in the evening. See you on Friday!",
+        "fa": "عصر بخیر، از رستوران بلا تماس می‌گیرم. میز شما برای چهار نفر جمعه ساعت هشت شب آزاد است. تا جمعه!"
+      }
+    ],
+    "question": { "en": "For how many people is the table?", "fa": "میز برای چند نفر است؟", "de": "Für wie viele Personen ist der Tisch?" },
+    "options": ["für 2 Personen", "für 4 Personen", "für 8 Personen"],
+    "answer": "für 4 Personen",
+    "evidence": "für vier Personen"
+  },
+  {
+    "id": "baeckerei-preis",
+    "kind": "conversation",
+    "situation": { "en": "You are at the bakery.", "fa": "در نانوایی هستی.", "de": "Du bist in der Bäckerei." },
+    "lines": [
+      { "speaker": 0, "de": "Guten Morgen! Was möchten Sie?", "en": "Good morning! What would you like?", "fa": "صبح بخیر! چه می‌خواهید؟" },
+      { "speaker": 1, "de": "Ich hätte gern drei Brötchen und ein Stück Kuchen.", "en": "I'd like three rolls and a piece of cake.", "fa": "سه تا نان کوچک و یک تکه کیک می‌خواهم." },
+      { "speaker": 0, "de": "Gern. Das macht vier Euro zwanzig.", "en": "Sure. That's four euros twenty.", "fa": "حتماً. می‌شود چهار یورو و بیست سنت." }
+    ],
+    "question": { "en": "How much does the customer pay?", "fa": "مشتری چقدر پرداخت می‌کند؟", "de": "Wie viel bezahlt die Kundin?" },
+    "options": ["2,40 €", "4,20 €", "4,30 €"],
+    "answer": "4,20 €",
+    "evidence": "vier Euro zwanzig"
+  },
+  {
+    "id": "weg-post",
+    "kind": "conversation",
+    "situation": { "en": "Someone asks the way in the street.", "fa": "کسی در خیابان آدرس می‌پرسد.", "de": "Jemand fragt auf der Straße nach dem Weg." },
+    "lines": [
+      { "speaker": 0, "de": "Entschuldigung, wo ist die Post?", "en": "Excuse me, where is the post office?", "fa": "ببخشید، اداره‌ی پست کجاست؟" },
+      { "speaker": 1, "de": "Gehen Sie hier geradeaus und dann die zweite Straße links.", "en": "Go straight ahead here and then take the second street on the left.", "fa": "از اینجا مستقیم بروید و بعد خیابان دوم سمت چپ." },
+      { "speaker": 0, "de": "Vielen Dank!", "en": "Thank you very much!", "fa": "خیلی ممنون!" }
+    ],
+    "question": { "en": "Where is the post office?", "fa": "اداره‌ی پست کجاست؟", "de": "Wo ist die Post?" },
+    "options": ["erste Straße links", "zweite Straße links", "zweite Straße rechts"],
+    "answer": "zweite Straße links",
+    "evidence": "die zweite Straße links"
+  },
+  {
+    "id": "bus-viertel",
+    "kind": "conversation",
+    "situation": { "en": "Two people talk at the bus stop.", "fa": "دو نفر در ایستگاه اتوبوس صحبت می‌کنند.", "de": "Zwei Personen sprechen an der Bushaltestelle." },
+    "lines": [
+      { "speaker": 0, "de": "Wann fährt der nächste Bus zum Bahnhof?", "en": "When does the next bus to the station leave?", "fa": "اتوبوس بعدی به ایستگاه قطار کی حرکت می‌کند؟" },
+      { "speaker": 1, "de": "Um Viertel nach drei.", "en": "At a quarter past three.", "fa": "ساعت سه و ربع." },
+      { "speaker": 0, "de": "Und wie lange dauert die Fahrt?", "en": "And how long does the ride take?", "fa": "و سفر چقدر طول می‌کشد؟" },
+      { "speaker": 1, "de": "Ungefähr zehn Minuten.", "en": "About ten minutes.", "fa": "حدود ده دقیقه." }
+    ],
+    "question": { "en": "When does the bus leave?", "fa": "اتوبوس کی حرکت می‌کند؟", "de": "Wann fährt der Bus?" },
+    "options": ["2:45 Uhr", "3:15 Uhr", "3:45 Uhr"],
+    "answer": "3:15 Uhr",
+    "evidence": "Um Viertel nach drei"
+  },
+  {
+    "id": "wochenende-eltern",
+    "kind": "conversation",
+    "situation": { "en": "Two friends talk about the weekend.", "fa": "دو دوست درباره‌ی آخر هفته صحبت می‌کنند.", "de": "Zwei Freunde sprechen über das Wochenende." },
+    "lines": [
+      { "speaker": 0, "de": "Was machst du am Wochenende?", "en": "What are you doing at the weekend?", "fa": "آخر هفته چه کار می‌کنی؟" },
+      { "speaker": 1, "de": "Am Samstag arbeite ich, aber am Sonntag besuche ich meine Eltern.", "en": "On Saturday I work, but on Sunday I visit my parents.", "fa": "شنبه کار می‌کنم، اما یکشنبه به دیدن پدر و مادرم می‌روم." }
+    ],
+    "question": { "en": "What does the friend do on Sunday?", "fa": "دوست روز یکشنبه چه کار می‌کند؟", "de": "Was macht der Freund am Sonntag?" },
+    "options": ["arbeiten", "die Eltern besuchen", "Fußball spielen"],
+    "answer": "die Eltern besuchen",
+    "evidence": "am Sonntag besuche ich meine Eltern"
+  },
+  {
+    "id": "jacke-farbe",
+    "kind": "conversation",
+    "situation": { "en": "A customer is in a clothes shop.", "fa": "یک مشتری در مغازه‌ی لباس است.", "de": "Eine Kundin ist in einem Kleidungsgeschäft." },
+    "lines": [
+      { "speaker": 0, "de": "Kann ich Ihnen helfen?", "en": "Can I help you?", "fa": "می‌توانم کمکتان کنم؟" },
+      { "speaker": 1, "de": "Ja, ich suche eine Jacke in Größe vierzig.", "en": "Yes, I'm looking for a jacket in size forty.", "fa": "بله، دنبال یک کاپشن سایز چهل می‌گردم." },
+      { "speaker": 0, "de": "In Blau oder in Schwarz?", "en": "In blue or in black?", "fa": "آبی یا مشکی؟" },
+      { "speaker": 1, "de": "In Schwarz, bitte.", "en": "In black, please.", "fa": "مشکی، لطفاً." }
+    ],
+    "question": { "en": "Which colour does the customer want?", "fa": "مشتری چه رنگی می‌خواهد؟", "de": "Welche Farbe möchte die Kundin?" },
+    "options": ["Blau", "Grau", "Schwarz"],
+    "answer": "Schwarz",
+    "evidence": "In Schwarz, bitte"
+  },
+  {
+    "id": "praxis-anruf",
+    "kind": "conversation",
+    "situation": { "en": "A patient calls the doctor's practice.", "fa": "یک بیمار به مطب دکتر زنگ می‌زند.", "de": "Ein Patient ruft in der Arztpraxis an." },
+    "lines": [
+      { "speaker": 0, "de": "Praxis Doktor Meier, guten Tag.", "en": "Dr Meier's practice, hello.", "fa": "مطب دکتر مایر، روز بخیر." },
+      { "speaker": 1, "de": "Guten Tag, ich habe Kopfschmerzen und Fieber. Kann ich heute kommen?", "en": "Hello, I have a headache and a fever. Can I come today?", "fa": "روز بخیر، سردرد و تب دارم. می‌توانم امروز بیایم؟" },
+      { "speaker": 0, "de": "Ja, kommen Sie bitte um elf Uhr.", "en": "Yes, please come at eleven o'clock.", "fa": "بله، لطفاً ساعت یازده بیایید." }
+    ],
+    "question": { "en": "What is the patient's problem?", "fa": "مشکل بیمار چیست؟", "de": "Was hat der Patient?" },
+    "options": ["Bauchschmerzen", "Halsschmerzen", "Kopfschmerzen und Fieber"],
+    "answer": "Kopfschmerzen und Fieber",
+    "evidence": "ich habe Kopfschmerzen und Fieber"
+  },
+  {
+    "id": "wohnung-zimmer",
+    "kind": "conversation",
+    "situation": { "en": "Two friends talk about a new flat.", "fa": "دو دوست درباره‌ی یک آپارتمان جدید صحبت می‌کنند.", "de": "Zwei Freundinnen sprechen über eine neue Wohnung." },
+    "lines": [
+      { "speaker": 0, "de": "Wie ist deine neue Wohnung?", "en": "What is your new flat like?", "fa": "آپارتمان جدیدت چطور است؟" },
+      { "speaker": 1, "de": "Sie ist schön und hell. Sie hat drei Zimmer und einen Balkon.", "en": "It is nice and bright. It has three rooms and a balcony.", "fa": "قشنگ و روشن است. سه اتاق و یک بالکن دارد." }
+    ],
+    "question": { "en": "How many rooms does the flat have?", "fa": "آپارتمان چند اتاق دارد؟", "de": "Wie viele Zimmer hat die Wohnung?" },
+    "options": ["2 Zimmer", "3 Zimmer", "4 Zimmer"],
+    "answer": "3 Zimmer",
+    "evidence": "drei Zimmer"
+  },
+  {
+    "id": "geburtstag-mai",
+    "kind": "conversation",
+    "situation": { "en": "Two colleagues talk.", "fa": "دو همکار با هم صحبت می‌کنند.", "de": "Zwei Kollegen sprechen miteinander." },
+    "lines": [
+      { "speaker": 0, "de": "Wann hast du Geburtstag?", "en": "When is your birthday?", "fa": "تولدت کی است؟" },
+      { "speaker": 1, "de": "Am zwölften Mai. Und du?", "en": "On the twelfth of May. And you?", "fa": "دوازدهم مه. تو چطور؟" },
+      { "speaker": 0, "de": "Im Oktober.", "en": "In October.", "fa": "اکتبر." }
+    ],
+    "question": { "en": "When is the colleague's birthday?", "fa": "تولد همکار کی است؟", "de": "Wann hat der Kollege Geburtstag?" },
+    "options": ["2. Mai", "12. Mai", "20. Mai"],
+    "answer": "12. Mai",
+    "evidence": "Am zwölften Mai"
+  },
+  {
+    "id": "kurs-beginn",
+    "kind": "conversation",
+    "situation": { "en": "A new student asks at the language school.", "fa": "یک زبان‌آموز جدید در آموزشگاه سؤال می‌کند.", "de": "Ein neuer Schüler fragt in der Sprachschule." },
+    "lines": [
+      { "speaker": 0, "de": "Wann beginnt der Deutschkurs?", "en": "When does the German course start?", "fa": "کلاس آلمانی کی شروع می‌شود؟" },
+      { "speaker": 1, "de": "Der Kurs beginnt am Montag um halb neun.", "en": "The course starts on Monday at half past eight.", "fa": "کلاس دوشنبه ساعت هشت و نیم شروع می‌شود." },
+      { "speaker": 0, "de": "Danke schön!", "en": "Thank you!", "fa": "خیلی ممنون!" }
+    ],
+    "question": { "en": "When does the course start?", "fa": "کلاس ساعت چند شروع می‌شود؟", "de": "Um wie viel Uhr beginnt der Kurs?" },
+    "options": ["8:30 Uhr", "9:00 Uhr", "9:30 Uhr"],
+    "answer": "8:30 Uhr",
+    "evidence": "um halb neun"
+  }
+]

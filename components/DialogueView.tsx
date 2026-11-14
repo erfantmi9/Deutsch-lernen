@@ -72,6 +72,12 @@ export default function DialogueView({
         ))}
       </div>
 
+      <p className="-mt-3 text-sm">
+        <Link href={`/listen/dialogues/${dialogue.id}`} className="font-bold text-primary underline-offset-4 hover:underline">
+          {t("listenOnly")} <span aria-hidden="true" className="rtl:-scale-x-100 inline-block">→</span>
+        </Link>
+      </p>
+
       {mode === "read" && <DialoguePlayer lines={annotated} speakers={speakers} />}
       {mode === "roleplay" && <RolePlay dialogueId={dialogue.id} lines={dialogue.lines} speakers={speakers} pool={pool} />}
       {mode === "quiz" && <DialogueQuiz dialogueId={dialogue.id} quiz={dialogue.quiz} />}

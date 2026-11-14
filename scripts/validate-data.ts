@@ -13,6 +13,8 @@ import { VerbListSchema } from "../lib/schemas/verb";
 import { VocabListSchema } from "../lib/schemas/vocab";
 import { AdjectiveListSchema, AdverbListSchema, PhraseListSchema, PrepositionListSchema } from "../lib/schemas/vocabExtended";
 import { ExamSchema } from "../lib/schemas/exam";
+import { ListeningMessageListSchema, MinimalPairListSchema } from "../lib/schemas/listening";
+import { isDictatable } from "../lib/dictation";
 import { checkExam } from "../lib/validation/examRules";
 import { checkMessages } from "../lib/validation/messageRules";
 import { checkGrammarData } from "../lib/validation/grammarRules";
@@ -21,6 +23,8 @@ import { checkNoun, checkSentence, checkVerb, findDuplicateIds } from "../lib/va
 import type { Problem } from "../lib/validation/rules";
 import type { GlossaryEntry, GrammarExercise, GrammarLesson } from "../types/grammar";
 import type { Dialogue } from "../types/dialogue";
+import type { ListeningMessage, MinimalPair } from "../types/listening";
+import { MAX_MESSAGE_WORDS, MIN_MESSAGE_WORDS, SOUND_CONTRASTS } from "../types/listening";
 import type { NumberWord } from "../types/numbers";
 import type { ReadingText } from "../types/reading";
 import type { SentenceExercise } from "../types/sentence";
@@ -248,6 +252,30 @@ for (const { id, problem } of checkDialogues(dialogueEntries, {
 }
 for (const { id, problem } of checkReadingTexts(readingEntries)) report("data/reading", id, problem);
 
+// ---- listening: messages and minimal pairs ----
+const listeningMessageFile = "data/listening/messages.json";
+const listeningMessages = loadFile<ListeningMessage>(listeningMessageFile, ListeningMessageListSchema as unknown as ZodType<ListeningMessage[]>);
+for (const m of listeningMessages) {
+  seen.push({ file: listeningMessageFile, id: `listening-message:${m.id}` });
+  const words = m.lines.reduce((n, l) => n + l.de.split(/\s+/u).length, 0);
+  if (words < MIN_MESSAGE_WORDS || words > MAX_MESSAGE_WORDS) {
+    report(listeningMessageFile, m.id, { severity: "error", message: `has ${words} words (${MIN_MESSAGE_WORDS} to ${MAX_MESSAGE_WORDS})` });
+  }
+  // The browser reads the script aloud: digits and abbreviations are read unpredictably, so write numbers as words.
+  for (const l of m.lines) {
+    if (/[0-9]/u.test(l.de)) report(listeningMessageFile, m.id, { severity: "error", message: `write numbers as words in the script: "${l.de}"` });
+  }
+}
+const soundFile = "data/listening/sounds.json";
+const pairs = loadFile<MinimalPair>(soundFile, MinimalPairListSchema as unknown as ZodType<MinimalPair[]>);
+for (const p of pairs) seen.push({ file: soundFile, id: `minimal-pair:${p.id}` });
+for (const c of SOUND_CONTRASTS) {
+  const n = pairs.filter((p) => p.contrast === c).length;
+  if (n < 3) report(soundFile, c, { severity: "error", message: `contrast "${c}" needs at least 3 pairs (has ${n})` });
+}
+const dictatable = dialogueEntries.flatMap((d) => d.lines).filter((l) => isDictatable(l.de)).length;
+if (dictatable < 30) report("data/dialogues", "-", { severity: "warning", message: `only ${dictatable} dialogue lines can be used for dictation` });
+
 // ---- practice exam ----
 let examItems = 0;
 loadedFiles.add("data/exam/a1.json");
@@ -282,6 +310,6 @@ for (const loc of ["fa", "de"]) {
 for (const p of findDuplicateIds(seen)) report("(all files)", "-", p);
 
 console.log(
-  `\nValidated ${vocabFiles.length} noun file(s), ${extendedCount} adjective/adverb/preposition/phrase item(s), ${grammarLessons.length} grammar lesson(s), ${grammarExercises.length} grammar exercise(s), ${glossaryEntries.length} glossary term(s), ${cardinalEntries.length} cardinal(s), ${ordinalEntries.length} ordinal(s), ${calendarItems} calendar item(s), ${dialogueEntries.length} dialogue(s), ${readingEntries.length} reading text(s), ${examItems} exam item(s), 3 message file(s); ${seen.length} entries in total: ${errors} error(s), ${warnings} warning(s).`,
+  `\nValidated ${vocabFiles.length} noun file(s), ${extendedCount} adjective/adverb/preposition/phrase item(s), ${grammarLessons.length} grammar lesson(s), ${grammarExercises.length} grammar exercise(s), ${glossaryEntries.length} glossary term(s), ${cardinalEntries.length} cardinal(s), ${ordinalEntries.length} ordinal(s), ${calendarItems} calendar item(s), ${dialogueEntries.length} dialogue(s), ${readingEntries.length} reading text(s), ${listeningMessages.length} listening message(s), ${pairs.length} minimal pair(s), ${examItems} exam item(s), 3 message file(s); ${seen.length} entries in total: ${errors} error(s), ${warnings} warning(s).`,
 );
 process.exit(errors > 0 ? 1 : 0);

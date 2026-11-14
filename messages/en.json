@@ -70,7 +70,7 @@
       },
       "listen": {
         "title": "Listening",
-        "desc": "Hear a word or number, then type what you heard."
+        "desc": "Dictation, everyday messages, dialogues by ear and similar sounds."
       },
       "review": {
         "title": "Review",
@@ -298,7 +298,8 @@
       "correctAnswer": "The answer:",
       "progress": "{answered}/{total} answered",
       "missing": "Still open: {items}"
-    }
+    },
+    "listenOnly": "Listen without the text"
   },
   "Reading": {
     "title": "Reading",
@@ -947,11 +948,13 @@
   "Speech": {
     "listen": "Listen: {text}",
     "listenSlow": "Listen slowly: {text}",
-    "stop": "Stop"
+    "stop": "Stop",
+    "play": "Play",
+    "playSlow": "Play slowly"
   },
   "Listen": {
-    "title": "Listening practice",
-    "subtitle": "Hear a German word or number, then pick or type what you heard.",
+    "title": "Words & numbers",
+    "subtitle": "A quick drill: hear a German word or number, then pick or type what you heard.",
     "unsupported": "Your browser cannot read German aloud. Try Chrome, Edge or Safari to use the listening drills.",
     "noGermanVoice": "No German voice was found on this device, so words may sound off. Install a German voice in your system settings.",
     "kindLabel": "Drill type",
@@ -976,7 +979,161 @@
     "tapPlay": "Tap Play to hear it.",
     "chooseAnswer": "What did you hear?",
     "typeAnswer": "Type the number you heard.",
-    "start": "Start"
+    "start": "Start",
+    "back": "Listening",
+    "play": "Play",
+    "playSlow": "Slowly",
+    "hub": {
+      "title": "Listening",
+      "subtitle": "Train your ear with real sentences: write what you hear, catch the important details and tell similar sounds apart.",
+      "count": "{done} of {total} done",
+      "percent": "{percent}% done",
+      "modules": {
+        "dictation": {
+          "tag": "Hear and write",
+          "title": "Dictation",
+          "desc": "Hear a sentence and write it down. See word by word what you got right."
+        },
+        "messages": {
+          "tag": "Exam style · A1",
+          "title": "Everyday messages",
+          "desc": "Announcements, phone messages and short conversations. Catch the time, the price, the place."
+        },
+        "sounds": {
+          "tag": "Pronunciation",
+          "title": "Similar sounds",
+          "desc": "schon or schön? Train your ear for ü, ö, ei and ie, long vowels and more."
+        },
+        "words": {
+          "tag": "Warm-up",
+          "title": "Words & numbers",
+          "desc": "A quick drill: hear a word or a number, then pick or type it."
+        }
+      },
+      "dialoguesTitle": "Dialogues by ear",
+      "dialoguesDesc": "Read the four questions, listen to the conversation without the text, then answer.",
+      "tipsTitle": "How to train your ear",
+      "tips": {
+        "first": "Listen first without the text. Read along only afterwards.",
+        "slow": "Try normal speed before the slow button: nobody speaks slowly in real life.",
+        "keywords": "You don't need every word. Listen for the key details: times, prices, places, days.",
+        "shadow": "Repeat out loud what you hear (shadowing). It trains your ear and your pronunciation together.",
+        "daily": "Ten minutes every day beat one hour a week."
+      }
+    },
+    "dictation": {
+      "title": "Dictation",
+      "subtitle": "Hear a German sentence, write it down and see word by word what was right.",
+      "levelLabel": "Sentence length",
+      "levels": {
+        "short": "Short",
+        "medium": "Medium",
+        "long": "Long"
+      },
+      "intro": "You hear a sentence. Write exactly what you hear, with capital letters and ä, ö, ü, ß.",
+      "tipParts": "Long sentence? Play it in parts with the numbered buttons.",
+      "tipSlips": "Small slips (a capital letter, ä written as a, one wrong letter) are marked but still count as right.",
+      "tipLevel": "A round has {count} sentences. Sentences you have not written correctly yet come first.",
+      "question": "Sentence {current} of {total}",
+      "askFirst": "Tap Play to hear the first sentence, then write it.",
+      "ask": "Listen and write what you hear.",
+      "parts": "Parts (slow):",
+      "partLabel": "Play part {n} of {total} slowly",
+      "inputLabel": "What you heard",
+      "placeholder": "Write the sentence…",
+      "typeFirst": "Write what you heard.",
+      "perfect": "Perfect!",
+      "almost": "Right, with small slips.",
+      "notYet": "Not quite.",
+      "wordsRight": "{correct} of {total} words exactly right.",
+      "checked": "Your sentence, checked",
+      "average": "Average: {percent}%",
+      "marks": {
+        "case": "Capital letter",
+        "umlaut": "ä ö ü ß",
+        "typo": "One letter off",
+        "wrong": "Wrong word",
+        "missing": "Missing word",
+        "extra": "Extra word"
+      }
+    },
+    "messages": {
+      "title": "Everyday messages",
+      "subtitle": "Short announcements, phone messages and conversations, as in the A1 exam.",
+      "kindLabel": "Type of text",
+      "kinds": {
+        "all": "All",
+        "announcement": "Announcements",
+        "phone": "Phone messages",
+        "conversation": "Conversations"
+      },
+      "intro": "First read where you are and the question. Then listen and pick the answer.",
+      "tipQuestionFirst": "Read the question before you listen: then you know what to listen for.",
+      "tipKeyWords": "Watch out for traps: »halb acht« is 7:30, and »nicht …, sondern …« changes the answer.",
+      "tipExam": "In the exam you hear each text twice. Here you can listen as often as you like.",
+      "progress": "Text {current} of {total}",
+      "tapPlay": "Tap Play to listen.",
+      "rightAnswer": "The answer is",
+      "showText": "Show the text",
+      "hideText": "Hide the text"
+    },
+    "sounds": {
+      "title": "Similar sounds",
+      "subtitle": "Two words, one difference. Which one did you hear?",
+      "contrastLabel": "Sounds",
+      "mixed": "Mixed",
+      "intro": "You hear one of two words that differ in a single sound. Pick the one you heard. Start with Mixed, or choose a sound.",
+      "weakest": "Needs practice:",
+      "tipTitle": "How it sounds",
+      "ask": "Which word did you hear?",
+      "which": "Which word was it?",
+      "itWas": "It was",
+      "compare": "Compare both:",
+      "contrasts": {
+        "ue-u": {
+          "label": "ü / u",
+          "tip": "For ü, say a long »i« and round your lips as for »u«. Your tongue stays at the front. For u the tongue moves back."
+        },
+        "ue-i": {
+          "label": "ü / i",
+          "tip": "Your tongue is at the front for both. Only the lips differ: round for ü, wide (like a smile) for i."
+        },
+        "oe-o": {
+          "label": "ö / o",
+          "tip": "For ö, say »e« and round your lips. The o comes from further back in the mouth."
+        },
+        "oe-e": {
+          "label": "ö / e",
+          "tip": "The tongue stays in the same place: round lips for ö, wide lips for e. Try it in front of a mirror."
+        },
+        "ei-ie": {
+          "label": "ei / ie",
+          "tip": "Say the second letter: ei sounds like »ai« (mein), ie is a long »i« (Lied)."
+        },
+        "long-short": {
+          "label": "Miete / Mitte",
+          "tip": "Two consonants after a vowel make it short and quick (Mitte, Stadt, offen). One consonant, an h, a double vowel or ie make it long (Ofen, Staat, Miete). The length changes the meaning!"
+        },
+        "ch-sch": {
+          "label": "ch / sch",
+          "tip": "After i, e, ä, ö, ü, ei, eu (and l, n, r) ch is soft: put your tongue as for the »j« in »ja« and blow out air. It is not »sch«, which has round lips."
+        },
+        "s-z": {
+          "label": "s / z",
+          "tip": "German z always sounds like »ts« (Zeit). An s before a vowel is soft and buzzing, like an English »z« (so, Saal)."
+        }
+      }
+    },
+    "dialogues": {
+      "pageTitle": "{title} (listening)",
+      "player": "Listen to the conversation",
+      "how": "Read the questions below first. Then play the dialogue: the text stays hidden. Listen again as often as you need.",
+      "line": "line {current} of {total}",
+      "speakers": "Speakers: {a} and {b}",
+      "showText": "Show the text",
+      "hideText": "Hide the text",
+      "openDialogue": "Open this dialogue with text, role-play and words"
+    }
   },
   "Exam": {
     "title": "Practice exam A1",

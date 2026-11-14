@@ -16,6 +16,10 @@ export const STATIC_PATHS = [
   "/progress",
   "/exam",
   "/listen",
+  "/listen/words",
+  "/listen/dictation",
+  "/listen/messages",
+  "/listen/sounds",
   "/search",
 ] as const;
 
@@ -30,6 +34,7 @@ export function allPaths(ids: {
     ...STATIC_PATHS,
     ...ids.lessons.map((id) => `/grammar/${id}`),
     ...ids.dialogues.map((id) => `/dialogues/${id}`),
+    ...ids.dialogues.map((id) => `/listen/dialogues/${id}`),
     ...ids.reading.map((id) => `/reading/${id}`),
     ...(ids.verbs ?? []).map((id) => `/verbs/${id}`),
     ...(ids.vocabTopics ?? []).map((id) => `/vocabulary/${id}`),

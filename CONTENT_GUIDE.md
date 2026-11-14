@@ -37,6 +37,8 @@ npm run build
 | Numbers, ordinals, calendar | `data/numbers/*.json` | `lib/schemas/numbers.ts` | cross-checked against `lib/numbers.ts` |
 | Dialogues | `data/dialogues/*.json` | `lib/schemas/dialogue.ts` | 2 speakers, 6 to 10 lines, 4 quiz questions |
 | Reading texts | `data/reading/*.json` | `lib/schemas/reading.ts` | 40 to 80 words, 4 tasks, evidence must occur in the text |
+| Listening messages | `data/listening/messages.json` | `lib/schemas/listening.ts` | 1 speaker (announcement, phone) or 2 (conversation), 3 German options, `evidence` must occur in a line |
+| Minimal pairs | `data/listening/sounds.json` | `lib/schemas/listening.ts` | two words that differ in one sound; at least 3 pairs per contrast |
 | Practice exam | `data/exam/a1.json` | `lib/schemas/exam.ts` | listening scripts, writing tasks, speaking parts |
 | UI text | `messages/{en,fa,de}.json` | checked by the validator | same keys and same `{arguments}` in all three |
 
@@ -70,12 +72,29 @@ in the verb page's topic filter (`basic`, `daily`, `movement`, `communication`, 
 
 Add it to a file in `data/dialogues/`. Use exactly two speakers. Quiz answers must be German. `vocabIds` use the prefixes
 `noun:` and `verb:` (for example `noun:essen`). `grammarLessonIds` must exist. Words that are in the vocabulary become
-tappable automatically.
+tappable automatically. Each speaker needs a portrait in `LOOKS` (`components/illustrations/people/looks.ts`): pick skin,
+hair, hairstyle, shirt colour and extras so the two speakers look clearly different (a test checks this).
 
 ### Add a reading text
 
 Add it to a file in `data/reading/`. Give the German text, translations, and four tasks (true/false, choice, matching).
 Each non-matching task needs an `evidence` passage that occurs word for word in the text.
+
+### Add a listening message
+
+Add it to `data/listening/messages.json`. The browser reads `lines[].de` aloud, so **write numbers, times and prices as
+words** in the script ("um halb acht", "vier Euro zwanzig"); the validator rejects digits there. The `options` use digits
+("7:30 Uhr", "4,20 €"). Make the two wrong options plausible traps (fünfzehn / fünfzig, halb acht / acht). `evidence` is
+the part of a line that gives the answer; it is highlighted in the transcript.
+
+Dictation needs no content of its own: it uses dialogue lines, listening-message lines and word-order sentences without
+digits (see `isDictatable` in `lib/dictation.ts`).
+
+### Add a minimal pair
+
+Add it to `data/listening/sounds.json` with one of the contrasts in `SOUND_CONTRASTS` (`types/listening.ts`). Both words
+must be real and differ in that one sound only. A new contrast also needs a `label` and `tip` in `Listen.sounds.contrasts`
+in all three message files.
 
 ### Change the practice exam
 
