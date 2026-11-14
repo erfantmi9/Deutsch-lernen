@@ -128,7 +128,7 @@ export default function RolePlay({
         <div role="group" aria-label={t("chooseRole")} className="grid gap-3 sm:grid-cols-2">
           {speakers.map((name) => (
             <button key={name} type="button" onClick={() => start(name)} className="pill min-h-16 justify-start gap-3 py-2 text-base text-text">
-              <SpeakerAvatar index={speakerIndex(name)} />
+              <SpeakerAvatar index={speakerIndex(name)} name={name} />
               <span>{t("playAs", { name })}</span>
             </button>
           ))}
@@ -180,7 +180,7 @@ export default function RolePlay({
           const mine = line.speaker === round.role;
           return (
             <li key={i} data-line className={"flex max-w-[92%] gap-3 " + (idx === 0 ? "self-start" : "flex-row-reverse self-end")}>
-              <SpeakerAvatar index={idx} size={40} />
+              <SpeakerAvatar index={idx} name={line.speaker} size={40} />
               <div
                 className={
                   "space-y-1 rounded-3xl border px-4 py-3 shadow-soft " +

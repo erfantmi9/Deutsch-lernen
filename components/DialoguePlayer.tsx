@@ -44,7 +44,7 @@ export default function DialoguePlayer({ lines, speakers }: { lines: AnnotatedLi
           return (
             <li key={i} className={"flex max-w-[92%] gap-3 " + (idx === 0 ? "self-start" : "flex-row-reverse self-end")}>
               <div className="flex flex-col items-center gap-1 pt-1">
-                <SpeakerAvatar index={idx} />
+                <SpeakerAvatar index={idx} name={line.speaker} />
               </div>
               <div
                 className={
