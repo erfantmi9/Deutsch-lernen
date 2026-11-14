@@ -94,7 +94,7 @@ function listenTests(locale: "en" | "fa", tag: string) {
 
   test(`no speech before a tap; Play <-> Stop in the bar; one live region; Next plays once${tag}`, async ({ page }, testInfo) => {
     await stubSpeech(page, GERMAN);
-    await page.goto(`/${locale}/listen`);
+    await page.goto(`/${locale}/listen/words`);
     await expect(action(page)).toBeVisible(); // voices loaded asynchronously: the drill appears
     await expect(page.getByText(m.Listen.needVoice)).toHaveCount(0);
     await page.waitForTimeout(500);
@@ -152,7 +152,7 @@ function listenTests(locale: "en" | "fa", tag: string) {
 
   test(`typed numbers: readOnly after answering, focus on the bar, double Enter advances once${tag}`, async ({ page }, testInfo) => {
     await stubSpeech(page, GERMAN);
-    await page.goto(`/${locale}/listen`);
+    await page.goto(`/${locale}/listen/words`);
     await startRound(page, locale, "number");
     const input = page.locator("#listen-answer");
     await expect(input).toBeFocused();
@@ -179,7 +179,7 @@ function listenTests(locale: "en" | "fa", tag: string) {
 
   test(`speech is cancelled when leaving the page${tag}`, async ({ page }) => {
     await stubSpeech(page, GERMAN);
-    await page.goto(`/${locale}/listen`);
+    await page.goto(`/${locale}/listen/words`);
     await startRound(page, locale, "word");
     await bar(page).locator("[data-speak-button=normal]").click();
     const before = (await calls(page)).length;
@@ -192,7 +192,7 @@ function listenTests(locale: "en" | "fa", tag: string) {
 
   test(`no German voice: the drill is hidden and a tip shown${tag}`, async ({ page }, testInfo) => {
     await stubSpeech(page, [{ lang: "en-US", name: "English" }]);
-    await page.goto(`/${locale}/listen`);
+    await page.goto(`/${locale}/listen/words`);
     await expect(page.getByText(m.Listen.needVoice)).toBeVisible();
     await expect(page.getByRole("group", { name: m.Listen.kindLabel })).toHaveCount(0);
     await expect(action(page)).toHaveCount(0);
@@ -211,7 +211,110 @@ for (const locale of ["en", "fa"] as const) {
 
 test("voices that never load: no tip flashes before the voice list is known, then the tip", async ({ page }) => {
   await stubSpeech(page, [], 100_000);
-  await page.goto("/en/listen");
+  await page.goto("/en/listen/words");
   await expect(page.getByText(M.en.Listen.needVoice)).toHaveCount(0);
   await expect(page.getByText(M.en.Listen.needVoice)).toBeVisible({ timeout: 4000 });
 });
+
+// ---- the listening hub and the new exercises ----
+
+const MESSAGES_DATA: { id: string; question: { en: string; fa: string }; answer: string; lines: unknown[] }[] = JSON.parse(readFileSync("data/listening/messages.json", "utf8"));
+const lastSpoken = async (page: Page) => (await speaks(page)).at(-1)?.text ?? "";
+
+for (const locale of ["en", "fa"] as const) {
+  const m = M[locale];
+
+  test.describe(`listening exercises (${locale})`, () => {
+    test("hub links every exercise and every dialogue", async ({ page }, testInfo) => {
+      await stubSpeech(page, GERMAN);
+      await page.goto(`/${locale}/listen`);
+      for (const key of ["dictation", "messages", "sounds", "words"]) await expect(page.locator(`[data-listen-module=${key}]`)).toBeVisible();
+      await expect(page.locator(`a[href$='/listen/dialogues/kennenlernen']`)).toBeVisible();
+      await shot(page, testInfo, "listen", locale, "0-hub");
+      await page.locator("[data-listen-module=dictation]").click();
+      await expect(page).toHaveURL(new RegExp(`/${locale}/listen/dictation$`));
+    });
+
+    test("dictation: the play label hides the sentence; a perfect and a faulty answer are checked word by word", async ({ page }, testInfo) => {
+      await stubSpeech(page, GERMAN);
+      await page.goto(`/${locale}/listen/dictation`);
+      await action(page).click(); // Start
+      const input = page.locator("#dictation-answer");
+      await expect(input).toBeFocused();
+      expect(await speaks(page)).toEqual([]);
+
+      const play = bar(page).locator("[data-speak-button=normal]");
+      await expect(play).toHaveAttribute("aria-label", m.Speech.play);
+      await play.click();
+      const sentence = await lastSpoken(page);
+      expect(sentence.length).toBeGreaterThan(5);
+
+      await input.fill(sentence);
+      await page.keyboard.press("Enter");
+      await expect(feedback(page)).toContainText(m.Listen.dictation.perfect);
+      await expect(page.locator("[data-dictation-diff] [data-mark]").first()).toBeVisible();
+      expect(await page.locator("[data-dictation-diff] [data-mark]:not([data-mark=ok])").count()).toBe(0);
+      await expect(action(page)).toBeFocused();
+      expect(await liveRegions(page)).toBe(1);
+
+      // Next plays the next sentence once; leaving out its first word marks exactly that word missing.
+      const n = (await speaks(page)).length;
+      await action(page).click();
+      await expect(input).toHaveValue("");
+      expect(await speaks(page)).toHaveLength(n + 1);
+      const next = await lastSpoken(page);
+      await input.fill(next.split(" ").slice(1).join(" "));
+      await action(page).click();
+      await expect(feedback(page)).toContainText(m.Listen.dictation.notYet);
+      await expect(page.locator("[data-dictation-diff] [data-mark=missing]")).toHaveCount(1);
+      await expectClearOfBar(page, feedback(page).locator("> div"));
+      await shot(page, testInfo, "listen", locale, "6-dictation-checked");
+    });
+
+    test("messages: the whole text is queued, the answer is checked and the transcript shows the evidence", async ({ page }, testInfo) => {
+      await stubSpeech(page, GERMAN);
+      await page.goto(`/${locale}/listen/messages`);
+      await action(page).click(); // Start
+      const question = (await page.locator("#message-q").innerText()).trim();
+      const item = MESSAGES_DATA.find((x) => x.question[locale] === question);
+      expect(item, question).toBeTruthy();
+      await bar(page).locator("[data-sequence-button=normal]").click();
+      expect(await speaks(page)).toHaveLength(item!.lines.length);
+      await expect(bar(page).locator("[data-sequence-button=normal]")).toHaveAttribute("data-speaking", "");
+
+      await page.locator("[role=group][aria-labelledby=message-q]").getByRole("button", { name: item!.answer, exact: true }).click();
+      await expect(feedback(page)).toContainText(m.Listen.correct);
+      await expect(action(page)).toBeFocused();
+      await page.getByRole("button", { name: m.Listen.messages.showText }).click();
+      await expect(page.locator("#message-transcript mark")).toHaveCount(1);
+      await shot(page, testInfo, "listen", locale, "7-message-answered");
+    });
+
+    test("sounds: one of the two words is spoken; picking it is right", async ({ page }, testInfo) => {
+      await stubSpeech(page, GERMAN);
+      await page.goto(`/${locale}/listen/sounds`);
+      await action(page).click(); // Start
+      await bar(page).locator("[data-speak-button=normal]").click();
+      const word = await lastSpoken(page);
+      const choices = page.locator("[role=group][aria-labelledby=sounds-q] button");
+      await expect(choices).toHaveCount(2);
+      await choices.filter({ has: page.locator(`span[lang=de]`, { hasText: new RegExp(`^${word}$`) }) }).click();
+      await expect(feedback(page)).toContainText(m.Listen.correct);
+      await shot(page, testInfo, "listen", locale, "8-sounds-answered");
+    });
+
+    test("dialogue by ear: the text is hidden, Play queues every line, the transcript opens on demand", async ({ page }, testInfo) => {
+      await stubSpeech(page, GERMAN);
+      await page.goto(`/${locale}/listen/dialogues/kennenlernen`);
+      const firstLine = "Hallo! Ich heiße Lena. Wie heißt du?";
+      await expect(page.getByText(firstLine)).toHaveCount(0);
+      await page.locator("main [data-sequence-button=normal]").click();
+      const spoken = await speaks(page);
+      expect(spoken[0]?.text).toBe(firstLine);
+      expect(spoken.length).toBeGreaterThanOrEqual(6);
+      await page.getByRole("button", { name: m.Listen.dialogues.showText }).click();
+      await expect(page.getByText(firstLine)).toBeVisible();
+      await shot(page, testInfo, "listen", locale, "9-dialogue-transcript");
+    });
+  });
+}

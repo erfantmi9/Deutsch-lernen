@@ -6,6 +6,7 @@ import { useDialogueStore } from "@/stores/dialogueStore";
 import { useExamStore } from "@/stores/examStore";
 import { useGrammarStore } from "@/stores/grammarStore";
 import { useLearnStore } from "@/stores/learnStore";
+import { useListenStore } from "@/stores/listenStore";
 import { useNumbersStore } from "@/stores/numbersStore";
 import { useQuizStore } from "@/stores/quizStore";
 import { useReadingStore } from "@/stores/readingStore";
@@ -26,6 +27,7 @@ const STORES = [
   useExamStore,
   useGrammarStore,
   useLearnStore,
+  useListenStore,
   useNumbersStore,
   useQuizStore,
   useReadingStore,

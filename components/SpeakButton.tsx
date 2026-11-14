@@ -16,6 +16,7 @@ export default function SpeakButton({
   slow = false,
   compact = false,
   plain = false,
+  hideText = false,
   className = "",
 }: {
   text: string;
@@ -23,6 +24,8 @@ export default function SpeakButton({
   compact?: boolean;
   /** Icon only, no border or fill (inside list rows). Implies compact. */
   plain?: boolean;
+  /** The label and tooltip leave the text out ("Listen" instead of "Listen: der Kopf"): for listening exercises, where the text is the answer. */
+  hideText?: boolean;
   className?: string;
 }) {
   const t = useTranslations("Speech");
@@ -32,7 +35,15 @@ export default function SpeakButton({
 
   useEffect(() => () => stopSpeaking(), []);
 
-  const label = speaking ? t("stop") : slow ? t("listenSlow", { text }) : t("listen", { text });
+  const label = speaking
+    ? t("stop")
+    : hideText
+      ? slow
+        ? t("playSlow")
+        : t("play")
+      : slow
+        ? t("listenSlow", { text })
+        : t("listen", { text });
   return (
     <button
       type="button"

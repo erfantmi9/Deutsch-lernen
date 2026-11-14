@@ -8,6 +8,7 @@ import type { ListenKind, ListenQuestion } from "@/lib/listenDrill";
 import type { ReviewCard } from "@/lib/reviewCards";
 import { recordActivity } from "@/stores/activityStore";
 import PageHeader from "./PageHeader";
+import BackToListen from "./listen/BackToListen";
 import SpeakButton from "./SpeakButton";
 import Mascot from "./illustrations/Mascot";
 import ConfirmDialog from "./ui/ConfirmDialog";
@@ -142,13 +143,14 @@ export default function ListenDrill({ cards }: { cards: readonly ReviewCard[] })
   const replay =
     question !== null && !finished ? (
       <div className="flex shrink-0 gap-2">
-        <SpeakButton text={question.spoken} compact />
-        <SpeakButton text={question.spoken} compact slow />
+        <SpeakButton text={question.spoken} compact hideText />
+        <SpeakButton text={question.spoken} compact slow hideText />
       </div>
     ) : null;
 
   return (
     <div className="mx-auto w-full max-w-xl space-y-4">
+      <BackToListen />
       <PageHeader title={t("title")} compact="always" />
 
       {voicesReady && !supported && <p className="feedback-hint">{t("unsupported")}</p>}
