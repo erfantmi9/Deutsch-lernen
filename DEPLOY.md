@@ -51,26 +51,32 @@ Without recordings the listening exercises use the browser's own voice, which of
 dialogue. With recordings every character has their own voice, phone calls sound like a phone, announcements like a
 station loudspeaker, and the background (café, street, station ...) is mixed in by the app.
 
-The recordings are made **offline on your computer** with [Piper](https://github.com/rhasspy/piper), an open-source
-text-to-speech engine: no account, no API key, no billing. They are committed as MP3 files; the deployed app never
-generates speech. Needs Python 3.9 or newer.
+The recordings are made on your computer with [edge-tts](https://github.com/rany2/edge-tts), which uses the neural
+"Read aloud" voices of Microsoft Edge: no account, no API key, no billing (it needs internet while recording). They are
+committed as MP3 files; the deployed app never generates speech. Needs Python 3.9 or newer.
 
 1. One-time setup (a private Python environment in `.tts/`, which git ignores):
    ```bash
    python -m venv .tts/venv
-   .tts/venv/Scripts/pip install piper-tts lameenc        # macOS / Linux: .tts/venv/bin/pip
+   .tts/venv/Scripts/pip install edge-tts numpy imageio-ffmpeg   # macOS / Linux: .tts/venv/bin/pip
    ```
-2. Record (the two German voices, about 180 MB, are downloaded to `.tts/voices` on the first run):
+2. Record:
    ```bash
    npm run audio:generate -- --dry-run   # what would be recorded
    npm run audio:generate                # writes public/audio/*.mp3 and data/audio/manifest.json
+   npm run audio:generate -- --only=dialogue:im-cafe   # just one text, to try a voice
    ```
 3. Commit `public/audio/` and `data/audio/manifest.json`.
 
 After changing a dialogue, message or minimal pair, run `npm run audio:generate` again: only new or changed lines are
 recorded (`--prune` deletes files nothing uses). `npm run validate:data` warns when texts have no recording yet.
-Voices per character are set in `lib/audio/voices.ts`: Piper's clean German woman's and man's voice, each at several
-pitches so every character sounds like a different person. Both voices are CC0 (`MODEL_CARD` in `.tts/voices`).
+Voices per character are set in `lib/audio/voices.ts`: only German and Austrian voices (Tanja, Christoph, Ingrid,
+Jonas), some also slightly higher or lower, so every character sounds like a different person. A voice name the service
+does not know silently falls back to its default voice, so check new names by ear.
+
+The background of each place (café, supermarket, station, street, home, office) is a real recording in
+`public/audio/ambience/`, made by `.tts/venv/Scripts/python scripts/tts/ambience.py` from CC0 sounds of
+[BigSoundBank](https://bigsoundbank.com) (sources listed in the script).
 
 ## 4. Deploy
 

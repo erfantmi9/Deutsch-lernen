@@ -2,2444 +2,2444 @@
   "version": 1,
   "clips": {
     "dialogue:am-telefon:0": {
-      "file": "766abc33e123cc07.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "b9ae95db056f8c3a.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dialogue:am-telefon:1": {
-      "file": "162b298d807b9158.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "28a15d8fc47347ec.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dialogue:am-telefon:2": {
-      "file": "fb5548b882dbacc0.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "971e76f151a9c370.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dialogue:am-telefon:3": {
-      "file": "613365717f5cc93b.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "a83a95cdb88e0d17.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dialogue:am-telefon:4": {
-      "file": "51bc8c5fd52f9745.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "9330b858ce8bcaed.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dialogue:am-telefon:5": {
-      "file": "f2f7a80c4d278ecd.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "d98bbffd095e8a0a.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dialogue:am-telefon:6": {
-      "file": "0ed26934f5255579.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "8c2808f60beec0a1.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dialogue:am-telefon:7": {
-      "file": "9fc21dc6461ccf6f.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "dd24e2f5a0d7733e.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dialogue:beim-baecker:0": {
-      "file": "6360876d30666bc4.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "a4f93f09e3effc75.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dialogue:beim-baecker:1": {
-      "file": "12274ae75b2acd2e.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "a31036ead981a37c.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dialogue:beim-baecker:2": {
-      "file": "62a207cb8c72b6dc.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "0fac7275a662d987.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dialogue:beim-baecker:3": {
-      "file": "d0f617a843089682.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "39ced730ded381ed.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dialogue:beim-baecker:4": {
-      "file": "b3c9028c1f3d4c21.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "7c0d8388fab4f60b.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dialogue:beim-baecker:5": {
-      "file": "e18c122ed70a83e8.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "5934c2f67efd0af5.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dialogue:beim-baecker:6": {
-      "file": "405d9462df42a32b.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "3f6596439be554aa.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dialogue:beim-baecker:7": {
-      "file": "a7dac6f80c15d8d1.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "9c76b44f36f97836.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dialogue:beim-baecker:8": {
-      "file": "e555ba0ee2ce8425.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "ee48266b95169222.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dialogue:das-wetter:0": {
-      "file": "3834b42ba592cd3e.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "69ffb8af780849c9.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dialogue:das-wetter:1": {
-      "file": "17d4f8f663ce7ade.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "532d4253c0ca6251.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dialogue:das-wetter:2": {
-      "file": "5e48a2be93dd5795.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "0b574ee1ff9fabd9.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dialogue:das-wetter:3": {
-      "file": "1f8a9dabea2ed224.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "0b8e0af8bbe12a0d.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dialogue:das-wetter:4": {
-      "file": "9166708e855d37c7.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "6dfee0df7e6eb976.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dialogue:das-wetter:5": {
-      "file": "b52661dbb6e89b3c.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "da34144193b6ac69.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dialogue:das-wetter:6": {
-      "file": "b6c736d7ea62852f.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "697eaf2a731763f5.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dialogue:das-wetter:7": {
-      "file": "0f873764883624d9.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "203a0e41afe636a7.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dialogue:formular-ausfuellen:0": {
-      "file": "aebfeff78afe8736.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "2cdc69edd80d907f.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dialogue:formular-ausfuellen:1": {
-      "file": "94d534326bad0c84.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "19d40c8cc5b5cfe0.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dialogue:formular-ausfuellen:2": {
-      "file": "9317b3b72343415e.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "e2a7dfa5c3539133.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dialogue:formular-ausfuellen:3": {
-      "file": "b2dc49e628ef1b72.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "81c29cb8aa078455.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dialogue:formular-ausfuellen:4": {
-      "file": "b044b7f9b456dbfe.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "0fca2df864c84a0c.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dialogue:formular-ausfuellen:5": {
-      "file": "8706b3bab4043b5b.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "75f1ad196fe1481f.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dialogue:formular-ausfuellen:6": {
-      "file": "e118ebea2522f382.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "1bb4efbc9ffcf640.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dialogue:formular-ausfuellen:7": {
-      "file": "4c5e836b1b851004.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "ddfd72e6f521f0a2.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dialogue:formular-ausfuellen:8": {
-      "file": "43c61137000dd025.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "06be5c4208e77b0d.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dialogue:formular-ausfuellen:9": {
-      "file": "e2bb089bf7253884.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "5ef7a7558433b3fd.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dialogue:im-cafe:0": {
-      "file": "0f49c1345b8b8925.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "5e4aa39ae4fc2bc1.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dialogue:im-cafe:1": {
-      "file": "fc1fa8bef610a54d.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "fb35c90f64cdca14.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dialogue:im-cafe:2": {
-      "file": "eada9974c25db978.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "04dc2389c5d541e2.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dialogue:im-cafe:3": {
-      "file": "0318c0a2c4c93fe1.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "3e7326d3b9d007b4.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dialogue:im-cafe:4": {
-      "file": "3793cf619d056ae3.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "54118c5c589081ef.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dialogue:im-cafe:5": {
-      "file": "3adec188cb5a69d8.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "c971e733d1039c6b.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dialogue:im-cafe:6": {
-      "file": "fd8776494d643320.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "72a65552fdce97f8.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dialogue:im-cafe:7": {
-      "file": "c92f18d9fb69b7cc.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "4c116df489239131.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dialogue:im-cafe:8": {
-      "file": "2c75abf9d3e76c6d.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "b9d2bc0a1c7459ea.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dialogue:jacke-kaufen:0": {
-      "file": "fcdac3b2d0dbf753.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "c7803f85a69e7858.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dialogue:jacke-kaufen:1": {
-      "file": "f31e5ed70e473616.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "991e302f1b21b949.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dialogue:jacke-kaufen:2": {
-      "file": "7cae014c4fe9ab99.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "d868cd3e55937a28.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dialogue:jacke-kaufen:3": {
-      "file": "1021e7b8049cbd91.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "dd3b04ce4b7049ed.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dialogue:jacke-kaufen:4": {
-      "file": "6797bdf16113303d.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "197a8abced903f3f.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dialogue:jacke-kaufen:5": {
-      "file": "2839d1d73d4d99a6.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "50372e586f808be7.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dialogue:jacke-kaufen:6": {
-      "file": "c855b5c44c5b8daa.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "fb0cd086a9a846fc.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dialogue:jacke-kaufen:7": {
-      "file": "1290130b4ffa874c.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "5126179e3277c63e.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dialogue:kennenlernen:0": {
-      "file": "a3720ca5e61b18cf.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "49069ecf81e9623d.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dialogue:kennenlernen:1": {
-      "file": "7e2d4ced7e518b10.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "e6f28d423fecbae0.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dialogue:kennenlernen:2": {
-      "file": "e5292e8036e82f1e.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "d97d4765d834535f.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dialogue:kennenlernen:3": {
-      "file": "dca72ebc3d675d6f.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "2929a2c72988a08e.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dialogue:kennenlernen:4": {
-      "file": "b83995f175aa6b6d.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "336ff7c0bfaed8af.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dialogue:kennenlernen:5": {
-      "file": "35b8120f4914e576.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "dec9131473a023cd.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dialogue:kennenlernen:6": {
-      "file": "221a62d50a0cc627.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "d4030b27be658274.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dialogue:kennenlernen:7": {
-      "file": "bc078d9e078da50d.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "925a15d207530709.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dialogue:mein-tag:0": {
-      "file": "efdba96a777436e3.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "3e83c92a57bc72e3.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dialogue:mein-tag:1": {
-      "file": "6e3d2a1260a8f278.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "85b9854a3a8250e4.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dialogue:mein-tag:2": {
-      "file": "4bd666c394651c5f.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "eeb76474b82ffc13.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dialogue:mein-tag:3": {
-      "file": "31f1d6f004807c69.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "ad849512668450a2.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dialogue:mein-tag:4": {
-      "file": "e928c6e5fb640798.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "09b38c9ea8ad48df.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dialogue:mein-tag:5": {
-      "file": "b412c0eb1f64b231.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "0ed062a27ee5cc9d.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dialogue:mein-tag:6": {
-      "file": "b29635c4ce1a6e6c.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "91ba020ae77298bb.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dialogue:mein-tag:7": {
-      "file": "8d6108c983f17231.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "46979f405079baf5.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dialogue:meine-familie:0": {
-      "file": "5e12f92d68a15450.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "e6b3ee99a71077ef.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dialogue:meine-familie:1": {
-      "file": "0674c8e7015fc891.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "3a6d875d7d743e6e.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dialogue:meine-familie:2": {
-      "file": "4abcb780b80e9a34.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "5c40823c99164b45.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dialogue:meine-familie:3": {
-      "file": "61cfe7cc24187e86.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "99cb97bb0ceeeecc.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dialogue:meine-familie:4": {
-      "file": "1b9dd0f0e9b5a616.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "52b4f150b80437c0.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dialogue:meine-familie:5": {
-      "file": "d29742e9b4f051fe.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "453878884693333a.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dialogue:meine-familie:6": {
-      "file": "63f5e1c818268aac.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "85d3866dfbe6e999.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dialogue:meine-familie:7": {
-      "file": "8690b85a2f899077.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "90fa51948eaa4d3b.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dialogue:nach-dem-weg-fragen:0": {
-      "file": "a00e193921fca4ee.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "d72820a359336d4d.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dialogue:nach-dem-weg-fragen:1": {
-      "file": "cb1d36dcc2e25efd.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "4c6e25b4e926eb25.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dialogue:nach-dem-weg-fragen:2": {
-      "file": "a8f95cca02132ae4.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "d7c74d374e101fb8.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dialogue:nach-dem-weg-fragen:3": {
-      "file": "4b4e205bfcda34d4.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "ecf283e7693de213.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dialogue:nach-dem-weg-fragen:4": {
-      "file": "901bbabed8ef2778.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "8efc5a5c6fa3df3f.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dialogue:nach-dem-weg-fragen:5": {
-      "file": "c932c9e0a2af83e7.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "df202a68b9d45d83.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dialogue:nach-dem-weg-fragen:6": {
-      "file": "a3b0b027a3f4e3a8.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "bccac9a9628e6bb3.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dialogue:nach-dem-weg-fragen:7": {
-      "file": "4175ee0192634588.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "ef3bc33c869a7ad1.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dialogue:neuer-kollege:0": {
-      "file": "702025587815f364.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1.06"
+      "file": "79de75b18f5c8b61.mp3",
+      "voice": "de-AT-IngridNeural#-10#-6"
     },
     "dialogue:neuer-kollege:1": {
-      "file": "16c8e41983869de5.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "7a28d6fe12840dd3.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dialogue:neuer-kollege:2": {
-      "file": "bb32dae7cdcaf858.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1.06"
+      "file": "22d13202cfa7899a.mp3",
+      "voice": "de-AT-IngridNeural#-10#-6"
     },
     "dialogue:neuer-kollege:3": {
-      "file": "cc92318fca81185b.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "0d9eea80e265628a.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dialogue:neuer-kollege:4": {
-      "file": "a99d986b7f7f2bf1.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1.06"
+      "file": "76712427563bca01.mp3",
+      "voice": "de-AT-IngridNeural#-10#-6"
     },
     "dialogue:neuer-kollege:5": {
-      "file": "2ea974ccc34a82ba.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "48d728ae4ebdaaab.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dialogue:neuer-kollege:6": {
-      "file": "ee8675aa6b5cf5fa.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1.06"
+      "file": "818aefd12597479f.mp3",
+      "voice": "de-AT-IngridNeural#-10#-6"
     },
     "dialogue:neuer-kollege:7": {
-      "file": "891fd4887363d0f6.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "cdcfc77eba20d971.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dialogue:termin-machen:0": {
-      "file": "039e88533d97c75e.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "1c98fd57598d5d5a.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dialogue:termin-machen:1": {
-      "file": "ef639d83f055c127.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.06"
+      "file": "3a2d08cb7519b392.mp3",
+      "voice": "de-AT-JonasNeural#-10#-6"
     },
     "dialogue:termin-machen:2": {
-      "file": "3df1e31f8ffaaa58.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "0ac4fab68cb08069.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dialogue:termin-machen:3": {
-      "file": "58cbd00a3572a5ad.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.06"
+      "file": "f29ed5afd4077d85.mp3",
+      "voice": "de-AT-JonasNeural#-10#-6"
     },
     "dialogue:termin-machen:4": {
-      "file": "60daa87fbb143064.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "4d29fc69a266c13e.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dialogue:termin-machen:5": {
-      "file": "058e46b46053e994.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.06"
+      "file": "9b5540b48ac7a904.mp3",
+      "voice": "de-AT-JonasNeural#-10#-6"
     },
     "dialogue:termin-machen:6": {
-      "file": "20f9aebd761040e0.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "8065c3d9c01ea426.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dialogue:termin-machen:7": {
-      "file": "377bda53dd26cc1a.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.06"
+      "file": "ce4a4595a9334eea.mp3",
+      "voice": "de-AT-JonasNeural#-10#-6"
     },
     "dictation:d:am-telefon:0": {
-      "file": "766abc33e123cc07.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "b9ae95db056f8c3a.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:d:am-telefon:1": {
-      "file": "162b298d807b9158.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "28a15d8fc47347ec.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:am-telefon:1:part:0": {
-      "file": "c84d2293e6045035.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "b3b66f0d3ca85259.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:am-telefon:1:part:1": {
-      "file": "bcb903b9393eefcd.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "3642e6620ddf4270.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:am-telefon:1:part:2": {
-      "file": "12cad9ad7318cfb4.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "fe7e86678c2fe7bb.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:am-telefon:2": {
-      "file": "fb5548b882dbacc0.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "971e76f151a9c370.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:d:am-telefon:2:part:0": {
-      "file": "41b9c7ae7550dba9.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "4db2d8d221c37488.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:d:am-telefon:2:part:1": {
-      "file": "5a914827e458ee1e.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "7e419b239479d847.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:d:am-telefon:3": {
-      "file": "613365717f5cc93b.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "a83a95cdb88e0d17.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:am-telefon:3:part:0": {
-      "file": "ebb0796511b519a0.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "22663962dcbc79f8.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:am-telefon:3:part:1": {
-      "file": "89fcf6e2a5860866.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "ba467be9ad45a75f.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:am-telefon:3:part:2": {
-      "file": "cee3f38f5de606f1.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "155e0c45ed436c84.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:am-telefon:4": {
-      "file": "51bc8c5fd52f9745.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "9330b858ce8bcaed.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:d:am-telefon:4:part:0": {
-      "file": "21cedf2932ce06b3.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "63027a3454503cd1.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:d:am-telefon:4:part:1": {
-      "file": "b735ffbe247cc3d8.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "61be497e95074a33.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:d:am-telefon:5": {
-      "file": "f2f7a80c4d278ecd.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "d98bbffd095e8a0a.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:am-telefon:5:part:0": {
-      "file": "d7e5d1386a2d3a9f.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "f48982fc563ae944.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:am-telefon:5:part:1": {
-      "file": "3a0c3580b3ddb2fb.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "1da848ec12026185.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:am-telefon:6": {
-      "file": "0ed26934f5255579.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "8c2808f60beec0a1.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:d:am-telefon:7": {
-      "file": "9fc21dc6461ccf6f.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "dd24e2f5a0d7733e.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:beim-baecker:0": {
-      "file": "6360876d30666bc4.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "a4f93f09e3effc75.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:beim-baecker:0:part:0": {
-      "file": "0e0c6945befbaace.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "14fb5aed343827a7.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:beim-baecker:0:part:1": {
-      "file": "6d608df5c75c4eb3.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "450105a807df0f72.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:beim-baecker:1": {
-      "file": "12274ae75b2acd2e.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "a31036ead981a37c.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dictation:d:beim-baecker:1:part:0": {
-      "file": "41503d74ef23ea1d.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "8d69d1c21f0f4bd8.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dictation:d:beim-baecker:1:part:1": {
-      "file": "46b5563553e71284.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "8ce52885598fc34d.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dictation:d:beim-baecker:2": {
-      "file": "62a207cb8c72b6dc.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "0fac7275a662d987.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:beim-baecker:3": {
-      "file": "d0f617a843089682.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "39ced730ded381ed.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dictation:d:beim-baecker:3:part:0": {
-      "file": "827dfa4f7b2c0074.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "35590dd71ded2617.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dictation:d:beim-baecker:3:part:1": {
-      "file": "ac27758860e6cfcd.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "1c018b4b1ce2fb4d.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dictation:d:beim-baecker:4": {
-      "file": "b3c9028c1f3d4c21.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "7c0d8388fab4f60b.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:beim-baecker:4:part:0": {
-      "file": "f1e9157c1a6909fb.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "0019e225771b0508.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:beim-baecker:4:part:1": {
-      "file": "2356626f09c55b3d.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "371f210d58db7a5f.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:beim-baecker:5": {
-      "file": "e18c122ed70a83e8.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "5934c2f67efd0af5.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dictation:d:beim-baecker:5:part:0": {
-      "file": "0a6fca4cc0faeed0.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "191b9fb940b5fb67.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dictation:d:beim-baecker:5:part:1": {
-      "file": "760f634418a9ae10.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "1005ebc523fabd37.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dictation:d:beim-baecker:6": {
-      "file": "405d9462df42a32b.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "3f6596439be554aa.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:beim-baecker:7": {
-      "file": "a7dac6f80c15d8d1.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "9c76b44f36f97836.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dictation:d:beim-baecker:7:part:0": {
-      "file": "6cb3dff47429ac19.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "b3eb0a00db857341.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dictation:d:beim-baecker:7:part:1": {
-      "file": "687dc195a9402a0a.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.1"
+      "file": "0bc8f95155eeb2e6.mp3",
+      "voice": "de-AT-JonasNeural#-10#-10"
     },
     "dictation:d:beim-baecker:8": {
-      "file": "e555ba0ee2ce8425.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "ee48266b95169222.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:beim-baecker:8:part:0": {
-      "file": "d76e9487395e4ef9.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "b952d2f8cf22ccde.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:beim-baecker:8:part:1": {
-      "file": "330fa5f9464dabc6.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "86a90ff0fdf35618.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:das-wetter:0": {
-      "file": "3834b42ba592cd3e.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "69ffb8af780849c9.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:das-wetter:0:part:0": {
-      "file": "c9ecae52f6d51035.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "905dc4af794ce476.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:das-wetter:0:part:1": {
-      "file": "58b57d37521bfb1c.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "8b98c8f275f14336.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:das-wetter:1": {
-      "file": "17d4f8f663ce7ade.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "532d4253c0ca6251.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:das-wetter:1:part:0": {
-      "file": "ea67d4ea5c523a37.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "93d9e73ce5165016.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:das-wetter:1:part:1": {
-      "file": "35fbf1802f108f9f.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "b18618736699e4bb.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:das-wetter:2": {
-      "file": "5e48a2be93dd5795.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "0b574ee1ff9fabd9.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:das-wetter:3": {
-      "file": "1f8a9dabea2ed224.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "0b8e0af8bbe12a0d.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:das-wetter:3:part:0": {
-      "file": "5b3bd35c20e22d9c.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "3ab3877d2325490d.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:das-wetter:3:part:1": {
-      "file": "35f8349370fe0bf6.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "e6c7ab8508536c31.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:das-wetter:4": {
-      "file": "9166708e855d37c7.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "6dfee0df7e6eb976.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:das-wetter:4:part:0": {
-      "file": "245bb6f4c88e0dbe.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "f89c5d817a90513f.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:das-wetter:4:part:1": {
-      "file": "9d072be6d686b787.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "e936fb228748025d.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:das-wetter:5": {
-      "file": "b52661dbb6e89b3c.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "da34144193b6ac69.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:das-wetter:6": {
-      "file": "b6c736d7ea62852f.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "697eaf2a731763f5.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:das-wetter:7": {
-      "file": "0f873764883624d9.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "203a0e41afe636a7.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:das-wetter:7:part:0": {
-      "file": "e13e427805fc5c2f.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "eda42f7a6da94f2c.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:das-wetter:7:part:1": {
-      "file": "480237180bf0fcae.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "4664e461325dec14.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:0": {
-      "file": "aebfeff78afe8736.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "2cdc69edd80d907f.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:formular-ausfuellen:0:part:0": {
-      "file": "94ab92dfe6b3f2f4.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "aa18e404b0011900.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:formular-ausfuellen:0:part:1": {
-      "file": "65c401cd16195fa1.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "cac67226e7f98bec.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:formular-ausfuellen:1": {
-      "file": "94d534326bad0c84.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "19d40c8cc5b5cfe0.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:1:part:0": {
-      "file": "9a7937c7024db774.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "f2ebfd3bc50ca1ac.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:1:part:1": {
-      "file": "de30d936185cc04c.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "505b4462dbf1e78e.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:2": {
-      "file": "9317b3b72343415e.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "e2a7dfa5c3539133.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:formular-ausfuellen:2:part:0": {
-      "file": "10b10c168f9dc0ec.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "854cfd6a2958ee7e.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:formular-ausfuellen:2:part:1": {
-      "file": "36d15bb13991bbc3.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "58c4a0eb303cf71d.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:formular-ausfuellen:2:part:2": {
-      "file": "98844a71a7726beb.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "0af24aa2330b374f.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:formular-ausfuellen:3": {
-      "file": "b2dc49e628ef1b72.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "81c29cb8aa078455.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:3:part:0": {
-      "file": "6a82e769e45853a5.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "8bc239c4a2f0e8bc.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:3:part:1": {
-      "file": "75de4469ab92f63f.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "fbbda72fbf140744.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:3:part:2": {
-      "file": "3e39e2d6ffed94e1.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "5ab739b7ab67da2c.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:3:part:3": {
-      "file": "be31361d1072020a.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "3e3221ce6a9b6204.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:4": {
-      "file": "b044b7f9b456dbfe.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "0fca2df864c84a0c.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:formular-ausfuellen:5": {
-      "file": "8706b3bab4043b5b.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "75f1ad196fe1481f.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:5:part:0": {
-      "file": "8c0b5f06f36b2dfb.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "bcf91d8d188448bb.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:5:part:1": {
-      "file": "452bedf6ca91984a.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "cc5810ffc3e1b837.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:6": {
-      "file": "e118ebea2522f382.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "1bb4efbc9ffcf640.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:formular-ausfuellen:7": {
-      "file": "4c5e836b1b851004.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "ddfd72e6f521f0a2.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:7:part:0": {
-      "file": "27c36b04f259f546.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "6e4ba3854acac0f2.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:7:part:1": {
-      "file": "b04b0a2396788b5b.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "27d700765e7db0cd.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:formular-ausfuellen:8": {
-      "file": "43c61137000dd025.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "06be5c4208e77b0d.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:formular-ausfuellen:8:part:0": {
-      "file": "e8625b70f3c104a8.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "0baf1c6a1a9f0d9d.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:formular-ausfuellen:8:part:1": {
-      "file": "100a81612c353fea.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "bbe95a9d58d1c526.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:formular-ausfuellen:8:part:2": {
-      "file": "d83d0f408a946fa4.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "ce73a782963de062.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:formular-ausfuellen:9": {
-      "file": "e2bb089bf7253884.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "5ef7a7558433b3fd.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:im-cafe:0": {
-      "file": "0f49c1345b8b8925.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "5e4aa39ae4fc2bc1.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:im-cafe:0:part:0": {
-      "file": "bb5781987e233f2e.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "9ecef039b03f0a85.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:im-cafe:0:part:1": {
-      "file": "1fc2e4812d7232c7.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "956c2b203eee1d9a.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:im-cafe:1": {
-      "file": "fc1fa8bef610a54d.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "fb35c90f64cdca14.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:d:im-cafe:2": {
-      "file": "eada9974c25db978.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "04dc2389c5d541e2.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:im-cafe:2:part:0": {
-      "file": "bd0388afc531e155.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "d1c61dc624b7532e.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:im-cafe:2:part:1": {
-      "file": "c688471c58bae994.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "0885d21ac70e4f11.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:im-cafe:3": {
-      "file": "0318c0a2c4c93fe1.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "3e7326d3b9d007b4.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:d:im-cafe:3:part:0": {
-      "file": "9e4c0d48e2328e48.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "88e3ec2221933bab.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:d:im-cafe:3:part:1": {
-      "file": "53ef6e2168a3221b.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "f684dce2e5e3bc70.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:d:im-cafe:4": {
-      "file": "3793cf619d056ae3.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "54118c5c589081ef.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:im-cafe:4:part:0": {
-      "file": "64bea3a007d67e8f.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "3ebd7570e673edbe.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:im-cafe:4:part:1": {
-      "file": "a4bdd1636f97f971.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "ab4ac601586c3c7f.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:im-cafe:5": {
-      "file": "3adec188cb5a69d8.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "c971e733d1039c6b.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:d:im-cafe:6": {
-      "file": "fd8776494d643320.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "72a65552fdce97f8.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:im-cafe:7": {
-      "file": "c92f18d9fb69b7cc.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "4c116df489239131.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:d:im-cafe:8": {
-      "file": "2c75abf9d3e76c6d.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "b9d2bc0a1c7459ea.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:jacke-kaufen:0": {
-      "file": "fcdac3b2d0dbf753.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "c7803f85a69e7858.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:jacke-kaufen:1": {
-      "file": "f31e5ed70e473616.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "991e302f1b21b949.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:jacke-kaufen:2": {
-      "file": "7cae014c4fe9ab99.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "d868cd3e55937a28.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:jacke-kaufen:3": {
-      "file": "1021e7b8049cbd91.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "dd3b04ce4b7049ed.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:jacke-kaufen:3:part:0": {
-      "file": "0d846830bd004ed2.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "33771b5c32747170.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:jacke-kaufen:3:part:1": {
-      "file": "9b6cfafdcdf0d795.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "c3d555debcc4dc35.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:jacke-kaufen:5": {
-      "file": "2839d1d73d4d99a6.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "50372e586f808be7.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:jacke-kaufen:5:part:0": {
-      "file": "cc384787706530cb.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "f6454bc6634eca87.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:jacke-kaufen:5:part:1": {
-      "file": "ce17ce28156958d3.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "123cfb824f7e5463.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:jacke-kaufen:6": {
-      "file": "c855b5c44c5b8daa.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "fb0cd086a9a846fc.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:jacke-kaufen:6:part:0": {
-      "file": "9f970994d0c2ca8b.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "97462fc23c12532e.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:jacke-kaufen:6:part:1": {
-      "file": "ff9a726f48181025.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "8b42ae3ae891837f.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:jacke-kaufen:7": {
-      "file": "1290130b4ffa874c.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "5126179e3277c63e.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:kennenlernen:0": {
-      "file": "a3720ca5e61b18cf.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "49069ecf81e9623d.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:kennenlernen:0:part:0": {
-      "file": "9355fc52f22043d3.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "eca64b985ca904f0.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:kennenlernen:0:part:1": {
-      "file": "29f1ac1640d82204.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "0f02f056564b1f0a.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:kennenlernen:1": {
-      "file": "7e2d4ced7e518b10.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "e6f28d423fecbae0.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:kennenlernen:2": {
-      "file": "e5292e8036e82f1e.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "d97d4765d834535f.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:kennenlernen:3": {
-      "file": "dca72ebc3d675d6f.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "2929a2c72988a08e.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:kennenlernen:3:part:0": {
-      "file": "2796b8aa1d571216.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "beb22381deeeaa9f.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:kennenlernen:3:part:1": {
-      "file": "2bf78a9107b56357.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "a53b215b8d15e136.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:kennenlernen:4": {
-      "file": "b83995f175aa6b6d.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "336ff7c0bfaed8af.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:kennenlernen:4:part:0": {
-      "file": "225b85c26873f527.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "14f1d10b2670e389.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:kennenlernen:4:part:1": {
-      "file": "21bbadacc113cc8e.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "9048dfec43f7aefa.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:kennenlernen:5": {
-      "file": "35b8120f4914e576.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "dec9131473a023cd.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:kennenlernen:5:part:0": {
-      "file": "537accb92450fee2.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "b22de36a9ecf1120.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:kennenlernen:5:part:1": {
-      "file": "5e83977205bebc7c.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "24de85a7aecfc731.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:kennenlernen:6": {
-      "file": "221a62d50a0cc627.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "d4030b27be658274.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:kennenlernen:6:part:0": {
-      "file": "50c90289359e06bd.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "9cbb706b94197fad.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:kennenlernen:6:part:1": {
-      "file": "79eab01375728016.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "a4ceff67b33b2931.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:d:kennenlernen:7": {
-      "file": "bc078d9e078da50d.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "925a15d207530709.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:mein-tag:0": {
-      "file": "efdba96a777436e3.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "3e83c92a57bc72e3.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:mein-tag:0:part:0": {
-      "file": "58506a3b4cebac62.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "717ac127ce0b5fe2.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:mein-tag:0:part:1": {
-      "file": "519fb264e9362a5a.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "5e470a646d7b82f7.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:mein-tag:1": {
-      "file": "6e3d2a1260a8f278.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "85b9854a3a8250e4.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:mein-tag:1:part:0": {
-      "file": "29f0a750ab27b65a.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "a75488384cb64bf0.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:mein-tag:1:part:1": {
-      "file": "dc20036a69cbdab4.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "91caa59e94594faf.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:mein-tag:2": {
-      "file": "4bd666c394651c5f.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "eeb76474b82ffc13.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:mein-tag:3": {
-      "file": "31f1d6f004807c69.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "ad849512668450a2.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:mein-tag:3:part:0": {
-      "file": "835692efc163bc20.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "5bbb82a184b47713.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:mein-tag:3:part:1": {
-      "file": "96c0256b6dd335d7.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "bad32c95767e5cf6.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:mein-tag:3:part:2": {
-      "file": "e23189372984512c.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "6fffeed1685a57e8.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:mein-tag:4": {
-      "file": "e928c6e5fb640798.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "09b38c9ea8ad48df.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:mein-tag:5": {
-      "file": "b412c0eb1f64b231.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "0ed062a27ee5cc9d.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:mein-tag:5:part:0": {
-      "file": "833dba04d79e5aa3.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "a648ef5224545600.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:mein-tag:5:part:1": {
-      "file": "2b7ec7848e33c0af.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "3728bdbbe34ecbec.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:mein-tag:6": {
-      "file": "b29635c4ce1a6e6c.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "91ba020ae77298bb.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:d:mein-tag:7": {
-      "file": "8d6108c983f17231.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "46979f405079baf5.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:mein-tag:7:part:0": {
-      "file": "3c05b5516fc900e1.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "de5330e9b890266e.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:mein-tag:7:part:1": {
-      "file": "8cef4ef6b06912b9.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "13d851cb16e047d0.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:d:meine-familie:0": {
-      "file": "5e12f92d68a15450.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "e6b3ee99a71077ef.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:meine-familie:0:part:0": {
-      "file": "b6e79650a73b8f94.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "22ac19f9794e5321.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:meine-familie:0:part:1": {
-      "file": "310b1f92bd23c60f.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "32add795a13f005f.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:meine-familie:1": {
-      "file": "0674c8e7015fc891.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "3a6d875d7d743e6e.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:meine-familie:1:part:0": {
-      "file": "2377d3289d95b1fd.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "8c04e06a4482bfba.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:meine-familie:1:part:1": {
-      "file": "b480b34cf7f8114a.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "707e1cefc916cdb2.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:meine-familie:2": {
-      "file": "4abcb780b80e9a34.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "5c40823c99164b45.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:meine-familie:2:part:0": {
-      "file": "81c64e2c5f9836b5.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "991f733cfeae92e4.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:meine-familie:2:part:1": {
-      "file": "940203a1a0dc3b0b.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "dd40d8d444ea7d05.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:meine-familie:3": {
-      "file": "61cfe7cc24187e86.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "99cb97bb0ceeeecc.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:meine-familie:3:part:0": {
-      "file": "bab69e240acae082.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "488defc1650a4b97.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:meine-familie:3:part:1": {
-      "file": "10f6bcf7c42d6451.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "ccb2efbeba7b41cc.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:meine-familie:3:part:2": {
-      "file": "8a5d01935f304351.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "f8fc436195ab33d9.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:meine-familie:4": {
-      "file": "1b9dd0f0e9b5a616.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "52b4f150b80437c0.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:meine-familie:5": {
-      "file": "d29742e9b4f051fe.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "453878884693333a.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:meine-familie:5:part:0": {
-      "file": "ffe8ebd01b582d3c.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "31635123ca2b53e0.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:meine-familie:5:part:1": {
-      "file": "0188cb2a2481d1d0.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "c5cdd16b59d2bf86.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:meine-familie:6": {
-      "file": "63f5e1c818268aac.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "85d3866dfbe6e999.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:meine-familie:6:part:0": {
-      "file": "359c1b6ada04d83c.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "16e895690b284de6.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:meine-familie:6:part:1": {
-      "file": "1cc50f27c08f2c7d.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "0f2ad2260ff698be.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:d:meine-familie:7": {
-      "file": "8690b85a2f899077.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "90fa51948eaa4d3b.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:meine-familie:7:part:0": {
-      "file": "6a3f0accfc404494.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "ef773d99c76807cf.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:meine-familie:7:part:1": {
-      "file": "9b15333674c3b06f.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "e408bb024733ef8c.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:meine-familie:7:part:2": {
-      "file": "9142f22ccad212a2.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "155f6062d4688edc.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:meine-familie:7:part:3": {
-      "file": "4e917d6d955a36c1.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "529fe4d9496ebed5.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:nach-dem-weg-fragen:0": {
-      "file": "a00e193921fca4ee.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "d72820a359336d4d.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:nach-dem-weg-fragen:1": {
-      "file": "cb1d36dcc2e25efd.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "4c6e25b4e926eb25.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:d:nach-dem-weg-fragen:1:part:0": {
-      "file": "ce4a2f6412ffb94a.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "b335f78da37be48b.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:d:nach-dem-weg-fragen:1:part:1": {
-      "file": "e37fa40c69036888.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "100ba59c62c21c93.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:d:nach-dem-weg-fragen:2": {
-      "file": "a8f95cca02132ae4.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "d7c74d374e101fb8.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:nach-dem-weg-fragen:3": {
-      "file": "4b4e205bfcda34d4.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "ecf283e7693de213.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:d:nach-dem-weg-fragen:3:part:0": {
-      "file": "5a271c3dd06d6487.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "8c548895d0196b66.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:d:nach-dem-weg-fragen:3:part:1": {
-      "file": "a16e9368cbd18333.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "df7bbf6725cc0d76.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:d:nach-dem-weg-fragen:4": {
-      "file": "901bbabed8ef2778.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "8efc5a5c6fa3df3f.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:nach-dem-weg-fragen:4:part:0": {
-      "file": "897c13ca90c79279.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "590a2ce61a3f2cb9.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:nach-dem-weg-fragen:4:part:1": {
-      "file": "20a4ff2d8b451c6d.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "28cd80760a89d96a.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:d:nach-dem-weg-fragen:5": {
-      "file": "c932c9e0a2af83e7.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "df202a68b9d45d83.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:d:nach-dem-weg-fragen:5:part:0": {
-      "file": "96c429306b7fb13c.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "eb1ad1eb8431a640.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:d:nach-dem-weg-fragen:5:part:1": {
-      "file": "316ac71680ff92d2.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "1f6920b7e7028d45.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:d:nach-dem-weg-fragen:5:part:2": {
-      "file": "2d26913832e10483.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "cce6658c5423fb86.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:d:nach-dem-weg-fragen:7": {
-      "file": "4175ee0192634588.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "ef3bc33c869a7ad1.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:d:neuer-kollege:0": {
-      "file": "702025587815f364.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1.06"
+      "file": "79de75b18f5c8b61.mp3",
+      "voice": "de-AT-IngridNeural#-10#-6"
     },
     "dictation:d:neuer-kollege:0:part:0": {
-      "file": "f76cc19e6d198a40.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1.06"
+      "file": "d8afa4bd0efa4012.mp3",
+      "voice": "de-AT-IngridNeural#-10#-6"
     },
     "dictation:d:neuer-kollege:0:part:1": {
-      "file": "f4e190a6cb52fdbe.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1.06"
+      "file": "e89d2b759f477b38.mp3",
+      "voice": "de-AT-IngridNeural#-10#-6"
     },
     "dictation:d:neuer-kollege:1": {
-      "file": "16c8e41983869de5.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "7a28d6fe12840dd3.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:neuer-kollege:1:part:0": {
-      "file": "8b169b273e5dc355.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "50ac4809fd4352fe.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:neuer-kollege:1:part:1": {
-      "file": "d984b3217f19bad6.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "9ff64c280330e381.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:neuer-kollege:1:part:2": {
-      "file": "b546f3fc59f2c6da.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "e40616265932e70b.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:neuer-kollege:2": {
-      "file": "bb32dae7cdcaf858.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1.06"
+      "file": "22d13202cfa7899a.mp3",
+      "voice": "de-AT-IngridNeural#-10#-6"
     },
     "dictation:d:neuer-kollege:2:part:0": {
-      "file": "60938691010deafd.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1.06"
+      "file": "f228abc81d9a9906.mp3",
+      "voice": "de-AT-IngridNeural#-10#-6"
     },
     "dictation:d:neuer-kollege:2:part:1": {
-      "file": "214681399b6d7f33.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1.06"
+      "file": "613be643bfdf9d50.mp3",
+      "voice": "de-AT-IngridNeural#-10#-6"
     },
     "dictation:d:neuer-kollege:2:part:2": {
-      "file": "0aa7fe5be41bb308.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1.06"
+      "file": "fda978c928327e01.mp3",
+      "voice": "de-AT-IngridNeural#-10#-6"
     },
     "dictation:d:neuer-kollege:3": {
-      "file": "cc92318fca81185b.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "0d9eea80e265628a.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:neuer-kollege:3:part:0": {
-      "file": "8868569b7e455fbd.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "74336c2d4be6e08b.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:neuer-kollege:3:part:1": {
-      "file": "2f7d9d9e8d22fa5c.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "8aa36031b2f66cc2.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:neuer-kollege:4": {
-      "file": "a99d986b7f7f2bf1.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1.06"
+      "file": "76712427563bca01.mp3",
+      "voice": "de-AT-IngridNeural#-10#-6"
     },
     "dictation:d:neuer-kollege:5": {
-      "file": "2ea974ccc34a82ba.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "48d728ae4ebdaaab.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:neuer-kollege:5:part:0": {
-      "file": "b318300d5e81529e.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "408dc533823c20f4.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:neuer-kollege:5:part:1": {
-      "file": "41486ac0bc5c7e9c.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "5a323d9bdd3d8a4b.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:neuer-kollege:5:part:2": {
-      "file": "c5b8ffa5c66ead2e.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "77c9cfc350c2011d.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:neuer-kollege:6": {
-      "file": "ee8675aa6b5cf5fa.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1.06"
+      "file": "818aefd12597479f.mp3",
+      "voice": "de-AT-IngridNeural#-10#-6"
     },
     "dictation:d:neuer-kollege:7": {
-      "file": "891fd4887363d0f6.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "cdcfc77eba20d971.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:d:termin-machen:0": {
-      "file": "039e88533d97c75e.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "1c98fd57598d5d5a.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:termin-machen:0:part:0": {
-      "file": "97708633b55edbbb.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "964ba9caf206b5b8.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:termin-machen:0:part:1": {
-      "file": "dbabc7f24b933f85.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "617940a16d78c22d.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:termin-machen:1": {
-      "file": "ef639d83f055c127.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.06"
+      "file": "3a2d08cb7519b392.mp3",
+      "voice": "de-AT-JonasNeural#-10#-6"
     },
     "dictation:d:termin-machen:1:part:0": {
-      "file": "236754cd8a414640.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.06"
+      "file": "18d2b6d418bc9744.mp3",
+      "voice": "de-AT-JonasNeural#-10#-6"
     },
     "dictation:d:termin-machen:1:part:1": {
-      "file": "8e4871f5f18d8202.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.06"
+      "file": "a666ecb27b1b9a4a.mp3",
+      "voice": "de-AT-JonasNeural#-10#-6"
     },
     "dictation:d:termin-machen:1:part:2": {
-      "file": "4286c9a33ff05fff.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.06"
+      "file": "e8d62634b8ef9bd8.mp3",
+      "voice": "de-AT-JonasNeural#-10#-6"
     },
     "dictation:d:termin-machen:2": {
-      "file": "3df1e31f8ffaaa58.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "0ac4fab68cb08069.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:termin-machen:2:part:0": {
-      "file": "378642addd901b6c.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "c2a71da82efe0735.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:termin-machen:2:part:1": {
-      "file": "9818f4424b909917.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "880dff7e81d1d5d2.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:termin-machen:3": {
-      "file": "58cbd00a3572a5ad.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.06"
+      "file": "f29ed5afd4077d85.mp3",
+      "voice": "de-AT-JonasNeural#-10#-6"
     },
     "dictation:d:termin-machen:3:part:0": {
-      "file": "6e363281b2bd96ab.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.06"
+      "file": "52a55cb768846b4c.mp3",
+      "voice": "de-AT-JonasNeural#-10#-6"
     },
     "dictation:d:termin-machen:3:part:1": {
-      "file": "9c84647979ffc6c8.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.06"
+      "file": "752844166b1e515f.mp3",
+      "voice": "de-AT-JonasNeural#-10#-6"
     },
     "dictation:d:termin-machen:3:part:2": {
-      "file": "eb17ae9aac51ed2c.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.06"
+      "file": "68dd5866f896caed.mp3",
+      "voice": "de-AT-JonasNeural#-10#-6"
     },
     "dictation:d:termin-machen:4": {
-      "file": "60daa87fbb143064.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "4d29fc69a266c13e.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:termin-machen:4:part:0": {
-      "file": "5f41f23ea0443c5c.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "ea647778c638883e.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:termin-machen:4:part:1": {
-      "file": "5549505356eb5b5d.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "416d7407bd504d48.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:termin-machen:4:part:2": {
-      "file": "5e95983c0bd3023c.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "c5cf2c3631f7f284.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:termin-machen:5": {
-      "file": "058e46b46053e994.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.06"
+      "file": "9b5540b48ac7a904.mp3",
+      "voice": "de-AT-JonasNeural#-10#-6"
     },
     "dictation:d:termin-machen:6": {
-      "file": "20f9aebd761040e0.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "8065c3d9c01ea426.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:termin-machen:6:part:0": {
-      "file": "675f310f92f57597.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "708b3e361483855a.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:termin-machen:6:part:1": {
-      "file": "1ec25c0c1b11420a.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "89c1be7855796c84.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:d:termin-machen:7": {
-      "file": "377bda53dd26cc1a.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.06"
+      "file": "ce4a4595a9334eea.mp3",
+      "voice": "de-AT-JonasNeural#-10#-6"
     },
     "dictation:m:baeckerei-preis:0": {
-      "file": "8e77b3bbb1b50ef2.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "f9604b595d62cc76.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:m:baeckerei-preis:1": {
-      "file": "fd86edc3abaaabd6.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "3590a4b246df3590.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:m:baeckerei-preis:1:part:0": {
-      "file": "3bd262cfa8f4e6d3.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "104744136d7fb7c4.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:m:baeckerei-preis:1:part:1": {
-      "file": "90d3ab7cba9a3406.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "3bca28bb119ae40d.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:m:baeckerei-preis:2": {
-      "file": "ba1a5388c2020a5c.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "5638b1b806061a09.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:m:baeckerei-preis:2:part:0": {
-      "file": "a4bcd43226a2c6aa.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "c6a1cdd8ad0249c3.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:m:baeckerei-preis:2:part:1": {
-      "file": "308ea28cf317403c.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "5a8ce5a7caf78217.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:m:bus-viertel:0": {
-      "file": "a36d5dd5981faf71.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "33231cf98c2db71b.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:m:bus-viertel:0:part:0": {
-      "file": "9bc88927dac441ad.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "cf4dbe32a0e90140.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:m:bus-viertel:0:part:1": {
-      "file": "a543848dc4cfabc3.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "af1e88d01f489d94.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:m:bus-viertel:1": {
-      "file": "0323f9d58cb9722a.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "266af8b235abb9a6.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:m:bus-viertel:2": {
-      "file": "fb7e043b156bfb4c.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "b9243ca93f7c0f48.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:m:bus-viertel:2:part:0": {
-      "file": "6bc4e722690a7347.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "dae05891bae55a95.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:m:bus-viertel:2:part:1": {
-      "file": "1c51555238ae4cf7.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "39f1ca10a9f1f08d.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:m:bus-viertel:3": {
-      "file": "d03cffe197396778.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "5a4427da475d6e0c.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:m:geburtstag-mai:0": {
-      "file": "5fadd084920f6beb.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "6f664b44d7b7f25b.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:m:geburtstag-mai:1": {
-      "file": "b2d1d10f4f5d6a9f.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1"
+      "file": "fe5e7972cdc5204d.mp3",
+      "voice": "de-AT-JonasNeural#-10#0"
     },
     "dictation:m:jacke-farbe:0": {
-      "file": "3dcb79b3fe4e77f7.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "b187568820dbdbb9.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:m:jacke-farbe:1": {
-      "file": "ae3ac897889d2b5e.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "3adf0843ad6fcaf6.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:m:jacke-farbe:1:part:0": {
-      "file": "e7fa51951f9e62fb.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "4eaf948a5eddcd3d.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:m:jacke-farbe:1:part:1": {
-      "file": "d10c83c584abf93b.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "e093fb6e91155fb8.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:m:jacke-farbe:2": {
-      "file": "9e9f1d94cf84e44d.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "b4bd760c2986bc4b.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:m:jacke-farbe:3": {
-      "file": "cdc672545326f084.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "05ecc044e2f066a6.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:m:kaufhaus-stock:0": {
-      "file": "b3a5172a47caeb36.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "c8d233b8207048f4.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:m:kaufhaus-stock:0:part:0": {
-      "file": "a5da56dd5400f1fc.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "f895af8f9be12e9f.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:m:kaufhaus-stock:0:part:1": {
-      "file": "efe89abbeb30a879.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "9d2f6a8ea4a819b2.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:m:kaufhaus-stock:0:part:2": {
-      "file": "3a317461e0a6c9bd.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "063a124e633b941d.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:m:kurs-beginn:0": {
-      "file": "a7b8f08bfae5d259.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "2b4b1a4b09cb0109.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:m:kurs-beginn:1": {
-      "file": "628fb148d72b0682.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "4cb8e499c38822a1.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:m:kurs-beginn:1:part:0": {
-      "file": "3c9843be3e5a1cf8.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "efed87bafbc0eea4.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:m:kurs-beginn:1:part:1": {
-      "file": "068e350dfe511109.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "8c06364acdb15fec.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:m:kurs-raum:0": {
-      "file": "2c2546efa24a270d.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "1b76fe040bb2cd60.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:m:kurs-raum:0:part:0": {
-      "file": "18311d4a51ed971f.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "7ed6ce17ae7a9633.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:m:kurs-raum:0:part:1": {
-      "file": "e948d69297f0caee.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "4ae64781d7ca4052.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:m:kurs-raum:0:part:2": {
-      "file": "763444fdc7c36a86.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "e7fd426b86b8e358.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:m:kurs-raum:0:part:3": {
-      "file": "94e547f8fca745a7.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "936b34154c530705.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:m:praxis-anruf:0": {
-      "file": "3fae8db2c205aa13.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "2701152e807e1c04.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:m:praxis-anruf:0:part:0": {
-      "file": "daf695500ce9481e.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "58534824470abeb0.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:m:praxis-anruf:0:part:1": {
-      "file": "0643c3eb1c6549ed.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "ba359a9490ae2e2c.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:m:praxis-anruf:1": {
-      "file": "7956030c6c926832.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "d64f5cd64a4d7bcd.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:m:praxis-anruf:1:part:0": {
-      "file": "c44934b49496cd35.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "232414b95ea23d65.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:m:praxis-anruf:1:part:1": {
-      "file": "b9d4f9726b1b2e6b.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "5c07303909a821ec.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:m:praxis-anruf:1:part:2": {
-      "file": "ffba8db28d963896.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "398fe5a012fefabb.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:m:praxis-anruf:2": {
-      "file": "e3ea5b17cbe402b9.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "5744ce5b1ad03575.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:m:praxis-anruf:2:part:0": {
-      "file": "14b9e8e7cb2b3b8e.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "a33cd753a2e4b81b.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:m:praxis-anruf:2:part:1": {
-      "file": "cb779be1d79d0374.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "3463bcb6aa7edb54.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:m:weg-post:0": {
-      "file": "df8cfa06cd6c26ec.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "21c2ea0a89215272.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:m:weg-post:1": {
-      "file": "fd45f47115deb1d2.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "841a23fadd84ea74.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:m:weg-post:1:part:0": {
-      "file": "393e6567f0213b22.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "4ccabeb102f1e4a0.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:m:weg-post:1:part:1": {
-      "file": "a322b4f45b8cbc02.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "50616b27d67a420c.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:m:weg-post:1:part:2": {
-      "file": "6bfe9f92f92e5bfa.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "3de12b523a9fc68d.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "dictation:m:wochenende-eltern:0": {
-      "file": "12f292ba76e8fe98.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "ba9fe1dc7c997b7f.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "dictation:m:wochenende-eltern:1": {
-      "file": "7b058b3552f43f63.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "ce1578c07d418d0f.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:m:wochenende-eltern:1:part:0": {
-      "file": "de2e068c78104854.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "fe2c14480789f314.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:m:wochenende-eltern:1:part:1": {
-      "file": "d4ac2a52d950f745.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "603f6835a8c0f571.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:m:wochenende-eltern:1:part:2": {
-      "file": "8363dd641494f1ac.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "e4f56dcfa78adac5.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "dictation:m:wohnung-zimmer:0": {
-      "file": "f575e8005d248f08.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "119becd4d861dab1.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:m:wohnung-zimmer:1": {
-      "file": "e33e848ac78e5b29.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "af3c39145d5237c9.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:m:wohnung-zimmer:1:part:0": {
-      "file": "c299d416108c072a.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "ce5b2b1ec773ab25.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:m:wohnung-zimmer:1:part:1": {
-      "file": "7019c50a80c279e0.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "29b99e3e2f4e2303.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:m:wohnung-zimmer:1:part:2": {
-      "file": "6977019ebd3759c1.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "280b491d8b24ed5c.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "dictation:s:s-modal-01": {
-      "file": "a80064121bbbb8eb.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "b02f72c13a4653fc.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:s:s-modal-02": {
-      "file": "e2949039c52ea5ab.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "bd8b17a332a0677a.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:s:s-neg-01": {
-      "file": "3ef2a6de1bdc4675.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "ee6ae2dd298b0940.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:s:s-neg-02": {
-      "file": "9e9933225350b7de.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "60b2fb965dc1942d.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:s:s-q-01": {
-      "file": "cf38eda855abf3a4.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "2ba14ff80fdcc640.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:s:s-q-02": {
-      "file": "1416f2ab131ee784.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "83bd5856b2c86ffe.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:s:s-sep-01": {
-      "file": "fb0a8370bea4f6ca.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "13948a6dd828338d.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:s:s-sep-01:part:0": {
-      "file": "be5cf70f972a5e83.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "c6462567fec266d1.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:s:s-sep-01:part:1": {
-      "file": "fe83301b1ef16b2c.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "9077220c7927bbdd.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "dictation:s:s-sep-02": {
-      "file": "86f084dc7ea67c09.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "bb8d17304bc6df81.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:s:s-sep-02:part:0": {
-      "file": "8b6cf19a7e165bdf.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "6864355709f28bfe.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:s:s-sep-02:part:1": {
-      "file": "4873da3127f9d472.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "1643a9699d550bb1.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:s:s-tmp-01": {
-      "file": "3cca9e1adca42fbe.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "534162963752aeea.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:s:s-tmp-01:part:0": {
-      "file": "0c2c6594f91ae247.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "b672a0fc8f176bd8.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:s:s-tmp-01:part:1": {
-      "file": "98d00ce046ef2d5e.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "daa87caf6731b26e.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:s:s-tmp-02": {
-      "file": "cf741e71dd837173.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "a0a39664a05b79fe.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:s:s-tmp-02:part:0": {
-      "file": "1520f8d803a0c73b.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "375e624169657429.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:s:s-tmp-02:part:1": {
-      "file": "ff37b87d86073024.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "a4b335e3f9612503.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:s:s-tmp-03": {
-      "file": "1dcfe513c055cb51.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "20b957ab5e52f57f.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:s:s-tmp-03:part:0": {
-      "file": "1cd4421e57d1f362.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "5bb17c1e302c65ab.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:s:s-tmp-03:part:1": {
-      "file": "b12866327fc932ad.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "a504d909f26f3cb8.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "dictation:s:s-v2-01": {
-      "file": "835d2496a33bab9e.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "eafabd0dccf111c3.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:s:s-v2-02": {
-      "file": "7b99665f594ef461.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "083df7b0b6da995f.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "dictation:s:s-weil-01": {
-      "file": "69021eebdb9973b8.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "3d828462a106e3b6.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:s:s-weil-01:part:0": {
-      "file": "4acfe756c253fba4.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "549b210ff389ed33.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:s:s-weil-01:part:1": {
-      "file": "11b2b3ef3c0ef640.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "a2fe0cfb9c79ba13.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "dictation:s:s-weil-02": {
-      "file": "0a262534cce5e523.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "0e8d9918d17aceef.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:s:s-weil-02:part:0": {
-      "file": "e5d8ebf1fc41ec6c.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "6a311c3786fd3c0b.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "dictation:s:s-weil-02:part:1": {
-      "file": "383b1331580600bf.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "bfa292f76c95b59a.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "message:baeckerei-preis:0": {
-      "file": "8e77b3bbb1b50ef2.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "f9604b595d62cc76.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "message:baeckerei-preis:1": {
-      "file": "fd86edc3abaaabd6.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "3590a4b246df3590.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "message:baeckerei-preis:2": {
-      "file": "ba1a5388c2020a5c.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "5638b1b806061a09.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "message:bus-baustelle:0": {
-      "file": "949c0c7605c04bef.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1"
+      "file": "5b3731bf7f9fa171.mp3",
+      "voice": "de-AT-JonasNeural#-10#0"
     },
     "message:bus-viertel:0": {
-      "file": "a36d5dd5981faf71.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "33231cf98c2db71b.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "message:bus-viertel:1": {
-      "file": "0323f9d58cb9722a.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "266af8b235abb9a6.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "message:bus-viertel:2": {
-      "file": "fb7e043b156bfb4c.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "b9243ca93f7c0f48.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "message:bus-viertel:3": {
-      "file": "d03cffe197396778.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "5a4427da475d6e0c.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "message:fahrrad-reparatur:0": {
-      "file": "a9dc16c5a4435f1a.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "ffb16368b19952a4.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "message:flughafen-ausgang:0": {
-      "file": "e143e0f49143aba5.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "c1faca00020fad0e.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "message:geburtstag-mai:0": {
-      "file": "5fadd084920f6beb.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "6f664b44d7b7f25b.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "message:geburtstag-mai:1": {
-      "file": "b2d1d10f4f5d6a9f.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1"
+      "file": "fe5e7972cdc5204d.mp3",
+      "voice": "de-AT-JonasNeural#-10#0"
     },
     "message:geburtstag-mai:2": {
-      "file": "57c29895bf9164bb.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "fd9a97126cca6e35.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "message:gleis-wechsel:0": {
-      "file": "5dc77969ad407453.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "956d70e38207ed5e.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "message:jacke-farbe:0": {
-      "file": "3dcb79b3fe4e77f7.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "b187568820dbdbb9.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "message:jacke-farbe:1": {
-      "file": "ae3ac897889d2b5e.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "3adf0843ad6fcaf6.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "message:jacke-farbe:2": {
-      "file": "9e9f1d94cf84e44d.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "b4bd760c2986bc4b.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "message:jacke-farbe:3": {
-      "file": "cdc672545326f084.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "05ecc044e2f066a6.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "message:kaufhaus-schliesst:0": {
-      "file": "9ca212c34060d01c.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "d454f42eb1ac595b.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "message:kaufhaus-stock:0": {
-      "file": "b3a5172a47caeb36.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "c8d233b8207048f4.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "message:kino-treffen:0": {
-      "file": "b95bd6f716fa145e.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "2a1f8ede7ce1ed98.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "message:kollegin-krank:0": {
-      "file": "af02e7f04acba005.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "8f90e0f88ba0d7a6.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "message:kurs-beginn:0": {
-      "file": "a7b8f08bfae5d259.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "2b4b1a4b09cb0109.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "message:kurs-beginn:1": {
-      "file": "628fb148d72b0682.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "4cb8e499c38822a1.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "message:kurs-beginn:2": {
-      "file": "252c57bf8d0307c1.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "91e9d6ede463e577.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "message:kurs-raum:0": {
-      "file": "2c2546efa24a270d.mp3",
-      "voice": "de_DE-thorsten-high#1.08#1"
+      "file": "1b76fe040bb2cd60.mp3",
+      "voice": "de-AT-JonasNeural#0#0"
     },
     "message:mama-einkaufen:0": {
-      "file": "cb753a57359b7051.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1.04"
+      "file": "f02f5d9a527a6dec.mp3",
+      "voice": "de-AT-IngridNeural#-10#-4"
     },
     "message:party-samstag:0": {
-      "file": "3aece0e35b339206.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "ded5ab812c94d3f1.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "message:praxis-anruf:0": {
-      "file": "3fae8db2c205aa13.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "2701152e807e1c04.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "message:praxis-anruf:1": {
-      "file": "7956030c6c926832.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "d64f5cd64a4d7bcd.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "message:praxis-anruf:2": {
-      "file": "e3ea5b17cbe402b9.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "5744ce5b1ad03575.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "message:praxis-termin:0": {
-      "file": "de4fc6d2ae799eca.mp3",
-      "voice": "de_DE-kerstin-medium#0.93#1"
+      "file": "59b77ea4074c1218.mp3",
+      "voice": "de-DE-TanjaNeural#-10#0"
     },
     "message:restaurant-tisch:0": {
-      "file": "e1f999981e587f73.mp3",
-      "voice": "de_DE-thorsten-high#0.93#1"
+      "file": "85c6b0a48cd9ab9e.mp3",
+      "voice": "de-DE-ChristophNeural#-8#0"
     },
     "message:supermarkt-aepfel:0": {
-      "file": "3f23f1ca92cc29dc.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "3d6cf5a8c92a8ff9.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "message:vermieter-techniker:0": {
-      "file": "7571825d33436691.mp3",
-      "voice": "de_DE-thorsten-high#0.87#1.04"
+      "file": "5c473ccd32a62a09.mp3",
+      "voice": "de-AT-JonasNeural#-10#-4"
     },
     "message:weg-post:0": {
-      "file": "df8cfa06cd6c26ec.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "21c2ea0a89215272.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "message:weg-post:1": {
-      "file": "fd45f47115deb1d2.mp3",
-      "voice": "de_DE-kerstin-medium#0.87#1"
+      "file": "841a23fadd84ea74.mp3",
+      "voice": "de-AT-IngridNeural#-10#0"
     },
     "message:weg-post:2": {
-      "file": "7b77f32bbe5d88f9.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "4011a1e36d4a181e.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "message:wochenende-eltern:0": {
-      "file": "12f292ba76e8fe98.mp3",
-      "voice": "de_DE-kerstin-medium#1.08#1"
+      "file": "ba9fe1dc7c997b7f.mp3",
+      "voice": "de-AT-IngridNeural#0#0"
     },
     "message:wochenende-eltern:1": {
-      "file": "7b058b3552f43f63.mp3",
-      "voice": "de_DE-thorsten-high#1.15#1"
+      "file": "ce1578c07d418d0f.mp3",
+      "voice": "de-DE-ChristophNeural#8#0"
     },
     "message:wohnung-zimmer:0": {
-      "file": "f575e8005d248f08.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "119becd4d861dab1.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "message:wohnung-zimmer:1": {
-      "file": "e33e848ac78e5b29.mp3",
-      "voice": "de_DE-kerstin-medium#1.15#1"
+      "file": "af3c39145d5237c9.mp3",
+      "voice": "de-DE-TanjaNeural#8#0"
     },
     "message:zug-verspaetung:0": {
-      "file": "7a9c32715c615dee.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "500c4423c99cc772.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:bieten-bitten:a:f": {
-      "file": "102bdebca4a03c38.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "83a38b9666c1f6a2.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:bieten-bitten:a:m": {
-      "file": "eb1139726aefc43c.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "f5ca65254e170e0e.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:bieten-bitten:b:f": {
-      "file": "eb9a090e641e6de7.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "2b13b3904cbd6f81.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:bieten-bitten:b:m": {
-      "file": "f481d2c97a3afba4.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "2d6386cb3175ca2c.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:bleiben-blieben:a:f": {
-      "file": "f24e973a8bbecdb4.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "a304a705dc9c38ef.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:bleiben-blieben:a:m": {
-      "file": "1d7037082f1d75c3.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "266750365195a4b3.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:bleiben-blieben:b:f": {
-      "file": "d2b1bc1e1b97b9c6.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "ad0d2527534bacfa.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:bleiben-blieben:b:m": {
-      "file": "2513a22989ccaf99.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "585caa94e96376b6.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:boden-boeden:a:f": {
-      "file": "da3fc3b3828e35f2.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "7390d528524d0a9f.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:boden-boeden:a:m": {
-      "file": "6427006c033b3d08.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "2518fb8630c7682d.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:boden-boeden:b:f": {
-      "file": "666ac987c90bb781.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "9834c328f28e3197.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:boden-boeden:b:m": {
-      "file": "f0cc126142c89cb4.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "e116a40e50467426.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:bruder-brueder:a:f": {
-      "file": "8937d004cf57bc1a.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "cf7039870e918447.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:bruder-brueder:a:m": {
-      "file": "e3a3a6047b1af876.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "dadc1254eb981287.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:bruder-brueder:b:f": {
-      "file": "acb84dc6ada13147.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "b7b1d6b96b77c2c5.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:bruder-brueder:b:m": {
-      "file": "5dfa1ed0979ab458.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "822852a717133be7.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:drucken-druecken:a:f": {
-      "file": "4f296396f686f876.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "c0d6f7b3c7bfbdfd.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:drucken-druecken:a:m": {
-      "file": "bde2b72db0bf5e62.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "959790f171bd2a7b.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:drucken-druecken:b:f": {
-      "file": "0ad9cdb25240d7d7.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "1ba95098dd3752c3.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:drucken-druecken:b:m": {
-      "file": "f4e91cf47c7782f4.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "bab96dbe25b6351a.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:fichte-fischte:a:f": {
-      "file": "0515f6a1b1d94eb9.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "66b6db6e8bfe1548.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:fichte-fischte:a:m": {
-      "file": "081b789fa01c3659.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "379ba32f9f4f912e.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:fichte-fischte:b:f": {
-      "file": "1aedacc119cb14fc.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "cb3152f4f58fa848.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:fichte-fischte:b:m": {
-      "file": "7e9b08e7eb7e7309.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "c143ccbffda2b037.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:fuhr-fuer:a:f": {
-      "file": "8dbd634398e69eb3.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "afc46c7300b15b4f.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:fuhr-fuer:a:m": {
-      "file": "ad28bd79b447518d.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "3f697226a130f5bd.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:fuhr-fuer:b:f": {
-      "file": "f32c1379e59babe6.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "c263f1a4091d099b.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:fuhr-fuer:b:m": {
-      "file": "3ea3697b3e97e7a8.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "916993e42b24b644.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:hefe-hoefe:a:f": {
-      "file": "5a2f970f2f304f50.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "e29750a679119614.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:hefe-hoefe:a:m": {
-      "file": "d3178c9c167d7445.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "53defcf74af5f1e9.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:hefe-hoefe:b:f": {
-      "file": "b48bdf947edec20d.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "4d019379b188f323.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:hefe-hoefe:b:m": {
-      "file": "d9864349706dd77e.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "30dce0ed9899d9e4.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:kennen-koennen:a:f": {
-      "file": "85129a46a8aebab1.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "7a8af8fa039dfc09.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:kennen-koennen:a:m": {
-      "file": "a063bb97a067ec4a.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "696ff4389d3b8b56.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:kennen-koennen:b:f": {
-      "file": "b88edc8c7f35fe07.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "b3810599aeb4fc10.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:kennen-koennen:b:m": {
-      "file": "90e37280c24fffb8.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "1bf23b7052abda77.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:kirche-kirsche:a:f": {
-      "file": "fd6b773f8224a0a7.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "e0280009d5c004e8.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:kirche-kirsche:a:m": {
-      "file": "3cc4871b71fa8cf4.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "1cd4108cc0162639.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:kirche-kirsche:b:f": {
-      "file": "cbfdb64eb7da92ad.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "88945ad994ab37a3.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:kirche-kirsche:b:m": {
-      "file": "65475db550056d57.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "635bc78577c44bb6.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:kiste-kueste:a:f": {
-      "file": "7baea4249d97a469.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "aac88f0eb5a0233d.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:kiste-kueste:a:m": {
-      "file": "c82ebe39366c629c.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "ae774636bb45c3b5.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:kiste-kueste:b:f": {
-      "file": "4a7c32fc7a78769c.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "7a32b46b9b5555fd.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:kiste-kueste:b:m": {
-      "file": "043fcdd31ab5ad5b.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "c2066217f8b2dbca.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:kuchen-kuechen:a:f": {
-      "file": "ca9c2376f91c846a.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "196aedf86dd6840f.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:kuchen-kuechen:a:m": {
-      "file": "d4ffb8a52928d51f.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "9521dba8a4bd250a.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:kuchen-kuechen:b:f": {
-      "file": "4bb428ec8155e46e.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "4a72b3b0cfee3b86.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:kuchen-kuechen:b:m": {
-      "file": "3243d6fd6b971430.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "229c19438f6c45b3.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:leider-lieder:a:f": {
-      "file": "7a90ebec4214c228.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "cce327a7be291e3c.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:leider-lieder:a:m": {
-      "file": "1c753b263978a9fa.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "c462eeddc691ec27.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:leider-lieder:b:f": {
-      "file": "1624a36d092b27af.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "53b55f254882225c.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:leider-lieder:b:m": {
-      "file": "f8304d19f3d27f64.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "144e4bd432f8e171.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:lesen-loesen:a:f": {
-      "file": "e663c0b7c958e0d7.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "29922b21909df302.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:lesen-loesen:a:m": {
-      "file": "cfaf6d28095fd5a6.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "05d3c8a5626fac64.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:lesen-loesen:b:f": {
-      "file": "c5cb523afbc2c426.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "98f3215b295284b7.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:lesen-loesen:b:m": {
-      "file": "74a7de485ab319ef.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "57b98b0ab667e891.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:liegen-luegen:a:f": {
-      "file": "612b24a59104a28e.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "a934fc6fd6360206.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:liegen-luegen:a:m": {
-      "file": "bfecaea4c31ce765.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "6210b936b8c701d7.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:liegen-luegen:b:f": {
-      "file": "455a5f50f075de28.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "95481f79ff0ac4fb.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:liegen-luegen:b:m": {
-      "file": "c67cc960e5e905eb.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "ef8deb6ba4537343.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:mich-misch:a:f": {
-      "file": "0adf82905e469f6b.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "70f33784e7b13438.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:mich-misch:a:m": {
-      "file": "02f2254445bee9bb.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "3db054b2521fef03.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:mich-misch:b:f": {
-      "file": "aad8aa1e036d9b3e.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "d57744d15a1731db.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:mich-misch:b:m": {
-      "file": "b8f51b6fa880b488.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "c9a05538d1dbb739.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:miete-mitte:a:f": {
-      "file": "780f447240886a3c.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "0adecfd22564e531.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:miete-mitte:a:m": {
-      "file": "d50b6d5a8cf02be4.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "1924720c228fe208.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:miete-mitte:b:f": {
-      "file": "73ae90860f3c8613.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "ea9ba52a4c351497.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:miete-mitte:b:m": {
-      "file": "1d1c0b7636b7b595.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "76f86d8b11b05467.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:mutter-muetter:a:f": {
-      "file": "fba46d8eda2c65df.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "5c788dc741c2da8a.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:mutter-muetter:a:m": {
-      "file": "1e9d89898c6ad1af.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "0fe7d298708f9d20.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:mutter-muetter:b:f": {
-      "file": "258f9107fe990e51.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "3f3173fd275bc8a8.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:mutter-muetter:b:m": {
-      "file": "c074c968af095b08.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "60b18defe6c8027a.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:ofen-oefen:a:f": {
-      "file": "c48bef53fea84142.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "b1374fa5e242d5bf.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:ofen-oefen:a:m": {
-      "file": "2f76cb934695ba11.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "e2685e8d77c0be0f.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:ofen-oefen:b:f": {
-      "file": "7c011b00397b6bd3.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "7d3b9636ddbb448b.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:ofen-oefen:b:m": {
-      "file": "d87aab7ee6601b39.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "17b34739a74fe1bc.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:ofen-offen:a:f": {
-      "file": "c48bef53fea84142.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "b1374fa5e242d5bf.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:ofen-offen:a:m": {
-      "file": "2f76cb934695ba11.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "e2685e8d77c0be0f.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:ofen-offen:b:f": {
-      "file": "3dc3b0c98f2b5db1.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "b09bcfbdb0100f5a.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:ofen-offen:b:m": {
-      "file": "4119a25436614efc.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "5d42aa31d5a2834c.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:reise-riese:a:f": {
-      "file": "2f7e7f1ce2d1f234.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "c9d77ff14e5b7da9.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:reise-riese:a:m": {
-      "file": "c6721c9d4ad96b8f.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "27121f4593967e6c.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:reise-riese:b:f": {
-      "file": "f0c39406215cb82c.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "30deeeda0b35a4c4.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:reise-riese:b:m": {
-      "file": "ea6a7d232234f8de.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "c677266b3d06d20a.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:saal-zahl:a:f": {
-      "file": "0759b5bcf13baf89.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "683fc9f28f1dedec.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:saal-zahl:a:m": {
-      "file": "0965d50a978c6633.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "bb63f5ff1d456646.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:saal-zahl:b:f": {
-      "file": "d38d8a1b485c4e22.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "7c191fe416009bd2.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:saal-zahl:b:m": {
-      "file": "054168f4783e8902.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "c0f7a85d90e29096.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:schon-schoen:a:f": {
-      "file": "8c3c17d24178301d.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "f552c1177705b086.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:schon-schoen:a:m": {
-      "file": "105f497213334695.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "d0b96d1b7b7a5638.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:schon-schoen:b:f": {
-      "file": "6fe094f84cb3048a.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "344a964ce167bccc.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:schon-schoen:b:m": {
-      "file": "8114c7e36496c857.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "82c865494834ce96.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:schreiben-schrieben:a:f": {
-      "file": "5bcfc9038e766714.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "556c7110b467d8fb.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:schreiben-schrieben:a:m": {
-      "file": "1182433247133cc5.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "7ec84f824ef01804.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:schreiben-schrieben:b:f": {
-      "file": "3ce1f6efb4cc6868.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "1696ec6df6a0e797.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:schreiben-schrieben:b:m": {
-      "file": "67d9327aa0ed27e9.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "0c18311b8c3afd65.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:seit-zeit:a:f": {
-      "file": "e9bfbe0f50e53fc4.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "6009f73e016248d3.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:seit-zeit:a:m": {
-      "file": "4cd2ccc4c049b593.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "c06515b0cbdf1985.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:seit-zeit:b:f": {
-      "file": "b331f1fbecbdc0d0.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "d923de284dd000cd.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:seit-zeit:b:m": {
-      "file": "e0e25344c6bc84eb.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "378050a278162776.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:selten-zelten:a:f": {
-      "file": "1c888293f6da1ffe.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "cf780f44585e6575.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:selten-zelten:a:m": {
-      "file": "108c44e4fcc75988.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "2a4b747c1c531a60.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:selten-zelten:b:f": {
-      "file": "d396c74f5768e742.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "44c188d48ac96498.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:selten-zelten:b:m": {
-      "file": "b247280352ed9ba8.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "5b52aa3767234b6f.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:so-zoo:a:f": {
-      "file": "32b396a17b0bd740.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "d67fa7e6dbeb78af.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:so-zoo:a:m": {
-      "file": "b9c8412015e1fd2b.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "e8e582c1e2fdbb0e.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:so-zoo:b:f": {
-      "file": "93c50ab60915568c.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "b0798a65ea50296a.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:so-zoo:b:m": {
-      "file": "02ac946f37aaaedb.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "308d2322318a1b4c.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:spielen-spuelen:a:f": {
-      "file": "9ee05c71864360ba.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "8c336b9d526a55a1.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:spielen-spuelen:a:m": {
-      "file": "28cc198ba469a2a2.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "fdf8ba3d7c6a5856.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:spielen-spuelen:b:f": {
-      "file": "9fa8060640195516.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "dde683ddbf84efcf.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:spielen-spuelen:b:m": {
-      "file": "514b84a84f32af0c.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "6ea2e2a7338ebeb3.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:staat-stadt:a:f": {
-      "file": "8b0b01ba586d5acb.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "b32e760ef06ebbaf.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:staat-stadt:a:m": {
-      "file": "aaec02e4a1af3d79.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "879a84762a600c0a.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:staat-stadt:b:f": {
-      "file": "2bad5987cd2ee36e.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "49e3bace49141f28.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:staat-stadt:b:m": {
-      "file": "eb8d011dad8a44d4.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "bb79ddbd801bec23.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:tier-tuer:a:f": {
-      "file": "7fa10874c20315fb.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "ee03264644d0d14c.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:tier-tuer:a:m": {
-      "file": "52d8b836f4ab7dee.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "81af529652764344.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:tier-tuer:b:f": {
-      "file": "52bd360d3dc960e5.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "45469a2c0c724014.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:tier-tuer:b:m": {
-      "file": "e1cbf6d5dc942b5a.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "ecfc504f826d2a8d.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:tochter-toechter:a:f": {
-      "file": "5cac7acf723fa5e6.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "e2291229bfded179.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:tochter-toechter:a:m": {
-      "file": "c95229903cd59306.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "e2824626e3c487aa.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:tochter-toechter:b:f": {
-      "file": "7f3746032b217bcc.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "68bf9ecfbd014c20.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:tochter-toechter:b:m": {
-      "file": "d7635867c31b98fc.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "54fbc335939ce513.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:vier-fuer:a:f": {
-      "file": "9ec3168046768a3e.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "73c81e1a5ade7082.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:vier-fuer:a:m": {
-      "file": "2b47c9e064fe99b0.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "4cfb3a1637fe4040.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:vier-fuer:b:f": {
-      "file": "f32c1379e59babe6.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "c263f1a4091d099b.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:vier-fuer:b:m": {
-      "file": "3ea3697b3e97e7a8.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "916993e42b24b644.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:wein-wien:a:f": {
-      "file": "c7328638a20ece05.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "80d4114c54c0ebce.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:wein-wien:a:m": {
-      "file": "850ed9f59ffdd643.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "18cec516ee72cebf.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:wein-wien:b:f": {
-      "file": "e0f683fbccd838ec.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "bc5f1f18ffeccca2.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:wein-wien:b:m": {
-      "file": "9233fa8a1de87f44.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "4645a79d7e4cf776.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:wen-wenn:a:f": {
-      "file": "faf32f47247266ae.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "3e95da959644e637.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:wen-wenn:a:m": {
-      "file": "d53d6165b02085c8.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "cd907b629c30a5e8.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     },
     "pair:wen-wenn:b:f": {
-      "file": "62c002ceca49fae2.mp3",
-      "voice": "de_DE-kerstin-medium#1#1"
+      "file": "b6a02f5945b03efc.mp3",
+      "voice": "de-DE-TanjaNeural#0#0"
     },
     "pair:wen-wenn:b:m": {
-      "file": "4183d7dbd287da99.mp3",
-      "voice": "de_DE-thorsten-high#1#1"
+      "file": "42277d0771109c31.mp3",
+      "voice": "de-DE-ChristophNeural#0#0"
     }
   }
 }
