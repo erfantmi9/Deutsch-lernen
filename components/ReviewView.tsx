@@ -10,6 +10,7 @@ import type { Grade } from "@/lib/srs";
 import { useSession } from "@/lib/useSession";
 import { ensureSrsHydrated, useSrsStore } from "@/stores/srsStore";
 import CardFront from "./CardFront";
+import DeckGrid from "./flashcards/DeckGrid";
 import SpeakButton from "./SpeakButton";
 import PageHeader from "./PageHeader";
 import Mascot from "./illustrations/Mascot";
@@ -351,9 +352,6 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
           <Mascot mood="pretzel" size={96} className="mx-auto" />
           <h2 className="text-xl font-extrabold">{t("emptyDeckTitle")}</h2>
           <p className="text-text-muted">{t("emptyDeckText")}</p>
-          <Link href="/vocabulary" className="btn btn-primary">
-            {t("goVocabulary")}
-          </Link>
         </section>
       ) : (
         <section aria-labelledby="today-title" className="card space-y-4 p-5 sm:p-6">
@@ -379,7 +377,9 @@ export default function ReviewView({ cards: catalog }: { cards: readonly ReviewC
         </section>
       )}
 
-      <section aria-labelledby="deck-title" className="card space-y-3 p-5 sm:p-6">
+      <DeckGrid cards={catalog} myCards={cards} />
+
+      <section id="my-cards" aria-labelledby="deck-title" className="card scroll-mt-24 space-y-3 p-5 sm:p-6">
         <h2 id="deck-title" className="text-xl font-extrabold">
           {t("deckTitle")}
         </h2>

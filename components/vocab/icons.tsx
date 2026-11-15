@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import type { TopicId } from "@/lib/vocabTopics";
+import type { DeckId } from "@/lib/flashDecks";
 
 /** Outline icons (24px grid, 2px stroke, currentColor) for the vocabulary topics and their controls. Decorative. */
 function Line({ children, size = 24, className }: { children: ReactNode; size?: number; className?: string }) {
@@ -23,7 +23,7 @@ function Line({ children, size = 24, className }: { children: ReactNode; size?: 
 
 const dot = (cx: number, cy: number) => <circle cx={cx} cy={cy} r="0.6" fill="currentColor" />;
 
-const TOPIC_PATHS: Readonly<Record<TopicId, ReactNode>> = {
+const TOPIC_PATHS: Readonly<Record<DeckId, ReactNode>> = {
   food: (
     <>
       <path d="M4 3v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V3M7 3v18" />
@@ -153,9 +153,11 @@ const TOPIC_PATHS: Readonly<Record<TopicId, ReactNode>> = {
     </>
   ),
   phrases: <path d="M20.5 15a2 2 0 0 1-2 2H8l-4.5 3.5V5.5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z" />,
+  // Same mark as the verbs page in the menu.
+  verbs: <path d="M13 3 5 13.5h6L10 21l8-10.5h-6z" />,
 };
 
-export function TopicIcon({ topic, size = 24 }: { topic: TopicId; size?: number }) {
+export function TopicIcon({ topic, size = 24 }: { topic: DeckId; size?: number }) {
   return <Line size={size}>{TOPIC_PATHS[topic]}</Line>;
 }
 

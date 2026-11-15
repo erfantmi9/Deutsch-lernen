@@ -3,7 +3,7 @@
 import type { ReactNode, Ref } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import type { TopicId } from "@/lib/vocabTopics";
+import type { DeckId } from "@/lib/flashDecks";
 import Mascot from "../illustrations/Mascot";
 import { ClearIcon, SearchIcon, TopicIcon } from "./icons";
 
@@ -14,19 +14,22 @@ export function TopicCard({
   count,
   percent,
   compact = false,
+  href,
 }: {
-  topic: TopicId;
+  topic: DeckId;
   name: string;
   count: number;
   /** null until the deck has loaded. */
   percent: number | null;
   compact?: boolean;
+  /** Where the card leads; the topic's word list by default. */
+  href?: string;
 }) {
   const t = useTranslations("Vocabulary");
   return (
     <li>
       <Link
-        href={`/vocabulary/${topic}`}
+        href={href ?? `/vocabulary/${topic}`}
         data-topic={topic}
         className={
           "card flex h-full flex-col gap-4 p-4 transition hover:-translate-y-0.5 hover:border-primary/50 hover:shadow-lift " +
