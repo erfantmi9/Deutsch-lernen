@@ -1,50 +1,62 @@
 /**
  * Which voice speaks what. Used only by scripts/generate-audio.ts; the app itself plays the generated files.
  *
- * The recordings are made offline with Piper (open source, runs on your own computer, no account or key). Piper has two
- * clean German voices, a woman (kerstin) and a man (thorsten). More people are made from them with `pitch`: the voice
- * is shifted up (younger, smaller) or down (older, bigger) by that factor without changing its speed. `lengthScale`
- * makes someone speak slower (above 1) or faster. The two people of a conversation always differ (checked by a test).
- *
- * (Piper's multi-speaker German model was tried and dropped: measured, its speakers talk 3-5 times slower than normal
- * with second-long pauses inside sentences.)
+ * The recordings are made with edge-tts (the neural "Read aloud" voices of Microsoft Edge): free, no account, no key.
+ * Only the voices in EDGE_VOICES are used; a name the service does not know silently comes back as its default voice,
+ * so new names must be checked by ear. Each person is one real voice; `pitch` (Hz) and `rate` (percent, below 0 slower)
+ * are applied by the service itself, so they stay natural. The two people of a conversation always differ (checked by a
+ * test).
  */
 
 export type Gender = "FEMALE" | "MALE";
 
-/** Piper models used, with where to download them (huggingface.co/rhasspy/piper-voices). Both CC0. */
-export const PIPER_MODELS = {
-  "de_DE-thorsten-high": "de/de_DE/thorsten/high",
-  "de_DE-kerstin-medium": "de/de_DE/kerstin/medium",
-} as const;
-export type PiperModel = keyof typeof PIPER_MODELS;
+/** The neural voices used: German, plus Austrian (standard German with a light accent). No Swiss voices. */
+export const EDGE_VOICES = {
+  "de-DE-TanjaNeural": "FEMALE",
+  "de-AT-IngridNeural": "FEMALE",
+  "de-DE-ChristophNeural": "MALE",
+  "de-AT-JonasNeural": "MALE",
+} as const satisfies Record<string, Gender>;
+export type EdgeVoice = keyof typeof EDGE_VOICES;
 
 export interface VoiceSpec {
   gender: Gender;
-  model: PiperModel;
-  /** Pitch and timbre factor, about 0.85 to 1.2: another person from the same voice. */
+  name: EdgeVoice;
+  /** Pitch shift in Hz, about -12 to +12: another person from the same voice. */
   pitch?: number;
-  /** Speaking speed: 1 normal, above 1 slower. */
-  lengthScale?: number;
+  /** Speed change in percent: 0 normal, -10 a bit slower. */
+  rate?: number;
 }
 
 /** Stable name of a voice, part of each recording's file name. */
-export const voiceId = (v: VoiceSpec): string => `${v.model}#${v.pitch ?? 1}#${v.lengthScale ?? 1}`;
+export const voiceId = (v: VoiceSpec): string => `${v.name}#${v.pitch ?? 0}#${v.rate ?? 0}`;
 
-/** Pitch factors far enough apart to sound like different people. */
-const PITCH = { A: 1, B: 1.08, C: 0.93, D: 1.15, E: 0.87 } as const;
-type Person = keyof typeof PITCH;
+/** Five people per gender from two real voices, each also a bit lower or higher. */
+const WOMEN: Record<Person, Pick<VoiceSpec, "name" | "pitch">> = {
+  A: { name: "de-DE-TanjaNeural" },
+  B: { name: "de-AT-IngridNeural" },
+  C: { name: "de-DE-TanjaNeural", pitch: -10 },
+  D: { name: "de-DE-TanjaNeural", pitch: 8 },
+  E: { name: "de-AT-IngridNeural", pitch: -10 },
+};
+const MEN: Record<Person, Pick<VoiceSpec, "name" | "pitch">> = {
+  A: { name: "de-DE-ChristophNeural" },
+  B: { name: "de-AT-JonasNeural" },
+  C: { name: "de-DE-ChristophNeural", pitch: -8 },
+  D: { name: "de-DE-ChristophNeural", pitch: 8 },
+  E: { name: "de-AT-JonasNeural", pitch: -10 },
+};
+type Person = "A" | "B" | "C" | "D" | "E";
 
-/** Women: kerstin at five pitches. Men: thorsten at five pitches. */
-const F = (p: Person, lengthScale?: number): VoiceSpec => ({ gender: "FEMALE", model: "de_DE-kerstin-medium", pitch: PITCH[p], lengthScale });
-const M = (p: Person, lengthScale?: number): VoiceSpec => ({ gender: "MALE", model: "de_DE-thorsten-high", pitch: PITCH[p], lengthScale });
+const F = (p: Person, rate?: number): VoiceSpec => ({ gender: "FEMALE", ...WOMEN[p], rate });
+const M = (p: Person, rate?: number): VoiceSpec => ({ gender: "MALE", ...MEN[p], rate });
 
 /** Every dialogue character keeps one voice in every exercise (dialogues and dictation). Older people speak a bit slower. */
 export const CHARACTER_VOICES: Readonly<Record<string, VoiceSpec>> = {
   Lena: F("A"),
   Omid: M("A"),
   Empfang: F("B"),
-  "Herr Fischer": M("E", 1.06),
+  "Herr Fischer": M("E", -6),
   "Herr Rossi": M("B"),
   Mitarbeiterin: F("C"),
   Laura: F("D"),
@@ -55,11 +67,11 @@ export const CHARACTER_VOICES: Readonly<Record<string, VoiceSpec>> = {
   Karim: M("B"),
   Ben: M("D"),
   Hanna: F("A"),
-  "Frau Weber": F("E", 1.06),
+  "Frau Weber": F("E", -6),
   "Herr Yilmaz": M("A"),
   Kellner: M("B"),
   Mia: F("D"),
-  "Herr Braun": M("E", 1.1),
+  "Herr Braun": M("E", -10),
   Verkäuferin: F("C"),
   Sara: F("B"),
   Verkäufer: M("C"),
@@ -79,10 +91,10 @@ export const MESSAGE_VOICES: Readonly<Record<string, readonly [VoiceSpec] | read
   "bus-baustelle": [M("E")],
   "praxis-termin": [F("C")],
   "kino-treffen": [F("B")],
-  "mama-einkaufen": [F("E", 1.04)],
+  "mama-einkaufen": [F("E", -4)],
   "fahrrad-reparatur": [M("B")],
   "kollegin-krank": [F("D")],
-  "vermieter-techniker": [M("E", 1.04)],
+  "vermieter-techniker": [M("E", -4)],
   "party-samstag": [M("D")],
   "restaurant-tisch": [M("C")],
   "baeckerei-preis": [M("B"), F("A")],
@@ -102,5 +114,5 @@ export const DICTATION_VOICES: readonly VoiceSpec[] = [F("A"), M("A"), F("C"), M
 /** Minimal pairs are recorded by a woman and a man; the drill picks one at random, so the ear cannot rely on one voice. */
 export const PAIR_VOICES = { f: F("A"), m: M("A") } as const;
 
-/** The same model at nearly the same pitch is the same person (speed alone does not make two people). */
-export const sameVoice = (a: VoiceSpec, b: VoiceSpec): boolean => a.model === b.model && Math.abs((a.pitch ?? 1) - (b.pitch ?? 1)) < 0.06;
+/** The same voice at nearly the same pitch is the same person (speed alone does not make two people). */
+export const sameVoice = (a: VoiceSpec, b: VoiceSpec): boolean => a.name === b.name && Math.abs((a.pitch ?? 0) - (b.pitch ?? 0)) < 6;

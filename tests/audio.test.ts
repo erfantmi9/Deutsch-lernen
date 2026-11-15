@@ -3,11 +3,13 @@ import { dialogues } from "@/lib/dialogues";
 import { dictationPool, listeningMessages, minimalPairs } from "@/lib/listening";
 import { speakersOf } from "@/lib/rolePlay";
 import { clipJobs, clipKey, missingVoices, voiceClashes } from "@/lib/audio/clips";
-import { CHARACTER_VOICES, PIPER_MODELS, sameVoice, voiceId } from "@/lib/audio/voices";
+import { CHARACTER_VOICES, EDGE_VOICES, sameVoice, voiceId } from "@/lib/audio/voices";
 import { babblePool, dialogueAudio } from "@/lib/audio/listeningAudio";
 import { clipSrc } from "@/lib/audio/manifest";
 import { messageFx } from "@/lib/audio/fx";
-import { DIFFICULTY_MIX, planTimeline, SCENE_MIX } from "@/lib/audioScene";
+import { ambienceSrc, DIFFICULTY_MIX, planTimeline, SCENE_MIX, speechBounds } from "@/lib/audioScene";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { SCENES } from "@/types/listening";
 
 const jobs = clipJobs({ dialogues, messages: listeningMessages, dictation: dictationPool(), pairs: minimalPairs });
@@ -30,15 +32,15 @@ describe("recordings: what is recorded by whom", () => {
     expect(voiceClashes(dialogues, listeningMessages)).toEqual([]);
   });
 
-  it("uses only known models, with pitches in the natural range", () => {
+  it("uses only known voices of the right gender, with natural pitch and speed", () => {
     for (const j of jobs) {
-      expect(PIPER_MODELS[j.voice.model], voiceId(j.voice)).toBeDefined();
-      expect(j.voice.pitch ?? 1).toBeGreaterThanOrEqual(0.85);
-      expect(j.voice.pitch ?? 1).toBeLessThanOrEqual(1.2);
+      expect(EDGE_VOICES[j.voice.name], voiceId(j.voice)).toBe(j.voice.gender);
+      expect(Math.abs(j.voice.pitch ?? 0)).toBeLessThanOrEqual(12);
+      expect(Math.abs(j.voice.rate ?? 0)).toBeLessThanOrEqual(15);
     }
-    const women = CHARACTER_VOICES.Lena;
-    expect(sameVoice(women, { ...women, lengthScale: 1.2 })).toBe(true);
-    expect(sameVoice(women, { ...women, pitch: 1.08 })).toBe(false);
+    const lena = CHARACTER_VOICES.Lena;
+    expect(sameVoice(lena, { ...lena, rate: -10 })).toBe(true);
+    expect(sameVoice(lena, { ...lena, pitch: -10 })).toBe(false);
     expect(new Set(Object.values(CHARACTER_VOICES).map(voiceId)).size).toBeGreaterThanOrEqual(10);
   });
 
@@ -91,5 +93,23 @@ describe("audio scenes", () => {
     expect(plan.end).toBeCloseTo(6.85);
     const slow = planTimeline([2, 1], [0, 1], { rate: 0.5, gapScale: 2, leadIn: 0, tail: 0 });
     expect(slow.starts[1]).toBeCloseTo(5.1);
+  });
+
+  it("every scene with a background has its real recording in public/", () => {
+    for (const s of SCENES) {
+      const src = ambienceSrc(s);
+      if (s === "quiet" || s === "phone") expect(src).toBeNull();
+      else expect(existsSync(join(process.cwd(), "public", src!)), s).toBe(true);
+    }
+  });
+
+  it("skips the silence around a recording, keeping a short margin", () => {
+    const rate = 1000;
+    const samples = new Float32Array(3000);
+    samples.fill(0.3, 500, 2000); // speech from 0.5 s to 2 s, then a second of silence
+    const b = speechBounds(samples, rate);
+    expect(b.offset).toBeCloseTo(0.46, 2);
+    expect(b.offset + b.duration).toBeCloseTo(2.099, 2);
+    expect(speechBounds(new Float32Array(1000), rate)).toEqual({ offset: 0, duration: 1 });
   });
 });

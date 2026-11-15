@@ -4,8 +4,10 @@ import type { Difficulty, Scene } from "../types/listening";
 /**
  * Plays recorded listening texts the way they sound in real life, with the Web Audio API:
  * - the voice through a telephone (narrow band, a little distortion) or a station loudspeaker (echo, chime first);
- * - a background for the place: murmur of several German speakers (real recordings from other dialogues, filtered and
- *   spread around), cups in a café, scanner beeps in a shop, passing cars, station rumble, typing in an office;
+ * - a background for the place: a real recording of it (public/audio/ambience, made by scripts/tts/ambience.py: a café,
+ *   a supermarket, a station, a street, a house, an office), plus murmur of several German speakers (recordings from
+ *   other dialogues, muffled and spread around) so the people around speak German too;
+ * - silence at the start and end of each recording is skipped, so the pauses between speakers are the planned ones;
  * - the difficulty sets how loud and busy the background is.
  * Everything is scheduled on the AudioContext clock, so nothing drifts. Browser only; every entry point is guarded.
  */
@@ -32,30 +34,36 @@ export interface SceneOptions {
 }
 
 interface SceneMix {
-  /** Room tone (soft brown noise). */
-  room: number;
-  /** Level of the murmur and how many people talk in it. */
+  /** Real recording of the place (file in public/audio/ambience) and its level. */
+  ambience: string | null;
+  bed: number;
+  /** Level of the German murmur and how many people talk in it. */
   babble: number;
   voices: number;
-  events: "clinks" | "beeps" | "traffic" | "typing" | null;
-  /** Low rumble (traffic, trains). */
-  rumble: number;
   /** Line hiss of a phone. */
   hiss: number;
   /** Reverb send of the voice in this room. */
   reverb: number;
 }
 
+const AMBIENCE_DIR = "/audio/ambience";
+
 export const SCENE_MIX: Readonly<Record<Scene, SceneMix>> = {
-  quiet: { room: 0, babble: 0, voices: 0, events: null, rumble: 0, hiss: 0, reverb: 0.04 },
-  home: { room: 0.5, babble: 0, voices: 0, events: null, rumble: 0, hiss: 0, reverb: 0.08 },
-  classroom: { room: 0.6, babble: 0.3, voices: 2, events: null, rumble: 0, hiss: 0, reverb: 0.16 },
-  office: { room: 0.6, babble: 0.25, voices: 2, events: "typing", rumble: 0, hiss: 0, reverb: 0.1 },
-  cafe: { room: 0.8, babble: 0.6, voices: 5, events: "clinks", rumble: 0, hiss: 0, reverb: 0.12 },
-  shop: { room: 0.7, babble: 0.45, voices: 4, events: "beeps", rumble: 0, hiss: 0, reverb: 0.12 },
-  street: { room: 0.3, babble: 0.25, voices: 2, events: "traffic", rumble: 0.6, hiss: 0, reverb: 0.03 },
-  station: { room: 0.4, babble: 0.5, voices: 5, events: null, rumble: 0.9, hiss: 0, reverb: 0.25 },
-  phone: { room: 0.4, babble: 0, voices: 0, events: null, rumble: 0, hiss: 0.7, reverb: 0.05 },
+  quiet: { ambience: null, bed: 0, babble: 0, voices: 0, hiss: 0, reverb: 0.04 },
+  home: { ambience: "home", bed: 0.2, babble: 0, voices: 0, hiss: 0, reverb: 0.08 },
+  classroom: { ambience: "home", bed: 0.25, babble: 0.3, voices: 2, hiss: 0, reverb: 0.16 },
+  office: { ambience: "office", bed: 0.3, babble: 0.2, voices: 2, hiss: 0, reverb: 0.1 },
+  cafe: { ambience: "cafe", bed: 0.5, babble: 0.3, voices: 3, hiss: 0, reverb: 0.12 },
+  shop: { ambience: "shop", bed: 0.45, babble: 0.25, voices: 3, hiss: 0, reverb: 0.12 },
+  street: { ambience: "street", bed: 0.5, babble: 0, voices: 0, hiss: 0, reverb: 0.03 },
+  station: { ambience: "station", bed: 0.5, babble: 0.25, voices: 3, hiss: 0, reverb: 0.25 },
+  phone: { ambience: null, bed: 0, babble: 0, voices: 0, hiss: 0.7, reverb: 0.05 },
+};
+
+/** URL of the scene's background recording, if it has one. */
+export const ambienceSrc = (scene: Scene): string | null => {
+  const name = SCENE_MIX[scene].ambience;
+  return name ? `${AMBIENCE_DIR}/${name}.mp3` : null;
 };
 
 /** Background level, number of extra voices and pause length per difficulty. */
@@ -128,6 +136,29 @@ function load(c: AudioContext, src: string): Promise<AudioBuffer> {
     buffers.set(src, p);
   }
   return p;
+}
+
+/** Below this the recording counts as silence (about -45 dB). */
+const SILENCE = 0.006;
+const boundsCache = new WeakMap<AudioBuffer, { offset: number; duration: number }>();
+/** Where the speech in a recording starts and how long it lasts, without the silence the voice service adds around it. */
+export function speechBounds(samples: Float32Array, sampleRate: number): { offset: number; duration: number } {
+  let first = 0;
+  while (first < samples.length && Math.abs(samples[first]) < SILENCE) first++;
+  let last = samples.length - 1;
+  while (last > first && Math.abs(samples[last]) < SILENCE) last--;
+  if (first >= last) return { offset: 0, duration: samples.length / sampleRate };
+  const offset = Math.max(0, first / sampleRate - 0.04);
+  const end = Math.min(samples.length / sampleRate, last / sampleRate + 0.1);
+  return { offset, duration: end - offset };
+}
+function bounds(buf: AudioBuffer) {
+  let b = boundsCache.get(buf);
+  if (!b) {
+    b = speechBounds(buf.getChannelData(0), buf.sampleRate);
+    boundsCache.set(buf, b);
+  }
+  return b;
 }
 
 const noiseCache = new Map<string, AudioBuffer>();
@@ -257,7 +288,18 @@ function ping(c: AudioContext, r: Running, out: AudioNode, when: number, freqs: 
 }
 
 /** Background for the scene from `start` to `end` (seconds on the context clock). */
-function buildBackground(c: AudioContext, r: Running, out: AudioNode, reverb: AudioNode, scene: Scene, difficulty: Difficulty, babble: readonly AudioBuffer[], start: number, end: number) {
+function buildBackground(
+  c: AudioContext,
+  r: Running,
+  out: AudioNode,
+  reverb: AudioNode,
+  scene: Scene,
+  difficulty: Difficulty,
+  ambience: AudioBuffer | null,
+  babble: readonly AudioBuffer[],
+  start: number,
+  end: number,
+) {
   const mix = SCENE_MIX[scene];
   const level = DIFFICULTY_MIX[difficulty].level;
   const bed = gainNode(c, 0);
@@ -267,8 +309,7 @@ function buildBackground(c: AudioContext, r: Running, out: AudioNode, reverb: Au
   bed.gain.setValueAtTime(1, Math.max(start + 0.8, end - 0.9));
   bed.gain.linearRampToValueAtTime(0, end);
 
-  if (mix.room > 0) looped(c, r, noise(c, "brown"), start).connect(filter(c, "lowpass", 420)).connect(gainNode(c, 0.05 * mix.room * level)).connect(bed);
-  if (mix.rumble > 0) looped(c, r, noise(c, "brown"), start, 1.3).connect(filter(c, "lowpass", 140)).connect(gainNode(c, 0.35 * mix.rumble * level)).connect(bed);
+  if (ambience && mix.bed > 0) looped(c, r, ambience, start, rand(0, ambience.duration)).connect(gainNode(c, mix.bed * level)).connect(bed);
   if (mix.hiss > 0) looped(c, r, noise(c, "white"), start).connect(filter(c, "highpass", 2500)).connect(gainNode(c, 0.012 * mix.hiss * Math.max(level, 0.6))).connect(bed);
 
   // Murmur: several real voices at once, muffled and spread around the room.
@@ -288,57 +329,6 @@ function buildBackground(c: AudioContext, r: Running, out: AudioNode, reverb: Au
   }
 
   const span = end - start;
-  if (mix.events === "clinks") {
-    for (let t = start + rand(0.3, 1.2); t < end - 0.4; t += rand(0.9, 2.6)) {
-      const base = rand(2300, 3900);
-      ping(c, r, bed, t, [base, base * 2.76, base * 5.4], 0.05 * level, rand(0.25, 0.6), rand(-0.8, 0.8));
-    }
-  } else if (mix.events === "beeps") {
-    for (let t = start + rand(0.8, 2); t < end - 0.4; t += rand(2.5, 5.5)) {
-      ping(c, r, bed, t, [1850], 0.035 * level, 0.12, rand(-0.6, 0.6));
-      if (Math.random() < 0.4) ping(c, r, bed, t + 0.6, [1850], 0.035 * level, 0.12, rand(-0.6, 0.6));
-    }
-  } else if (mix.events === "typing") {
-    for (let t = start + rand(0.5, 1.5); t < end - 0.5; t += rand(2, 5)) {
-      const clicks = Math.floor(rand(5, 14));
-      for (let k = 0, tt = t; k < clicks; k++, tt += rand(0.07, 0.17)) {
-        const s = c.createBufferSource();
-        s.buffer = noise(c, "white");
-        const g = gainNode(c, 0);
-        g.gain.setValueAtTime(0.05 * level, tt);
-        g.gain.exponentialRampToValueAtTime(0.0001, tt + 0.025);
-        s.connect(filter(c, "bandpass", 3200, 1.2)).connect(g).connect(bed);
-        s.start(tt, rand(0, 2));
-        s.stop(tt + 0.04);
-        r.sources.push(s);
-      }
-    }
-  } else if (mix.events === "traffic") {
-    for (let t = start + rand(0, 1.5); t < end - 1; t += rand(3.5, 8)) {
-      const dur = rand(2.5, 4.5);
-      const s = c.createBufferSource();
-      s.buffer = noise(c, "brown");
-      s.loop = true;
-      const bp = filter(c, "bandpass", 300, 0.8);
-      bp.frequency.setValueAtTime(260, t);
-      bp.frequency.linearRampToValueAtTime(900, t + dur / 2);
-      bp.frequency.linearRampToValueAtTime(320, t + dur);
-      const g = gainNode(c, 0);
-      g.gain.setValueAtTime(0, t);
-      g.gain.linearRampToValueAtTime(0.45 * level, t + dur / 2);
-      g.gain.linearRampToValueAtTime(0, t + dur);
-      const p = panner(c, 0);
-      if ("pan" in p) {
-        const dir = Math.random() < 0.5 ? -1 : 1;
-        (p as StereoPannerNode).pan.setValueAtTime(-dir, t);
-        (p as StereoPannerNode).pan.linearRampToValueAtTime(dir, t + dur);
-      }
-      s.connect(bp).connect(g).connect(p).connect(bed);
-      s.start(t, rand(0, 2));
-      s.stop(t + dur + 0.1);
-      r.sources.push(s);
-    }
-  }
   return span;
 }
 
@@ -399,16 +389,18 @@ export function playScene(o: SceneOptions): boolean {
   const mix = SCENE_MIX[o.scene];
   const wantBabble = mix.voices > 0 ? (o.babble ?? []).slice(0, 8) : [];
   const babble = Promise.all(wantBabble.map((s) => load(c, s).catch(() => null))).then((l) => l.filter((b): b is AudioBuffer => b !== null));
+  const amb = ambienceSrc(o.scene);
+  const ambience = amb ? load(c, amb).catch(() => null) : Promise.resolve(null);
 
-  Promise.all([parts, babble])
-    .then(([voiceBufs, babbleBufs]) => {
+  Promise.all([parts, babble, ambience])
+    .then(([voiceBufs, babbleBufs, ambienceBuf]) => {
       if (my !== token || r.stopped) return;
       const diff = DIFFICULTY_MIX[o.difficulty];
       const rate = o.slow ? SLOW_RATE : 1;
       const hasPa = o.parts.some((p) => p.fx === "pa");
       const quietScene = o.scene === "quiet";
       const plan = planTimeline(
-        voiceBufs.map((b) => b.duration),
+        voiceBufs.map((b) => bounds(b).duration),
         o.parts.map((p) => p.speaker),
         { rate, gapScale: diff.gapScale * (o.slow ? 1.8 : 1), leadIn: quietScene ? 0.05 : hasPa ? 2.2 : 1.1, tail: quietScene ? 0.1 : 1 },
       );
@@ -421,7 +413,7 @@ export function playScene(o: SceneOptions): boolean {
       hall.buffer = impulse(c, 2.4, 2.2);
       hall.connect(master);
 
-      if (!quietScene) buildBackground(c, r, master, room, o.scene, o.difficulty, babbleBufs, t0, t0 + plan.end);
+      if (!quietScene) buildBackground(c, r, master, room, o.scene, o.difficulty, ambienceBuf, babbleBufs, t0, t0 + plan.end);
       if (hasPa) chime(c, r, master, t0 + 0.4);
 
       o.parts.forEach((p, i) => {
@@ -429,7 +421,8 @@ export function playScene(o: SceneOptions): boolean {
         s.buffer = voiceBufs[i];
         s.playbackRate.value = rate;
         s.connect(voiceChain(c, p.fx, master, room, hall, mix.reverb));
-        s.start(t0 + plan.starts[i]);
+        const { offset, duration } = bounds(voiceBufs[i]);
+        s.start(t0 + plan.starts[i], offset, duration);
         r.sources.push(s);
         if (i > 0) r.timers.push(window.setTimeout(() => !r.stopped && reportPlayback(o.key, i), (plan.starts[i] + 0.08) * 1000));
       });
@@ -461,11 +454,16 @@ export function startBackground(scene: Scene, difficulty: Difficulty, maxSeconds
   const master = gainNode(c, 1);
   master.connect(c.destination);
   const r: Running = { key: "", master, sources: [], timers: [], stopped: false };
-  const t0 = c.currentTime + 0.02;
   const reverb = c.createConvolver();
   reverb.buffer = impulse(c, 0.7, 3);
   reverb.connect(master);
-  buildBackground(c, r, master, reverb, scene, difficulty, [], t0, t0 + maxSeconds);
+  const src = ambienceSrc(scene);
+  // Starts as soon as the recording is loaded (cached after the first time); the phone hiss needs none.
+  void (src ? load(c, src).catch(() => null) : Promise.resolve(null)).then((ambience) => {
+    if (r.stopped) return;
+    const t0 = c.currentTime + 0.02;
+    buildBackground(c, r, master, reverb, scene, difficulty, ambience, [], t0, t0 + maxSeconds);
+  });
   r.timers.push(window.setTimeout(() => teardown(r, 0.6), maxSeconds * 1000));
   return () => teardown(r, 0.6);
 }
