@@ -9,6 +9,8 @@ export const users = pgTable("user", {
   image: text("image"),
   /** Only for email + password accounts; null for Google-only accounts. */
   passwordHash: text("password_hash"),
+  /** Interface language the learner chose (en, fa, de); null until they pick one. */
+  locale: text("locale"),
 });
 
 export const accounts = pgTable(

@@ -16,3 +16,9 @@ e2e/screenshots
 
 # offline TTS voices and venv (scripts/generate-audio)
 /.tts/
+
+# Android signing key and its password: never commit
+/android/release.keystore
+/android/keystore-password.txt
+*.keystore
+*.jks
