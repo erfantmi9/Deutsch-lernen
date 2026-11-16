@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import type { SyncStatus } from "@/lib/sync";
 import { useSession } from "@/lib/useSession";
+import type { Locale } from "@/i18n/routing";
 
 /** "Sign in" when signed out; the first name plus a sync dot (links to the account page) when signed in. */
 export default function AccountButton() {
@@ -18,7 +19,8 @@ export default function AccountButton() {
   useEffect(() => {
     if (!session) return;
     void import("@/lib/sync").then(({ startSync }) => startSync(setStatus));
-  }, [session]);
+    void import("@/lib/localePreference").then(({ applyAccountLocale }) => applyAccountLocale(locale as Locale));
+  }, [session, locale]);
 
   if (session === undefined) return null;
 

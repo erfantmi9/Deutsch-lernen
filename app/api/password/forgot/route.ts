@@ -13,7 +13,7 @@ export const dynamic = "force-dynamic";
 
 const schema = z.object({
   email: z.string().trim().toLowerCase().email().max(254),
-  locale: z.enum(routing.locales).catch("en"),
+  locale: z.enum(routing.locales).catch(routing.defaultLocale),
 });
 
 const SUBJECT = {

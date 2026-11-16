@@ -1,9 +1,12 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import type { MouseEvent } from "react";
 import { useLocale, useTranslations } from "next-intl";
-import { Link, usePathname } from "@/i18n/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
+import type { Locale } from "@/i18n/routing";
+import { chooseLocale } from "@/lib/localePreference";
 
 const LABELS: Record<string, string> = { en: "EN", fa: "فا", de: "DE" };
 const NAMES: Record<string, string> = { en: "English", fa: "فارسی", de: "Deutsch" };
@@ -11,6 +14,7 @@ const NAMES: Record<string, string> = { en: "English", fa: "فارسی", de: "De
 export default function LanguageSwitcher() {
   const locale = useLocale();
   const pathname = usePathname();
+  const router = useRouter();
   const t = useTranslations("Nav");
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -30,6 +34,16 @@ export default function LanguageSwitcher() {
       document.removeEventListener("keydown", onKey);
     };
   }, [open]);
+
+  // Save the choice first (device + account), then switch, so the next visit opens in this language.
+  const pick = async (e: MouseEvent, l: Locale) => {
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return; // new tab/window: plain link
+    e.preventDefault();
+    setOpen(false);
+    if (l === locale) return;
+    await chooseLocale(l);
+    router.push(pathname, { locale: l });
+  };
 
   return (
     <div ref={rootRef} className="relative">
@@ -66,7 +80,7 @@ export default function LanguageSwitcher() {
                   locale={l}
                   hrefLang={l}
                   lang={l}
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => void pick(e, l)}
                   aria-current={active ? "true" : undefined}
                   className={
                     "flex min-h-11 items-center justify-between gap-2 rounded-full px-4 text-sm font-bold transition " +

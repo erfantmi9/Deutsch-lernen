@@ -92,7 +92,7 @@ vercel --prod
 
 | Path | What |
 | --- | --- |
-| `/en`, `/fa`, `/de` | the app, one copy per language (`/` redirects to `/en`) |
+| `/en`, `/fa`, `/de` | the app, one copy per language (`/` redirects to `/fa`, or to the language the learner chose) |
 | `/sitemap.xml` | every page in every language, with `hreflang` alternates |
 | `/robots.txt` | allows everything and points at the sitemap |
 | `/manifest.webmanifest`, `/icon-192.png`, `/icon-512.png`, `/icon.svg` | installable app (PWA) |
@@ -111,16 +111,24 @@ cache after a bad release, change `CACHE` at the top of `public/sw.js`. To remov
 Everything the learner does is saved in the browser's `localStorage` (keys start with `deutsch-learner:`).
 Signed-in learners also get it synced to the `progress` table, one row per store (`lib/sync.ts`): on sign-in the
 newer copy of each store wins, except the review deck, which is merged card by card; after that, changes are sent
-about 2 seconds after they happen. The review deck can still be exported and imported from the Review page.
+about 2 seconds after they happen.
+
+### Interface language
+
+Persian is the default: `/` and any path without a language go to `/fa`. The browser's language is not used.
+When the learner picks a language in the menu, it is saved in the `doch-locale` cookie (one year) and, when signed in,
+in `user.locale` (`/api/locale`, `lib/localePreference.ts`). `middleware.ts` opens `/` in the cookie's language, so the
+installed app starts in it. A signed-in learner is moved to the account's language once per browser session (on
+opening the app and right after signing in), so a choice made on one device applies on every device.
 
 ## 6. Post-deploy checklist
 
-- [ ] `/en`, `/fa` and `/de` all load; `/` redirects to `/en`.
+- [ ] `/en`, `/fa` and `/de` all load; `/` redirects to `/fa`. Pick English in the menu, close the tab, open `/`: it opens `/en`.
 - [ ] `/fa`: `<html dir="rtl" lang="fa">`, Vazirmatn font, layout mirrored, German words inside Persian text stay LTR.
 - [ ] Open the main navigation: Learn, Practice, Dialogues & Reading open a short list; Escape closes it.
 - [ ] Arcade works with mouse and with keys `1` / `2` / `3`; a wrong answer shows the rule.
 - [ ] Reload the page: score and streak persist, no hydration warning in the console.
-- [ ] Review: add words on `/vocabulary`, open `/review`, grade a few cards, export the deck, import it again.
+- [ ] Review: add words on `/vocabulary`, open `/review`, grade a few cards, reload: the cards and their due dates are still there.
 - [ ] Listening (`/listen`) and Exam > Listening: with a browser that can speak German you hear audio; otherwise the
       page says so and the exam shows the texts instead.
 - [ ] Search (`/search`): `maedchen`, `strasse` and a Persian word each find results.

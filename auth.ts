@@ -8,6 +8,7 @@ import { accounts, sessions, users, verificationTokens } from "@/lib/db/schema";
 import { signInSchema } from "@/lib/authSchemas";
 import { verifyPassword } from "@/lib/password";
 import { clientIp, hit } from "@/lib/rateLimit";
+import { routing } from "@/i18n/routing";
 
 export const { handlers, auth, signIn, signOut } = NextAuth(() => ({
   adapter: DrizzleAdapter(getDb(), {
@@ -40,7 +41,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth(() => ({
   ],
   // Passwords (Credentials) only work with JWT sessions in Auth.js.
   session: { strategy: "jwt" },
-  pages: { signIn: "/en/login" },
+  pages: { signIn: `/${routing.defaultLocale}/login` },
   callbacks: {
     jwt: ({ token, user }) => {
       if (user?.id) token.sub = user.id;

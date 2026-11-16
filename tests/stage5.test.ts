@@ -343,7 +343,7 @@ describe("site and SEO", () => {
   it("makes canonical and hreflang links for every locale", () => {
     const a = pageAlternates("de", "/grammar");
     expect(a.canonical).toBe("/de/grammar");
-    expect(a.languages).toEqual({ en: "/en/grammar", fa: "/fa/grammar", de: "/de/grammar", "x-default": "/en/grammar" });
+    expect(a.languages).toEqual({ en: "/en/grammar", fa: "/fa/grammar", de: "/de/grammar", "x-default": "/fa/grammar" });
     expect(pageAlternates("en", "").canonical).toBe("/en");
   });
 
