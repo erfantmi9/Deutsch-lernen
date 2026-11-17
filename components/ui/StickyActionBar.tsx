@@ -2,7 +2,7 @@
 
 import { useLayoutEffect, useRef } from "react";
 import type { ReactNode, Ref } from "react";
-import { useKeyboardInset } from "./useKeyboardInset";
+import { useKeyboardOpen } from "./useKeyboardOpen";
 import AnnounceHost from "./AnnounceHost";
 
 /**
@@ -15,7 +15,7 @@ import AnnounceHost from "./AnnounceHost";
  *   FeedbackRegion only, so there is exactly one live region speaking per answer.
  * - On mobile it is fixed to the bottom and REPLACES the bottom nav (html[data-action-bar] hides it); from lg up it
  *   is sticky inside the content column.
- * - It rides above the on-screen keyboard (see useKeyboardInset). While the keyboard is open and a `toolbar` is given
+ * - It rides above the on-screen keyboard (see useKeyboardOpen). While the keyboard is open and a `toolbar` is given
  *   (e.g. the ä ö ü ß keys) the toolbar shares the single row with the button, so the bar stays one row tall.
  * - Its measured height is published as --action-bar-measured so scroll margins and page padding stay right.
  */
@@ -50,9 +50,9 @@ export default function StickyActionBar({
   trailing?: ReactNode;
   ref?: Ref<HTMLButtonElement>;
 }) {
-  const keyboard = useKeyboardInset();
+  const keyboard = useKeyboardOpen();
   const body = useRef<HTMLDivElement>(null);
-  const withToolbar = keyboard > 0 && !!toolbar;
+  const withToolbar = keyboard && !!toolbar;
 
   useLayoutEffect(() => {
     const root = document.documentElement;
@@ -75,9 +75,11 @@ export default function StickyActionBar({
     <div
       data-bottom-chrome
       className={
-        "fixed inset-x-0 bottom-[var(--keyboard-inset,0px)] z-40 border-t border-border bg-surface/95 shadow-lift backdrop-blur lg:sticky lg:inset-x-auto lg:bottom-4 lg:mt-6 lg:rounded-3xl lg:border lg:pb-0 " +
+        "fixed inset-x-0 bottom-[var(--keyboard-inset,0px)] z-40 border-t border-border shadow-lift lg:sticky lg:inset-x-auto lg:bottom-4 lg:mt-6 lg:rounded-3xl lg:border lg:pb-0 " +
+        // No backdrop blur while the keyboard is open: re-blurring a bar that moves with the keyboard is very costly on phones.
+        (keyboard ? "bg-surface " : "bg-surface/95 backdrop-blur ") +
         // The home-indicator inset only applies when nothing (the keyboard) sits between the bar and the screen edge.
-        (keyboard > 0 ? "pb-0" : "pb-[var(--safe-bottom)]")
+        (keyboard ? "pb-0" : "pb-[var(--safe-bottom)]")
       }
     >
       <div ref={body} className="mx-auto flex max-w-4xl flex-wrap items-center gap-x-3 gap-y-0.5 px-4 py-2">

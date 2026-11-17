@@ -16,7 +16,7 @@ import FeedbackRegion from "./ui/FeedbackRegion";
 import ResponsiveSheet from "./ui/ResponsiveSheet";
 import ScoreStrip from "./ui/ScoreStrip";
 import StickyActionBar from "./ui/StickyActionBar";
-import { useKeyboardInset } from "./ui/useKeyboardInset";
+import { useKeyboardOpen } from "./ui/useKeyboardOpen";
 import { useScrollIntoViewOnChange } from "./ui/useScrollIntoViewOnChange";
 
 interface Result {
@@ -80,7 +80,7 @@ export default function GrammarExerciseRunner({
   // answers nor skip an unanswered question (state updates are async, a ref is not).
   const answeredRef = useRef(false);
   const engaged = useRef(false);
-  const keyboard = useKeyboardInset();
+  const keyboard = useKeyboardOpen();
 
   const startSession = useCallback(() => {
     const { results: r, wrongIds } = useGrammarStore.getState();
@@ -143,7 +143,7 @@ export default function GrammarExerciseRunner({
   // Question + answer field + feedback form one block; after answering, scroll the minimum that shows ALL of it above
   // the bar. The trigger includes the keyboard state: answering blurs the input, the keyboard closes a moment later and
   // the layout changes (bar drops, hidden decoration returns), so the position is settled again once it is gone.
-  const qaRef = useScrollIntoViewOnChange<HTMLDivElement>(result ? `answered-${keyboard > 0}` : null, {
+  const qaRef = useScrollIntoViewOnChange<HTMLDivElement>(result ? `answered-${keyboard}` : null, {
     enabled: result !== null,
     focus: false,
     block: "nearest",
@@ -159,7 +159,7 @@ export default function GrammarExerciseRunner({
   // keeps the question card visible too (the form is shorter than the space left). .scroll-target margins already
   // include --keyboard-inset and the bar height.
   useEffect(() => {
-    if (keyboard > 0 && typed) formRef.current?.scrollIntoView({ block: "end", behavior: "smooth" });
+    if (keyboard && typed) formRef.current?.scrollIntoView({ block: "end", behavior: "smooth" });
   }, [keyboard, typed]);
 
   const answer = (value: string) => {
@@ -342,7 +342,7 @@ export default function GrammarExerciseRunner({
           )}
 
           {/* ä ö ü ß: inline normally; while the keyboard is open they move into the action bar, above the keyboard. */}
-          {keyboard === 0 && charBar}
+          {!keyboard && charBar}
         </form>
 
         {/* Feedback: short verdict + the filled sentence, directly under the question. The full explanation lives behind
@@ -378,7 +378,7 @@ export default function GrammarExerciseRunner({
             disabled={result ? false : typed ? !canSubmit : true}
             onAction={() => (result ? next() : answer(input))}
             status={result ? null : typed ? (canSubmit ? null : t("missingAnswer")) : t("missingChoice")}
-            toolbar={keyboard > 0 && typed ? <SpecialCharBar compact disabled={result !== null} onInsert={insertChar} /> : null}
+            toolbar={keyboard && typed ? <SpecialCharBar compact disabled={result !== null} onInsert={insertChar} /> : null}
             secondary={
               <button type="button" disabled={!result} onClick={() => setDetailsOpen(true)} aria-haspopup="dialog" className="btn btn-secondary shrink-0">
                 {t("details")}

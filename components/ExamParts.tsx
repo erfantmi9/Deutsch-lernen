@@ -15,7 +15,7 @@ import SpeakButton from "./SpeakButton";
 import SpecialCharBar from "./SpecialCharBar";
 import ConfirmDialog from "./ui/ConfirmDialog";
 import StickyActionBar from "./ui/StickyActionBar";
-import { useKeyboardInset } from "./ui/useKeyboardInset";
+import { useKeyboardOpen } from "./ui/useKeyboardOpen";
 import { useSpeechSupport } from "./useSpeech";
 
 type Locale = "en" | "fa" | "de";
@@ -363,7 +363,7 @@ type TextField = HTMLInputElement | HTMLTextAreaElement;
 export function SchreibenPart({ data, endsAt, onDone, saved, onSave }: PartProps & { data: ExamData["schreiben"] }) {
   const t = useTranslations("Exam");
   const locale = useLocale() as Locale;
-  const keyboard = useKeyboardInset();
+  const keyboard = useKeyboardOpen();
   const [values, setValues] = useState<Record<string, string>>(() => stringMap(asRecord(saved)?.values));
   const [message, setMessage] = useState(() => {
     const m = asRecord(saved)?.message;
@@ -399,7 +399,7 @@ export function SchreibenPart({ data, endsAt, onDone, saved, onSave }: PartProps
 
   // Keyboard open: keep the field you are typing in between the header and the bar (scroll-padding covers both).
   useEffect(() => {
-    if (keyboard > 0) active.current?.el.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    if (keyboard) active.current?.el.scrollIntoView({ block: "nearest", behavior: "smooth" });
   }, [keyboard]);
 
   const finish = useCallback((timeUp?: boolean) => {
@@ -420,7 +420,7 @@ export function SchreibenPart({ data, endsAt, onDone, saved, onSave }: PartProps
       endsAt={endsAt}
       onFinish={finish}
       progress={{ answered: total - missing.length, total, missing }}
-      toolbar={keyboard > 0 ? <SpecialCharBar compact onInsert={insertChar} /> : null}
+      toolbar={keyboard ? <SpecialCharBar compact onInsert={insertChar} /> : null}
     >
       <section className="card space-y-4 p-5">
         <p className="eyebrow">{t("writing.formTitle")}</p>
@@ -465,7 +465,7 @@ export function SchreibenPart({ data, endsAt, onDone, saved, onSave }: PartProps
         {/* Not a live region: the word count would be announced on every keystroke. */}
         <p className="text-sm text-text-muted">{t("writing.words", { count: words })}</p>
         {/* ä ö ü ß: here normally; while the keyboard is open they move into the bar, above the keyboard. */}
-        {keyboard === 0 && <SpecialCharBar onInsert={insertChar} />}
+        {!keyboard && <SpecialCharBar onInsert={insertChar} />}
       </section>
     </PartShell>
   );

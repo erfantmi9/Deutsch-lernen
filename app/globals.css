@@ -395,7 +395,7 @@ html {
   }
 }
 
-/* While the on-screen keyboard is open (html[data-keyboard], set by useKeyboardInset) decoration steps aside. */
+/* While the on-screen keyboard is open (html[data-keyboard], set by useKeyboardOpen) decoration steps aside. */
 html[data-keyboard] .kb-hide {
   display: none;
 }

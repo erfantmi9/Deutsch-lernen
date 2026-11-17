@@ -16,7 +16,7 @@ import SpecialCharBar from "./SpecialCharBar";
 import ConfirmDialog from "./ui/ConfirmDialog";
 import FeedbackRegion from "./ui/FeedbackRegion";
 import StickyActionBar from "./ui/StickyActionBar";
-import { useKeyboardInset } from "./ui/useKeyboardInset";
+import { useKeyboardOpen } from "./ui/useKeyboardOpen";
 import { useScrollIntoViewOnChange } from "./ui/useScrollIntoViewOnChange";
 
 /** A second activation of the bar button this soon after Next is the tail of a double click / double Enter. */
@@ -56,7 +56,7 @@ export default function NumbersDrill() {
   // When Next was last pressed. "Set the clock" has Check enabled at once, so the second click of a double click on
   // Next would otherwise check the fresh question before the learner touched it.
   const advancedAt = useRef(0);
-  const keyboard = useKeyboardInset();
+  const keyboard = useKeyboardOpen();
   const feedbackRef = useScrollIntoViewOnChange<HTMLDivElement>(outcome, { enabled: outcome !== null, focus: false, block: "nearest" });
   const [askReset, setAskReset] = useState(false);
   // A kind pill pressed while an unchecked answer is in progress: confirmed before that answer is thrown away.
@@ -94,7 +94,7 @@ export default function NumbersDrill() {
 
   // Keyboard open: keep the prompt + field above the keyboard bar.
   useEffect(() => {
-    if (keyboard > 0) formRef.current?.scrollIntoView({ block: "end", behavior: "smooth" });
+    if (keyboard) formRef.current?.scrollIntoView({ block: "end", behavior: "smooth" });
   }, [keyboard]);
 
   const applyKind = (k: NumberDrillKind) => {
@@ -261,7 +261,7 @@ export default function NumbersDrill() {
               className="w-full rounded-full border-2 border-border bg-surface px-6 py-3 text-xl text-text shadow-soft outline-none placeholder:text-text-muted focus-visible:border-primary focus-visible:ring-4 focus-visible:ring-primary/30 read-only:opacity-60"
             />
           </div>
-          {question.kind !== "reverse" && keyboard === 0 && <SpecialCharBar disabled={outcome !== null} onInsert={insertChar} />}
+          {question.kind !== "reverse" && !keyboard && <SpecialCharBar disabled={outcome !== null} onInsert={insertChar} />}
         </form>
       )}
 
