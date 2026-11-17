@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { computeKeyboardInset } from "@/components/ui/useKeyboardInset";
+import { computeKeyboardInset } from "@/components/ui/useKeyboardOpen";
 
 const base = { innerHeight: 667, height: 667, offsetTop: 0, scale: 1 };
 

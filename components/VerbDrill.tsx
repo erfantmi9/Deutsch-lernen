@@ -19,7 +19,7 @@ import SpecialCharBar from "./SpecialCharBar";
 import ConfirmDialog from "./ui/ConfirmDialog";
 import FeedbackRegion from "./ui/FeedbackRegion";
 import StickyActionBar from "./ui/StickyActionBar";
-import { useKeyboardInset } from "./ui/useKeyboardInset";
+import { useKeyboardOpen } from "./ui/useKeyboardOpen";
 import { useScrollIntoViewOnChange } from "./ui/useScrollIntoViewOnChange";
 
 const MODES: readonly DrillMode[] = ["present", "perfekt", "mixed"];
@@ -52,7 +52,7 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
   const inputRef = useRef<HTMLInputElement>(null);
   const actionRef = useRef<HTMLButtonElement>(null);
   const formRef = useRef<HTMLFormElement>(null);
-  const keyboard = useKeyboardInset();
+  const keyboard = useKeyboardOpen();
   // Result appears directly under the question; keep it inside the viewport (above the sticky bar).
   const feedbackRef = useScrollIntoViewOnChange<HTMLDivElement>(result, { enabled: result !== null, focus: false, block: "nearest" });
 
@@ -89,7 +89,7 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
 
   // Keyboard open: keep the question + field above the keyboard bar (aligning the form END keeps the card visible too).
   useEffect(() => {
-    if (keyboard > 0) formRef.current?.scrollIntoView({ block: "end", behavior: "smooth" });
+    if (keyboard) formRef.current?.scrollIntoView({ block: "end", behavior: "smooth" });
   }, [keyboard]);
 
   const changeMode = (m: DrillMode) => {
@@ -259,7 +259,7 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
           />
         </div>
 
-        {keyboard === 0 && <SpecialCharBar disabled={result !== null} onInsert={insertChar} />}
+        {!keyboard && <SpecialCharBar disabled={result !== null} onInsert={insertChar} />}
       </form>
 
       {/* Feedback: directly under the question, live region always mounted, height reserved. */}
@@ -305,7 +305,7 @@ export default function VerbDrill({ pool, onExit }: { pool: readonly VerbEntry[]
         disabled={!result && !canSubmit}
         onAction={() => (result ? next() : check())}
         status={result ? null : missing.join(" · ")}
-        toolbar={keyboard > 0 ? <SpecialCharBar compact disabled={result !== null} onInsert={insertChar} /> : null}
+        toolbar={keyboard ? <SpecialCharBar compact disabled={result !== null} onInsert={insertChar} /> : null}
       />
 
       <ConfirmDialog
