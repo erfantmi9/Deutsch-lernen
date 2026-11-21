@@ -27,6 +27,7 @@
     "exam": "Prüfung",
     "progress": "Fortschritt",
     "listen": "Hören",
+    "speak": "Sprechen",
     "search": "Suche",
     "skipToContent": "Zum Hauptinhalt springen"
   },
@@ -71,6 +72,10 @@
       "listen": {
         "title": "Hören",
         "desc": "Diktat, Durchsagen, Dialoge nur hören und ähnliche Laute."
+      },
+      "speak": {
+        "title": "Sprechen",
+        "desc": "Hör einen Satz, sprich ihn nach und sieh, welche Wörter verstanden wurden."
       },
       "review": {
         "title": "Karteikarten",
@@ -1178,6 +1183,61 @@
       "noMorePlays": "Kein Abspielen mehr. Antworte jetzt."
     }
   },
+  "Speak": {
+    "title": "Sprechen",
+    "subtitle": "Hör einen deutschen Satz, sprich ihn laut nach und sieh, welche Wörter verstanden wurden.",
+    "modeLabel": "Wie üben",
+    "modes": {
+      "check": "Aussprache prüfen",
+      "record": "Mich aufnehmen"
+    },
+    "recordOnly": "Dieser Browser kann Sprache nicht prüfen. Du nimmst dich auf und vergleichst mit dem Original.",
+    "unsupported": "Dieser Browser kann das Mikrofon nicht nutzen. Probier Chrome oder Edge, um Sprechen zu üben.",
+    "intro": "Du siehst und hörst einen Satz. Hör zu und sprich ihn dann laut nach, so wie du ihn gehört hast.",
+    "tipListen": "Hör zuerst zu, gern auch langsam. Dann sag den ganzen Satz in einem Zug.",
+    "tipCheck": "Dein Browser schreibt auf, was er verstanden hat, und du siehst Wort für Wort, was angekommen ist.",
+    "tipRecord": "Du hörst deine Aufnahme neben dem Original und entscheidest selbst, ob es richtig klang.",
+    "tipLevel": "Eine Runde hat {count} Sätze. Sätze, die du noch nicht gut gesagt hast, kommen zuerst.",
+    "question": "Satz {current} von {total}",
+    "ask": "Hör zu, tippe dann auf Sprechen und sag den Satz.",
+    "askRecord": "Hör zu, tippe dann auf Aufnehmen und sag den Satz.",
+    "speak": "Sprechen",
+    "record": "Aufnehmen",
+    "stop": "Stopp",
+    "listening": "Ich höre zu… sag jetzt den Satz.",
+    "recording": "Aufnahme läuft… tippe auf Stopp, wenn du fertig bist.",
+    "tryAgain": "Noch einmal",
+    "heardNothing": "Es war nichts zu hören. Sprich etwas lauter oder näher am Mikrofon und versuch es noch einmal.",
+    "problems": {
+      "blocked": "Das Mikrofon ist blockiert. Erlaube es für diese Seite in den Browser-Einstellungen.",
+      "noMic": "Es wurde kein Mikrofon gefunden.",
+      "network": "Der Sprachdienst ist nicht erreichbar. Prüfe deine Verbindung oder wechsle zu „Mich aufnehmen“.",
+      "micRefused": "Das Mikrofon konnte nicht geöffnet werden. Erlaube es für diese Seite in den Browser-Einstellungen.",
+      "other": "Mit dem Mikrofon ist etwas schiefgegangen. Bitte versuch es noch einmal."
+    },
+    "perfect": "Perfekt!",
+    "passed": "Gut gesagt!",
+    "notYet": "Noch nicht ganz.",
+    "wordsUnderstood": "{ok} von {total} Wörtern verstanden.",
+    "checked": "Dein Satz, geprüft",
+    "heard": "Verstanden:",
+    "marks": {
+      "ok": "verstanden",
+      "close": "fast",
+      "missing": "nicht verstanden"
+    },
+    "recognitionNote": "Die Spracherkennung zeigt, ob du verstanden wurdest. Sie bewertet nicht jedes Detail deines Akzents.",
+    "compareTitle": "Vergleichen",
+    "judgeAsk": "Hör dir das Original und dich selbst an. Klang es gleich?",
+    "myVoice": "Meine Aufnahme",
+    "stopMyVoice": "Stopp",
+    "judgeYes": "Klang richtig",
+    "judgeNo": "Noch nicht",
+    "judgedYes": "Gut, weiter zum nächsten.",
+    "judgedNo": "Hör noch einmal zu und versuch es erneut.",
+    "judgeFirst": "Sag zuerst, ob es richtig klang.",
+    "average": "Durchschnitt: {percent} %"
+  },
   "Exam": {
     "title": "Probeprüfung A1",
     "subtitle": "Lesen, Hören, Schreiben und Sprechen, mit Zeitmesser für jeden Teil.",
@@ -1503,6 +1563,14 @@
         "p": [
           "Die aufgenommenen Stimmen wurden mit Piper, einer Open-Source-Sprachsynthese, auf unserem eigenen Computer erzeugt. Was du eintippst, wird nie an einen Sprachdienst geschickt.",
           "Stimmmodelle: Thorsten-Voice und Kerstin (beide CC0)."
+        ]
+      },
+      {
+        "h": "Mikrofon in den Sprechübungen",
+        "p": [
+          "Die Sprechübungen nutzen dein Mikrofon nur, während du auf Sprechen oder Aufnehmen tippst, und erst, nachdem dein Browser um Erlaubnis gefragt hat.",
+          "Aussprache prüfen: Dein Browser macht mit seinem eigenen Sprachdienst (in Chrome und Edge ist das Google oder Microsoft) Text aus dem, was du sagst. Wir sehen nur diesen Text, auf deinem Gerät, und speichern ihn nie.",
+          "Mich aufnehmen: Die Aufnahme bleibt auf deinem Gerät und wird gelöscht, wenn du die Seite verlässt. Sie wird nie hochgeladen."
         ]
       }
     ]

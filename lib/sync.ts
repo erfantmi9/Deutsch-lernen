@@ -11,6 +11,7 @@ import { useNumbersStore } from "@/stores/numbersStore";
 import { useQuizStore } from "@/stores/quizStore";
 import { useReadingStore } from "@/stores/readingStore";
 import { useSentenceStore } from "@/stores/sentenceStore";
+import { useSpeakStore } from "@/stores/speakStore";
 import { useSrsStore } from "@/stores/srsStore";
 import { useVerbStore } from "@/stores/verbStore";
 import { SRS_STATE_VERSION } from "@/lib/srsData";
@@ -32,6 +33,7 @@ const STORES = [
   useQuizStore,
   useReadingStore,
   useSentenceStore,
+  useSpeakStore,
   useSrsStore,
   useVerbStore,
 ] as unknown as PersistedStore[];

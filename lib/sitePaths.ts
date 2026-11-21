@@ -20,6 +20,7 @@ export const STATIC_PATHS = [
   "/listen/dictation",
   "/listen/messages",
   "/listen/sounds",
+  "/speak",
   "/search",
 ] as const;
 

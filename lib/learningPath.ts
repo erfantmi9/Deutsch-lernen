@@ -78,7 +78,7 @@ export function goalFraction(todayCount: number, goal: number): number {
 }
 
 /** Paths worth offering as "continue where you left off": a real learning page, not the home page or the settings-like pages. */
-const RESUMABLE = ["arcade", "verbs", "sentences", "grammar", "vocabulary", "numbers", "dialogues", "reading", "review", "listen", "exam"] as const;
+const RESUMABLE = ["arcade", "verbs", "sentences", "grammar", "vocabulary", "numbers", "dialogues", "reading", "review", "listen", "speak", "exam"] as const;
 export type ResumeSection = (typeof RESUMABLE)[number];
 
 /** Returns the section of a locale-less pathname when it can be resumed, otherwise null. */

@@ -9,6 +9,7 @@ export type NavKey =
   | "arcade"
   | "sentences"
   | "listen"
+  | "speak"
   | "review"
   | "dialogues"
   | "reading"
@@ -89,6 +90,12 @@ export const ICONS = {
       <path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11" />
     </>,
   ),
+  speak: icon(
+    <>
+      <rect x="9" y="3" width="6" height="11" rx="3" />
+      <path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7" />
+    </>,
+  ),
   review: icon(
     <>
       <path d="M4 12a8 8 0 0 1 14-5.3L20 9" />
@@ -167,7 +174,7 @@ export const NAV_ENTRIES: readonly NavEntry[] = [
     type: "group",
     key: "practice",
     icon: ICONS.practice,
-    items: [leaf("arcade", "/arcade"), leaf("sentences", "/sentences"), leaf("listen", "/listen"), leaf("review", "/review")],
+    items: [leaf("arcade", "/arcade"), leaf("sentences", "/sentences"), leaf("listen", "/listen"), leaf("speak", "/speak"), leaf("review", "/review")],
   },
   { type: "group", key: "read", icon: ICONS.read, items: [leaf("dialogues", "/dialogues"), leaf("reading", "/reading")] },
   { type: "link", item: leaf("exam", "/exam") },

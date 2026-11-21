@@ -27,6 +27,7 @@
     "exam": "Exam",
     "progress": "Progress",
     "listen": "Listening",
+    "speak": "Speaking",
     "search": "Search",
     "skipToContent": "Skip to main content"
   },
@@ -71,6 +72,10 @@
       "listen": {
         "title": "Listening",
         "desc": "Dictation, everyday messages, dialogues by ear and similar sounds."
+      },
+      "speak": {
+        "title": "Speaking",
+        "desc": "Hear a sentence, say it, and see which words were understood."
       },
       "review": {
         "title": "Flashcards",
@@ -1178,6 +1183,61 @@
       "noMorePlays": "No plays left. Answer now."
     }
   },
+  "Speak": {
+    "title": "Speaking",
+    "subtitle": "Hear a German sentence, say it out loud and see which words were understood.",
+    "modeLabel": "How to practise",
+    "modes": {
+      "check": "Check my speech",
+      "record": "Record myself"
+    },
+    "recordOnly": "This browser cannot check speech, so you record yourself and compare with the original.",
+    "unsupported": "This browser cannot use the microphone. Try Chrome or Edge to practise speaking.",
+    "intro": "You see and hear a sentence. Listen, then say it out loud just like you heard it.",
+    "tipListen": "Listen first, slowly if you like. Then say the whole sentence in one go.",
+    "tipCheck": "Your browser writes down what it understood, and you see word by word what came across.",
+    "tipRecord": "You hear your recording next to the original and decide yourself whether it sounded right.",
+    "tipLevel": "A round has {count} sentences. Sentences you have not said well yet come first.",
+    "question": "Sentence {current} of {total}",
+    "ask": "Listen, then tap Speak and say the sentence.",
+    "askRecord": "Listen, then tap Record and say the sentence.",
+    "speak": "Speak",
+    "record": "Record",
+    "stop": "Stop",
+    "listening": "Listening… say the sentence now.",
+    "recording": "Recording… tap Stop when you are done.",
+    "tryAgain": "Try again",
+    "heardNothing": "Nothing was heard. Speak a little louder or closer to the microphone and try again.",
+    "problems": {
+      "blocked": "The microphone is blocked. Allow it for this site in your browser settings.",
+      "noMic": "No microphone was found.",
+      "network": "The speech service could not be reached. Check your connection, or switch to Record myself.",
+      "micRefused": "The microphone could not be opened. Allow it for this site in your browser settings.",
+      "other": "Something went wrong with the microphone. Please try again."
+    },
+    "perfect": "Perfect!",
+    "passed": "Well said!",
+    "notYet": "Not quite yet.",
+    "wordsUnderstood": "{ok} of {total} words understood.",
+    "checked": "Your sentence, checked",
+    "heard": "Understood:",
+    "marks": {
+      "ok": "understood",
+      "close": "nearly",
+      "missing": "not understood"
+    },
+    "recognitionNote": "Speech recognition shows whether you were understood. It does not judge every detail of your accent.",
+    "compareTitle": "Compare",
+    "judgeAsk": "Listen to the original and to yourself. Did it sound the same?",
+    "myVoice": "My recording",
+    "stopMyVoice": "Stop",
+    "judgeYes": "Sounded right",
+    "judgeNo": "Not yet",
+    "judgedYes": "Good, on to the next one.",
+    "judgedNo": "Listen again and give it another try.",
+    "judgeFirst": "First say whether it sounded right.",
+    "average": "Average: {percent}%"
+  },
   "Exam": {
     "title": "Practice exam A1",
     "subtitle": "Reading, listening, writing and speaking, each with its own timer. A safe place to try the real thing.",
@@ -1503,6 +1563,14 @@
         "p": [
           "The recorded voices were made with Piper, an open-source text-to-speech engine, on our own computer. No text you type is ever sent to a speech service.",
           "Voice models: Thorsten-Voice and Kerstin (both CC0)."
+        ]
+      },
+      {
+        "h": "Microphone in the speaking exercises",
+        "p": [
+          "The speaking exercises use your microphone only while you tap Speak or Record, and only after your browser asks for permission.",
+          "Check my speech: your browser turns what you say into text with its own speech service (in Chrome and Edge that is Google or Microsoft). We only see the text, on your device, and never store it.",
+          "Record myself: the recording stays on your device and is deleted when you leave the page. It is never uploaded."
         ]
       }
     ]

@@ -71,6 +71,7 @@ export default function ModuleCards({
     { key: "dialogues", href: "/dialogues", value: dialogueTotal === 0 ? 0 : dialoguesPassed / dialogueTotal },
     { key: "reading", href: "/reading", value: readingTotal === 0 ? 0 : readingPassed / readingTotal },
     { key: "listen", href: "/listen", value: null },
+    { key: "speak", href: "/speak", value: null },
     { key: "review", href: "/review", value: null },
   ];
 

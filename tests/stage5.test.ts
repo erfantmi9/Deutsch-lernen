@@ -377,7 +377,7 @@ describe("navigation", () => {
       expect(existsSync(join(process.cwd(), file)), leaf.href).toBe(true);
     }
     expect(leaves.map((l) => l.key).sort()).toEqual(
-      ["arcade", "dialogues", "exam", "grammar", "home", "listen", "numbers", "progress", "reading", "review", "sentences", "verbs", "vocabulary"],
+      ["arcade", "dialogues", "exam", "grammar", "home", "listen", "numbers", "progress", "reading", "review", "sentences", "speak", "verbs", "vocabulary"],
     );
   });
 
